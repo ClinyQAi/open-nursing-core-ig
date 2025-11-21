@@ -1,0 +1,17 @@
+id: onc.ig
+canonical: http://open-nursing-core.org
+name: OpenNursingCoreIG
+title: Open Nursing Core FHIR Implementation Guide (ONC-IG)
+status: draft
+version: 0.1.0
+fhirVersion: 4.0.1
+publisher: The Open Nursing Community
+contact:
+  - name: Community
+    telecom:
+      - system: url
+        value: https://github.com/ClinyQAi/open-nursing-core-ig
+description: The Open Nursing Core Implementation Guide (ONC-IG) provides a foundational set of FHIR profiles to standardize the capture of core nursing process data, inspired by the principles of MCINDS.
+license: MIT
+dependencies:
+  hl7.fhir.r4.core: 4.0.1
