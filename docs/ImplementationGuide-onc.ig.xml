@@ -11,7 +11,7 @@
   <name value="OpenNursingCoreIG"/>
   <title value="Open Nursing Core FHIR Implementation Guide (ONC-IG)"/>
   <status value="draft"/>
-  <date value="2025-11-23T02:33:16+00:00"/>
+  <date value="2025-11-23T21:00:20+00:00"/>
   <description value="Foundational FHIR profiles for the nursing process (ADPIE)."/>
   <packageId value="onc.ig"/>
   <license value="MIT"/>
@@ -502,6 +502,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/skintone-vs"/>
+      </reference>
+      <name value="Fitzpatrick Skin Tone Value Set"/>
+      <description value="Values for Fitzpatrick Skin Type I-VI using standard SNOMED CT codes."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/goal-evaluation-valueset"/>
       </reference>
       <name value="Goal Evaluation Value Set"/>
@@ -547,6 +558,28 @@
       </reference>
       <name value="Observation Goal Reference"/>
       <description value="Reference to the goal that is being evaluated."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onc-nhs-patient"/>
+      </reference>
+      <name value="ONC NHS Patient"/>
+      <description value="An NHS-specific patient profile that mandates the inclusion of ethnicity data for health equity analysis."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onc-skintone-observation"/>
+      </reference>
+      <name value="ONC Skin Tone Observation"/>
+      <description value="Observation for Fitzpatrick Skin Type to support equity in assessment interpretation."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -655,6 +688,17 @@
       </reference>
       <name value="practitioner-example"/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/UKCore-Extension-EthnicCategory"/>
+      </reference>
+      <name value="UK Core Ethnic Category"/>
+      <description value="A code classifying the person's ethnicity."/>
+      <exampleBoolean value="false"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

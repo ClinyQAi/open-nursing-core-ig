@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-goal-evaluation.
   "name" : "ONCGoalEvaluation",
   "title" : "Open Nursing Core Goal Evaluation",
   "status" : "draft",
-  "date" : "2025-11-23T02:33:16+00:00",
+  "date" : "2025-11-23T21:00:20+00:00",
   "description" : "Evaluation of a patient's progress towards a goal.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

@@ -35,7 +35,7 @@ This project is inspired by the academic and research work on the Minimum Core I
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "draft",
-  "date" : "2025-11-23T02:33:16+00:00",
+  "date" : "2025-11-23T21:00:20+00:00",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE).",
   "packageId" : "onc.ig",
   "license" : "MIT",
@@ -811,6 +811,20 @@ This project is inspired by the academic and research work on the Minimum Core I
           }
         ],
         "reference" : {
+          "reference" : "ValueSet/skintone-vs"
+        },
+        "name" : "Fitzpatrick Skin Tone Value Set",
+        "description" : "Values for Fitzpatrick Skin Type I-VI using standard SNOMED CT codes.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
           "reference" : "ValueSet/goal-evaluation-valueset"
         },
         "name" : "Goal Evaluation Value Set",
@@ -868,6 +882,34 @@ This project is inspired by the academic and research work on the Minimum Core I
         },
         "name" : "Observation Goal Reference",
         "description" : "Reference to the goal that is being evaluated.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-nhs-patient"
+        },
+        "name" : "ONC NHS Patient",
+        "description" : "An NHS-specific patient profile that mandates the inclusion of ethnicity data for health equity analysis.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-skintone-observation"
+        },
+        "name" : "ONC Skin Tone Observation",
+        "description" : "Observation for Fitzpatrick Skin Type to support equity in assessment interpretation.",
         "exampleBoolean" : false
       },
       {
@@ -1006,6 +1048,20 @@ This project is inspired by the academic and research work on the Minimum Core I
         },
         "name" : "practitioner-example",
         "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/UKCore-Extension-EthnicCategory"
+        },
+        "name" : "UK Core Ethnic Category",
+        "description" : "A code classifying the person's ethnicity.",
+        "exampleBoolean" : false
       }
     ],
     "page" : {

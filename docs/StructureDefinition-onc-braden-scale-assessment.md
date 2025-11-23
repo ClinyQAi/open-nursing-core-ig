@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
   "name" : "ONCBradenScaleAssessment",
   "title" : "Open Nursing Core Braden Scale Assessment",
   "status" : "draft",
-  "date" : "2025-11-23T02:33:16+00:00",
+  "date" : "2025-11-23T21:00:20+00:00",
   "description" : "Braden Scale assessment for pressure injury risk.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

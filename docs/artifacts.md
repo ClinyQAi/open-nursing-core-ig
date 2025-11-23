@@ -13,6 +13,8 @@ These define constraints on FHIR resources for systems conforming to this implem
 
 | | |
 | :--- | :--- |
+| [ONC NHS Patient](StructureDefinition-onc-nhs-patient.md) | An NHS-specific patient profile that mandates the inclusion of ethnicity data for health equity analysis. |
+| [ONC Skin Tone Observation](StructureDefinition-onc-skintone-observation.md) | Observation for Fitzpatrick Skin Type to support equity in assessment interpretation. |
 | [Open Nursing Core Assessment](StructureDefinition-onc-nursing-assessment.md) | Base profile for nursing assessments. |
 | [Open Nursing Core Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessment.md) | Braden Scale assessment for pressure injury risk. |
 | [Open Nursing Core Goal Evaluation](StructureDefinition-onc-goal-evaluation.md) | Evaluation of a patient's progress towards a goal. |
@@ -29,16 +31,18 @@ These define constraints on FHIR data types for systems conforming to this imple
 | :--- | :--- |
 | [Intervention Goal Reference](StructureDefinition-intervention-goal-reference.md) | Reference to the goal this intervention addresses. |
 | [Observation Goal Reference](StructureDefinition-observation-goal-reference.md) | Reference to the goal that is being evaluated. |
+| [UK Core Ethnic Category](StructureDefinition-UKCore-Extension-EthnicCategory.md) | A code classifying the person's ethnicity. |
 
 ### Terminology: Value Sets 
 
 These define sets of codes used by systems conforming to this implementation guide.
 
-| |
-| :--- |
-| [Goal Evaluation Value Set](ValueSet-goal-evaluation-valueset.md) |
-| [Nursing Intervention Value Set](ValueSet-nursing-intervention-valueset.md) |
-| [Nursing Problem Value Set](ValueSet-nursing-problem-valueset.md) |
+| | |
+| :--- | :--- |
+| [Fitzpatrick Skin Tone Value Set](ValueSet-skintone-vs.md) | Values for Fitzpatrick Skin Type I-VI using standard SNOMED CT codes. |
+| [Goal Evaluation Value Set](ValueSet-goal-evaluation-valueset.md) |  |
+| [Nursing Intervention Value Set](ValueSet-nursing-intervention-valueset.md) |  |
+| [Nursing Problem Value Set](ValueSet-nursing-problem-valueset.md) |  |
 
 ### Terminology: Code Systems 
 

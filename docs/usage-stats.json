@@ -16,21 +16,26 @@
       "types": [
         "Reference"
       ]
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Extension-EthnicCategory",
+      "title": "UK Core Ethnic Category",
+      "types": [
+        "CodeableConcept"
+      ]
     }
   ],
   "profiles": {
     "Observation": [
       {
-        "url": "http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment",
-        "title": "Open Nursing Core Braden Scale Assessment"
-      },
+        "url": "http://open-nursing-core.org/StructureDefinition/onc-skintone-observation",
+        "title": "ONC Skin Tone Observation"
+      }
+    ],
+    "Patient": [
       {
-        "url": "http://open-nursing-core.org/StructureDefinition/onc-goal-evaluation",
-        "title": "Open Nursing Core Goal Evaluation"
-      },
-      {
-        "url": "http://open-nursing-core.org/StructureDefinition/onc-nursing-assessment",
-        "title": "Open Nursing Core Assessment"
+        "url": "http://open-nursing-core.org/StructureDefinition/onc-nhs-patient",
+        "title": "ONC NHS Patient"
       }
     ],
     "CarePlan": [
@@ -107,6 +112,9 @@
     ],
     "http://open-nursing-core.org/StructureDefinition/observation-goal-reference": [
       "Observation"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Extension-EthnicCategory": [
+      "Patient"
     ]
   }
 }

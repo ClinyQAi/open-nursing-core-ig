@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-problem.
   "name" : "ONCNursingProblem",
   "title" : "Open Nursing Core Nursing Problem",
   "status" : "draft",
-  "date" : "2025-11-23T02:33:16+00:00",
+  "date" : "2025-11-23T21:00:20+00:00",
   "description" : "Nursing problem or diagnosis.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

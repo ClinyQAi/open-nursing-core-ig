@@ -1,7 +1,7 @@
 OpenNursingCoreIG : Validation Results
 =========================================
 
-err = 65, warn = 40, info = 18
+err = 69, warn = 45, info = 24
 $--
 Generated $--. FHIR version $-- for onc.ig#$-- (canonical = http://open-nursing-core.org)
  Build Errors : 1 / 15 / 0
@@ -15,18 +15,22 @@ Generated $--. FHIR version $-- for onc.ig#$-- (canonical = http://open-nursing-
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\Patient-patient-example : 0 / 0 / 1
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\Practitioner-practitioner-example : 0 / 0 / 1
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\Procedure-example-nursing-intervention : 1 / 1 / 1
+ C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-UKCore-Extension-EthnicCategory : 2 / 2 / 1
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-intervention-goal-reference : 0 / 2 / 1
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-observation-goal-reference : 0 / 1 / 1
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-onc-braden-scale-assessment : 3 / 0 / 5
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-onc-goal-evaluation : 1 / 0 / 2
+ C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-onc-nhs-patient : 0 / 1 / 1
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-onc-nursing-assessment : 2 / 1 / 3
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-onc-nursing-care-plan : 0 / 0 / 1
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-onc-nursing-intervention : 0 / 0 / 1
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-onc-nursing-problem : 0 / 0 / 3
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-onc-patient-goal : 0 / 0 / 1
+ C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-onc-skintone-observation : 2 / 1 / 1
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\ValueSet-goal-evaluation-valueset : 0 / 2 / 1
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\ValueSet-nursing-intervention-valueset : 2 / 2 / 1
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\ValueSet-nursing-problem-valueset : 2 / 3 / 1
+ C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\ValueSet-skintone-vs : 0 / 1 / 7
 </table>
 == n/a ==
 ERROR: ImplementationGuide.definition.parameter[23].value: Supressed messages file not found
@@ -132,6 +136,11 @@ WARNING: Observation/example-goal-evaluation: Observation: Best Practice Recomme
 == fsh-generated\resources\Procedure-example-nursing-intervention.json ==
 WARNING: Procedure/example-nursing-intervention: Procedure.code.coding[0].system: A definition for CodeSystem 'http://hl7.org/fhir/sid/icnp' could not be found, so the code cannot be validated
 ERROR: Procedure/example-nursing-intervention: Procedure.code.coding[0].system: No definition could be found for URL value 'http://hl7.org/fhir/sid/icnp'
+== fsh-generated\resources\StructureDefinition-UKCore-Extension-EthnicCategory.json ==
+ERROR: StructureDefinition.where(url = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Extension-EthnicCategory'): Conformance resource C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-UKCore-Extension-EthnicCategory.json - the canonical URL (http://open-nursing-core.org/StructureDefinition/UKCore-Extension-EthnicCategory) does not match the URL (https://fhir.hl7.org.uk/StructureDefinition/UKCore-Extension-EthnicCategory). Use the special-url parameter if you really mean for it not to match
+WARNING: StructureDefinition/UKCore-Extension-EthnicCategory: StructureDefinition.context[0]: Review the extension type for UKCore-Extension-EthnicCategory: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Extension-EthnicCategory'): The Implementation Guide contains no examples for this extension
+ERROR: C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-UKCore-Extension-EthnicCategory: URL Mismatch http://open-nursing-core.org/StructureDefinition/UKCore-Extension-EthnicCategory vs https://fhir.hl7.org.uk/StructureDefinition/UKCore-Extension-EthnicCategory
 == fsh-generated\resources\StructureDefinition-intervention-goal-reference.json ==
 WARNING: StructureDefinition/intervention-goal-reference: StructureDefinition.context[0]: Review the extension type for intervention-goal-reference: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 WARNING: StructureDefinition.where(url = 'http://open-nursing-core.org/StructureDefinition/intervention-goal-reference'): The Implementation Guide contains no examples for this extension
@@ -148,6 +157,8 @@ INFORMATION: StructureDefinition/onc-braden-scale-assessment: StructureDefinitio
 == fsh-generated\resources\StructureDefinition-onc-goal-evaluation.json ==
 ERROR: StructureDefinition/onc-goal-evaluation: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
 INFORMATION: StructureDefinition/onc-goal-evaluation: StructureDefinition.snapshot.element[14].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+== fsh-generated\resources\StructureDefinition-onc-nhs-patient.json ==
+WARNING: StructureDefinition.where(url = 'http://open-nursing-core.org/StructureDefinition/onc-nhs-patient'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-onc-nursing-assessment.json ==
 ERROR: StructureDefinition/onc-nursing-assessment: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
 ERROR: StructureDefinition/onc-nursing-assessment: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
@@ -160,6 +171,10 @@ WARNING: StructureDefinition.where(url = 'http://open-nursing-core.org/Structure
 INFORMATION: StructureDefinition/onc-nursing-problem: StructureDefinition.snapshot.element[12].pattern.ofType(CodeableConcept): Reference to draft CodeSystem http://open-nursing-core.org/CodeSystem/onc-problem-type|0.1.0
 INFORMATION: StructureDefinition/onc-nursing-problem: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept): Reference to draft CodeSystem http://open-nursing-core.org/CodeSystem/onc-problem-type|0.1.0
 == fsh-generated\resources\StructureDefinition-onc-patient-goal.json ==
+== fsh-generated\resources\StructureDefinition-onc-skintone-observation.json ==
+ERROR: StructureDefinition/onc-skintone-observation: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Fitzpatrick skin type' for http://loinc.org#66472-2. Valid display is one of 3 choices: 'During your life, altogether how many times have you injected drugs not prescribed by a doctor [PhenX]' (en-US), 'During your life, altogether how many times have you injected drugs not prescribed by a doctor [PhenX]' (en-US) or 'How many times injected nRate PhenX' (en-US) (for the language(s) 'en-US')
+ERROR: StructureDefinition/onc-skintone-observation: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Fitzpatrick skin type' for http://loinc.org#66472-2. Valid display is one of 3 choices: 'During your life, altogether how many times have you injected drugs not prescribed by a doctor [PhenX]' (en-US), 'During your life, altogether how many times have you injected drugs not prescribed by a doctor [PhenX]' (en-US) or 'How many times injected nRate PhenX' (en-US) (for the language(s) 'en-US')
+WARNING: StructureDefinition.where(url = 'http://open-nursing-core.org/StructureDefinition/onc-skintone-observation'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\ValueSet-goal-evaluation-valueset.json ==
 WARNING: ValueSet/goal-evaluation-valueset: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/goal-evaluation-valueset: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
@@ -174,3 +189,11 @@ WARNING: ValueSet/nursing-problem-valueset: ValueSet.compose.include[1].filter[0
 WARNING: ValueSet/nursing-problem-valueset: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/nursing-problem-valueset: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 ERROR: ValueSet.where(id = 'nursing-problem-valueset'): Error from https://tx.fhir.org/r4: A definition for CodeSystem 'http://hl7.org/fhir/sid/icnp' could not be found, so the value set cannot be expanded
+== fsh-generated\resources\ValueSet-skintone-vs.json ==
+INFORMATION: ValueSet/skintone-vs: ValueSet.compose.include[0].concept[0]: The display 'Fitzpatrick skin type I' is not valid in the Code system 'Fitzpatrick skin type I'. Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/skintone-vs: ValueSet.compose.include[0].concept[1]: The display 'Fitzpatrick skin type II' is not valid in the Code system 'Fitzpatrick skin type II'. Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/skintone-vs: ValueSet.compose.include[0].concept[2]: The display 'Fitzpatrick skin type III' is not valid in the Code system 'Fitzpatrick skin type III'. Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/skintone-vs: ValueSet.compose.include[0].concept[3]: The display 'Fitzpatrick skin type IV' is not valid in the Code system 'Fitzpatrick skin type IV'. Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/skintone-vs: ValueSet.compose.include[0].concept[4]: The display 'Fitzpatrick skin type V' is not valid in the Code system 'Fitzpatrick skin type V'. Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/skintone-vs: ValueSet.compose.include[0].concept[5]: The display 'Fitzpatrick skin type VI' is not valid in the Code system 'Fitzpatrick skin type VI'. Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+WARNING: ValueSet/skintone-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

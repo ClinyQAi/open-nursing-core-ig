@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "b23e325b-240b-43c8-aa21-847166e0470d",
+  "id" : "3417118e-75e5-42aa-b17e-888219f26a5b",
   "meta" : {
-    "lastUpdated" : "2025-11-23T02:33:16.172+00:00"
+    "lastUpdated" : "2025-11-23T21:00:20.973+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -18,10 +18,10 @@
       "name" : "GoalEvaluationValueSet",
       "title" : "Goal Evaluation Value Set",
       "status" : "draft",
-      "date" : "2025-11-23T02:33:16+00:00",
+      "date" : "2025-11-23T21:00:20+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:28c40678-26fd-4bd5-acc5-8797feb0c6f8",
-        "timestamp" : "2025-11-23T02:34:03+00:00",
+        "identifier" : "urn:uuid:fc2a9c60-9125-4e45-9268-cc0568465b81",
+        "timestamp" : "2025-11-23T21:01:11+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -57,6 +57,82 @@
           "system" : "http://snomed.info/sct",
           "code" : "385634002",
           "display" : "Change patterns (qualifier value)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://open-nursing-core.org/ValueSet/skintone-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 6 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://snomed.info/sct-403153005\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/403153005\">403153005</a></td><td>Centipede bite</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;403153005&quot;, &quot;display&quot;: &quot;Centipede bite&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;403153005&quot;&gt;&lt;display value=&quot;Centipede bite&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-403154004\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/403154004\">403154004</a></td><td>Millipede burn (disorder)</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;403154004&quot;, &quot;display&quot;: &quot;Millipede burn (disorder)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;403154004&quot;&gt;&lt;display value=&quot;Millipede burn (disorder)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-403155003\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/403155003\">403155003</a></td><td>Dermatosis caused by Echinoidea (disorder)</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;403155003&quot;, &quot;display&quot;: &quot;Dermatosis caused by Echinoidea (disorder)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;403155003&quot;&gt;&lt;display value=&quot;Dermatosis caused by Echinoidea (disorder)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-403156002\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/403156002\">403156002</a></td><td>Dermatosis caused by Coelenterata</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;403156002&quot;, &quot;display&quot;: &quot;Dermatosis caused by Coelenterata&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;403156002&quot;&gt;&lt;display value=&quot;Dermatosis caused by Coelenterata&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-403157006\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/403157006\">403157006</a></td><td>Fire coral dermatitis (disorder)</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;403157006&quot;, &quot;display&quot;: &quot;Fire coral dermatitis (disorder)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;403157006&quot;&gt;&lt;display value=&quot;Fire coral dermatitis (disorder)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-403158001\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/403158001\">403158001</a></td><td>Sea mat dermatitis</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;403158001&quot;, &quot;display&quot;: &quot;Sea mat dermatitis&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;403158001&quot;&gt;&lt;display value=&quot;Sea mat dermatitis&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://open-nursing-core.org/ValueSet/skintone-vs",
+      "version" : "0.1.0",
+      "name" : "SkinToneVS",
+      "title" : "Fitzpatrick Skin Tone Value Set",
+      "status" : "draft",
+      "date" : "2025-11-23T21:00:20+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:f04d84b8-6307-477d-9281-a438b994fd32",
+        "timestamp" : "2025-11-23T21:01:12+00:00",
+        "total" : 6,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "403153005",
+          "display" : "Centipede bite"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "403154004",
+          "display" : "Millipede burn (disorder)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "403155003",
+          "display" : "Dermatosis caused by Echinoidea (disorder)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "403156002",
+          "display" : "Dermatosis caused by Coelenterata"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "403157006",
+          "display" : "Fire coral dermatitis (disorder)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "403158001",
+          "display" : "Sea mat dermatitis"
         }]
       }
     }

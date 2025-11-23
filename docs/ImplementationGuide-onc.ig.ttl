@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "OpenNursingCoreIG"] ; # 
   fhir:title [ fhir:v "Open Nursing Core FHIR Implementation Guide (ONC-IG)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-11-23T02:33:16+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-23T21:00:20+00:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "Foundational FHIR profiles for the nursing process (ADPIE)."] ; # 
   fhir:packageId [ fhir:v "onc.ig"] ; # 
   fhir:license [ fhir:v "MIT"] ; # 
@@ -1413,6 +1413,27 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <http://open-nursing-core.org/ValueSet/skintone-vs> ;
+         fhir:reference [ fhir:v "ValueSet/skintone-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Fitzpatrick Skin Tone Value Set" ] ;
+       fhir:description [ fhir:v "Values for Fitzpatrick Skin Type I-VI using standard SNOMED CT codes." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <http://open-nursing-core.org/ValueSet/goal-evaluation-valueset> ;
          fhir:reference [ fhir:v "ValueSet/goal-evaluation-valueset" ]
        ] ;
@@ -1499,6 +1520,48 @@
        ] ;
        fhir:name [ fhir:v "Observation Goal Reference" ] ;
        fhir:description [ fhir:v "Reference to the goal that is being evaluated." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://open-nursing-core.org/StructureDefinition/onc-nhs-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-nhs-patient" ]
+       ] ;
+       fhir:name [ fhir:v "ONC NHS Patient" ] ;
+       fhir:description [ fhir:v "An NHS-specific patient profile that mandates the inclusion of ethnicity data for health equity analysis." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://open-nursing-core.org/StructureDefinition/onc-skintone-observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-skintone-observation" ]
+       ] ;
+       fhir:name [ fhir:v "ONC Skin Tone Observation" ] ;
+       fhir:description [ fhir:v "Observation for Fitzpatrick Skin Type to support equity in assessment interpretation." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1709,6 +1772,27 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://open-nursing-core.org/StructureDefinition/UKCore-Extension-EthnicCategory> ;
+         fhir:reference [ fhir:v "StructureDefinition/UKCore-Extension-EthnicCategory" ]
+       ] ;
+       fhir:name [ fhir:v "UK Core Ethnic Category" ] ;
+       fhir:description [ fhir:v "A code classifying the person's ethnicity." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
        ]
      ] ) ;
      fhir:page [

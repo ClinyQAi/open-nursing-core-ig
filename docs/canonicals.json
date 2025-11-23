@@ -42,6 +42,13 @@
     "name" : "ONCGoalEvaluation"
   },
   {
+    "id" : "onc-nhs-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://open-nursing-core.org/StructureDefinition/onc-nhs-patient",
+    "version" : "0.1.0",
+    "name" : "ONCNHSPatient"
+  },
+  {
     "id" : "onc-nursing-assessment",
     "type" : "StructureDefinition",
     "url" : "http://open-nursing-core.org/StructureDefinition/onc-nursing-assessment",
@@ -77,6 +84,13 @@
     "name" : "ONCPatientGoal"
   },
   {
+    "id" : "onc-skintone-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://open-nursing-core.org/StructureDefinition/onc-skintone-observation",
+    "version" : "0.1.0",
+    "name" : "ONCSkinToneObservation"
+  },
+  {
     "id" : "goal-evaluation-valueset",
     "type" : "ValueSet",
     "url" : "http://open-nursing-core.org/ValueSet/goal-evaluation-valueset",
@@ -96,5 +110,19 @@
     "url" : "http://open-nursing-core.org/ValueSet/nursing-problem-valueset",
     "version" : "0.1.0",
     "name" : "NursingProblemValueSet"
+  },
+  {
+    "id" : "skintone-vs",
+    "type" : "ValueSet",
+    "url" : "http://open-nursing-core.org/ValueSet/skintone-vs",
+    "version" : "0.1.0",
+    "name" : "SkinToneVS"
+  },
+  {
+    "id" : "UKCore-Extension-EthnicCategory",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Extension-EthnicCategory",
+    "version" : "0.1.0",
+    "name" : "UKCoreEthnicCategory"
   }
 ]

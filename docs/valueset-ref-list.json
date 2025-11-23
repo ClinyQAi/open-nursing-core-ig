@@ -22,8 +22,8 @@
       "systems" : ["http://hl7.org/fhir/sid/icnp", "http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-onc-nursing-care-plan.html" : "Open Nursing Core Nursing Care Plan",
-      "StructureDefinition-onc-nursing-intervention.html" : "Open Nursing Core Nursing Intervention"
+      "StructureDefinition-onc-nursing-intervention.html" : "Open Nursing Core Nursing Intervention",
+      "StructureDefinition-onc-nursing-care-plan.html" : "Open Nursing Core Nursing Care Plan"
     },
     {
       "url" : "http://open-nursing-core.org/ValueSet/nursing-problem-valueset",
@@ -36,6 +36,18 @@
       "uses" : {
       },
       "StructureDefinition-onc-nursing-problem.html" : "Open Nursing Core Nursing Problem"
+    },
+    {
+      "url" : "http://open-nursing-core.org/ValueSet/skintone-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SkinToneVS",
+      "title" : "Fitzpatrick Skin Tone Value Set",
+      "description" : "Values for Fitzpatrick Skin Type I-VI using standard SNOMED CT codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation"
     }
   ]
 }

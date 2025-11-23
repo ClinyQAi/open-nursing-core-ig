@@ -1,6 +1,20 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-onc-nhs-patient.html" : "ONC NHS Patient"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/body-site",
       "version" : "4.0.1",
       "status" : "draft",
@@ -12,11 +26,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation",
       "StructureDefinition-onc-nursing-intervention.html" : "Open Nursing Core Nursing Intervention",
-      "StructureDefinition-onc-braden-scale-assessment.html" : "Open Nursing Core Braden Scale Assessment",
+      "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation",
       "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
-      "StructureDefinition-onc-nursing-problem.html" : "Open Nursing Core Nursing Problem"
+      "StructureDefinition-onc-nursing-problem.html" : "Open Nursing Core Nursing Problem",
+      "StructureDefinition-onc-braden-scale-assessment.html" : "Open Nursing Core Braden Scale Assessment",
+      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-kind",
@@ -100,8 +115,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.232"],
       "uses" : {
       },
-      "StructureDefinition-onc-nursing-care-plan.html" : "Open Nursing Core Nursing Care Plan",
-      "StructureDefinition-onc-patient-goal.html" : "Open Nursing Core Patient Goal"
+      "StructureDefinition-onc-patient-goal.html" : "Open Nursing Core Patient Goal",
+      "StructureDefinition-onc-nursing-care-plan.html" : "Open Nursing Core Nursing Care Plan"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-category",
@@ -214,8 +229,9 @@
       "uses" : {
       },
       "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation",
+      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
       "StructureDefinition-onc-braden-scale-assessment.html" : "Open Nursing Core Braden Scale Assessment",
-      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment"
+      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/device-action",
@@ -341,13 +357,29 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-onc-nursing-care-plan.html" : "Open Nursing Core Nursing Care Plan",
-      "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation",
-      "StructureDefinition-onc-nursing-intervention.html" : "Open Nursing Core Nursing Intervention",
-      "StructureDefinition-onc-braden-scale-assessment.html" : "Open Nursing Core Braden Scale Assessment",
       "StructureDefinition-onc-patient-goal.html" : "Open Nursing Core Patient Goal",
+      "StructureDefinition-onc-nursing-intervention.html" : "Open Nursing Core Nursing Intervention",
+      "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation",
       "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
-      "StructureDefinition-onc-nursing-problem.html" : "Open Nursing Core Nursing Problem"
+      "StructureDefinition-onc-nursing-care-plan.html" : "Open Nursing Core Nursing Care Plan",
+      "StructureDefinition-onc-nursing-problem.html" : "Open Nursing Core Nursing Problem",
+      "StructureDefinition-onc-nhs-patient.html" : "ONC NHS Patient",
+      "StructureDefinition-onc-braden-scale-assessment.html" : "Open Nursing Core Braden Scale Assessment",
+      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/link-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "systems" : ["http://hl7.org/fhir/link-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.423"],
+      "sources" : ["2.16.840.1.113883.4.642.3.423"],
+      "uses" : {
+      },
+      "StructureDefinition-onc-nhs-patient.html" : "ONC NHS Patient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/manifestation-or-symptom",
@@ -362,6 +394,23 @@
       "uses" : {
       },
       "StructureDefinition-onc-nursing-problem.html" : "Open Nursing Core Nursing Problem"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/marital-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Marital Status Codes",
+      "title" : "MaritalStatus",
+      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.29"],
+      "sources" : ["2.16.840.1.113883.4.642.3.29"],
+      "uses" : {
+      },
+      "StructureDefinition-onc-nhs-patient.html" : "ONC NHS Patient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
@@ -390,8 +439,9 @@
       "uses" : {
       },
       "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation",
+      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
       "StructureDefinition-onc-braden-scale-assessment.html" : "Open Nursing Core Braden Scale Assessment",
-      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment"
+      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -405,10 +455,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.396"],
       "uses" : {
       },
-      "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation",
-      "StructureDefinition-onc-braden-scale-assessment.html" : "Open Nursing Core Braden Scale Assessment",
       "StructureDefinition-onc-patient-goal.html" : "Open Nursing Core Patient Goal",
-      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment"
+      "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation",
+      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
+      "StructureDefinition-onc-braden-scale-assessment.html" : "Open Nursing Core Braden Scale Assessment",
+      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -425,8 +476,9 @@
       "uses" : {
       },
       "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation",
+      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
       "StructureDefinition-onc-braden-scale-assessment.html" : "Open Nursing Core Braden Scale Assessment",
-      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment"
+      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -441,8 +493,9 @@
       "uses" : {
       },
       "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation",
+      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
       "StructureDefinition-onc-braden-scale-assessment.html" : "Open Nursing Core Braden Scale Assessment",
-      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment"
+      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -457,8 +510,23 @@
       "uses" : {
       },
       "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation",
+      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
       "StructureDefinition-onc-braden-scale-assessment.html" : "Open Nursing Core Braden Scale Assessment",
-      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment"
+      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PatientContactRelationship",
+      "title" : "Patient Contact Relationship ",
+      "description" : "The nature of the relationship between the patient and the contact person.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0131"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1130"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1130"],
+      "uses" : {
+      },
+      "StructureDefinition-onc-nhs-patient.html" : "ONC NHS Patient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/performer-role",
@@ -574,8 +642,9 @@
       "uses" : {
       },
       "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation",
+      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
       "StructureDefinition-onc-braden-scale-assessment.html" : "Open Nursing Core Braden Scale Assessment",
-      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment"
+      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -592,8 +661,9 @@
       "uses" : {
       },
       "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation",
+      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
       "StructureDefinition-onc-braden-scale-assessment.html" : "Open Nursing Core Braden Scale Assessment",
-      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment"
+      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/request-status",
@@ -631,8 +701,8 @@
       "systems" : ["http://hl7.org/fhir/sid/icnp", "http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-onc-nursing-care-plan.html" : "Open Nursing Core Nursing Care Plan",
-      "StructureDefinition-onc-nursing-intervention.html" : "Open Nursing Core Nursing Intervention"
+      "StructureDefinition-onc-nursing-intervention.html" : "Open Nursing Core Nursing Intervention",
+      "StructureDefinition-onc-nursing-care-plan.html" : "Open Nursing Core Nursing Care Plan"
     },
     {
       "url" : "http://open-nursing-core.org/ValueSet/nursing-problem-valueset",
@@ -645,6 +715,18 @@
       "uses" : {
       },
       "StructureDefinition-onc-nursing-problem.html" : "Open Nursing Core Nursing Problem"
+    },
+    {
+      "url" : "http://open-nursing-core.org/ValueSet/skintone-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SkinToneVS",
+      "title" : "Fitzpatrick Skin Tone Value Set",
+      "description" : "Values for Fitzpatrick Skin Type I-VI using standard SNOMED CT codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation"
     }
   ]
 }
