@@ -1,10 +1,10 @@
 OpenNursingCoreIG : Validation Results
 =========================================
 
-err = 69, warn = 45, info = 24
+err = 88, warn = 59, info = 35
 $--
 Generated $--. FHIR version $-- for onc.ig#$-- (canonical = http://open-nursing-core.org)
- Build Errors : 1 / 15 / 0
+ Build Errors : 1 / 18 / 0
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\CarePlan-example-nursing-care-plan : 1 / 1 / 1
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\CodeSystem-onc-problem-type : 0 / 3 / 2
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\Condition-example-nursing-problem : 2 / 0 / 1
@@ -12,6 +12,9 @@ Generated $--. FHIR version $-- for onc.ig#$-- (canonical = http://open-nursing-
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\ImplementationGuide-onc.ig : 0 / 0 / 1
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\Observation-example-braden-scale : 45 / 8 / 8
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\Observation-example-goal-evaluation : 5 / 1 / 2
+ C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\Observation-example-housing-status : 2 / 1 / 2
+ C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\Observation-example-morse-fall-scale : 3 / 8 / 2
+ C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\Observation-example-news2-assessment : 4 / 2 / 2
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\Patient-patient-example : 0 / 0 / 1
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\Practitioner-practitioner-example : 0 / 0 / 1
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\Procedure-example-nursing-intervention : 1 / 1 / 1
@@ -20,6 +23,9 @@ Generated $--. FHIR version $-- for onc.ig#$-- (canonical = http://open-nursing-
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-observation-goal-reference : 0 / 1 / 1
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-onc-braden-scale-assessment : 3 / 0 / 5
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-onc-goal-evaluation : 1 / 0 / 2
+ C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-onc-housing-status : 1 / 0 / 2
+ C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-onc-morse-fall-scale : 3 / 0 / 4
+ C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-onc-news2-assessment : 5 / 0 / 4
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-onc-nhs-patient : 0 / 1 / 1
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-onc-nursing-assessment : 2 / 1 / 3
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-onc-nursing-care-plan : 0 / 0 / 1
@@ -27,7 +33,9 @@ Generated $--. FHIR version $-- for onc.ig#$-- (canonical = http://open-nursing-
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-onc-nursing-problem : 0 / 0 / 3
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-onc-patient-goal : 0 / 0 / 1
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-onc-skintone-observation : 2 / 1 / 1
+ C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\ValueSet-acvpu-vs : 0 / 0 / 1
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\ValueSet-goal-evaluation-valueset : 0 / 2 / 1
+ C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\ValueSet-housing-status-vs : 1 / 0 / 2
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\ValueSet-nursing-intervention-valueset : 2 / 2 / 1
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\ValueSet-nursing-problem-valueset : 2 / 3 / 1
  C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\ValueSet-skintone-vs : 0 / 1 / 7
@@ -40,6 +48,9 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/onc-problem-type.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-braden-scale.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-goal-evaluation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-housing-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-morse-fall-scale.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-news2-assessment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/example-nursing-care-plan.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Procedure/example-nursing-intervention.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/example-nursing-problem.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -131,6 +142,32 @@ ERROR: Observation/example-goal-evaluation: Observation.code.coding[0].display: 
 ERROR: Observation/example-goal-evaluation: Observation.code: None of the codings provided are in the value set 'Goal Evaluation Value Set' (http://open-nursing-core.org/ValueSet/goal-evaluation-valueset|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#385633008)
 ERROR: Observation/example-goal-evaluation: Observation.value.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Goal achieved (finding)' for http://snomed.info/sct#385633008. Valid display is 'Improving (qualifier value)' (en) (for the language(s) 'en-US')
 WARNING: Observation/example-goal-evaluation: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated\resources\Observation-example-housing-status.json ==
+ERROR: Observation/example-housing-status: Observation.category[0]: Slicing cannot be evaluated: Could not match discriminator (coding) for slice Observation.category:nursing in profile http://open-nursing-core.org/StructureDefinition/onc-housing-status|0.1.0 - the discriminator [coding] does not have fixed value, binding or existence assertions
+INFORMATION: Observation/example-housing-status: Observation: Observation.category:nursing: Found 0 matches, but unable to check minimum required (Observation.category) due to lack of slicing validation (from http://open-nursing-core.org/StructureDefinition/onc-housing-status|0.1.0)
+ERROR: Observation/example-housing-status: Observation.category[0].coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
+WARNING: Observation/example-housing-status: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated\resources\Observation-example-morse-fall-scale.json ==
+ERROR: Observation/example-morse-fall-scale: Observation.category[0]: Slicing cannot be evaluated: Could not match discriminator (coding) for slice Observation.category:nursing in profile http://open-nursing-core.org/StructureDefinition/onc-morse-fall-scale|0.1.0 - the discriminator [coding] does not have fixed value, binding or existence assertions
+INFORMATION: Observation/example-morse-fall-scale: Observation: Observation.category:nursing: Found 0 matches, but unable to check minimum required (Observation.category) due to lack of slicing validation (from http://open-nursing-core.org/StructureDefinition/onc-morse-fall-scale|0.1.0)
+ERROR: Observation/example-morse-fall-scale: Observation.category[0].coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
+ERROR: Observation/example-morse-fall-scale: Observation.code.coding[0].display: Wrong Display Name 'Morse Fall Scale total score' for http://loinc.org#59460-6. Valid display is one of 2 choices: 'Fall risk total [Morse Fall Scale]' (en-US) or 'Fall risk total [Morse Fall Scale]' (en-US) (for the language(s) 'en-US')
+WARNING: Observation/example-morse-fall-scale: Observation.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
+WARNING: Observation/example-morse-fall-scale: Observation.component[0].value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
+WARNING: Observation/example-morse-fall-scale: Observation.component[1].value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
+WARNING: Observation/example-morse-fall-scale: Observation.component[2].value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
+WARNING: Observation/example-morse-fall-scale: Observation.component[3].value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
+WARNING: Observation/example-morse-fall-scale: Observation.component[4].value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
+WARNING: Observation/example-morse-fall-scale: Observation.component[5].value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
+WARNING: Observation/example-morse-fall-scale: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated\resources\Observation-example-news2-assessment.json ==
+ERROR: Observation/example-news2-assessment: Observation.category[0]: Slicing cannot be evaluated: Could not match discriminator (coding) for slice Observation.category:nursing in profile http://open-nursing-core.org/StructureDefinition/onc-news2-assessment|0.1.0 - the discriminator [coding] does not have fixed value, binding or existence assertions
+INFORMATION: Observation/example-news2-assessment: Observation: Observation.category:nursing: Found 0 matches, but unable to check minimum required (Observation.category) due to lack of slicing validation (from http://open-nursing-core.org/StructureDefinition/onc-news2-assessment|0.1.0)
+ERROR: Observation/example-news2-assessment: Observation.category[0].coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
+ERROR: Observation/example-news2-assessment: Observation.code.coding[0].display: Wrong Display Name 'NEWS2 total score' for http://loinc.org#86585-7. Valid display is one of 2 choices: 'MDS v3.0 - RAI v1.17.2, OASIS E - Signs and symptoms of delirium (from CAM) during assessment period [CMS Assessment]' (en-US) or 'MDS v3.0 - RAI v1.17.2, OASIS E - Signs and symptoms of delirium (from CAM) during assessment period [CMS Assessment]' (en-US) (for the language(s) 'en-US')
+WARNING: Observation/example-news2-assessment: Observation.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
+ERROR: Observation/example-news2-assessment: Observation.component[5].code.coding[0].code: Unknown code '11454-5' in the CodeSystem 'http://loinc.org' version '2.81'
+WARNING: Observation/example-news2-assessment: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated\resources\Patient-patient-example.json ==
 == fsh-generated\resources\Practitioner-practitioner-example.json ==
 == fsh-generated\resources\Procedure-example-nursing-intervention.json ==
@@ -157,6 +194,25 @@ INFORMATION: StructureDefinition/onc-braden-scale-assessment: StructureDefinitio
 == fsh-generated\resources\StructureDefinition-onc-goal-evaluation.json ==
 ERROR: StructureDefinition/onc-goal-evaluation: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
 INFORMATION: StructureDefinition/onc-goal-evaluation: StructureDefinition.snapshot.element[14].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+== fsh-generated\resources\StructureDefinition-onc-housing-status.json ==
+ERROR: StructureDefinition/onc-housing-status: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
+INFORMATION: StructureDefinition/onc-housing-status: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+== fsh-generated\resources\StructureDefinition-onc-morse-fall-scale.json ==
+ERROR: StructureDefinition/onc-morse-fall-scale: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
+ERROR: StructureDefinition/onc-morse-fall-scale: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Morse Fall Scale total score' for http://loinc.org#59460-6. Valid display is one of 2 choices: 'Fall risk total [Morse Fall Scale]' (en-US) or 'Fall risk total [Morse Fall Scale]' (en-US) (for the language(s) 'en-US')
+ERROR: StructureDefinition/onc-morse-fall-scale: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Morse Fall Scale total score' for http://loinc.org#59460-6. Valid display is one of 2 choices: 'Fall risk total [Morse Fall Scale]' (en-US) or 'Fall risk total [Morse Fall Scale]' (en-US) (for the language(s) 'en-US')
+INFORMATION: StructureDefinition/onc-morse-fall-scale: StructureDefinition.differential.element[5].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/onc-morse-fall-scale: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/onc-morse-fall-scale: StructureDefinition.snapshot.element[49].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+== fsh-generated\resources\StructureDefinition-onc-news2-assessment.json ==
+ERROR: StructureDefinition/onc-news2-assessment: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
+ERROR: StructureDefinition/onc-news2-assessment: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'NEWS2 total score' for http://loinc.org#86585-7. Valid display is one of 2 choices: 'MDS v3.0 - RAI v1.17.2, OASIS E - Signs and symptoms of delirium (from CAM) during assessment period [CMS Assessment]' (en-US) or 'MDS v3.0 - RAI v1.17.2, OASIS E - Signs and symptoms of delirium (from CAM) during assessment period [CMS Assessment]' (en-US) (for the language(s) 'en-US')
+ERROR: StructureDefinition/onc-news2-assessment: StructureDefinition.snapshot.element[107].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '11454-5' in the CodeSystem 'http://loinc.org' version '2.81'
+ERROR: StructureDefinition/onc-news2-assessment: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'NEWS2 total score' for http://loinc.org#86585-7. Valid display is one of 2 choices: 'MDS v3.0 - RAI v1.17.2, OASIS E - Signs and symptoms of delirium (from CAM) during assessment period [CMS Assessment]' (en-US) or 'MDS v3.0 - RAI v1.17.2, OASIS E - Signs and symptoms of delirium (from CAM) during assessment period [CMS Assessment]' (en-US) (for the language(s) 'en-US')
+ERROR: StructureDefinition/onc-news2-assessment: StructureDefinition.differential.element[22].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '11454-5' in the CodeSystem 'http://loinc.org' version '2.81'
+INFORMATION: StructureDefinition/onc-news2-assessment: StructureDefinition.differential.element[5].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/onc-news2-assessment: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/onc-news2-assessment: StructureDefinition.snapshot.element[49].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated\resources\StructureDefinition-onc-nhs-patient.json ==
 WARNING: StructureDefinition.where(url = 'http://open-nursing-core.org/StructureDefinition/onc-nhs-patient'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-onc-nursing-assessment.json ==
@@ -175,9 +231,13 @@ INFORMATION: StructureDefinition/onc-nursing-problem: StructureDefinition.differ
 ERROR: StructureDefinition/onc-skintone-observation: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Fitzpatrick skin type' for http://loinc.org#66472-2. Valid display is one of 3 choices: 'During your life, altogether how many times have you injected drugs not prescribed by a doctor [PhenX]' (en-US), 'During your life, altogether how many times have you injected drugs not prescribed by a doctor [PhenX]' (en-US) or 'How many times injected nRate PhenX' (en-US) (for the language(s) 'en-US')
 ERROR: StructureDefinition/onc-skintone-observation: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Fitzpatrick skin type' for http://loinc.org#66472-2. Valid display is one of 3 choices: 'During your life, altogether how many times have you injected drugs not prescribed by a doctor [PhenX]' (en-US), 'During your life, altogether how many times have you injected drugs not prescribed by a doctor [PhenX]' (en-US) or 'How many times injected nRate PhenX' (en-US) (for the language(s) 'en-US')
 WARNING: StructureDefinition.where(url = 'http://open-nursing-core.org/StructureDefinition/onc-skintone-observation'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\ValueSet-acvpu-vs.json ==
 == fsh-generated\resources\ValueSet-goal-evaluation-valueset.json ==
 WARNING: ValueSet/goal-evaluation-valueset: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/goal-evaluation-valueset: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
+== fsh-generated\resources\ValueSet-housing-status-vs.json ==
+ERROR: ValueSet/housing-status-vs: ValueSet.compose.include[0].concept[2]: The code '160753008' is not valid in the system http://snomed.info/sct (Unknown code '160753008' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201')
+INFORMATION: ValueSet/housing-status-vs: ValueSet.compose.include[0].concept[3]: The display 'Lives in a nursing home' is not valid in the Code system 'Lives in a nursing home'. Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
 == fsh-generated\resources\ValueSet-nursing-intervention-valueset.json ==
 ERROR: ValueSet/nursing-intervention-valueset: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://hl7.org/fhir/sid/icnp'
 WARNING: ValueSet/nursing-intervention-valueset: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

@@ -16,7 +16,7 @@ Base profile for nursing assessments.
 
 **Usages:**
 
-* Derived from this Profile: [Open Nursing Core Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessment.md) and [Open Nursing Core Goal Evaluation](StructureDefinition-onc-goal-evaluation.md)
+* Derived from this Profile: [Open Nursing Core Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessment.md), [Open Nursing Core Goal Evaluation](StructureDefinition-onc-goal-evaluation.md), [ONC Housing Status Assessment](StructureDefinition-onc-housing-status.md), [ONC Morse Fall Scale Assessment](StructureDefinition-onc-morse-fall-scale.md) and [ONC NEWS2 Assessment](StructureDefinition-onc-news2-assessment.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-nursing-assessment)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-assessme
   "name" : "ONCNursingAssessment",
   "title" : "Open Nursing Core Assessment",
   "status" : "draft",
-  "date" : "2025-11-23T21:00:20+00:00",
+  "date" : "2025-11-23T22:00:06+00:00",
   "description" : "Base profile for nursing assessments.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

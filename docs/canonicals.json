@@ -42,6 +42,27 @@
     "name" : "ONCGoalEvaluation"
   },
   {
+    "id" : "onc-housing-status",
+    "type" : "StructureDefinition",
+    "url" : "http://open-nursing-core.org/StructureDefinition/onc-housing-status",
+    "version" : "0.1.0",
+    "name" : "ONCHousingStatus"
+  },
+  {
+    "id" : "onc-morse-fall-scale",
+    "type" : "StructureDefinition",
+    "url" : "http://open-nursing-core.org/StructureDefinition/onc-morse-fall-scale",
+    "version" : "0.1.0",
+    "name" : "ONCMorseFallScale"
+  },
+  {
+    "id" : "onc-news2-assessment",
+    "type" : "StructureDefinition",
+    "url" : "http://open-nursing-core.org/StructureDefinition/onc-news2-assessment",
+    "version" : "0.1.0",
+    "name" : "ONCNEWS2Assessment"
+  },
+  {
     "id" : "onc-nhs-patient",
     "type" : "StructureDefinition",
     "url" : "http://open-nursing-core.org/StructureDefinition/onc-nhs-patient",
@@ -91,11 +112,25 @@
     "name" : "ONCSkinToneObservation"
   },
   {
+    "id" : "acvpu-vs",
+    "type" : "ValueSet",
+    "url" : "http://open-nursing-core.org/ValueSet/acvpu-vs",
+    "version" : "0.1.0",
+    "name" : "ACVPUVS"
+  },
+  {
     "id" : "goal-evaluation-valueset",
     "type" : "ValueSet",
     "url" : "http://open-nursing-core.org/ValueSet/goal-evaluation-valueset",
     "version" : "0.1.0",
     "name" : "GoalEvaluationValueSet"
+  },
+  {
+    "id" : "housing-status-vs",
+    "type" : "ValueSet",
+    "url" : "http://open-nursing-core.org/ValueSet/housing-status-vs",
+    "version" : "0.1.0",
+    "name" : "HousingStatusVS"
   },
   {
     "id" : "nursing-intervention-valueset",

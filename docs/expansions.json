@@ -1,11 +1,83 @@
 {
   "resourceType" : "Bundle",
-  "id" : "3417118e-75e5-42aa-b17e-888219f26a5b",
+  "id" : "0a0f3f46-b568-4c94-80e9-09f326498177",
   "meta" : {
-    "lastUpdated" : "2025-11-23T21:00:20.973+00:00"
+    "lastUpdated" : "2025-11-23T22:00:06.949+00:00"
   },
   "type" : "collection",
   "entry" : [{
+    "fullUrl" : "http://open-nursing-core.org/ValueSet/acvpu-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 5 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://snomed.info/sct-248234008\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/248234008\">248234008</a></td><td>Mentally alert</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;248234008&quot;, &quot;display&quot;: &quot;Mentally alert&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;248234008&quot;&gt;&lt;display value=&quot;Mentally alert&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-130987000\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/130987000\">130987000</a></td><td>Acute confusion</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;130987000&quot;, &quot;display&quot;: &quot;Acute confusion&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;130987000&quot;&gt;&lt;display value=&quot;Acute confusion&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-300202002\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/300202002\">300202002</a></td><td>Responds to voice</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;300202002&quot;, &quot;display&quot;: &quot;Responds to voice&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;300202002&quot;&gt;&lt;display value=&quot;Responds to voice&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-450847001\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/450847001\">450847001</a></td><td>Responds to pain (finding)</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;450847001&quot;, &quot;display&quot;: &quot;Responds to pain (finding)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;450847001&quot;&gt;&lt;display value=&quot;Responds to pain (finding)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-422768004\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/422768004\">422768004</a></td><td>Unresponsive (finding)</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;422768004&quot;, &quot;display&quot;: &quot;Unresponsive (finding)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;422768004&quot;&gt;&lt;display value=&quot;Unresponsive (finding)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://open-nursing-core.org/ValueSet/acvpu-vs",
+      "version" : "0.1.0",
+      "name" : "ACVPUVS",
+      "title" : "ACVPU Value Set",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2025-11-23T22:00:06+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:316ca26b-2cd6-4d10-b32e-dec89fbfcdd3",
+        "timestamp" : "2025-11-23T22:01:30+00:00",
+        "total" : 5,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "248234008",
+          "display" : "Mentally alert"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "130987000",
+          "display" : "Acute confusion"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "300202002",
+          "display" : "Responds to voice"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "450847001",
+          "display" : "Responds to pain (finding)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "422768004",
+          "display" : "Unresponsive (finding)"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://open-nursing-core.org/ValueSet/goal-evaluation-valueset",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -18,10 +90,10 @@
       "name" : "GoalEvaluationValueSet",
       "title" : "Goal Evaluation Value Set",
       "status" : "draft",
-      "date" : "2025-11-23T21:00:20+00:00",
+      "date" : "2025-11-23T22:00:06+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:fc2a9c60-9125-4e45-9268-cc0568465b81",
-        "timestamp" : "2025-11-23T21:01:11+00:00",
+        "identifier" : "urn:uuid:b7896278-3014-4c63-9e67-732cca0e4159",
+        "timestamp" : "2025-11-23T22:01:28+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -62,6 +134,68 @@
     }
   },
   {
+    "fullUrl" : "http://open-nursing-core.org/ValueSet/housing-status-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://snomed.info/sct-32911000\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/32911000\">32911000</a></td><td>Homeless</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;32911000&quot;, &quot;display&quot;: &quot;Homeless&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;32911000&quot;&gt;&lt;display value=&quot;Homeless&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-105529008\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/105529008\">105529008</a></td><td>Lives alone</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;105529008&quot;, &quot;display&quot;: &quot;Lives alone&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;105529008&quot;&gt;&lt;display value=&quot;Lives alone&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-394923006\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/394923006\">394923006</a></td><td>Lives in a residential home (finding)</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;394923006&quot;, &quot;display&quot;: &quot;Lives in a residential home (finding)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;394923006&quot;&gt;&lt;display value=&quot;Lives in a residential home (finding)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://open-nursing-core.org/ValueSet/housing-status-vs",
+      "version" : "0.1.0",
+      "name" : "HousingStatusVS",
+      "title" : "Housing Status Value Set",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2025-11-23T22:00:06+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:e326265b-73ab-42db-bdcd-9c7a7d90ee0a",
+        "timestamp" : "2025-11-23T22:01:29+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "32911000",
+          "display" : "Homeless"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "105529008",
+          "display" : "Lives alone"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "394923006",
+          "display" : "Lives in a residential home (finding)"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://open-nursing-core.org/ValueSet/skintone-vs",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -74,10 +208,10 @@
       "name" : "SkinToneVS",
       "title" : "Fitzpatrick Skin Tone Value Set",
       "status" : "draft",
-      "date" : "2025-11-23T21:00:20+00:00",
+      "date" : "2025-11-23T22:00:06+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:f04d84b8-6307-477d-9281-a438b994fd32",
-        "timestamp" : "2025-11-23T21:01:12+00:00",
+        "identifier" : "urn:uuid:0a5b32d9-a3ae-466a-a38b-1b7f6e95ff6a",
+        "timestamp" : "2025-11-23T22:01:33+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{

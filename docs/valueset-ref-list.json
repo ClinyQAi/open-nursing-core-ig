@@ -1,6 +1,18 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://open-nursing-core.org/ValueSet/acvpu-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ACVPUVS",
+      "title" : "ACVPU Value Set",
+      "description" : "Codes representing the ACVPU (Alert, Confusion, Voice, Pain, Unresponsive) scale.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-onc-news2-assessment.html" : "ONC NEWS2 Assessment"
+    },
+    {
       "url" : "http://open-nursing-core.org/ValueSet/goal-evaluation-valueset",
       "version" : "0.1.0",
       "status" : "draft",
@@ -13,6 +25,18 @@
       "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation"
     },
     {
+      "url" : "http://open-nursing-core.org/ValueSet/housing-status-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "HousingStatusVS",
+      "title" : "Housing Status Value Set",
+      "description" : "Codes representing the housing status of a patient.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-onc-housing-status.html" : "ONC Housing Status Assessment"
+    },
+    {
       "url" : "http://open-nursing-core.org/ValueSet/nursing-intervention-valueset",
       "version" : "0.1.0",
       "status" : "draft",
@@ -22,8 +46,8 @@
       "systems" : ["http://hl7.org/fhir/sid/icnp", "http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-onc-nursing-intervention.html" : "Open Nursing Core Nursing Intervention",
-      "StructureDefinition-onc-nursing-care-plan.html" : "Open Nursing Core Nursing Care Plan"
+      "StructureDefinition-onc-nursing-care-plan.html" : "Open Nursing Core Nursing Care Plan",
+      "StructureDefinition-onc-nursing-intervention.html" : "Open Nursing Core Nursing Intervention"
     },
     {
       "url" : "http://open-nursing-core.org/ValueSet/nursing-problem-valueset",

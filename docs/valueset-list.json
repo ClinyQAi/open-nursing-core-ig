@@ -1,12 +1,30 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://open-nursing-core.org/ValueSet/acvpu-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ACVPUVS",
+      "title" : "ACVPU Value Set",
+      "description" : "Codes representing the ACVPU (Alert, Confusion, Voice, Pain, Unresponsive) scale.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
       "url" : "http://open-nursing-core.org/ValueSet/goal-evaluation-valueset",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "GoalEvaluationValueSet",
       "title" : "Goal Evaluation Value Set",
       "description" : "",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://open-nursing-core.org/ValueSet/housing-status-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "HousingStatusVS",
+      "title" : "Housing Status Value Set",
+      "description" : "Codes representing the housing status of a patient.",
       "systems" : ["http://snomed.info/sct"]
     },
     {

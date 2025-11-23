@@ -26,12 +26,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-onc-nursing-intervention.html" : "Open Nursing Core Nursing Intervention",
-      "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation",
-      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
+      "StructureDefinition-onc-news2-assessment.html" : "ONC NEWS2 Assessment",
       "StructureDefinition-onc-nursing-problem.html" : "Open Nursing Core Nursing Problem",
+      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
+      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation",
+      "StructureDefinition-onc-morse-fall-scale.html" : "ONC Morse Fall Scale Assessment",
+      "StructureDefinition-onc-housing-status.html" : "ONC Housing Status Assessment",
+      "StructureDefinition-onc-nursing-intervention.html" : "Open Nursing Core Nursing Intervention",
       "StructureDefinition-onc-braden-scale-assessment.html" : "Open Nursing Core Braden Scale Assessment",
-      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation"
+      "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-kind",
@@ -115,8 +118,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.232"],
       "uses" : {
       },
-      "StructureDefinition-onc-patient-goal.html" : "Open Nursing Core Patient Goal",
-      "StructureDefinition-onc-nursing-care-plan.html" : "Open Nursing Core Nursing Care Plan"
+      "StructureDefinition-onc-nursing-care-plan.html" : "Open Nursing Core Nursing Care Plan",
+      "StructureDefinition-onc-patient-goal.html" : "Open Nursing Core Patient Goal"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-category",
@@ -228,10 +231,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation",
+      "StructureDefinition-onc-news2-assessment.html" : "ONC NEWS2 Assessment",
       "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
+      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation",
+      "StructureDefinition-onc-morse-fall-scale.html" : "ONC Morse Fall Scale Assessment",
+      "StructureDefinition-onc-housing-status.html" : "ONC Housing Status Assessment",
       "StructureDefinition-onc-braden-scale-assessment.html" : "Open Nursing Core Braden Scale Assessment",
-      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation"
+      "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/device-action",
@@ -357,15 +363,18 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-onc-patient-goal.html" : "Open Nursing Core Patient Goal",
-      "StructureDefinition-onc-nursing-intervention.html" : "Open Nursing Core Nursing Intervention",
-      "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation",
-      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
+      "StructureDefinition-onc-news2-assessment.html" : "ONC NEWS2 Assessment",
+      "StructureDefinition-onc-nhs-patient.html" : "ONC NHS Patient",
       "StructureDefinition-onc-nursing-care-plan.html" : "Open Nursing Core Nursing Care Plan",
       "StructureDefinition-onc-nursing-problem.html" : "Open Nursing Core Nursing Problem",
-      "StructureDefinition-onc-nhs-patient.html" : "ONC NHS Patient",
+      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
+      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation",
+      "StructureDefinition-onc-patient-goal.html" : "Open Nursing Core Patient Goal",
+      "StructureDefinition-onc-morse-fall-scale.html" : "ONC Morse Fall Scale Assessment",
+      "StructureDefinition-onc-housing-status.html" : "ONC Housing Status Assessment",
+      "StructureDefinition-onc-nursing-intervention.html" : "Open Nursing Core Nursing Intervention",
       "StructureDefinition-onc-braden-scale-assessment.html" : "Open Nursing Core Braden Scale Assessment",
-      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation"
+      "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -438,10 +447,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.403"],
       "uses" : {
       },
-      "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation",
+      "StructureDefinition-onc-news2-assessment.html" : "ONC NEWS2 Assessment",
       "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
+      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation",
+      "StructureDefinition-onc-morse-fall-scale.html" : "ONC Morse Fall Scale Assessment",
+      "StructureDefinition-onc-housing-status.html" : "ONC Housing Status Assessment",
       "StructureDefinition-onc-braden-scale-assessment.html" : "Open Nursing Core Braden Scale Assessment",
-      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation"
+      "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -455,11 +467,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.396"],
       "uses" : {
       },
-      "StructureDefinition-onc-patient-goal.html" : "Open Nursing Core Patient Goal",
-      "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation",
+      "StructureDefinition-onc-news2-assessment.html" : "ONC NEWS2 Assessment",
       "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
+      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation",
+      "StructureDefinition-onc-patient-goal.html" : "Open Nursing Core Patient Goal",
+      "StructureDefinition-onc-morse-fall-scale.html" : "ONC Morse Fall Scale Assessment",
+      "StructureDefinition-onc-housing-status.html" : "ONC Housing Status Assessment",
       "StructureDefinition-onc-braden-scale-assessment.html" : "Open Nursing Core Braden Scale Assessment",
-      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation"
+      "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -475,10 +490,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
-      "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation",
+      "StructureDefinition-onc-news2-assessment.html" : "ONC NEWS2 Assessment",
       "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
+      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation",
+      "StructureDefinition-onc-morse-fall-scale.html" : "ONC Morse Fall Scale Assessment",
+      "StructureDefinition-onc-housing-status.html" : "ONC Housing Status Assessment",
       "StructureDefinition-onc-braden-scale-assessment.html" : "Open Nursing Core Braden Scale Assessment",
-      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation"
+      "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -492,10 +510,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
-      "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation",
+      "StructureDefinition-onc-news2-assessment.html" : "ONC NEWS2 Assessment",
       "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
+      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation",
+      "StructureDefinition-onc-morse-fall-scale.html" : "ONC Morse Fall Scale Assessment",
+      "StructureDefinition-onc-housing-status.html" : "ONC Housing Status Assessment",
       "StructureDefinition-onc-braden-scale-assessment.html" : "Open Nursing Core Braden Scale Assessment",
-      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation"
+      "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -509,10 +530,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
-      "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation",
+      "StructureDefinition-onc-news2-assessment.html" : "ONC NEWS2 Assessment",
       "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
+      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation",
+      "StructureDefinition-onc-morse-fall-scale.html" : "ONC Morse Fall Scale Assessment",
+      "StructureDefinition-onc-housing-status.html" : "ONC Housing Status Assessment",
       "StructureDefinition-onc-braden-scale-assessment.html" : "Open Nursing Core Braden Scale Assessment",
-      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation"
+      "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
@@ -624,6 +648,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.59"],
       "uses" : {
       },
+      "StructureDefinition-onc-news2-assessment.html" : "ONC NEWS2 Assessment",
+      "StructureDefinition-onc-morse-fall-scale.html" : "ONC Morse Fall Scale Assessment",
       "StructureDefinition-onc-braden-scale-assessment.html" : "Open Nursing Core Braden Scale Assessment"
     },
     {
@@ -641,10 +667,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
-      "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation",
+      "StructureDefinition-onc-news2-assessment.html" : "ONC NEWS2 Assessment",
       "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
+      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation",
+      "StructureDefinition-onc-morse-fall-scale.html" : "ONC Morse Fall Scale Assessment",
+      "StructureDefinition-onc-housing-status.html" : "ONC Housing Status Assessment",
       "StructureDefinition-onc-braden-scale-assessment.html" : "Open Nursing Core Braden Scale Assessment",
-      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation"
+      "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -660,10 +689,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
-      "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation",
+      "StructureDefinition-onc-news2-assessment.html" : "ONC NEWS2 Assessment",
       "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
+      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation",
+      "StructureDefinition-onc-morse-fall-scale.html" : "ONC Morse Fall Scale Assessment",
+      "StructureDefinition-onc-housing-status.html" : "ONC Housing Status Assessment",
       "StructureDefinition-onc-braden-scale-assessment.html" : "Open Nursing Core Braden Scale Assessment",
-      "StructureDefinition-onc-skintone-observation.html" : "ONC Skin Tone Observation"
+      "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/request-status",
@@ -680,6 +712,18 @@
       "StructureDefinition-onc-nursing-care-plan.html" : "Open Nursing Core Nursing Care Plan"
     },
     {
+      "url" : "http://open-nursing-core.org/ValueSet/acvpu-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ACVPUVS",
+      "title" : "ACVPU Value Set",
+      "description" : "Codes representing the ACVPU (Alert, Confusion, Voice, Pain, Unresponsive) scale.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-onc-news2-assessment.html" : "ONC NEWS2 Assessment"
+    },
+    {
       "url" : "http://open-nursing-core.org/ValueSet/goal-evaluation-valueset",
       "version" : "0.1.0",
       "status" : "draft",
@@ -692,6 +736,18 @@
       "StructureDefinition-onc-goal-evaluation.html" : "Open Nursing Core Goal Evaluation"
     },
     {
+      "url" : "http://open-nursing-core.org/ValueSet/housing-status-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "HousingStatusVS",
+      "title" : "Housing Status Value Set",
+      "description" : "Codes representing the housing status of a patient.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-onc-housing-status.html" : "ONC Housing Status Assessment"
+    },
+    {
       "url" : "http://open-nursing-core.org/ValueSet/nursing-intervention-valueset",
       "version" : "0.1.0",
       "status" : "draft",
@@ -701,8 +757,8 @@
       "systems" : ["http://hl7.org/fhir/sid/icnp", "http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-onc-nursing-intervention.html" : "Open Nursing Core Nursing Intervention",
-      "StructureDefinition-onc-nursing-care-plan.html" : "Open Nursing Core Nursing Care Plan"
+      "StructureDefinition-onc-nursing-care-plan.html" : "Open Nursing Core Nursing Care Plan",
+      "StructureDefinition-onc-nursing-intervention.html" : "Open Nursing Core Nursing Intervention"
     },
     {
       "url" : "http://open-nursing-core.org/ValueSet/nursing-problem-valueset",

@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-care-pla
   "name" : "ONCNursingCarePlan",
   "title" : "Open Nursing Core Nursing Care Plan",
   "status" : "draft",
-  "date" : "2025-11-23T21:00:20+00:00",
+  "date" : "2025-11-23T22:00:06+00:00",
   "description" : "Nursing care plan.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

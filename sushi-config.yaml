@@ -1,5 +1,6 @@
 id: onc.ig
-canonical: http://open-nursing-core.org
+# Updated to your real GitHub Pages URL to fix validation errors
+canonical: https://clinyqai.github.io/open-nursing-core-ig
 name: OpenNursingCoreIG
 title: Open Nursing Core FHIR Implementation Guide (ONC-IG)
 status: draft
@@ -10,3 +11,6 @@ description: "Foundational FHIR profiles for the nursing process (ADPIE)."
 license: MIT
 copyrightYear: 2025+
 releaseLabel: ci-build
+# This creates the history file locally to stop the "Unable to compare" error
+history:
+  current: https://clinyqai.github.io/open-nursing-core-ig

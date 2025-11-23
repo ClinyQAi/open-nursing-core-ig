@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "OpenNursingCoreIG"] ; # 
   fhir:title [ fhir:v "Open Nursing Core FHIR Implementation Guide (ONC-IG)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-11-23T21:00:20+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-23T22:00:06+00:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "Foundational FHIR profiles for the nursing process (ADPIE)."] ; # 
   fhir:packageId [ fhir:v "onc.ig"] ; # 
   fhir:license [ fhir:v "MIT"] ; # 
@@ -1282,6 +1282,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://open-nursing-core.org/ValueSet/acvpu-vs> ;
+         fhir:reference [ fhir:v "ValueSet/acvpu-vs" ]
+       ] ;
+       fhir:name [ fhir:v "ACVPU Value Set" ] ;
+       fhir:description [ fhir:v "Codes representing the ACVPU (Alert, Confusion, Voice, Pain, Unresponsive) scale." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "Observation"
          ]
        ] ) ;
@@ -1315,6 +1336,69 @@
          a fhir:Canonical ;
          fhir:v "http://open-nursing-core.org/StructureDefinition/onc-goal-evaluation"^^xsd:anyURI ;
          fhir:l <http://open-nursing-core.org/StructureDefinition/onc-goal-evaluation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://open-nursing-core.org/Observation/example-housing-status> ;
+         fhir:reference [ fhir:v "Observation/example-housing-status" ]
+       ] ;
+       fhir:name [ fhir:v "example-housing-status" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://open-nursing-core.org/StructureDefinition/onc-housing-status"^^xsd:anyURI ;
+         fhir:l <http://open-nursing-core.org/StructureDefinition/onc-housing-status>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://open-nursing-core.org/Observation/example-morse-fall-scale> ;
+         fhir:reference [ fhir:v "Observation/example-morse-fall-scale" ]
+       ] ;
+       fhir:name [ fhir:v "example-morse-fall-scale" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://open-nursing-core.org/StructureDefinition/onc-morse-fall-scale"^^xsd:anyURI ;
+         fhir:l <http://open-nursing-core.org/StructureDefinition/onc-morse-fall-scale>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://open-nursing-core.org/Observation/example-news2-assessment> ;
+         fhir:reference [ fhir:v "Observation/example-news2-assessment" ]
+       ] ;
+       fhir:name [ fhir:v "example-news2-assessment" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://open-nursing-core.org/StructureDefinition/onc-news2-assessment"^^xsd:anyURI ;
+         fhir:l <http://open-nursing-core.org/StructureDefinition/onc-news2-assessment>
        ]
      ] [
        fhir:extension ( [
@@ -1450,6 +1534,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://open-nursing-core.org/ValueSet/housing-status-vs> ;
+         fhir:reference [ fhir:v "ValueSet/housing-status-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Housing Status Value Set" ] ;
+       fhir:description [ fhir:v "Codes representing the housing status of a patient." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
@@ -1520,6 +1625,69 @@
        ] ;
        fhir:name [ fhir:v "Observation Goal Reference" ] ;
        fhir:description [ fhir:v "Reference to the goal that is being evaluated." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://open-nursing-core.org/StructureDefinition/onc-housing-status> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-housing-status" ]
+       ] ;
+       fhir:name [ fhir:v "ONC Housing Status Assessment" ] ;
+       fhir:description [ fhir:v "Assessment of the patient's housing status." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://open-nursing-core.org/StructureDefinition/onc-morse-fall-scale> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-morse-fall-scale" ]
+       ] ;
+       fhir:name [ fhir:v "ONC Morse Fall Scale Assessment" ] ;
+       fhir:description [ fhir:v "Assessment of fall risk using the Morse Fall Scale." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://open-nursing-core.org/StructureDefinition/onc-news2-assessment> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-news2-assessment" ]
+       ] ;
+       fhir:name [ fhir:v "ONC NEWS2 Assessment" ] ;
+       fhir:description [ fhir:v "National Early Warning Score 2 (NEWS2) assessment." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

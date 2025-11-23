@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-interven
   "name" : "ONCNursingIntervention",
   "title" : "Open Nursing Core Nursing Intervention",
   "status" : "draft",
-  "date" : "2025-11-23T21:00:20+00:00",
+  "date" : "2025-11-23T22:00:06+00:00",
   "description" : "Nursing intervention performed.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

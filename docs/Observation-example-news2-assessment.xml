@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="example-news2-assessment"/>
+  <meta>
+    <profile value="http://open-nursing-core.org/StructureDefinition/onc-news2-assessment"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation example-news2-assessment</b></p><a name="example-news2-assessment"> </a><a name="hcexample-news2-assessment"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-onc-news2-assessment.html">ONC NEWS2 Assessment</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category nursing}">nursing</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 86585-7}">NEWS2 total score</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">John Smith  Male, DoB Unknown</a></p><p><b>performer</b>: <a href="Practitioner-practitioner-example.html">Practitioner Florence Nightingale </a></p><p><b>value</b>: 5 {score}<span style="background: LightGoldenRodYellow"> (Details: UCUM  code{score} = '{score}')</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 9279-1}">Respiratory rate</span></p><p><b>value</b>: 22 /min<span style="background: LightGoldenRodYellow"> (Details: UCUM  code/min = '/min')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 2708-6}">Oxygen saturation in Arterial blood</span></p><p><b>value</b>: 95 %<span style="background: LightGoldenRodYellow"> (Details: UCUM  code% = '%')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 8310-5}">Body temperature</span></p><p><b>value</b>: 38.5 Cel<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeCel = 'Cel')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 8480-6}">Systolic blood pressure</span></p><p><b>value</b>: 100 mm[Hg]<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 8867-4}">Heart rate</span></p><p><b>value</b>: 100 /min<span style="background: LightGoldenRodYellow"> (Details: UCUM  code/min = '/min')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 11454-5}">11454-5</span></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 248234008}">Mentally alert</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 72274-4}">t(15;17)(q24.1;q21.1)(PML,RARA) fusion transcript/control transcript [# Ratio] in Blood or Tissue by Molecular genetics method</span></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 373066001}">Yes</span></p></blockquote></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="nursing"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="86585-7"/>
+      <display value="NEWS2 total score"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patient-example"/>
+  </subject>
+  <performer>
+    <reference value="Practitioner/practitioner-example"/>
+  </performer>
+  <valueQuantity>
+    <value value="5"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="{score}"/>
+  </valueQuantity>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="9279-1"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="22"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="/min"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2708-6"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="95"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="%"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8310-5"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="38.5"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="Cel"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8480-6"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="100"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mm[Hg]"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8867-4"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="100"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="/min"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="11454-5"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="248234008"/>
+        <display value="Mentally alert"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="72274-4"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="373066001"/>
+        <display value="Yes"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

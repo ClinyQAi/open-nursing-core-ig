@@ -35,7 +35,7 @@ This project is inspired by the academic and research work on the Minimum Core I
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "draft",
-  "date" : "2025-11-23T21:00:20+00:00",
+  "date" : "2025-11-23T22:00:06+00:00",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE).",
   "packageId" : "onc.ig",
   "license" : "MIT",
@@ -728,6 +728,20 @@ This project is inspired by the academic and research work on the Minimum Core I
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/acvpu-vs"
+        },
+        "name" : "ACVPU Value Set",
+        "description" : "Codes representing the ACVPU (Alert, Confusion, Voice, Pain, Unresponsive) scale.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Observation"
           }
         ],
@@ -749,6 +763,45 @@ This project is inspired by the academic and research work on the Minimum Core I
         },
         "name" : "example-goal-evaluation",
         "exampleCanonical" : "http://open-nursing-core.org/StructureDefinition/onc-goal-evaluation"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/example-housing-status"
+        },
+        "name" : "example-housing-status",
+        "exampleCanonical" : "http://open-nursing-core.org/StructureDefinition/onc-housing-status"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/example-morse-fall-scale"
+        },
+        "name" : "example-morse-fall-scale",
+        "exampleCanonical" : "http://open-nursing-core.org/StructureDefinition/onc-morse-fall-scale"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/example-news2-assessment"
+        },
+        "name" : "example-news2-assessment",
+        "exampleCanonical" : "http://open-nursing-core.org/StructureDefinition/onc-news2-assessment"
       },
       {
         "extension" : [
@@ -834,6 +887,20 @@ This project is inspired by the academic and research work on the Minimum Core I
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/housing-status-vs"
+        },
+        "name" : "Housing Status Value Set",
+        "description" : "Codes representing the housing status of a patient.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:extension"
           }
         ],
@@ -882,6 +949,48 @@ This project is inspired by the academic and research work on the Minimum Core I
         },
         "name" : "Observation Goal Reference",
         "description" : "Reference to the goal that is being evaluated.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-housing-status"
+        },
+        "name" : "ONC Housing Status Assessment",
+        "description" : "Assessment of the patient's housing status.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-morse-fall-scale"
+        },
+        "name" : "ONC Morse Fall Scale Assessment",
+        "description" : "Assessment of fall risk using the Morse Fall Scale.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-news2-assessment"
+        },
+        "name" : "ONC NEWS2 Assessment",
+        "description" : "National Early Warning Score 2 (NEWS2) assessment.",
         "exampleBoolean" : false
       },
       {

@@ -1,0 +1,38 @@
+{
+  "resourceType" : "Observation",
+  "id" : "example-housing-status",
+  "meta" : {
+    "profile" : ["http://open-nursing-core.org/StructureDefinition/onc-housing-status"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation example-housing-status</b></p><a name=\"example-housing-status\"> </a><a name=\"hcexample-housing-status\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onc-housing-status.html\">ONC Housing Status Assessment</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category nursing}\">nursing</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 71802-3}\">Housing status</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">John Smith  Male, DoB Unknown</a></p><p><b>performer</b>: <a href=\"Practitioner-practitioner-example.html\">Practitioner Florence Nightingale </a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 32911000}\">Homeless</span></p></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "nursing"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "71802-3",
+      "display" : "Housing status"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/patient-example"
+  },
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-example"
+  }],
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "32911000",
+      "display" : "Homeless"
+    }]
+  }
+}

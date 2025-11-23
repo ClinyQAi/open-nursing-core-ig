@@ -54,7 +54,7 @@ This value set contains 6 concepts
   "name" : "SkinToneVS",
   "title" : "Fitzpatrick Skin Tone Value Set",
   "status" : "draft",
-  "date" : "2025-11-23T21:00:20+00:00",
+  "date" : "2025-11-23T22:00:06+00:00",
   "description" : "Values for Fitzpatrick Skin Type I-VI using standard SNOMED CT codes.",
   "compose" : {
     "include" : [

@@ -13,6 +13,9 @@ These define constraints on FHIR resources for systems conforming to this implem
 
 | | |
 | :--- | :--- |
+| [ONC Housing Status Assessment](StructureDefinition-onc-housing-status.md) | Assessment of the patient's housing status. |
+| [ONC Morse Fall Scale Assessment](StructureDefinition-onc-morse-fall-scale.md) | Assessment of fall risk using the Morse Fall Scale. |
+| [ONC NEWS2 Assessment](StructureDefinition-onc-news2-assessment.md) | National Early Warning Score 2 (NEWS2) assessment. |
 | [ONC NHS Patient](StructureDefinition-onc-nhs-patient.md) | An NHS-specific patient profile that mandates the inclusion of ethnicity data for health equity analysis. |
 | [ONC Skin Tone Observation](StructureDefinition-onc-skintone-observation.md) | Observation for Fitzpatrick Skin Type to support equity in assessment interpretation. |
 | [Open Nursing Core Assessment](StructureDefinition-onc-nursing-assessment.md) | Base profile for nursing assessments. |
@@ -39,8 +42,10 @@ These define sets of codes used by systems conforming to this implementation gui
 
 | | |
 | :--- | :--- |
+| [ACVPU Value Set](ValueSet-acvpu-vs.md) | Codes representing the ACVPU (Alert, Confusion, Voice, Pain, Unresponsive) scale. |
 | [Fitzpatrick Skin Tone Value Set](ValueSet-skintone-vs.md) | Values for Fitzpatrick Skin Type I-VI using standard SNOMED CT codes. |
 | [Goal Evaluation Value Set](ValueSet-goal-evaluation-valueset.md) |  |
+| [Housing Status Value Set](ValueSet-housing-status-vs.md) | Codes representing the housing status of a patient. |
 | [Nursing Intervention Value Set](ValueSet-nursing-intervention-valueset.md) |  |
 | [Nursing Problem Value Set](ValueSet-nursing-problem-valueset.md) |  |
 
@@ -60,6 +65,9 @@ These are example instances that show what data produced and consumed by systems
 | :--- | :--- |
 | [example-braden-scale](Observation-example-braden-scale.md) |  |
 | [example-goal-evaluation](Observation-example-goal-evaluation.md) |  |
+| [example-housing-status](Observation-example-housing-status.md) |  |
+| [example-morse-fall-scale](Observation-example-morse-fall-scale.md) |  |
+| [example-news2-assessment](Observation-example-news2-assessment.md) |  |
 | [example-nursing-care-plan](CarePlan-example-nursing-care-plan.md) |  |
 | [example-nursing-intervention](Procedure-example-nursing-intervention.md) |  |
 | [example-nursing-problem](Condition-example-nursing-problem.md) |  |

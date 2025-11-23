@@ -11,7 +11,7 @@
   <name value="OpenNursingCoreIG"/>
   <title value="Open Nursing Core FHIR Implementation Guide (ONC-IG)"/>
   <status value="draft"/>
-  <date value="2025-11-23T21:00:20+00:00"/>
+  <date value="2025-11-23T22:00:06+00:00"/>
   <description value="Foundational FHIR profiles for the nursing process (ADPIE)."/>
   <packageId value="onc.ig"/>
   <license value="MIT"/>
@@ -438,6 +438,17 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/acvpu-vs"/>
+      </reference>
+      <name value="ACVPU Value Set"/>
+      <description value="Codes representing the ACVPU (Alert, Confusion, Voice, Pain, Unresponsive) scale."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -455,6 +466,36 @@
       </reference>
       <name value="example-goal-evaluation"/>
       <exampleCanonical value="http://open-nursing-core.org/StructureDefinition/onc-goal-evaluation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-housing-status"/>
+      </reference>
+      <name value="example-housing-status"/>
+      <exampleCanonical value="http://open-nursing-core.org/StructureDefinition/onc-housing-status"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-morse-fall-scale"/>
+      </reference>
+      <name value="example-morse-fall-scale"/>
+      <exampleCanonical value="http://open-nursing-core.org/StructureDefinition/onc-morse-fall-scale"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-news2-assessment"/>
+      </reference>
+      <name value="example-news2-assessment"/>
+      <exampleCanonical value="http://open-nursing-core.org/StructureDefinition/onc-news2-assessment"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -520,6 +561,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/housing-status-vs"/>
+      </reference>
+      <name value="Housing Status Value Set"/>
+      <description value="Codes representing the housing status of a patient."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -558,6 +610,39 @@
       </reference>
       <name value="Observation Goal Reference"/>
       <description value="Reference to the goal that is being evaluated."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onc-housing-status"/>
+      </reference>
+      <name value="ONC Housing Status Assessment"/>
+      <description value="Assessment of the patient's housing status."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onc-morse-fall-scale"/>
+      </reference>
+      <name value="ONC Morse Fall Scale Assessment"/>
+      <description value="Assessment of fall risk using the Morse Fall Scale."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onc-news2-assessment"/>
+      </reference>
+      <name value="ONC NEWS2 Assessment"/>
+      <description value="National Early Warning Score 2 (NEWS2) assessment."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

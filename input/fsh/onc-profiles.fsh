@@ -27,6 +27,7 @@ Description: "Braden Scale assessment for pressure injury risk."
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
+* component ^slicing.ordered = false
 * component contains
     sensoryPerception 1..1 MS and
     moisture 1..1 MS and

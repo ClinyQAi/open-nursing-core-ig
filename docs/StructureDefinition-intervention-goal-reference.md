@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-intervention-goal-re
   "name" : "InterventionGoalReference",
   "title" : "Intervention Goal Reference",
   "status" : "draft",
-  "date" : "2025-11-23T21:00:20+00:00",
+  "date" : "2025-11-23T22:00:06+00:00",
   "description" : "Reference to the goal this intervention addresses.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

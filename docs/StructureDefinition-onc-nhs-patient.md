@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nhs-patient.csv)
   "name" : "ONCNHSPatient",
   "title" : "ONC NHS Patient",
   "status" : "draft",
-  "date" : "2025-11-23T21:00:20+00:00",
+  "date" : "2025-11-23T22:00:06+00:00",
   "description" : "An NHS-specific patient profile that mandates the inclusion of ethnicity data for health equity analysis.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
