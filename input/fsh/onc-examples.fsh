@@ -1,110 +1,116 @@
 // =============================================================================
-// Example: Nursing Assessment
+// Example Patient and Practitioner
 // =============================================================================
-Instance: ExampleNursingAssessment
-InstanceOf: ONCNursingAssessment
+Instance: patient-example
+InstanceOf: Patient
 Usage: #example
-Title: "Example Nursing Assessment"
-Description: "An example of a basic nursing assessment observation"
-* status = #final
-* category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#nursing
-* code = http://snomed.info/sct#225597009 "Pain assessment"
-* subject = Reference(Patient/example-patient)
-* performer = Reference(Practitioner/example-nurse)
-* effectiveDateTime = "2025-11-21T08:00:00Z"
-* valueCodeableConcept = http://snomed.info/sct#76948002 "Severe pain"
+* name.family = "Smith"
+* name.given = "John"
+* gender = #male
+
+Instance: practitioner-example
+InstanceOf: Practitioner
+Usage: #example
+* name.family = "Nightingale"
+* name.given = "Florence"
 
 // =============================================================================
-// Example: Braden Scale Assessment
+// Example 1: A Nursing Problem
 // =============================================================================
-Instance: ExampleBradenScale
-InstanceOf: ONCBradenScaleAssessment
-Usage: #example
-Title: "Example Braden Scale Assessment"
-Description: "An example of a Braden Scale pressure injury risk assessment"
-* status = #final
-* category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#nursing
-* code = http://loinc.org#9017-7 "Braden Scale total score"
-* subject = Reference(Patient/example-patient)
-* performer = Reference(Practitioner/example-nurse)
-* effectiveDateTime = "2025-11-21T08:00:00Z"
-* valueQuantity = 14 '{score}' "score"
-* valueQuantity.system = "http://unitsofmeasure.org"
-
-// =============================================================================
-// Example: Nursing Problem
-// =============================================================================
-Instance: ExampleNursingProblem
+Instance: example-nursing-problem
 InstanceOf: ONCNursingProblem
 Usage: #example
-Title: "Example Nursing Problem"
-Description: "An example of a nursing diagnosis"
-* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
-* category = http://open-nursing-core.org/CodeSystem/onc-problem-type#nursing-diagnosis
-* code = http://snomed.info/sct#161891005 "Impaired skin integrity"
-* subject = Reference(Patient/example-patient)
-* onsetDateTime = "2025-11-20"
+* subject = Reference(patient-example)
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
+* category = http://open-nursing-core.org/CodeSystem/onc-problem-type#nursing-diagnosis "Nursing Diagnosis"
+* code = http://snomed.info/sct#162828007 "Risk of falls (finding)"
 
 // =============================================================================
-// Example: Patient Goal
+// Example 2: A Patient Goal
 // =============================================================================
-Instance: ExamplePatientGoal
+Instance: example-patient-goal
 InstanceOf: ONCPatientGoal
 Usage: #example
-Title: "Example Patient Goal"
-Description: "An example of a patient-centered goal"
 * lifecycleStatus = #active
-* description.text = "Patient will maintain intact skin throughout hospitalization"
-* subject = Reference(Patient/example-patient)
-* addresses = Reference(ExampleNursingProblem)
-* target.measure = http://loinc.org#39107-8 "Braden Scale panel"
-* target.detailString = "Maintain Braden score above 18"
+* subject = Reference(patient-example)
+* description.text = "Patient will remain free from falls throughout the hospital stay."
+* addresses = Reference(example-nursing-problem)
 
 // =============================================================================
-// Example: Nursing Intervention
+// Example 3: A Nursing Intervention
 // =============================================================================
-Instance: ExampleNursingIntervention
+Instance: example-nursing-intervention
 InstanceOf: ONCNursingIntervention
 Usage: #example
-Title: "Example Nursing Intervention"
-Description: "An example of a nursing intervention"
 * status = #completed
-* code = http://snomed.info/sct#225358003 "Wound care"
-* subject = Reference(Patient/example-patient)
-* performedDateTime = "2025-11-21T10:00:00Z"
-* performer.actor = Reference(Practitioner/example-nurse)
-* reasonReference = Reference(ExamplePatientGoal)
+* subject = Reference(patient-example)
+* performer.actor = Reference(practitioner-example)
+* code = http://hl7.org/fhir/sid/icnp#10012345 "Patient Education"
 
 // =============================================================================
-// Example: Goal Evaluation
+// Example 4: A Braden Scale Assessment
 // =============================================================================
-Instance: ExampleGoalEvaluation
+Instance: example-braden-scale
+InstanceOf: ONCBradenScaleAssessment
+Usage: #example
+* status = #final
+* subject = Reference(patient-example)
+* performer = Reference(practitioner-example)
+* category[nursing].coding = http://terminology.hl7.org/CodeSystem/observation-category#nursing
+* code = http://loinc.org#9017-7 "Braden Scale total score"
+// FIX: Removed the extra "score" string
+* valueQuantity = 18 '{score}'
+
+// FIX: Removed the extra "score" string from all components below
+* component[sensoryPerception]
+  * code = http://loinc.org#74012-8 "Sensory Perception"
+  * valueQuantity = 3 '{score}'
+
+* component[moisture]
+  * code = http://loinc.org#74013-6 "Moisture"
+  * valueQuantity = 4 '{score}'
+
+* component[activity]
+  * code = http://loinc.org#74014-4 "Activity"
+  * valueQuantity = 2 '{score}'
+
+* component[mobility]
+  * code = http://loinc.org#74015-1 "Mobility"
+  * valueQuantity = 3 '{score}'
+
+* component[nutrition]
+  * code = http://loinc.org#74016-9 "Nutrition"
+  * valueQuantity = 3 '{score}'
+
+* component[frictionAndShear]
+  * code = http://loinc.org#74017-7 "Friction and Shear"
+  * valueQuantity = 3 '{score}'
+
+// =============================================================================
+// Example 5: A Goal Evaluation
+// =============================================================================
+Instance: example-goal-evaluation
 InstanceOf: ONCGoalEvaluation
 Usage: #example
-Title: "Example Goal Evaluation"
-Description: "An example of evaluating progress towards a goal"
 * status = #final
-* category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#nursing
+* subject = Reference(patient-example)
+* performer = Reference(practitioner-example)
+* category[nursing].coding = http://terminology.hl7.org/CodeSystem/observation-category#nursing
 * code = http://snomed.info/sct#385633008 "Goal achieved (finding)"
-* subject = Reference(Patient/example-patient)
-* performer = Reference(Practitioner/example-nurse)
-* effectiveDateTime = "2025-11-21T16:00:00Z"
-* valueCodeableConcept = http://snomed.info/sct#385633008 "Goal achieved"
-* derivedFrom = Reference(ExamplePatientGoal)
+// FIX: Added the required value
+* valueCodeableConcept = http://snomed.info/sct#385633008 "Goal achieved (finding)"
+* extension[observation-goal-reference].valueReference = Reference(example-patient-goal)
 
 // =============================================================================
-// Example: Nursing Care Plan
+// Example 6: A Full Nursing Care Plan
 // =============================================================================
-Instance: ExampleNursingCarePlan
+Instance: example-nursing-care-plan
 InstanceOf: ONCNursingCarePlan
 Usage: #example
-Title: "Example Nursing Care Plan"
-Description: "An example of a comprehensive nursing care plan"
 * status = #active
 * intent = #plan
-* subject = Reference(Patient/example-patient)
-* addresses = Reference(ExampleNursingProblem)
-* goal = Reference(ExamplePatientGoal)
-* activity.detail.kind = #ServiceRequest
+* subject = Reference(patient-example)
+* addresses = Reference(example-nursing-problem)
+* goal = Reference(example-patient-goal)
+* activity.detail.code = http://hl7.org/fhir/sid/icnp#10012345 "Patient Education"
 * activity.detail.status = #completed
-* activity.detail.description = "Provide wound care and monitor skin integrity"

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="nursing-intervention-valueset"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet nursing-intervention-valueset</b></p><a name="nursing-intervention-valueset"> </a><a name="hcnursing-intervention-valueset"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<code>http://hl7.org/fhir/sid/icnp</code><span title="Version is not explicity stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a 10045153</li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicity stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a 71388002 (Procedure)</li></ul></div>
+  </text>
+  <url value="http://open-nursing-core.org/ValueSet/nursing-intervention-valueset"/>
+  <version value="0.1.0"/>
+  <name value="NursingInterventionValueSet"/>
+  <title value="Nursing Intervention Value Set"/>
+  <status value="draft"/>
+  <date value="2025-11-23T02:33:16+00:00"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icnp"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="10045153"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="71388002"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

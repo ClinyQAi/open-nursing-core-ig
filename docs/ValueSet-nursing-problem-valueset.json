@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "nursing-problem-valueset",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nursing-problem-valueset</b></p><a name=\"nursing-problem-valueset\"> </a><a name=\"hcnursing-problem-valueset\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<code>http://hl7.org/fhir/sid/icnp</code><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a 10045151</li><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a 409586006 (Complaint (finding))</li></ul></div>"
+  },
+  "url" : "http://open-nursing-core.org/ValueSet/nursing-problem-valueset",
+  "version" : "0.1.0",
+  "name" : "NursingProblemValueSet",
+  "title" : "Nursing Problem Value Set",
+  "status" : "draft",
+  "date" : "2025-11-23T02:33:16+00:00",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/sid/icnp",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "10045151"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "409586006"
+      }]
+    }]
+  }
+}

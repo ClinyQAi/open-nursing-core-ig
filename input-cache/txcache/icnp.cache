@@ -1,0 +1,39 @@
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://hl7.org/fhir/sid/icnp",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "10045151"
+      }]
+    }]
+  }
+}}####
+e: {
+  "from-server" : true,
+  "error" : "Error from https://tx.fhir.org/r4: A definition for CodeSystem 'http://hl7.org/fhir/sid/icnp' could not be found, so the value set cannot be expanded"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://hl7.org/fhir/sid/icnp",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "10045153"
+      }]
+    }]
+  }
+}}####
+e: {
+  "from-server" : true,
+  "error" : "Error from https://tx.fhir.org/r4: A definition for CodeSystem 'http://hl7.org/fhir/sid/icnp' could not be found, so the value set cannot be expanded"
+}
+-------------------------------------------------------------------------------------

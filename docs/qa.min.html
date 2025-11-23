@@ -1,0 +1,1187 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 0, errors = 65, warn = 40, info = 18-->
+<head>
+  <title>OpenNursingCoreIG : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <meta charset="utf-8"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    button { padding: 0px 8px; font-size: 12px; cursor: pointer; border-radius: 2px; border: 1px solid #ccc; background-color: #f0f0f0 }
+    button:hover { background-color: #e0e0e0; }
+    .code-value { display: inline; }
+    .code-hidden { display: none; }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+    function toggleCodes() {
+      const codes = document.getElementsByClassName('code-value');
+      for (let code of codes) {
+        code.classList.toggle('code-hidden');
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for OpenNursingCoreIG</h1>
+ <p>Generated Sun Nov 23 02:34:36 GMT 2025, FHIR version 4.0.1 for onc.ig#0.1.0 (canonical = <a href="http://open-nursing-core.org">http://open-nursing-core.org</a> (<a href="http://open-nursing-core.org/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v2.0.26</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = onc.ig, Canonical = http://open-nursing-core.org</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Language Info:</td><td>This IG has no language information</td></tr>
+ <tr><td>Publication Request:</td><td><ul><li>Error fetching package-list from http://open-nursing-core.org: open-nursing-core.org <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
+</ul>
+</td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="dep" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> onc.ig</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://open-nursing-core.org</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAACwSURBVDhP7ZLBDsIwCIaLZz34xG3f2cQYo5UfYalJoY07ePFL4GcbpZSVWmvJgwifG+njkLDACgfVIehAQ5ffdMDvxSS2Dmqty62UUmS1rIWD8UuWd9xxVt1AnoaSGx6Buap+0G80K3BTtbtwhLPZQL0CSIA9OwUXON7dZkBeASTAThb3bffMjnCHGy00ZgUeqi5f3YOcsw01vsqYMrMljwgLrBDOwP53xL+D3R2k9ALHsmr3Yu73+gAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">7.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/7.0.0</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aaa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.2.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.2.0</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.2.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.2.0</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"> (as above)</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #fcf7c0" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #fcf7c0; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAEvnpUWHRSYXcgcHJvZmlsZSB0eXBlIGV4aWYAAHjarVdbdsQmDP1nFV0CEojHcnie0x10+b14EM5kkmbS1k4sLGQk7pVEYsZff07zBy4mScZLTCGHYHH57DMXDJJ9XPV6kvXXc79YHTzpzZlgqByke7xm3voBPca03/N2QmqvCx1PBSO5J0rZ+vqsr3tBTp8X2hE4eni2fX+wF3K8I/KP97YjCjnFp631tj37rUr3r3eRgwSKHk/PNsaQMU5sfQSefQXq4uUeGG1PqtB3NWXExMORs3g6t6N069e7ApnxJMcGhuQiXtilayJdwFtQiRCwcH4sPIs9YH7E5sbom+udbVk4mWMZf2DtTpDn/Dgj+ka/0+CwlsKecM+02nDkl3oSXUgn3PHDHz2ndjw/6cF2+AiF+Uj3nD3Na9PYRfEBWIS9Kd3KNYJdXSheXwXc0QaDrE0YrDvjTrbYhhTotqHSKsaZGNxP8tSp0KRxyUYNIXoeHCGZm2F3KRNIytzcSga/bpockSMdScGuXTnkHZ9Y6HKbL3eNku3GdoIpExZDWv3727xrOOeqJSKbDlaIi1c1IApLoH8JmIERmhtUuQDW+/O1eHVgUC6YEzZYbDWPJarQnVzuItrBUCAftUex7wUAEVwLgiEHBmwgJxQQUWSORAAygaCC0FGNXMEAiXBHkOydCyAH1QHf+CbSZcrCDzW6qvPGiQso2rSqGGR5L8if6BNyqIgTLyJBoiTJUoILq/JCiGG15xJd9FFiiDEmE3MsySWfJIUUU0o5lczZoX1LRp3mlHMuBU4LVi74usCglMrVVV+lhhprqtnU0pA+zTdpocWWWm6lc3cdBd5Djz313MuggVQafsgII4408igTqTbd9FNmmNHMNPMsh7VN68v9C9Zos8YXU8swHtagjVGXoNVOZHEGxtgTCI9gDYwhsRdnNpH3vJhbnOE8QlUII0hZ5HRajIFBP4hl0uFuM2eA4v/Cm4np4o3/K3NmUfcmc6+8fcVaX6dEuxh7lOEC1TpU34yzcMIPjt/vpflqgi6BlVvdGkC8VVHIyzr8Pkljv5n4rbwXykvgtAK0/aGiPvYklbhn6TtpfjJ4UzoT9t6n7YpHLS8j+6M07xp+LdGpdiBm2qzKcmLqQUnid6X55QfphsJpsvSFkwFQkk4kg38byU8RHb7jw+EaWR2JqOeoARZT92Somj2jaEq58n5c5knRmrpqVXXdqy67A8EpomE3LcaOqX5RzMcyqxJ2b4VlbsXx3OQs7Q8aLdzKoXwpQoOKgj36sXMn2/pJt+l/Sk3zkqs8zk4VMZobfT6EpMMlPejC1px+2e7EP1jWE6j8c0zmi/pJCgxXbSPtTo6ssYRwZtF4zO48RQ2bNig66Ha+Qft1Zg+vy5STsvZG6HRBq7Mmxnpa49Rg6vlY9ON4XIwvE8v8Q6YVeYklO/UqGpSQgs25P/dxqodbPrXrtanevULCB8/mnZq8TyV7CNAmzLsg1v8i45SVfhl0K0m34g9q46AW3sXodEX1VHRZOXXp1cicDhaSQpTn5wbGdyf7rheY3/bUl6Nys4Bak/FSEScb+4kp/Lb6f5Lsjtv+8bBfp4jXxJP5uW/8dFLHiT+IsvkbxL7pfRLafrkAAAEiaUNDUElDQyBwcm9maWxlAAB4nJ2Qv0rDUBTGf6niP+qkOKhDBteCg2ZyqQqhoBBjBatTmqRYTGJIUopv4Jvow3QQBJ/BWcHZ70YHB7N44eP8OJzzffdeaNlJmJbzu5BmVeH63cHl4MpefGOZtrTFXhCWedfzTmg8n69Ypr50jFfz3J9nIYrLUHUmZWFeVGAdiJ1plRuWWL/t+0fiB7EdpVkkfhLvRGlk2Oz6aTIJfzzNbdpxdnFu+tI2Lj1O8bAZMmFMQkVHNVPnGId9VZeCgHtKQtWEWL2pZipuRKWcXA5FfZFu05C3Wed5ShnKYywvk3BHKk+Th/nf77WPs3rT2pjlQRHUrTmpNRrB+yOsDmDtGVauG7KWfr+tYcapZ/75xi8Ik1B1a4BIzwAADRxpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3JlIDQuNC4wLUV4aXYyIj4KIDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+CiAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIKICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgIHhtbG5zOkdJTVA9Imh0dHA6Ly93d3cuZ2ltcC5vcmcveG1wLyIKICAgIHhtbG5zOnRpZmY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vdGlmZi8xLjAvIgogICAgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIgogICB4bXBNTTpEb2N1bWVudElEPSJnaW1wOmRvY2lkOmdpbXA6ZjNlMmQ5MzgtMDE4Yi00YmEyLThiMzQtNDBiM2Q4MmJjZDMzIgogICB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQ0ZTMwYzM5LTllYWItNGJjZS1hMjU0LTUxOGY3ODRjODg0NiIKICAgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOmUxNzgzM2U1LWQ1ZWMtNDM3NC1hYzJlLTk0YzVlN2I5OGUzNyIKICAgZGM6Rm9ybWF0PSJpbWFnZS9wbmciCiAgIEdJTVA6QVBJPSIyLjAiCiAgIEdJTVA6UGxhdGZvcm09Ik1hYyBPUyIKICAgR0lNUDpUaW1lU3RhbXA9IjE3MjYxMzMyOTE1MjEwMDciCiAgIEdJTVA6VmVyc2lvbj0iMi4xMC4zMCIKICAgdGlmZjpPcmllbnRhdGlvbj0iMSIKICAgeG1wOkNyZWF0b3JUb29sPSJHSU1QIDIuMTAiPgogICA8eG1wTU06SGlzdG9yeT4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgc3RFdnQ6YWN0aW9uPSJzYXZlZCIKICAgICAgc3RFdnQ6Y2hhbmdlZD0iLyIKICAgICAgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDpmN2Q4YzdkZC1mMGNlLTQxNWYtOWQ1ZS04NGE2YThmNGZkMDUiCiAgICAgIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkdpbXAgMi4xMCAoTWFjIE9TKSIKICAgICAgc3RFdnQ6d2hlbj0iMjAyNC0wOS0xMlQxNzoyODoxMSswODowMCIvPgogICAgPC9yZGY6U2VxPgogICA8L3htcE1NOkhpc3Rvcnk+CiAgPC9yZGY6RGVzY3JpcHRpb24+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgCjw/eHBhY2tldCBlbmQ9InciPz7Mhr9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH6AkMCRwLD3FR3AAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAC8SURBVBjTY/gPAf9e/YUwmBig4Nh7CA0T+H/7JqrAhzf3UQR+TeB4DGEx/mdgYPhy/vg32W/iIUxQFW+Xvf7h9tb03AOolv8rHU84/Wf69fsRVOAt80F1+Tcal/k/QAVuqfx0e/tRmVmBBSrAyyPG8zTglpmEEFRAgUfkj8Z9BUVO2ddQFeIC/wQYFBj4PnMwMDCwMDAwCDB95RJj+8DDygsVYBFiY2Bj4f4nCncpA8OfH/9/8zMzMDAwAAB49kdRfpOTuAAAAABJRU5ErkJggg==" alt="." style="background-color: #fcf7c0; background-color: inherit" title="NPM Package IG Dependency" class="hierarchy"/> hl7.fhir.uv.tools.r4</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #fcf7c0; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.8.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #fcf7c0; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #fcf7c0; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/tools</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #fcf7c0; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/tools/0.8.0</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #fcf7c0; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Internal Dependency</td></tr>
+</table><para>Templates: fhir.base.template#current</para></div></td></tr>
+ <tr><td>Related IGs:</td><td>n/a</td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
+ <tr><td>Terminology Server(s):</td><td><a href="https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> (<a href="qa-txservers.html">details</a>)</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Draft Dependencies:</td><td><ul>
+  <li>
+hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R4/goal.html">Goal</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
+ (7 uses),     <a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a>
+ (9 uses),     <a href="http://hl7.org/fhir/R4/devicerequest.html">DeviceRequest</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/nutritionorder.html">NutritionOrder</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/medicationstatement.html">MedicationStatement</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/imagingstudy.html">ImagingStudy</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/valueset-observation-category.html">ObservationCategoryCodes</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/valueset-observation-codes.html">LOINCCodes</a>
+ (12 uses),     <a href="http://hl7.org/fhir/R4/group.html">Group</a>
+ (7 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
+ (12 uses),     <a href="http://hl7.org/fhir/R4/location.html">Location</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
+ (13 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
+ (13 uses),     <a href="http://hl7.org/fhir/R4/valueset-body-site.html">SNOMEDCTBodyStructures</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/valueset-observation-methods.html">ObservationMethods</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/specimen.html">Specimen</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/devicemetric.html">DeviceMetric</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-referencerange-meaning.html">ObservationReferenceRangeMeaningCodes</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html">ObservationReferenceRangeAppliesToCodes</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/molecularsequence.html">MolecularSequence</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/documentreference.html">DocumentReference</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/media.html">Media</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/plandefinition.html">PlanDefinition</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/measure.html">Measure</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/activitydefinition.html">ActivityDefinition</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-request-status.html">RequestStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-care-plan-intent.html">CarePlanIntent</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-care-plan-category.html">CarePlanCategory</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
+ (9 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/careteam.html">CareTeam</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/valueset-care-plan-activity-outcome.html">CarePlanActivityOutcome</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/appointment.html">Appointment</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/communicationrequest.html">CommunicationRequest</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/task.html">Task</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/visionprescription.html">VisionPrescription</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/requestgroup.html">RequestGroup</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-care-plan-activity-kind.html">CarePlanActivityKind</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-clinical-findings.html">SNOMEDCTClinicalFindings</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
+ (9 uses),     <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/valueset-care-plan-activity-status.html">CarePlanActivityStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/healthcareservice.html">HealthcareService</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/medication.html">Medication</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/substance.html">Substance</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-codes.html">SNOMEDCTMedicationCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-event-status.html">EventStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-procedure-category.html">ProcedureCategoryCodes(SNOMEDCT)</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-performer-role.html">ProcedurePerformerRoleCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-procedure-reason.html">ProcedureReasonCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-procedure-outcome.html">ProcedureOutcomeCodes(SNOMEDCT)</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/composition.html">Composition</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-code.html">Condition/Problem/DiagnosisCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-procedure-followup.html">ProcedureFollowUpCodes(SNOMEDCT)</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-device-action.html">ProcedureDeviceActionCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-device-kind.html">FHIRDeviceTypes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-clinical.html">ConditionClinicalStatusCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-ver-status.html">ConditionVerificationStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-category.html">ConditionCategoryCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-severity.html">Condition/DiagnosisSeverity</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-stage.html">ConditionStage</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/clinicalimpression.html">ClinicalImpression</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-stage-type.html">ConditionStageType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html">ManifestationAndSymptomCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-goal-status.html">GoalLifecycleStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-goal-achievement.html">GoalAchievementStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-goal-category.html">GoalCategory</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-goal-priority.html">GoalPriority</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-goal-start-event.html">GoalStartEvent</a>
+ (1 uses)
+  </li>
+</ul>
+</td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://open-nursing-core.org (Problem #1 with package-list.json at http://open-nursing-core.org: open-nursing-core.org)</td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>IPS Comparison:</td><td> n/a</td></tr>
+ <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
+ <tr><td>Summary:</td><td> errors = 65, warn = 40, info = 18, broken links = 0, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>1</b></td><td><b>15</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_g0226_OneDrive_Desktop_fhir-git_open-nursing-core-ig_fsh-generated_resources_CarePlan-example-nursing-care-plan"><b>C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\CarePlan-example-nursing-care-plan</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_g0226_OneDrive_Desktop_fhir-git_open-nursing-core-ig_fsh-generated_resources_CodeSystem-onc-problem-type"><b>C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\CodeSystem-onc-problem-type</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_g0226_OneDrive_Desktop_fhir-git_open-nursing-core-ig_fsh-generated_resources_Condition-example-nursing-problem"><b>C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\Condition-example-nursing-problem</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_g0226_OneDrive_Desktop_fhir-git_open-nursing-core-ig_fsh-generated_resources_Observation-example-braden-scale"><b>C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\Observation-example-braden-scale</b></a></td><td><b>45</b></td><td><b>8</b></td><td><b>7</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_g0226_OneDrive_Desktop_fhir-git_open-nursing-core-ig_fsh-generated_resources_Observation-example-goal-evaluation"><b>C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\Observation-example-goal-evaluation</b></a></td><td><b>5</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_g0226_OneDrive_Desktop_fhir-git_open-nursing-core-ig_fsh-generated_resources_Procedure-example-nursing-intervention"><b>C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\Procedure-example-nursing-intervention</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_g0226_OneDrive_Desktop_fhir-git_open-nursing-core-ig_fsh-generated_resources_StructureDefinition-intervention-goal-reference"><b>C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-intervention-goal-reference</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_g0226_OneDrive_Desktop_fhir-git_open-nursing-core-ig_fsh-generated_resources_StructureDefinition-observation-goal-reference"><b>C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-observation-goal-reference</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_g0226_OneDrive_Desktop_fhir-git_open-nursing-core-ig_fsh-generated_resources_StructureDefinition-onc-braden-scale-assessment"><b>C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-onc-braden-scale-assessment</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>4</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_g0226_OneDrive_Desktop_fhir-git_open-nursing-core-ig_fsh-generated_resources_StructureDefinition-onc-goal-evaluation"><b>C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-onc-goal-evaluation</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_g0226_OneDrive_Desktop_fhir-git_open-nursing-core-ig_fsh-generated_resources_StructureDefinition-onc-nursing-assessment"><b>C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\StructureDefinition-onc-nursing-assessment</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_g0226_OneDrive_Desktop_fhir-git_open-nursing-core-ig_fsh-generated_resources_ValueSet-goal-evaluation-valueset"><b>C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\ValueSet-goal-evaluation-valueset</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_g0226_OneDrive_Desktop_fhir-git_open-nursing-core-ig_fsh-generated_resources_ValueSet-nursing-intervention-valueset"><b>C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\ValueSet-nursing-intervention-valueset</b></a></td><td><b>2</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_g0226_OneDrive_Desktop_fhir-git_open-nursing-core-ig_fsh-generated_resources_ValueSet-nursing-problem-valueset"><b>C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\fsh-generated\resources\ValueSet-nursing-problem-valueset</b></a></td><td><b>2</b></td><td><b>3</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[23]&#8203;.value</b></td><td><b>error</b></td><td><b>Supressed messages file not found</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/goal-evaluation-valueset.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/nursing-intervention-valueset.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/nursing-problem-valueset.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/onc-problem-type.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-braden-scale.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-goal-evaluation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/example-nursing-care-plan.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Procedure/example-nursing-intervention.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Condition/example-nursing-problem.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/patient-example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/practitioner-example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>1</b></td><td><b>warning</b></td><td><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>2</b></td><td><b>warning</b></td><td><b>An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>3</b></td><td><b>warning</b></td><td><b>An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>4</b></td><td><b>warning</b></td><td><b>The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_g0226_OneDrive_Desktop_fhir-git_open-nursing-core-ig_fsh-generated_resources_CarePlan-example-nursing-care-plan"> </a>
+<h2><a href="CarePlan-example-nursing-care-plan.html">fsh-generated\resources\CarePlan-example-nursing-care-plan.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>CarePlan: Validated against <i>this.</i><a href="StructureDefinition-onc-nursing-care-plan.html">Open Nursing Core Nursing Care Plan</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CarePlan&#8203;.activity[0]&#8203;.detail&#8203;.code&#8203;.coding[0]&#8203;.system (l27&#8203;/c10)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://hl7.org/fhir/sid/icnp' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CarePlan&#8203;.activity[0]&#8203;.detail&#8203;.code&#8203;.coding[0]&#8203;.system (l31&#8203;/c55)</b></td><td><b>error</b></td><td><b>No definition could be found for URL value 'http://hl7.org/fhir/sid/icnp'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_g0226_OneDrive_Desktop_fhir-git_open-nursing-core-ig_fsh-generated_resources_CodeSystem-onc-problem-type"> </a>
+<h2><a href="CodeSystem-onc-problem-type.html">fsh-generated\resources\CodeSystem-onc-problem-type.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>CodeSystem</b></td><td><b>information</b></td><td><b>CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem (l1/c988)</b></td><td><b>warning</b></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">CODESYSTEM_SHAREABLE_MISSING</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem (l1/c988)</b></td><td><b>warning</b></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">CODESYSTEM_SHAREABLE_MISSING</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem (l1/c988)</b></td><td><b>warning</b></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">CODESYSTEM_SHAREABLE_MISSING</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_g0226_OneDrive_Desktop_fhir-git_open-nursing-core-ig_fsh-generated_resources_Condition-example-nursing-problem"> </a>
+<h2><a href="Condition-example-nursing-problem.html">fsh-generated\resources\Condition-example-nursing-problem.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Condition: Validated against <i>this.</i><a href="StructureDefinition-onc-nursing-problem.html">Open Nursing Core Nursing Problem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Condition.code.coding[0].code (l32/c4)</b></td><td><b>error</b></td><td><b>Unknown code '162828007' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi146" onClick="document.getElementById('vmi146').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi146" style="display:none"><br/><pre>0 0 : start
+15 15   : 0ms  : Analysing http://open-nursing-core.org/ValueSet/nursing-problem-valueset|0.1.0 for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+15 0    : 0ms  : Prepare include: "(http://hl7.org/fhir/sid/icnp)(concept<<10045151)"
+15 0    : 0ms  : CodeSystem version  not found: "http://hl7.org/fhir/sid/icnp"
+15 0    : 0ms  : Prepare include: "(http://snomed.info/sct)(concept<<409586006)"
+15 0    : 0ms  : CodeSystem found: "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+15 0    : 0ms  : Validate "[http://snomed.info/sct#162828007 ("Risk of falls (finding)")]"
+15 0    : 0ms  : Check "http://snomed.info/sct#162828007"
+15 0    : 0ms  : CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct
+15 0    : 0ms  : check code in (http://snomed.info/sct)(concept<<409586006) at CodeableConcept.coding[0]
+15 0    : 0ms  : Filter "concept<<409586006": Code "162828007" not found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201
+</pre></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Condition.code (l32/c4)</b></td><td><b>error</b></td><td><b>None of the codings provided are in the value set 'Nursing Problem Value Set' (http://open-nursing-core.org/ValueSet/nursing-problem-valueset|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#162828007)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_TX_NoValid_1_CC</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_g0226_OneDrive_Desktop_fhir-git_open-nursing-core-ig_fsh-generated_resources_Observation-example-braden-scale"> </a>
+<h2><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-onc-braden-scale-assessment.html">Open Nursing Core Braden Scale Assessment</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.category[0] (l10/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (coding) for slice Observation.category:nursing in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [coding] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[0] (l43/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:sensoryPerception in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[1] (l59/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:sensoryPerception in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[2] (l75/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:sensoryPerception in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[3] (l91/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:sensoryPerception in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[4] (l107/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:sensoryPerception in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[5] (l123/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:sensoryPerception in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[0] (l43/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:moisture in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[1] (l59/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:moisture in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[2] (l75/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:moisture in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[3] (l91/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:moisture in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[4] (l107/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:moisture in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[5] (l123/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:moisture in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[0] (l43/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:activity in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[1] (l59/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:activity in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[2] (l75/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:activity in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[3] (l91/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:activity in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[4] (l107/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:activity in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[5] (l123/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:activity in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[0] (l43/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:mobility in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[1] (l59/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:mobility in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[2] (l75/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:mobility in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[3] (l91/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:mobility in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[4] (l107/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:mobility in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[5] (l123/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:mobility in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[0] (l43/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:nutrition in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[1] (l59/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:nutrition in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[2] (l75/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:nutrition in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[3] (l91/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:nutrition in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[4] (l107/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:nutrition in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[5] (l123/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:nutrition in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[0] (l43/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:frictionAndShear in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[1] (l59/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:frictionAndShear in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[2] (l75/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:frictionAndShear in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[3] (l91/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:frictionAndShear in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[4] (l107/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:frictionAndShear in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.component[5] (l123/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:frictionAndShear in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation (l1/c2)</b></td><td><b>information</b></td><td><b>Observation.category:nursing: Found 0 matches, but unable to check minimum required (Observation.category) due to lack of slicing validation (from http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Validation_VAL_Profile_NoCheckMin</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation (l1/c2)</b></td><td><b>information</b></td><td><b>Observation.component:sensoryPerception: Found 0 matches, but unable to check minimum required (Observation.component) due to lack of slicing validation (from http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Validation_VAL_Profile_NoCheckMin</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation (l1/c2)</b></td><td><b>information</b></td><td><b>Observation.component:moisture: Found 0 matches, but unable to check minimum required (Observation.component) due to lack of slicing validation (from http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Validation_VAL_Profile_NoCheckMin</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation (l1/c2)</b></td><td><b>information</b></td><td><b>Observation.component:activity: Found 0 matches, but unable to check minimum required (Observation.component) due to lack of slicing validation (from http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Validation_VAL_Profile_NoCheckMin</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation (l1/c2)</b></td><td><b>information</b></td><td><b>Observation.component:mobility: Found 0 matches, but unable to check minimum required (Observation.component) due to lack of slicing validation (from http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Validation_VAL_Profile_NoCheckMin</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation (l1/c2)</b></td><td><b>information</b></td><td><b>Observation.component:nutrition: Found 0 matches, but unable to check minimum required (Observation.component) due to lack of slicing validation (from http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Validation_VAL_Profile_NoCheckMin</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation (l1/c2)</b></td><td><b>information</b></td><td><b>Observation.component:frictionAndShear: Found 0 matches, but unable to check minimum required (Observation.component) due to lack of slicing validation (from http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Validation_VAL_Profile_NoCheckMin</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation&#8203;.category[0]&#8203;.coding[0]&#8203;.code (l10&#8203;/c6)</b></td><td><b>error</b></td><td><b>Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation&#8203;.code&#8203;.coding[0]&#8203;.code (l19&#8203;/c4)</b></td><td><b>error</b></td><td><b>Unknown code '9017-7' in the CodeSystem 'http://loinc.org' version '2.81'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi193" onClick="document.getElementById('vmi193').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi193" style="display:none"><br/><pre>0 0 : start
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://loinc.org#9017-7 ("Braden Scale total score")]"
+0 0     : 0ms  : Check "http://loinc.org#9017-7"
+0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+</pre></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation&#8203;.value&#8203;.ofType(Quantity) (l37&#8203;/c4)</b></td><td><b>warning</b></td><td><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NO_UNIT</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation&#8203;.component[0]&#8203;.code&#8203;.coding[0]&#8203;.code (l44&#8203;/c8)</b></td><td><b>error</b></td><td><b>Unknown code '74012-8' in the CodeSystem 'http://loinc.org' version '2.81'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi195" onClick="document.getElementById('vmi195').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi195" style="display:none"><br/><pre>0 0 : start
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://loinc.org#74012-8 ("Sensory Perception")]"
+0 0     : 0ms  : Check "http://loinc.org#74012-8"
+0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+</pre></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation&#8203;.component[0]&#8203;.value&#8203;.ofType(Quantity) (l53&#8203;/c8)</b></td><td><b>warning</b></td><td><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NO_UNIT</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation&#8203;.component[1]&#8203;.code&#8203;.coding[0]&#8203;.code (l60&#8203;/c8)</b></td><td><b>error</b></td><td><b>Unknown code '74013-6' in the CodeSystem 'http://loinc.org' version '2.81'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi197" onClick="document.getElementById('vmi197').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi197" style="display:none"><br/><pre>0 0 : start
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://loinc.org#74013-6 ("Moisture")]"
+0 0     : 0ms  : Check "http://loinc.org#74013-6"
+0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+</pre></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation&#8203;.component[1]&#8203;.value&#8203;.ofType(Quantity) (l69&#8203;/c8)</b></td><td><b>warning</b></td><td><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NO_UNIT</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation&#8203;.component[2]&#8203;.code&#8203;.coding[0]&#8203;.code (l76&#8203;/c8)</b></td><td><b>error</b></td><td><b>Unknown code '74014-4' in the CodeSystem 'http://loinc.org' version '2.81'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi199" onClick="document.getElementById('vmi199').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi199" style="display:none"><br/><pre>0 0 : start
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://loinc.org#74014-4 ("Activity")]"
+0 0     : 0ms  : Check "http://loinc.org#74014-4"
+0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+</pre></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation&#8203;.component[2]&#8203;.value&#8203;.ofType(Quantity) (l85&#8203;/c8)</b></td><td><b>warning</b></td><td><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NO_UNIT</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation&#8203;.component[3]&#8203;.code&#8203;.coding[0]&#8203;.code (l92&#8203;/c8)</b></td><td><b>error</b></td><td><b>Unknown code '74015-1' in the CodeSystem 'http://loinc.org' version '2.81'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi201" onClick="document.getElementById('vmi201').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi201" style="display:none"><br/><pre>0 0 : start
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://loinc.org#74015-1 ("Mobility")]"
+0 0     : 0ms  : Check "http://loinc.org#74015-1"
+0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+</pre></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation&#8203;.component[3]&#8203;.value&#8203;.ofType(Quantity) (l101&#8203;/c8)</b></td><td><b>warning</b></td><td><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NO_UNIT</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation&#8203;.component[4]&#8203;.code&#8203;.coding[0]&#8203;.code (l108&#8203;/c8)</b></td><td><b>error</b></td><td><b>Unknown code '74016-9' in the CodeSystem 'http://loinc.org' version '2.81'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi203" onClick="document.getElementById('vmi203').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi203" style="display:none"><br/><pre>0 0 : start
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://loinc.org#74016-9 ("Nutrition")]"
+0 0     : 0ms  : Check "http://loinc.org#74016-9"
+0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+</pre></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation&#8203;.component[4]&#8203;.value&#8203;.ofType(Quantity) (l117&#8203;/c8)</b></td><td><b>warning</b></td><td><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NO_UNIT</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation&#8203;.component[5]&#8203;.code&#8203;.coding[0]&#8203;.code (l124&#8203;/c8)</b></td><td><b>error</b></td><td><b>Unknown code '74017-7' in the CodeSystem 'http://loinc.org' version '2.81'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi205" onClick="document.getElementById('vmi205').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi205" style="display:none"><br/><pre>0 0 : start
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://loinc.org#74017-7 ("Friction and Shear")]"
+0 0     : 0ms  : Check "http://loinc.org#74017-7"
+0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+</pre></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation&#8203;.component[5]&#8203;.value&#8203;.ofType(Quantity) (l133&#8203;/c8)</b></td><td><b>warning</b></td><td><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NO_UNIT</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_g0226_OneDrive_Desktop_fhir-git_open-nursing-core-ig_fsh-generated_resources_Observation-example-goal-evaluation"> </a>
+<h2><a href="Observation-example-goal-evaluation.html">fsh-generated\resources\Observation-example-goal-evaluation.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-onc-goal-evaluation.html">Open Nursing Core Goal Evaluation</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.category[0] (l10/c6)</b></td><td><b>error</b></td><td><b>Slicing cannot be evaluated: Could not match discriminator (coding) for slice Observation.category:nursing in profile http://open-nursing-core.org/StructureDefinition/onc-goal-evaluation|0.1.0 - the discriminator [coding] does not have fixed value, binding or existence assertions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SLICING_CANNOT_BE_EVALUATED</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation (l1/c2)</b></td><td><b>information</b></td><td><b>Observation.category:nursing: Found 0 matches, but unable to check minimum required (Observation.category) due to lack of slicing validation (from http://open-nursing-core.org/StructureDefinition/onc-goal-evaluation|0.1.0)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Validation_VAL_Profile_NoCheckMin</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation&#8203;.category[0]&#8203;.coding[0]&#8203;.code (l10&#8203;/c6)</b></td><td><b>error</b></td><td><b>Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation&#8203;.code&#8203;.coding[0]&#8203;.display (l36&#8203;/c4)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Goal achieved (finding)' for http://snomed.info/sct#385633008. Valid display is 'Improving (qualifier value)' (en) (for the language(s) 'en-US')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi211" onClick="document.getElementById('vmi211').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi211" style="display:none"><br/><pre>0 0 : start
+0 0     : 0ms  : Analysing http://open-nursing-core.org/ValueSet/goal-evaluation-valueset|0.1.0 for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+0 0     : 0ms  : Prepare include: "(http://snomed.info/sct)(385633008,385634002)"
+0 0     : 0ms  : CodeSystem found: "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+0 0     : 0ms  : Validate "[http://snomed.info/sct#385633008 ("Goal achieved (finding)")]"
+0 0     : 0ms  : Check "http://snomed.info/sct#385633008"
+0 0     : 0ms  : CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct
+0 0     : 0ms  : check code in (http://snomed.info/sct)(385633008,385634002) at CodeableConcept.coding[0]
+0 0     : 0ms  : Code "385633008" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201
+</pre></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.code (l36/c4)</b></td><td><b>error</b></td><td><b>None of the codings provided are in the value set 'Goal Evaluation Value Set' (http://open-nursing-core.org/ValueSet/goal-evaluation-valueset|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#385633008)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_TX_NoValid_1_CC</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation&#8203;.value&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l45&#8203;/c4)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Goal achieved (finding)' for http://snomed.info/sct#385633008. Valid display is 'Improving (qualifier value)' (en) (for the language(s) 'en-US')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi213" onClick="document.getElementById('vmi213').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi213" style="display:none"><br/><pre>0 0 : start
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://snomed.info/sct#385633008 ("Goal achieved (finding)")]"
+16 0    : 0ms  : Check "http://snomed.info/sct#385633008"
+16 0    : 0ms  : Using CodeSystem "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" (content = complete)
+</pre></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_g0226_OneDrive_Desktop_fhir-git_open-nursing-core-ig_fsh-generated_resources_Procedure-example-nursing-intervention"> </a>
+<h2><a href="Procedure-example-nursing-intervention.html">fsh-generated\resources\Procedure-example-nursing-intervention.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>Procedure: Validated against <i>this.</i><a href="StructureDefinition-onc-nursing-intervention.html">Open Nursing Core Nursing Intervention</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Procedure&#8203;.code&#8203;.coding[0]&#8203;.system (l20&#8203;/c4)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://hl7.org/fhir/sid/icnp' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Procedure&#8203;.code&#8203;.coding[0]&#8203;.system (l24&#8203;/c49)</b></td><td><b>error</b></td><td><b>No definition could be found for URL value 'http://hl7.org/fhir/sid/icnp'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_g0226_OneDrive_Desktop_fhir-git_open-nursing-core-ig_fsh-generated_resources_StructureDefinition-intervention-goal-reference"> </a>
+<h2><a href="StructureDefinition-intervention-goal-reference.html">fsh-generated\resources\StructureDefinition-intervention-goal-reference.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td><b>Review the extension type for intervention-goal-reference: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_CONTEXT_SHOULD_NOT_BE_ELEMENT</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/open-nursing-core&#8203;.org&#8203;/StructureDefinition&#8203;/intervention-goal-reference')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_g0226_OneDrive_Desktop_fhir-git_open-nursing-core-ig_fsh-generated_resources_StructureDefinition-observation-goal-reference"> </a>
+<h2><a href="StructureDefinition-observation-goal-reference.html">fsh-generated\resources\StructureDefinition-observation-goal-reference.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td><b>Review the extension type for observation-goal-reference: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_CONTEXT_SHOULD_NOT_BE_ELEMENT</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_g0226_OneDrive_Desktop_fhir-git_open-nursing-core-ig_fsh-generated_resources_StructureDefinition-onc-braden-scale-assessment"> </a>
+<h2><a href="StructureDefinition-onc-braden-scale-assessment.html">fsh-generated\resources\StructureDefinition-onc-braden-scale-assessment.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[4]&#8203;.binding&#8203;.extension[0] (l1&#8203;/c45934)</b></td><td><b>information</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DEPENDS_ON_DEPRECATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[14]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.code (l1&#8203;/c60913)</b></td><td><b>error</b></td><td><b>Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[15]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.code (l1&#8203;/c62405)</b></td><td><b>error</b></td><td><b>Unknown code '9017-7' in the CodeSystem 'http://loinc.org' version '2.81'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi222" onClick="document.getElementById('vmi222').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi222" style="display:none"><br/><pre>0 0 : start
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://loinc.org#9017-7 ("Braden Scale total score")]"
+0 0     : 0ms  : Check "http://loinc.org#9017-7"
+0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+</pre></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.code (l1&#8203;/c213601)</b></td><td><b>error</b></td><td><b>Unknown code '9017-7' in the CodeSystem 'http://loinc.org' version '2.81'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi223" onClick="document.getElementById('vmi223').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi223" style="display:none"><br/><pre>0 0 : start
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://loinc.org#9017-7 ("Braden Scale total score")]"
+0 0     : 0ms  : Check "http://loinc.org#9017-7"
+0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+</pre></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c214043)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[13]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c58682)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[49]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c109299)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_g0226_OneDrive_Desktop_fhir-git_open-nursing-core-ig_fsh-generated_resources_StructureDefinition-onc-goal-evaluation"> </a>
+<h2><a href="StructureDefinition-onc-goal-evaluation.html">fsh-generated\resources\StructureDefinition-onc-goal-evaluation.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[15]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.code (l1&#8203;/c38324)</b></td><td><b>error</b></td><td><b>Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[14]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c36093)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_g0226_OneDrive_Desktop_fhir-git_open-nursing-core-ig_fsh-generated_resources_StructureDefinition-onc-nursing-assessment"> </a>
+<h2><a href="StructureDefinition-onc-nursing-assessment.html">fsh-generated\resources\StructureDefinition-onc-nursing-assessment.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[14]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.code (l1&#8203;/c48794)</b></td><td><b>error</b></td><td><b>Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.code (l1&#8203;/c104228)</b></td><td><b>error</b></td><td><b>Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c103968)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[13]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c46563)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/open-nursing-core&#8203;.org&#8203;/StructureDefinition&#8203;/onc-nursing-assessment')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_g0226_OneDrive_Desktop_fhir-git_open-nursing-core-ig_fsh-generated_resources_ValueSet-goal-evaluation-valueset"> </a>
+<h2><a href="ValueSet-goal-evaluation-valueset.html">fsh-generated\resources\ValueSet-goal-evaluation-valueset.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c1307)</b></td><td><b>warning</b></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c1307)</b></td><td><b>warning</b></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_g0226_OneDrive_Desktop_fhir-git_open-nursing-core-ig_fsh-generated_resources_ValueSet-nursing-intervention-valueset"> </a>
+<h2><a href="ValueSet-nursing-intervention-valueset.html">fsh-generated\resources\ValueSet-nursing-intervention-valueset.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.system (l1&#8203;/c1231)</b></td><td><b>error</b></td><td><b>No definition could be found for URL value 'http://hl7.org/fhir/sid/icnp'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c1401)</b></td><td><b>warning</b></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c1401)</b></td><td><b>warning</b></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.where(id = 'nursing-intervention-valueset')</b></td><td><b>error</b></td><td><b>Error from https://tx.fhir.org/r4: A definition for CodeSystem 'http://hl7.org/fhir/sid/icnp' could not be found, so the value set cannot be expanded</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_g0226_OneDrive_Desktop_fhir-git_open-nursing-core-ig_fsh-generated_resources_ValueSet-nursing-problem-valueset"> </a>
+<h2><a href="ValueSet-nursing-problem-valueset.html">fsh-generated\resources\ValueSet-nursing-problem-valueset.json</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi14"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.system (l1&#8203;/c1207)</b></td><td><b>error</b></td><td><b>No definition could be found for URL value 'http://hl7.org/fhir/sid/icnp'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose.include[1].filter[0]</b></td><td><b>warning</b></td><td><b>The code for the filter 'concept' is inactive ('409586006')</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALUESET_BAD_FILTER_VALUE_VALID_CODE_INACTIVE</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c1378)</b></td><td><b>warning</b></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c1378)</b></td><td><b>warning</b></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.where(id = 'nursing-problem-valueset')</b></td><td><b>error</b></td><td><b>Error from https://tx.fhir.org/r4: A definition for CodeSystem 'http://hl7.org/fhir/sid/icnp' could not be found, so the value set cannot be expanded</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"> </a>
+<h2>All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-example-goal-evaluation.html">fsh-generated\resources\Observation-example-goal-evaluation.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="CODESYSTEM_SHAREABLE_MISSING"> </a>
+<h2>CODESYSTEM_SHAREABLE_MISSING</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-onc-problem-type.html">fsh-generated\resources\CodeSystem-onc-problem-type.json</a></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-onc-problem-type.html">fsh-generated\resources\CodeSystem-onc-problem-type.json</a></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-onc-problem-type.html">fsh-generated\resources\CodeSystem-onc-problem-type.json</a></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Display_Name_for__should_be_one_of__instead_of"> </a>
+<h2>Display_Name_for__should_be_one_of__instead_of</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-goal-evaluation.html">fsh-generated\resources\Observation-example-goal-evaluation.json</a></td><td><b>Wrong Display Name 'Goal achieved (finding)' for http://snomed.info/sct#385633008. Valid display is 'Improving (qualifier value)' (en) (for the language(s) 'en-US')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-goal-evaluation.html">fsh-generated\resources\Observation-example-goal-evaluation.json</a></td><td><b>Wrong Display Name 'Goal achieved (finding)' for http://snomed.info/sct#385633008. Valid display is 'Improving (qualifier value)' (en) (for the language(s) 'en-US')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="MSG_DEPENDS_ON_DEPRECATED"> </a>
+<h2>MSG_DEPENDS_ON_DEPRECATED</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-onc-braden-scale-assessment.html">fsh-generated\resources\StructureDefinition-onc-braden-scale-assessment.json</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="MSG_DRAFT"> </a>
+<h2>MSG_DRAFT</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-onc-nursing-problem.html">fsh-generated\resources\StructureDefinition-onc-nursing-problem.json</a></td><td><b>Reference to draft CodeSystem http://open-nursing-core.org/CodeSystem/onc-problem-type|0.1.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-onc-nursing-problem.html">fsh-generated\resources\StructureDefinition-onc-nursing-problem.json</a></td><td><b>Reference to draft CodeSystem http://open-nursing-core.org/CodeSystem/onc-problem-type|0.1.0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="SD_CONTEXT_SHOULD_NOT_BE_ELEMENT"> </a>
+<h2>SD_CONTEXT_SHOULD_NOT_BE_ELEMENT</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-intervention-goal-reference.html">fsh-generated\resources\StructureDefinition-intervention-goal-reference.json</a></td><td><b>Review the extension type for intervention-goal-reference: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-observation-goal-reference.html">fsh-generated\resources\StructureDefinition-observation-goal-reference.json</a></td><td><b>Review the extension type for observation-goal-reference: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="SD_PATH_SLICING_DEPRECATED"> </a>
+<h2>SD_PATH_SLICING_DEPRECATED</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-onc-braden-scale-assessment.html">fsh-generated\resources\StructureDefinition-onc-braden-scale-assessment.json</a></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-onc-braden-scale-assessment.html">fsh-generated\resources\StructureDefinition-onc-braden-scale-assessment.json</a></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-onc-braden-scale-assessment.html">fsh-generated\resources\StructureDefinition-onc-braden-scale-assessment.json</a></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-onc-goal-evaluation.html">fsh-generated\resources\StructureDefinition-onc-goal-evaluation.json</a></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-onc-nursing-assessment.html">fsh-generated\resources\StructureDefinition-onc-nursing-assessment.json</a></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-onc-nursing-assessment.html">fsh-generated\resources\StructureDefinition-onc-nursing-assessment.json</a></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="SLICING_CANNOT_BE_EVALUATED"> </a>
+<h2>SLICING_CANNOT_BE_EVALUATED</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (coding) for slice Observation.category:nursing in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [coding] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:sensoryPerception in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:sensoryPerception in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:sensoryPerception in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:sensoryPerception in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:sensoryPerception in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:sensoryPerception in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:moisture in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:moisture in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:moisture in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:moisture in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:moisture in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:moisture in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:activity in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:activity in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:activity in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:activity in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:activity in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:activity in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:mobility in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:mobility in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:mobility in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:mobility in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:mobility in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:mobility in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:nutrition in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:nutrition in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:nutrition in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:nutrition in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:nutrition in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:nutrition in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:frictionAndShear in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:frictionAndShear in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:frictionAndShear in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:frictionAndShear in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:frictionAndShear in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:frictionAndShear in profile http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0 - the discriminator [code] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-goal-evaluation.html">fsh-generated\resources\Observation-example-goal-evaluation.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (coding) for slice Observation.category:nursing in profile http://open-nursing-core.org/StructureDefinition/onc-goal-evaluation|0.1.0 - the discriminator [coding] does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NO_UNIT"> </a>
+<h2>TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NO_UNIT</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_NoValid_1_CC"> </a>
+<h2>Terminology_TX_NoValid_1_CC</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Condition-example-nursing-problem.html">fsh-generated\resources\Condition-example-nursing-problem.json</a></td><td><b>None of the codings provided are in the value set 'Nursing Problem Value Set' (http://open-nursing-core.org/ValueSet/nursing-problem-valueset|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#162828007)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-goal-evaluation.html">fsh-generated\resources\Observation-example-goal-evaluation.json</a></td><td><b>None of the codings provided are in the value set 'Goal Evaluation Value Set' (http://open-nursing-core.org/ValueSet/goal-evaluation-valueset|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#385633008)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_URL_Resolve"> </a>
+<h2>Type_Specific_Checks_DT_URL_Resolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="CarePlan-example-nursing-care-plan.html">fsh-generated\resources\CarePlan-example-nursing-care-plan.json</a></td><td><b>No definition could be found for URL value 'http://hl7.org/fhir/sid/icnp'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Procedure-example-nursing-intervention.html">fsh-generated\resources\Procedure-example-nursing-intervention.json</a></td><td><b>No definition could be found for URL value 'http://hl7.org/fhir/sid/icnp'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-nursing-intervention-valueset.html">fsh-generated\resources\ValueSet-nursing-intervention-valueset.json</a></td><td><b>No definition could be found for URL value 'http://hl7.org/fhir/sid/icnp'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-nursing-problem-valueset.html">fsh-generated\resources\ValueSet-nursing-problem-valueset.json</a></td><td><b>No definition could be found for URL value 'http://hl7.org/fhir/sid/icnp'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="UNKNOWN_CODESYSTEM"> </a>
+<h2>UNKNOWN_CODESYSTEM</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="CarePlan-example-nursing-care-plan.html">fsh-generated\resources\CarePlan-example-nursing-care-plan.json</a></td><td><b>A definition for CodeSystem 'http://hl7.org/fhir/sid/icnp' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Procedure-example-nursing-intervention.html">fsh-generated\resources\Procedure-example-nursing-intervention.json</a></td><td><b>A definition for CodeSystem 'http://hl7.org/fhir/sid/icnp' could not be found, so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Unknown_Code_in_Version"> </a>
+<h2>Unknown_Code_in_Version</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Condition-example-nursing-problem.html">fsh-generated\resources\Condition-example-nursing-problem.json</a></td><td><b>Unknown code '162828007' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Unknown code '9017-7' in the CodeSystem 'http://loinc.org' version '2.81'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Unknown code '74012-8' in the CodeSystem 'http://loinc.org' version '2.81'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Unknown code '74013-6' in the CodeSystem 'http://loinc.org' version '2.81'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Unknown code '74014-4' in the CodeSystem 'http://loinc.org' version '2.81'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Unknown code '74015-1' in the CodeSystem 'http://loinc.org' version '2.81'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Unknown code '74016-9' in the CodeSystem 'http://loinc.org' version '2.81'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Unknown code '74017-7' in the CodeSystem 'http://loinc.org' version '2.81'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-example-goal-evaluation.html">fsh-generated\resources\Observation-example-goal-evaluation.json</a></td><td><b>Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-onc-braden-scale-assessment.html">fsh-generated\resources\StructureDefinition-onc-braden-scale-assessment.json</a></td><td><b>Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-onc-braden-scale-assessment.html">fsh-generated\resources\StructureDefinition-onc-braden-scale-assessment.json</a></td><td><b>Unknown code '9017-7' in the CodeSystem 'http://loinc.org' version '2.81'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-onc-braden-scale-assessment.html">fsh-generated\resources\StructureDefinition-onc-braden-scale-assessment.json</a></td><td><b>Unknown code '9017-7' in the CodeSystem 'http://loinc.org' version '2.81'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-onc-goal-evaluation.html">fsh-generated\resources\StructureDefinition-onc-goal-evaluation.json</a></td><td><b>Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-onc-nursing-assessment.html">fsh-generated\resources\StructureDefinition-onc-nursing-assessment.json</a></td><td><b>Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-onc-nursing-assessment.html">fsh-generated\resources\StructureDefinition-onc-nursing-assessment.json</a></td><td><b>Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="VALUESET_BAD_FILTER_VALUE_VALID_CODE_INACTIVE"> </a>
+<h2>VALUESET_BAD_FILTER_VALUE_VALID_CODE_INACTIVE</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-nursing-problem-valueset.html">fsh-generated\resources\ValueSet-nursing-problem-valueset.json</a></td><td><b>The code for the filter 'concept' is inactive ('409586006')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Validation_VAL_Profile_NoCheckMin"> </a>
+<h2>Validation_VAL_Profile_NoCheckMin</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Observation.category:nursing: Found 0 matches, but unable to check minimum required (Observation.category) due to lack of slicing validation (from http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Observation.component:sensoryPerception: Found 0 matches, but unable to check minimum required (Observation.component) due to lack of slicing validation (from http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Observation.component:moisture: Found 0 matches, but unable to check minimum required (Observation.component) due to lack of slicing validation (from http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Observation.component:activity: Found 0 matches, but unable to check minimum required (Observation.component) due to lack of slicing validation (from http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Observation.component:mobility: Found 0 matches, but unable to check minimum required (Observation.component) due to lack of slicing validation (from http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Observation.component:nutrition: Found 0 matches, but unable to check minimum required (Observation.component) due to lack of slicing validation (from http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-example-braden-scale.html">fsh-generated\resources\Observation-example-braden-scale.json</a></td><td><b>Observation.component:frictionAndShear: Found 0 matches, but unable to check minimum required (Observation.component) due to lack of slicing validation (from http://open-nursing-core.org/StructureDefinition/onc-braden-scale-assessment|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-example-goal-evaluation.html">fsh-generated\resources\Observation-example-goal-evaluation.json</a></td><td><b>Observation.category:nursing: Found 0 matches, but unable to check minimum required (Observation.category) due to lack of slicing validation (from http://open-nursing-core.org/StructureDefinition/onc-goal-evaluation|0.1.0)</b></td>
+   </tr>
+</table>
+</body>
+</html>

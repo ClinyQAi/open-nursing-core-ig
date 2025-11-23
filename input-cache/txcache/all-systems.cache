@@ -1,0 +1,104 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "162828007",
+    "display" : "Risk of falls (finding)"
+  }]
+}, "url": "http://open-nursing-core.org/ValueSet/nursing-problem-valueset", "version": "0.1.0", "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "severity" : "error",
+  "error" : "No valid coding was found for the value set 'http://open-nursing-core.org/ValueSet/nursing-problem-valueset|0.1.0'; The provided code 'http://snomed.info/sct#162828007 ('Risk of falls (finding)')' was not found in the value set 'http://open-nursing-core.org/ValueSet/nursing-problem-valueset|0.1.0'; Unknown code '162828007' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'",
+  "class" : "UNKNOWN",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0 0 : start\r\n15 15   : 0ms  : Analysing http://open-nursing-core.org/ValueSet/nursing-problem-valueset|0.1.0 for validation purposes\r\n15 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n15 0    : 0ms  : Prepare include: \"(http://hl7.org/fhir/sid/icnp)(concept<<10045151)\"\r\n15 0    : 0ms  : CodeSystem version  not found: \"http://hl7.org/fhir/sid/icnp\"\r\n15 0    : 0ms  : Prepare include: \"(http://snomed.info/sct)(concept<<409586006)\"\r\n15 0    : 0ms  : CodeSystem found: \"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\"\r\n15 0    : 0ms  : Validate \"[http://snomed.info/sct#162828007 (\"Risk of falls (finding)\")]\"\r\n15 0    : 0ms  : Check \"http://snomed.info/sct#162828007\"\r\n15 0    : 0ms  : CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct\r\n15 0    : 0ms  : check code in (http://snomed.info/sct)(concept<<409586006) at CodeableConcept.coding[0]\r\n15 0    : 0ms  : Filter \"concept<<409586006\": Code \"162828007\" not found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\r\n",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "information",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "this-code-not-in-vs"
+      }],
+      "text" : "The provided code 'http://snomed.info/sct#162828007 ('Risk of falls (finding)')' was not found in the value set 'http://open-nursing-core.org/ValueSet/nursing-problem-valueset|0.1.0'"
+    },
+    "location" : ["CodeableConcept.coding[0].code"],
+    "expression" : ["CodeableConcept.coding[0].code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "Unknown_Code_in_Version"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-code"
+      }],
+      "text" : "Unknown code '162828007' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'"
+    },
+    "location" : ["CodeableConcept.coding[0].code"],
+    "expression" : ["CodeableConcept.coding[0].code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "TX_GENERAL_CC_ERROR_MESSAGE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "No valid coding was found for the value set 'http://open-nursing-core.org/ValueSet/nursing-problem-valueset|0.1.0'"
+    }
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "language": "en", "url": "http://open-nursing-core.org/ValueSet/nursing-problem-valueset", "version": "0.1.0"}####
+e: {
+  "from-server" : true,
+  "error" : "Error from https://tx.fhir.org/r4: A definition for CodeSystem 'http://hl7.org/fhir/sid/icnp' could not be found, so the value set cannot be expanded"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "language": "en", "url": "http://open-nursing-core.org/ValueSet/nursing-intervention-valueset", "version": "0.1.0"}####
+e: {
+  "from-server" : true,
+  "error" : "Error from https://tx.fhir.org/r4: A definition for CodeSystem 'http://hl7.org/fhir/sid/icnp' could not be found, so the value set cannot be expanded"
+}
+-------------------------------------------------------------------------------------

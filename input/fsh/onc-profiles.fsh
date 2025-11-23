@@ -1,11 +1,11 @@
-// =============================================================================
-// Profile: ONCNursingAssessment (Base for Observations)
-// =============================================================================
 Profile: ONCNursingAssessment
 Parent: Observation
 Id: onc-nursing-assessment
 Title: "Open Nursing Core Assessment"
-Description: "A foundational profile for any nursing-specific observation, assessment, or finding. It mandates a performer and a link to the nursing process."
+Description: "Base profile for nursing assessments."
+* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.path = "coding"
+* category ^slicing.rules = #open
 * category contains nursing 1..1 MS
 * category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#nursing
 * performer 1..1 MS
@@ -13,14 +13,11 @@ Description: "A foundational profile for any nursing-specific observation, asses
 * value[x] 1..1 MS
 * value[x] only CodeableConcept or Quantity
 
-// =============================================================================
-// Profile: ONCBradenScaleAssessment (Specialized Observation)
-// =============================================================================
 Profile: ONCBradenScaleAssessment
 Parent: ONCNursingAssessment
 Id: onc-braden-scale-assessment
 Title: "Open Nursing Core Braden Scale Assessment"
-Description: "A specific profile for recording a Braden Scale assessment for pressure injury risk."
+Description: "Braden Scale assessment for pressure injury risk."
 * code = http://loinc.org#9017-7 "Braden Scale total score"
 * code MS
 * value[x] only Quantity
@@ -38,67 +35,63 @@ Description: "A specific profile for recording a Braden Scale assessment for pre
     nutrition 1..1 MS and
     frictionAndShear 1..1 MS
 
-// =============================================================================
-// Profile: ONCNursingProblem (Based on Condition)
-// =============================================================================
 Profile: ONCNursingProblem
 Parent: Condition
 Id: onc-nursing-problem
 Title: "Open Nursing Core Nursing Problem"
-Description: "Represents a clinical judgment about a human response to a health condition, identified by a nurse."
+Description: "Nursing problem or diagnosis."
 * category 1..1 MS
 * category = http://open-nursing-core.org/CodeSystem/onc-problem-type#nursing-diagnosis "Nursing Diagnosis"
 * clinicalStatus 1..1 MS
 * code 1..1 MS
 * code from NursingProblemValueSet (required)
 
-// =============================================================================
-// Profile: ONCPatientGoal (Based on Goal)
-// =============================================================================
 Profile: ONCPatientGoal
 Parent: Goal
 Id: onc-patient-goal
 Title: "Open Nursing Core Patient Goal"
-Description: "A desired outcome for a patient, tied to a specific nursing problem."
+Description: "Patient goal addressing a nursing problem."
 * lifecycleStatus 1..1 MS
 * description 1..1 MS
 * addresses 1..* MS
 * addresses only Reference(ONCNursingProblem)
 
-// =============================================================================
-// Profile: ONCNursingIntervention (Based on Procedure)
-// =============================================================================
+Extension: InterventionGoalReference
+Id: intervention-goal-reference
+Title: "Intervention Goal Reference"
+Description: "Reference to the goal this intervention addresses."
+* value[x] only Reference(ONCPatientGoal)
+
 Profile: ONCNursingIntervention
 Parent: Procedure
 Id: onc-nursing-intervention
 Title: "Open Nursing Core Nursing Intervention"
-Description: "An action performed by a nurse as part of a care plan."
+Description: "Nursing intervention performed."
 * status = #completed
 * status MS
 * code 1..1 MS
 * code from NursingInterventionValueSet (required)
-* reasonReference only Reference(ONCPatientGoal)
+* extension contains InterventionGoalReference named interventionGoal 0..* MS
 
-// =============================================================================
-// Profile: ONCGoalEvaluation (Specialized Observation)
-// =============================================================================
+Extension: ObservationGoalReference
+Id: observation-goal-reference
+Title: "Observation Goal Reference"
+Description: "Reference to the goal that is being evaluated."
+* value[x] only Reference(Goal)
+
 Profile: ONCGoalEvaluation
 Parent: ONCNursingAssessment
 Id: onc-goal-evaluation
 Title: "Open Nursing Core Goal Evaluation"
-Description: "An observation that evaluates a patient's progress towards a specific goal, closing the loop of the nursing process."
-* derivedFrom 1..* MS
-* derivedFrom only Reference(ONCPatientGoal)
+Description: "Evaluation of a patient's progress towards a goal."
+* extension contains ObservationGoalReference named goalReference 0..1 MS
 * code from GoalEvaluationValueSet (required)
 
-// =============================================================================
-// Profile: ONCNursingCarePlan (Based on CarePlan)
-// =============================================================================
 Profile: ONCNursingCarePlan
 Parent: CarePlan
 Id: onc-nursing-care-plan
 Title: "Open Nursing Core Nursing Care Plan"
-Description: "A comprehensive care plan that orchestrates the entire nursing process from problem identification to evaluation."
+Description: "Nursing care plan."
 * addresses 1..* MS
 * addresses only Reference(ONCNursingProblem)
 * goal 1..* MS
