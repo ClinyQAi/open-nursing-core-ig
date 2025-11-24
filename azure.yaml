@@ -1,0 +1,49 @@
+name: healthcare-ai-model-evaluator
+metadata:
+  # For traceability this is also set as a tag on all resources created. See infra/main.bicep
+  template: healthcare-ai-model-evaluator@0.0.1
+
+services:
+  api:
+    project: ./backend/src/MedBench.API
+    language: dotnet
+    host: containerapp
+    hooks:
+      prebuild:
+        posix:
+          shell: sh
+          run: |
+            # Build the frontend first
+            cd ../../../frontend
+            ../infra/scripts/update-env.sh
+            npm install
+            npm run build
+            # Copy built files to backend wwwroot
+            mkdir -p ../backend/src/MedBench.API/wwwroot/webapp
+            cp -r build/* ../backend/src/MedBench.API/wwwroot/webapp/
+          interactive: false
+          continueOnError: false
+
+  # Main metrics processor function app (Docker-based)
+  metrics:
+    project: ./functions
+    language: python
+    host: function
+    module: .
+
+  # Summary evaluator addon function app
+  evaluator:
+    project: ./functions/addons/evaluator/build
+    language: python
+    host: function
+    module: .
+    hooks:
+      prepackage:
+        shell: sh
+        run: ../../package_addon.sh evaluator
+        continueOnError: false
+
+hooks:
+  postprovision:
+    - run: ./infra/scripts/postprovision.sh
+      continueOnError: false
