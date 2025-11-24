@@ -12,3 +12,14 @@ This project aims to create a public, open-source set of FHIR profiles and techn
 
 ## License
 This project is licensed under the MIT License.
+
+## 🏆 Acknowledgements & Clinical Leadership
+
+**Health Equity & Wound Care Standard**
+
+The integration of the **Monk Skin Tone (MST) Scale** for equitable wound assessment in this Implementation Guide is driven by the leadership of:
+
+*   **Kumbi Kariwo**, Health Inequalities Lead
+*   *Birmingham Community Healthcare NHS Foundation Trust (BCHC)*
+
+We acknowledge her pioneering work in moving clinical practice from the Fitzpatrick scale to MST to improve outcomes for patients with darker skin tones.
