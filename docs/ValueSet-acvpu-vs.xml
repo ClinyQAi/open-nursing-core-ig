@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="acvpu-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet acvpu-vs</b></p><a name="acvpu-vs"> </a><a name="hcacvpu-vs"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicity stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/248234008">248234008</a></td><td>Mentally alert</td></tr><tr><td><a href="http://snomed.info/id/130987000">130987000</a></td><td>Acute confusion</td></tr><tr><td><a href="http://snomed.info/id/300202002">300202002</a></td><td>Responds to voice</td></tr><tr><td><a href="http://snomed.info/id/450847001">450847001</a></td><td>Responds to pain</td></tr><tr><td><a href="http://snomed.info/id/422768004">422768004</a></td><td>Unresponsive</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://open-nursing-core.org/ValueSet/acvpu-vs"/>
+  <version value="0.1.0"/>
+  <name value="ACVPUVS"/>
+  <title value="ACVPU Value Set"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-11-23T22:00:06+00:00"/>
+  <description value="Codes representing the ACVPU (Alert, Confusion, Voice, Pain, Unresponsive) scale."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="248234008"/>
+        <display value="Mentally alert"/>
+      </concept>
+      <concept>
+        <code value="130987000"/>
+        <display value="Acute confusion"/>
+      </concept>
+      <concept>
+        <code value="300202002"/>
+        <display value="Responds to voice"/>
+      </concept>
+      <concept>
+        <code value="450847001"/>
+        <display value="Responds to pain"/>
+      </concept>
+      <concept>
+        <code value="422768004"/>
+        <display value="Unresponsive"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

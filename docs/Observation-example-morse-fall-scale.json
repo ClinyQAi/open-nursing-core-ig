@@ -1,0 +1,114 @@
+{
+  "resourceType" : "Observation",
+  "id" : "example-morse-fall-scale",
+  "meta" : {
+    "profile" : ["http://open-nursing-core.org/StructureDefinition/onc-morse-fall-scale"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation example-morse-fall-scale</b></p><a name=\"example-morse-fall-scale\"> </a><a name=\"hcexample-morse-fall-scale\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onc-morse-fall-scale.html\">ONC Morse Fall Scale Assessment</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category nursing}\">nursing</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 59460-6}\">Morse Fall Scale total score</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">John Smith  Male, DoB Unknown</a></p><p><b>performer</b>: <a href=\"Practitioner-practitioner-example.html\">Practitioner Florence Nightingale </a></p><p><b>value</b>: 70 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code{score} = '{score}')</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 59461-4}\">Fall risk level [Morse Fall Scale]</span></p><p><b>value</b>: 25 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code{score} = '{score}')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 59462-2}\">Clinical biochemist review of results</span></p><p><b>value</b>: 15 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code{score} = '{score}')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 59463-0}\">Lymphocytes/Leukocytes in Dialysis fluid</span></p><p><b>value</b>: 0 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code{score} = '{score}')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 59464-8}\">Microbiologist review of results</span></p><p><b>value</b>: 20 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code{score} = '{score}')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 59465-5}\">Pathologist review of results</span></p><p><b>value</b>: 10 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code{score} = '{score}')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 59466-3}\">Hematologist review of results</span></p><p><b>value</b>: 0 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code{score} = '{score}')</span></p></blockquote></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "nursing"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "59460-6",
+      "display" : "Morse Fall Scale total score"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/patient-example"
+  },
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-example"
+  }],
+  "valueQuantity" : {
+    "value" : 70,
+    "system" : "http://unitsofmeasure.org",
+    "code" : "{score}"
+  },
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "59461-4"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 25,
+      "system" : "http://unitsofmeasure.org",
+      "code" : "{score}"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "59462-2"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 15,
+      "system" : "http://unitsofmeasure.org",
+      "code" : "{score}"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "59463-0"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 0,
+      "system" : "http://unitsofmeasure.org",
+      "code" : "{score}"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "59464-8"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 20,
+      "system" : "http://unitsofmeasure.org",
+      "code" : "{score}"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "59465-5"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 10,
+      "system" : "http://unitsofmeasure.org",
+      "code" : "{score}"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "59466-3"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 0,
+      "system" : "http://unitsofmeasure.org",
+      "code" : "{score}"
+    }
+  }]
+}

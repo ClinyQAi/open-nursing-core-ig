@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://open-nursing-core.org/Observation/example-goal-evaluation> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-goal-evaluation"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://open-nursing-core.org/StructureDefinition/onc-goal-evaluation"^^xsd:anyURI ;
+       fhir:l <http://open-nursing-core.org/StructureDefinition/onc-goal-evaluation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation example-goal-evaluation</b></p><a name=\"example-goal-evaluation\"> </a><a name=\"hcexample-goal-evaluation\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onc-goal-evaluation.html\">Open Nursing Core Goal Evaluation</a></p></div><p><b>Observation Goal Reference</b>: <a href=\"Goal-example-patient-goal.html\">Goal: lifecycleStatus = active; description = </a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category nursing}\">nursing</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 385633008}\">Goal achieved (finding)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">John Smith  Male, DoB Unknown</a></p><p><b>performer</b>: <a href=\"Practitioner-practitioner-example.html\">Practitioner Florence Nightingale </a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 385633008}\">Goal achieved (finding)</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://open-nursing-core.org/StructureDefinition/observation-goal-reference"^^xsd:anyURI ;
+       fhir:l <http://open-nursing-core.org/StructureDefinition/observation-goal-reference>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://open-nursing-core.org/Goal/example-patient-goal> ;
+       fhir:reference [ fhir:v "Goal/example-patient-goal" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
+       fhir:code [ fhir:v "nursing" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:385633008 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "385633008" ] ;
+       fhir:display [ fhir:v "Goal achieved (finding)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://open-nursing-core.org/Patient/patient-example> ;
+     fhir:reference [ fhir:v "Patient/patient-example" ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:l <http://open-nursing-core.org/Practitioner/practitioner-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:385633008 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "385633008" ] ;
+       fhir:display [ fhir:v "Goal achieved (finding)" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,33 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://open-nursing-core.org/CodeSystem/onc-problem-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "onc-problem-type"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem onc-problem-type</b></p><a name=\"onc-problem-type\"> </a><a name=\"hconc-problem-type\"> </a><p>This  code system <code>http://open-nursing-core.org/CodeSystem/onc-problem-type</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">nursing-diagnosis<a name=\"onc-problem-type-nursing-diagnosis\"> </a></td><td>Nursing Diagnosis</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://open-nursing-core.org/CodeSystem/onc-problem-type"^^xsd:anyURI ;
+     fhir:l <http://open-nursing-core.org/CodeSystem/onc-problem-type>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ONCProblemType"] ; # 
+  fhir:title [ fhir:v "Open Nursing Core Problem Type CodeSystem"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-11-23T22:00:06+00:00"^^xsd:dateTime] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "1"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "nursing-diagnosis" ] ;
+     fhir:display [ fhir:v "Nursing Diagnosis" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
