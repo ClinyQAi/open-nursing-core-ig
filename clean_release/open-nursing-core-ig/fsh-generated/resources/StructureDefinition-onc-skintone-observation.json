@@ -1,0 +1,63 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "onc-skintone-observation",
+  "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-skintone-observation",
+  "name": "ONCSkinToneObservation",
+  "title": "Skin Tone Assessment (Monk/Fitzpatrick)",
+  "status": "active",
+  "description": "Assessment of skin tone to ensure equitable wound care.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "66472-2",
+              "system": "http://loinc.org",
+              "display": "Skin type"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.value[x]:valueCodeableConcept",
+        "path": "Observation.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/skintone-vs"
+        }
+      }
+    ]
+  }
+}
