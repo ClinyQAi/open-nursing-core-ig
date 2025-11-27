@@ -1,0 +1,10 @@
+[ONCBradenScaleAssessment]: StructureDefinition-onc-braden-scale-assessment.html
+[ONCHousingStatus]: StructureDefinition-onc-housing-status.html
+[HousingStatusVS]: ValueSet-housing-status-vs.html
+[ONCMorseFallScale]: StructureDefinition-onc-morse-fall-scale.html
+[ONCNEWS2Assessment]: StructureDefinition-onc-news2-assessment.html
+[ONCNHSPatient]: StructureDefinition-onc-nhs-patient.html
+[ONCNursingAssessment]: StructureDefinition-onc-nursing-assessment.html
+[ONCSkinToneObservation]: StructureDefinition-onc-skintone-observation.html
+[SkinToneVS]: ValueSet-skintone-vs.html
+[UKCoreEthnicCategory]: StructureDefinition-UKCore-Extension-EthnicCategory.html

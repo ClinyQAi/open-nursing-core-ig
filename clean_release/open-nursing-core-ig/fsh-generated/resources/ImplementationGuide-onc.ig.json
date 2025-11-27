@@ -1,0 +1,112 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "onc.ig",
+  "url": "https://clinyqai.github.io/open-nursing-core-ig/ImplementationGuide/onc.ig",
+  "version": "1.0.0",
+  "name": "OpenNursingCoreIG",
+  "title": "Open Nursing Core FHIR Implementation Guide",
+  "status": "active",
+  "description": "Foundational FHIR profiles for the nursing process (ADPIE), inspired by MCINDS principles.",
+  "packageId": "onc.ig",
+  "license": "MIT",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-braden-scale-assessment"
+        },
+        "name": "Braden Scale Assessment",
+        "description": "Pressure Injury Risk Assessment.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-housing-status"
+        },
+        "name": "Housing Status",
+        "description": "Social Determinants of Health: Housing.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/housing-status-vs"
+        },
+        "name": "Housing Status Value Set",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-morse-fall-scale"
+        },
+        "name": "Morse Fall Scale",
+        "description": "Fall Risk Assessment.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-news2-assessment"
+        },
+        "name": "NEWS2 Assessment",
+        "description": "National Early Warning Score 2 for deterioration.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-nhs-patient"
+        },
+        "name": "ONC NHS Patient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-nursing-assessment"
+        },
+        "name": "Open Nursing Core Assessment",
+        "description": "A foundational profile for nursing observation.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-skintone-observation"
+        },
+        "name": "Skin Tone Assessment (Monk/Fitzpatrick)",
+        "description": "Assessment of skin tone to ensure equitable wound care.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/skintone-vs"
+        },
+        "name": "Skin Tone Value Set",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/UKCore-Extension-EthnicCategory"
+        },
+        "name": "UK Core Ethnic Category",
+        "description": "Local definition of UK Core Ethnicity extension.",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": []
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2025+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      }
+    ]
+  }
+}

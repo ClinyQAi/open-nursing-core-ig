@@ -1,0 +1,29 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "SkinToneVS",
+  "id": "skintone-vs",
+  "title": "Skin Tone Value Set",
+  "url": "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/skintone-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "403153005",
+            "display": "Fitzpatrick I"
+          },
+          {
+            "code": "403154004",
+            "display": "Fitzpatrick II"
+          },
+          {
+            "code": "403158001",
+            "display": "Fitzpatrick VI"
+          }
+        ]
+      }
+    ]
+  }
+}
