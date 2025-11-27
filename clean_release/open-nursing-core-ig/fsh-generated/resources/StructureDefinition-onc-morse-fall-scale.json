@@ -1,0 +1,82 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "onc-morse-fall-scale",
+  "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-morse-fall-scale",
+  "name": "ONCMorseFallScale",
+  "title": "Morse Fall Scale",
+  "status": "active",
+  "description": "Fall Risk Assessment.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "59460-6",
+              "system": "http://loinc.org",
+              "display": "Fall risk assessment.Morse Scale"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity",
+        "path": "Observation.value[x]",
+        "sliceName": "valueQuantity",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.value",
+        "path": "Observation.value[x].value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.unit",
+        "path": "Observation.value[x].unit",
+        "patternString": "{score}"
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.system",
+        "path": "Observation.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.code",
+        "path": "Observation.value[x].code",
+        "patternCode": "{score}"
+      }
+    ]
+  }
+}
