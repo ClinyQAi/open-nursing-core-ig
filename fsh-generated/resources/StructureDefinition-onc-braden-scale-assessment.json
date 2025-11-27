@@ -1,0 +1,254 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "onc-braden-scale-assessment",
+  "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-braden-scale-assessment",
+  "name": "ONCBradenScaleAssessment",
+  "title": "Braden Scale Assessment",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "patternCode": "final",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "9017-7",
+              "system": "http://loinc.org",
+              "display": "Braden Scale total score"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x].unit",
+        "path": "Observation.value[x].unit",
+        "patternString": "score"
+      },
+      {
+        "id": "Observation.value[x].system",
+        "path": "Observation.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 6,
+        "max": "6",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:sensoryPerception",
+        "path": "Observation.component",
+        "sliceName": "sensoryPerception",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:sensoryPerception.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "74012-8",
+              "system": "http://loinc.org",
+              "display": "Sensory Perception"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:sensoryPerception.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:moisture",
+        "path": "Observation.component",
+        "sliceName": "moisture",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:moisture.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "74013-6",
+              "system": "http://loinc.org",
+              "display": "Moisture"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:moisture.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:activity",
+        "path": "Observation.component",
+        "sliceName": "activity",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:activity.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "74014-4",
+              "system": "http://loinc.org",
+              "display": "Activity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:activity.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:mobility",
+        "path": "Observation.component",
+        "sliceName": "mobility",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:mobility.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "74015-1",
+              "system": "http://loinc.org",
+              "display": "Mobility"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:mobility.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:nutrition",
+        "path": "Observation.component",
+        "sliceName": "nutrition",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:nutrition.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "74016-9",
+              "system": "http://loinc.org",
+              "display": "Nutrition"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:nutrition.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:frictionAndShear",
+        "path": "Observation.component",
+        "sliceName": "frictionAndShear",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:frictionAndShear.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "74017-7",
+              "system": "http://loinc.org",
+              "display": "Friction and Shear"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:frictionAndShear.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      }
+    ]
+  }
+}

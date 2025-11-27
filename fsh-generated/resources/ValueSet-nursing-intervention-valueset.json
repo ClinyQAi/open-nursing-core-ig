@@ -1,0 +1,22 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "NursingInterventionValueSet",
+  "id": "nursing-intervention-valueset",
+  "title": "Nursing Intervention Value Set",
+  "url": "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-intervention-valueset",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "71388002"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "GoalEvaluationValueSet",
+  "id": "goal-evaluation-valueset",
+  "title": "Goal Evaluation Value Set",
+  "url": "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "385633008"
+          },
+          {
+            "code": "385634002"
+          }
+        ]
+      }
+    ]
+  }
+}

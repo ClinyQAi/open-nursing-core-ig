@@ -1,0 +1,41 @@
+{
+  "resourceType": "Condition",
+  "id": "example-nursing-problem",
+  "meta": {
+    "profile": [
+      "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-problem"
+    ]
+  },
+  "subject": {
+    "reference": "Patient/patient-example-jane"
+  },
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "display": "Active"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "nursing-diagnosis",
+          "system": "http://open-nursing-core.org/CodeSystem/onc-problem-type",
+          "display": "Nursing Diagnosis"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "162828007",
+        "system": "http://snomed.info/sct",
+        "display": "Risk of falls (finding)"
+      }
+    ]
+  }
+}

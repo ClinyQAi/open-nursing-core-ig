@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-braden-scale"/>
+  <meta>
+    <profile value="https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-braden-scale-assessment"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation observation-braden-scale</b></p><a name="observation-braden-scale"> </a><a name="hcobservation-braden-scale"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-onc-braden-scale-assessment.html">Braden Scale Assessment</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category nursing}">nursing</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 9017-7}">Braden Scale total score</span></p><p><b>subject</b>: <a href="Patient-patient-example-jane.html">Jane Doe  Female, DoB Unknown</a></p><p><b>performer</b>: <a href="Practitioner-practitioner-example.html">Practitioner Nightingale </a></p><p><b>value</b>: 18 score<span style="background: LightGoldenRodYellow"> (Details: UCUM  codescore = 'score')</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 74012-8}">Sensory Perception</span></p><p><b>value</b>: 3 score<span style="background: LightGoldenRodYellow"> (Details: UCUM  codescore = 'score')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 74013-6}">Moisture</span></p><p><b>value</b>: 4 score<span style="background: LightGoldenRodYellow"> (Details: UCUM  codescore = 'score')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 74014-4}">Activity</span></p><p><b>value</b>: 2 score<span style="background: LightGoldenRodYellow"> (Details: UCUM  codescore = 'score')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 74015-1}">Mobility</span></p><p><b>value</b>: 3 score<span style="background: LightGoldenRodYellow"> (Details: UCUM  codescore = 'score')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 74016-9}">Nutrition</span></p><p><b>value</b>: 3 score<span style="background: LightGoldenRodYellow"> (Details: UCUM  codescore = 'score')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 74017-7}">Friction and Shear</span></p><p><b>value</b>: 3 score<span style="background: LightGoldenRodYellow"> (Details: UCUM  codescore = 'score')</span></p></blockquote></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="nursing"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="9017-7"/>
+      <display value="Braden Scale total score"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patient-example-jane"/>
+  </subject>
+  <performer>
+    <reference value="Practitioner/practitioner-example"/>
+  </performer>
+  <valueQuantity>
+    <value value="18"/>
+    <unit value="score"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="score"/>
+  </valueQuantity>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="74012-8"/>
+        <display value="Sensory Perception"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="3"/>
+      <unit value="score"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="score"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="74013-6"/>
+        <display value="Moisture"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="4"/>
+      <unit value="score"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="score"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="74014-4"/>
+        <display value="Activity"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="2"/>
+      <unit value="score"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="score"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="74015-1"/>
+        <display value="Mobility"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="3"/>
+      <unit value="score"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="score"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="74016-9"/>
+        <display value="Nutrition"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="3"/>
+      <unit value="score"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="score"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="74017-7"/>
+        <display value="Friction and Shear"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="3"/>
+      <unit value="score"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="score"/>
+    </valueQuantity>
+  </component>
+</Observation>

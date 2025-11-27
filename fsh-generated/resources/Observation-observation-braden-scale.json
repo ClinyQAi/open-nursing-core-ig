@@ -1,0 +1,147 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-braden-scale",
+  "meta": {
+    "profile": [
+      "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-braden-scale-assessment"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "9017-7",
+        "system": "http://loinc.org",
+        "display": "Braden Scale total score"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "74012-8",
+            "system": "http://loinc.org",
+            "display": "Sensory Perception"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 3,
+        "code": "score",
+        "system": "http://unitsofmeasure.org",
+        "unit": "score"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "74013-6",
+            "system": "http://loinc.org",
+            "display": "Moisture"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 4,
+        "code": "score",
+        "system": "http://unitsofmeasure.org",
+        "unit": "score"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "74014-4",
+            "system": "http://loinc.org",
+            "display": "Activity"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 2,
+        "code": "score",
+        "system": "http://unitsofmeasure.org",
+        "unit": "score"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "74015-1",
+            "system": "http://loinc.org",
+            "display": "Mobility"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 3,
+        "code": "score",
+        "system": "http://unitsofmeasure.org",
+        "unit": "score"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "74016-9",
+            "system": "http://loinc.org",
+            "display": "Nutrition"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 3,
+        "code": "score",
+        "system": "http://unitsofmeasure.org",
+        "unit": "score"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "74017-7",
+            "system": "http://loinc.org",
+            "display": "Friction and Shear"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 3,
+        "code": "score",
+        "system": "http://unitsofmeasure.org",
+        "unit": "score"
+      }
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "nursing",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/patient-example-jane"
+  },
+  "performer": [
+    {
+      "reference": "Practitioner/practitioner-example"
+    }
+  ],
+  "valueQuantity": {
+    "value": 18,
+    "code": "score",
+    "system": "http://unitsofmeasure.org",
+    "unit": "score"
+  }
+}

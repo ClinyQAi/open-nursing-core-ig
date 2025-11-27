@@ -1,0 +1,54 @@
+{
+  "resourceType": "Observation",
+  "id": "example-goal-evaluation",
+  "meta": {
+    "profile": [
+      "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-goal-evaluation"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/observation-goal-reference",
+      "valueReference": {
+        "reference": "Goal/example-patient-goal"
+      }
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "nursing",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/patient-example-jane"
+  },
+  "performer": [
+    {
+      "reference": "Practitioner/practitioner-example"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "385633008",
+        "system": "http://snomed.info/sct",
+        "display": "Goal achieved"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "385633008",
+        "system": "http://snomed.info/sct",
+        "display": "Goal achieved"
+      }
+    ]
+  }
+}

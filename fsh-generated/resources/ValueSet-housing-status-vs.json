@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HousingStatusVS",
+  "id": "housing-status-vs",
+  "title": "Housing Status Value Set",
+  "url": "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/housing-status-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "32911000"
+          },
+          {
+            "code": "160753008"
+          }
+        ]
+      }
+    ]
+  }
+}

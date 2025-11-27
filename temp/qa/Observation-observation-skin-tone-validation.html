@@ -1,0 +1,18 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Observation-observation-skin-tone-validation</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<table class="grid" data-fhir="generated-heirarchy">
+<tr><td><b>Level</b></td><td><b>Type</b></td><td><b>Location</b></td><td><b>Message</b></td></tr>
+<tr><td>error</td><td>code-invalid</td><td>Observation/observation-skin-tone: Observation.category[0].coding[0].code</td><td>Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'</td><td></td></tr>
+<tr><td>error</td><td>invalid</td><td>Observation/observation-skin-tone: Observation.code.coding[0].display</td><td>Wrong Display Name 'Fitzpatrick skin type' for http://loinc.org#66472-2. Valid display is one of 3 choices: 'During your life, altogether how many times have you injected drugs not prescribed by a doctor [PhenX]' (en-US), 'During your life, altogether how many times have you injected drugs not prescribed by a doctor [PhenX]' (en-US) or 'How many times injected nRate PhenX' (en-US) (for the language(s) 'en-US')</td><td></td></tr>
+<tr><td>error</td><td>invalid</td><td>Observation/observation-skin-tone: Observation.value.ofType(CodeableConcept).coding[0].display</td><td>Wrong Display Name 'Fitzpatrick skin type II' for http://snomed.info/sct#403154004. Valid display is 'Millipede burn (disorder)' (en) (for the language(s) 'en-US')</td><td></td></tr>
+<tr><td>error</td><td>code-invalid</td><td>Observation/observation-skin-tone: Observation.value.ofType(CodeableConcept)</td><td>None of the codings provided are in the value set 'Fitzpatrick Skin Tone Value Set' (https://clinyqai.github.io/open-nursing-core-ig/ValueSet/skintone-vs|1.0.0), and a coding from this value set is required) (codes = http://snomed.info/sct#403154004)</td><td></td></tr>
+<tr><td>warning</td><td>invalid</td><td>Observation/observation-skin-tone: Observation</td><td>Best Practice Recommendation: In general, all observations should have an effective[x] ()</td><td></td></tr>
+<tr><td>information</td><td>informational</td><td>Observation/observation-skin-tone: Observation</td><td>Validate resource against profile https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-skintone-observation|1.0.0</td><td></td></tr>
+</table>
+</body>
+</html>

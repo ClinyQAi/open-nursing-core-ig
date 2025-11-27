@@ -1,0 +1,37 @@
+{
+  "resourceType": "Procedure",
+  "id": "example-nursing-intervention",
+  "meta": {
+    "profile": [
+      "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-intervention"
+    ]
+  },
+  "status": "completed",
+  "extension": [
+    {
+      "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/intervention-goal-reference",
+      "valueReference": {
+        "reference": "Goal/example-patient-goal"
+      }
+    }
+  ],
+  "subject": {
+    "reference": "Patient/patient-example-jane"
+  },
+  "performer": [
+    {
+      "actor": {
+        "reference": "Practitioner/practitioner-example"
+      }
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "71388002",
+        "system": "http://snomed.info/sct",
+        "display": "Procedure"
+      }
+    ]
+  }
+}

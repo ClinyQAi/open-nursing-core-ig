@@ -1,0 +1,353 @@
+{
+  "UKCore-Extension-EthnicCategory" : {
+    "index" : 0,
+    "url" : "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Extension-EthnicCategory",
+    "name" : "UKCoreEthnicCategory",
+    "title" : "UK Core Ethnic Category",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-UKCore-Extension-EthnicCategory.html",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "base" : "http://hl7.org/fhir/StructureDefinition/Extension",
+    "basename" : "Extension",
+    "basepath" : "http://hl7.org/fhir/R4/extensibility.html#Extension",
+    "adl" : false,
+    "status" : "active",
+    "date" : "Thu Nov 27 23:35:29 GMT 2025",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : null,
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "",
+    "descriptionlang" : {
+    },
+    "obligations" : false,
+    "contexts" : [
+      {
+        "type" : "Element ID",
+        "expression" : "Element"
+      }
+    ],
+    "extension-contexts" : ["Element", "datatypes", "multiple"]
+  },
+  "intervention-goal-reference" : {
+    "index" : 1,
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/intervention-goal-reference",
+    "name" : "InterventionGoalReference",
+    "title" : "Intervention Goal Reference",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-intervention-goal-reference.html",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "base" : "http://hl7.org/fhir/StructureDefinition/Extension",
+    "basename" : "Extension",
+    "basepath" : "http://hl7.org/fhir/R4/extensibility.html#Extension",
+    "adl" : false,
+    "status" : "active",
+    "date" : "Thu Nov 27 23:35:29 GMT 2025",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : null,
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "",
+    "descriptionlang" : {
+    },
+    "obligations" : false,
+    "contexts" : [
+      {
+        "type" : "Element ID",
+        "expression" : "Element"
+      }
+    ],
+    "extension-contexts" : ["Element", "datatypes", "multiple"]
+  },
+  "observation-goal-reference" : {
+    "index" : 2,
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/observation-goal-reference",
+    "name" : "ObservationGoalReference",
+    "title" : "Observation Goal Reference",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-observation-goal-reference.html",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "base" : "http://hl7.org/fhir/StructureDefinition/Extension",
+    "basename" : "Extension",
+    "basepath" : "http://hl7.org/fhir/R4/extensibility.html#Extension",
+    "adl" : false,
+    "status" : "active",
+    "date" : "Thu Nov 27 23:35:29 GMT 2025",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : null,
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "",
+    "descriptionlang" : {
+    },
+    "obligations" : false,
+    "contexts" : [
+      {
+        "type" : "Element ID",
+        "expression" : "Element"
+      }
+    ],
+    "extension-contexts" : ["Element", "datatypes", "multiple"]
+  },
+  "onc-braden-scale-assessment" : {
+    "index" : 3,
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-braden-scale-assessment",
+    "name" : "ONCBradenScaleAssessment",
+    "title" : "Braden Scale Assessment",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-onc-braden-scale-assessment.html",
+    "kind" : "resource",
+    "type" : "Observation",
+    "base" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+    "basename" : "ONCNursingAssessment",
+    "basepath" : "StructureDefinition-onc-nursing-assessment.html",
+    "adl" : false,
+    "status" : "active",
+    "date" : "Thu Nov 27 23:35:29 GMT 2025",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : null,
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
+  "onc-goal-evaluation" : {
+    "index" : 4,
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-goal-evaluation",
+    "name" : "ONCGoalEvaluation",
+    "title" : "Goal Evaluation",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-onc-goal-evaluation.html",
+    "kind" : "resource",
+    "type" : "Observation",
+    "base" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+    "basename" : "ONCNursingAssessment",
+    "basepath" : "StructureDefinition-onc-nursing-assessment.html",
+    "adl" : false,
+    "status" : "active",
+    "date" : "Thu Nov 27 23:35:29 GMT 2025",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : null,
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
+  "onc-nhs-patient" : {
+    "index" : 5,
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nhs-patient",
+    "name" : "ONCNHSPatient",
+    "title" : "ONC NHS Patient",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-onc-nhs-patient.html",
+    "kind" : "resource",
+    "type" : "Patient",
+    "base" : "http://hl7.org/fhir/StructureDefinition/Patient",
+    "basename" : "Patient",
+    "basepath" : "http://hl7.org/fhir/R4/patient.html",
+    "adl" : false,
+    "status" : "active",
+    "date" : "Thu Nov 27 23:35:29 GMT 2025",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : null,
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
+  "onc-nursing-assessment" : {
+    "index" : 6,
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+    "name" : "ONCNursingAssessment",
+    "title" : "Open Nursing Core Assessment",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-onc-nursing-assessment.html",
+    "kind" : "resource",
+    "type" : "Observation",
+    "base" : "http://hl7.org/fhir/StructureDefinition/Observation",
+    "basename" : "Observation",
+    "basepath" : "http://hl7.org/fhir/R4/observation.html",
+    "adl" : false,
+    "status" : "active",
+    "date" : "Thu Nov 27 23:35:29 GMT 2025",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : null,
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
+  "onc-nursing-intervention" : {
+    "index" : 7,
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-intervention",
+    "name" : "ONCNursingIntervention",
+    "title" : "Nursing Intervention",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-onc-nursing-intervention.html",
+    "kind" : "resource",
+    "type" : "Procedure",
+    "base" : "http://hl7.org/fhir/StructureDefinition/Procedure",
+    "basename" : "Procedure",
+    "basepath" : "http://hl7.org/fhir/R4/procedure.html",
+    "adl" : false,
+    "status" : "active",
+    "date" : "Thu Nov 27 23:35:29 GMT 2025",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : null,
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
+  "onc-nursing-problem" : {
+    "index" : 8,
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-problem",
+    "name" : "ONCNursingProblem",
+    "title" : "Nursing Problem",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-onc-nursing-problem.html",
+    "kind" : "resource",
+    "type" : "Condition",
+    "base" : "http://hl7.org/fhir/StructureDefinition/Condition",
+    "basename" : "Condition",
+    "basepath" : "http://hl7.org/fhir/R4/condition.html",
+    "adl" : false,
+    "status" : "active",
+    "date" : "Thu Nov 27 23:35:29 GMT 2025",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : null,
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
+  "onc-patient-goal" : {
+    "index" : 9,
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-goal",
+    "name" : "ONCPatientGoal",
+    "title" : "Patient Goal",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-onc-patient-goal.html",
+    "kind" : "resource",
+    "type" : "Goal",
+    "base" : "http://hl7.org/fhir/StructureDefinition/Goal",
+    "basename" : "Goal",
+    "basepath" : "http://hl7.org/fhir/R4/goal.html",
+    "adl" : false,
+    "status" : "active",
+    "date" : "Thu Nov 27 23:35:29 GMT 2025",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : null,
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
+  "onc-skintone-observation" : {
+    "index" : 10,
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-skintone-observation",
+    "name" : "ONCSkinToneObservation",
+    "title" : "Skin Tone Observation",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-onc-skintone-observation.html",
+    "kind" : "resource",
+    "type" : "Observation",
+    "base" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+    "basename" : "ONCNursingAssessment",
+    "basepath" : "StructureDefinition-onc-nursing-assessment.html",
+    "adl" : false,
+    "status" : "active",
+    "date" : "Thu Nov 27 23:35:29 GMT 2025",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : null,
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  }
+}

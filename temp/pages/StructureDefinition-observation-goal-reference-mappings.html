@@ -1,0 +1,27 @@
+---
+---
+<!-- get modelType -->
+{% include fragment-modelType.html id='observation-goal-reference' %}
+
+{% include fragment-pagebegin.html %}
+<div style="counter-reset: section 5" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  {% include fragment-profile-navtabs.html type='StructureDefinition' id='observation-goal-reference' active='mapping' %}
+
+<a name="root"> </a>
+<h2 id="root">{{modelType}}: ObservationGoalReference - Mappings</h2>
+{% include fragment-simpletable.html %}
+
+<p>Mappings for the observation-goal-reference {{modelType | downcase }}.</p>
+
+  <!-- insert intro if present -->
+  {% include fragment-intro.html type='StructureDefinition' id='observation-goal-reference' %}
+
+  {%include StructureDefinition-observation-goal-reference-maps.xhtml%}
+
+  <!-- insert notes if present -->
+  {% include fragment-notes.html type='StructureDefinition' id='observation-goal-reference' %}
+
+</div>
+{% assign includetabscripts = 'true' %}
+{% include fragment-pageend.html %}

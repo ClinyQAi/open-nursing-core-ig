@@ -1,0 +1,24 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "skintone-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet skintone-vs</b></p><a name=\"skintone-vs\"> </a><a name=\"hcskintone-vs\"> </a><ul><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a 403153005 (Centipede bite)</li></ul></div>"
+  },
+  "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/skintone-vs",
+  "version" : "1.0.0",
+  "name" : "SkinToneVS",
+  "title" : "Fitzpatrick Skin Tone Value Set",
+  "status" : "active",
+  "date" : "2025-11-27T23:35:29+00:00",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "403153005"
+      }]
+    }]
+  }
+}

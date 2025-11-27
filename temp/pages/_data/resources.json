@@ -1,0 +1,482 @@
+{
+  "ImplementationGuide/onc.ig" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 0,
+    "source" : "C:\\Users\\g0226\\OneDrive\\Desktop\\fhir-git\\onc-clean\\fsh-generated\\resources\\ImplementationGuide-onc.ig.json",
+    "sourceTail" : "ImplementationGuide-onc.ig.json",
+    "path" : "index.html",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ImplementationGuide/onc.ig",
+    "version" : "1.0.0",
+    "name" : "OpenNursingCoreIG",
+    "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
+    "titlelang" : {
+    },
+    "date" : "2025-11-27T23:35:29+00:00",
+    "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsi",
+      "status" : "Active"
+    }
+  },
+  "CodeSystem/onc-problem-type" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 1,
+    "source" : "fsh-generated/resources/CodeSystem-onc-problem-type.json",
+    "sourceTail" : "CodeSystem-onc-problem-type.json",
+    "content" : "complete",
+    "path" : "CodeSystem-onc-problem-type.html",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type",
+    "version" : "1.0.0",
+    "name" : "ONCProblemType",
+    "title" : "Problem Type CodeSystem",
+    "titlelang" : {
+    },
+    "date" : "2025-11-27T23:35:29+00:00",
+    "status" : {
+      "class" : "colsi",
+      "status" : "Active"
+    }
+  },
+  "Condition/example-nursing-problem" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 2,
+    "source" : "fsh-generated/resources/Condition-example-nursing-problem.json",
+    "sourceTail" : "Condition-example-nursing-problem.json",
+    "path" : "Condition-example-nursing-problem.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Goal/example-patient-goal" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 3,
+    "source" : "fsh-generated/resources/Goal-example-patient-goal.json",
+    "sourceTail" : "Goal-example-patient-goal.json",
+    "path" : "Goal-example-patient-goal.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Observation/example-goal-evaluation" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 4,
+    "source" : "fsh-generated/resources/Observation-example-goal-evaluation.json",
+    "sourceTail" : "Observation-example-goal-evaluation.json",
+    "path" : "Observation-example-goal-evaluation.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Observation/observation-braden-scale" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 5,
+    "source" : "fsh-generated/resources/Observation-observation-braden-scale.json",
+    "sourceTail" : "Observation-observation-braden-scale.json",
+    "path" : "Observation-observation-braden-scale.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Observation/observation-skin-tone" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 6,
+    "source" : "fsh-generated/resources/Observation-observation-skin-tone.json",
+    "sourceTail" : "Observation-observation-skin-tone.json",
+    "path" : "Observation-observation-skin-tone.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Patient/patient-example-jane" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 7,
+    "source" : "fsh-generated/resources/Patient-patient-example-jane.json",
+    "sourceTail" : "Patient-patient-example-jane.json",
+    "path" : "Patient-patient-example-jane.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Practitioner/practitioner-example" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 8,
+    "source" : "fsh-generated/resources/Practitioner-practitioner-example.json",
+    "sourceTail" : "Practitioner-practitioner-example.json",
+    "path" : "Practitioner-practitioner-example.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Procedure/example-nursing-intervention" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 9,
+    "source" : "fsh-generated/resources/Procedure-example-nursing-intervention.json",
+    "sourceTail" : "Procedure-example-nursing-intervention.json",
+    "path" : "Procedure-example-nursing-intervention.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "StructureDefinition/UKCore-Extension-EthnicCategory" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 10,
+    "source" : "fsh-generated/resources/StructureDefinition-UKCore-Extension-EthnicCategory.json",
+    "sourceTail" : "StructureDefinition-UKCore-Extension-EthnicCategory.json",
+    "path" : "StructureDefinition-UKCore-Extension-EthnicCategory.html",
+    "url" : "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Extension-EthnicCategory",
+    "version" : "1.0.0",
+    "name" : "UKCoreEthnicCategory",
+    "title" : "UK Core Ethnic Category",
+    "titlelang" : {
+    },
+    "date" : "2025-11-27T23:35:29+00:00",
+    "status" : {
+      "class" : "colsi",
+      "status" : "Active"
+    }
+  },
+  "StructureDefinition/intervention-goal-reference" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 11,
+    "source" : "fsh-generated/resources/StructureDefinition-intervention-goal-reference.json",
+    "sourceTail" : "StructureDefinition-intervention-goal-reference.json",
+    "path" : "StructureDefinition-intervention-goal-reference.html",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/intervention-goal-reference",
+    "version" : "1.0.0",
+    "name" : "InterventionGoalReference",
+    "title" : "Intervention Goal Reference",
+    "titlelang" : {
+    },
+    "date" : "2025-11-27T23:35:29+00:00",
+    "status" : {
+      "class" : "colsi",
+      "status" : "Active"
+    }
+  },
+  "StructureDefinition/observation-goal-reference" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 12,
+    "source" : "fsh-generated/resources/StructureDefinition-observation-goal-reference.json",
+    "sourceTail" : "StructureDefinition-observation-goal-reference.json",
+    "path" : "StructureDefinition-observation-goal-reference.html",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/observation-goal-reference",
+    "version" : "1.0.0",
+    "name" : "ObservationGoalReference",
+    "title" : "Observation Goal Reference",
+    "titlelang" : {
+    },
+    "date" : "2025-11-27T23:35:29+00:00",
+    "status" : {
+      "class" : "colsi",
+      "status" : "Active"
+    }
+  },
+  "StructureDefinition/onc-braden-scale-assessment" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 13,
+    "source" : "fsh-generated/resources/StructureDefinition-onc-braden-scale-assessment.json",
+    "sourceTail" : "StructureDefinition-onc-braden-scale-assessment.json",
+    "path" : "StructureDefinition-onc-braden-scale-assessment.html",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-braden-scale-assessment",
+    "version" : "1.0.0",
+    "name" : "ONCBradenScaleAssessment",
+    "title" : "Braden Scale Assessment",
+    "titlelang" : {
+    },
+    "date" : "2025-11-27T23:35:29+00:00",
+    "status" : {
+      "class" : "colsi",
+      "status" : "Active"
+    }
+  },
+  "StructureDefinition/onc-goal-evaluation" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 14,
+    "source" : "fsh-generated/resources/StructureDefinition-onc-goal-evaluation.json",
+    "sourceTail" : "StructureDefinition-onc-goal-evaluation.json",
+    "path" : "StructureDefinition-onc-goal-evaluation.html",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-goal-evaluation",
+    "version" : "1.0.0",
+    "name" : "ONCGoalEvaluation",
+    "title" : "Goal Evaluation",
+    "titlelang" : {
+    },
+    "date" : "2025-11-27T23:35:29+00:00",
+    "status" : {
+      "class" : "colsi",
+      "status" : "Active"
+    }
+  },
+  "StructureDefinition/onc-nhs-patient" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 15,
+    "source" : "fsh-generated/resources/StructureDefinition-onc-nhs-patient.json",
+    "sourceTail" : "StructureDefinition-onc-nhs-patient.json",
+    "path" : "StructureDefinition-onc-nhs-patient.html",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nhs-patient",
+    "version" : "1.0.0",
+    "name" : "ONCNHSPatient",
+    "title" : "ONC NHS Patient",
+    "titlelang" : {
+    },
+    "date" : "2025-11-27T23:35:29+00:00",
+    "status" : {
+      "class" : "colsi",
+      "status" : "Active"
+    }
+  },
+  "StructureDefinition/onc-nursing-assessment" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 16,
+    "source" : "fsh-generated/resources/StructureDefinition-onc-nursing-assessment.json",
+    "sourceTail" : "StructureDefinition-onc-nursing-assessment.json",
+    "path" : "StructureDefinition-onc-nursing-assessment.html",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+    "version" : "1.0.0",
+    "name" : "ONCNursingAssessment",
+    "title" : "Open Nursing Core Assessment",
+    "titlelang" : {
+    },
+    "date" : "2025-11-27T23:35:29+00:00",
+    "status" : {
+      "class" : "colsi",
+      "status" : "Active"
+    }
+  },
+  "StructureDefinition/onc-nursing-intervention" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 17,
+    "source" : "fsh-generated/resources/StructureDefinition-onc-nursing-intervention.json",
+    "sourceTail" : "StructureDefinition-onc-nursing-intervention.json",
+    "path" : "StructureDefinition-onc-nursing-intervention.html",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-intervention",
+    "version" : "1.0.0",
+    "name" : "ONCNursingIntervention",
+    "title" : "Nursing Intervention",
+    "titlelang" : {
+    },
+    "date" : "2025-11-27T23:35:29+00:00",
+    "status" : {
+      "class" : "colsi",
+      "status" : "Active"
+    }
+  },
+  "StructureDefinition/onc-nursing-problem" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 18,
+    "source" : "fsh-generated/resources/StructureDefinition-onc-nursing-problem.json",
+    "sourceTail" : "StructureDefinition-onc-nursing-problem.json",
+    "path" : "StructureDefinition-onc-nursing-problem.html",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-problem",
+    "version" : "1.0.0",
+    "name" : "ONCNursingProblem",
+    "title" : "Nursing Problem",
+    "titlelang" : {
+    },
+    "date" : "2025-11-27T23:35:29+00:00",
+    "status" : {
+      "class" : "colsi",
+      "status" : "Active"
+    }
+  },
+  "StructureDefinition/onc-patient-goal" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 19,
+    "source" : "fsh-generated/resources/StructureDefinition-onc-patient-goal.json",
+    "sourceTail" : "StructureDefinition-onc-patient-goal.json",
+    "path" : "StructureDefinition-onc-patient-goal.html",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-goal",
+    "version" : "1.0.0",
+    "name" : "ONCPatientGoal",
+    "title" : "Patient Goal",
+    "titlelang" : {
+    },
+    "date" : "2025-11-27T23:35:29+00:00",
+    "status" : {
+      "class" : "colsi",
+      "status" : "Active"
+    }
+  },
+  "StructureDefinition/onc-skintone-observation" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 20,
+    "source" : "fsh-generated/resources/StructureDefinition-onc-skintone-observation.json",
+    "sourceTail" : "StructureDefinition-onc-skintone-observation.json",
+    "path" : "StructureDefinition-onc-skintone-observation.html",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-skintone-observation",
+    "version" : "1.0.0",
+    "name" : "ONCSkinToneObservation",
+    "title" : "Skin Tone Observation",
+    "titlelang" : {
+    },
+    "date" : "2025-11-27T23:35:29+00:00",
+    "status" : {
+      "class" : "colsi",
+      "status" : "Active"
+    }
+  },
+  "ValueSet/goal-evaluation-valueset" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 21,
+    "source" : "fsh-generated/resources/ValueSet-goal-evaluation-valueset.json",
+    "sourceTail" : "ValueSet-goal-evaluation-valueset.json",
+    "path" : "ValueSet-goal-evaluation-valueset.html",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset",
+    "version" : "1.0.0",
+    "name" : "GoalEvaluationValueSet",
+    "title" : "Goal Evaluation Value Set",
+    "titlelang" : {
+    },
+    "date" : "2025-11-27T23:35:29+00:00",
+    "status" : {
+      "class" : "colsi",
+      "status" : "Active"
+    }
+  },
+  "ValueSet/housing-status-vs" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 22,
+    "source" : "fsh-generated/resources/ValueSet-housing-status-vs.json",
+    "sourceTail" : "ValueSet-housing-status-vs.json",
+    "path" : "ValueSet-housing-status-vs.html",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/housing-status-vs",
+    "version" : "1.0.0",
+    "name" : "HousingStatusVS",
+    "title" : "Housing Status Value Set",
+    "titlelang" : {
+    },
+    "date" : "2025-11-27T23:35:29+00:00",
+    "status" : {
+      "class" : "colsi",
+      "status" : "Active"
+    }
+  },
+  "ValueSet/nursing-intervention-valueset" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 23,
+    "source" : "fsh-generated/resources/ValueSet-nursing-intervention-valueset.json",
+    "sourceTail" : "ValueSet-nursing-intervention-valueset.json",
+    "path" : "ValueSet-nursing-intervention-valueset.html",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-intervention-valueset",
+    "version" : "1.0.0",
+    "name" : "NursingInterventionValueSet",
+    "title" : "Nursing Intervention Value Set",
+    "titlelang" : {
+    },
+    "date" : "2025-11-27T23:35:29+00:00",
+    "status" : {
+      "class" : "colsi",
+      "status" : "Active"
+    }
+  },
+  "ValueSet/nursing-problem-valueset" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 24,
+    "source" : "fsh-generated/resources/ValueSet-nursing-problem-valueset.json",
+    "sourceTail" : "ValueSet-nursing-problem-valueset.json",
+    "path" : "ValueSet-nursing-problem-valueset.html",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-problem-valueset",
+    "version" : "1.0.0",
+    "name" : "NursingProblemValueSet",
+    "title" : "Nursing Problem Value Set",
+    "titlelang" : {
+    },
+    "date" : "2025-11-27T23:35:29+00:00",
+    "status" : {
+      "class" : "colsi",
+      "status" : "Active"
+    }
+  },
+  "ValueSet/problem-category-valueset" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 25,
+    "source" : "fsh-generated/resources/ValueSet-problem-category-valueset.json",
+    "sourceTail" : "ValueSet-problem-category-valueset.json",
+    "path" : "ValueSet-problem-category-valueset.html",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/problem-category-valueset",
+    "version" : "1.0.0",
+    "name" : "ProblemCategoryValueSet",
+    "title" : "Problem Category Value Set",
+    "titlelang" : {
+    },
+    "date" : "2025-11-27T23:35:29+00:00",
+    "status" : {
+      "class" : "colsi",
+      "status" : "Active"
+    }
+  },
+  "ValueSet/skintone-vs" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 26,
+    "source" : "fsh-generated/resources/ValueSet-skintone-vs.json",
+    "sourceTail" : "ValueSet-skintone-vs.json",
+    "path" : "ValueSet-skintone-vs.html",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/skintone-vs",
+    "version" : "1.0.0",
+    "name" : "SkinToneVS",
+    "title" : "Fitzpatrick Skin Tone Value Set",
+    "titlelang" : {
+    },
+    "date" : "2025-11-27T23:35:29+00:00",
+    "status" : {
+      "class" : "colsi",
+      "status" : "Active"
+    }
+  }
+}

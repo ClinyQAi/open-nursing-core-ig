@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="example-nursing-problem"/>
+  <meta>
+    <profile value="https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-problem"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition example-nursing-problem</b></p><a name="example-nursing-problem"> </a><a name="hcexample-nursing-problem"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-onc-nursing-problem.html">Nursing Problem</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>category</b>: <span title="Codes:{http://open-nursing-core.org/CodeSystem/onc-problem-type nursing-diagnosis}">Nursing Diagnosis</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 162828007}">Risk of falls (finding)</span></p><p><b>subject</b>: <a href="Patient-patient-example-jane.html">Jane Doe  Female, DoB Unknown</a></p></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+      <display value="Active"/>
+    </coding>
+  </clinicalStatus>
+  <category>
+    <coding>
+      <system value="http://open-nursing-core.org/CodeSystem/onc-problem-type"/>
+      <code value="nursing-diagnosis"/>
+      <display value="Nursing Diagnosis"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="162828007"/>
+      <display value="Risk of falls (finding)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patient-example-jane"/>
+  </subject>
+</Condition>

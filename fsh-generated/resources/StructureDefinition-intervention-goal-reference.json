@@ -1,0 +1,51 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "intervention-goal-reference",
+  "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/intervention-goal-reference",
+  "name": "InterventionGoalReference",
+  "title": "Intervention Goal Reference",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Intervention Goal Reference"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/intervention-goal-reference"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-goal"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

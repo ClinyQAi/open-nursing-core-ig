@@ -1,0 +1,21 @@
+---
+---
+<!-- get modelType -->
+{% include fragment-modelType.html id='onc-nursing-intervention' %}
+
+{% include fragment-pagebegin.html %}
+
+<div style="counter-reset: section 10" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  {% include fragment-profile-navtabs.html type='StructureDefinition' id='onc-nursing-intervention' active='history' %}
+
+  <a name="root"> </a>
+  <h2 id="root">{{modelType}}: ONCNursingIntervention - Change History</h2>
+{% include fragment-simpletable.html %}
+  <p>Changes in the onc-nursing-intervention {{modelType | downcase}}.</p>
+
+  {%include StructureDefinition-onc-nursing-intervention-history.xhtml%}
+
+</div>
+{% assign includetabscripts = 'true' %}
+{% include fragment-pageend.html %}
