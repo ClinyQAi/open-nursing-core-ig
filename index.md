@@ -13,7 +13,7 @@
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "active",
-  "date" : "2025-11-28T14:30:06+00:00",
+  "date" : "2025-11-28T23:45:15+00:00",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules.",
   "packageId" : "onc.ig",
   "license" : "MIT",

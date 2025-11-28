@@ -38,7 +38,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-assessme
   "name" : "ONCNursingAssessment",
   "title" : "Open Nursing Core Assessment",
   "status" : "active",
-  "date" : "2025-11-28T14:30:06+00:00",
+  "date" : "2025-11-28T23:45:15+00:00",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
