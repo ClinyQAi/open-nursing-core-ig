@@ -1,0 +1,34 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "onc-observation-codes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem onc-observation-codes</b></p><a name=\"onc-observation-codes\"> </a><a name=\"hconc-observation-codes\"> </a><p>This  code system <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">onc-mst-assessment<a name=\"onc-observation-codes-onc-mst-assessment\"> </a></td><td>Monk Skin Tone Assessment</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
+     fhir:l <https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "ONCObservationCodes"] ; # 
+  fhir:title [ fhir:v "ONC Observation Codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-11-28T02:23:26+00:00"^^xsd:dateTime] ; # 
+  fhir:description [ fhir:v "Local observation codes for Open Nursing Core IG."] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "1"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "onc-mst-assessment" ] ;
+     fhir:display [ fhir:v "Monk Skin Tone Assessment" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

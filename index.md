@@ -13,7 +13,7 @@
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "active",
-  "date" : "2025-11-28T01:54:35+00:00",
+  "date" : "2025-11-28T02:23:26+00:00",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules.",
   "packageId" : "onc.ig",
   "license" : "MIT",
@@ -841,6 +841,46 @@
           }
         ],
         "reference" : {
+          "reference" : "StructureDefinition/onc-monk-skintone-observation"
+        },
+        "name" : "Monk Skin Tone Observation",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/onc-monk-scale"
+        },
+        "name" : "Monk Skin Tone Scale",
+        "description" : "The Monk Skin Tone (MST) Scale is a 10-shade scale designed to represent a broader range of skin tones for AI and equity applications.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/onc-monk-scale-vs"
+        },
+        "name" : "Monk Skin Tone Value Set",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
           "reference" : "StructureDefinition/onc-nursing-intervention"
         },
         "name" : "Nursing Intervention",
@@ -935,6 +975,20 @@
           "reference" : "StructureDefinition/onc-nhs-patient"
         },
         "name" : "ONC NHS Patient",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/onc-observation-codes"
+        },
+        "name" : "ONC Observation Codes",
+        "description" : "Local observation codes for Open Nursing Core IG.",
         "exampleBoolean" : false
       },
       {

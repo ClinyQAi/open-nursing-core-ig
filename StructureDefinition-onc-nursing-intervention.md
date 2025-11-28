@@ -38,7 +38,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-interven
   "name" : "ONCNursingIntervention",
   "title" : "Nursing Intervention",
   "status" : "active",
-  "date" : "2025-11-28T01:54:35+00:00",
+  "date" : "2025-11-28T02:23:26+00:00",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
