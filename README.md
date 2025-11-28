@@ -1,7 +1,7 @@
 # Open Nursing Core FHIR Implementation Guide (ONC-IG)
 
 **Status:** Release 1.0.0 ??
-**Live Standard:** [https://clinyqai.github.io/open-nursing-core-ig/](https://clinyqai.github.io/open-nursing-core-ig/)
+**Live Standard:** [[https://clinyqai.github.io/open-nursing-core-ig/](https://clinyqai.github.io/open-nursing-core-ig/](https://clinyqai.github.io/open-nursing-core-ig/toc.html))
 
 ## ?? The Mission
 The Open Nursing Core (ONC) is a nurse-led, open-source initiative to codify the nursing process (**ADPIE**) into rigorous digital standards (FHIR).
