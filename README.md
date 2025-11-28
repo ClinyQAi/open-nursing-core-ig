@@ -6,27 +6,18 @@
 ## ?? The Mission
 The Open Nursing Core (ONC) is a nurse-led, open-source initiative to codify the nursing process (**ADPIE**) into rigorous digital standards (FHIR).
 
-We are building the digital infrastructure to ensure nursing care is:
-*   **Visible:** Captured in standardized data, not free text.
-*   **Interoperable:** Readable by any EMR or AI system.
-*   **Equitable:** Includes Skin Tone and Social Determinants by default.
+## ?? Acknowledgements & Leadership
+This technical implementation is built upon the scholarship, leadership, and research of the following nursing innovators:
 
-## ?? What is in this IG?
-This repository contains the source code (FHIR Shorthand) for the following profiles:
+*   **Professor Joanne Bosanquet (Chief Executive, Foundation of Nursing Studies):** For championing open access to nursing knowledge via the **International Practice Development Journal (IPDJ)**.
+*   **Dr Clare Cable (Chief Executive, Burdett Trust for Nursing):** For pioneering work on **Relational Intelligence** in nursing.
+*   **Kumbi Kariwo (Nurse Citizen Developer):** For leading the technical integration of **Skin Tone Inclusivity** and equity measures.
+
+## ?? Scope
+This repository contains the source code (FHIR Shorthand) for:
 *   **Assessments:** Braden Scale, NEWS2, Skin Tone, Housing Status.
 *   **Clinical Logic:** Nursing Problems, Goals, Interventions, and Care Plans.
 *   **Equity:** UK Core Ethnicity and Fitzpatrick Skin Tone integration.
-
-## ??? How to Build Locally
-Prerequisites: [Node.js](https://nodejs.org/), [Java 17+](https://adoptium.net/), and [Jekyll](https://jekyllrb.com/).
-
-1.  **Install SUSHI:**
-    \
-pm install -g fsh-sushi\
-2.  **Download Publisher:**
-    Download the latest [publisher.jar](https://github.com/HL7/fhir-ig-publisher/releases)
-3.  **Run the Build:**
-    \java -jar publisher.jar -ig .\
 
 ## ?? License
 This project is licensed under the MIT License.
