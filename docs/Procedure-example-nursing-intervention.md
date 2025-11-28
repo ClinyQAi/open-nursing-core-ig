@@ -1,0 +1,69 @@
+# example-nursing-intervention - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **example-nursing-intervention**
+
+## Example Procedure: example-nursing-intervention
+
+Profile: [Nursing Intervention](StructureDefinition-onc-nursing-intervention.md)
+
+**Intervention Goal Reference**: [Goal: lifecycleStatus = active; description =](Goal-example-patient-goal.md)
+
+**status**: Completed
+
+**code**: Procedure
+
+**subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
+
+### Performers
+
+| | |
+| :--- | :--- |
+| - | **Actor** |
+| * | [Practitioner Nightingale](Practitioner-practitioner-example.md) |
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Procedure",
+  "id" : "example-nursing-intervention",
+  "meta" : {
+    "profile" : [
+      "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-intervention"
+    ]
+  },
+  "extension" : [
+    {
+      "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/intervention-goal-reference",
+      "valueReference" : {
+        "reference" : "Goal/example-patient-goal"
+      }
+    }
+  ],
+  "status" : "completed",
+  "code" : {
+    "coding" : [
+      {
+        "system" : "http://snomed.info/sct",
+        "code" : "71388002",
+        "display" : "Procedure"
+      }
+    ]
+  },
+  "subject" : {
+    "reference" : "Patient/patient-example-jane"
+  },
+  "performer" : [
+    {
+      "actor" : {
+        "reference" : "Practitioner/practitioner-example"
+      }
+    }
+  ]
+}
+
+```
