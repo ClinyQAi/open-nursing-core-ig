@@ -6,6 +6,9 @@ Parent: Observation
 Id: onc-nursing-assessment
 Title: "Open Nursing Core Assessment"
 Description: "A foundational profile for any nursing-specific observation, assessment, or finding. It mandates a performer and a link to the nursing process."
+* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.path = "$this"
+* category ^slicing.rules = #open
 * category contains nursing 1..1 MS
 * category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#nursing
 * performer 1..1 MS
@@ -77,7 +80,7 @@ Description: "An action performed by a nurse as part of a care plan."
 * status MS
 * code 1..1 MS
 * code from NursingInterventionValueSet (required)
-* reasonReference only Reference(ONCPatientGoal)
+* extension contains RelatedGoal named relatedGoal 0..*
 
 // =============================================================================
 // Profile: ONCGoalEvaluation (Specialized Observation)
@@ -87,8 +90,7 @@ Parent: ONCNursingAssessment
 Id: onc-goal-evaluation
 Title: "Open Nursing Core Goal Evaluation"
 Description: "An observation that evaluates a patient's progress towards a specific goal, closing the loop of the nursing process."
-* derivedFrom 1..* MS
-* derivedFrom only Reference(ONCPatientGoal)
+* extension contains RelatedGoal named relatedGoal 1..1
 * code from GoalEvaluationValueSet (required)
 
 // =============================================================================

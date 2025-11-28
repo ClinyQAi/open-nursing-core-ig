@@ -30,3 +30,10 @@ Id: onc-problem-type
 Title: "Open Nursing Core Problem Type CodeSystem"
 Description: "A code system to distinguish nursing problems from other condition types."
 * #nursing-diagnosis "Nursing Diagnosis" "A clinical judgment about a human response to a health condition, identified by a nurse."
+
+CodeSystem: ONCObservationCodes
+Id: onc-observation-codes
+Title: "Open Nursing Core Observation Codes"
+Description: "Codes for observations specific to ONC."
+* ^url = "http://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"
+* #mst-score "Monk Skin Tone Score" "Assessment of skin tone using the Monk Scale (10-point)."

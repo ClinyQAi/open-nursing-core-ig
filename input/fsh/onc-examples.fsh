@@ -28,8 +28,20 @@ Description: "An example of a Braden Scale pressure injury risk assessment"
 * subject = Reference(Patient/example-patient)
 * performer = Reference(Practitioner/example-nurse)
 * effectiveDateTime = "2025-11-21T08:00:00Z"
-* valueQuantity = 14 '{score}' "score"
+* valueQuantity = 14 '{score}'
 * valueQuantity.system = "http://unitsofmeasure.org"
+* component[sensoryPerception].code = http://loinc.org#9018-5 "Sensory perception"
+* component[sensoryPerception].valueCodeableConcept = http://loinc.org#LA9604-5 "No impairment"
+* component[moisture].code = http://loinc.org#9019-3 "Moisture"
+* component[moisture].valueCodeableConcept = http://loinc.org#LA9608-6 "Rarely moist"
+* component[activity].code = http://loinc.org#9020-1 "Activity"
+* component[activity].valueCodeableConcept = http://loinc.org#LA9611-0 "Walks frequently"
+* component[mobility].code = http://loinc.org#9021-9 "Mobility"
+* component[mobility].valueCodeableConcept = http://loinc.org#LA9615-1 "No limitation"
+* component[nutrition].code = http://loinc.org#9022-7 "Nutrition"
+* component[nutrition].valueCodeableConcept = http://loinc.org#LA9618-5 "Excellent"
+* component[frictionAndShear].code = http://loinc.org#9023-5 "Friction and shear"
+* component[frictionAndShear].valueCodeableConcept = http://loinc.org#LA9620-1 "No apparent problem"
 
 // =============================================================================
 // Example: Nursing Problem
@@ -40,10 +52,10 @@ Usage: #example
 Title: "Example Nursing Problem"
 Description: "An example of a nursing diagnosis"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
-* category = http://open-nursing-core.org/CodeSystem/onc-problem-type#nursing-diagnosis
 * code = http://snomed.info/sct#161891005 "Impaired skin integrity"
 * subject = Reference(Patient/example-patient)
 * onsetDateTime = "2025-11-20"
+// Category is fixed in profile, no need to restate unless different (which would be an error)
 
 // =============================================================================
 // Example: Patient Goal
@@ -73,7 +85,7 @@ Description: "An example of a nursing intervention"
 * subject = Reference(Patient/example-patient)
 * performedDateTime = "2025-11-21T10:00:00Z"
 * performer.actor = Reference(Practitioner/example-nurse)
-* reasonReference = Reference(ExamplePatientGoal)
+* extension[relatedGoal].valueReference = Reference(ExamplePatientGoal)
 
 // =============================================================================
 // Example: Goal Evaluation
@@ -90,7 +102,7 @@ Description: "An example of evaluating progress towards a goal"
 * performer = Reference(Practitioner/example-nurse)
 * effectiveDateTime = "2025-11-21T16:00:00Z"
 * valueCodeableConcept = http://snomed.info/sct#385633008 "Goal achieved"
-* derivedFrom = Reference(ExamplePatientGoal)
+* extension[relatedGoal].valueReference = Reference(ExamplePatientGoal)
 
 // =============================================================================
 // Example: Nursing Care Plan
