@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-UKCore-Extension-Eth
   "name" : "UKCoreEthnicCategory",
   "title" : "UK Core Ethnic Category",
   "status" : "active",
-  "date" : "2025-11-28T01:13:19+00:00",
+  "date" : "2025-11-28T01:33:25+00:00",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {

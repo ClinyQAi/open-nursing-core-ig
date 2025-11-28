@@ -53,7 +53,7 @@ This value set expansion contains 1 concepts.
   "name" : "SkinToneVS",
   "title" : "Fitzpatrick Skin Tone Value Set",
   "status" : "active",
-  "date" : "2025-11-28T01:13:19+00:00",
+  "date" : "2025-11-28T01:33:25+00:00",
   "compose" : {
     "include" : [
       {
