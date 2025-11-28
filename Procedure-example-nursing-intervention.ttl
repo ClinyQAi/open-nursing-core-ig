@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://clinyqai.github.io/open-nursing-core-ig/Procedure/example-nursing-intervention> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-nursing-intervention"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-intervention"^^xsd:anyURI ;
+       fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-intervention>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure example-nursing-intervention</b></p><a name=\"example-nursing-intervention\"> </a><a name=\"hcexample-nursing-intervention\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onc-nursing-intervention.html\">Nursing Intervention</a></p></div><p><b>Intervention Goal Reference</b>: <a href=\"Goal-example-patient-goal.html\">Goal: lifecycleStatus = active; description = </a></p><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 71388002}\">Procedure</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-jane.html\">Jane Doe  Female, DoB Unknown</a></p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Practitioner-practitioner-example.html\">Practitioner Nightingale </a></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/intervention-goal-reference"^^xsd:anyURI ;
+       fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/intervention-goal-reference>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Goal/example-patient-goal> ;
+       fhir:reference [ fhir:v "Goal/example-patient-goal" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:71388002 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "71388002" ] ;
+       fhir:display [ fhir:v "Procedure" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Patient/patient-example-jane> ;
+     fhir:reference [ fhir:v "Patient/patient-example-jane" ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Practitioner/practitioner-example> ;
+       fhir:reference [ fhir:v "Practitioner/practitioner-example" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

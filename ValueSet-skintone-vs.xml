@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="skintone-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet skintone-vs</b></p><a name="skintone-vs"> </a><a name="hcskintone-vs"> </a><ul><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicity stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a 403153005 (Centipede bite)</li></ul></div>
+  </text>
+  <url value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/skintone-vs"/>
+  <version value="1.0.0"/>
+  <name value="SkinToneVS"/>
+  <title value="Fitzpatrick Skin Tone Value Set"/>
+  <status value="active"/>
+  <date value="2025-11-28T01:13:19+00:00"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="403153005"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>
