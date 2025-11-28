@@ -8,6 +8,9 @@
 [GoalEvaluationValueSet]: ValueSet-goal-evaluation-valueset.html
 [HousingStatusVS]: ValueSet-housing-status-vs.html
 [InterventionGoalReference]: StructureDefinition-intervention-goal-reference.html
+[ONCMonkSkinToneObservation]: StructureDefinition-onc-monk-skintone-observation.html
+[ONCMonkScale]: CodeSystem-onc-monk-scale.html
+[ONCMonkScaleVS]: ValueSet-onc-monk-scale-vs.html
 [ONCNursingIntervention]: StructureDefinition-onc-nursing-intervention.html
 [NursingInterventionValueSet]: ValueSet-nursing-intervention-valueset.html
 [ONCNursingProblem]: StructureDefinition-onc-nursing-problem.html
@@ -16,6 +19,7 @@
 [observation-braden-scale]: Observation-observation-braden-scale.html
 [observation-skin-tone]: Observation-observation-skin-tone.html
 [ONCNHSPatient]: StructureDefinition-onc-nhs-patient.html
+[ONCObservationCodes]: CodeSystem-onc-observation-codes.html
 [ONCNursingAssessment]: StructureDefinition-onc-nursing-assessment.html
 [ONCPatientGoal]: StructureDefinition-onc-patient-goal.html
 [patient-example-jane]: Patient-patient-example-jane.html

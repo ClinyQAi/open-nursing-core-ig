@@ -17,3 +17,11 @@ Title: "Skin Tone Observation"
 * code = http://loinc.org#66472-2 "Fitzpatrick skin type"
 * value[x] only CodeableConcept
 * valueCodeableConcept from SkinToneVS (required)
+
+Profile: ONCMonkSkinToneObservation
+Parent: ONCNursingAssessment
+Id: onc-monk-skintone-observation
+Title: "Monk Skin Tone Observation"
+* code = ONCObservationCodes#onc-mst-assessment "Monk Skin Tone Assessment"
+* value[x] only CodeableConcept
+* valueCodeableConcept from ONCMonkScaleVS (required)

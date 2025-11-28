@@ -1,4 +1,6 @@
 Output File                                               Name                          Type        FSH File                 Lines
+CodeSystem-onc-monk-scale.json                            ONCMonkScale                  CodeSystem  onc-terminology.fsh      38 - 52
+CodeSystem-onc-observation-codes.json                     ONCObservationCodes           CodeSystem  onc-terminology.fsh      59 - 64
 CodeSystem-onc-problem-type.json                          ONCProblemType                CodeSystem  onc-terminology.fsh      22 - 25
 Condition-example-nursing-problem.json                    example-nursing-problem       Instance    onc-master-examples.fsh  57 - 63
 Goal-example-patient-goal.json                            example-patient-goal          Instance    onc-master-examples.fsh  65 - 71
@@ -13,6 +15,7 @@ StructureDefinition-intervention-goal-reference.json      InterventionGoalRefere
 StructureDefinition-observation-goal-reference.json       ObservationGoalReference      Extension   onc-profiles.fsh         86 - 89
 StructureDefinition-onc-braden-scale-assessment.json      ONCBradenScaleAssessment      Profile     onc-profiles.fsh         17 - 47
 StructureDefinition-onc-goal-evaluation.json              ONCGoalEvaluation             Profile     onc-profiles.fsh         79 - 84
+StructureDefinition-onc-monk-skintone-observation.json    ONCMonkSkinToneObservation    Profile     onc-equity.fsh           21 - 27
 StructureDefinition-onc-nhs-patient.json                  ONCNHSPatient                 Profile     onc-equity.fsh           7 - 11
 StructureDefinition-onc-nursing-assessment.json           ONCNursingAssessment          Profile     onc-profiles.fsh         1 - 15
 StructureDefinition-onc-nursing-intervention.json         ONCNursingIntervention        Profile     onc-profiles.fsh         68 - 77
@@ -23,5 +26,6 @@ ValueSet-goal-evaluation-valueset.json                    GoalEvaluationValueSet
 ValueSet-housing-status-vs.json                           HousingStatusVS               ValueSet    onc-terminology.fsh      32 - 36
 ValueSet-nursing-intervention-valueset.json               NursingInterventionValueSet   ValueSet    onc-terminology.fsh      6 - 9
 ValueSet-nursing-problem-valueset.json                    NursingProblemValueSet        ValueSet    onc-terminology.fsh      1 - 4
+ValueSet-onc-monk-scale-vs.json                           ONCMonkScaleVS                ValueSet    onc-terminology.fsh      54 - 57
 ValueSet-problem-category-valueset.json                   ProblemCategoryValueSet       ValueSet    onc-terminology.fsh      17 - 20
 ValueSet-skintone-vs.json                                 SkinToneVS                    ValueSet    onc-terminology.fsh      27 - 30
