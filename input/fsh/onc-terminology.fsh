@@ -63,3 +63,9 @@ Id: onc-problem-type
 Title: "Open Nursing Core Problem Type CodeSystem"
 Description: "A code system to distinguish nursing problems from other condition types."
 * #nursing-diagnosis "Nursing Diagnosis" "A clinical judgment about a human response to a health condition, identified by a nurse."
+
+CodeSystem: ONCObservationCodes
+Id: onc-observation-codes
+Title: "Open Nursing Core Observation Codes"
+Description: "Local codes for observations where no standard LOINC/SNOMED code exists."
+* #mst-score "Monk Skin Tone Scale Score" "A 10-point scale (MST-01 to MST-10) for classifying skin tone, designed to be more inclusive of darker skin tones than the Fitzpatrick scale."

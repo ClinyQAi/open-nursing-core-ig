@@ -1,13 +1,3 @@
-ValueSet: HousingStatusVS
-Id: housing-status-vs
-Title: "Housing Status Value Set"
-Description: "Codes representing the housing status of a patient."
-* ^experimental = false
-* http://snomed.info/sct#32911000 "Homeless"
-* http://snomed.info/sct#105529008 "Lives alone"
-* http://snomed.info/sct#160753008 "Lives with family"
-* http://snomed.info/sct#394923006 "Lives in a nursing home"
-
 ValueSet: ACVPUVS
 Id: acvpu-vs
 Title: "ACVPU Value Set"
@@ -29,6 +19,7 @@ Description: "Assessment of fall risk using the Morse Fall Scale."
 * value[x] only Quantity
 * valueQuantity.unit = "{score}"
 * valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #{score}
 * component 6..* MS
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
@@ -43,21 +34,27 @@ Description: "Assessment of fall risk using the Morse Fall Scale."
 * component[historyOfFalling].code = http://loinc.org#59461-4
 * component[historyOfFalling].value[x] only Quantity
 * component[historyOfFalling].valueQuantity.unit = "{score}"
+* component[historyOfFalling].valueQuantity.code = #{score}
 * component[secondaryDiagnosis].code = http://loinc.org#59462-2
 * component[secondaryDiagnosis].value[x] only Quantity
 * component[secondaryDiagnosis].valueQuantity.unit = "{score}"
+* component[secondaryDiagnosis].valueQuantity.code = #{score}
 * component[ambulatoryAid].code = http://loinc.org#59463-0
 * component[ambulatoryAid].value[x] only Quantity
 * component[ambulatoryAid].valueQuantity.unit = "{score}"
+* component[ambulatoryAid].valueQuantity.code = #{score}
 * component[intravenousTherapy].code = http://loinc.org#59464-8
 * component[intravenousTherapy].value[x] only Quantity
 * component[intravenousTherapy].valueQuantity.unit = "{score}"
+* component[intravenousTherapy].valueQuantity.code = #{score}
 * component[gait].code = http://loinc.org#59465-5
 * component[gait].value[x] only Quantity
 * component[gait].valueQuantity.unit = "{score}"
+* component[gait].valueQuantity.code = #{score}
 * component[mentalStatus].code = http://loinc.org#59466-3
 * component[mentalStatus].value[x] only Quantity
 * component[mentalStatus].valueQuantity.unit = "{score}"
+* component[mentalStatus].valueQuantity.code = #{score}
 
 Profile: ONCHousingStatus
 Parent: ONCNursingAssessment
@@ -80,6 +77,7 @@ Description: "National Early Warning Score 2 (NEWS2) assessment."
 * valueQuantity 1..1
 * valueQuantity.unit = "{score}"
 * valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #{score}
 * component 7..* MS
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"

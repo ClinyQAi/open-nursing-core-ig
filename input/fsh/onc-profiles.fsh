@@ -23,6 +23,7 @@ Description: "Braden Scale assessment for pressure injury risk."
 * value[x] only Quantity
 * valueQuantity.unit = "{score}"
 * valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #{score}
 * component 6..6 MS
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
@@ -42,7 +43,7 @@ Id: onc-nursing-problem
 Title: "Open Nursing Core Nursing Problem"
 Description: "Nursing problem or diagnosis."
 * category 1..1 MS
-* category = http://open-nursing-core.org/CodeSystem/onc-problem-type#nursing-diagnosis "Nursing Diagnosis"
+* category = ONCProblemType#nursing-diagnosis "Nursing Diagnosis"
 * clinicalStatus 1..1 MS
 * code 1..1 MS
 * code from NursingProblemValueSet (required)

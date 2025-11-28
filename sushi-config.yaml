@@ -11,6 +11,10 @@ description: "Foundational FHIR profiles for the nursing process (ADPIE)."
 license: MIT
 copyrightYear: 2025+
 releaseLabel: ci-build
+
+dependencies:
+  fhir.r4.ukcore: 1.0.0
+
 # This creates the history file locally to stop the "Unable to compare" error
 history:
   current: https://clinyqai.github.io/open-nursing-core-ig

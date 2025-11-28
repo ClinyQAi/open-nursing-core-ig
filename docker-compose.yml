@@ -26,6 +26,25 @@ services:
     networks:
       - haime-network
 
+  # Backend API
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: haime-backend
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - CosmosDb__ConnectionString=mongodb://mongodb:27017
+      - CosmosDb__DatabaseName=HAIME
+      - AzureStorage__ConnectionString=UseDevelopmentStorage=true;DevelopmentStorageProxyUri=http://azurite
+    depends_on:
+      - mongodb
+      - azurite
+    networks:
+      - haime-network
+
 volumes:
   azurite-data:
     driver: local
