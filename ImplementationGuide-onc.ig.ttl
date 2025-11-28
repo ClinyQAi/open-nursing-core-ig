@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "OpenNursingCoreIG"] ; # 
   fhir:title [ fhir:v "Open Nursing Core FHIR Implementation Guide (ONC-IG)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-11-28T02:23:26+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-28T14:19:47+00:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules."] ; # 
   fhir:packageId [ fhir:v "onc.ig"] ; # 
   fhir:license [ fhir:v "MIT"] ; # 
@@ -1491,67 +1491,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-monk-skintone-observation> ;
-         fhir:reference [ fhir:v "StructureDefinition/onc-monk-skintone-observation" ]
-       ] ;
-       fhir:name [ fhir:v "Monk Skin Tone Observation" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "CodeSystem"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale> ;
-         fhir:reference [ fhir:v "CodeSystem/onc-monk-scale" ]
-       ] ;
-       fhir:name [ fhir:v "Monk Skin Tone Scale" ] ;
-       fhir:description [ fhir:v "The Monk Skin Tone (MST) Scale is a 10-shade scale designed to represent a broader range of skin tones for AI and equity applications." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-monk-scale-vs> ;
-         fhir:reference [ fhir:v "ValueSet/onc-monk-scale-vs" ]
-       ] ;
-       fhir:name [ fhir:v "Monk Skin Tone Value Set" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-intervention> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-nursing-intervention" ]
        ] ;
@@ -1698,27 +1637,6 @@
          fhir:reference [ fhir:v "StructureDefinition/onc-nhs-patient" ]
        ] ;
        fhir:name [ fhir:v "ONC NHS Patient" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "CodeSystem"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes> ;
-         fhir:reference [ fhir:v "CodeSystem/onc-observation-codes" ]
-       ] ;
-       fhir:name [ fhir:v "ONC Observation Codes" ] ;
-       fhir:description [ fhir:v "Local observation codes for Open Nursing Core IG." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
