@@ -39,7 +39,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-patient-goal.csv
   "name" : "ONCPatientGoal",
   "title" : "Patient Goal",
   "status" : "active",
-  "date" : "2025-11-28T00:15:25+00:00",
+  "date" : "2025-11-28T01:24:36+00:00",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
