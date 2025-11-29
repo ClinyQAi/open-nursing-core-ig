@@ -96,10 +96,20 @@ logger.info(
 )
 
 # Default credentials (in production, migrate to database)
+# SECURITY FIX: Use environment variables for initial credentials
 DEFAULT_USERS = {
-    "admin": {"password": "admin2025", "role": "admin"},
-    "nurse": {"password": "nurse2025", "role": "nurse"},
-    "clinician": {"password": "clinician2025", "role": "clinician"},
+    "admin": {
+        "password": os.getenv("ADMIN_PASSWORD", "admin2025"),
+        "role": "admin"
+    },
+    "nurse": {
+        "password": os.getenv("NURSE_PASSWORD", "nurse2025"),
+        "role": "nurse"
+    },
+    "clinician": {
+        "password": os.getenv("CLINICIAN_PASSWORD", "clinician2025"),
+        "role": "clinician"
+    },
 }
 
 ROLE_PERMISSIONS = {
@@ -354,22 +364,25 @@ def login_page():
                 log_user_action(username, "failed_login")
 
         st.markdown("---")
-        st.markdown("### 📋 Demo Credentials")
-        st.info(
+        st.markdown("### 📋 Credentials")
+        if IS_PRODUCTION:
+            st.info("Contact your administrator for credentials.")
+        else:
+            st.info(
+                f"""
+            **Nurse:**
+            - Username: `nurse`
+            - Password: `{os.getenv("NURSE_PASSWORD", "nurse2025")}`
+
+            **Clinician:**
+            - Username: `clinician`
+            - Password: `{os.getenv("CLINICIAN_PASSWORD", "clinician2025")}`
+
+            **Admin:**
+            - Username: `admin`
+            - Password: `{os.getenv("ADMIN_PASSWORD", "admin2025")}`
             """
-        **Nurse:**
-        - Username: `nurse`
-        - Password: `nurse2025`
-
-        **Clinician:**
-        - Username: `clinician`
-        - Password: `clinician2025`
-
-        **Admin:**
-        - Username: `admin`
-        - Password: `admin2025`
-        """
-        )
+            )
 
 
 def main_app():
