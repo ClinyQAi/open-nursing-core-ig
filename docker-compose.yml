@@ -1,0 +1,68 @@
+version: '3.9'
+
+services:
+  nursing-validator:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nursing-validator
+    ports:
+      - "8501:8501"
+    environment:
+      # Azure OpenAI Configuration
+      AZURE_OPENAI_ENDPOINT: ${AZURE_OPENAI_ENDPOINT}
+      AZURE_OPENAI_API_KEY: ${AZURE_OPENAI_API_KEY}
+      AZURE_OPENAI_API_VERSION: ${AZURE_OPENAI_API_VERSION}
+      AZURE_OPENAI_DEPLOYMENT: ${AZURE_OPENAI_DEPLOYMENT}
+      
+      # Application Settings
+      APP_ENV: production
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+      
+      # Streamlit Configuration
+      STREAMLIT_SERVER_HEADLESS: "true"
+      STREAMLIT_SERVER_ENABLE_CORS: "false"
+      STREAMLIT_SERVER_ENABLE_XSRF_PROTECTION: "true"
+      STREAMLIT_CLIENT_SHOW_ERROR_DETAILS: "false"
+    
+    volumes:
+      # Persist knowledge database
+      - ./chroma_db_fons:/app/chroma_db_fons:rw
+      # Persist chat history
+      - ./.chat_history.json:/app/.chat_history.json:rw
+      # Logs directory
+      - ./logs:/app/logs:rw
+    
+    # Resource limits
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 4G
+        reservations:
+          cpus: '1'
+          memory: 2G
+    
+    # Health check
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    
+    # Restart policy
+    restart: unless-stopped
+    
+    # Security
+    read_only_root_filesystem: false
+    security_opt:
+      - no-new-privileges:true
+    
+    # Network
+    networks:
+      - nursing-validator-net
+
+networks:
+  nursing-validator-net:
+    driver: bridge

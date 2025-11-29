@@ -1,6 +1,7 @@
 import os
 import shutil
 import json
+import logging
 from datetime import datetime
 import streamlit as st
 from dotenv import load_dotenv
@@ -23,16 +24,43 @@ except ImportError:
     VISUALIZATIONS_AVAILABLE = False
 
 load_dotenv()
+
+# ============================================
+# LOGGING SETUP
+# ============================================
+log_level = os.getenv("LOG_LEVEL", "info").upper()
+logging.basicConfig(
+    level=getattr(logging, log_level, logging.INFO),
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.StreamHandler(),
+        logging.FileHandler(
+            os.getenv("LOG_FILE", "/tmp/nursing_validator.log")
+        )
+    ]
+)
+logger = logging.getLogger(__name__)
+
+# ============================================
+# STREAMLIT CONFIG
+# ============================================
 st.set_page_config(
     page_title="NHS Unified Nursing Validator (PRO)",
     page_icon="🔒",
     layout="wide"
 )
 
+# ============================================
+# CONFIGURATION
+# ============================================
 VECTOR_DB_PATH = "chroma_db_fons"
 LOCAL_DB_PATH = "/tmp/chroma_db_fons_fast"
 EMBEDDING_MODEL = "text-embedding-ada-002"
 CHAT_HISTORY_FILE = ".chat_history.json"
+APP_ENV = os.getenv("APP_ENV", "development")
+IS_PRODUCTION = APP_ENV == "production"
+
+logger.info(f"Starting NHS Nursing Validator - Environment: {APP_ENV}")
 
 # Default credentials (in production, use a proper auth system)
 DEFAULT_USERS = {
@@ -51,25 +79,33 @@ ROLE_PERMISSIONS = {
 @st.cache_resource
 def load_vector_db():
     if not os.path.exists(VECTOR_DB_PATH):
+        logger.warning(
+            f"Vector database not found at {VECTOR_DB_PATH}"
+        )
         return None
     if not os.path.exists(LOCAL_DB_PATH):
         try:
+            logger.info(f"Copying vector DB to {LOCAL_DB_PATH}")
             shutil.copytree(
                 VECTOR_DB_PATH,
                 LOCAL_DB_PATH,
                 dirs_exist_ok=True
             )
-        except Exception:
+        except Exception as e:
+            logger.error(f"Failed to copy vector DB: {e}", exc_info=True)
             return None
     try:
+        logger.debug("Loading embeddings...")
         embeddings = AzureOpenAIEmbeddings(
             azure_deployment=EMBEDDING_MODEL
         )
+        logger.debug("Loading Chroma database...")
         return Chroma(
             persist_directory=LOCAL_DB_PATH,
             embedding_function=embeddings
         )
-    except Exception:
+    except Exception as e:
+        logger.error(f"Failed to load vector DB: {e}", exc_info=True)
         return None
 
 
@@ -79,9 +115,18 @@ def load_chat_history(username):
         if os.path.exists(CHAT_HISTORY_FILE):
             with open(CHAT_HISTORY_FILE, 'r') as f:
                 all_history = json.load(f)
+                logger.debug(f"Loaded chat history for {username}")
                 return all_history.get(username, [])
-    except Exception:
-        pass
+    except json.JSONDecodeError as e:
+        logger.error(
+            f"Failed to parse chat history: {e}",
+            exc_info=True
+        )
+    except Exception as e:
+        logger.error(
+            f"Failed to load chat history: {e}",
+            exc_info=True
+        )
     return []
 
 
@@ -95,16 +140,25 @@ def save_chat_history(username, history):
         all_history[username] = history
         with open(CHAT_HISTORY_FILE, 'w') as f:
             json.dump(all_history, f, indent=2)
+        logger.debug(f"Saved chat history for {username}")
     except Exception as e:
+        logger.warning(f"Could not save chat history: {e}")
         st.warning(f"Could not save chat history: {e}")
 
 
 def authenticate_user(username, password):
     """Authenticate user and return role if successful."""
+    if not isinstance(username, str) or not isinstance(password, str):
+        logger.warning(
+            "Invalid authentication attempt - invalid types"
+        )
+        return None
     if username in DEFAULT_USERS:
         user = DEFAULT_USERS[username]
         if user["password"] == password:
+            logger.info(f"User authenticated: {username}")
             return user["role"]
+    logger.warning(f"Authentication failed for username: {username}")
     return None
 
 
