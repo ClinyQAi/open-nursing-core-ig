@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-intervention-valueset | *Version*:1.0.0 |
-| Active as of 2025-11-28 | *Computable Name*:NursingInterventionValueSet |
+| Active as of 2025-11-29 | *Computable Name*:NursingInterventionValueSet |
 
  **References** 
 
@@ -53,7 +53,7 @@ This value set has >1000 codes in it. In order to keep the publication size mana
   "name" : "NursingInterventionValueSet",
   "title" : "Nursing Intervention Value Set",
   "status" : "active",
-  "date" : "2025-11-28T23:45:15+00:00",
+  "date" : "2025-11-29T18:33:05+00:00",
   "compose" : {
     "include" : [
       {

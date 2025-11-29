@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment | *Version*:1.0.0 |
-| Active as of 2025-11-28 | *Computable Name*:ONCNursingAssessment |
+| Active as of 2025-11-29 | *Computable Name*:ONCNursingAssessment |
 
 **Usages:**
 
@@ -38,7 +38,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-assessme
   "name" : "ONCNursingAssessment",
   "title" : "Open Nursing Core Assessment",
   "status" : "active",
-  "date" : "2025-11-28T23:45:15+00:00",
+  "date" : "2025-11-29T18:33:05+00:00",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
