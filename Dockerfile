@@ -44,7 +44,10 @@ RUN pip install --no-cache /wheels/*
 USER nursing
 
 # Copy application code
-COPY --chown=nursing:nursing app.py .
+COPY --chown=nursing:nursing app_phase2.py .
+COPY --chown=nursing:nursing database.py .
+COPY --chown=nursing:nursing db_migrations.py .
+COPY --chown=nursing:nursing ml_*.py .
 COPY --chown=nursing:nursing visualizations.py .
 COPY --chown=nursing:nursing harvest_fons.py .
 COPY --chown=nursing:nursing ingest_fast.py .
@@ -97,4 +100,4 @@ ENV STREAMLIT_SERVER_HEADLESS=true \
     PYTHONDONTWRITEBYTECODE=1
 
 # Run application
-CMD ["streamlit", "run", "app.py", "--logger.level=info"]
+CMD ["streamlit", "run", "app_phase2.py", "--logger.level=info"]

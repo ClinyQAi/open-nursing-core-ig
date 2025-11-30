@@ -54,6 +54,17 @@ try:
 except ImportError:
     VISUALIZATIONS_AVAILABLE = False
 
+# Import ML modules
+try:
+    from ml_dashboards import display_ml_analytics_dashboard
+    from ml_predictive import PatientOutcomePredictor
+    from ml_anomaly_detection import VitalSignsAnomalyDetector
+
+    ML_AVAILABLE = True
+except ImportError:
+    ML_AVAILABLE = False
+    logging.warning("ML modules not available")
+
 load_dotenv()
 
 # ============================================
@@ -96,10 +107,20 @@ logger.info(
 )
 
 # Default credentials (in production, migrate to database)
+# SECURITY FIX: Use environment variables for initial credentials
 DEFAULT_USERS = {
-    "admin": {"password": "admin2025", "role": "admin"},
-    "nurse": {"password": "nurse2025", "role": "nurse"},
-    "clinician": {"password": "clinician2025", "role": "clinician"},
+    "admin": {
+        "password": os.getenv("ADMIN_PASSWORD", "admin2025"),
+        "role": "admin"
+    },
+    "nurse": {
+        "password": os.getenv("NURSE_PASSWORD", "nurse2025"),
+        "role": "nurse"
+    },
+    "clinician": {
+        "password": os.getenv("CLINICIAN_PASSWORD", "clinician2025"),
+        "role": "clinician"
+    },
 }
 
 ROLE_PERMISSIONS = {
@@ -354,22 +375,25 @@ def login_page():
                 log_user_action(username, "failed_login")
 
         st.markdown("---")
-        st.markdown("### 📋 Demo Credentials")
-        st.info(
+        st.markdown("### 📋 Credentials")
+        if IS_PRODUCTION:
+            st.info("Contact your administrator for credentials.")
+        else:
+            st.info(
+                f"""
+            **Nurse:**
+            - Username: `nurse`
+            - Password: `{os.getenv("NURSE_PASSWORD", "nurse2025")}`
+
+            **Clinician:**
+            - Username: `clinician`
+            - Password: `{os.getenv("CLINICIAN_PASSWORD", "clinician2025")}`
+
+            **Admin:**
+            - Username: `admin`
+            - Password: `{os.getenv("ADMIN_PASSWORD", "admin2025")}`
             """
-        **Nurse:**
-        - Username: `nurse`
-        - Password: `nurse2025`
-
-        **Clinician:**
-        - Username: `clinician`
-        - Password: `clinician2025`
-
-        **Admin:**
-        - Username: `admin`
-        - Password: `admin2025`
-        """
-        )
+            )
 
 
 def main_app():
@@ -412,18 +436,23 @@ def main_app():
         )
 
     # Tab interface
-    tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(
-        [
-            "💬 Chat Assistant",
-            "📋 Care Plan",
-            "🔍 Problems",
-            "💊 Interventions",
-            "📈 Health Indicators",
-            "⚙️ Admin" if st.session_state.role == "admin" else "ℹ️ Info",
-        ]
-    )
+    tabs = [
+        "💬 Chat Assistant",
+        "📋 Care Plan",
+        "🔍 Problems",
+        "💊 Interventions",
+        "📈 Health Indicators",
+    ]
 
-    with tab1:
+    if ML_AVAILABLE:
+        tabs.append("🔮 ML Analytics")
+
+    tabs.append("⚙️ Admin" if st.session_state.role == "admin" else "ℹ️ Info")
+
+    selected_tabs = st.tabs(tabs)
+
+    # Chat Assistant (Tab 1)
+    with selected_tabs[0]:
         st.markdown("## Chat with Clinical Assistant")
         st.markdown(
             "Ask questions about nursing care, clinical guidance, "
@@ -498,7 +527,8 @@ def main_app():
 
             st.rerun()
 
-    with tab2:
+    # Care Plan (Tab 2)
+    with selected_tabs[1]:
         st.markdown("## Care Plan Management")
         if VISUALIZATIONS_AVAILABLE and "admin" in st.session_state.get("role", ""):
             display_care_plan_dashboard()
@@ -507,28 +537,37 @@ def main_app():
         else:
             st.warning("Visualizations module not available")
 
-    with tab3:
+    # Problem Assessment (Tab 3)
+    with selected_tabs[2]:
         st.markdown("## Problem Assessment")
         if VISUALIZATIONS_AVAILABLE:
             display_problem_assessment()
         else:
             st.warning("Visualizations module not available")
 
-    with tab4:
+    # Intervention Analysis (Tab 4)
+    with selected_tabs[3]:
         st.markdown("## Intervention Analysis")
         if VISUALIZATIONS_AVAILABLE:
             display_intervention_analysis()
         else:
             st.warning("Visualizations module not available")
 
-    with tab5:
+    # Health Indicators (Tab 5)
+    with selected_tabs[4]:
         st.markdown("## Health Indicators")
         if VISUALIZATIONS_AVAILABLE:
             display_health_indicators()
         else:
             st.warning("Visualizations module not available")
 
-    with tab6:
+    # ML Analytics (Tab 6, if available)
+    if ML_AVAILABLE:
+        with selected_tabs[5]:
+            display_ml_analytics_dashboard()
+
+    # Admin / Info (Last Tab)
+    with selected_tabs[-1]:
         if st.session_state.role == "admin":
             st.markdown("## 🔧 Admin Panel")
             admin_option = st.selectbox(

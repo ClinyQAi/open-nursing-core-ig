@@ -3,12 +3,11 @@ Parent: Observation
 Id: onc-nursing-assessment
 Title: "Open Nursing Core Assessment"
 * category ^slicing.discriminator.type = #pattern
-* category ^slicing.discriminator.path = "coding.code"
+* category ^slicing.discriminator.path = "$this"
 * category ^slicing.ordered = false
 * category ^slicing.rules = #open
 * category contains nursing 1..1 MS
-* category[nursing].coding.system = "http://terminology.hl7.org/CodeSystem/observation-category"
-* category[nursing].coding.code = #nursing
+* category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#nursing
 * performer 1..1 MS
 * performer only Reference(Practitioner or PractitionerRole)
 * value[x] 1..1 MS
@@ -27,6 +26,7 @@ Title: "Braden Scale Assessment"
 * valueQuantity 1..1 MS
 * valueQuantity.unit = "score"
 * valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #{score}
 * component 6..6 MS
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
