@@ -15,33 +15,84 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment: ${{ github.event.inputs.environment }}
     
     steps:
       - uses: actions/checkout@v3
       
-      - name: Azure Login
-        uses: azure/login@v1
-        with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+      - name: Check Required Secrets
+        run: |
+          echo "Checking required secrets..."
+          if [ -z "${{ secrets.AZURE_CLIENT_ID }}" ]; then
+            echo "❌ Missing: AZURE_CLIENT_ID"
+            echo "Please add this to GitHub Secrets"
+            exit 1
+          fi
+          if [ -z "${{ secrets.AZURE_CLIENT_SECRET }}" ]; then
+            echo "❌ Missing: AZURE_CLIENT_SECRET"
+            echo "Please add this to GitHub Secrets"
+            exit 1
+          fi
+          if [ -z "${{ secrets.AZURE_TENANT_ID }}" ]; then
+            echo "❌ Missing: AZURE_TENANT_ID"
+            echo "Please add this to GitHub Secrets"
+            exit 1
+          fi
+          if [ -z "${{ secrets.AZURE_SUBSCRIPTION_ID }}" ]; then
+            echo "❌ Missing: AZURE_SUBSCRIPTION_ID"
+            echo "Please add this to GitHub Secrets"
+            exit 1
+          fi
+          if [ -z "${{ secrets.AZURE_OPENAI_ENDPOINT }}" ]; then
+            echo "❌ Missing: AZURE_OPENAI_ENDPOINT"
+            exit 1
+          fi
+          if [ -z "${{ secrets.AZURE_OPENAI_API_KEY }}" ]; then
+            echo "❌ Missing: AZURE_OPENAI_API_KEY"
+            exit 1
+          fi
+          echo "✓ All required secrets present"
+      
+      - name: Azure CLI Login
+        run: |
+          az login \
+            --service-principal \
+            -u ${{ secrets.AZURE_CLIENT_ID }} \
+            -p ${{ secrets.AZURE_CLIENT_SECRET }} \
+            --tenant ${{ secrets.AZURE_TENANT_ID }}
+          
+          az account set --subscription ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          echo "✓ Successfully logged in to Azure"
       
       - name: Build and push to Azure Container Registry
         run: |
+          echo "Building Docker image..."
           az acr build \
             --registry nursingvalidatoracr \
             --image nursing-validator:latest \
             --image nursing-validator:${{ github.sha }} \
             --file Dockerfile .
+          echo "✓ Image built and pushed"
       
       - name: Deploy to Azure Container Instances
         run: |
+          echo "Deploying to Azure Container Instances..."
+          
+          # Get registry credentials
+          REGISTRY_USERNAME=$(az acr credential show --name nursingvalidatoracr --query username --output tsv)
+          REGISTRY_PASSWORD=$(az acr credential show --name nursingvalidatoracr --query 'passwords[0].value' --output tsv)
+          
+          # Delete existing container if it exists
+          az container delete --resource-group nursing-validator-prod --name nursing-validator --yes 2>/dev/null || true
+          sleep 5
+          
+          # Create new container
           az container create \
             --resource-group nursing-validator-prod \
             --name nursing-validator \
             --image nursingvalidatoracr.azurecr.io/nursing-validator:latest \
             --registry-login-server nursingvalidatoracr.azurecr.io \
-            --registry-username $(az acr credential show --name nursingvalidatoracr --query username --output tsv) \
-            --registry-password $(az acr credential show --name nursingvalidatoracr --query 'passwords[0].value' --output tsv) \
+            --registry-username "$REGISTRY_USERNAME" \
+            --registry-password "$REGISTRY_PASSWORD" \
             --cpu 2 \
             --memory 4 \
             --ports 8501 \
@@ -54,8 +105,27 @@ jobs:
               AZURE_OPENAI_DEPLOYMENT="${{ secrets.AZURE_OPENAI_DEPLOYMENT }}" \
               AZURE_OPENAI_API_VERSION="${{ secrets.AZURE_OPENAI_API_VERSION }}" \
             --restart-policy OnFailure
+          
+          echo "✓ Container deployed"
       
       - name: Get deployment URL
         run: |
+          echo "Waiting for public IP..."
+          sleep 10
+          
           FQDN=$(az container show --resource-group nursing-validator-prod --name nursing-validator --query ipAddress.fqdn --output tsv)
-          echo "Deployment URL: http://$FQDN:8501"
+          
+          if [ -z "$FQDN" ]; then
+            echo "⚠️  Public IP not yet assigned, check again in 30 seconds"
+            echo "Run: az container show --resource-group nursing-validator-prod --name nursing-validator --query ipAddress.fqdn"
+          else
+            echo ""
+            echo "✅ DEPLOYMENT COMPLETE!"
+            echo ""
+            echo "Access your application at:"
+            echo "http://$FQDN:8501"
+            echo ""
+            echo "Login with:"
+            echo "  Username: admin"
+            echo "  Password: admin2025"
+          fi
