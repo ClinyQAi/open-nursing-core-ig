@@ -57,32 +57,29 @@ COPY --chown=nursing:nursing chroma_db_fons ./chroma_db_fons
 RUN mkdir -p /app/.streamlit
 
 # Streamlit configuration for production
-RUN cat > /app/.streamlit/config.toml << 'EOF'
-[theme]
-primaryColor = "#FF6B6B"
-backgroundColor = "#FFFFFF"
-secondaryBackgroundColor = "#F0F2F6"
-font = "sans serif"
+RUN mkdir -p /app/.streamlit
 
-[server]
-port = 8501
-address = 0.0.0.0
-maxUploadSize = 200
-enableXsrfProtection = true
-enableCORS = false
-headless = true
-runOnSave = false
-
-[client]
-showErrorDetails = false
-showWarningOnDirectExecution = false
-
-[logger]
-level = "info"
-
-[browser]
-gatherUsageStats = false
-EOF
+# Write config.toml
+RUN echo '[theme]' > /app/.streamlit/config.toml && \
+    echo 'primaryColor = "#FF6B6B"' >> /app/.streamlit/config.toml && \
+    echo 'backgroundColor = "#FFFFFF"' >> /app/.streamlit/config.toml && \
+    echo 'secondaryBackgroundColor = "#F0F2F6"' >> /app/.streamlit/config.toml && \
+    echo 'font = "sans serif"' >> /app/.streamlit/config.toml && \
+    echo '[server]' >> /app/.streamlit/config.toml && \
+    echo 'port = 8501' >> /app/.streamlit/config.toml && \
+    echo 'address = "0.0.0.0"' >> /app/.streamlit/config.toml && \
+    echo 'maxUploadSize = 200' >> /app/.streamlit/config.toml && \
+    echo 'enableXsrfProtection = true' >> /app/.streamlit/config.toml && \
+    echo 'enableCORS = false' >> /app/.streamlit/config.toml && \
+    echo 'headless = true' >> /app/.streamlit/config.toml && \
+    echo 'runOnSave = false' >> /app/.streamlit/config.toml && \
+    echo '[client]' >> /app/.streamlit/config.toml && \
+    echo 'showErrorDetails = false' >> /app/.streamlit/config.toml && \
+    echo 'showWarningOnDirectExecution = false' >> /app/.streamlit/config.toml && \
+    echo '[logger]' >> /app/.streamlit/config.toml && \
+    echo 'level = "info"' >> /app/.streamlit/config.toml && \
+    echo '[browser]' >> /app/.streamlit/config.toml && \
+    echo 'gatherUsageStats = false' >> /app/.streamlit/config.toml
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
