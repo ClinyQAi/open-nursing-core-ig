@@ -64,6 +64,7 @@ jobs:
             --registry-login-server nursingvalidatoracr.azurecr.io \
             --registry-username "$REGISTRY_USERNAME" \
             --registry-password "$REGISTRY_PASSWORD" \
+            --os-type Linux \
             --cpu 2 \
             --memory 4 \
             --ports 8501 \
