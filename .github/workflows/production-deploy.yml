@@ -1,5 +1,9 @@
 name: Production CI/CD Pipeline
 
+permissions:
+  contents: read
+  issues: write
+
 on:
   push:
     branches: [ main ]
@@ -265,13 +269,32 @@ jobs:
     if: failure()
     
     steps:
-    - name: Notify failure
+    - name: Comment on PR/Issue on failure
+      if: ${{ github.event_name == 'pull_request' || github.event_name == 'issues' || github.event_name == 'issue' }}
       uses: actions/github-script@v6
       with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
         script: |
-          github.rest.issues.createComment({
-            issue_number: context.issue.number,
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            body: '❌ Deployment pipeline failed. Check the workflow logs for details.'
-          })
+          const core = require('@actions/core');
+
+          try {
+            const issueNumber =
+              context.issue?.number ||
+              context.payload?.pull_request?.number ||
+              context.payload?.issue?.number;
+
+            if (!issueNumber) {
+              core.info('No issue or pull request number found in the event payload; skipping comment.');
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                body: '❌ Deployment pipeline failed. Check the workflow logs for details.'
+              });
+              core.info(`Posted comment on issue/PR #${issueNumber}`);
+            }
+          } catch (err) {
+            core.warning(`Failed to post comment: ${err.message}`);
+            // Do not rethrow so this step doesn't cause additional failures
+          }
