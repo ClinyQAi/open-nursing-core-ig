@@ -251,7 +251,7 @@ jobs:
         exit 1
     
     - name: Comment on PR/Issue on success
-      if: ${{ github.event_name == 'pull_request' || github.event_name == 'issues' || github.event_name == 'issue' }}
+      if: ${{ github.event_name == 'pull_request' || github.event_name == 'issues' }}
       uses: actions/github-script@v6
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -289,7 +289,7 @@ jobs:
     
     steps:
     - name: Comment on PR/Issue on failure
-      if: ${{ github.event_name == 'pull_request' || github.event_name == 'issues' || github.event_name == 'issue' }}
+      if: ${{ github.event_name == 'pull_request' || github.event_name == 'issues' }}
       uses: actions/github-script@v6
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
