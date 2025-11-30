@@ -68,6 +68,7 @@ jobs:
             --cpu 2 \
             --memory 4 \
             --ports 8501 \
+            --ip-address Public \
             --environment-variables \
               APP_ENV=production \
               LOG_LEVEL=info \
