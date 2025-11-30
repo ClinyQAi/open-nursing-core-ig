@@ -1,0 +1,61 @@
+name: Deploy to Azure
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to deploy to'
+        required: true
+        default: 'production'
+        type: choice
+        options:
+          - production
+          - staging
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: ${{ github.event.inputs.environment }}
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+      
+      - name: Build and push to Azure Container Registry
+        run: |
+          az acr build \
+            --registry nursingvalidatoracr \
+            --image nursing-validator:latest \
+            --image nursing-validator:${{ github.sha }} \
+            --file Dockerfile .
+      
+      - name: Deploy to Azure Container Instances
+        run: |
+          az container create \
+            --resource-group nursing-validator-prod \
+            --name nursing-validator \
+            --image nursingvalidatoracr.azurecr.io/nursing-validator:latest \
+            --registry-login-server nursingvalidatoracr.azurecr.io \
+            --registry-username $(az acr credential show --name nursingvalidatoracr --query username --output tsv) \
+            --registry-password $(az acr credential show --name nursingvalidatoracr --query 'passwords[0].value' --output tsv) \
+            --cpu 2 \
+            --memory 4 \
+            --ports 8501 \
+            --environment-variables \
+              APP_ENV=production \
+              LOG_LEVEL=info \
+            --secure-environment-variables \
+              AZURE_OPENAI_ENDPOINT="${{ secrets.AZURE_OPENAI_ENDPOINT }}" \
+              AZURE_OPENAI_API_KEY="${{ secrets.AZURE_OPENAI_API_KEY }}" \
+              AZURE_OPENAI_DEPLOYMENT="${{ secrets.AZURE_OPENAI_DEPLOYMENT }}" \
+              AZURE_OPENAI_API_VERSION="${{ secrets.AZURE_OPENAI_API_VERSION }}" \
+            --restart-policy OnFailure
+      
+      - name: Get deployment URL
+        run: |
+          FQDN=$(az container show --resource-group nursing-validator-prod --name nursing-validator --query ipAddress.fqdn --output tsv)
+          echo "Deployment URL: http://$FQDN:8501"
