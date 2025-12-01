@@ -11,15 +11,12 @@ from datetime import datetime
 from pathlib import Path
 from typing import Optional, List
 
+from core.settings import settings
+
 logger = logging.getLogger(__name__)
 
 # Backup configuration
 BACKUP_DIR = os.getenv("BACKUP_DIR", "./backups")
-DB_HOST = os.getenv("DB_HOST", "localhost")
-DB_PORT = os.getenv("DB_PORT", "5432")
-DB_NAME = os.getenv("DB_NAME", "nursing_validator")
-DB_USER = os.getenv("DB_USER", "nursing_admin")
-DB_PASSWORD = os.getenv("DB_PASSWORD", "nursing_password")
 
 
 def ensure_backup_dir():
@@ -40,18 +37,18 @@ def create_backup(backup_name: Optional[str] = None) -> str:
 
     try:
         env = os.environ.copy()
-        env["PGPASSWORD"] = DB_PASSWORD
+        env["PGPASSWORD"] = settings.DB_PASSWORD
 
         cmd = [
             "pg_dump",
             "-h",
-            DB_HOST,
+            settings.DB_HOST,
             "-p",
-            DB_PORT,
+            settings.DB_PORT,
             "-U",
-            DB_USER,
+            settings.DB_USER,
             "-d",
-            DB_NAME,
+            settings.DB_NAME,
             "--file",
             backup_path,
             "--verbose",
@@ -86,18 +83,18 @@ def restore_backup(backup_path: str) -> bool:
 
     try:
         env = os.environ.copy()
-        env["PGPASSWORD"] = DB_PASSWORD
+        env["PGPASSWORD"] = settings.DB_PASSWORD
 
         cmd = [
             "psql",
             "-h",
-            DB_HOST,
+            settings.DB_HOST,
             "-p",
-            DB_PORT,
+            settings.DB_PORT,
             "-U",
-            DB_USER,
+            settings.DB_USER,
             "-d",
-            DB_NAME,
+            settings.DB_NAME,
             "-f",
             backup_path,
         ]
@@ -174,14 +171,14 @@ class Migration001CreateInitialSchema(Migration):
 
     def up(self):
         """Create initial tables."""
-        from database import init_database
+        from db.database import init_database
 
         init_database()
         logger.info("Migration 001: Schema created")
 
     def down(self):
         """Drop tables."""
-        from database import get_connection
+        from db.database import get_connection
 
         with get_connection() as conn:
             cur = conn.cursor()
@@ -201,14 +198,14 @@ class Migration002AddAnalyticsTables(Migration):
 
     def up(self):
         """Create analytics tables."""
-        from database import init_database
+        from db.database import init_database
 
         init_database()
         logger.info("Migration 002: Analytics tables added")
 
     def down(self):
         """Drop analytics tables."""
-        from database import get_connection
+        from db.database import get_connection
 
         with get_connection() as conn:
             cur = conn.cursor()
@@ -226,7 +223,7 @@ def get_migrations() -> List[Migration]:
 
 def run_migrations() -> bool:
     """Run all pending migrations."""
-    from database import get_connection
+    from db.database import get_connection
 
     logger.info("Starting migration process...")
 
@@ -277,7 +274,7 @@ def run_migrations() -> bool:
 
 def rollback_migration(steps: int = 1) -> bool:
     """Rollback N migrations."""
-    from database import get_connection
+    from db.database import get_connection
 
     logger.info(f"Rolling back {steps} migration(s)...")
 

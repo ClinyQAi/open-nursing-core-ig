@@ -16,16 +16,9 @@ import psycopg2
 from psycopg2 import pool, sql
 from psycopg2.extras import RealDictCursor, execute_values
 
-logger = logging.getLogger(__name__)
+from core.settings import settings
 
-# Database configuration from environment
-DB_HOST = os.getenv("DB_HOST", "localhost")
-DB_PORT = os.getenv("DB_PORT", "5432")
-DB_NAME = os.getenv("DB_NAME", "nursing_validator")
-DB_USER = os.getenv("DB_USER", "nursing_admin")
-DB_PASSWORD = os.getenv("DB_PASSWORD", "nursing_password")
-DB_POOL_MIN = int(os.getenv("DB_POOL_MIN", "2"))
-DB_POOL_MAX = int(os.getenv("DB_POOL_MAX", "20"))
+logger = logging.getLogger(__name__)
 
 # Connection pool (initialized on first use)
 _connection_pool = None
@@ -37,13 +30,13 @@ def init_connection_pool():
     if _connection_pool is None:
         try:
             _connection_pool = psycopg2.pool.SimpleConnectionPool(
-                DB_POOL_MIN,
-                DB_POOL_MAX,
-                host=DB_HOST,
-                port=DB_PORT,
-                database=DB_NAME,
-                user=DB_USER,
-                password=DB_PASSWORD,
+                settings.DB_POOL_MIN,
+                settings.DB_POOL_MAX,
+                host=settings.DB_HOST,
+                port=settings.DB_PORT,
+                database=settings.DB_NAME,
+                user=settings.DB_USER,
+                password=settings.DB_PASSWORD,
                 connect_timeout=5,
             )
             logger.info("Database connection pool initialized successfully")

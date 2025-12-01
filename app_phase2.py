@@ -6,79 +6,65 @@ Uses database for production, JSON for development/testing.
 """
 
 import os
-import shutil
-import json
 import logging
-import hashlib
-from datetime import datetime
 from typing import Optional, Dict, List, Any
 
 import streamlit as st
-from dotenv import load_dotenv
-
 from langchain_openai import AzureOpenAI
-from langchain_openai import AzureOpenAIEmbeddings
-from langchain_chroma import Chroma
 from langchain.chains import RetrievalQA
 
-# Try to import database modules (optional for fallback)
+# Core imports
+from core.settings import settings
+from core.logging_config import configure_logging
+from core.validator import (
+    authenticate_user,
+    load_vector_db,
+    save_chat_message,
+    load_chat_history,
+    audit_log,
+    analytics_log,
+    hash_password,
+    DB_AVAILABLE
+)
+
+# Optional Imports with new paths
 try:
-    from database import (
+    from db.database import (
         init_database,
         add_user,
         get_user,
-        update_last_login,
-        save_chat_message,
-        get_chat_history,
-        clear_chat_history,
-        log_audit_event,
-        log_analytics_event,
     )
-    from db_migrations import run_migrations
-
-    DB_AVAILABLE = True
+    from db.db_migrations import run_migrations
 except ImportError:
-    DB_AVAILABLE = False
-    logging.warning("Database modules not available - using JSON fallback")
+    pass # DB_AVAILABLE handled in core/validator.py
 
 # Import visualization module
 try:
-    from visualizations import (
+    from visualizations.visualizations import (
         display_care_plan_dashboard,
         display_problem_assessment,
         display_intervention_analysis,
         display_health_indicators,
     )
-
     VISUALIZATIONS_AVAILABLE = True
 except ImportError:
     VISUALIZATIONS_AVAILABLE = False
 
 # Import ML modules
 try:
-    from ml_dashboards import display_ml_analytics_dashboard
-    from ml_predictive import PatientOutcomePredictor
-    from ml_anomaly_detection import VitalSignsAnomalyDetector
-
+    from ml.ml_dashboards import display_ml_analytics_dashboard
+    from ml.ml_predictive import PatientOutcomePredictor
+    from ml.ml_anomaly_detection import VitalSignsAnomalyDetector
     ML_AVAILABLE = True
 except ImportError:
     ML_AVAILABLE = False
-    logging.warning("ML modules not available")
+    logging.getLogger(__name__).warning("ML modules not available")
 
-load_dotenv()
 
 # ============================================
 # LOGGING SETUP
 # ============================================
-log_level = os.getenv("LOG_LEVEL", "info").upper()
-logging.basicConfig(
-    level=getattr(logging, log_level, logging.INFO),
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    handlers=[
-        logging.StreamHandler(),
-        logging.FileHandler(os.getenv("LOG_FILE", "/tmp/nursing_validator.log")),
-    ],
-)
+configure_logging()
 logger = logging.getLogger(__name__)
 
 # ============================================
@@ -90,39 +76,12 @@ st.set_page_config(
     layout="wide",
 )
 
-# ============================================
-# CONFIGURATION
-# ============================================
-VECTOR_DB_PATH = "chroma_db_fons"
-LOCAL_DB_PATH = "/tmp/chroma_db_fons_fast"
-EMBEDDING_MODEL = "text-embedding-ada-002"
-CHAT_HISTORY_FILE = ".chat_history.json"
-APP_ENV = os.getenv("APP_ENV", "development")
-IS_PRODUCTION = APP_ENV == "production"
-USE_DATABASE = os.getenv("USE_DATABASE", "true").lower() == "true"
-
 logger.info(
     f"Starting NHS Nursing Validator - "
-    f"Environment: {APP_ENV}, Database: {USE_DATABASE}"
+    f"Environment: {settings.APP_ENV}, Database: {settings.USE_DATABASE}"
 )
 
-# Default credentials (in production, migrate to database)
-# SECURITY FIX: Use environment variables for initial credentials
-DEFAULT_USERS = {
-    "admin": {
-        "password": os.getenv("ADMIN_PASSWORD", "admin2025"),
-        "role": "admin"
-    },
-    "nurse": {
-        "password": os.getenv("NURSE_PASSWORD", "nurse2025"),
-        "role": "nurse"
-    },
-    "clinician": {
-        "password": os.getenv("CLINICIAN_PASSWORD", "clinician2025"),
-        "role": "clinician"
-    },
-}
-
+# Constants
 ROLE_PERMISSIONS = {
     "admin": ["validate", "view_history", "export", "manage_users", "analytics"],
     "nurse": ["validate", "view_history", "export", "analytics"],
@@ -130,14 +89,9 @@ ROLE_PERMISSIONS = {
 }
 
 
-def hash_password(password: str) -> str:
-    """Hash a password using SHA-256."""
-    return hashlib.sha256(password.encode()).hexdigest()
-
-
 def init_database_if_needed():
     """Initialize database on first run."""
-    if USE_DATABASE and DB_AVAILABLE:
+    if settings.USE_DATABASE and DB_AVAILABLE:
         try:
             if not st.session_state.get("db_initialized", False):
                 logger.info("Initializing database schema...")
@@ -158,7 +112,15 @@ def _seed_default_users():
     if not DB_AVAILABLE:
         return
 
-    for username, creds in DEFAULT_USERS.items():
+    # Get defaults from core settings/validator logic?
+    # Or just use the env vars directly here since it's admin logic.
+    users_to_seed = {
+        "admin": {"password": settings.ADMIN_PASSWORD, "role": "admin"},
+        "nurse": {"password": settings.NURSE_PASSWORD, "role": "nurse"},
+        "clinician": {"password": settings.CLINICIAN_PASSWORD, "role": "clinician"}
+    }
+
+    for username, creds in users_to_seed.items():
         try:
             user = get_user(username)
             if user is None:
@@ -167,166 +129,6 @@ def _seed_default_users():
                 logger.info(f"Seeded user: {username}")
         except Exception as e:
             logger.warning(f"Could not seed user {username}: {e}")
-
-
-@st.cache_resource
-def load_vector_db():
-    """Load and cache ChromaDB vector database."""
-    if not os.path.exists(VECTOR_DB_PATH):
-        logger.warning(f"Vector database not found at {VECTOR_DB_PATH}")
-        return None
-
-    if not os.path.exists(LOCAL_DB_PATH):
-        try:
-            logger.info(f"Copying vector DB to {LOCAL_DB_PATH}")
-            shutil.copytree(VECTOR_DB_PATH, LOCAL_DB_PATH, dirs_exist_ok=True)
-        except Exception as e:
-            logger.error(f"Failed to copy vector DB: {e}", exc_info=True)
-            return None
-
-    try:
-        logger.debug("Loading embeddings...")
-        embeddings = AzureOpenAIEmbeddings(azure_deployment=EMBEDDING_MODEL)
-        logger.debug("Loading ChromaDB...")
-        db = Chroma(persist_directory=LOCAL_DB_PATH, embedding_function=embeddings)
-        logger.info("Vector DB loaded successfully")
-        return db
-    except Exception as e:
-        logger.error(f"Failed to load vector DB: {e}", exc_info=True)
-        return None
-
-
-def authenticate_user(username: str, password: str) -> Optional[str]:
-    """Authenticate user against database or defaults."""
-    if not username or not password:
-        logger.warning("Invalid authentication attempt - empty credentials")
-        return None
-
-    try:
-        # Try database first
-        if USE_DATABASE and DB_AVAILABLE:
-            user = get_user(username)
-            if user:
-                password_hash = hash_password(password)
-                if user["password_hash"] == password_hash and user["is_active"]:
-                    logger.info(f"User authenticated from database: {username}")
-                    update_last_login(user["id"])
-                    return user["role"]
-                else:
-                    logger.warning(
-                        f"Failed auth for DB user: {username} "
-                        "(invalid password or inactive)"
-                    )
-                    return None
-
-        # Fallback to default users
-        if username in DEFAULT_USERS:
-            if DEFAULT_USERS[username]["password"] == password:
-                logger.info(f"User authenticated from defaults: {username}")
-                return DEFAULT_USERS[username]["role"]
-            else:
-                logger.warning(f"Failed auth for default user: {username}")
-                return None
-
-        logger.warning(f"User not found: {username}")
-        return None
-
-    except Exception as e:
-        logger.error(f"Authentication error: {e}", exc_info=True)
-        return None
-
-
-def load_chat_history(username: str) -> List[Dict[str, Any]]:
-    """Load chat history from database or JSON."""
-    if USE_DATABASE and DB_AVAILABLE:
-        try:
-            user = get_user(username)
-            if user:
-                logger.debug(f"Loading chat history from database for {username}")
-                messages = get_chat_history(user["id"], limit=100)
-                return [
-                    {"role": msg["role"], "content": msg["content"]}
-                    for msg in messages
-                ]
-        except Exception as e:
-            logger.warning(f"Failed to load from database: {e}")
-
-    # Fallback to JSON
-    try:
-        if os.path.exists(CHAT_HISTORY_FILE):
-            with open(CHAT_HISTORY_FILE, "r") as f:
-                history_data = json.load(f)
-                return history_data.get(username, [])
-    except Exception as e:
-        logger.warning(f"Failed to load chat history: {e}")
-
-    return []
-
-
-def save_chat_message(username: str, role: str, content: str) -> bool:
-    """Save chat message to database or JSON."""
-    if USE_DATABASE and DB_AVAILABLE:
-        try:
-            user = get_user(username)
-            if user:
-                logger.debug(f"Saving message to database for {username}")
-                save_chat_message(user["id"], role, content)
-                return True
-        except Exception as e:
-            logger.warning(f"Failed to save to database: {e}")
-
-    # Fallback to JSON
-    try:
-        history_data = {}
-        if os.path.exists(CHAT_HISTORY_FILE):
-            with open(CHAT_HISTORY_FILE, "r") as f:
-                history_data = json.load(f)
-
-        if username not in history_data:
-            history_data[username] = []
-
-        history_data[username].append({"role": role, "content": content})
-
-        with open(CHAT_HISTORY_FILE, "w") as f:
-            json.dump(history_data, f, indent=2)
-        return True
-    except Exception as e:
-        logger.error(f"Failed to save chat history: {e}", exc_info=True)
-        return False
-
-
-def log_user_action(
-    username: str, action: str, details: Optional[Dict] = None
-) -> bool:
-    """Log user action for audit trail."""
-    if USE_DATABASE and DB_AVAILABLE:
-        try:
-            user = get_user(username)
-            if user:
-                log_audit_event(user["id"], action, changes=details)
-                logger.debug(f"Logged action for {username}: {action}")
-                return True
-        except Exception as e:
-            logger.warning(f"Failed to log action: {e}")
-
-    logger.info(f"User action - {username}: {action}")
-    return False
-
-
-def log_analytics(
-    username: str, event_type: str, event_name: str, data: Optional[Dict] = None
-) -> bool:
-    """Log analytics event."""
-    if USE_DATABASE and DB_AVAILABLE:
-        try:
-            user = get_user(username)
-            if user:
-                log_analytics_event(user["id"], event_type, event_name, data)
-                return True
-        except Exception as e:
-            logger.warning(f"Failed to log analytics: {e}")
-
-    return False
 
 
 def login_page():
@@ -366,32 +168,33 @@ def login_page():
                 st.session_state.authenticated = True
                 st.session_state.username = username
                 st.session_state.role = role
-                log_user_action(username, "login")
+                audit_log(username, "login")
                 logger.info(f"User logged in: {username} ({role})")
                 st.success(f"Welcome back, {username}!")
                 st.rerun()
             else:
                 st.error("❌ Invalid credentials")
-                log_user_action(username, "failed_login")
+                audit_log(username, "failed_login")
 
         st.markdown("---")
         st.markdown("### 📋 Credentials")
-        if IS_PRODUCTION:
+        if settings.is_production():
             st.info("Contact your administrator for credentials.")
         else:
+            # Show hints in dev
             st.info(
                 f"""
             **Nurse:**
             - Username: `nurse`
-            - Password: `{os.getenv("NURSE_PASSWORD", "nurse2025")}`
+            - Password: Check `.env` (default: `{settings.NURSE_PASSWORD}`)
 
             **Clinician:**
             - Username: `clinician`
-            - Password: `{os.getenv("CLINICIAN_PASSWORD", "clinician2025")}`
+            - Password: Check `.env` (default: `{settings.CLINICIAN_PASSWORD}`)
 
             **Admin:**
             - Username: `admin`
-            - Password: `{os.getenv("ADMIN_PASSWORD", "admin2025")}`
+            - Password: Check `.env` (default: `{settings.ADMIN_PASSWORD}`)
             """
             )
 
@@ -409,7 +212,7 @@ def main_app():
         )
 
         if st.button("🚪 Logout", use_container_width=True):
-            log_user_action(st.session_state.username, "logout")
+            audit_log(st.session_state.username, "logout")
             st.session_state.authenticated = False
             st.session_state.username = None
             st.session_state.role = None
@@ -432,7 +235,7 @@ def main_app():
     if vector_db is None:
         st.warning(
             "⚠️ Vector database not found. Please run: "
-            "`python harvest_fons.py && python ingest_fast.py`"
+            "`python scripts/harvest_fons.py && python scripts/ingest_fast.py`"
         )
 
     # Tab interface
@@ -473,7 +276,7 @@ def main_app():
         user_input = st.chat_input("Ask a clinical question...")
 
         if user_input:
-            log_analytics(
+            analytics_log(
                 st.session_state.username,
                 "chat",
                 "user_message",
@@ -493,8 +296,19 @@ def main_app():
             with st.chat_message("assistant"):
                 if vector_db:
                     try:
+                        # Use AzureOpenAI with settings handled implicitly or explicitly if needed
+                        # LangChain's AzureOpenAI usually picks up env vars if not passed,
+                        # but we can pass them from settings if we want to be explicit.
+                        # For now, relying on Env vars or what validator set up if possible,
+                        # but RetrievalQA creates a new LLM instance usually.
+                        llm = AzureOpenAI(
+                            deployment_name=settings.AZURE_OPENAI_DEPLOYMENT,
+                            api_version=settings.AZURE_OPENAI_API_VERSION,
+                            api_key=settings.AZURE_OPENAI_API_KEY,
+                            azure_endpoint=settings.AZURE_OPENAI_ENDPOINT
+                        )
                         qa = RetrievalQA.from_chain_type(
-                            llm=AzureOpenAI(),
+                            llm=llm,
                             chain_type="stuff",
                             retriever=vector_db.as_retriever(),
                         )
@@ -518,7 +332,7 @@ def main_app():
                 save_chat_message(
                     st.session_state.username, "assistant", response
                 )
-                log_analytics(
+                analytics_log(
                     st.session_state.username,
                     "chat",
                     "assistant_response",
@@ -589,10 +403,10 @@ def main_app():
             elif admin_option == "System Status":
                 st.subheader("System Status")
                 st.write(
-                    f"**Environment:** {APP_ENV}"
+                    f"**Environment:** {settings.APP_ENV}"
                 )
                 st.write(
-                    f"**Database:** {'Enabled' if USE_DATABASE else 'Disabled'}"
+                    f"**Database:** {'Enabled' if settings.USE_DATABASE else 'Disabled'}"
                 )
                 st.write(
                     f"**Vector DB:** "
@@ -601,13 +415,13 @@ def main_app():
 
             elif admin_option == "Database Info":
                 st.subheader("Database Information")
-                if DB_AVAILABLE and USE_DATABASE:
+                if DB_AVAILABLE and settings.USE_DATABASE:
                     st.code(
                         f"""
-HOST: {os.getenv('DB_HOST', 'localhost')}
-PORT: {os.getenv('DB_PORT', '5432')}
-NAME: {os.getenv('DB_NAME', 'nursing_validator')}
-USER: {os.getenv('DB_USER', 'nursing_admin')}
+HOST: {settings.DB_HOST}
+PORT: {settings.DB_PORT}
+NAME: {settings.DB_NAME}
+USER: {settings.DB_USER}
                     """
                     )
                 else:
@@ -616,19 +430,19 @@ USER: {os.getenv('DB_USER', 'nursing_admin')}
             elif admin_option == "Backups":
                 st.subheader("Database Backups")
                 if DB_AVAILABLE:
-                    st.info("Backup functionality available via db_migrations.py")
+                    st.info("Backup functionality available via db.db_migrations")
                     st.code(
                         """
 # Create backup
-from db_migrations import create_backup
+from db.db_migrations import create_backup
 backup_path = create_backup()
 
 # List backups
-from db_migrations import list_backups
+from db.db_migrations import list_backups
 backups = list_backups()
 
 # Restore backup
-from db_migrations import restore_backup
+from db.db_migrations import restore_backup
 restore_backup(backup_path)
                     """
                     )

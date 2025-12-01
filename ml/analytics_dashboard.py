@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 
 # Try to import database module
 try:
-    from database import get_analytics_summary, get_audit_logs, get_user
+    from db.database import get_analytics_summary, get_audit_logs, get_user
 except ImportError:
     logger.warning("Database module not available for analytics")
 
@@ -31,7 +31,7 @@ class AnalyticsDashboard:
         """Initialize analytics dashboard."""
         self.db_available = True
         try:
-            from database import get_analytics_summary, get_audit_logs
+            from db.database import get_analytics_summary, get_audit_logs
         except ImportError:
             self.db_available = False
             logger.warning("Database not available for analytics")
@@ -47,7 +47,7 @@ class AnalyticsDashboard:
         col1, col2, col3, col4 = st.columns(4)
 
         try:
-            from database import get_connection
+            from db.database import get_connection
 
             with get_connection() as conn:
                 cur = conn.cursor()
@@ -99,7 +99,7 @@ class AnalyticsDashboard:
             return
 
         try:
-            from database import get_connection
+            from db.database import get_connection
 
             # Date range selector
             col1, col2 = st.columns(2)
@@ -181,7 +181,7 @@ class AnalyticsDashboard:
             return
 
         try:
-            from database import get_connection
+            from db.database import get_connection
 
             col1, col2 = st.columns(2)
             with col1:
@@ -283,7 +283,7 @@ class AnalyticsDashboard:
         st.subheader("🔍 Knowledge Gap Analysis")
 
         try:
-            from database import get_connection
+            from db.database import get_connection
 
             st.info(
                 "This section analyzes unanswered questions and "
@@ -358,7 +358,7 @@ class AnalyticsDashboard:
             return
 
         try:
-            from database import get_connection
+            from db.database import get_connection
 
             with get_connection() as conn:
                 cur = conn.cursor()
