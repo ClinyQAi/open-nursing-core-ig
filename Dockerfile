@@ -19,17 +19,16 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Create application directories
 RUN mkdir -p /app/data /app/logs /app/.streamlit
 
-# Copy application files
-COPY app_phase2.py .
-COPY database.py .
-COPY db_migrations.py .
-COPY ml_anomaly_detection.py .
-COPY ml_dashboards.py .
-COPY ml_predictive.py .
-COPY ml_recommendations.py .
-COPY visualizations.py .
-COPY harvest_fons.py .
-COPY ingest_fast.py .
+# Copy application directories
+COPY core/ /app/core/
+COPY db/ /app/db/
+COPY ml/ /app/ml/
+COPY visualizations/ /app/visualizations/
+COPY scripts/ /app/scripts/
+
+# Copy application entry points
+COPY app.py app_phase2.py .
+COPY .env.example .
 
 # Create Streamlit config
 RUN mkdir -p /app/.streamlit && \
@@ -69,6 +68,5 @@ ENV STREAMLIT_SERVER_HEADLESS=true \
     PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1
 
-# Run application
+# Run application (default to phase 2)
 CMD ["streamlit", "run", "app_phase2.py", "--logger.level=info"]
-
