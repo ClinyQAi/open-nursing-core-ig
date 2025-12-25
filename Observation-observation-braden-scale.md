@@ -12,25 +12,25 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
 
 **category**: nursing
 
-**code**: Braden Scale total score
+**code**: Braden scale total score
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
 **performer**: [Practitioner Nightingale](Practitioner-practitioner-example.md)
 
-**value**: 18 score(Details: UCUM code{score} = '{score}')
+**value**: 18 {score}(Details: UCUM code1 = '1')
 
-> **component****code**:Sensory Perception**value**: 3 score(Details: UCUM code{score} = '{score}')
+> **component****code**:Sensory perception Braden scale**value**: 3 {score}(Details: UCUM code1 = '1')
 
-> **component****code**:Moisture**value**: 4 score(Details: UCUM code{score} = '{score}')
+> **component****code**:Moisture Braden scale**value**: 4 {score}(Details: UCUM code1 = '1')
 
-> **component****code**:Activity**value**: 2 score(Details: UCUM code{score} = '{score}')
+> **component****code**:Activity Braden scale**value**: 2 {score}(Details: UCUM code1 = '1')
 
-> **component****code**:Mobility**value**: 3 score(Details: UCUM code{score} = '{score}')
+> **component****code**:Mobility Braden scale**value**: 3 {score}(Details: UCUM code1 = '1')
 
-> **component****code**:Nutrition**value**: 3 score(Details: UCUM code{score} = '{score}')
+> **component****code**:Nutrition Braden scale**value**: 3 {score}(Details: UCUM code1 = '1')
 
-> **component****code**:Friction and Shear**value**: 3 score(Details: UCUM code{score} = '{score}')
+> **component****code**:Friction and shear Braden scale**value**: 3 {score}(Details: UCUM code1 = '1')
 
 
 
@@ -60,8 +60,8 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
     "coding" : [
       {
         "system" : "http://loinc.org",
-        "code" : "9017-7",
-        "display" : "Braden Scale total score"
+        "code" : "38227-0",
+        "display" : "Braden scale total score"
       }
     ]
   },
@@ -75,9 +75,9 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
   ],
   "valueQuantity" : {
     "value" : 18,
-    "unit" : "score",
+    "unit" : "{score}",
     "system" : "http://unitsofmeasure.org",
-    "code" : "{score}"
+    "code" : "1"
   },
   "component" : [
     {
@@ -85,16 +85,16 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
         "coding" : [
           {
             "system" : "http://loinc.org",
-            "code" : "74012-8",
-            "display" : "Sensory Perception"
+            "code" : "38222-1",
+            "display" : "Sensory perception Braden scale"
           }
         ]
       },
       "valueQuantity" : {
         "value" : 3,
-        "unit" : "score",
+        "unit" : "{score}",
         "system" : "http://unitsofmeasure.org",
-        "code" : "{score}"
+        "code" : "1"
       }
     },
     {
@@ -102,16 +102,16 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
         "coding" : [
           {
             "system" : "http://loinc.org",
-            "code" : "74013-6",
-            "display" : "Moisture"
+            "code" : "38229-6",
+            "display" : "Moisture Braden scale"
           }
         ]
       },
       "valueQuantity" : {
         "value" : 4,
-        "unit" : "score",
+        "unit" : "{score}",
         "system" : "http://unitsofmeasure.org",
-        "code" : "{score}"
+        "code" : "1"
       }
     },
     {
@@ -119,16 +119,16 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
         "coding" : [
           {
             "system" : "http://loinc.org",
-            "code" : "74014-4",
-            "display" : "Activity"
+            "code" : "38223-9",
+            "display" : "Activity Braden scale"
           }
         ]
       },
       "valueQuantity" : {
         "value" : 2,
-        "unit" : "score",
+        "unit" : "{score}",
         "system" : "http://unitsofmeasure.org",
-        "code" : "{score}"
+        "code" : "1"
       }
     },
     {
@@ -136,16 +136,16 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
         "coding" : [
           {
             "system" : "http://loinc.org",
-            "code" : "74015-1",
-            "display" : "Mobility"
+            "code" : "38224-7",
+            "display" : "Mobility Braden scale"
           }
         ]
       },
       "valueQuantity" : {
         "value" : 3,
-        "unit" : "score",
+        "unit" : "{score}",
         "system" : "http://unitsofmeasure.org",
-        "code" : "{score}"
+        "code" : "1"
       }
     },
     {
@@ -153,16 +153,16 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
         "coding" : [
           {
             "system" : "http://loinc.org",
-            "code" : "74016-9",
-            "display" : "Nutrition"
+            "code" : "38225-4",
+            "display" : "Nutrition Braden scale"
           }
         ]
       },
       "valueQuantity" : {
         "value" : 3,
-        "unit" : "score",
+        "unit" : "{score}",
         "system" : "http://unitsofmeasure.org",
-        "code" : "{score}"
+        "code" : "1"
       }
     },
     {
@@ -170,16 +170,16 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
         "coding" : [
           {
             "system" : "http://loinc.org",
-            "code" : "74017-7",
-            "display" : "Friction and Shear"
+            "code" : "38226-2",
+            "display" : "Friction and shear Braden scale"
           }
         ]
       },
       "valueQuantity" : {
         "value" : 3,
-        "unit" : "score",
+        "unit" : "{score}",
         "system" : "http://unitsofmeasure.org",
-        "code" : "{score}"
+        "code" : "1"
       }
     }
   ]

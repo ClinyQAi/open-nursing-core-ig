@@ -1,10 +1,10 @@
 OpenNursingCoreIG : Validation Results
 =========================================
 
-err = 47, warn = 72, info = 12
+err = 47, warn = 64, info = 12
 IG Publisher Version: 2.0.29
-Generated Thu Dec 25 09:54:42 UTC 2025. FHIR version 4.0.1 for onc.ig#1.0.0 (canonical = https://clinyqai.github.io/open-nursing-core-ig)
- Build Errors : 2 / 32 / 0
+Generated Thu Dec 25 10:02:30 UTC 2025. FHIR version 4.0.1 for onc.ig#1.0.0 (canonical = https://clinyqai.github.io/open-nursing-core-ig)
+ Build Errors : 2 / 31 / 0
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-monk-scale : 0 / 3 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-observation-codes : 2 / 2 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-problem-type : 0 / 3 / 2
@@ -12,7 +12,7 @@ Generated Thu Dec 25 09:54:42 UTC 2025. FHIR version 4.0.1 for onc.ig#1.0.0 (can
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Goal-example-patient-goal : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ImplementationGuide-onc.ig : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-goal-evaluation : 4 / 1 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-observation-braden-scale : 8 / 8 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-observation-braden-scale : 8 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-observation-skin-tone : 4 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Patient-patient-example-jane : 0 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Practitioner-practitioner-example : 0 / 0 / 1
@@ -39,7 +39,6 @@ Generated Thu Dec 25 09:54:42 UTC 2025. FHIR version 4.0.1 for onc.ig#1.0.0 (can
 </table>
 == n/a ==
 ERROR: ImplementationGuide.definition.parameter[23].value: Supressed messages file not found
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/onc-braden-scale-assessment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/onc-goal-evaluation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/onc-monk-skintone-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/onc-nursing-intervention.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -103,20 +102,13 @@ ERROR: Observation/example-goal-evaluation: Observation.value.ofType(CodeableCon
 WARNING: Observation/example-goal-evaluation: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-observation-braden-scale.json ==
 ERROR: Observation/observation-braden-scale: Observation.category[0].coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
-ERROR: Observation/observation-braden-scale: Observation.code.coding[0].code: Unknown code '9017-7' in the CodeSystem 'http://loinc.org' version '2.81'
-WARNING: Observation/observation-braden-scale: Observation.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
-ERROR: Observation/observation-braden-scale: Observation.component[0].code.coding[0].code: Unknown code '74012-8' in the CodeSystem 'http://loinc.org' version '2.81'
-WARNING: Observation/observation-braden-scale: Observation.component[0].value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
-ERROR: Observation/observation-braden-scale: Observation.component[1].code.coding[0].code: Unknown code '74013-6' in the CodeSystem 'http://loinc.org' version '2.81'
-WARNING: Observation/observation-braden-scale: Observation.component[1].value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
-ERROR: Observation/observation-braden-scale: Observation.component[2].code.coding[0].code: Unknown code '74014-4' in the CodeSystem 'http://loinc.org' version '2.81'
-WARNING: Observation/observation-braden-scale: Observation.component[2].value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
-ERROR: Observation/observation-braden-scale: Observation.component[3].code.coding[0].code: Unknown code '74015-1' in the CodeSystem 'http://loinc.org' version '2.81'
-WARNING: Observation/observation-braden-scale: Observation.component[3].value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
-ERROR: Observation/observation-braden-scale: Observation.component[4].code.coding[0].code: Unknown code '74016-9' in the CodeSystem 'http://loinc.org' version '2.81'
-WARNING: Observation/observation-braden-scale: Observation.component[4].value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
-ERROR: Observation/observation-braden-scale: Observation.component[5].code.coding[0].code: Unknown code '74017-7' in the CodeSystem 'http://loinc.org' version '2.81'
-WARNING: Observation/observation-braden-scale: Observation.component[5].value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
+ERROR: Observation/observation-braden-scale: Observation.code.coding[0].code: Unknown code '38227-0' in the CodeSystem 'http://loinc.org' version '2.81'
+ERROR: Observation/observation-braden-scale: Observation.component[0].code.coding[0].code: Unknown code '38222-1' in the CodeSystem 'http://loinc.org' version '2.81'
+ERROR: Observation/observation-braden-scale: Observation.component[1].code.coding[0].code: Unknown code '38229-6' in the CodeSystem 'http://loinc.org' version '2.81'
+ERROR: Observation/observation-braden-scale: Observation.component[2].code.coding[0].code: Unknown code '38223-9' in the CodeSystem 'http://loinc.org' version '2.81'
+ERROR: Observation/observation-braden-scale: Observation.component[3].code.coding[0].code: Unknown code '38224-7' in the CodeSystem 'http://loinc.org' version '2.81'
+ERROR: Observation/observation-braden-scale: Observation.component[4].code.coding[0].code: Unknown code '38225-4' in the CodeSystem 'http://loinc.org' version '2.81'
+ERROR: Observation/observation-braden-scale: Observation.component[5].code.coding[0].code: Unknown code '38226-2' in the CodeSystem 'http://loinc.org' version '2.81'
 WARNING: Observation/observation-braden-scale: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-observation-skin-tone.json ==
 ERROR: Observation/observation-skin-tone: Observation.category[0].coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
@@ -139,20 +131,20 @@ WARNING: StructureDefinition/observation-goal-reference: StructureDefinition.con
 == fsh-generated/resources/StructureDefinition-onc-braden-scale-assessment.json ==
 INFORMATION: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 ERROR: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
-ERROR: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '9017-7' in the CodeSystem 'http://loinc.org' version '2.81'
-ERROR: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.snapshot.element[62].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '74012-8' in the CodeSystem 'http://loinc.org' version '2.81'
-ERROR: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.snapshot.element[71].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '74013-6' in the CodeSystem 'http://loinc.org' version '2.81'
-ERROR: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.snapshot.element[80].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '74014-4' in the CodeSystem 'http://loinc.org' version '2.81'
-ERROR: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.snapshot.element[89].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '74015-1' in the CodeSystem 'http://loinc.org' version '2.81'
-ERROR: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.snapshot.element[98].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '74016-9' in the CodeSystem 'http://loinc.org' version '2.81'
-ERROR: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.snapshot.element[107].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '74017-7' in the CodeSystem 'http://loinc.org' version '2.81'
-ERROR: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '9017-7' in the CodeSystem 'http://loinc.org' version '2.81'
-ERROR: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.differential.element[9].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '74012-8' in the CodeSystem 'http://loinc.org' version '2.81'
-ERROR: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.differential.element[12].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '74013-6' in the CodeSystem 'http://loinc.org' version '2.81'
-ERROR: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.differential.element[15].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '74014-4' in the CodeSystem 'http://loinc.org' version '2.81'
-ERROR: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.differential.element[18].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '74015-1' in the CodeSystem 'http://loinc.org' version '2.81'
-ERROR: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.differential.element[21].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '74016-9' in the CodeSystem 'http://loinc.org' version '2.81'
-ERROR: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.differential.element[24].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '74017-7' in the CodeSystem 'http://loinc.org' version '2.81'
+ERROR: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '38227-0' in the CodeSystem 'http://loinc.org' version '2.81'
+ERROR: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.snapshot.element[62].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '38222-1' in the CodeSystem 'http://loinc.org' version '2.81'
+ERROR: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.snapshot.element[71].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '38229-6' in the CodeSystem 'http://loinc.org' version '2.81'
+ERROR: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.snapshot.element[80].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '38223-9' in the CodeSystem 'http://loinc.org' version '2.81'
+ERROR: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.snapshot.element[89].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '38224-7' in the CodeSystem 'http://loinc.org' version '2.81'
+ERROR: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.snapshot.element[98].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '38225-4' in the CodeSystem 'http://loinc.org' version '2.81'
+ERROR: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.snapshot.element[107].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '38226-2' in the CodeSystem 'http://loinc.org' version '2.81'
+ERROR: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '38227-0' in the CodeSystem 'http://loinc.org' version '2.81'
+ERROR: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.differential.element[9].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '38222-1' in the CodeSystem 'http://loinc.org' version '2.81'
+ERROR: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.differential.element[12].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '38229-6' in the CodeSystem 'http://loinc.org' version '2.81'
+ERROR: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.differential.element[15].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '38223-9' in the CodeSystem 'http://loinc.org' version '2.81'
+ERROR: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.differential.element[18].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '38224-7' in the CodeSystem 'http://loinc.org' version '2.81'
+ERROR: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.differential.element[21].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '38225-4' in the CodeSystem 'http://loinc.org' version '2.81'
+ERROR: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.differential.element[24].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '38226-2' in the CodeSystem 'http://loinc.org' version '2.81'
 INFORMATION: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.differential.element[7].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.snapshot.element[49].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)

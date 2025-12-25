@@ -10,7 +10,7 @@
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "active",
-  "date" : "2025-12-25T09:53:19+00:00",
+  "date" : "2025-12-25T10:01:16+00:00",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules.",
   "packageId" : "onc.ig",
   "license" : "MIT",
@@ -599,6 +599,7 @@
         "reference" : "StructureDefinition/onc-braden-scale-assessment"
       },
       "name" : "Braden Scale Assessment",
+      "description" : "A profile for the Braden Scale pressure ulcer risk assessment",
       "exampleBoolean" : false
     },
     {

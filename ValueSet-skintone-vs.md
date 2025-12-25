@@ -47,7 +47,7 @@
   "name" : "SkinToneVS",
   "title" : "Fitzpatrick Skin Tone Value Set",
   "status" : "active",
-  "date" : "2025-12-25T09:53:19+00:00",
+  "date" : "2025-12-25T10:01:16+00:00",
   "compose" : {
     "include" : [
       {

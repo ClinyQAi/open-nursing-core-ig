@@ -11,6 +11,9 @@
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-braden-scale-assessment | *Version*:1.0.0 |
 | Active as of 2025-12-25 | *Computable Name*:ONCBradenScaleAssessment |
 
+ 
+A profile for the Braden Scale pressure ulcer risk assessment 
+
 **Usages:**
 
 * Examples for this Profile: [Observation/observation-braden-scale](Observation-observation-braden-scale.md)
@@ -38,7 +41,8 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
   "name" : "ONCBradenScaleAssessment",
   "title" : "Braden Scale Assessment",
   "status" : "active",
-  "date" : "2025-12-25T09:53:19+00:00",
+  "date" : "2025-12-25T10:01:16+00:00",
+  "description" : "A profile for the Braden Scale pressure ulcer risk assessment",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -96,8 +100,8 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
           "coding" : [
             {
               "system" : "http://loinc.org",
-              "code" : "9017-7",
-              "display" : "Braden Scale total score"
+              "code" : "38227-0",
+              "display" : "Braden scale total score"
             }
           ]
         },
@@ -115,7 +119,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
       {
         "id" : "Observation.value[x].unit",
         "path" : "Observation.value[x].unit",
-        "patternString" : "score"
+        "patternString" : "{score}"
       },
       {
         "id" : "Observation.value[x].system",
@@ -125,7 +129,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
       {
         "id" : "Observation.value[x].code",
         "path" : "Observation.value[x].code",
-        "patternCode" : "{score}"
+        "patternCode" : "1"
       },
       {
         "id" : "Observation.component",
@@ -159,8 +163,8 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
           "coding" : [
             {
               "system" : "http://loinc.org",
-              "code" : "74012-8",
-              "display" : "Sensory Perception"
+              "code" : "38222-1",
+              "display" : "Sensory perception Braden scale"
             }
           ]
         }
@@ -189,8 +193,8 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
           "coding" : [
             {
               "system" : "http://loinc.org",
-              "code" : "74013-6",
-              "display" : "Moisture"
+              "code" : "38229-6",
+              "display" : "Moisture Braden scale"
             }
           ]
         }
@@ -219,8 +223,8 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
           "coding" : [
             {
               "system" : "http://loinc.org",
-              "code" : "74014-4",
-              "display" : "Activity"
+              "code" : "38223-9",
+              "display" : "Activity Braden scale"
             }
           ]
         }
@@ -249,8 +253,8 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
           "coding" : [
             {
               "system" : "http://loinc.org",
-              "code" : "74015-1",
-              "display" : "Mobility"
+              "code" : "38224-7",
+              "display" : "Mobility Braden scale"
             }
           ]
         }
@@ -279,8 +283,8 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
           "coding" : [
             {
               "system" : "http://loinc.org",
-              "code" : "74016-9",
-              "display" : "Nutrition"
+              "code" : "38225-4",
+              "display" : "Nutrition Braden scale"
             }
           ]
         }
@@ -309,8 +313,8 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
           "coding" : [
             {
               "system" : "http://loinc.org",
-              "code" : "74017-7",
-              "display" : "Friction and Shear"
+              "code" : "38226-2",
+              "display" : "Friction and shear Braden scale"
             }
           ]
         }

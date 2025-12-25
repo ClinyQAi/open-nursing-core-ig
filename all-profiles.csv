@@ -107,8 +107,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Type of observation (code / type)","Describes what was observed. Sometimes this is called the observation ""name"".","*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://loinc.org""/>
-    <code value=""9017-7""/>
-    <display value=""Braden Scale total score""/>
+    <code value=""38227-0""/>
+    <display value=""Braden scale total score""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -150,14 +150,14 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","< | <= | >= | > - how to understand the value","How the value should be understood and represented - whether the actual value is greater or less than the stated value due to measurement issues; e.g. if the comparator is ""<"" , then the real value is < stated value.","","Need a framework for handling measures where the value is <5ug/L or >400mg/L due to the limitations of measuring methodology.","","If there is no comparator, then there is no modification of the value","","","","","",,"required","How the Quantity should be understood and represented.","http://hl7.org/fhir/ValueSet/quantity-comparator|4.0.1","",,,,"Quantity.comparator",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "onc-braden-scale-assessment","Observation.value[x].unit","Observation.value[x].unit","","","",0,1,"","","Y","string {[]} {[]}
-","Unit representation","A human-readable form of the unit.","","There are many representations for units of measure and in many contexts, particular representations are fixed and required. I.e. mcg for micrograms.","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""score""/>","","","",,,,,"",,,,"Quantity.unit",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Unit representation","A human-readable form of the unit.","","There are many representations for units of measure and in many contexts, particular representations are fixed and required. I.e. mcg for micrograms.","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""{score}""/>","","","",,,,,"",,,,"Quantity.unit",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "onc-braden-scale-assessment","Observation.value[x].system","Observation.value[x].system","","","",0,1,"","","Y","uri {[]} {[]}
 ","System that defines coded unit form","The identification of the system that provides the coded form of the unit.","","Need to know the system that defines the coded form of the unit.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://unitsofmeasure.org""/>","","","",,,,,"",,,,"Quantity.system",0,1,"qty-3
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "onc-braden-scale-assessment","Observation.value[x].code","Observation.value[x].code","","","",0,1,"","","Y","code {[]} {[]}
-","Coded form of the unit","A computer processable form of the unit in some unit representation system.","The preferred system is UCUM, but SNOMED CT can also be used (for customary units) or ISO 4217 for currency.  The context of use may additionally require a code from a particular system.","Need a computable form of the unit that is fixed across all forms. UCUM provides this for quantities, but SNOMED CT provides many units of interest.","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""{score}""/>","","","",,,,,"",,,,"Quantity.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Coded form of the unit","A computer processable form of the unit in some unit representation system.","The preferred system is UCUM, but SNOMED CT can also be used (for customary units) or ISO 4217 for currency.  The context of use may additionally require a code from a particular system.","Need a computable form of the unit that is fixed across all forms. UCUM provides this for quantities, but SNOMED CT provides many units of interest.","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""1""/>","","","",,,,,"",,,,"Quantity.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "onc-braden-scale-assessment","Observation.dataAbsentReason","Observation.dataAbsentReason","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Why the result is missing","Provides a reason why the expected value in the element Observation.value[x] is missing.","Null or exceptional values can be represented two ways in FHIR Observations.  One way is to simply include them in the value set and represent the exceptions in the value.  For example, measurement values for a serology test could be  ""detected"", ""not detected"", ""inconclusive"", or  ""specimen unsatisfactory"".   
@@ -281,8 +281,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://loinc.org""/>
-    <code value=""74012-8""/>
-    <display value=""Sensory Perception""/>
+    <code value=""38222-1""/>
+    <display value=""Sensory perception Braden scale""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -321,8 +321,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://loinc.org""/>
-    <code value=""74013-6""/>
-    <display value=""Moisture""/>
+    <code value=""38229-6""/>
+    <display value=""Moisture Braden scale""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -361,8 +361,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://loinc.org""/>
-    <code value=""74014-4""/>
-    <display value=""Activity""/>
+    <code value=""38223-9""/>
+    <display value=""Activity Braden scale""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -401,8 +401,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://loinc.org""/>
-    <code value=""74015-1""/>
-    <display value=""Mobility""/>
+    <code value=""38224-7""/>
+    <display value=""Mobility Braden scale""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -441,8 +441,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://loinc.org""/>
-    <code value=""74016-9""/>
-    <display value=""Nutrition""/>
+    <code value=""38225-4""/>
+    <display value=""Nutrition Braden scale""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -481,8 +481,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://loinc.org""/>
-    <code value=""74017-7""/>
-    <display value=""Friction and Shear""/>
+    <code value=""38226-2""/>
+    <display value=""Friction and shear Braden scale""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "

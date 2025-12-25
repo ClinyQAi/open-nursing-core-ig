@@ -11,17 +11,17 @@ This page provides a list of the FHIR artifacts defined as part of this implemen
 
 These define constraints on FHIR resources for systems conforming to this implementation guide.
 
-| |
-| :--- |
-| [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessment.md) |
-| [Goal Evaluation](StructureDefinition-onc-goal-evaluation.md) |
-| [Monk Skin Tone Observation](StructureDefinition-onc-monk-skintone-observation.md) |
-| [Nursing Intervention](StructureDefinition-onc-nursing-intervention.md) |
-| [Nursing Problem](StructureDefinition-onc-nursing-problem.md) |
-| [ONC NHS Patient](StructureDefinition-onc-nhs-patient.md) |
-| [Open Nursing Core Assessment](StructureDefinition-onc-nursing-assessment.md) |
-| [Patient Goal](StructureDefinition-onc-patient-goal.md) |
-| [Skin Tone Observation](StructureDefinition-onc-skintone-observation.md) |
+| | |
+| :--- | :--- |
+| [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessment.md) | A profile for the Braden Scale pressure ulcer risk assessment |
+| [Goal Evaluation](StructureDefinition-onc-goal-evaluation.md) |  |
+| [Monk Skin Tone Observation](StructureDefinition-onc-monk-skintone-observation.md) |  |
+| [Nursing Intervention](StructureDefinition-onc-nursing-intervention.md) |  |
+| [Nursing Problem](StructureDefinition-onc-nursing-problem.md) |  |
+| [ONC NHS Patient](StructureDefinition-onc-nhs-patient.md) |  |
+| [Open Nursing Core Assessment](StructureDefinition-onc-nursing-assessment.md) |  |
+| [Patient Goal](StructureDefinition-onc-patient-goal.md) |  |
+| [Skin Tone Observation](StructureDefinition-onc-skintone-observation.md) |  |
 
 ### Structures: Extension Definitions 
 
