@@ -1,9 +1,9 @@
 OpenNursingCoreIG : Validation Results
 =========================================
 
-err = 47, warn = 38, info = 21
+err = 58, warn = 47, info = 31
 IG Publisher Version: 2.0.29
-Generated Thu Dec 25 10:46:15 UTC 2025. FHIR version 4.0.1 for onc.ig#1.0.0 (canonical = https://clinyqai.github.io/open-nursing-core-ig)
+Generated Thu Dec 25 23:49:49 UTC 2025. FHIR version 4.0.1 for onc.ig#1.0.0 (canonical = https://clinyqai.github.io/open-nursing-core-ig)
  Build Errors : 1 / 22 / 0
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-monk-scale : 0 / 3 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-observation-codes : 2 / 2 / 2
@@ -23,19 +23,24 @@ Generated Thu Dec 25 10:46:15 UTC 2025. FHIR version 4.0.1 for onc.ig#1.0.0 (can
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-braden-scale-assessment : 15 / 0 / 5
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-goal-evaluation : 1 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-monk-skintone-observation : 1 / 1 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-news2-score : 3 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-nhs-patient : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-nursing-assessment : 2 / 1 / 3
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-nursing-intervention : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-nursing-problem : 0 / 0 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-pain-assessment : 1 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-patient-goal : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-skintone-observation : 3 / 0 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-wound-assessment : 5 / 3 / 4
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-goal-evaluation-valueset : 0 / 1 / 3
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-housing-status-vs : 1 / 0 / 3
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-nursing-intervention-valueset : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-nursing-problem-valueset : 1 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-monk-scale-vs : 0 / 2 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-pain-assessment-code-vs : 0 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-problem-category-valueset : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-skintone-vs : 0 / 0 / 7
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-wound-stage-vs : 2 / 3 / 5
 </table>
 == n/a ==
 ERROR: ImplementationGuide.definition.parameter[23].value: Supressed messages file not found
@@ -138,6 +143,12 @@ INFORMATION: StructureDefinition/onc-goal-evaluation: StructureDefinition.snapsh
 ERROR: StructureDefinition/onc-monk-skintone-observation: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
 INFORMATION: StructureDefinition/onc-monk-skintone-observation: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-monk-skintone-observation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-onc-news2-score.json ==
+ERROR: StructureDefinition/onc-news2-score: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
+ERROR: StructureDefinition/onc-news2-score: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'National Early Warning Score [NEWS]' for http://loinc.org#88330-6. Valid display is one of 2 choices: 'Mobility - admission performance during 3 day assessment period [CMS Assessment]' (en-US) or 'Mobility - admission performance during 3 day assessment period [CMS Assessment]' (en-US) (for the language(s) 'en-US')
+ERROR: StructureDefinition/onc-news2-score: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'National Early Warning Score [NEWS]' for http://loinc.org#88330-6. Valid display is one of 2 choices: 'Mobility - admission performance during 3 day assessment period [CMS Assessment]' (en-US) or 'Mobility - admission performance during 3 day assessment period [CMS Assessment]' (en-US) (for the language(s) 'en-US')
+INFORMATION: StructureDefinition/onc-news2-score: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition.where(url = 'https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-news2-score'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-onc-nhs-patient.json ==
 == fsh-generated/resources/StructureDefinition-onc-nursing-assessment.json ==
 ERROR: StructureDefinition/onc-nursing-assessment: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
@@ -147,12 +158,28 @@ INFORMATION: StructureDefinition/onc-nursing-assessment: StructureDefinition.sna
 WARNING: StructureDefinition.where(url = 'https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-onc-nursing-intervention.json ==
 == fsh-generated/resources/StructureDefinition-onc-nursing-problem.json ==
+== fsh-generated/resources/StructureDefinition-onc-pain-assessment.json ==
+ERROR: StructureDefinition/onc-pain-assessment: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
+INFORMATION: StructureDefinition/onc-pain-assessment: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition.where(url = 'https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-pain-assessment'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-onc-patient-goal.json ==
 == fsh-generated/resources/StructureDefinition-onc-skintone-observation.json ==
 ERROR: StructureDefinition/onc-skintone-observation: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
 ERROR: StructureDefinition/onc-skintone-observation: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Fitzpatrick skin type' for http://loinc.org#66472-2. Valid display is one of 3 choices: 'During your life, altogether how many times have you injected drugs not prescribed by a doctor [PhenX]' (en-US), 'During your life, altogether how many times have you injected drugs not prescribed by a doctor [PhenX]' (en-US) or 'How many times injected nRate PhenX' (en-US) (for the language(s) 'en-US')
 ERROR: StructureDefinition/onc-skintone-observation: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Fitzpatrick skin type' for http://loinc.org#66472-2. Valid display is one of 3 choices: 'During your life, altogether how many times have you injected drugs not prescribed by a doctor [PhenX]' (en-US), 'During your life, altogether how many times have you injected drugs not prescribed by a doctor [PhenX]' (en-US) or 'How many times injected nRate PhenX' (en-US) (for the language(s) 'en-US')
 INFORMATION: StructureDefinition/onc-skintone-observation: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+== fsh-generated/resources/StructureDefinition-onc-wound-assessment.json ==
+ERROR: StructureDefinition/onc-wound-assessment: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
+WARNING: StructureDefinition/onc-wound-assessment: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept).coding[0]: The concept '399912005' has a status of inactive and its use should be reviewed
+ERROR: StructureDefinition/onc-wound-assessment: StructureDefinition.snapshot.element[71].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Width' for http://snomed.info/sct#410669006. Valid display is 'Time (property) (qualifier value)' (en) (for the language(s) 'en-US')
+ERROR: StructureDefinition/onc-wound-assessment: StructureDefinition.snapshot.element[87].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Depth' for http://snomed.info/sct#410670007. Valid display is 'Time (attribute)' (en) (for the language(s) 'en-US')
+WARNING: StructureDefinition/onc-wound-assessment: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0]: The concept '399912005' has a status of inactive and its use should be reviewed
+ERROR: StructureDefinition/onc-wound-assessment: StructureDefinition.differential.element[13].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Width' for http://snomed.info/sct#410669006. Valid display is 'Time (property) (qualifier value)' (en) (for the language(s) 'en-US')
+ERROR: StructureDefinition/onc-wound-assessment: StructureDefinition.differential.element[20].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Depth' for http://snomed.info/sct#410670007. Valid display is 'Time (attribute)' (en) (for the language(s) 'en-US')
+INFORMATION: StructureDefinition/onc-wound-assessment: StructureDefinition.differential.element[4].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/onc-wound-assessment: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/onc-wound-assessment: StructureDefinition.snapshot.element[42].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition.where(url = 'https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-wound-assessment'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/ValueSet-goal-evaluation-valueset.json ==
 INFORMATION: ValueSet/goal-evaluation-valueset: ValueSet.compose.include[0].concept[0]: Wrong Display Name 'Resolved' for http://snomed.info/sct#385633008. Valid display is 'Improving (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
 INFORMATION: ValueSet/goal-evaluation-valueset: ValueSet.compose.include[0].concept[1]: Wrong Display Name 'Worsened' for http://snomed.info/sct#385634002. Valid display is 'Change patterns (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
@@ -167,6 +194,9 @@ ERROR: ValueSet/nursing-problem-valueset: ValueSet.compose.include[0].concept[1]
 == fsh-generated/resources/ValueSet-onc-monk-scale-vs.json ==
 WARNING: ValueSet/onc-monk-scale-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/onc-monk-scale-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-pain-assessment-code-vs.json ==
+INFORMATION: ValueSet/pain-assessment-code-vs: ValueSet.compose.include[0].concept[0]: Wrong Display Name 'Pain severity - 0-10 verbal numeric rating' for http://loinc.org#72514-3. Valid display is one of 3 choices: 'Pain severity - 0-10 verbal numeric rating [Score] - Reported' (en-US), 'Pain severity - 0-10 verbal numeric rating [Score] - Reported' (en-US) or 'Pain severity 0-10 Score Reported' (en-US) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+WARNING: ValueSet/pain-assessment-code-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-problem-category-valueset.json ==
 == fsh-generated/resources/ValueSet-skintone-vs.json ==
 INFORMATION: ValueSet/skintone-vs: ValueSet.compose.include[0].concept[0]: Wrong Display Name 'Fitzpatrick skin type I' for http://snomed.info/sct#403153005. Valid display is 'Centipede bite' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
@@ -175,3 +205,13 @@ INFORMATION: ValueSet/skintone-vs: ValueSet.compose.include[0].concept[2]: Wrong
 INFORMATION: ValueSet/skintone-vs: ValueSet.compose.include[0].concept[3]: Wrong Display Name 'Fitzpatrick skin type IV' for http://snomed.info/sct#403156002. Valid display is 'Dermatosis caused by Coelenterata' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
 INFORMATION: ValueSet/skintone-vs: ValueSet.compose.include[0].concept[4]: Wrong Display Name 'Fitzpatrick skin type V' for http://snomed.info/sct#403157006. Valid display is 'Fire coral dermatitis (disorder)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
 INFORMATION: ValueSet/skintone-vs: ValueSet.compose.include[0].concept[5]: Wrong Display Name 'Fitzpatrick skin type VI' for http://snomed.info/sct#403158001. Valid display is 'Sea mat dermatitis' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+== fsh-generated/resources/ValueSet-wound-stage-vs.json ==
+INFORMATION: ValueSet/wound-stage-vs: ValueSet.compose.include[0].concept[0]: Wrong Display Name 'Stage 1 pressure ulcer' for http://snomed.info/sct#421257003. Valid display is 'Insert - dosing instruction imperative (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+ERROR: ValueSet/wound-stage-vs: ValueSet.compose.include[0].concept[1]: The code '420226007' is not valid in the system http://snomed.info/sct (Unknown code '420226007' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
+ERROR: ValueSet/wound-stage-vs: ValueSet.compose.include[0].concept[2]: The code '420555000' is not valid in the system http://snomed.info/sct (Unknown code '420555000' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
+INFORMATION: ValueSet/wound-stage-vs: ValueSet.compose.include[0].concept[3]: Wrong Display Name 'Stage 4 pressure ulcer' for http://snomed.info/sct#420324007. Valid display is 'Pressure ulcer stage 2 (disorder)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+WARNING: ValueSet/wound-stage-vs: ValueSet.compose.include[0].concept[3]: The concept '420324007' has a status of inactive and its use should be reviewed
+INFORMATION: ValueSet/wound-stage-vs: ValueSet.compose.include[0].concept[4]: Wrong Display Name 'Unstageable pressure ulcer' for http://snomed.info/sct#421076008. Valid display is 'Pressure ulcer stage 1 (disorder)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+WARNING: ValueSet/wound-stage-vs: ValueSet.compose.include[0].concept[4]: The concept '421076008' has a status of inactive and its use should be reviewed
+INFORMATION: ValueSet/wound-stage-vs: ValueSet.compose.include[0].concept[5]: Wrong Display Name 'Deep tissue injury' for http://snomed.info/sct#723071003. Valid display is 'Pressure injury of deep tissue (disorder)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+WARNING: ValueSet/wound-stage-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

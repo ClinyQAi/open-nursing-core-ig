@@ -16,12 +16,15 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessment.md) | A profile for the Braden Scale pressure ulcer risk assessment |
 | [Goal Evaluation](StructureDefinition-onc-goal-evaluation.md) |  |
 | [Monk Skin Tone Observation](StructureDefinition-onc-monk-skintone-observation.md) |  |
+| [NEWS2 Score](StructureDefinition-onc-news2-score.md) | National Early Warning Score 2 (NEWS2) for detecting clinical deterioration |
 | [Nursing Intervention](StructureDefinition-onc-nursing-intervention.md) |  |
 | [Nursing Problem](StructureDefinition-onc-nursing-problem.md) |  |
 | [ONC NHS Patient](StructureDefinition-onc-nhs-patient.md) | A patient profile for use in NHS nursing contexts with ethnic category extension. |
 | [Open Nursing Core Assessment](StructureDefinition-onc-nursing-assessment.md) |  |
+| [Pain Assessment (NRS 0-10)](StructureDefinition-onc-pain-assessment.md) | Pain severity assessment using the Numeric Rating Scale (0-10) |
 | [Patient Goal](StructureDefinition-onc-patient-goal.md) |  |
 | [Skin Tone Observation](StructureDefinition-onc-skintone-observation.md) |  |
+| [Wound Assessment](StructureDefinition-onc-wound-assessment.md) | Comprehensive wound assessment including staging and dimensions |
 
 ### Structures: Extension Definitions 
 
@@ -45,7 +48,9 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Monk Skin Tone Scale ValueSet](ValueSet-onc-monk-scale-vs.md) |  |
 | [Nursing Intervention Value Set](ValueSet-nursing-intervention-valueset.md) | Value set for nursing interventions |
 | [Nursing Problem Value Set](ValueSet-nursing-problem-valueset.md) | Value set for nursing problems and diagnoses |
+| [Pain Assessment Code Value Set](ValueSet-pain-assessment-code-vs.md) | LOINC codes for pain severity assessment |
 | [Problem Category Value Set](ValueSet-problem-category-valueset.md) | Value set for categorizing nursing problems |
+| [Wound Stage Value Set](ValueSet-wound-stage-vs.md) | SNOMED CT codes for pressure ulcer staging |
 
 ### Terminology: Code Systems 
 

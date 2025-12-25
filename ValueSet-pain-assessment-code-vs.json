@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "pain-assessment-code-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet pain-assessment-code-vs</b></p><a name=\"pain-assessment-code-vs\"> </a><a name=\"hcpain-assessment-code-vs\"> </a><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/72514-3/\">72514-3</a></td><td>Pain severity - 0-10 verbal numeric rating</td></tr><tr><td><a href=\"https://loinc.org/38208-5/\">38208-5</a></td><td>Pain severity - Reported</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/pain-assessment-code-vs",
+  "version" : "1.0.0",
+  "name" : "PainAssessmentCodeValueSet",
+  "title" : "Pain Assessment Code Value Set",
+  "status" : "active",
+  "date" : "2025-12-25T23:47:50+00:00",
+  "description" : "LOINC codes for pain severity assessment",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "72514-3",
+        "display" : "Pain severity - 0-10 verbal numeric rating"
+      },
+      {
+        "code" : "38208-5",
+        "display" : "Pain severity - Reported"
+      }]
+    }]
+  }
+}

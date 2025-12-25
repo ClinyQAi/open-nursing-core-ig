@@ -13,7 +13,7 @@
 
 **Usages:**
 
-* Derived from this Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessment.md), [Goal Evaluation](StructureDefinition-onc-goal-evaluation.md), [Monk Skin Tone Observation](StructureDefinition-onc-monk-skintone-observation.md) and [Skin Tone Observation](StructureDefinition-onc-skintone-observation.md)
+* Derived from this Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessment.md), [Goal Evaluation](StructureDefinition-onc-goal-evaluation.md), [Monk Skin Tone Observation](StructureDefinition-onc-monk-skintone-observation.md), [NEWS2 Score](StructureDefinition-onc-news2-score.md)...Show 3 more,[Pain Assessment (NRS 0-10)](StructureDefinition-onc-pain-assessment.md),[Skin Tone Observation](StructureDefinition-onc-skintone-observation.md)and[Wound Assessment](StructureDefinition-onc-wound-assessment.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-nursing-assessment)
 
@@ -38,7 +38,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-assessme
   "name" : "ONCNursingAssessment",
   "title" : "Open Nursing Core Assessment",
   "status" : "active",
-  "date" : "2025-12-25T10:44:58+00:00",
+  "date" : "2025-12-25T23:47:50+00:00",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {

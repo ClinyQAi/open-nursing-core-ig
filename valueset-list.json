@@ -48,6 +48,15 @@
       ]
     },
     {
+      "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/pain-assessment-code-vs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PainAssessmentCodeValueSet",
+      "title" : "Pain Assessment Code Value Set",
+      "description" : "LOINC codes for pain severity assessment",
+      "systems" : ["http://loinc.org"]
+    },
+    {
       "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/problem-category-valueset",
       "version" : "1.0.0",
       "status" : "active",
@@ -63,6 +72,15 @@
       "name" : "SkinToneVS",
       "title" : "Fitzpatrick Skin Tone Value Set",
       "description" : "Value set for Fitzpatrick skin type classifications",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/wound-stage-vs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "WoundStageValueSet",
+      "title" : "Wound Stage Value Set",
+      "description" : "SNOMED CT codes for pressure ulcer staging",
       "systems" : ["http://snomed.info/sct"]
     }
   ]

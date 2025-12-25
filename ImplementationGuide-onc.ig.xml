@@ -11,7 +11,7 @@
   <name value="OpenNursingCoreIG"/>
   <title value="Open Nursing Core FHIR Implementation Guide (ONC-IG)"/>
   <status value="active"/>
-  <date value="2025-12-25T10:44:58+00:00"/>
+  <date value="2025-12-25T23:47:50+00:00"/>
   <description value="Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules."/>
   <packageId value="onc.ig"/>
   <license value="MIT"/>
@@ -576,6 +576,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/onc-news2-score"/>
+      </reference>
+      <name value="NEWS2 Score"/>
+      <description value="National Early Warning Score 2 (NEWS2) for detecting clinical deterioration"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/onc-nursing-intervention"/>
       </reference>
       <name value="Nursing Intervention"/>
@@ -680,6 +691,28 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/onc-pain-assessment"/>
+      </reference>
+      <name value="Pain Assessment (NRS 0-10)"/>
+      <description value="Pain severity assessment using the Numeric Rating Scale (0-10)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/pain-assessment-code-vs"/>
+      </reference>
+      <name value="Pain Assessment Code Value Set"/>
+      <description value="LOINC codes for pain severity assessment"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/onc-patient-goal"/>
       </reference>
       <name value="Patient Goal"/>
@@ -746,6 +779,28 @@
       </reference>
       <name value="UK Core Ethnic Category"/>
       <description value="An extension to record the ethnic category of a patient, as per UK Core standards."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onc-wound-assessment"/>
+      </reference>
+      <name value="Wound Assessment"/>
+      <description value="Comprehensive wound assessment including staging and dimensions"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/wound-stage-vs"/>
+      </reference>
+      <name value="Wound Stage Value Set"/>
+      <description value="SNOMED CT codes for pressure ulcer staging"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

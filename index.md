@@ -65,7 +65,7 @@ For questions or contributions, visit our [GitHub repository](https://github.com
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "active",
-  "date" : "2025-12-25T10:44:58+00:00",
+  "date" : "2025-12-25T23:47:50+00:00",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules.",
   "packageId" : "onc.ig",
   "license" : "MIT",
@@ -936,6 +936,20 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           }
         ],
         "reference" : {
+          "reference" : "StructureDefinition/onc-news2-score"
+        },
+        "name" : "NEWS2 Score",
+        "description" : "National Early Warning Score 2 (NEWS2) for detecting clinical deterioration",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
           "reference" : "StructureDefinition/onc-nursing-intervention"
         },
         "name" : "Nursing Intervention",
@@ -1070,6 +1084,34 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           }
         ],
         "reference" : {
+          "reference" : "StructureDefinition/onc-pain-assessment"
+        },
+        "name" : "Pain Assessment (NRS 0-10)",
+        "description" : "Pain severity assessment using the Numeric Rating Scale (0-10)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/pain-assessment-code-vs"
+        },
+        "name" : "Pain Assessment Code Value Set",
+        "description" : "LOINC codes for pain severity assessment",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
           "reference" : "StructureDefinition/onc-patient-goal"
         },
         "name" : "Patient Goal",
@@ -1154,6 +1196,34 @@ For questions or contributions, visit our [GitHub repository](https://github.com
         },
         "name" : "UK Core Ethnic Category",
         "description" : "An extension to record the ethnic category of a patient, as per UK Core standards.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-wound-assessment"
+        },
+        "name" : "Wound Assessment",
+        "description" : "Comprehensive wound assessment including staging and dimensions",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/wound-stage-vs"
+        },
+        "name" : "Wound Stage Value Set",
+        "description" : "SNOMED CT codes for pressure ulcer staging",
         "exampleBoolean" : false
       }
     ],

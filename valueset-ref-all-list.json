@@ -26,13 +26,16 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
       "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
-      "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation",
-      "StructureDefinition-onc-nursing-problem.html" : "Nursing Problem",
+      "StructureDefinition-onc-wound-assessment.html" : "Wound Assessment",
+      "StructureDefinition-onc-pain-assessment.html" : "Pain Assessment (NRS 0-10)",
       "StructureDefinition-onc-nursing-intervention.html" : "Nursing Intervention",
+      "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation",
       "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation",
-      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation"
+      "StructureDefinition-onc-news2-score.html" : "NEWS2 Score",
+      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation",
+      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
+      "StructureDefinition-onc-nursing-problem.html" : "Nursing Problem"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
@@ -144,11 +147,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
       "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
+      "StructureDefinition-onc-wound-assessment.html" : "Wound Assessment",
+      "StructureDefinition-onc-pain-assessment.html" : "Pain Assessment (NRS 0-10)",
       "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation",
       "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation",
-      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation"
+      "StructureDefinition-onc-news2-score.html" : "NEWS2 Score",
+      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation",
+      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/device-action",
@@ -274,15 +280,18 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
       "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
-      "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation",
-      "StructureDefinition-onc-nhs-patient.html" : "ONC NHS Patient",
-      "StructureDefinition-onc-patient-goal.html" : "Patient Goal",
-      "StructureDefinition-onc-nursing-problem.html" : "Nursing Problem",
+      "StructureDefinition-onc-wound-assessment.html" : "Wound Assessment",
+      "StructureDefinition-onc-pain-assessment.html" : "Pain Assessment (NRS 0-10)",
       "StructureDefinition-onc-nursing-intervention.html" : "Nursing Intervention",
+      "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation",
       "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation",
-      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation"
+      "StructureDefinition-onc-news2-score.html" : "NEWS2 Score",
+      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation",
+      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
+      "StructureDefinition-onc-nhs-patient.html" : "ONC NHS Patient",
+      "StructureDefinition-onc-nursing-problem.html" : "Nursing Problem",
+      "StructureDefinition-onc-patient-goal.html" : "Patient Goal"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -341,11 +350,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.403"],
       "uses" : {
       },
-      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
       "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
+      "StructureDefinition-onc-wound-assessment.html" : "Wound Assessment",
+      "StructureDefinition-onc-pain-assessment.html" : "Pain Assessment (NRS 0-10)",
       "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation",
       "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation",
-      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation"
+      "StructureDefinition-onc-news2-score.html" : "NEWS2 Score",
+      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation",
+      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -359,12 +371,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.396"],
       "uses" : {
       },
-      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
       "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
+      "StructureDefinition-onc-wound-assessment.html" : "Wound Assessment",
+      "StructureDefinition-onc-pain-assessment.html" : "Pain Assessment (NRS 0-10)",
       "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation",
-      "StructureDefinition-onc-patient-goal.html" : "Patient Goal",
       "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation",
-      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation"
+      "StructureDefinition-onc-news2-score.html" : "NEWS2 Score",
+      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation",
+      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
+      "StructureDefinition-onc-patient-goal.html" : "Patient Goal"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -380,11 +395,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
-      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
       "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
+      "StructureDefinition-onc-wound-assessment.html" : "Wound Assessment",
+      "StructureDefinition-onc-pain-assessment.html" : "Pain Assessment (NRS 0-10)",
       "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation",
       "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation",
-      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation"
+      "StructureDefinition-onc-news2-score.html" : "NEWS2 Score",
+      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation",
+      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -398,11 +416,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
-      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
       "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
+      "StructureDefinition-onc-wound-assessment.html" : "Wound Assessment",
+      "StructureDefinition-onc-pain-assessment.html" : "Pain Assessment (NRS 0-10)",
       "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation",
       "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation",
-      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation"
+      "StructureDefinition-onc-news2-score.html" : "NEWS2 Score",
+      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation",
+      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -416,11 +437,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
-      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
       "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
+      "StructureDefinition-onc-wound-assessment.html" : "Wound Assessment",
+      "StructureDefinition-onc-pain-assessment.html" : "Pain Assessment (NRS 0-10)",
       "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation",
       "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation",
-      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation"
+      "StructureDefinition-onc-news2-score.html" : "NEWS2 Score",
+      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation",
+      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
@@ -532,7 +556,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.59"],
       "uses" : {
       },
-      "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment"
+      "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
+      "StructureDefinition-onc-wound-assessment.html" : "Wound Assessment",
+      "StructureDefinition-onc-pain-assessment.html" : "Pain Assessment (NRS 0-10)",
+      "StructureDefinition-onc-news2-score.html" : "NEWS2 Score"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
@@ -549,11 +576,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
-      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
       "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
+      "StructureDefinition-onc-wound-assessment.html" : "Wound Assessment",
+      "StructureDefinition-onc-pain-assessment.html" : "Pain Assessment (NRS 0-10)",
       "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation",
       "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation",
-      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation"
+      "StructureDefinition-onc-news2-score.html" : "NEWS2 Score",
+      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation",
+      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -569,11 +599,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
-      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
       "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
+      "StructureDefinition-onc-wound-assessment.html" : "Wound Assessment",
+      "StructureDefinition-onc-pain-assessment.html" : "Pain Assessment (NRS 0-10)",
       "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation",
       "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation",
-      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation"
+      "StructureDefinition-onc-news2-score.html" : "NEWS2 Score",
+      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation",
+      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment"
     },
     {
       "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset",
@@ -635,6 +668,18 @@
       "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation"
     },
     {
+      "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/pain-assessment-code-vs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PainAssessmentCodeValueSet",
+      "title" : "Pain Assessment Code Value Set",
+      "description" : "LOINC codes for pain severity assessment",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-onc-pain-assessment.html" : "Pain Assessment (NRS 0-10)"
+    },
+    {
       "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/problem-category-valueset",
       "version" : "1.0.0",
       "status" : "active",
@@ -657,6 +702,18 @@
       "uses" : {
       },
       "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation"
+    },
+    {
+      "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/wound-stage-vs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "WoundStageValueSet",
+      "title" : "Wound Stage Value Set",
+      "description" : "SNOMED CT codes for pressure ulcer staging",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-onc-wound-assessment.html" : "Wound Assessment"
     }
   ]
 }

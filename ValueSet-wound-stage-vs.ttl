@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://clinyqai.github.io/open-nursing-core-ig/ValueSet/wound-stage-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "wound-stage-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet wound-stage-vs</b></p><a name=\"wound-stage-vs\"> </a><a name=\"hcwound-stage-vs\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/421257003\">421257003</a></td><td>Stage 1 pressure ulcer</td></tr><tr><td><a href=\"http://snomed.info/id/420226007\">420226007</a></td><td>Stage 2 pressure ulcer</td></tr><tr><td><a href=\"http://snomed.info/id/420555000\">420555000</a></td><td>Stage 3 pressure ulcer</td></tr><tr><td><a href=\"http://snomed.info/id/420324007\">420324007</a></td><td>Stage 4 pressure ulcer</td></tr><tr><td><a href=\"http://snomed.info/id/421076008\">421076008</a></td><td>Unstageable pressure ulcer</td></tr><tr><td><a href=\"http://snomed.info/id/723071003\">723071003</a></td><td>Deep tissue injury</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/wound-stage-vs"^^xsd:anyURI ;
+     fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/wound-stage-vs>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "WoundStageValueSet"] ; # 
+  fhir:title [ fhir:v "Wound Stage Value Set"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-12-25T23:47:50+00:00"^^xsd:dateTime] ; # 
+  fhir:description [ fhir:v "SNOMED CT codes for pressure ulcer staging"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "421257003" ] ;
+         fhir:display [ fhir:v "Stage 1 pressure ulcer" ]
+       ] [
+         fhir:code [ fhir:v "420226007" ] ;
+         fhir:display [ fhir:v "Stage 2 pressure ulcer" ]
+       ] [
+         fhir:code [ fhir:v "420555000" ] ;
+         fhir:display [ fhir:v "Stage 3 pressure ulcer" ]
+       ] [
+         fhir:code [ fhir:v "420324007" ] ;
+         fhir:display [ fhir:v "Stage 4 pressure ulcer" ]
+       ] [
+         fhir:code [ fhir:v "421076008" ] ;
+         fhir:display [ fhir:v "Unstageable pressure ulcer" ]
+       ] [
+         fhir:code [ fhir:v "723071003" ] ;
+         fhir:display [ fhir:v "Deep tissue injury" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

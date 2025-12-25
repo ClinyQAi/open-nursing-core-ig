@@ -63,6 +63,13 @@
     "name" : "ONCMonkSkinToneObservation"
   },
   {
+    "id" : "onc-news2-score",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-news2-score",
+    "version" : "1.0.0",
+    "name" : "ONCNEWS2Score"
+  },
+  {
     "id" : "onc-nhs-patient",
     "type" : "StructureDefinition",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nhs-patient",
@@ -91,6 +98,13 @@
     "name" : "ONCNursingProblem"
   },
   {
+    "id" : "onc-pain-assessment",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-pain-assessment",
+    "version" : "1.0.0",
+    "name" : "ONCPainAssessment"
+  },
+  {
     "id" : "onc-patient-goal",
     "type" : "StructureDefinition",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-goal",
@@ -103,6 +117,13 @@
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-skintone-observation",
     "version" : "1.0.0",
     "name" : "ONCSkinToneObservation"
+  },
+  {
+    "id" : "onc-wound-assessment",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-wound-assessment",
+    "version" : "1.0.0",
+    "name" : "ONCWoundAssessment"
   },
   {
     "id" : "goal-evaluation-valueset",
@@ -140,6 +161,13 @@
     "name" : "ONCMonkScaleVS"
   },
   {
+    "id" : "pain-assessment-code-vs",
+    "type" : "ValueSet",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/pain-assessment-code-vs",
+    "version" : "1.0.0",
+    "name" : "PainAssessmentCodeValueSet"
+  },
+  {
     "id" : "problem-category-valueset",
     "type" : "ValueSet",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/problem-category-valueset",
@@ -152,6 +180,13 @@
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/skintone-vs",
     "version" : "1.0.0",
     "name" : "SkinToneVS"
+  },
+  {
+    "id" : "wound-stage-vs",
+    "type" : "ValueSet",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/wound-stage-vs",
+    "version" : "1.0.0",
+    "name" : "WoundStageValueSet"
   },
   {
     "id" : "UKCore-Extension-EthnicCategory",

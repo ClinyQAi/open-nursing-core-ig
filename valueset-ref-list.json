@@ -60,6 +60,18 @@
       "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation"
     },
     {
+      "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/pain-assessment-code-vs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PainAssessmentCodeValueSet",
+      "title" : "Pain Assessment Code Value Set",
+      "description" : "LOINC codes for pain severity assessment",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-onc-pain-assessment.html" : "Pain Assessment (NRS 0-10)"
+    },
+    {
       "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/problem-category-valueset",
       "version" : "1.0.0",
       "status" : "active",
@@ -82,6 +94,18 @@
       "uses" : {
       },
       "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation"
+    },
+    {
+      "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/wound-stage-vs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "WoundStageValueSet",
+      "title" : "Wound Stage Value Set",
+      "description" : "SNOMED CT codes for pressure ulcer staging",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-onc-wound-assessment.html" : "Wound Assessment"
     }
   ]
 }

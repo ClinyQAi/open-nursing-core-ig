@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="wound-stage-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet wound-stage-vs</b></p><a name="wound-stage-vs"> </a><a name="hcwound-stage-vs"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/421257003">421257003</a></td><td>Stage 1 pressure ulcer</td></tr><tr><td><a href="http://snomed.info/id/420226007">420226007</a></td><td>Stage 2 pressure ulcer</td></tr><tr><td><a href="http://snomed.info/id/420555000">420555000</a></td><td>Stage 3 pressure ulcer</td></tr><tr><td><a href="http://snomed.info/id/420324007">420324007</a></td><td>Stage 4 pressure ulcer</td></tr><tr><td><a href="http://snomed.info/id/421076008">421076008</a></td><td>Unstageable pressure ulcer</td></tr><tr><td><a href="http://snomed.info/id/723071003">723071003</a></td><td>Deep tissue injury</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/wound-stage-vs"/>
+  <version value="1.0.0"/>
+  <name value="WoundStageValueSet"/>
+  <title value="Wound Stage Value Set"/>
+  <status value="active"/>
+  <date value="2025-12-25T23:47:50+00:00"/>
+  <description value="SNOMED CT codes for pressure ulcer staging"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="421257003"/>
+        <display value="Stage 1 pressure ulcer"/>
+      </concept>
+      <concept>
+        <code value="420226007"/>
+        <display value="Stage 2 pressure ulcer"/>
+      </concept>
+      <concept>
+        <code value="420555000"/>
+        <display value="Stage 3 pressure ulcer"/>
+      </concept>
+      <concept>
+        <code value="420324007"/>
+        <display value="Stage 4 pressure ulcer"/>
+      </concept>
+      <concept>
+        <code value="421076008"/>
+        <display value="Unstageable pressure ulcer"/>
+      </concept>
+      <concept>
+        <code value="723071003"/>
+        <display value="Deep tissue injury"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

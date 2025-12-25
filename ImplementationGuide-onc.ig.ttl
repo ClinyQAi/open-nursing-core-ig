@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "OpenNursingCoreIG"] ; # 
   fhir:title [ fhir:v "Open Nursing Core FHIR Implementation Guide (ONC-IG)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-12-25T10:44:58+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-25T23:47:50+00:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules."] ; # 
   fhir:packageId [ fhir:v "onc.ig"] ; # 
   fhir:license [ fhir:v "MIT"] ; # 
@@ -1555,6 +1555,27 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-news2-score> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-news2-score" ]
+       ] ;
+       fhir:name [ fhir:v "NEWS2 Score" ] ;
+       fhir:description [ fhir:v "National Early Warning Score 2 (NEWS2) for detecting clinical deterioration" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-intervention> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-nursing-intervention" ]
        ] ;
@@ -1761,6 +1782,48 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-pain-assessment> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-pain-assessment" ]
+       ] ;
+       fhir:name [ fhir:v "Pain Assessment (NRS 0-10)" ] ;
+       fhir:description [ fhir:v "Pain severity assessment using the Numeric Rating Scale (0-10)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/pain-assessment-code-vs> ;
+         fhir:reference [ fhir:v "ValueSet/pain-assessment-code-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Pain Assessment Code Value Set" ] ;
+       fhir:description [ fhir:v "LOINC codes for pain severity assessment" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-goal> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-patient-goal" ]
        ] ;
@@ -1889,6 +1952,48 @@
        ] ;
        fhir:name [ fhir:v "UK Core Ethnic Category" ] ;
        fhir:description [ fhir:v "An extension to record the ethnic category of a patient, as per UK Core standards." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-wound-assessment> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-wound-assessment" ]
+       ] ;
+       fhir:name [ fhir:v "Wound Assessment" ] ;
+       fhir:description [ fhir:v "Comprehensive wound assessment including staging and dimensions" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/wound-stage-vs> ;
+         fhir:reference [ fhir:v "ValueSet/wound-stage-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Wound Stage Value Set" ] ;
+       fhir:description [ fhir:v "SNOMED CT codes for pressure ulcer staging" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
