@@ -14,12 +14,12 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:4378
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:12 GMT
+date:Thu, 25 Dec 2025 10:22:35 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292775
+x-request-id:252-1293141
 
-{&quot;resourceType&quot; : &quot;CapabilityStatement&quot;,&quot;id&quot; : &quot;FhirServer&quot;,&quot;text&quot; : {&quot;status&quot; : &quot;generated&quot;,&quot;div&quot; : &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;Local User Conformance Statement&lt;/h2&gt;&lt;p&gt;FHIR v4.0.1 released 20251208221453.000Z. Server version 4.0.7 built 20251208221453.000Z&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;th&gt;Resource Type&lt;/th&gt;&lt;th&gt;Profile&lt;/th&gt;&lt;th&gt;Read&lt;/th&gt;&lt;th&gt;V-Read&lt;/th&gt;&lt;th&gt;Search&lt;/th&gt;&lt;th&gt;Update&lt;/th&gt;&lt;th&gt;Updates&lt;/th&gt;&lt;th&gt;Create&lt;/th&gt;&lt;th&gt;Delete&lt;/th&gt;&lt;th&gt;History&lt;/th&gt;&lt;/tr&gt;\n&lt;/table&gt;\n&lt;p&gt;Operations&lt;/p&gt;\n&lt;ul&gt;\n &lt;li&gt;expand: see OperationDefinition/fso-expand&lt;/li&gt;\n &lt;li&gt;lookup: see OperationDefinition/fso-lookup&lt;/li&gt;\n &lt;li&gt;subsumes: see OperationDefinition/fso-subsumes&lt;/li&gt;\n &lt;li&gt;validate-code: see OperationDefinition/fso-validate-code&lt;/li&gt;\n &lt;li&gt;batch-validate-code: see OperationDefinition/fso-batch-validate-code&lt;/li&gt;\n &lt;li&gt;translate: see OperationDefinition/fso-translate&lt;/li&gt;\n &lt;li&gt;closure: see OperationDefinition/fso-closure&lt;/li&gt;\n &lt;li&gt;versions: see OperationDefinition/fso-versions&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/div&gt;&quot;},&quot;extension&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;definition&quot;,&quot;valueCanonical&quot; : &quot;http://hl7.org/fhir/uv/tx-tests/FeatureDefinition/test-version&quot;},{&quot;url&quot; : &quot;value&quot;,&quot;valueCode&quot; : &quot;1.8.0&quot;},{&quot;extension&quot; : [{&quot;url&quot; : &quot;name&quot;,&quot;valueCode&quot; : &quot;mode&quot;},{&quot;url&quot; : &quot;value&quot;,&quot;valueCode&quot; : &quot;tx.fhir.org&quot;}],&quot;url&quot; : &quot;qualifier&quot;}],&quot;url&quot; : &quot;http://hl7.org/fhir/uv/application-feature/StructureDefinition/feature&quot;},{&quot;extension&quot; : [{&quot;url&quot; : &quot;definition&quot;,&quot;valueCanonical&quot; : &quot;http://hl7.org/fhir/uv/tx-ecosystem/FeatureDefinition/CodeSystemAsParameter&quot;},{&quot;url&quot; : &quot;value&quot;,&quot;valueBoolean&quot; : true}],&quot;url&quot; : &quot;http://hl7.org/fhir/uv/application-feature/StructureDefinition/feature&quot;}],&quot;url&quot; : &quot;http://tx.fhir.org/r4/CapabilityStatement/tx&quot;,&quot;version&quot; : &quot;4.0.1-4.0.7&quot;,&quot;name&quot; : &quot;FHIRReferenceServer&quot;,&quot;title&quot; : &quot;FHIR Reference Server Conformance Statement&quot;,&quot;status&quot; : &quot;active&quot;,&quot;date&quot; : &quot;2025-12-25T10:10:12.237Z&quot;,&quot;contact&quot; : [{&quot;telecom&quot; : [{&quot;system&quot; : &quot;other&quot;,&quot;value&quot; : &quot;http://healthintersections.com.au/&quot;}]}],&quot;description&quot; : &quot;Standard Conformance Statement for the open source Reference FHIR Server provided by Health Intersections&quot;,&quot;kind&quot; : &quot;instance&quot;,&quot;instantiates&quot; : [&quot;http://hl7.org/fhir/CapabilityStatement/terminology-server&quot;,&quot;http://hl7.org/fhir/CapabilityStatement/terminology-server&quot;],&quot;software&quot; : {&quot;name&quot; : &quot;HealthIntersections Server&quot;,&quot;version&quot; : &quot;4.0.7&quot;,&quot;releaseDate&quot; : &quot;2025-12-08T22:14:53.000Z&quot;},&quot;implementation&quot; : {&quot;description&quot; : &quot;FHIR Server running at http://tx.fhir.org/r4&quot;,&quot;url&quot; : &quot;http://tx.fhir.org/r4&quot;},&quot;fhirVersion&quot; : &quot;4.0.1&quot;,&quot;format&quot; : [&quot;application/fhir+xml&quot;,&quot;application/fhir+json&quot;],&quot;rest&quot; : [{&quot;mode&quot; : &quot;server&quot;,&quot;security&quot; : {&quot;cors&quot; : true},&quot;resource&quot; : [{&quot;type&quot; : &quot;CodeSystem&quot;,&quot;interaction&quot; : [{&quot;code&quot; : &quot;read&quot;,&quot;documentation&quot; : &quot;Read a code system&quot;},{&quot;code&quot; : &quot;search-type&quot;,&quot;documentation&quot; : &quot;Search the code systems. Not that there a few major code systems that are not available through this API (SCT, LOINC etc)&quot;}],&quot;operation&quot; : [{&quot;name&quot; : &quot;validate-code&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-validate-code&quot;},{&quot;name&quot; : &quot;lookup&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-lookup&quot;}]},{&quot;type&quot; : &quot;ValueSet&quot;,&quot;interaction&quot; : [{&quot;code&quot; : &quot;read&quot;,&quot;documentation&quot; : &quot;Read a ValueSet&quot;},{&quot;code&quot; : &quot;search-type&quot;,&quot;documentation&quot; : &quot;Search the value sets&quot;}],&quot;operation&quot; : [{&quot;name&quot; : &quot;validate-code&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ValueSet-validate-code&quot;},{&quot;name&quot; : &quot;expand&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ValueSet-expand&quot;}]}],&quot;interaction&quot; : [{&quot;code&quot; : &quot;transaction&quot;}],&quot;operation&quot; : [{&quot;name&quot; : &quot;expand&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ValueSet-expand&quot;},{&quot;name&quot; : &quot;lookup&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ValueSet-lookup&quot;},{&quot;name&quot; : &quot;subsumes&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-subsumes&quot;},{&quot;name&quot; : &quot;validate-code&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/Resource-validate-code&quot;},{&quot;name&quot; : &quot;batch-validate-code&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/Resource-batch-validate-code&quot;},{&quot;name&quot; : &quot;translate&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ConceptMap-translate&quot;},{&quot;name&quot; : &quot;closure&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ConceptMap-closure&quot;},{&quot;name&quot; : &quot;versions&quot;,&quot;definition&quot; : &quot;http://tx.fhir.org/r4/OperationDefinition/fso-versions&quot;}]}]}
+{&quot;resourceType&quot; : &quot;CapabilityStatement&quot;,&quot;id&quot; : &quot;FhirServer&quot;,&quot;text&quot; : {&quot;status&quot; : &quot;generated&quot;,&quot;div&quot; : &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;Local User Conformance Statement&lt;/h2&gt;&lt;p&gt;FHIR v4.0.1 released 20251208221453.000Z. Server version 4.0.7 built 20251208221453.000Z&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;th&gt;Resource Type&lt;/th&gt;&lt;th&gt;Profile&lt;/th&gt;&lt;th&gt;Read&lt;/th&gt;&lt;th&gt;V-Read&lt;/th&gt;&lt;th&gt;Search&lt;/th&gt;&lt;th&gt;Update&lt;/th&gt;&lt;th&gt;Updates&lt;/th&gt;&lt;th&gt;Create&lt;/th&gt;&lt;th&gt;Delete&lt;/th&gt;&lt;th&gt;History&lt;/th&gt;&lt;/tr&gt;\n&lt;/table&gt;\n&lt;p&gt;Operations&lt;/p&gt;\n&lt;ul&gt;\n &lt;li&gt;expand: see OperationDefinition/fso-expand&lt;/li&gt;\n &lt;li&gt;lookup: see OperationDefinition/fso-lookup&lt;/li&gt;\n &lt;li&gt;subsumes: see OperationDefinition/fso-subsumes&lt;/li&gt;\n &lt;li&gt;validate-code: see OperationDefinition/fso-validate-code&lt;/li&gt;\n &lt;li&gt;batch-validate-code: see OperationDefinition/fso-batch-validate-code&lt;/li&gt;\n &lt;li&gt;translate: see OperationDefinition/fso-translate&lt;/li&gt;\n &lt;li&gt;closure: see OperationDefinition/fso-closure&lt;/li&gt;\n &lt;li&gt;versions: see OperationDefinition/fso-versions&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/div&gt;&quot;},&quot;extension&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;definition&quot;,&quot;valueCanonical&quot; : &quot;http://hl7.org/fhir/uv/tx-tests/FeatureDefinition/test-version&quot;},{&quot;url&quot; : &quot;value&quot;,&quot;valueCode&quot; : &quot;1.8.0&quot;},{&quot;extension&quot; : [{&quot;url&quot; : &quot;name&quot;,&quot;valueCode&quot; : &quot;mode&quot;},{&quot;url&quot; : &quot;value&quot;,&quot;valueCode&quot; : &quot;tx.fhir.org&quot;}],&quot;url&quot; : &quot;qualifier&quot;}],&quot;url&quot; : &quot;http://hl7.org/fhir/uv/application-feature/StructureDefinition/feature&quot;},{&quot;extension&quot; : [{&quot;url&quot; : &quot;definition&quot;,&quot;valueCanonical&quot; : &quot;http://hl7.org/fhir/uv/tx-ecosystem/FeatureDefinition/CodeSystemAsParameter&quot;},{&quot;url&quot; : &quot;value&quot;,&quot;valueBoolean&quot; : true}],&quot;url&quot; : &quot;http://hl7.org/fhir/uv/application-feature/StructureDefinition/feature&quot;}],&quot;url&quot; : &quot;http://tx.fhir.org/r4/CapabilityStatement/tx&quot;,&quot;version&quot; : &quot;4.0.1-4.0.7&quot;,&quot;name&quot; : &quot;FHIRReferenceServer&quot;,&quot;title&quot; : &quot;FHIR Reference Server Conformance Statement&quot;,&quot;status&quot; : &quot;active&quot;,&quot;date&quot; : &quot;2025-12-25T10:22:35.345Z&quot;,&quot;contact&quot; : [{&quot;telecom&quot; : [{&quot;system&quot; : &quot;other&quot;,&quot;value&quot; : &quot;http://healthintersections.com.au/&quot;}]}],&quot;description&quot; : &quot;Standard Conformance Statement for the open source Reference FHIR Server provided by Health Intersections&quot;,&quot;kind&quot; : &quot;instance&quot;,&quot;instantiates&quot; : [&quot;http://hl7.org/fhir/CapabilityStatement/terminology-server&quot;,&quot;http://hl7.org/fhir/CapabilityStatement/terminology-server&quot;],&quot;software&quot; : {&quot;name&quot; : &quot;HealthIntersections Server&quot;,&quot;version&quot; : &quot;4.0.7&quot;,&quot;releaseDate&quot; : &quot;2025-12-08T22:14:53.000Z&quot;},&quot;implementation&quot; : {&quot;description&quot; : &quot;FHIR Server running at http://tx.fhir.org/r4&quot;,&quot;url&quot; : &quot;http://tx.fhir.org/r4&quot;},&quot;fhirVersion&quot; : &quot;4.0.1&quot;,&quot;format&quot; : [&quot;application/fhir+xml&quot;,&quot;application/fhir+json&quot;],&quot;rest&quot; : [{&quot;mode&quot; : &quot;server&quot;,&quot;security&quot; : {&quot;cors&quot; : true},&quot;resource&quot; : [{&quot;type&quot; : &quot;CodeSystem&quot;,&quot;interaction&quot; : [{&quot;code&quot; : &quot;read&quot;,&quot;documentation&quot; : &quot;Read a code system&quot;},{&quot;code&quot; : &quot;search-type&quot;,&quot;documentation&quot; : &quot;Search the code systems. Not that there a few major code systems that are not available through this API (SCT, LOINC etc)&quot;}],&quot;operation&quot; : [{&quot;name&quot; : &quot;validate-code&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-validate-code&quot;},{&quot;name&quot; : &quot;lookup&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-lookup&quot;}]},{&quot;type&quot; : &quot;ValueSet&quot;,&quot;interaction&quot; : [{&quot;code&quot; : &quot;read&quot;,&quot;documentation&quot; : &quot;Read a ValueSet&quot;},{&quot;code&quot; : &quot;search-type&quot;,&quot;documentation&quot; : &quot;Search the value sets&quot;}],&quot;operation&quot; : [{&quot;name&quot; : &quot;validate-code&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ValueSet-validate-code&quot;},{&quot;name&quot; : &quot;expand&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ValueSet-expand&quot;}]}],&quot;interaction&quot; : [{&quot;code&quot; : &quot;transaction&quot;}],&quot;operation&quot; : [{&quot;name&quot; : &quot;expand&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ValueSet-expand&quot;},{&quot;name&quot; : &quot;lookup&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ValueSet-lookup&quot;},{&quot;name&quot; : &quot;subsumes&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-subsumes&quot;},{&quot;name&quot; : &quot;validate-code&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/Resource-validate-code&quot;},{&quot;name&quot; : &quot;batch-validate-code&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/Resource-batch-validate-code&quot;},{&quot;name&quot; : &quot;translate&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ConceptMap-translate&quot;},{&quot;name&quot; : &quot;closure&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ConceptMap-closure&quot;},{&quot;name&quot; : &quot;versions&quot;,&quot;definition&quot; : &quot;http://tx.fhir.org/r4/OperationDefinition/fso-versions&quot;}]}]}
 </pre>
 <hr/><a name="l2"> </a>
 <p>#2</p>
@@ -29,7 +29,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://unitsofmeasure.org","code":"1"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://unitsofmeasure.org","code":"1"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -40,11 +40,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:748
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:26 GMT
-last-modified:Thu, 25 Dec 2025 10:10:26 GMT
+date:Thu, 25 Dec 2025 10:22:46 GMT
+last-modified:Thu, 25 Dec 2025 10:22:46 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292782
+x-request-id:252-1293148
 
 {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://unitsofmeasure.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;1&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;2.2&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;1&quot;},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://unitsofmeasure.org#1 (\&quot;\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://unitsofmeasure.org#1\&quot;\r\n0 0     : 0ms  : Using CodeSystem \&quot;http://unitsofmeasure.org|2.2\&quot; (content = complete)\r\n&quot;}]}
 </pre>
@@ -56,7 +56,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en-US"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":false,"include":[{"system":"http://snomed.info/sct","concept":[{"code":"385633008","display":"Resolved"},{"code":"385634002","display":"Worsened"},{"code":"118222006","display":"General finding of observation of patient"}]}]}}}]}
+{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en-US"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":false,"include":[{"system":"http://snomed.info/sct","concept":[{"code":"385633008","display":"Resolved"},{"code":"385634002","display":"Worsened"},{"code":"118222006","display":"General finding of observation of patient"}]}]}}}]}
 </pre>
 <pre>
 200
@@ -67,13 +67,13 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:689
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:27 GMT
-last-modified:Thu, 25 Dec 2025 10:10:27 GMT
+date:Thu, 25 Dec 2025 10:22:47 GMT
+last-modified:Thu, 25 Dec 2025 10:22:47 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292784
+x-request-id:252-1293149
 
-{&quot;resourceType&quot; : &quot;ValueSet&quot;,&quot;status&quot; : &quot;active&quot;,&quot;expansion&quot; : {&quot;identifier&quot; : &quot;urn:uuid:7e79895a-f264-4573-bb4f-e1ef806cd9d6&quot;,&quot;timestamp&quot; : &quot;2025-12-25T10:10:27.440Z&quot;,&quot;total&quot; : 3,&quot;offset&quot; : 0,&quot;parameter&quot; : [{&quot;name&quot; : &quot;excludeNested&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;offset&quot;,&quot;valueInteger&quot; : 0},{&quot;name&quot; : &quot;count&quot;,&quot;valueInteger&quot; : 1000},{&quot;name&quot; : &quot;used-codesystem&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}],&quot;contains&quot; : [{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;385633008&quot;,&quot;display&quot; : &quot;Improving (qualifier value)&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;385634002&quot;,&quot;display&quot; : &quot;Change patterns (qualifier value)&quot;}]}}
+{&quot;resourceType&quot; : &quot;ValueSet&quot;,&quot;status&quot; : &quot;active&quot;,&quot;expansion&quot; : {&quot;identifier&quot; : &quot;urn:uuid:951a0442-30dd-4a2f-83f2-d28ec83d1e49&quot;,&quot;timestamp&quot; : &quot;2025-12-25T10:22:47.251Z&quot;,&quot;total&quot; : 3,&quot;offset&quot; : 0,&quot;parameter&quot; : [{&quot;name&quot; : &quot;excludeNested&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;offset&quot;,&quot;valueInteger&quot; : 0},{&quot;name&quot; : &quot;count&quot;,&quot;valueInteger&quot; : 1000},{&quot;name&quot; : &quot;used-codesystem&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}],&quot;contains&quot; : [{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;385633008&quot;,&quot;display&quot; : &quot;Improving (qualifier value)&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;385634002&quot;,&quot;display&quot; : &quot;Change patterns (qualifier value)&quot;}]}}
 </pre>
 <hr/><a name="l4"> </a>
 <p>#4</p>
@@ -94,11 +94,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1146
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:27 GMT
-last-modified:Thu, 25 Dec 2025 10:10:27 GMT
+date:Thu, 25 Dec 2025 10:22:47 GMT
+last-modified:Thu, 25 Dec 2025 10:22:47 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292785
+x-request-id:252-1293150
 
 {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;validation&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;118222006&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;General finding of observation of patient&quot;},{&quot;name&quot; : &quot;inactive&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;The concept '118222006' has a status of inactive and its use should be reviewed&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;INACTIVE_CONCEPT_FOUND&quot;}],&quot;severity&quot; : &quot;warning&quot;,&quot;code&quot; : &quot;business-rule&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;code-comment&quot;}],&quot;text&quot; : &quot;The concept '118222006' has a status of inactive and its use should be reviewed&quot;},&quot;location&quot; : [&quot;Coding&quot;],&quot;expression&quot; : [&quot;Coding&quot;]}]}}]}}]}
 </pre>
@@ -110,7 +110,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en-US"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":false,"include":[{"system":"http://snomed.info/sct","concept":[{"code":"266935003","display":"Housing problem"},{"code":"160724001","display":"Homeless"},{"code":"224224003","display":"Lives in own home"}]}]}}}]}
+{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en-US"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":false,"include":[{"system":"http://snomed.info/sct","concept":[{"code":"266935003","display":"Housing problem"},{"code":"160724001","display":"Homeless"},{"code":"224224003","display":"Lives in own home"}]}]}}}]}
 </pre>
 <pre>
 200
@@ -121,13 +121,13 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:662
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:27 GMT
-last-modified:Thu, 25 Dec 2025 10:10:27 GMT
+date:Thu, 25 Dec 2025 10:22:47 GMT
+last-modified:Thu, 25 Dec 2025 10:22:47 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292786
+x-request-id:252-1293151
 
-{&quot;resourceType&quot; : &quot;ValueSet&quot;,&quot;status&quot; : &quot;active&quot;,&quot;expansion&quot; : {&quot;identifier&quot; : &quot;urn:uuid:41202cd4-af8b-46e0-ac73-f84dc7d29c0b&quot;,&quot;timestamp&quot; : &quot;2025-12-25T10:10:27.846Z&quot;,&quot;total&quot; : 2,&quot;offset&quot; : 0,&quot;parameter&quot; : [{&quot;name&quot; : &quot;excludeNested&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;offset&quot;,&quot;valueInteger&quot; : 0},{&quot;name&quot; : &quot;count&quot;,&quot;valueInteger&quot; : 1000},{&quot;name&quot; : &quot;used-codesystem&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}],&quot;contains&quot; : [{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;266935003&quot;,&quot;display&quot; : &quot;Housing lack&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;224224003&quot;,&quot;display&quot; : &quot;Lives in staffed home&quot;}]}}
+{&quot;resourceType&quot; : &quot;ValueSet&quot;,&quot;status&quot; : &quot;active&quot;,&quot;expansion&quot; : {&quot;identifier&quot; : &quot;urn:uuid:90c55261-6541-420f-b738-158a9fd79ac1&quot;,&quot;timestamp&quot; : &quot;2025-12-25T10:22:47.751Z&quot;,&quot;total&quot; : 2,&quot;offset&quot; : 0,&quot;parameter&quot; : [{&quot;name&quot; : &quot;excludeNested&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;offset&quot;,&quot;valueInteger&quot; : 0},{&quot;name&quot; : &quot;count&quot;,&quot;valueInteger&quot; : 1000},{&quot;name&quot; : &quot;used-codesystem&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}],&quot;contains&quot; : [{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;266935003&quot;,&quot;display&quot; : &quot;Housing lack&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;224224003&quot;,&quot;display&quot; : &quot;Lives in staffed home&quot;}]}}
 </pre>
 <hr/><a name="l6"> </a>
 <p>#6</p>
@@ -148,11 +148,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1094
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:28 GMT
-last-modified:Thu, 25 Dec 2025 10:10:28 GMT
+date:Thu, 25 Dec 2025 10:22:48 GMT
+last-modified:Thu, 25 Dec 2025 10:22:48 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292787
+x-request-id:252-1293152
 
 {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;validation&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;160724001&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Unknown code '160724001' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Unknown_Code_in_Version&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;code-invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-code&quot;}],&quot;text&quot; : &quot;Unknown code '160724001' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)&quot;},&quot;location&quot; : [&quot;Coding.code&quot;],&quot;expression&quot; : [&quot;Coding.code&quot;]}]}}]}}]}
 </pre>
@@ -164,7 +164,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en-US"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":false,"include":[{"system":"http://snomed.info/sct","concept":[{"code":"71388002","display":"Procedure"},{"code":"225358003","display":"Wound care"},{"code":"386373004","display":"Nutrition therapy"}]}]}}}]}
+{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en-US"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":false,"include":[{"system":"http://snomed.info/sct","concept":[{"code":"71388002","display":"Procedure"},{"code":"225358003","display":"Wound care"},{"code":"386373004","display":"Nutrition therapy"}]}]}}}]}
 </pre>
 <pre>
 200
@@ -175,13 +175,13 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:755
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:28 GMT
-last-modified:Thu, 25 Dec 2025 10:10:28 GMT
+date:Thu, 25 Dec 2025 10:22:48 GMT
+last-modified:Thu, 25 Dec 2025 10:22:48 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292788
+x-request-id:252-1293153
 
-{&quot;resourceType&quot; : &quot;ValueSet&quot;,&quot;status&quot; : &quot;active&quot;,&quot;expansion&quot; : {&quot;identifier&quot; : &quot;urn:uuid:c493d58a-85da-4105-9a41-0f68872862cd&quot;,&quot;timestamp&quot; : &quot;2025-12-25T10:10:28.206Z&quot;,&quot;total&quot; : 3,&quot;offset&quot; : 0,&quot;parameter&quot; : [{&quot;name&quot; : &quot;excludeNested&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;offset&quot;,&quot;valueInteger&quot; : 0},{&quot;name&quot; : &quot;count&quot;,&quot;valueInteger&quot; : 1000},{&quot;name&quot; : &quot;used-codesystem&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}],&quot;contains&quot; : [{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;71388002&quot;,&quot;display&quot; : &quot;Procedure&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;225358003&quot;,&quot;display&quot; : &quot;Wound care&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;386373004&quot;,&quot;display&quot; : &quot;Nutrition therapy (regime/therapy)&quot;}]}}
+{&quot;resourceType&quot; : &quot;ValueSet&quot;,&quot;status&quot; : &quot;active&quot;,&quot;expansion&quot; : {&quot;identifier&quot; : &quot;urn:uuid:29963423-4b9c-478b-b0e4-f25c040c8ac3&quot;,&quot;timestamp&quot; : &quot;2025-12-25T10:22:48.251Z&quot;,&quot;total&quot; : 3,&quot;offset&quot; : 0,&quot;parameter&quot; : [{&quot;name&quot; : &quot;excludeNested&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;offset&quot;,&quot;valueInteger&quot; : 0},{&quot;name&quot; : &quot;count&quot;,&quot;valueInteger&quot; : 1000},{&quot;name&quot; : &quot;used-codesystem&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}],&quot;contains&quot; : [{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;71388002&quot;,&quot;display&quot; : &quot;Procedure&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;225358003&quot;,&quot;display&quot; : &quot;Wound care&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;386373004&quot;,&quot;display&quot; : &quot;Nutrition therapy (regime/therapy)&quot;}]}}
 </pre>
 <hr/><a name="l8"> </a>
 <p>#8</p>
@@ -191,7 +191,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en-US"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":false,"include":[{"system":"http://snomed.info/sct","concept":[{"code":"129839007","display":"At risk for falls"},{"code":"162828007","display":"Risk of falls"},{"code":"300893006","display":"Nutritional finding"},{"code":"22253000","display":"Pain"}]}]}}}]}
+{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en-US"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":false,"include":[{"system":"http://snomed.info/sct","concept":[{"code":"129839007","display":"At risk for falls"},{"code":"162828007","display":"Risk of falls"},{"code":"300893006","display":"Nutritional finding"},{"code":"22253000","display":"Pain"}]}]}}}]}
 </pre>
 <pre>
 200
@@ -202,13 +202,13 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:742
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:28 GMT
-last-modified:Thu, 25 Dec 2025 10:10:28 GMT
+date:Thu, 25 Dec 2025 10:22:48 GMT
+last-modified:Thu, 25 Dec 2025 10:22:48 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292789
+x-request-id:252-1293156
 
-{&quot;resourceType&quot; : &quot;ValueSet&quot;,&quot;status&quot; : &quot;active&quot;,&quot;expansion&quot; : {&quot;identifier&quot; : &quot;urn:uuid:85c8ab01-41f7-4df2-a2a7-0a75252e6645&quot;,&quot;timestamp&quot; : &quot;2025-12-25T10:10:28.393Z&quot;,&quot;total&quot; : 3,&quot;offset&quot; : 0,&quot;parameter&quot; : [{&quot;name&quot; : &quot;excludeNested&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;offset&quot;,&quot;valueInteger&quot; : 0},{&quot;name&quot; : &quot;count&quot;,&quot;valueInteger&quot; : 1000},{&quot;name&quot; : &quot;used-codesystem&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}],&quot;contains&quot; : [{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;129839007&quot;,&quot;display&quot; : &quot;At risk for falls&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;300893006&quot;,&quot;display&quot; : &quot;Nutritional finding&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;22253000&quot;,&quot;display&quot; : &quot;Pain&quot;}]}}
+{&quot;resourceType&quot; : &quot;ValueSet&quot;,&quot;status&quot; : &quot;active&quot;,&quot;expansion&quot; : {&quot;identifier&quot; : &quot;urn:uuid:ee2eee73-762e-4d31-8082-d05e5142e90e&quot;,&quot;timestamp&quot; : &quot;2025-12-25T10:22:48.501Z&quot;,&quot;total&quot; : 3,&quot;offset&quot; : 0,&quot;parameter&quot; : [{&quot;name&quot; : &quot;excludeNested&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;offset&quot;,&quot;valueInteger&quot; : 0},{&quot;name&quot; : &quot;count&quot;,&quot;valueInteger&quot; : 1000},{&quot;name&quot; : &quot;used-codesystem&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}],&quot;contains&quot; : [{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;129839007&quot;,&quot;display&quot; : &quot;At risk for falls&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;300893006&quot;,&quot;display&quot; : &quot;Nutritional finding&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;22253000&quot;,&quot;display&quot; : &quot;Pain&quot;}]}}
 </pre>
 <hr/><a name="l9"> </a>
 <p>#9</p>
@@ -229,11 +229,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1094
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:28 GMT
-last-modified:Thu, 25 Dec 2025 10:10:28 GMT
+date:Thu, 25 Dec 2025 10:22:48 GMT
+last-modified:Thu, 25 Dec 2025 10:22:48 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292790
+x-request-id:252-1293157
 
 {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;validation&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;162828007&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Unknown code '162828007' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Unknown_Code_in_Version&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;code-invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-code&quot;}],&quot;text&quot; : &quot;Unknown code '162828007' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)&quot;},&quot;location&quot; : [&quot;Coding.code&quot;],&quot;expression&quot; : [&quot;Coding.code&quot;]}]}}]}}]}
 </pre>
@@ -245,7 +245,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en-US"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":false,"include":[{"system":"http://snomed.info/sct","concept":[{"code":"403153005","display":"Fitzpatrick skin type I"},{"code":"403154004","display":"Fitzpatrick skin type II"},{"code":"403155003","display":"Fitzpatrick skin type III"},{"code":"403156002","display":"Fitzpatrick skin type IV"},{"code":"403157006","display":"Fitzpatrick skin type V"},{"code":"403158001","display":"Fitzpatrick skin type VI"}]}]}}}]}
+{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en-US"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":false,"include":[{"system":"http://snomed.info/sct","concept":[{"code":"403153005","display":"Fitzpatrick skin type I"},{"code":"403154004","display":"Fitzpatrick skin type II"},{"code":"403155003","display":"Fitzpatrick skin type III"},{"code":"403156002","display":"Fitzpatrick skin type IV"},{"code":"403157006","display":"Fitzpatrick skin type V"},{"code":"403158001","display":"Fitzpatrick skin type VI"}]}]}}}]}
 </pre>
 <pre>
 200
@@ -256,13 +256,13 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1089
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:28 GMT
-last-modified:Thu, 25 Dec 2025 10:10:28 GMT
+date:Thu, 25 Dec 2025 10:22:48 GMT
+last-modified:Thu, 25 Dec 2025 10:22:48 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292791
+x-request-id:252-1293159
 
-{&quot;resourceType&quot; : &quot;ValueSet&quot;,&quot;status&quot; : &quot;active&quot;,&quot;expansion&quot; : {&quot;identifier&quot; : &quot;urn:uuid:6bcf6242-a909-4957-81d3-9d38ba8fc4a4&quot;,&quot;timestamp&quot; : &quot;2025-12-25T10:10:28.831Z&quot;,&quot;total&quot; : 6,&quot;offset&quot; : 0,&quot;parameter&quot; : [{&quot;name&quot; : &quot;excludeNested&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;offset&quot;,&quot;valueInteger&quot; : 0},{&quot;name&quot; : &quot;count&quot;,&quot;valueInteger&quot; : 1000},{&quot;name&quot; : &quot;used-codesystem&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}],&quot;contains&quot; : [{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;403153005&quot;,&quot;display&quot; : &quot;Centipede bite&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;403154004&quot;,&quot;display&quot; : &quot;Millipede burn (disorder)&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;403155003&quot;,&quot;display&quot; : &quot;Dermatosis caused by Echinoidea (disorder)&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;403156002&quot;,&quot;display&quot; : &quot;Dermatosis caused by Coelenterata&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;403157006&quot;,&quot;display&quot; : &quot;Fire coral dermatitis (disorder)&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;403158001&quot;,&quot;display&quot; : &quot;Sea mat dermatitis&quot;}]}}
+{&quot;resourceType&quot; : &quot;ValueSet&quot;,&quot;status&quot; : &quot;active&quot;,&quot;expansion&quot; : {&quot;identifier&quot; : &quot;urn:uuid:d42ee09e-608d-4d23-8e50-0173317d7474&quot;,&quot;timestamp&quot; : &quot;2025-12-25T10:22:48.985Z&quot;,&quot;total&quot; : 6,&quot;offset&quot; : 0,&quot;parameter&quot; : [{&quot;name&quot; : &quot;excludeNested&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;offset&quot;,&quot;valueInteger&quot; : 0},{&quot;name&quot; : &quot;count&quot;,&quot;valueInteger&quot; : 1000},{&quot;name&quot; : &quot;used-codesystem&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}],&quot;contains&quot; : [{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;403153005&quot;,&quot;display&quot; : &quot;Centipede bite&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;403154004&quot;,&quot;display&quot; : &quot;Millipede burn (disorder)&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;403155003&quot;,&quot;display&quot; : &quot;Dermatosis caused by Echinoidea (disorder)&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;403156002&quot;,&quot;display&quot; : &quot;Dermatosis caused by Coelenterata&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;403157006&quot;,&quot;display&quot; : &quot;Fire coral dermatitis (disorder)&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;403158001&quot;,&quot;display&quot; : &quot;Sea mat dermatitis&quot;}]}}
 </pre>
 <hr/><a name="l11"> </a>
 <p>#11</p>
@@ -272,7 +272,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://snomed.info/sct","code":"385633008","display":"Resolved"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"lenient-display-validation","valueBoolean":true},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"mode","valueString":"lenient-display-validation"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://snomed.info/sct","code":"385633008","display":"Resolved"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"lenient-display-validation","valueBoolean":true},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"mode","valueString":"lenient-display-validation"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -283,13 +283,13 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1757
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:29 GMT
-last-modified:Thu, 25 Dec 2025 10:10:29 GMT
+date:Thu, 25 Dec 2025 10:22:49 GMT
+last-modified:Thu, 25 Dec 2025 10:22:49 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292792
+x-request-id:252-1293160
 
-{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;385633008&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Improving (qualifier value)&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Wrong Display Name 'Resolved' for http://snomed.info/sct#385633008. Valid display is 'Improving (qualifier value)' (en) (for the language(s) 'en, en-US')&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Display_Name_for__should_be_one_of__instead_of&quot;}],&quot;severity&quot; : &quot;warning&quot;,&quot;code&quot; : &quot;invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-display&quot;}],&quot;text&quot; : &quot;Wrong Display Name 'Resolved' for http://snomed.info/sct#385633008. Valid display is 'Improving (qualifier value)' (en) (for the language(s) 'en, en-US')&quot;},&quot;location&quot; : [&quot;Coding.display&quot;],&quot;expression&quot; : [&quot;Coding.display&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en, en-US, default-to-latest, display-warning\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://snomed.info/sct#385633008 (\&quot;Resolved\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://snomed.info/sct#385633008\&quot;\r\n0 0     : 0ms  : Using CodeSystem \&quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\&quot; (content = complete)\r\n&quot;}]}
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;385633008&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Improving (qualifier value)&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Wrong Display Name 'Resolved' for http://snomed.info/sct#385633008. Valid display is 'Improving (qualifier value)' (en) (for the language(s) 'en, en-US')&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Display_Name_for__should_be_one_of__instead_of&quot;}],&quot;severity&quot; : &quot;warning&quot;,&quot;code&quot; : &quot;invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-display&quot;}],&quot;text&quot; : &quot;Wrong Display Name 'Resolved' for http://snomed.info/sct#385633008. Valid display is 'Improving (qualifier value)' (en) (for the language(s) 'en, en-US')&quot;},&quot;location&quot; : [&quot;Coding.display&quot;],&quot;expression&quot; : [&quot;Coding.display&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n15 0    : 0ms  : Parameters: disp-lang=en, en-US, default-to-latest, display-warning\r\n15 0    : 0ms  : Prepare include: \&quot;()\&quot;\r\n15 0    : 0ms  : Validate \&quot;[http://snomed.info/sct#385633008 (\&quot;Resolved\&quot;)]\&quot;\r\n15 0    : 0ms  : Check \&quot;http://snomed.info/sct#385633008\&quot;\r\n15 0    : 0ms  : Using CodeSystem \&quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\&quot; (content = complete)\r\n&quot;}]}
 </pre>
 <hr/><a name="l12"> </a>
 <p>#12</p>
@@ -310,11 +310,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:2390
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:29 GMT
-last-modified:Thu, 25 Dec 2025 10:10:29 GMT
+date:Thu, 25 Dec 2025 10:22:49 GMT
+last-modified:Thu, 25 Dec 2025 10:22:49 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292793
+x-request-id:252-1293161
 
 {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;validation&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;385634002&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Change patterns (qualifier value)&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Wrong Display Name 'Worsened' for http://snomed.info/sct#385634002. Valid display is 'Change patterns (qualifier value)' (en) (for the language(s) 'en, en-US')&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Display_Name_for__should_be_one_of__instead_of&quot;}],&quot;severity&quot; : &quot;warning&quot;,&quot;code&quot; : &quot;invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-display&quot;}],&quot;text&quot; : &quot;Wrong Display Name 'Worsened' for http://snomed.info/sct#385634002. Valid display is 'Change patterns (qualifier value)' (en) (for the language(s) 'en, en-US')&quot;},&quot;location&quot; : [&quot;Coding.display&quot;],&quot;expression&quot; : [&quot;Coding.display&quot;]}]}}]}},{&quot;name&quot; : &quot;validation&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;118222006&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;General finding of observation of patient&quot;},{&quot;name&quot; : &quot;inactive&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;The concept '118222006' has a status of inactive and its use should be reviewed&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;INACTIVE_CONCEPT_FOUND&quot;}],&quot;severity&quot; : &quot;warning&quot;,&quot;code&quot; : &quot;business-rule&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;code-comment&quot;}],&quot;text&quot; : &quot;The concept '118222006' has a status of inactive and its use should be reviewed&quot;},&quot;location&quot; : [&quot;Coding&quot;],&quot;expression&quot; : [&quot;Coding&quot;]}]}}]}}]}
 </pre>
@@ -326,7 +326,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://snomed.info/sct","code":"266935003","display":"Housing problem"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"lenient-display-validation","valueBoolean":true},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"mode","valueString":"lenient-display-validation"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://snomed.info/sct","code":"266935003","display":"Housing problem"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"lenient-display-validation","valueBoolean":true},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"mode","valueString":"lenient-display-validation"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -337,11 +337,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1733
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:29 GMT
-last-modified:Thu, 25 Dec 2025 10:10:29 GMT
+date:Thu, 25 Dec 2025 10:22:50 GMT
+last-modified:Thu, 25 Dec 2025 10:22:50 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292794
+x-request-id:252-1293162
 
 {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;266935003&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Housing lack&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Wrong Display Name 'Housing problem' for http://snomed.info/sct#266935003. Valid display is 'Housing lack' (en) (for the language(s) 'en, en-US')&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Display_Name_for__should_be_one_of__instead_of&quot;}],&quot;severity&quot; : &quot;warning&quot;,&quot;code&quot; : &quot;invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-display&quot;}],&quot;text&quot; : &quot;Wrong Display Name 'Housing problem' for http://snomed.info/sct#266935003. Valid display is 'Housing lack' (en) (for the language(s) 'en, en-US')&quot;},&quot;location&quot; : [&quot;Coding.display&quot;],&quot;expression&quot; : [&quot;Coding.display&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en, en-US, default-to-latest, display-warning\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://snomed.info/sct#266935003 (\&quot;Housing problem\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://snomed.info/sct#266935003\&quot;\r\n0 0     : 0ms  : Using CodeSystem \&quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\&quot; (content = complete)\r\n&quot;}]}
 </pre>
@@ -364,11 +364,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:2320
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:29 GMT
-last-modified:Thu, 25 Dec 2025 10:10:29 GMT
+date:Thu, 25 Dec 2025 10:22:50 GMT
+last-modified:Thu, 25 Dec 2025 10:22:50 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292796
+x-request-id:252-1293163
 
 {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;validation&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;160724001&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Unknown code '160724001' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Unknown_Code_in_Version&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;code-invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-code&quot;}],&quot;text&quot; : &quot;Unknown code '160724001' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)&quot;},&quot;location&quot; : [&quot;Coding.code&quot;],&quot;expression&quot; : [&quot;Coding.code&quot;]}]}}]}},{&quot;name&quot; : &quot;validation&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;224224003&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Lives in staffed home&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Wrong Display Name 'Lives in own home' for http://snomed.info/sct#224224003. Valid display is 'Lives in staffed home' (en) (for the language(s) 'en, en-US')&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Display_Name_for__should_be_one_of__instead_of&quot;}],&quot;severity&quot; : &quot;warning&quot;,&quot;code&quot; : &quot;invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-display&quot;}],&quot;text&quot; : &quot;Wrong Display Name 'Lives in own home' for http://snomed.info/sct#224224003. Valid display is 'Lives in staffed home' (en) (for the language(s) 'en, en-US')&quot;},&quot;location&quot; : [&quot;Coding.display&quot;],&quot;expression&quot; : [&quot;Coding.display&quot;]}]}}]}}]}
 </pre>
@@ -380,7 +380,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://snomed.info/sct","code":"71388002","display":"Procedure"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"lenient-display-validation","valueBoolean":true},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"mode","valueString":"lenient-display-validation"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://snomed.info/sct","code":"71388002","display":"Procedure"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"lenient-display-validation","valueBoolean":true},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"mode","valueString":"lenient-display-validation"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -391,13 +391,13 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:905
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:30 GMT
-last-modified:Thu, 25 Dec 2025 10:10:30 GMT
+date:Thu, 25 Dec 2025 10:22:50 GMT
+last-modified:Thu, 25 Dec 2025 10:22:50 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292797
+x-request-id:252-1293164
 
-{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;71388002&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Procedure&quot;},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n16 0    : 0ms  : Parameters: disp-lang=en, en-US, default-to-latest, display-warning\r\n16 0    : 0ms  : Prepare include: \&quot;()\&quot;\r\n16 0    : 0ms  : Validate \&quot;[http://snomed.info/sct#71388002 (\&quot;Procedure\&quot;)]\&quot;\r\n16 0    : 0ms  : Check \&quot;http://snomed.info/sct#71388002\&quot;\r\n16 0    : 0ms  : Using CodeSystem \&quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\&quot; (content = complete)\r\n&quot;}]}
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;71388002&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Procedure&quot;},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n15 0    : 0ms  : Parameters: disp-lang=en, en-US, default-to-latest, display-warning\r\n15 0    : 0ms  : Prepare include: \&quot;()\&quot;\r\n15 0    : 0ms  : Validate \&quot;[http://snomed.info/sct#71388002 (\&quot;Procedure\&quot;)]\&quot;\r\n15 0    : 0ms  : Check \&quot;http://snomed.info/sct#71388002\&quot;\r\n15 0    : 0ms  : Using CodeSystem \&quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\&quot; (content = complete)\r\n&quot;}]}
 </pre>
 <hr/><a name="l16"> </a>
 <p>#16</p>
@@ -418,11 +418,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:825
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:30 GMT
-last-modified:Thu, 25 Dec 2025 10:10:30 GMT
+date:Thu, 25 Dec 2025 10:22:50 GMT
+last-modified:Thu, 25 Dec 2025 10:22:50 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292798
+x-request-id:252-1293165
 
 {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;validation&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;225358003&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Wound care&quot;}]}},{&quot;name&quot; : &quot;validation&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;386373004&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Nutrition therapy (regime/therapy)&quot;}]}}]}
 </pre>
@@ -434,7 +434,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://snomed.info/sct","code":"129839007","display":"At risk for falls"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"lenient-display-validation","valueBoolean":true},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"mode","valueString":"lenient-display-validation"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://snomed.info/sct","code":"129839007","display":"At risk for falls"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"lenient-display-validation","valueBoolean":true},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"mode","valueString":"lenient-display-validation"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -445,11 +445,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:924
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:30 GMT
-last-modified:Thu, 25 Dec 2025 10:10:30 GMT
+date:Thu, 25 Dec 2025 10:22:50 GMT
+last-modified:Thu, 25 Dec 2025 10:22:50 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292799
+x-request-id:252-1293166
 
 {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;129839007&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;At risk for falls&quot;},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n15 0    : 0ms  : Parameters: disp-lang=en, en-US, default-to-latest, display-warning\r\n15 0    : 0ms  : Prepare include: \&quot;()\&quot;\r\n15 0    : 0ms  : Validate \&quot;[http://snomed.info/sct#129839007 (\&quot;At risk for falls\&quot;)]\&quot;\r\n15 0    : 0ms  : Check \&quot;http://snomed.info/sct#129839007\&quot;\r\n15 0    : 0ms  : Using CodeSystem \&quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\&quot; (content = complete)\r\n&quot;}]}
 </pre>
@@ -472,11 +472,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1850
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:30 GMT
-last-modified:Thu, 25 Dec 2025 10:10:30 GMT
+date:Thu, 25 Dec 2025 10:22:51 GMT
+last-modified:Thu, 25 Dec 2025 10:22:51 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292800
+x-request-id:252-1293167
 
 {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;validation&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;162828007&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Unknown code '162828007' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Unknown_Code_in_Version&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;code-invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-code&quot;}],&quot;text&quot; : &quot;Unknown code '162828007' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)&quot;},&quot;location&quot; : [&quot;Coding.code&quot;],&quot;expression&quot; : [&quot;Coding.code&quot;]}]}}]}},{&quot;name&quot; : &quot;validation&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;300893006&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Nutritional finding&quot;}]}},{&quot;name&quot; : &quot;validation&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;22253000&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Pain&quot;}]}}]}
 </pre>
@@ -488,7 +488,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://snomed.info/sct","code":"403153005","display":"Fitzpatrick skin type I"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"lenient-display-validation","valueBoolean":true},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"mode","valueString":"lenient-display-validation"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://snomed.info/sct","code":"403153005","display":"Fitzpatrick skin type I"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"lenient-display-validation","valueBoolean":true},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"mode","valueString":"lenient-display-validation"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -499,11 +499,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1763
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:30 GMT
-last-modified:Thu, 25 Dec 2025 10:10:30 GMT
+date:Thu, 25 Dec 2025 10:22:51 GMT
+last-modified:Thu, 25 Dec 2025 10:22:51 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292801
+x-request-id:252-1293168
 
 {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;403153005&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Centipede bite&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Wrong Display Name 'Fitzpatrick skin type I' for http://snomed.info/sct#403153005. Valid display is 'Centipede bite' (en) (for the language(s) 'en, en-US')&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Display_Name_for__should_be_one_of__instead_of&quot;}],&quot;severity&quot; : &quot;warning&quot;,&quot;code&quot; : &quot;invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-display&quot;}],&quot;text&quot; : &quot;Wrong Display Name 'Fitzpatrick skin type I' for http://snomed.info/sct#403153005. Valid display is 'Centipede bite' (en) (for the language(s) 'en, en-US')&quot;},&quot;location&quot; : [&quot;Coding.display&quot;],&quot;expression&quot; : [&quot;Coding.display&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en, en-US, default-to-latest, display-warning\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://snomed.info/sct#403153005 (\&quot;Fitzpatrick skin type I\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://snomed.info/sct#403153005\&quot;\r\n0 0     : 0ms  : Using CodeSystem \&quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\&quot; (content = complete)\r\n&quot;}]}
 </pre>
@@ -526,11 +526,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:6382
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:31 GMT
-last-modified:Thu, 25 Dec 2025 10:10:31 GMT
+date:Thu, 25 Dec 2025 10:22:51 GMT
+last-modified:Thu, 25 Dec 2025 10:22:51 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292802
+x-request-id:252-1293169
 
 {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;validation&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;403154004&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Millipede burn (disorder)&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Wrong Display Name 'Fitzpatrick skin type II' for http://snomed.info/sct#403154004. Valid display is 'Millipede burn (disorder)' (en) (for the language(s) 'en, en-US')&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Display_Name_for__should_be_one_of__instead_of&quot;}],&quot;severity&quot; : &quot;warning&quot;,&quot;code&quot; : &quot;invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-display&quot;}],&quot;text&quot; : &quot;Wrong Display Name 'Fitzpatrick skin type II' for http://snomed.info/sct#403154004. Valid display is 'Millipede burn (disorder)' (en) (for the language(s) 'en, en-US')&quot;},&quot;location&quot; : [&quot;Coding.display&quot;],&quot;expression&quot; : [&quot;Coding.display&quot;]}]}}]}},{&quot;name&quot; : &quot;validation&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;403155003&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Dermatosis caused by Echinoidea (disorder)&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Wrong Display Name 'Fitzpatrick skin type III' for http://snomed.info/sct#403155003. Valid display is 'Dermatosis caused by Echinoidea (disorder)' (en) (for the language(s) 'en, en-US')&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Display_Name_for__should_be_one_of__instead_of&quot;}],&quot;severity&quot; : &quot;warning&quot;,&quot;code&quot; : &quot;invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-display&quot;}],&quot;text&quot; : &quot;Wrong Display Name 'Fitzpatrick skin type III' for http://snomed.info/sct#403155003. Valid display is 'Dermatosis caused by Echinoidea (disorder)' (en) (for the language(s) 'en, en-US')&quot;},&quot;location&quot; : [&quot;Coding.display&quot;],&quot;expression&quot; : [&quot;Coding.display&quot;]}]}}]}},{&quot;name&quot; : &quot;validation&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;403156002&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Dermatosis caused by Coelenterata&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Wrong Display Name 'Fitzpatrick skin type IV' for http://snomed.info/sct#403156002. Valid display is 'Dermatosis caused by Coelenterata' (en) (for the language(s) 'en, en-US')&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Display_Name_for__should_be_one_of__instead_of&quot;}],&quot;severity&quot; : &quot;warning&quot;,&quot;code&quot; : &quot;invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-display&quot;}],&quot;text&quot; : &quot;Wrong Display Name 'Fitzpatrick skin type IV' for http://snomed.info/sct#403156002. Valid display is 'Dermatosis caused by Coelenterata' (en) (for the language(s) 'en, en-US')&quot;},&quot;location&quot; : [&quot;Coding.display&quot;],&quot;expression&quot; : [&quot;Coding.display&quot;]}]}}]}},{&quot;name&quot; : &quot;validation&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;403157006&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Fire coral dermatitis (disorder)&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Wrong Display Name 'Fitzpatrick skin type V' for http://snomed.info/sct#403157006. Valid display is 'Fire coral dermatitis (disorder)' (en) (for the language(s) 'en, en-US')&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Display_Name_for__should_be_one_of__instead_of&quot;}],&quot;severity&quot; : &quot;warning&quot;,&quot;code&quot; : &quot;invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-display&quot;}],&quot;text&quot; : &quot;Wrong Display Name 'Fitzpatrick skin type V' for http://snomed.info/sct#403157006. Valid display is 'Fire coral dermatitis (disorder)' (en) (for the language(s) 'en, en-US')&quot;},&quot;location&quot; : [&quot;Coding.display&quot;],&quot;expression&quot; : [&quot;Coding.display&quot;]}]}}]}},{&quot;name&quot; : &quot;validation&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;403158001&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Sea mat dermatitis&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Wrong Display Name 'Fitzpatrick skin type VI' for http://snomed.info/sct#403158001. Valid display is 'Sea mat dermatitis' (en) (for the language(s) 'en, en-US')&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Display_Name_for__should_be_one_of__instead_of&quot;}],&quot;severity&quot; : &quot;warning&quot;,&quot;code&quot; : &quot;invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-display&quot;}],&quot;text&quot; : &quot;Wrong Display Name 'Fitzpatrick skin type VI' for http://snomed.info/sct#403158001. Valid display is 'Sea mat dermatitis' (en) (for the language(s) 'en, en-US')&quot;},&quot;location&quot; : [&quot;Coding.display&quot;],&quot;expression&quot; : [&quot;Coding.display&quot;]}]}}]}}]}
 </pre>
@@ -542,7 +542,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://loinc.org","code":"38227-0","display":"Braden scale total score"}]}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://loinc.org","code":"38227-0","display":"Braden scale total score"}]}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -553,11 +553,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1420
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:34 GMT
-last-modified:Thu, 25 Dec 2025 10:10:34 GMT
+date:Thu, 25 Dec 2025 10:22:54 GMT
+last-modified:Thu, 25 Dec 2025 10:22:54 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292803
+x-request-id:252-1293189
 
 {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Unknown code '38227-0' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},{&quot;name&quot; : &quot;codeableConcept&quot;,&quot;valueCodeableConcept&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://loinc.org&quot;,&quot;code&quot; : &quot;38227-0&quot;,&quot;display&quot; : &quot;Braden scale total score&quot;}]}},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Unknown_Code_in_Version&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;code-invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-code&quot;}],&quot;text&quot; : &quot;Unknown code '38227-0' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},&quot;location&quot; : [&quot;CodeableConcept.coding[0].code&quot;],&quot;expression&quot; : [&quot;CodeableConcept.coding[0].code&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://loinc.org#38227-0 (\&quot;Braden scale total score\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://loinc.org#38227-0\&quot;\r\n0 0     : 0ms  : Using CodeSystem \&quot;http://loinc.org|2.81\&quot; (content = complete)\r\n&quot;}]}
 </pre>
@@ -569,7 +569,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://loinc.org","code":"38222-1","display":"Sensory perception Braden scale"}]}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://loinc.org","code":"38222-1","display":"Sensory perception Braden scale"}]}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -580,11 +580,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1434
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:34 GMT
-last-modified:Thu, 25 Dec 2025 10:10:34 GMT
+date:Thu, 25 Dec 2025 10:22:54 GMT
+last-modified:Thu, 25 Dec 2025 10:22:54 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292804
+x-request-id:252-1293192
 
 {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Unknown code '38222-1' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},{&quot;name&quot; : &quot;codeableConcept&quot;,&quot;valueCodeableConcept&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://loinc.org&quot;,&quot;code&quot; : &quot;38222-1&quot;,&quot;display&quot; : &quot;Sensory perception Braden scale&quot;}]}},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Unknown_Code_in_Version&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;code-invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-code&quot;}],&quot;text&quot; : &quot;Unknown code '38222-1' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},&quot;location&quot; : [&quot;CodeableConcept.coding[0].code&quot;],&quot;expression&quot; : [&quot;CodeableConcept.coding[0].code&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://loinc.org#38222-1 (\&quot;Sensory perception Braden scale\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://loinc.org#38222-1\&quot;\r\n0 0     : 0ms  : Using CodeSystem \&quot;http://loinc.org|2.81\&quot; (content = complete)\r\n&quot;}]}
 </pre>
@@ -596,7 +596,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://loinc.org","code":"38229-6","display":"Moisture Braden scale"}]}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://loinc.org","code":"38229-6","display":"Moisture Braden scale"}]}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -607,13 +607,13 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1414
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:34 GMT
-last-modified:Thu, 25 Dec 2025 10:10:34 GMT
+date:Thu, 25 Dec 2025 10:22:54 GMT
+last-modified:Thu, 25 Dec 2025 10:22:54 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292805
+x-request-id:252-1293194
 
-{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Unknown code '38229-6' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},{&quot;name&quot; : &quot;codeableConcept&quot;,&quot;valueCodeableConcept&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://loinc.org&quot;,&quot;code&quot; : &quot;38229-6&quot;,&quot;display&quot; : &quot;Moisture Braden scale&quot;}]}},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Unknown_Code_in_Version&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;code-invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-code&quot;}],&quot;text&quot; : &quot;Unknown code '38229-6' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},&quot;location&quot; : [&quot;CodeableConcept.coding[0].code&quot;],&quot;expression&quot; : [&quot;CodeableConcept.coding[0].code&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://loinc.org#38229-6 (\&quot;Moisture Braden scale\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://loinc.org#38229-6\&quot;\r\n0 0     : 0ms  : Using CodeSystem \&quot;http://loinc.org|2.81\&quot; (content = complete)\r\n&quot;}]}
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Unknown code '38229-6' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},{&quot;name&quot; : &quot;codeableConcept&quot;,&quot;valueCodeableConcept&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://loinc.org&quot;,&quot;code&quot; : &quot;38229-6&quot;,&quot;display&quot; : &quot;Moisture Braden scale&quot;}]}},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Unknown_Code_in_Version&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;code-invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-code&quot;}],&quot;text&quot; : &quot;Unknown code '38229-6' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},&quot;location&quot; : [&quot;CodeableConcept.coding[0].code&quot;],&quot;expression&quot; : [&quot;CodeableConcept.coding[0].code&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n15 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n15 0    : 0ms  : Prepare include: \&quot;()\&quot;\r\n15 0    : 0ms  : Validate \&quot;[http://loinc.org#38229-6 (\&quot;Moisture Braden scale\&quot;)]\&quot;\r\n15 0    : 0ms  : Check \&quot;http://loinc.org#38229-6\&quot;\r\n15 0    : 0ms  : Using CodeSystem \&quot;http://loinc.org|2.81\&quot; (content = complete)\r\n&quot;}]}
 </pre>
 <hr/><a name="l24"> </a>
 <p>#24</p>
@@ -623,7 +623,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://loinc.org","code":"38223-9","display":"Activity Braden scale"}]}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://loinc.org","code":"38223-9","display":"Activity Braden scale"}]}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -634,11 +634,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1414
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:35 GMT
-last-modified:Thu, 25 Dec 2025 10:10:35 GMT
+date:Thu, 25 Dec 2025 10:22:55 GMT
+last-modified:Thu, 25 Dec 2025 10:22:55 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292807
+x-request-id:252-1293195
 
 {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Unknown code '38223-9' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},{&quot;name&quot; : &quot;codeableConcept&quot;,&quot;valueCodeableConcept&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://loinc.org&quot;,&quot;code&quot; : &quot;38223-9&quot;,&quot;display&quot; : &quot;Activity Braden scale&quot;}]}},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Unknown_Code_in_Version&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;code-invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-code&quot;}],&quot;text&quot; : &quot;Unknown code '38223-9' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},&quot;location&quot; : [&quot;CodeableConcept.coding[0].code&quot;],&quot;expression&quot; : [&quot;CodeableConcept.coding[0].code&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://loinc.org#38223-9 (\&quot;Activity Braden scale\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://loinc.org#38223-9\&quot;\r\n0 0     : 0ms  : Using CodeSystem \&quot;http://loinc.org|2.81\&quot; (content = complete)\r\n&quot;}]}
 </pre>
@@ -650,7 +650,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://loinc.org","code":"38224-7","display":"Mobility Braden scale"}]}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://loinc.org","code":"38224-7","display":"Mobility Braden scale"}]}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -661,13 +661,13 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1414
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:35 GMT
-last-modified:Thu, 25 Dec 2025 10:10:35 GMT
+date:Thu, 25 Dec 2025 10:22:55 GMT
+last-modified:Thu, 25 Dec 2025 10:22:55 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292808
+x-request-id:252-1293196
 
-{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Unknown code '38224-7' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},{&quot;name&quot; : &quot;codeableConcept&quot;,&quot;valueCodeableConcept&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://loinc.org&quot;,&quot;code&quot; : &quot;38224-7&quot;,&quot;display&quot; : &quot;Mobility Braden scale&quot;}]}},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Unknown_Code_in_Version&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;code-invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-code&quot;}],&quot;text&quot; : &quot;Unknown code '38224-7' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},&quot;location&quot; : [&quot;CodeableConcept.coding[0].code&quot;],&quot;expression&quot; : [&quot;CodeableConcept.coding[0].code&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://loinc.org#38224-7 (\&quot;Mobility Braden scale\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://loinc.org#38224-7\&quot;\r\n0 0     : 0ms  : Using CodeSystem \&quot;http://loinc.org|2.81\&quot; (content = complete)\r\n&quot;}]}
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Unknown code '38224-7' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},{&quot;name&quot; : &quot;codeableConcept&quot;,&quot;valueCodeableConcept&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://loinc.org&quot;,&quot;code&quot; : &quot;38224-7&quot;,&quot;display&quot; : &quot;Mobility Braden scale&quot;}]}},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Unknown_Code_in_Version&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;code-invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-code&quot;}],&quot;text&quot; : &quot;Unknown code '38224-7' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},&quot;location&quot; : [&quot;CodeableConcept.coding[0].code&quot;],&quot;expression&quot; : [&quot;CodeableConcept.coding[0].code&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n15 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n15 0    : 0ms  : Prepare include: \&quot;()\&quot;\r\n15 0    : 0ms  : Validate \&quot;[http://loinc.org#38224-7 (\&quot;Mobility Braden scale\&quot;)]\&quot;\r\n15 0    : 0ms  : Check \&quot;http://loinc.org#38224-7\&quot;\r\n15 0    : 0ms  : Using CodeSystem \&quot;http://loinc.org|2.81\&quot; (content = complete)\r\n&quot;}]}
 </pre>
 <hr/><a name="l26"> </a>
 <p>#26</p>
@@ -677,7 +677,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://loinc.org","code":"38225-4","display":"Nutrition Braden scale"}]}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://loinc.org","code":"38225-4","display":"Nutrition Braden scale"}]}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -688,13 +688,13 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1416
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:35 GMT
-last-modified:Thu, 25 Dec 2025 10:10:35 GMT
+date:Thu, 25 Dec 2025 10:22:55 GMT
+last-modified:Thu, 25 Dec 2025 10:22:55 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292809
+x-request-id:252-1293197
 
-{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Unknown code '38225-4' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},{&quot;name&quot; : &quot;codeableConcept&quot;,&quot;valueCodeableConcept&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://loinc.org&quot;,&quot;code&quot; : &quot;38225-4&quot;,&quot;display&quot; : &quot;Nutrition Braden scale&quot;}]}},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Unknown_Code_in_Version&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;code-invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-code&quot;}],&quot;text&quot; : &quot;Unknown code '38225-4' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},&quot;location&quot; : [&quot;CodeableConcept.coding[0].code&quot;],&quot;expression&quot; : [&quot;CodeableConcept.coding[0].code&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://loinc.org#38225-4 (\&quot;Nutrition Braden scale\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://loinc.org#38225-4\&quot;\r\n0 0     : 0ms  : Using CodeSystem \&quot;http://loinc.org|2.81\&quot; (content = complete)\r\n&quot;}]}
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Unknown code '38225-4' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},{&quot;name&quot; : &quot;codeableConcept&quot;,&quot;valueCodeableConcept&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://loinc.org&quot;,&quot;code&quot; : &quot;38225-4&quot;,&quot;display&quot; : &quot;Nutrition Braden scale&quot;}]}},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Unknown_Code_in_Version&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;code-invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-code&quot;}],&quot;text&quot; : &quot;Unknown code '38225-4' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},&quot;location&quot; : [&quot;CodeableConcept.coding[0].code&quot;],&quot;expression&quot; : [&quot;CodeableConcept.coding[0].code&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n16 0    : 0ms  : Prepare include: \&quot;()\&quot;\r\n16 0    : 0ms  : Validate \&quot;[http://loinc.org#38225-4 (\&quot;Nutrition Braden scale\&quot;)]\&quot;\r\n16 0    : 0ms  : Check \&quot;http://loinc.org#38225-4\&quot;\r\n16 0    : 0ms  : Using CodeSystem \&quot;http://loinc.org|2.81\&quot; (content = complete)\r\n&quot;}]}
 </pre>
 <hr/><a name="l27"> </a>
 <p>#27</p>
@@ -704,7 +704,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://loinc.org","code":"38226-2","display":"Friction and shear Braden scale"}]}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://loinc.org","code":"38226-2","display":"Friction and shear Braden scale"}]}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -715,13 +715,13 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1434
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:35 GMT
-last-modified:Thu, 25 Dec 2025 10:10:35 GMT
+date:Thu, 25 Dec 2025 10:22:55 GMT
+last-modified:Thu, 25 Dec 2025 10:22:55 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292811
+x-request-id:252-1293198
 
-{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Unknown code '38226-2' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},{&quot;name&quot; : &quot;codeableConcept&quot;,&quot;valueCodeableConcept&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://loinc.org&quot;,&quot;code&quot; : &quot;38226-2&quot;,&quot;display&quot; : &quot;Friction and shear Braden scale&quot;}]}},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Unknown_Code_in_Version&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;code-invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-code&quot;}],&quot;text&quot; : &quot;Unknown code '38226-2' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},&quot;location&quot; : [&quot;CodeableConcept.coding[0].code&quot;],&quot;expression&quot; : [&quot;CodeableConcept.coding[0].code&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://loinc.org#38226-2 (\&quot;Friction and shear Braden scale\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://loinc.org#38226-2\&quot;\r\n0 0     : 0ms  : Using CodeSystem \&quot;http://loinc.org|2.81\&quot; (content = complete)\r\n&quot;}]}
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Unknown code '38226-2' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},{&quot;name&quot; : &quot;codeableConcept&quot;,&quot;valueCodeableConcept&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://loinc.org&quot;,&quot;code&quot; : &quot;38226-2&quot;,&quot;display&quot; : &quot;Friction and shear Braden scale&quot;}]}},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Unknown_Code_in_Version&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;code-invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-code&quot;}],&quot;text&quot; : &quot;Unknown code '38226-2' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},&quot;location&quot; : [&quot;CodeableConcept.coding[0].code&quot;],&quot;expression&quot; : [&quot;CodeableConcept.coding[0].code&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n16 0    : 0ms  : Prepare include: \&quot;()\&quot;\r\n16 0    : 0ms  : Validate \&quot;[http://loinc.org#38226-2 (\&quot;Friction and shear Braden scale\&quot;)]\&quot;\r\n16 0    : 0ms  : Check \&quot;http://loinc.org#38226-2\&quot;\r\n16 0    : 0ms  : Using CodeSystem \&quot;http://loinc.org|2.81\&quot; (content = complete)\r\n&quot;}]}
 </pre>
 <hr/><a name="l28"> </a>
 <p>#28</p>
@@ -731,7 +731,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://snomed.info/sct","code":"385633008","display":"Resolved"}]}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"valueSet","resource":{"resourceType":"ValueSet","id":"goal-evaluation-valueset","text":{"status":"generated","div":"&lt;div&gt;!-- Narrative removed --&gt;&lt;/div&gt;"},"url":"https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset","version":"1.0.0","name":"GoalEvaluationValueSet","title":"Goal Evaluation Value Set","status":"active","experimental":false,"date":"2025-12-25T10:09:41+00:00","description":"Value set for evaluating patient goal outcomes","compose":{"include":[{"system":"http://snomed.info/sct","concept":[{"code":"385633008","display":"Resolved"},{"code":"385634002","display":"Worsened"},{"code":"118222006","display":"General finding of observation of patient"}]}]}}},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://snomed.info/sct","code":"385633008","display":"Resolved"}]}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"valueSet","resource":{"resourceType":"ValueSet","id":"goal-evaluation-valueset","text":{"status":"generated","div":"&lt;div&gt;!-- Narrative removed --&gt;&lt;/div&gt;"},"url":"https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset","version":"1.0.0","name":"GoalEvaluationValueSet","title":"Goal Evaluation Value Set","status":"active","experimental":false,"date":"2025-12-25T10:22:11+00:00","description":"Value set for evaluating patient goal outcomes","compose":{"include":[{"system":"http://snomed.info/sct","concept":[{"code":"385633008","display":"Resolved"},{"code":"385634002","display":"Worsened"},{"code":"118222006","display":"General finding of observation of patient"}]}]}}},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -742,11 +742,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1538
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:39 GMT
-last-modified:Thu, 25 Dec 2025 10:10:39 GMT
+date:Thu, 25 Dec 2025 10:22:59 GMT
+last-modified:Thu, 25 Dec 2025 10:22:59 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292820
+x-request-id:252-1293199
 
 {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;385633008&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Improving (qualifier value)&quot;},{&quot;name&quot; : &quot;codeableConcept&quot;,&quot;valueCodeableConcept&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;385633008&quot;,&quot;display&quot; : &quot;Resolved&quot;}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n16 16   : 0ms  : Analysing https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset|1.0.0 for validation purposes\r\n16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n16 0    : 0ms  : Prepare include: \&quot;(http://snomed.info/sct)(385633008,385634002,118222006)\&quot;\r\n16 0    : 0ms  : CodeSystem found: \&quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\&quot;\r\n16 0    : 0ms  : Validate \&quot;[http://snomed.info/sct#385633008 (\&quot;Resolved\&quot;)]\&quot;\r\n16 0    : 0ms  : Check \&quot;http://snomed.info/sct#385633008\&quot;\r\n16 0    : 0ms  : CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct\r\n16 0    : 0ms  : check code in (http://snomed.info/sct)(385633008,385634002,118222006) at CodeableConcept.coding[0]\r\n16 0    : 0ms  : Code \&quot;385633008\&quot; found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\r\n&quot;}]}
 </pre>
@@ -758,7 +758,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://snomed.info/sct","code":"385633008","display":"Resolved"}]}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://snomed.info/sct","code":"385633008","display":"Resolved"}]}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -769,11 +769,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1916
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:39 GMT
-last-modified:Thu, 25 Dec 2025 10:10:39 GMT
+date:Thu, 25 Dec 2025 10:23:00 GMT
+last-modified:Thu, 25 Dec 2025 10:23:00 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292821
+x-request-id:252-1293200
 
 {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;385633008&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Improving (qualifier value)&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Wrong Display Name 'Resolved' for http://snomed.info/sct#385633008. Valid display is 'Improving (qualifier value)' (en) (for the language(s) 'en-US')&quot;},{&quot;name&quot; : &quot;codeableConcept&quot;,&quot;valueCodeableConcept&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;385633008&quot;,&quot;display&quot; : &quot;Resolved&quot;}]}},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Display_Name_for__should_be_one_of__instead_of&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-display&quot;}],&quot;text&quot; : &quot;Wrong Display Name 'Resolved' for http://snomed.info/sct#385633008. Valid display is 'Improving (qualifier value)' (en) (for the language(s) 'en-US')&quot;},&quot;location&quot; : [&quot;CodeableConcept.coding[0].display&quot;],&quot;expression&quot; : [&quot;CodeableConcept.coding[0].display&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://snomed.info/sct#385633008 (\&quot;Resolved\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://snomed.info/sct#385633008\&quot;\r\n0 0     : 0ms  : Using CodeSystem \&quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\&quot; (content = complete)\r\n&quot;}]}
 </pre>
@@ -785,7 +785,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory","code":"A","display":"British, Mixed British"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory","code":"A","display":"British, Mixed British"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -796,11 +796,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1676
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:39 GMT
-last-modified:Thu, 25 Dec 2025 10:10:39 GMT
+date:Thu, 25 Dec 2025 10:23:00 GMT
+last-modified:Thu, 25 Dec 2025 10:23:00 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292822
+x-request-id:252-1293201
 
 {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;A&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory#A (\&quot;British, Mixed British\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory#A\&quot;\r\n0 0     : 0ms  : Didn't find CodeSystem \&quot;https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory\&quot;\r\n&quot;}]}
 </pre>
@@ -812,7 +812,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en-US"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":true,"include":[{"system":"http://snomed.info/sct","concept":[{"code":"385633008","display":"Resolved"},{"code":"385634002","display":"Worsened"},{"code":"118222006","display":"General finding of observation of patient"}]}]}}}]}
+{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en-US"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":true,"include":[{"system":"http://snomed.info/sct","concept":[{"code":"385633008","display":"Resolved"},{"code":"385634002","display":"Worsened"},{"code":"118222006","display":"General finding of observation of patient"}]}]}}}]}
 </pre>
 <pre>
 200
@@ -823,13 +823,13 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1283
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:46 GMT
-last-modified:Thu, 25 Dec 2025 10:10:46 GMT
+date:Thu, 25 Dec 2025 10:23:06 GMT
+last-modified:Thu, 25 Dec 2025 10:23:06 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292825
+x-request-id:252-1293203
 
-{&quot;resourceType&quot; : &quot;ValueSet&quot;,&quot;status&quot; : &quot;active&quot;,&quot;expansion&quot; : {&quot;extension&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;uri&quot;,&quot;valueUri&quot; : &quot;http://hl7.org/fhir/concept-properties#status&quot;},{&quot;url&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;status&quot;}],&quot;url&quot; : &quot;http://hl7.org/fhir/5.0/StructureDefinition/extension-ValueSet.expansion.property&quot;}],&quot;identifier&quot; : &quot;urn:uuid:4ec7d8eb-fc64-42d2-9861-172cc15ae050&quot;,&quot;timestamp&quot; : &quot;2025-12-25T10:10:46.659Z&quot;,&quot;total&quot; : 3,&quot;offset&quot; : 0,&quot;parameter&quot; : [{&quot;name&quot; : &quot;excludeNested&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;offset&quot;,&quot;valueInteger&quot; : 0},{&quot;name&quot; : &quot;count&quot;,&quot;valueInteger&quot; : 1000},{&quot;name&quot; : &quot;used-codesystem&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}],&quot;contains&quot; : [{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;385633008&quot;,&quot;display&quot; : &quot;Improving (qualifier value)&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;385634002&quot;,&quot;display&quot; : &quot;Change patterns (qualifier value)&quot;},{&quot;extension&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;status&quot;},{&quot;url&quot; : &quot;value&quot;,&quot;valueCode&quot; : &quot;inactive&quot;}],&quot;url&quot; : &quot;http://hl7.org/fhir/5.0/StructureDefinition/extension-ValueSet.expansion.contains.property&quot;}],&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;inactive&quot; : true,&quot;code&quot; : &quot;118222006&quot;,&quot;display&quot; : &quot;General finding of observation of patient&quot;}]}}
+{&quot;resourceType&quot; : &quot;ValueSet&quot;,&quot;status&quot; : &quot;active&quot;,&quot;expansion&quot; : {&quot;extension&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;uri&quot;,&quot;valueUri&quot; : &quot;http://hl7.org/fhir/concept-properties#status&quot;},{&quot;url&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;status&quot;}],&quot;url&quot; : &quot;http://hl7.org/fhir/5.0/StructureDefinition/extension-ValueSet.expansion.property&quot;}],&quot;identifier&quot; : &quot;urn:uuid:cdd83823-5556-4bc9-99bd-b777527d9c97&quot;,&quot;timestamp&quot; : &quot;2025-12-25T10:23:06.563Z&quot;,&quot;total&quot; : 3,&quot;offset&quot; : 0,&quot;parameter&quot; : [{&quot;name&quot; : &quot;excludeNested&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;offset&quot;,&quot;valueInteger&quot; : 0},{&quot;name&quot; : &quot;count&quot;,&quot;valueInteger&quot; : 1000},{&quot;name&quot; : &quot;used-codesystem&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}],&quot;contains&quot; : [{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;385633008&quot;,&quot;display&quot; : &quot;Improving (qualifier value)&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;385634002&quot;,&quot;display&quot; : &quot;Change patterns (qualifier value)&quot;},{&quot;extension&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;status&quot;},{&quot;url&quot; : &quot;value&quot;,&quot;valueCode&quot; : &quot;inactive&quot;}],&quot;url&quot; : &quot;http://hl7.org/fhir/5.0/StructureDefinition/extension-ValueSet.expansion.contains.property&quot;}],&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;inactive&quot; : true,&quot;code&quot; : &quot;118222006&quot;,&quot;display&quot; : &quot;General finding of observation of patient&quot;}]}}
 </pre>
 <hr/><a name="l32"> </a>
 <p>#32</p>
@@ -839,7 +839,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en-US"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":true,"include":[{"system":"http://snomed.info/sct","concept":[{"code":"129839007","display":"At risk for falls"},{"code":"162828007","display":"Risk of falls"},{"code":"300893006","display":"Nutritional finding"},{"code":"22253000","display":"Pain"}]}]}}}]}
+{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en-US"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":true,"include":[{"system":"http://snomed.info/sct","concept":[{"code":"129839007","display":"At risk for falls"},{"code":"162828007","display":"Risk of falls"},{"code":"300893006","display":"Nutritional finding"},{"code":"22253000","display":"Pain"}]}]}}}]}
 </pre>
 <pre>
 200
@@ -850,13 +850,13 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:742
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:48 GMT
-last-modified:Thu, 25 Dec 2025 10:10:48 GMT
+date:Thu, 25 Dec 2025 10:23:08 GMT
+last-modified:Thu, 25 Dec 2025 10:23:08 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292826
+x-request-id:252-1293204
 
-{&quot;resourceType&quot; : &quot;ValueSet&quot;,&quot;status&quot; : &quot;active&quot;,&quot;expansion&quot; : {&quot;identifier&quot; : &quot;urn:uuid:d2347bb1-470a-4919-97d5-816758f08315&quot;,&quot;timestamp&quot; : &quot;2025-12-25T10:10:48.549Z&quot;,&quot;total&quot; : 3,&quot;offset&quot; : 0,&quot;parameter&quot; : [{&quot;name&quot; : &quot;excludeNested&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;offset&quot;,&quot;valueInteger&quot; : 0},{&quot;name&quot; : &quot;count&quot;,&quot;valueInteger&quot; : 1000},{&quot;name&quot; : &quot;used-codesystem&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}],&quot;contains&quot; : [{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;129839007&quot;,&quot;display&quot; : &quot;At risk for falls&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;300893006&quot;,&quot;display&quot; : &quot;Nutritional finding&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;22253000&quot;,&quot;display&quot; : &quot;Pain&quot;}]}}
+{&quot;resourceType&quot; : &quot;ValueSet&quot;,&quot;status&quot; : &quot;active&quot;,&quot;expansion&quot; : {&quot;identifier&quot; : &quot;urn:uuid:ac982596-e8b2-43c4-9ea9-368eb5ed9178&quot;,&quot;timestamp&quot; : &quot;2025-12-25T10:23:08.392Z&quot;,&quot;total&quot; : 3,&quot;offset&quot; : 0,&quot;parameter&quot; : [{&quot;name&quot; : &quot;excludeNested&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;offset&quot;,&quot;valueInteger&quot; : 0},{&quot;name&quot; : &quot;count&quot;,&quot;valueInteger&quot; : 1000},{&quot;name&quot; : &quot;used-codesystem&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}],&quot;contains&quot; : [{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;129839007&quot;,&quot;display&quot; : &quot;At risk for falls&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;300893006&quot;,&quot;display&quot; : &quot;Nutritional finding&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;22253000&quot;,&quot;display&quot; : &quot;Pain&quot;}]}}
 </pre>
 <hr/><a name="l33"> </a>
 <p>#33</p>
@@ -866,7 +866,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en-US"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":true,"include":[{"system":"http://snomed.info/sct","concept":[{"code":"403153005","display":"Fitzpatrick skin type I"},{"code":"403154004","display":"Fitzpatrick skin type II"},{"code":"403155003","display":"Fitzpatrick skin type III"},{"code":"403156002","display":"Fitzpatrick skin type IV"},{"code":"403157006","display":"Fitzpatrick skin type V"},{"code":"403158001","display":"Fitzpatrick skin type VI"}]}]}}}]}
+{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en-US"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":true,"include":[{"system":"http://snomed.info/sct","concept":[{"code":"403153005","display":"Fitzpatrick skin type I"},{"code":"403154004","display":"Fitzpatrick skin type II"},{"code":"403155003","display":"Fitzpatrick skin type III"},{"code":"403156002","display":"Fitzpatrick skin type IV"},{"code":"403157006","display":"Fitzpatrick skin type V"},{"code":"403158001","display":"Fitzpatrick skin type VI"}]}]}}}]}
 </pre>
 <pre>
 200
@@ -877,13 +877,13 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1089
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:49 GMT
-last-modified:Thu, 25 Dec 2025 10:10:49 GMT
+date:Thu, 25 Dec 2025 10:23:09 GMT
+last-modified:Thu, 25 Dec 2025 10:23:09 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292827
+x-request-id:252-1293205
 
-{&quot;resourceType&quot; : &quot;ValueSet&quot;,&quot;status&quot; : &quot;active&quot;,&quot;expansion&quot; : {&quot;identifier&quot; : &quot;urn:uuid:66bbe09b-9d64-4c5c-8a92-0f0b986954f3&quot;,&quot;timestamp&quot; : &quot;2025-12-25T10:10:49.174Z&quot;,&quot;total&quot; : 6,&quot;offset&quot; : 0,&quot;parameter&quot; : [{&quot;name&quot; : &quot;excludeNested&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;offset&quot;,&quot;valueInteger&quot; : 0},{&quot;name&quot; : &quot;count&quot;,&quot;valueInteger&quot; : 1000},{&quot;name&quot; : &quot;used-codesystem&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}],&quot;contains&quot; : [{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;403153005&quot;,&quot;display&quot; : &quot;Centipede bite&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;403154004&quot;,&quot;display&quot; : &quot;Millipede burn (disorder)&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;403155003&quot;,&quot;display&quot; : &quot;Dermatosis caused by Echinoidea (disorder)&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;403156002&quot;,&quot;display&quot; : &quot;Dermatosis caused by Coelenterata&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;403157006&quot;,&quot;display&quot; : &quot;Fire coral dermatitis (disorder)&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;403158001&quot;,&quot;display&quot; : &quot;Sea mat dermatitis&quot;}]}}
+{&quot;resourceType&quot; : &quot;ValueSet&quot;,&quot;status&quot; : &quot;active&quot;,&quot;expansion&quot; : {&quot;identifier&quot; : &quot;urn:uuid:06a5f485-5cf8-46c0-a0ae-853545001fe7&quot;,&quot;timestamp&quot; : &quot;2025-12-25T10:23:09.188Z&quot;,&quot;total&quot; : 6,&quot;offset&quot; : 0,&quot;parameter&quot; : [{&quot;name&quot; : &quot;excludeNested&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;offset&quot;,&quot;valueInteger&quot; : 0},{&quot;name&quot; : &quot;count&quot;,&quot;valueInteger&quot; : 1000},{&quot;name&quot; : &quot;used-codesystem&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}],&quot;contains&quot; : [{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;403153005&quot;,&quot;display&quot; : &quot;Centipede bite&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;403154004&quot;,&quot;display&quot; : &quot;Millipede burn (disorder)&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;403155003&quot;,&quot;display&quot; : &quot;Dermatosis caused by Echinoidea (disorder)&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;403156002&quot;,&quot;display&quot; : &quot;Dermatosis caused by Coelenterata&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;403157006&quot;,&quot;display&quot; : &quot;Fire coral dermatitis (disorder)&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;403158001&quot;,&quot;display&quot; : &quot;Sea mat dermatitis&quot;}]}}
 </pre>
 <hr/><a name="l34"> </a>
 <p>#34</p>
@@ -893,7 +893,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en-US"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":true,"include":[{"system":"http://snomed.info/sct","concept":[{"code":"266935003","display":"Housing problem"},{"code":"160724001","display":"Homeless"},{"code":"224224003","display":"Lives in own home"}]}]}}}]}
+{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en-US"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":true,"include":[{"system":"http://snomed.info/sct","concept":[{"code":"266935003","display":"Housing problem"},{"code":"160724001","display":"Homeless"},{"code":"224224003","display":"Lives in own home"}]}]}}}]}
 </pre>
 <pre>
 200
@@ -904,13 +904,13 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:662
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:49 GMT
-last-modified:Thu, 25 Dec 2025 10:10:49 GMT
+date:Thu, 25 Dec 2025 10:23:09 GMT
+last-modified:Thu, 25 Dec 2025 10:23:09 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292828
+x-request-id:252-1293206
 
-{&quot;resourceType&quot; : &quot;ValueSet&quot;,&quot;status&quot; : &quot;active&quot;,&quot;expansion&quot; : {&quot;identifier&quot; : &quot;urn:uuid:13ac7d6d-ec48-427b-8258-186547736f2e&quot;,&quot;timestamp&quot; : &quot;2025-12-25T10:10:49.737Z&quot;,&quot;total&quot; : 2,&quot;offset&quot; : 0,&quot;parameter&quot; : [{&quot;name&quot; : &quot;excludeNested&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;offset&quot;,&quot;valueInteger&quot; : 0},{&quot;name&quot; : &quot;count&quot;,&quot;valueInteger&quot; : 1000},{&quot;name&quot; : &quot;used-codesystem&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}],&quot;contains&quot; : [{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;266935003&quot;,&quot;display&quot; : &quot;Housing lack&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;224224003&quot;,&quot;display&quot; : &quot;Lives in staffed home&quot;}]}}
+{&quot;resourceType&quot; : &quot;ValueSet&quot;,&quot;status&quot; : &quot;active&quot;,&quot;expansion&quot; : {&quot;identifier&quot; : &quot;urn:uuid:eda928f1-b654-46c4-a6b1-7a78e3d2b96d&quot;,&quot;timestamp&quot; : &quot;2025-12-25T10:23:09.782Z&quot;,&quot;total&quot; : 2,&quot;offset&quot; : 0,&quot;parameter&quot; : [{&quot;name&quot; : &quot;excludeNested&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;offset&quot;,&quot;valueInteger&quot; : 0},{&quot;name&quot; : &quot;count&quot;,&quot;valueInteger&quot; : 1000},{&quot;name&quot; : &quot;used-codesystem&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}],&quot;contains&quot; : [{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;266935003&quot;,&quot;display&quot; : &quot;Housing lack&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;224224003&quot;,&quot;display&quot; : &quot;Lives in staffed home&quot;}]}}
 </pre>
 <hr/><a name="l35"> </a>
 <p>#35</p>
@@ -920,7 +920,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en-US"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":true,"include":[{"system":"http://snomed.info/sct","concept":[{"code":"71388002","display":"Procedure"},{"code":"225358003","display":"Wound care"},{"code":"386373004","display":"Nutrition therapy"}]}]}}}]}
+{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en-US"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":true,"include":[{"system":"http://snomed.info/sct","concept":[{"code":"71388002","display":"Procedure"},{"code":"225358003","display":"Wound care"},{"code":"386373004","display":"Nutrition therapy"}]}]}}}]}
 </pre>
 <pre>
 200
@@ -931,13 +931,13 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:755
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:49 GMT
-last-modified:Thu, 25 Dec 2025 10:10:49 GMT
+date:Thu, 25 Dec 2025 10:23:10 GMT
+last-modified:Thu, 25 Dec 2025 10:23:10 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292829
+x-request-id:252-1293208
 
-{&quot;resourceType&quot; : &quot;ValueSet&quot;,&quot;status&quot; : &quot;active&quot;,&quot;expansion&quot; : {&quot;identifier&quot; : &quot;urn:uuid:e7df1781-0341-4978-84ec-f694cd980e93&quot;,&quot;timestamp&quot; : &quot;2025-12-25T10:10:49.956Z&quot;,&quot;total&quot; : 3,&quot;offset&quot; : 0,&quot;parameter&quot; : [{&quot;name&quot; : &quot;excludeNested&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;offset&quot;,&quot;valueInteger&quot; : 0},{&quot;name&quot; : &quot;count&quot;,&quot;valueInteger&quot; : 1000},{&quot;name&quot; : &quot;used-codesystem&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}],&quot;contains&quot; : [{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;71388002&quot;,&quot;display&quot; : &quot;Procedure&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;225358003&quot;,&quot;display&quot; : &quot;Wound care&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;386373004&quot;,&quot;display&quot; : &quot;Nutrition therapy (regime/therapy)&quot;}]}}
+{&quot;resourceType&quot; : &quot;ValueSet&quot;,&quot;status&quot; : &quot;active&quot;,&quot;expansion&quot; : {&quot;identifier&quot; : &quot;urn:uuid:6dd6fa26-a979-4ec0-ac1d-1c1a424c4833&quot;,&quot;timestamp&quot; : &quot;2025-12-25T10:23:10.048Z&quot;,&quot;total&quot; : 3,&quot;offset&quot; : 0,&quot;parameter&quot; : [{&quot;name&quot; : &quot;excludeNested&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;offset&quot;,&quot;valueInteger&quot; : 0},{&quot;name&quot; : &quot;count&quot;,&quot;valueInteger&quot; : 1000},{&quot;name&quot; : &quot;used-codesystem&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}],&quot;contains&quot; : [{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;71388002&quot;,&quot;display&quot; : &quot;Procedure&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;225358003&quot;,&quot;display&quot; : &quot;Wound care&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;code&quot; : &quot;386373004&quot;,&quot;display&quot; : &quot;Nutrition therapy (regime/therapy)&quot;}]}}
 </pre>
 <hr/><a name="l36"> </a>
 <p>#36</p>
@@ -947,7 +947,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"38227-0"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"38227-0"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -958,13 +958,13 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1297
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:55 GMT
-last-modified:Thu, 25 Dec 2025 10:10:55 GMT
+date:Thu, 25 Dec 2025 10:23:14 GMT
+last-modified:Thu, 25 Dec 2025 10:23:14 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292831
+x-request-id:252-1293214
 
-{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://loinc.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;38227-0&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Unknown code '38227-0' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Unknown_Code_in_Version&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;code-invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-code&quot;}],&quot;text&quot; : &quot;Unknown code '38227-0' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},&quot;location&quot; : [&quot;Coding.code&quot;],&quot;expression&quot; : [&quot;Coding.code&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en, en-US, default-to-latest\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://loinc.org#38227-0 (\&quot;\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://loinc.org#38227-0\&quot;\r\n0 0     : 0ms  : Using CodeSystem \&quot;http://loinc.org|2.81\&quot; (content = complete)\r\n&quot;}]}
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://loinc.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;38227-0&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Unknown code '38227-0' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Unknown_Code_in_Version&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;code-invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-code&quot;}],&quot;text&quot; : &quot;Unknown code '38227-0' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},&quot;location&quot; : [&quot;Coding.code&quot;],&quot;expression&quot; : [&quot;Coding.code&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n16 0    : 0ms  : Parameters: disp-lang=en, en-US, default-to-latest\r\n16 0    : 0ms  : Prepare include: \&quot;()\&quot;\r\n16 0    : 0ms  : Validate \&quot;[http://loinc.org#38227-0 (\&quot;\&quot;)]\&quot;\r\n16 0    : 0ms  : Check \&quot;http://loinc.org#38227-0\&quot;\r\n16 0    : 0ms  : Using CodeSystem \&quot;http://loinc.org|2.81\&quot; (content = complete)\r\n&quot;}]}
 </pre>
 <hr/><a name="l37"> </a>
 <p>#37</p>
@@ -974,7 +974,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"38222-1"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"38222-1"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -985,13 +985,13 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1297
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:55 GMT
-last-modified:Thu, 25 Dec 2025 10:10:55 GMT
+date:Thu, 25 Dec 2025 10:23:14 GMT
+last-modified:Thu, 25 Dec 2025 10:23:14 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292832
+x-request-id:252-1293215
 
-{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://loinc.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;38222-1&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Unknown code '38222-1' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Unknown_Code_in_Version&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;code-invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-code&quot;}],&quot;text&quot; : &quot;Unknown code '38222-1' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},&quot;location&quot; : [&quot;Coding.code&quot;],&quot;expression&quot; : [&quot;Coding.code&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en, en-US, default-to-latest\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://loinc.org#38222-1 (\&quot;\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://loinc.org#38222-1\&quot;\r\n0 0     : 0ms  : Using CodeSystem \&quot;http://loinc.org|2.81\&quot; (content = complete)\r\n&quot;}]}
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://loinc.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;38222-1&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Unknown code '38222-1' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Unknown_Code_in_Version&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;code-invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-code&quot;}],&quot;text&quot; : &quot;Unknown code '38222-1' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},&quot;location&quot; : [&quot;Coding.code&quot;],&quot;expression&quot; : [&quot;Coding.code&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n15 0    : 0ms  : Parameters: disp-lang=en, en-US, default-to-latest\r\n15 0    : 0ms  : Prepare include: \&quot;()\&quot;\r\n15 0    : 0ms  : Validate \&quot;[http://loinc.org#38222-1 (\&quot;\&quot;)]\&quot;\r\n15 0    : 0ms  : Check \&quot;http://loinc.org#38222-1\&quot;\r\n15 0    : 0ms  : Using CodeSystem \&quot;http://loinc.org|2.81\&quot; (content = complete)\r\n&quot;}]}
 </pre>
 <hr/><a name="l38"> </a>
 <p>#38</p>
@@ -1001,7 +1001,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"38229-6"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"38229-6"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -1012,11 +1012,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1297
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:55 GMT
-last-modified:Thu, 25 Dec 2025 10:10:55 GMT
+date:Thu, 25 Dec 2025 10:23:14 GMT
+last-modified:Thu, 25 Dec 2025 10:23:14 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292833
+x-request-id:252-1293216
 
 {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://loinc.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;38229-6&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Unknown code '38229-6' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Unknown_Code_in_Version&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;code-invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-code&quot;}],&quot;text&quot; : &quot;Unknown code '38229-6' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},&quot;location&quot; : [&quot;Coding.code&quot;],&quot;expression&quot; : [&quot;Coding.code&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en, en-US, default-to-latest\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://loinc.org#38229-6 (\&quot;\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://loinc.org#38229-6\&quot;\r\n0 0     : 0ms  : Using CodeSystem \&quot;http://loinc.org|2.81\&quot; (content = complete)\r\n&quot;}]}
 </pre>
@@ -1028,7 +1028,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"38223-9"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"38223-9"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -1039,11 +1039,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1297
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:55 GMT
-last-modified:Thu, 25 Dec 2025 10:10:55 GMT
+date:Thu, 25 Dec 2025 10:23:14 GMT
+last-modified:Thu, 25 Dec 2025 10:23:14 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292834
+x-request-id:252-1293217
 
 {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://loinc.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;38223-9&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Unknown code '38223-9' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Unknown_Code_in_Version&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;code-invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-code&quot;}],&quot;text&quot; : &quot;Unknown code '38223-9' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},&quot;location&quot; : [&quot;Coding.code&quot;],&quot;expression&quot; : [&quot;Coding.code&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n16 0    : 0ms  : Parameters: disp-lang=en, en-US, default-to-latest\r\n16 0    : 0ms  : Prepare include: \&quot;()\&quot;\r\n16 0    : 0ms  : Validate \&quot;[http://loinc.org#38223-9 (\&quot;\&quot;)]\&quot;\r\n16 0    : 0ms  : Check \&quot;http://loinc.org#38223-9\&quot;\r\n16 0    : 0ms  : Using CodeSystem \&quot;http://loinc.org|2.81\&quot; (content = complete)\r\n&quot;}]}
 </pre>
@@ -1055,7 +1055,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"38224-7"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"38224-7"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -1066,13 +1066,13 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1297
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:55 GMT
-last-modified:Thu, 25 Dec 2025 10:10:55 GMT
+date:Thu, 25 Dec 2025 10:23:15 GMT
+last-modified:Thu, 25 Dec 2025 10:23:15 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292835
+x-request-id:252-1293218
 
-{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://loinc.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;38224-7&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Unknown code '38224-7' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Unknown_Code_in_Version&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;code-invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-code&quot;}],&quot;text&quot; : &quot;Unknown code '38224-7' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},&quot;location&quot; : [&quot;Coding.code&quot;],&quot;expression&quot; : [&quot;Coding.code&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en, en-US, default-to-latest\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://loinc.org#38224-7 (\&quot;\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://loinc.org#38224-7\&quot;\r\n0 0     : 0ms  : Using CodeSystem \&quot;http://loinc.org|2.81\&quot; (content = complete)\r\n&quot;}]}
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://loinc.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;38224-7&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Unknown code '38224-7' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Unknown_Code_in_Version&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;code-invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-code&quot;}],&quot;text&quot; : &quot;Unknown code '38224-7' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},&quot;location&quot; : [&quot;Coding.code&quot;],&quot;expression&quot; : [&quot;Coding.code&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n16 0    : 0ms  : Parameters: disp-lang=en, en-US, default-to-latest\r\n16 0    : 0ms  : Prepare include: \&quot;()\&quot;\r\n16 0    : 0ms  : Validate \&quot;[http://loinc.org#38224-7 (\&quot;\&quot;)]\&quot;\r\n16 0    : 0ms  : Check \&quot;http://loinc.org#38224-7\&quot;\r\n16 0    : 0ms  : Using CodeSystem \&quot;http://loinc.org|2.81\&quot; (content = complete)\r\n&quot;}]}
 </pre>
 <hr/><a name="l41"> </a>
 <p>#41</p>
@@ -1082,7 +1082,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"38225-4"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"38225-4"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -1093,13 +1093,13 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1297
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:56 GMT
-last-modified:Thu, 25 Dec 2025 10:10:56 GMT
+date:Thu, 25 Dec 2025 10:23:15 GMT
+last-modified:Thu, 25 Dec 2025 10:23:15 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292836
+x-request-id:252-1293219
 
-{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://loinc.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;38225-4&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Unknown code '38225-4' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Unknown_Code_in_Version&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;code-invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-code&quot;}],&quot;text&quot; : &quot;Unknown code '38225-4' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},&quot;location&quot; : [&quot;Coding.code&quot;],&quot;expression&quot; : [&quot;Coding.code&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en, en-US, default-to-latest\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://loinc.org#38225-4 (\&quot;\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://loinc.org#38225-4\&quot;\r\n0 0     : 0ms  : Using CodeSystem \&quot;http://loinc.org|2.81\&quot; (content = complete)\r\n&quot;}]}
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://loinc.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;38225-4&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Unknown code '38225-4' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Unknown_Code_in_Version&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;code-invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-code&quot;}],&quot;text&quot; : &quot;Unknown code '38225-4' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},&quot;location&quot; : [&quot;Coding.code&quot;],&quot;expression&quot; : [&quot;Coding.code&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n16 0    : 0ms  : Parameters: disp-lang=en, en-US, default-to-latest\r\n16 0    : 0ms  : Prepare include: \&quot;()\&quot;\r\n16 0    : 0ms  : Validate \&quot;[http://loinc.org#38225-4 (\&quot;\&quot;)]\&quot;\r\n16 0    : 0ms  : Check \&quot;http://loinc.org#38225-4\&quot;\r\n16 0    : 0ms  : Using CodeSystem \&quot;http://loinc.org|2.81\&quot; (content = complete)\r\n&quot;}]}
 </pre>
 <hr/><a name="l42"> </a>
 <p>#42</p>
@@ -1109,7 +1109,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"38226-2"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"3db35acf-8365-41d6-9a1f-8ad8076ee89d"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"38226-2"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"89de0fbd-62cc-487e-930b-ca46159707d0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -1120,11 +1120,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1297
 content-type:application/fhir+json
-date:Thu, 25 Dec 2025 10:10:56 GMT
-last-modified:Thu, 25 Dec 2025 10:10:56 GMT
+date:Thu, 25 Dec 2025 10:23:15 GMT
+last-modified:Thu, 25 Dec 2025 10:23:15 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1292837
+x-request-id:252-1293220
 
-{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://loinc.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;38226-2&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Unknown code '38226-2' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Unknown_Code_in_Version&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;code-invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-code&quot;}],&quot;text&quot; : &quot;Unknown code '38226-2' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},&quot;location&quot; : [&quot;Coding.code&quot;],&quot;expression&quot; : [&quot;Coding.code&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en, en-US, default-to-latest\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://loinc.org#38226-2 (\&quot;\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://loinc.org#38226-2\&quot;\r\n0 0     : 0ms  : Using CodeSystem \&quot;http://loinc.org|2.81\&quot; (content = complete)\r\n&quot;}]}
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://loinc.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;38226-2&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Unknown code '38226-2' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Unknown_Code_in_Version&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;code-invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-code&quot;}],&quot;text&quot; : &quot;Unknown code '38226-2' in the CodeSystem 'http://loinc.org' version '2.81'&quot;},&quot;location&quot; : [&quot;Coding.code&quot;],&quot;expression&quot; : [&quot;Coding.code&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n16 0    : 0ms  : Parameters: disp-lang=en, en-US, default-to-latest\r\n16 0    : 0ms  : Prepare include: \&quot;()\&quot;\r\n16 0    : 0ms  : Validate \&quot;[http://loinc.org#38226-2 (\&quot;\&quot;)]\&quot;\r\n16 0    : 0ms  : Check \&quot;http://loinc.org#38226-2\&quot;\r\n16 0    : 0ms  : Using CodeSystem \&quot;http://loinc.org|2.81\&quot; (content = complete)\r\n&quot;}]}
 </pre>
