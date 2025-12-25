@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="78307980-631a-4fcc-80a8-00216dcae46b"/>
+  <id value="23511249-269c-459c-8f0d-9e3b9930d6cb"/>
   <meta>
-    <lastUpdated value="2025-11-29T23:41:46.049+00:00"/>
+    <lastUpdated value="2025-12-25T09:47:54.462+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -12,7 +12,7 @@
       <ValueSet>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
               <span class="copy-text-inline">
@@ -86,10 +86,10 @@
         <name value="GoalEvaluationValueSet"/>
         <title value="Goal Evaluation Value Set"/>
         <status value="active"/>
-        <date value="2025-11-29T23:41:46+00:00"/>
+        <date value="2025-12-25T09:47:54+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:321f9975-15d0-4c1e-9c5b-b9039c555ad1"/>
-          <timestamp value="2025-11-29T23:42:37+00:00"/>
+          <identifier value="urn:uuid:0c1db26e-c488-4680-b3a4-f06fbd98a6af"/>
+          <timestamp value="2025-12-25T09:48:51+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -136,7 +136,7 @@
       <ValueSet>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
               <span class="copy-text-inline">
@@ -190,10 +190,10 @@
         <name value="HousingStatusVS"/>
         <title value="Housing Status Value Set"/>
         <status value="active"/>
-        <date value="2025-11-29T23:41:46+00:00"/>
+        <date value="2025-12-25T09:47:54+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:fd6c90b4-5764-469e-9838-38b399d3445b"/>
-          <timestamp value="2025-11-29T23:42:39+00:00"/>
+          <identifier value="urn:uuid:7f730ddc-506c-44ab-b7b7-84c719cb317f"/>
+          <timestamp value="2025-12-25T09:48:53+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -235,7 +235,7 @@
       <ValueSet>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
               <span class="copy-text-inline">
@@ -20269,13 +20269,13 @@
         <name value="NursingInterventionValueSet"/>
         <title value="Nursing Intervention Value Set"/>
         <status value="active"/>
-        <date value="2025-11-29T23:41:46+00:00"/>
+        <date value="2025-12-25T09:47:54+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:68c8f950-769c-4f49-87cc-c57f9dd04a97"/>
-          <timestamp value="2025-11-29T23:42:39+00:00"/>
+          <identifier value="urn:uuid:9a215837-09d8-43cf-8051-b6580a1b1644"/>
+          <timestamp value="2025-12-25T09:48:53+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -25311,7 +25311,7 @@
       <ValueSet>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
               <span class="copy-text-inline">
@@ -25375,13 +25375,13 @@
         <name value="NursingProblemValueSet"/>
         <title value="Nursing Problem Value Set"/>
         <status value="active"/>
-        <date value="2025-11-29T23:41:46+00:00"/>
+        <date value="2025-12-25T09:47:54+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:67312a3c-1596-4ebf-a070-de16376db4c7"/>
-          <timestamp value="2025-11-29T23:42:38+00:00"/>
+          <identifier value="urn:uuid:762af2f6-591c-48da-814f-c40add941ebd"/>
+          <timestamp value="2025-12-25T09:48:52+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -25426,12 +25426,333 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-monk-scale-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-onc-monk-scale.html">codesystem Monk Skin Tone Scale CodeSystem v1.0.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 10 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale-A"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-onc-monk-scale.html#onc-monk-scale-A">A</a>
+                </td>
+                <td>Light Skin</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;A&quot;, &quot;display&quot;: &quot;Light Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;A&quot;&gt;&lt;display value=&quot;Light Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale-B"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-onc-monk-scale.html#onc-monk-scale-B">B</a>
+                </td>
+                <td>Light-Medium Skin</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;B&quot;, &quot;display&quot;: &quot;Light-Medium Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;B&quot;&gt;&lt;display value=&quot;Light-Medium Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale-C"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-onc-monk-scale.html#onc-monk-scale-C">C</a>
+                </td>
+                <td>Medium Skin</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;C&quot;, &quot;display&quot;: &quot;Medium Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;C&quot;&gt;&lt;display value=&quot;Medium Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale-D"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-onc-monk-scale.html#onc-monk-scale-D">D</a>
+                </td>
+                <td>Medium-Dark Skin</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;D&quot;, &quot;display&quot;: &quot;Medium-Dark Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;D&quot;&gt;&lt;display value=&quot;Medium-Dark Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale-E"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-onc-monk-scale.html#onc-monk-scale-E">E</a>
+                </td>
+                <td>Dark Skin</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;E&quot;, &quot;display&quot;: &quot;Dark Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;E&quot;&gt;&lt;display value=&quot;Dark Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale-F"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-onc-monk-scale.html#onc-monk-scale-F">F</a>
+                </td>
+                <td>Deep Dark Skin</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;F&quot;, &quot;display&quot;: &quot;Deep Dark Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;F&quot;&gt;&lt;display value=&quot;Deep Dark Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale-G"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-onc-monk-scale.html#onc-monk-scale-G">G</a>
+                </td>
+                <td>Very Dark Skin</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;G&quot;, &quot;display&quot;: &quot;Very Dark Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;G&quot;&gt;&lt;display value=&quot;Very Dark Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale-H"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-onc-monk-scale.html#onc-monk-scale-H">H</a>
+                </td>
+                <td>Deepest Dark Skin</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;H&quot;, &quot;display&quot;: &quot;Deepest Dark Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;H&quot;&gt;&lt;display value=&quot;Deepest Dark Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale-I"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-onc-monk-scale.html#onc-monk-scale-I">I</a>
+                </td>
+                <td>Ultra Dark Skin</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;I&quot;, &quot;display&quot;: &quot;Ultra Dark Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;I&quot;&gt;&lt;display value=&quot;Ultra Dark Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale-J"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-onc-monk-scale.html#onc-monk-scale-J">J</a>
+                </td>
+                <td>Black Skin</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;J&quot;, &quot;display&quot;: &quot;Black Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;J&quot;&gt;&lt;display value=&quot;Black Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-monk-scale-vs"/>
+        <version value="1.0.0"/>
+        <name value="ONCMonkScaleVS"/>
+        <title value="Monk Skin Tone Scale ValueSet"/>
+        <status value="active"/>
+        <date value="2025-12-25T09:47:54+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:f0bd45e6-917c-4d6b-8cca-5c06aebc5b7e"/>
+          <timestamp value="2025-12-25T09:48:51+00:00"/>
+          <total value="10"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale"/>
+            <code value="A"/>
+            <display value="Light Skin"/>
+          </contains>
+          <contains>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale"/>
+            <code value="B"/>
+            <display value="Light-Medium Skin"/>
+          </contains>
+          <contains>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale"/>
+            <code value="C"/>
+            <display value="Medium Skin"/>
+          </contains>
+          <contains>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale"/>
+            <code value="D"/>
+            <display value="Medium-Dark Skin"/>
+          </contains>
+          <contains>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale"/>
+            <code value="E"/>
+            <display value="Dark Skin"/>
+          </contains>
+          <contains>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale"/>
+            <code value="F"/>
+            <display value="Deep Dark Skin"/>
+          </contains>
+          <contains>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale"/>
+            <code value="G"/>
+            <display value="Very Dark Skin"/>
+          </contains>
+          <contains>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale"/>
+            <code value="H"/>
+            <display value="Deepest Dark Skin"/>
+          </contains>
+          <contains>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale"/>
+            <code value="I"/>
+            <display value="Ultra Dark Skin"/>
+          </contains>
+          <contains>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale"/>
+            <code value="J"/>
+            <display value="Black Skin"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/problem-category-valueset"/>
     <resource>
       <ValueSet>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-onc-problem-type.html">codesystem Problem Type CodeSystem v1.0.0 (CodeSystem)</a>
@@ -25486,10 +25807,10 @@
         <name value="ProblemCategoryValueSet"/>
         <title value="Problem Category Value Set"/>
         <status value="active"/>
-        <date value="2025-11-29T23:41:46+00:00"/>
+        <date value="2025-12-25T09:47:54+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:775d015f-afc0-4cd1-8367-369adb896bcb"/>
-          <timestamp value="2025-11-29T23:42:38+00:00"/>
+          <identifier value="urn:uuid:ad590f7a-e08a-4aaf-9058-65ed43c90204"/>
+          <timestamp value="2025-12-25T09:48:52+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -25527,7 +25848,7 @@
       <ValueSet>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
               <span class="copy-text-inline">
@@ -25581,13 +25902,13 @@
         <name value="SkinToneVS"/>
         <title value="Fitzpatrick Skin Tone Value Set"/>
         <status value="active"/>
-        <date value="2025-11-29T23:41:46+00:00"/>
+        <date value="2025-12-25T09:47:54+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:6569759a-7fee-424a-947e-410fbf54ce0f"/>
-          <timestamp value="2025-11-29T23:42:39+00:00"/>
+          <identifier value="urn:uuid:a217d2a9-5236-4d14-b41b-e12cd0702db4"/>
+          <timestamp value="2025-12-25T09:48:53+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>

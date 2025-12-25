@@ -1,0 +1,35 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "onc-observation-codes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem onc-observation-codes</b></p><a name=\"onc-observation-codes\"> </a><a name=\"hconc-observation-codes\"> </a><p>This  code system <code>http://open-nursing-core.org/CodeSystem/onc-observation-codes</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">mst-score<a name=\"onc-observation-codes-mst-score\"> </a></td><td>Monk Skin Tone Score</td><td>Assessment of skin tone using the Monk Skin Tone Scale</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://open-nursing-core.org/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
+     fhir:l <http://open-nursing-core.org/CodeSystem/onc-observation-codes>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "ONCObservationCodes"] ; # 
+  fhir:title [ fhir:v "ONC Observation Codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-12-25T09:47:54+00:00"^^xsd:dateTime] ; # 
+  fhir:description [ fhir:v "Custom observation codes for Open Nursing Core"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "1"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "mst-score" ] ;
+     fhir:display [ fhir:v "Monk Skin Tone Score" ] ;
+     fhir:definition [ fhir:v "Assessment of skin tone using the Monk Skin Tone Scale" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.hl7.org.uk/StructureDefinition/UKCore-Extension-EthnicCategory | *Version*:1.0.0 |
-| Active as of 2025-11-29 | *Computable Name*:UKCoreEthnicCategory |
+| Active as of 2025-12-25 | *Computable Name*:UKCoreEthnicCategory |
 
 **Context of Use**
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-UKCore-Extension-Eth
   "name" : "UKCoreEthnicCategory",
   "title" : "UK Core Ethnic Category",
   "status" : "active",
-  "date" : "2025-11-29T23:41:46+00:00",
+  "date" : "2025-12-25T09:47:54+00:00",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {

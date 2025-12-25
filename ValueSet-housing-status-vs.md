@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/housing-status-vs | *Version*:1.0.0 |
-| Active as of 2025-11-29 | *Computable Name*:HousingStatusVS |
+| Active as of 2025-12-25 | *Computable Name*:HousingStatusVS |
 
  **References** 
 
@@ -20,10 +20,6 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
  
 
 ### Expansion
-
-Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
-
-This value set contains 1 concepts
 
 -------
 
@@ -51,7 +47,7 @@ This value set contains 1 concepts
   "name" : "HousingStatusVS",
   "title" : "Housing Status Value Set",
   "status" : "active",
-  "date" : "2025-11-29T23:41:46+00:00",
+  "date" : "2025-12-25T09:47:54+00:00",
   "compose" : {
     "include" : [
       {

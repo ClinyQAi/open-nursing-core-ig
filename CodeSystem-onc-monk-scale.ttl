@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "onc-monk-scale"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem onc-monk-scale</b></p><a name=\"onc-monk-scale\"> </a><a name=\"hconc-monk-scale\"> </a><p>This  code system <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">A<a name=\"onc-monk-scale-A\"> </a></td><td>Light Skin</td></tr><tr><td style=\"white-space:nowrap\">B<a name=\"onc-monk-scale-B\"> </a></td><td>Light-Medium Skin</td></tr><tr><td style=\"white-space:nowrap\">C<a name=\"onc-monk-scale-C\"> </a></td><td>Medium Skin</td></tr><tr><td style=\"white-space:nowrap\">D<a name=\"onc-monk-scale-D\"> </a></td><td>Medium-Dark Skin</td></tr><tr><td style=\"white-space:nowrap\">E<a name=\"onc-monk-scale-E\"> </a></td><td>Dark Skin</td></tr><tr><td style=\"white-space:nowrap\">F<a name=\"onc-monk-scale-F\"> </a></td><td>Deep Dark Skin</td></tr><tr><td style=\"white-space:nowrap\">G<a name=\"onc-monk-scale-G\"> </a></td><td>Very Dark Skin</td></tr><tr><td style=\"white-space:nowrap\">H<a name=\"onc-monk-scale-H\"> </a></td><td>Deepest Dark Skin</td></tr><tr><td style=\"white-space:nowrap\">I<a name=\"onc-monk-scale-I\"> </a></td><td>Ultra Dark Skin</td></tr><tr><td style=\"white-space:nowrap\">J<a name=\"onc-monk-scale-J\"> </a></td><td>Black Skin</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale"^^xsd:anyURI ;
+     fhir:l <https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "ONCMonkScale"] ; # 
+  fhir:title [ fhir:v "Monk Skin Tone Scale CodeSystem"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-12-25T09:47:54+00:00"^^xsd:dateTime] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "A" ] ;
+     fhir:display [ fhir:v "Light Skin" ]
+  ] [
+     fhir:code [ fhir:v "B" ] ;
+     fhir:display [ fhir:v "Light-Medium Skin" ]
+  ] [
+     fhir:code [ fhir:v "C" ] ;
+     fhir:display [ fhir:v "Medium Skin" ]
+  ] [
+     fhir:code [ fhir:v "D" ] ;
+     fhir:display [ fhir:v "Medium-Dark Skin" ]
+  ] [
+     fhir:code [ fhir:v "E" ] ;
+     fhir:display [ fhir:v "Dark Skin" ]
+  ] [
+     fhir:code [ fhir:v "F" ] ;
+     fhir:display [ fhir:v "Deep Dark Skin" ]
+  ] [
+     fhir:code [ fhir:v "G" ] ;
+     fhir:display [ fhir:v "Very Dark Skin" ]
+  ] [
+     fhir:code [ fhir:v "H" ] ;
+     fhir:display [ fhir:v "Deepest Dark Skin" ]
+  ] [
+     fhir:code [ fhir:v "I" ] ;
+     fhir:display [ fhir:v "Ultra Dark Skin" ]
+  ] [
+     fhir:code [ fhir:v "J" ] ;
+     fhir:display [ fhir:v "Black Skin" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

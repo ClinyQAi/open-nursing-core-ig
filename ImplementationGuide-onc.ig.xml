@@ -11,7 +11,7 @@
   <name value="OpenNursingCoreIG"/>
   <title value="Open Nursing Core FHIR Implementation Guide (ONC-IG)"/>
   <status value="active"/>
-  <date value="2025-11-29T23:41:46+00:00"/>
+  <date value="2025-12-25T09:47:54+00:00"/>
   <description value="Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules."/>
   <packageId value="onc.ig"/>
   <license value="MIT"/>
@@ -22,7 +22,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="7.0.0"/>
+    <version value="7.0.1"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -234,7 +234,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r4#0.8.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#0.9.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -542,6 +542,36 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/onc-monk-skintone-observation"/>
+      </reference>
+      <name value="Monk Skin Tone Observation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/onc-monk-scale"/>
+      </reference>
+      <name value="Monk Skin Tone Scale CodeSystem"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/onc-monk-scale-vs"/>
+      </reference>
+      <name value="Monk Skin Tone Scale ValueSet"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/onc-nursing-intervention"/>
       </reference>
       <name value="Nursing Intervention"/>
@@ -615,6 +645,17 @@
         <reference value="StructureDefinition/onc-nhs-patient"/>
       </reference>
       <name value="ONC NHS Patient"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/onc-observation-codes"/>
+      </reference>
+      <name value="ONC Observation Codes"/>
+      <description value="Custom observation codes for Open Nursing Core"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

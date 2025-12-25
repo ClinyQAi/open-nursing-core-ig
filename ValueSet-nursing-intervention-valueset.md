@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-intervention-valueset | *Version*:1.0.0 |
-| Active as of 2025-11-29 | *Computable Name*:NursingInterventionValueSet |
+| Active as of 2025-12-25 | *Computable Name*:NursingInterventionValueSet |
 
  **References** 
 
@@ -17,15 +17,9 @@
 
 ### Logical Definition (CLD)
 
-* Include codes from[`http://snomed.info/sct`](http://www.snomed.org/)version Not Stated (use latest from terminology server) where concept is-a 71388002 (Procedure)
-
  
 
 ### Expansion
-
-Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
-
-This value set has >1000 codes in it. In order to keep the publication size manageable, only a selection (1000 codes) of the whole set of codes is shown
 
 -------
 
@@ -53,7 +47,7 @@ This value set has >1000 codes in it. In order to keep the publication size mana
   "name" : "NursingInterventionValueSet",
   "title" : "Nursing Intervention Value Set",
   "status" : "active",
-  "date" : "2025-11-29T23:41:46+00:00",
+  "date" : "2025-12-25T09:47:54+00:00",
   "compose" : {
     "include" : [
       {

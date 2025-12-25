@@ -13,7 +13,7 @@
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "active",
-  "date" : "2025-11-29T23:41:46+00:00",
+  "date" : "2025-12-25T09:47:54+00:00",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules.",
   "packageId" : "onc.ig",
   "license" : "MIT",
@@ -29,7 +29,7 @@
       ],
       "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId" : "hl7.terminology.r4",
-      "version" : "7.0.0"
+      "version" : "7.0.1"
     },
     {
       "id" : "hl7ext",
@@ -373,7 +373,7 @@
       },
       {
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-        "valueCode" : "hl7.fhir.uv.tools.r4#0.8.0"
+        "valueCode" : "hl7.fhir.uv.tools.r4#0.9.0"
       },
       {
         "extension" : [
@@ -841,6 +841,45 @@
           }
         ],
         "reference" : {
+          "reference" : "StructureDefinition/onc-monk-skintone-observation"
+        },
+        "name" : "Monk Skin Tone Observation",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/onc-monk-scale"
+        },
+        "name" : "Monk Skin Tone Scale CodeSystem",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/onc-monk-scale-vs"
+        },
+        "name" : "Monk Skin Tone Scale ValueSet",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
           "reference" : "StructureDefinition/onc-nursing-intervention"
         },
         "name" : "Nursing Intervention",
@@ -935,6 +974,20 @@
           "reference" : "StructureDefinition/onc-nhs-patient"
         },
         "name" : "ONC NHS Patient",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/onc-observation-codes"
+        },
+        "name" : "ONC Observation Codes",
+        "description" : "Custom observation codes for Open Nursing Core",
         "exampleBoolean" : false
       },
       {

@@ -9,15 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/problem-category-valueset | *Version*:1.0.0 |
-| Active as of 2025-11-29 | *Computable Name*:ProblemCategoryValueSet |
+| Active as of 2025-12-25 | *Computable Name*:ProblemCategoryValueSet |
 
  **References** 
 
 * [Nursing Problem](StructureDefinition-onc-nursing-problem.md)
 
 ### Logical Definition (CLD)
-
-* Include all codes defined in [`https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type`](CodeSystem-onc-problem-type.md)version 📦1.0.0
 
  
 
@@ -49,7 +47,7 @@
   "name" : "ProblemCategoryValueSet",
   "title" : "Problem Category Value Set",
   "status" : "active",
-  "date" : "2025-11-29T23:41:46+00:00",
+  "date" : "2025-12-25T09:47:54+00:00",
   "compose" : {
     "include" : [
       {

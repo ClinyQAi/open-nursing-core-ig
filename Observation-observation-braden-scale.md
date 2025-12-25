@@ -18,19 +18,19 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
 
 **performer**: [Practitioner Nightingale](Practitioner-practitioner-example.md)
 
-**value**: 18 score(Details: UCUM codescore = 'score')
+**value**: 18 score(Details: UCUM code{score} = '{score}')
 
-> **component****code**:Sensory Perception**value**: 3 score(Details: UCUM codescore = 'score')
+> **component****code**:Sensory Perception**value**: 3 score(Details: UCUM code{score} = '{score}')
 
-> **component****code**:Moisture**value**: 4 score(Details: UCUM codescore = 'score')
+> **component****code**:Moisture**value**: 4 score(Details: UCUM code{score} = '{score}')
 
-> **component****code**:Activity**value**: 2 score(Details: UCUM codescore = 'score')
+> **component****code**:Activity**value**: 2 score(Details: UCUM code{score} = '{score}')
 
-> **component****code**:Mobility**value**: 3 score(Details: UCUM codescore = 'score')
+> **component****code**:Mobility**value**: 3 score(Details: UCUM code{score} = '{score}')
 
-> **component****code**:Nutrition**value**: 3 score(Details: UCUM codescore = 'score')
+> **component****code**:Nutrition**value**: 3 score(Details: UCUM code{score} = '{score}')
 
-> **component****code**:Friction and Shear**value**: 3 score(Details: UCUM codescore = 'score')
+> **component****code**:Friction and Shear**value**: 3 score(Details: UCUM code{score} = '{score}')
 
 
 
@@ -77,7 +77,7 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
     "value" : 18,
     "unit" : "score",
     "system" : "http://unitsofmeasure.org",
-    "code" : "score"
+    "code" : "{score}"
   },
   "component" : [
     {
@@ -94,7 +94,7 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
         "value" : 3,
         "unit" : "score",
         "system" : "http://unitsofmeasure.org",
-        "code" : "score"
+        "code" : "{score}"
       }
     },
     {
@@ -111,7 +111,7 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
         "value" : 4,
         "unit" : "score",
         "system" : "http://unitsofmeasure.org",
-        "code" : "score"
+        "code" : "{score}"
       }
     },
     {
@@ -128,7 +128,7 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
         "value" : 2,
         "unit" : "score",
         "system" : "http://unitsofmeasure.org",
-        "code" : "score"
+        "code" : "{score}"
       }
     },
     {
@@ -145,7 +145,7 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
         "value" : 3,
         "unit" : "score",
         "system" : "http://unitsofmeasure.org",
-        "code" : "score"
+        "code" : "{score}"
       }
     },
     {
@@ -162,7 +162,7 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
         "value" : 3,
         "unit" : "score",
         "system" : "http://unitsofmeasure.org",
-        "code" : "score"
+        "code" : "{score}"
       }
     },
     {
@@ -179,7 +179,7 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
         "value" : 3,
         "unit" : "score",
         "system" : "http://unitsofmeasure.org",
-        "code" : "score"
+        "code" : "{score}"
       }
     }
   ]

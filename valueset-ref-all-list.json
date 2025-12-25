@@ -27,11 +27,12 @@
       "uses" : {
       },
       "StructureDefinition-onc-nursing-intervention.html" : "Nursing Intervention",
-      "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
-      "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation",
       "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
-      "StructureDefinition-onc-nursing-problem.html" : "Nursing Problem",
-      "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation"
+      "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation",
+      "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
+      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation",
+      "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation",
+      "StructureDefinition-onc-nursing-problem.html" : "Nursing Problem"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
@@ -143,10 +144,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
-      "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation",
       "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
-      "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation"
+      "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation",
+      "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
+      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation",
+      "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/device-action",
@@ -272,14 +274,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-onc-nhs-patient.html" : "ONC NHS Patient",
       "StructureDefinition-onc-nursing-intervention.html" : "Nursing Intervention",
-      "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
-      "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation",
-      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
       "StructureDefinition-onc-patient-goal.html" : "Patient Goal",
+      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
+      "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation",
+      "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
+      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation",
+      "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation",
       "StructureDefinition-onc-nursing-problem.html" : "Nursing Problem",
-      "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation"
+      "StructureDefinition-onc-nhs-patient.html" : "ONC NHS Patient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -338,10 +341,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.403"],
       "uses" : {
       },
-      "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
-      "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation",
       "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
-      "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation"
+      "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation",
+      "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
+      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation",
+      "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -355,11 +359,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.396"],
       "uses" : {
       },
-      "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
-      "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation",
-      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
       "StructureDefinition-onc-patient-goal.html" : "Patient Goal",
-      "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation"
+      "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
+      "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation",
+      "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
+      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation",
+      "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -375,10 +380,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
-      "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
-      "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation",
       "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
-      "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation"
+      "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation",
+      "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
+      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation",
+      "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -392,10 +398,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
-      "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
-      "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation",
       "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
-      "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation"
+      "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation",
+      "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
+      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation",
+      "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -409,10 +416,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
-      "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
-      "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation",
       "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
-      "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation"
+      "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation",
+      "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
+      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation",
+      "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
@@ -541,10 +549,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
-      "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
-      "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation",
       "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
-      "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation"
+      "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation",
+      "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
+      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation",
+      "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -560,10 +569,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
-      "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
-      "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation",
       "StructureDefinition-onc-nursing-assessment.html" : "Open Nursing Core Assessment",
-      "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation"
+      "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation",
+      "StructureDefinition-onc-braden-scale-assessment.html" : "Braden Scale Assessment",
+      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation",
+      "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation"
     },
     {
       "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset",
@@ -609,6 +619,20 @@
       "uses" : {
       },
       "StructureDefinition-onc-nursing-problem.html" : "Nursing Problem"
+    },
+    {
+      "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-monk-scale-vs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ONCMonkScaleVS",
+      "title" : "Monk Skin Tone Scale ValueSet",
+      "description" : "",
+      "systems" : [
+        "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation"
     },
     {
       "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/problem-category-valueset",

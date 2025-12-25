@@ -9,11 +9,11 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment | *Version*:1.0.0 |
-| Active as of 2025-11-29 | *Computable Name*:ONCNursingAssessment |
+| Active as of 2025-12-25 | *Computable Name*:ONCNursingAssessment |
 
 **Usages:**
 
-* Derived from this Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessment.md), [Goal Evaluation](StructureDefinition-onc-goal-evaluation.md) and [Skin Tone Observation](StructureDefinition-onc-skintone-observation.md)
+* Derived from this Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessment.md), [Goal Evaluation](StructureDefinition-onc-goal-evaluation.md), [Monk Skin Tone Observation](StructureDefinition-onc-monk-skintone-observation.md) and [Skin Tone Observation](StructureDefinition-onc-skintone-observation.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-nursing-assessment)
 
@@ -38,7 +38,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-assessme
   "name" : "ONCNursingAssessment",
   "title" : "Open Nursing Core Assessment",
   "status" : "active",
-  "date" : "2025-11-29T23:41:46+00:00",
+  "date" : "2025-12-25T09:47:54+00:00",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -90,7 +90,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-assessme
           "discriminator" : [
             {
               "type" : "pattern",
-              "path" : "coding.code"
+              "path" : "$this"
             }
           ],
           "ordered" : false,
@@ -104,18 +104,15 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-assessme
         "sliceName" : "nursing",
         "min" : 1,
         "max" : "1",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+              "code" : "nursing"
+            }
+          ]
+        },
         "mustSupport" : true
-      },
-      {
-        "id" : "Observation.category:nursing.coding.system",
-        "path" : "Observation.category.coding.system",
-        "patternUri" : "http://terminology.hl7.org/CodeSystem/observation-category"
-      },
-      {
-        "id" : "Observation.category:nursing.coding.code",
-        "path" : "Observation.category.coding.code",
-        "min" : 1,
-        "patternCode" : "nursing"
       },
       {
         "id" : "Observation.performer",

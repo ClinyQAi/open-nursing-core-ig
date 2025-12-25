@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset | *Version*:1.0.0 |
-| Active as of 2025-11-29 | *Computable Name*:GoalEvaluationValueSet |
+| Active as of 2025-12-25 | *Computable Name*:GoalEvaluationValueSet |
 
  **References** 
 
@@ -20,10 +20,6 @@
  
 
 ### Expansion
-
-Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
-
-This value set contains 2 concepts
 
 -------
 
@@ -51,7 +47,7 @@ This value set contains 2 concepts
   "name" : "GoalEvaluationValueSet",
   "title" : "Goal Evaluation Value Set",
   "status" : "active",
-  "date" : "2025-11-29T23:41:46+00:00",
+  "date" : "2025-12-25T09:47:54+00:00",
   "compose" : {
     "include" : [
       {

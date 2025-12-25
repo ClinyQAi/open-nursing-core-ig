@@ -15,6 +15,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | :--- |
 | [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessment.md) |
 | [Goal Evaluation](StructureDefinition-onc-goal-evaluation.md) |
+| [Monk Skin Tone Observation](StructureDefinition-onc-monk-skintone-observation.md) |
 | [Nursing Intervention](StructureDefinition-onc-nursing-intervention.md) |
 | [Nursing Problem](StructureDefinition-onc-nursing-problem.md) |
 | [ONC NHS Patient](StructureDefinition-onc-nhs-patient.md) |
@@ -41,6 +42,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Fitzpatrick Skin Tone Value Set](ValueSet-skintone-vs.md) |
 | [Goal Evaluation Value Set](ValueSet-goal-evaluation-valueset.md) |
 | [Housing Status Value Set](ValueSet-housing-status-vs.md) |
+| [Monk Skin Tone Scale ValueSet](ValueSet-onc-monk-scale-vs.md) |
 | [Nursing Intervention Value Set](ValueSet-nursing-intervention-valueset.md) |
 | [Nursing Problem Value Set](ValueSet-nursing-problem-valueset.md) |
 | [Problem Category Value Set](ValueSet-problem-category-valueset.md) |
@@ -49,9 +51,11 @@ These define sets of codes used by systems conforming to this implementation gui
 
 These define new code systems used by systems conforming to this implementation guide.
 
-| |
-| :--- |
-| [Problem Type CodeSystem](CodeSystem-onc-problem-type.md) |
+| | |
+| :--- | :--- |
+| [Monk Skin Tone Scale CodeSystem](CodeSystem-onc-monk-scale.md) |  |
+| [ONC Observation Codes](CodeSystem-onc-observation-codes.md) | Custom observation codes for Open Nursing Core |
+| [Problem Type CodeSystem](CodeSystem-onc-problem-type.md) |  |
 
 ### Example: Example Instances 
 
