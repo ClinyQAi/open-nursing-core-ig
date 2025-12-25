@@ -120,9 +120,10 @@ This implementation is built upon the scholarship and research of nursing innova
 
 ## ⚖️ License
 
-The code in this repository is licensed under the **MIT License** - you can use it freely.
+This project is licensed under the **MIT License**.
 
-> **Note:** The FoNS Knowledge Graph (`chroma_db_fons`) is built upon academic work from the *International Practice Development Journal*, licensed under **CC BY-NC 3.0**. Commercial use requires agreement with the Foundation of Nursing Studies.
+> This work is inspired by research from the Foundation of Nursing Studies (FoNS) 
+> and the International Practice Development Journal.
 
 ---
 
