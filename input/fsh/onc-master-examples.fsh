@@ -108,6 +108,6 @@ Usage: #example
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
 * category[nursing].coding = http://terminology.hl7.org/CodeSystem/observation-category#nursing
-* code = http://snomed.info/sct#385633008 "Goal achieved"
-* valueCodeableConcept = http://snomed.info/sct#385633008 "Goal achieved"
+* code = http://snomed.info/sct#385633008 "Resolved"
+* valueCodeableConcept = http://snomed.info/sct#385633008 "Resolved"
 * extension[goalReference].valueReference = Reference(example-patient-goal)

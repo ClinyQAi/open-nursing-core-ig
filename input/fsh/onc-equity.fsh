@@ -1,14 +1,18 @@
 Extension: UKCoreEthnicCategory
 Id: UKCore-Extension-EthnicCategory
 Title: "UK Core Ethnic Category"
+Description: "An extension to record the ethnic category of a patient, as per UK Core standards."
+Context: Patient
 * ^url = "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Extension-EthnicCategory"
 * value[x] only CodeableConcept
+* value[x] 1..1
 
 Profile: ONCNHSPatient
 Parent: Patient
 Id: onc-nhs-patient
 Title: "ONC NHS Patient"
-* extension contains UKCoreEthnicCategory named ethnicCategory 1..1 MS
+Description: "A patient profile for use in NHS nursing contexts with ethnic category extension."
+* extension contains UKCoreEthnicCategory named ethnicCategory 0..1 MS
 
 Profile: ONCSkinToneObservation
 Parent: ONCNursingAssessment
