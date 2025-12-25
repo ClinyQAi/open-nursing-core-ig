@@ -32,6 +32,13 @@ Title: "Monk Skin Tone Scale CodeSystem"
 * #I "Ultra Dark Skin"
 * #J "Black Skin"
 
+CodeSystem: ONCObservationCodes
+Id: onc-observation-codes
+Title: "ONC Observation Codes"
+Description: "Custom observation codes for Open Nursing Core"
+* ^url = "http://open-nursing-core.org/CodeSystem/onc-observation-codes"
+* #mst-score "Monk Skin Tone Score" "Assessment of skin tone using the Monk Skin Tone Scale"
+
 ValueSet: ONCMonkScaleVS
 Id: onc-monk-scale-vs
 Title: "Monk Skin Tone Scale ValueSet"
@@ -41,6 +48,6 @@ Profile: ONCMonkSkinToneObservation
 Parent: ONCNursingAssessment
 Id: onc-monk-skintone-observation
 Title: "Monk Skin Tone Observation"
-* code = ONCObservationCodes#mst-score "Monk Skin Tone Score"
+* code = http://open-nursing-core.org/CodeSystem/onc-observation-codes#mst-score "Monk Skin Tone Score"
 * value[x] only CodeableConcept
 * valueCodeableConcept from ONCMonkScaleVS (required)

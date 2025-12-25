@@ -37,19 +37,41 @@ Usage: #example
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
 * category[nursing].coding = http://terminology.hl7.org/CodeSystem/observation-category#nursing
-* valueQuantity = 18 'score' "score"
+* valueQuantity.value = 18
+* valueQuantity.unit = "score"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #{score}
 * component[sensoryPerception].code = http://loinc.org#74012-8 "Sensory Perception"
-* component[sensoryPerception].valueQuantity = 3 'score' "score"
+* component[sensoryPerception].valueQuantity.value = 3
+* component[sensoryPerception].valueQuantity.unit = "score"
+* component[sensoryPerception].valueQuantity.system = "http://unitsofmeasure.org"
+* component[sensoryPerception].valueQuantity.code = #{score}
 * component[moisture].code = http://loinc.org#74013-6 "Moisture"
-* component[moisture].valueQuantity = 4 'score' "score"
+* component[moisture].valueQuantity.value = 4
+* component[moisture].valueQuantity.unit = "score"
+* component[moisture].valueQuantity.system = "http://unitsofmeasure.org"
+* component[moisture].valueQuantity.code = #{score}
 * component[activity].code = http://loinc.org#74014-4 "Activity"
-* component[activity].valueQuantity = 2 'score' "score"
+* component[activity].valueQuantity.value = 2
+* component[activity].valueQuantity.unit = "score"
+* component[activity].valueQuantity.system = "http://unitsofmeasure.org"
+* component[activity].valueQuantity.code = #{score}
 * component[mobility].code = http://loinc.org#74015-1 "Mobility"
-* component[mobility].valueQuantity = 3 'score' "score"
+* component[mobility].valueQuantity.value = 3
+* component[mobility].valueQuantity.unit = "score"
+* component[mobility].valueQuantity.system = "http://unitsofmeasure.org"
+* component[mobility].valueQuantity.code = #{score}
 * component[nutrition].code = http://loinc.org#74016-9 "Nutrition"
-* component[nutrition].valueQuantity = 3 'score' "score"
+* component[nutrition].valueQuantity.value = 3
+* component[nutrition].valueQuantity.unit = "score"
+* component[nutrition].valueQuantity.system = "http://unitsofmeasure.org"
+* component[nutrition].valueQuantity.code = #{score}
 * component[frictionAndShear].code = http://loinc.org#74017-7 "Friction and Shear"
-* component[frictionAndShear].valueQuantity = 3 'score' "score"
+* component[frictionAndShear].valueQuantity.value = 3
+* component[frictionAndShear].valueQuantity.unit = "score"
+* component[frictionAndShear].valueQuantity.system = "http://unitsofmeasure.org"
+* component[frictionAndShear].valueQuantity.code = #{score}
+
 
 // ==============================================================================
 // 4. CARE PLANNING
