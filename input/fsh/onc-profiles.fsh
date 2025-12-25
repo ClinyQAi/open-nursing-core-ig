@@ -17,34 +17,35 @@ Profile: ONCBradenScaleAssessment
 Parent: ONCNursingAssessment
 Id: onc-braden-scale-assessment
 Title: "Braden Scale Assessment"
-// FIX: Separated Value and MS Flag
+Description: "A profile for the Braden Scale pressure ulcer risk assessment"
 * status = #final
 * status MS
-* code = http://loinc.org#9017-7 "Braden Scale total score"
+* code = http://loinc.org#38227-0 "Braden scale total score"
 * code MS
 * value[x] only Quantity
 * valueQuantity 1..1 MS
-* valueQuantity.unit = "score"
+* valueQuantity.unit = "{score}"
 * valueQuantity.system = "http://unitsofmeasure.org"
-* valueQuantity.code = #{score}
+* valueQuantity.code = #1
 * component 6..6 MS
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.ordered = false
 * component ^slicing.rules = #open
 * component contains sensoryPerception 1..1 MS and moisture 1..1 MS and activity 1..1 MS and mobility 1..1 MS and nutrition 1..1 MS and frictionAndShear 1..1 MS
-* component[sensoryPerception].code = http://loinc.org#74012-8 "Sensory Perception"
+* component[sensoryPerception].code = http://loinc.org#38222-1 "Sensory perception Braden scale"
 * component[sensoryPerception].value[x] only Quantity
-* component[moisture].code = http://loinc.org#74013-6 "Moisture"
+* component[moisture].code = http://loinc.org#38229-6 "Moisture Braden scale"
 * component[moisture].value[x] only Quantity
-* component[activity].code = http://loinc.org#74014-4 "Activity"
+* component[activity].code = http://loinc.org#38223-9 "Activity Braden scale"
 * component[activity].value[x] only Quantity
-* component[mobility].code = http://loinc.org#74015-1 "Mobility"
+* component[mobility].code = http://loinc.org#38224-7 "Mobility Braden scale"
 * component[mobility].value[x] only Quantity
-* component[nutrition].code = http://loinc.org#74016-9 "Nutrition"
+* component[nutrition].code = http://loinc.org#38225-4 "Nutrition Braden scale"
 * component[nutrition].value[x] only Quantity
-* component[frictionAndShear].code = http://loinc.org#74017-7 "Friction and Shear"
+* component[frictionAndShear].code = http://loinc.org#38226-2 "Friction and shear Braden scale"
 * component[frictionAndShear].value[x] only Quantity
+
 
 Profile: ONCNursingProblem
 Parent: Condition
