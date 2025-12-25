@@ -1,71 +1,138 @@
 # Open Nursing Core FHIR Implementation Guide (ONC-IG)
 
-**Status:** Release 1.0.0 🚀
-**Live Standard:** [https://clinyqai.github.io/open-nursing-core-ig/toc.html](https://clinyqai.github.io/open-nursing-core-ig/toc.html)
+[![Build Status](https://github.com/ClinyQAi/open-nursing-core-ig/actions/workflows/build-publish.yml/badge.svg)](https://github.com/ClinyQAi/open-nursing-core-ig/actions)
+[![FHIR R4](https://img.shields.io/badge/FHIR-R4-blue.svg)](https://hl7.org/fhir/R4/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![IG Version](https://img.shields.io/badge/IG-v1.0.0-orange.svg)](https://clinyqai.github.io/open-nursing-core-ig/)
 
-## The Mission
-The Open Nursing Core (ONC) is a nurse-led, open-source initiative to codify the nursing process (**ADPIE**) into rigorous digital standards (FHIR).
+---
 
-## 📂 Project Structure
+## 📘 Published Implementation Guide
 
-This repository is organized into modular components for scalability and maintainability:
+**🌐 Live IG:** [https://clinyqai.github.io/open-nursing-core-ig/](https://clinyqai.github.io/open-nursing-core-ig/)
 
-*   **`core/`**: Core logic including configuration, authentication, validator, and logging.
-*   **`db/`**: Database models, migrations, and connection handling.
-*   **`ml/`**: Machine Learning modules (predictive, anomaly detection) and analytics dashboards.
-*   **`visualizations/`**: Visualization components for Streamlit.
-*   **`scripts/`**: Utility scripts for data ingestion and knowledge base construction.
-*   **`app.py`**: Legacy application entry point (Phase 1).
-*   **`app_phase2.py`**: Modern application entry point (Phase 2) with database integration.
+| Resource | Link |
+|----------|------|
+| **Home** | [Implementation Guide](https://clinyqai.github.io/open-nursing-core-ig/index.html) |
+| **Artifacts** | [All Profiles & Extensions](https://clinyqai.github.io/open-nursing-core-ig/artifacts.html) |
+| **Table of Contents** | [ToC](https://clinyqai.github.io/open-nursing-core-ig/toc.html) |
+| **QA Report** | [Validation Results](https://clinyqai.github.io/open-nursing-core-ig/qa.html) |
+
+---
+
+## 🎯 The Mission
+
+The **Open Nursing Core (ONC)** is a nurse-led, open-source initiative to codify the nursing process (**ADPIE** - Assessment, Diagnosis, Planning, Implementation, Evaluation) into rigorous digital standards using HL7 FHIR.
+
+### Key Features
+
+- ✅ **Safety Module** - Braden Scale for pressure ulcer risk assessment
+- ✅ **Equity Module** - Fitzpatrick and Monk skin tone scales for equitable assessment
+- ✅ **Care Planning** - Nursing problems, goals, interventions, and evaluations
+- ✅ **UK Core Compatible** - NHS ethnic category extension support
+
+---
+
+## 📊 FHIR Profiles
+
+| Profile | Description |
+|---------|-------------|
+| `ONCNursingAssessment` | Base profile for all nursing observations |
+| `ONCBradenScaleAssessment` | Pressure ulcer risk assessment (Braden Scale) |
+| `ONCNursingProblem` | Nursing diagnosis documentation |
+| `ONCPatientGoal` | Patient-centered goal setting |
+| `ONCNursingIntervention` | Care activity documentation |
+| `ONCGoalEvaluation` | Outcome assessment |
+| `ONCSkinToneObservation` | Fitzpatrick skin type for equitable assessment |
+| `ONCNHSPatient` | NHS patient with ethnic category extension |
+
+---
 
 ## 🚀 Getting Started
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/clinyqai/open-nursing-core-ig.git
-    cd open-nursing-core-ig
-    ```
+### Prerequisites
+- [Node.js](https://nodejs.org/) (for SUSHI)
+- [SUSHI](https://fshschool.org/docs/sushi/) (`npm install -g fsh-sushi`)
+- [IG Publisher](https://github.com/HL7/fhir-ig-publisher) (optional, for full IG build)
 
-2.  **Set up environment:**
-    Copy the example environment file and configure your credentials.
-    ```bash
-    cp .env.example .env
-    ```
-    **Important:** Update `.env` with your actual Azure OpenAI credentials and secure passwords. Never commit `.env` to version control.
+### Build the IG Locally
 
-3.  **Run with Docker (Recommended):**
-    ```bash
-    docker-compose up --build
-    ```
+```bash
+# Clone the repository
+git clone https://github.com/ClinyQAi/open-nursing-core-ig.git
+cd open-nursing-core-ig
 
-4.  **Run Locally:**
-    Install dependencies and run the Streamlit app.
-    ```bash
-    pip install -r requirements.txt
-    streamlit run app_phase2.py
-    ```
+# Run SUSHI to compile FSH to FHIR
+sushi .
 
-## Acknowledgements & Leadership
-This technical implementation is built upon the scholarship, leadership, and research of the following nursing innovators:
+# (Optional) Run full IG Publisher build
+./_genonce.sh   # Mac/Linux
+_genonce.bat    # Windows
+```
 
-*   **Professor Joanne Bosanquet (Chief Executive, Foundation of Nursing Studies):** For championing open access to nursing knowledge via the **International Practice Development Journal (IPDJ)**.
-*   **Dr Clare Cable (Chief Executive, Burdett Trust for Nursing):** For pioneering work on **Relational Intelligence** in nursing.
-*   **Kumbi Kariwo (Nurse Citizen Developer):** For leading the technical integration of **Skin Tone Inclusivity** and equity measures.
+### Run the Validation App
 
-## 🎓 Acknowledgements and Relationship to MCINDS
-This project aims to create a public, open-source set of FHIR profiles and technical assets for nursing documentation. The clinical concepts and data models contained herein are inspired by and seek to align with the foundational principles of the **Minimum Core International Nursing Data Set (MCINDS)**, the academic and research work for which is led by **Robylin 'Tweetie' Diya**.
+```bash
+# Set up environment
+cp .env.example .env
+# Edit .env with your credentials
 
-##  Scope
-This repository contains the source code (FHIR Shorthand) for:
-*   **Assessments:** Braden Scale, NEWS2, Skin Tone, Housing Status.
-*   **Clinical Logic:** Nursing Problems, Goals, Interventions, and Care Plans.
-*   **Equity:** UK Core Ethnicity and Fitzpatrick Skin Tone integration.
+# Run with Docker (Recommended)
+docker-compose up --build
 
+# Or run locally
+pip install -r requirements.txt
+streamlit run app_phase2.py
+```
 
-## ⚖️ Licensing & Commercial Use
+---
 
-The code in this repository is licensed under MIT (you can use it freely).
+## 📂 Project Structure
 
-However, the **FoNS Knowledge Graph** (`chroma_db_fons`) is built upon academic work from the *International Practice Development Journal*, which is licensed under **CC BY-NC 3.0**.
+```
+open-nursing-core-ig/
+├── input/
+│   ├── fsh/                    # FHIR Shorthand source files
+│   │   ├── onc-profiles.fsh    # Core profiles
+│   │   ├── onc-equity.fsh      # Equity module
+│   │   └── onc-terminology.fsh # ValueSets & CodeSystems
+│   ├── pagecontent/            # IG content pages
+│   └── includes/               # Menu and includes
+├── core/                       # Validation app core logic
+├── db/                         # Database models
+├── ml/                         # Machine Learning modules
+├── sushi-config.yaml           # SUSHI configuration
+└── README.md
+```
 
-**You may not use the FoNS-derived database for commercial purposes without a direct agreement with the Foundation of Nursing Studies.**
+---
+
+## 🎓 Acknowledgements
+
+This implementation is built upon the scholarship and research of nursing innovators:
+
+- **Professor Joanne Bosanquet** (Chief Executive, Foundation of Nursing Studies) - For championing open access to nursing knowledge via the International Practice Development Journal (IPDJ)
+- **Dr Clare Cable** (Chief Executive, Burdett Trust for Nursing) - For pioneering work on Relational Intelligence in nursing
+- **Kumbi Kariwo** (Nurse Citizen Developer) - For leading the technical integration of Skin Tone Inclusivity and equity measures
+- **Robylin 'Tweetie' Diya** - For foundational work on MCINDS (Minimum Core International Nursing Data Set)
+
+---
+
+## ⚖️ License
+
+The code in this repository is licensed under the **MIT License** - you can use it freely.
+
+> **Note:** The FoNS Knowledge Graph (`chroma_db_fons`) is built upon academic work from the *International Practice Development Journal*, licensed under **CC BY-NC 3.0**. Commercial use requires agreement with the Foundation of Nursing Studies.
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+---
+
+## 📬 Contact
+
+- **Issues**: [GitHub Issues](https://github.com/ClinyQAi/open-nursing-core-ig/issues)
+- **Organization**: [ClinyQAi](https://github.com/ClinyQAi)
