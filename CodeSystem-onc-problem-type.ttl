@@ -11,22 +11,34 @@
   fhir:id [ fhir:v "onc-problem-type"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem onc-problem-type</b></p><a name=\"onc-problem-type\"> </a><a name=\"hconc-problem-type\"> </a><p>This  code system <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">nursing-diagnosis<a name=\"onc-problem-type-nursing-diagnosis\"> </a></td><td>Nursing Diagnosis</td></tr></table></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem onc-problem-type</b></p><a name=\"onc-problem-type\"> </a><a name=\"hconc-problem-type\"> </a><p>This case-sensitive code system <code>http://open-nursing-core.org/CodeSystem/onc-problem-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">nursing-diagnosis<a name=\"onc-problem-type-nursing-diagnosis\"> </a></td><td>Nursing Diagnosis</td><td>A clinical judgment about individual, family, or community responses to actual or potential health problems</td></tr><tr><td style=\"white-space:nowrap\">risk-diagnosis<a name=\"onc-problem-type-risk-diagnosis\"> </a></td><td>Risk Diagnosis</td><td>A clinical judgment about an individual's vulnerability to developing an undesirable health condition</td></tr><tr><td style=\"white-space:nowrap\">health-promotion<a name=\"onc-problem-type-health-promotion\"> </a></td><td>Health Promotion Diagnosis</td><td>A clinical judgment about motivation to increase wellbeing</td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
-     fhir:v "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type"^^xsd:anyURI ;
-     fhir:l <https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type>
+     fhir:v "http://open-nursing-core.org/CodeSystem/onc-problem-type"^^xsd:anyURI ;
+     fhir:l <http://open-nursing-core.org/CodeSystem/onc-problem-type>
   ] ; # 
   fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "ONCProblemType"] ; # 
   fhir:title [ fhir:v "Problem Type CodeSystem"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-12-25T10:01:16+00:00"^^xsd:dateTime] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-12-25T10:09:41+00:00"^^xsd:dateTime] ; # 
+  fhir:description [ fhir:v "Code system for categorizing types of nursing problems"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
   fhir:content [ fhir:v "complete"] ; # 
-  fhir:count [ fhir:v "1"^^xsd:nonNegativeInteger] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
   fhir:concept ( [
      fhir:code [ fhir:v "nursing-diagnosis" ] ;
-     fhir:display [ fhir:v "Nursing Diagnosis" ]
+     fhir:display [ fhir:v "Nursing Diagnosis" ] ;
+     fhir:definition [ fhir:v "A clinical judgment about individual, family, or community responses to actual or potential health problems" ]
+  ] [
+     fhir:code [ fhir:v "risk-diagnosis" ] ;
+     fhir:display [ fhir:v "Risk Diagnosis" ] ;
+     fhir:definition [ fhir:v "A clinical judgment about an individual's vulnerability to developing an undesirable health condition" ]
+  ] [
+     fhir:code [ fhir:v "health-promotion" ] ;
+     fhir:display [ fhir:v "Health Promotion Diagnosis" ] ;
+     fhir:definition [ fhir:v "A clinical judgment about motivation to increase wellbeing" ]
   ] ) . # 
 
 # -------------------------------------------------------------------------------------

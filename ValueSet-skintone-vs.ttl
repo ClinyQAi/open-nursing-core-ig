@@ -11,7 +11,7 @@
   fhir:id [ fhir:v "skintone-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet skintone-vs</b></p><a name=\"skintone-vs\"> </a><a name=\"hcskintone-vs\"> </a><ul><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a 403153005 (Centipede bite)</li></ul></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet skintone-vs</b></p><a name=\"skintone-vs\"> </a><a name=\"hcskintone-vs\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/403153005\">403153005</a></td><td>Fitzpatrick skin type I</td></tr><tr><td><a href=\"http://snomed.info/id/403154004\">403154004</a></td><td>Fitzpatrick skin type II</td></tr><tr><td><a href=\"http://snomed.info/id/403155003\">403155003</a></td><td>Fitzpatrick skin type III</td></tr><tr><td><a href=\"http://snomed.info/id/403156002\">403156002</a></td><td>Fitzpatrick skin type IV</td></tr><tr><td><a href=\"http://snomed.info/id/403157006\">403157006</a></td><td>Fitzpatrick skin type V</td></tr><tr><td><a href=\"http://snomed.info/id/403158001\">403158001</a></td><td>Fitzpatrick skin type VI</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/skintone-vs"^^xsd:anyURI ;
@@ -21,17 +21,33 @@
   fhir:name [ fhir:v "SkinToneVS"] ; # 
   fhir:title [ fhir:v "Fitzpatrick Skin Tone Value Set"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-12-25T10:01:16+00:00"^^xsd:dateTime] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-12-25T10:09:41+00:00"^^xsd:dateTime] ; # 
+  fhir:description [ fhir:v "Value set for Fitzpatrick skin type classifications"] ; # 
   fhir:compose [
      fhir:include ( [
        fhir:system [
          fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
          fhir:l <http://snomed.info/sct>
        ] ;
-       fhir:filter ( [
-         fhir:property [ fhir:v "concept" ] ;
-         fhir:op [ fhir:v "is-a" ] ;
-         fhir:value [ fhir:v "403153005" ]
+       fhir:concept ( [
+         fhir:code [ fhir:v "403153005" ] ;
+         fhir:display [ fhir:v "Fitzpatrick skin type I" ]
+       ] [
+         fhir:code [ fhir:v "403154004" ] ;
+         fhir:display [ fhir:v "Fitzpatrick skin type II" ]
+       ] [
+         fhir:code [ fhir:v "403155003" ] ;
+         fhir:display [ fhir:v "Fitzpatrick skin type III" ]
+       ] [
+         fhir:code [ fhir:v "403156002" ] ;
+         fhir:display [ fhir:v "Fitzpatrick skin type IV" ]
+       ] [
+         fhir:code [ fhir:v "403157006" ] ;
+         fhir:display [ fhir:v "Fitzpatrick skin type V" ]
+       ] [
+         fhir:code [ fhir:v "403158001" ] ;
+         fhir:display [ fhir:v "Fitzpatrick skin type VI" ]
        ] )
      ] )
   ] . # 

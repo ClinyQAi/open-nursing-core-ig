@@ -1,4 +1,56 @@
-# Resource Open Nursing Core FHIR Implementation Guide (ONC-IG)
+# Home - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+
+* [**Table of Contents**](toc.md)
+* **Home**
+
+## Home
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ImplementationGuide/onc.ig | *Version*:1.0.0 |
+| Active as of 2025-12-25 | *Computable Name*:OpenNursingCoreIG |
+
+# Open Nursing Core FHIR Implementation Guide
+
+Welcome to the **Open Nursing Core FHIR Implementation Guide (ONC-IG)**.
+
+This Implementation Guide provides foundational FHIR R4 profiles for documenting the nursing process (ADPIE - Assessment, Diagnosis, Planning, Implementation, Evaluation), with a focus on **Safety** and **Equity** in nursing care.
+
+## Overview
+
+The ONC-IG defines standardized FHIR profiles for:
+
+* **Patient Assessment** - Nursing observations and assessments
+* **Nursing Diagnosis** - Problem identification and categorization
+* **Patient Goals** - Goal setting and outcome evaluation
+* **Nursing Interventions** - Care activities and procedures
+* **Safety Assessments** - Braden Scale for pressure ulcer risk
+* **Equity Considerations** - Skin tone documentation for equitable care
+
+## Key Profiles
+
+| | |
+| :--- | :--- |
+| [ONC Nursing Assessment](StructureDefinition-onc-nursing-assessment.md) | Base profile for all nursing observations |
+| [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessment.md) | Pressure ulcer risk assessment |
+| [Nursing Problem](StructureDefinition-onc-nursing-problem.md) | Nursing diagnosis documentation |
+| [Patient Goal](StructureDefinition-onc-patient-goal.md) | Patient-centered goal setting |
+| [Nursing Intervention](StructureDefinition-onc-nursing-intervention.md) | Care activity documentation |
+| [Goal Evaluation](StructureDefinition-onc-goal-evaluation.md) | Outcome assessment |
+| [Skin Tone Observation](StructureDefinition-onc-skintone-observation.md) | Fitzpatrick skin type for equitable assessment |
+
+## Getting Started
+
+* Browse the [Artifacts](artifacts.md) for all profiles, extensions, and examples
+* Download the [full package](package.tgz) for use in your FHIR server
+
+## License
+
+This Implementation Guide is released under the MIT License.
+
+## Contact
+
+For questions or contributions, visit our [GitHub repository](https://github.com/ClinyQAi/open-nursing-core-ig).
 
 
 
@@ -13,7 +65,7 @@
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "active",
-  "date" : "2025-12-25T10:01:16+00:00",
+  "date" : "2025-12-25T10:09:41+00:00",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules.",
   "packageId" : "onc.ig",
   "license" : "MIT",
@@ -780,6 +832,7 @@
           "reference" : "ValueSet/skintone-vs"
         },
         "name" : "Fitzpatrick Skin Tone Value Set",
+        "description" : "Value set for Fitzpatrick skin type classifications",
         "exampleBoolean" : false
       },
       {
@@ -806,6 +859,7 @@
           "reference" : "ValueSet/goal-evaluation-valueset"
         },
         "name" : "Goal Evaluation Value Set",
+        "description" : "Value set for evaluating patient goal outcomes",
         "exampleBoolean" : false
       },
       {
@@ -819,6 +873,7 @@
           "reference" : "ValueSet/housing-status-vs"
         },
         "name" : "Housing Status Value Set",
+        "description" : "Value set for patient housing status",
         "exampleBoolean" : false
       },
       {
@@ -897,6 +952,7 @@
           "reference" : "ValueSet/nursing-intervention-valueset"
         },
         "name" : "Nursing Intervention Value Set",
+        "description" : "Value set for nursing interventions",
         "exampleBoolean" : false
       },
       {
@@ -923,6 +979,7 @@
           "reference" : "ValueSet/nursing-problem-valueset"
         },
         "name" : "Nursing Problem Value Set",
+        "description" : "Value set for nursing problems and diagnoses",
         "exampleBoolean" : false
       },
       {
@@ -975,6 +1032,7 @@
           "reference" : "StructureDefinition/onc-nhs-patient"
         },
         "name" : "ONC NHS Patient",
+        "description" : "A patient profile for use in NHS nursing contexts with ethnic category extension.",
         "exampleBoolean" : false
       },
       {
@@ -1054,6 +1112,7 @@
           "reference" : "ValueSet/problem-category-valueset"
         },
         "name" : "Problem Category Value Set",
+        "description" : "Value set for categorizing nursing problems",
         "exampleBoolean" : false
       },
       {
@@ -1067,6 +1126,7 @@
           "reference" : "CodeSystem/onc-problem-type"
         },
         "name" : "Problem Type CodeSystem",
+        "description" : "Code system for categorizing types of nursing problems",
         "exampleBoolean" : false
       },
       {
@@ -1093,6 +1153,7 @@
           "reference" : "StructureDefinition/UKCore-Extension-EthnicCategory"
         },
         "name" : "UK Core Ethnic Category",
+        "description" : "An extension to record the ethnic category of a patient, as per UK Core standards.",
         "exampleBoolean" : false
       }
     ],
@@ -1105,7 +1166,20 @@
       ],
       "nameUrl" : "toc.html",
       "title" : "Table of Contents",
-      "generation" : "html"
+      "generation" : "html",
+      "page" : [
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "index.html"
+            }
+          ],
+          "nameUrl" : "index.html",
+          "title" : "Home",
+          "generation" : "markdown"
+        }
+      ]
     },
     "parameter" : [
       {

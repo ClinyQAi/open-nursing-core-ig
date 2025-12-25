@@ -11,6 +11,9 @@
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-intervention-valueset | *Version*:1.0.0 |
 | Active as of 2025-12-25 | *Computable Name*:NursingInterventionValueSet |
 
+ 
+Value set for nursing interventions 
+
  **References** 
 
 * [Nursing Intervention](StructureDefinition-onc-nursing-intervention.md)
@@ -47,16 +50,25 @@
   "name" : "NursingInterventionValueSet",
   "title" : "Nursing Intervention Value Set",
   "status" : "active",
-  "date" : "2025-12-25T10:01:16+00:00",
+  "experimental" : false,
+  "date" : "2025-12-25T10:09:41+00:00",
+  "description" : "Value set for nursing interventions",
   "compose" : {
     "include" : [
       {
         "system" : "http://snomed.info/sct",
-        "filter" : [
+        "concept" : [
           {
-            "property" : "concept",
-            "op" : "is-a",
-            "value" : "71388002"
+            "code" : "71388002",
+            "display" : "Procedure"
+          },
+          {
+            "code" : "225358003",
+            "display" : "Wound care"
+          },
+          {
+            "code" : "386373004",
+            "display" : "Nutrition therapy"
           }
         ]
       }

@@ -3,17 +3,19 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="problem-category-valueset"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet problem-category-valueset</b></p><a name="problem-category-valueset"> </a><a name="hcproblem-category-valueset"> </a><ul><li>Include all codes defined in <a href="CodeSystem-onc-problem-type.html"><code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;1.0.0</span></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet problem-category-valueset</b></p><a name="problem-category-valueset"> </a><a name="hcproblem-category-valueset"> </a><ul><li>Include all codes defined in <a href="CodeSystem-onc-problem-type.html"><code>http://open-nursing-core.org/CodeSystem/onc-problem-type</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;1.0.0</span></li></ul></div>
   </text>
   <url value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/problem-category-valueset"/>
   <version value="1.0.0"/>
   <name value="ProblemCategoryValueSet"/>
   <title value="Problem Category Value Set"/>
   <status value="active"/>
-  <date value="2025-12-25T10:01:16+00:00"/>
+  <experimental value="false"/>
+  <date value="2025-12-25T10:09:41+00:00"/>
+  <description value="Value set for categorizing nursing problems"/>
   <compose>
     <include>
-      <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type"/>
+      <system value="http://open-nursing-core.org/CodeSystem/onc-problem-type"/>
     </include>
   </compose>
 </ValueSet>

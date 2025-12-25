@@ -6,7 +6,7 @@
       "status" : "active",
       "name" : "GoalEvaluationValueSet",
       "title" : "Goal Evaluation Value Set",
-      "description" : "",
+      "description" : "Value set for evaluating patient goal outcomes",
       "systems" : ["http://snomed.info/sct"]
     },
     {
@@ -15,7 +15,7 @@
       "status" : "active",
       "name" : "HousingStatusVS",
       "title" : "Housing Status Value Set",
-      "description" : "",
+      "description" : "Value set for patient housing status",
       "systems" : ["http://snomed.info/sct"]
     },
     {
@@ -24,7 +24,7 @@
       "status" : "active",
       "name" : "NursingInterventionValueSet",
       "title" : "Nursing Intervention Value Set",
-      "description" : "",
+      "description" : "Value set for nursing interventions",
       "systems" : ["http://snomed.info/sct"]
     },
     {
@@ -33,7 +33,7 @@
       "status" : "active",
       "name" : "NursingProblemValueSet",
       "title" : "Nursing Problem Value Set",
-      "description" : "",
+      "description" : "Value set for nursing problems and diagnoses",
       "systems" : ["http://snomed.info/sct"]
     },
     {
@@ -53,10 +53,8 @@
       "status" : "active",
       "name" : "ProblemCategoryValueSet",
       "title" : "Problem Category Value Set",
-      "description" : "",
-      "systems" : [
-        "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type"
-      ]
+      "description" : "Value set for categorizing nursing problems",
+      "systems" : ["http://open-nursing-core.org/CodeSystem/onc-problem-type"]
     },
     {
       "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/skintone-vs",
@@ -64,7 +62,7 @@
       "status" : "active",
       "name" : "SkinToneVS",
       "title" : "Fitzpatrick Skin Tone Value Set",
-      "description" : "",
+      "description" : "Value set for Fitzpatrick skin type classifications",
       "systems" : ["http://snomed.info/sct"]
     }
   ]

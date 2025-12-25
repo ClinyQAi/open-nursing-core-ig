@@ -3,21 +3,42 @@
   "id" : "skintone-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet skintone-vs</b></p><a name=\"skintone-vs\"> </a><a name=\"hcskintone-vs\"> </a><ul><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a 403153005 (Centipede bite)</li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet skintone-vs</b></p><a name=\"skintone-vs\"> </a><a name=\"hcskintone-vs\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/403153005\">403153005</a></td><td>Fitzpatrick skin type I</td></tr><tr><td><a href=\"http://snomed.info/id/403154004\">403154004</a></td><td>Fitzpatrick skin type II</td></tr><tr><td><a href=\"http://snomed.info/id/403155003\">403155003</a></td><td>Fitzpatrick skin type III</td></tr><tr><td><a href=\"http://snomed.info/id/403156002\">403156002</a></td><td>Fitzpatrick skin type IV</td></tr><tr><td><a href=\"http://snomed.info/id/403157006\">403157006</a></td><td>Fitzpatrick skin type V</td></tr><tr><td><a href=\"http://snomed.info/id/403158001\">403158001</a></td><td>Fitzpatrick skin type VI</td></tr></table></li></ul></div>"
   },
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/skintone-vs",
   "version" : "1.0.0",
   "name" : "SkinToneVS",
   "title" : "Fitzpatrick Skin Tone Value Set",
   "status" : "active",
-  "date" : "2025-12-25T10:01:16+00:00",
+  "experimental" : false,
+  "date" : "2025-12-25T10:09:41+00:00",
+  "description" : "Value set for Fitzpatrick skin type classifications",
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "filter" : [{
-        "property" : "concept",
-        "op" : "is-a",
-        "value" : "403153005"
+      "concept" : [{
+        "code" : "403153005",
+        "display" : "Fitzpatrick skin type I"
+      },
+      {
+        "code" : "403154004",
+        "display" : "Fitzpatrick skin type II"
+      },
+      {
+        "code" : "403155003",
+        "display" : "Fitzpatrick skin type III"
+      },
+      {
+        "code" : "403156002",
+        "display" : "Fitzpatrick skin type IV"
+      },
+      {
+        "code" : "403157006",
+        "display" : "Fitzpatrick skin type V"
+      },
+      {
+        "code" : "403158001",
+        "display" : "Fitzpatrick skin type VI"
       }]
     }]
   }

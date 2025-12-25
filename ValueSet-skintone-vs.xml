@@ -3,22 +3,43 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="skintone-vs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet skintone-vs</b></p><a name="skintone-vs"> </a><a name="hcskintone-vs"> </a><ul><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a 403153005 (Centipede bite)</li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet skintone-vs</b></p><a name="skintone-vs"> </a><a name="hcskintone-vs"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/403153005">403153005</a></td><td>Fitzpatrick skin type I</td></tr><tr><td><a href="http://snomed.info/id/403154004">403154004</a></td><td>Fitzpatrick skin type II</td></tr><tr><td><a href="http://snomed.info/id/403155003">403155003</a></td><td>Fitzpatrick skin type III</td></tr><tr><td><a href="http://snomed.info/id/403156002">403156002</a></td><td>Fitzpatrick skin type IV</td></tr><tr><td><a href="http://snomed.info/id/403157006">403157006</a></td><td>Fitzpatrick skin type V</td></tr><tr><td><a href="http://snomed.info/id/403158001">403158001</a></td><td>Fitzpatrick skin type VI</td></tr></table></li></ul></div>
   </text>
   <url value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/skintone-vs"/>
   <version value="1.0.0"/>
   <name value="SkinToneVS"/>
   <title value="Fitzpatrick Skin Tone Value Set"/>
   <status value="active"/>
-  <date value="2025-12-25T10:01:16+00:00"/>
+  <experimental value="false"/>
+  <date value="2025-12-25T10:09:41+00:00"/>
+  <description value="Value set for Fitzpatrick skin type classifications"/>
   <compose>
     <include>
       <system value="http://snomed.info/sct"/>
-      <filter>
-        <property value="concept"/>
-        <op value="is-a"/>
-        <value value="403153005"/>
-      </filter>
+      <concept>
+        <code value="403153005"/>
+        <display value="Fitzpatrick skin type I"/>
+      </concept>
+      <concept>
+        <code value="403154004"/>
+        <display value="Fitzpatrick skin type II"/>
+      </concept>
+      <concept>
+        <code value="403155003"/>
+        <display value="Fitzpatrick skin type III"/>
+      </concept>
+      <concept>
+        <code value="403156002"/>
+        <display value="Fitzpatrick skin type IV"/>
+      </concept>
+      <concept>
+        <code value="403157006"/>
+        <display value="Fitzpatrick skin type V"/>
+      </concept>
+      <concept>
+        <code value="403158001"/>
+        <display value="Fitzpatrick skin type VI"/>
+      </concept>
     </include>
   </compose>
 </ValueSet>

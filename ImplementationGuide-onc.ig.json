@@ -10,7 +10,7 @@
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "active",
-  "date" : "2025-12-25T10:01:16+00:00",
+  "date" : "2025-12-25T10:09:41+00:00",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules.",
   "packageId" : "onc.ig",
   "license" : "MIT",
@@ -656,6 +656,7 @@
         "reference" : "ValueSet/skintone-vs"
       },
       "name" : "Fitzpatrick Skin Tone Value Set",
+      "description" : "Value set for Fitzpatrick skin type classifications",
       "exampleBoolean" : false
     },
     {
@@ -678,6 +679,7 @@
         "reference" : "ValueSet/goal-evaluation-valueset"
       },
       "name" : "Goal Evaluation Value Set",
+      "description" : "Value set for evaluating patient goal outcomes",
       "exampleBoolean" : false
     },
     {
@@ -689,6 +691,7 @@
         "reference" : "ValueSet/housing-status-vs"
       },
       "name" : "Housing Status Value Set",
+      "description" : "Value set for patient housing status",
       "exampleBoolean" : false
     },
     {
@@ -755,6 +758,7 @@
         "reference" : "ValueSet/nursing-intervention-valueset"
       },
       "name" : "Nursing Intervention Value Set",
+      "description" : "Value set for nursing interventions",
       "exampleBoolean" : false
     },
     {
@@ -777,6 +781,7 @@
         "reference" : "ValueSet/nursing-problem-valueset"
       },
       "name" : "Nursing Problem Value Set",
+      "description" : "Value set for nursing problems and diagnoses",
       "exampleBoolean" : false
     },
     {
@@ -821,6 +826,7 @@
         "reference" : "StructureDefinition/onc-nhs-patient"
       },
       "name" : "ONC NHS Patient",
+      "description" : "A patient profile for use in NHS nursing contexts with ethnic category extension.",
       "exampleBoolean" : false
     },
     {
@@ -888,6 +894,7 @@
         "reference" : "ValueSet/problem-category-valueset"
       },
       "name" : "Problem Category Value Set",
+      "description" : "Value set for categorizing nursing problems",
       "exampleBoolean" : false
     },
     {
@@ -899,6 +906,7 @@
         "reference" : "CodeSystem/onc-problem-type"
       },
       "name" : "Problem Type CodeSystem",
+      "description" : "Code system for categorizing types of nursing problems",
       "exampleBoolean" : false
     },
     {
@@ -921,6 +929,7 @@
         "reference" : "StructureDefinition/UKCore-Extension-EthnicCategory"
       },
       "name" : "UK Core Ethnic Category",
+      "description" : "An extension to record the ethnic category of a patient, as per UK Core standards.",
       "exampleBoolean" : false
     }],
     "page" : {
@@ -930,7 +939,16 @@
       }],
       "nameUrl" : "toc.html",
       "title" : "Table of Contents",
-      "generation" : "html"
+      "generation" : "html",
+      "page" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "index.html"
+        }],
+        "nameUrl" : "index.html",
+        "title" : "Home",
+        "generation" : "markdown"
+      }]
     },
     "parameter" : [{
       "code" : "path-resource",

@@ -14,13 +14,13 @@ Profile: [Goal Evaluation](StructureDefinition-onc-goal-evaluation.md)
 
 **category**: nursing
 
-**code**: Goal achieved
+**code**: Resolved
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
 **performer**: [Practitioner Nightingale](Practitioner-practitioner-example.md)
 
-**value**: Goal achieved
+**value**: Resolved
 
 
 
@@ -59,7 +59,7 @@ Profile: [Goal Evaluation](StructureDefinition-onc-goal-evaluation.md)
       {
         "system" : "http://snomed.info/sct",
         "code" : "385633008",
-        "display" : "Goal achieved"
+        "display" : "Resolved"
       }
     ]
   },
@@ -76,7 +76,7 @@ Profile: [Goal Evaluation](StructureDefinition-onc-goal-evaluation.md)
       {
         "system" : "http://snomed.info/sct",
         "code" : "385633008",
-        "display" : "Goal achieved"
+        "display" : "Resolved"
       }
     ]
   }

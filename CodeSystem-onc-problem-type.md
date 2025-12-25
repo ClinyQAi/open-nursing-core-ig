@@ -8,8 +8,11 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type | *Version*:1.0.0 |
+| *Official URL*:http://open-nursing-core.org/CodeSystem/onc-problem-type | *Version*:1.0.0 |
 | Active as of 2025-12-25 | *Computable Name*:ONCProblemType |
+
+ 
+Code system for categorizing types of nursing problems 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
@@ -23,18 +26,32 @@
 {
   "resourceType" : "CodeSystem",
   "id" : "onc-problem-type",
-  "url" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type",
+  "url" : "http://open-nursing-core.org/CodeSystem/onc-problem-type",
   "version" : "1.0.0",
   "name" : "ONCProblemType",
   "title" : "Problem Type CodeSystem",
   "status" : "active",
-  "date" : "2025-12-25T10:01:16+00:00",
+  "experimental" : false,
+  "date" : "2025-12-25T10:09:41+00:00",
+  "description" : "Code system for categorizing types of nursing problems",
+  "caseSensitive" : true,
   "content" : "complete",
-  "count" : 1,
+  "count" : 3,
   "concept" : [
     {
       "code" : "nursing-diagnosis",
-      "display" : "Nursing Diagnosis"
+      "display" : "Nursing Diagnosis",
+      "definition" : "A clinical judgment about individual, family, or community responses to actual or potential health problems"
+    },
+    {
+      "code" : "risk-diagnosis",
+      "display" : "Risk Diagnosis",
+      "definition" : "A clinical judgment about an individual's vulnerability to developing an undesirable health condition"
+    },
+    {
+      "code" : "health-promotion",
+      "display" : "Health Promotion Diagnosis",
+      "definition" : "A clinical judgment about motivation to increase wellbeing"
     }
   ]
 }

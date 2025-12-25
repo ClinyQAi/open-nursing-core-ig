@@ -1,6 +1,6 @@
 "Profile","Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
 "UKCore-Extension-EthnicCategory","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","UK Core Ethnic Category","An Extension","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","UK Core Ethnic Category","An extension to record the ethnic category of a patient, as per UK Core standards.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "UKCore-Extension-EthnicCategory","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -11,7 +11,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "UKCore-Extension-EthnicCategory","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://fhir.hl7.org.uk/StructureDefinition/UKCore-Extension-EthnicCategory""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
-"UKCore-Extension-EthnicCategory","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+"UKCore-Extension-EthnicCategory","Extension.value[x]","Extension.value[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "intervention-goal-reference","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
@@ -910,12 +910,12 @@ htmlxhtmldisplay","",0,1,"","","","Narrative {[]} {[]}
 "onc-nhs-patient","Patient.contained","Patient.contained","","inline resources
 anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Contained, inline Resources","These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"",""
-"onc-nhs-patient","Patient.extension","Patient.extension","","","",1,*,"","","","Extension {[]} {[]}
+"onc-nhs-patient","Patient.extension","Patient.extension","","","",0,*,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"onc-nhs-patient","Patient.extension:ethnicCategory","Patient.extension","ethnicCategory","","",1,1,"Y","","","Extension {[CanonicalType[https://fhir.hl7.org.uk/StructureDefinition/UKCore-Extension-EthnicCategory]]} {[]}
-","UK Core Ethnic Category","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"onc-nhs-patient","Patient.extension:ethnicCategory","Patient.extension","ethnicCategory","","",0,1,"Y","","","Extension {[CanonicalType[https://fhir.hl7.org.uk/StructureDefinition/UKCore-Extension-EthnicCategory]]} {[]}
+","UK Core Ethnic Category","An extension to record the ethnic category of a patient, as per UK Core standards.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "onc-nhs-patient","Patient.modifierExtension","Patient.modifierExtension","","extensions

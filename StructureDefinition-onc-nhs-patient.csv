@@ -21,12 +21,12 @@ htmlxhtmldisplay","",0,1,"","","","Narrative {[]} {[]}
 "Patient.contained","Patient.contained","","inline resources
 anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Contained, inline Resources","These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"","","N/A"
-"Patient.extension","Patient.extension","","","",1,*,"","","","Extension {[]} {[]}
+"Patient.extension","Patient.extension","","","",0,*,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.extension:ethnicCategory","Patient.extension","ethnicCategory","","",1,1,"Y","","","Extension {[CanonicalType[https://fhir.hl7.org.uk/StructureDefinition/UKCore-Extension-EthnicCategory]]} {[]}
-","UK Core Ethnic Category","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"Patient.extension:ethnicCategory","Patient.extension","ethnicCategory","","",0,1,"Y","","","Extension {[CanonicalType[https://fhir.hl7.org.uk/StructureDefinition/UKCore-Extension-EthnicCategory]]} {[]}
+","UK Core Ethnic Category","An extension to record the ethnic category of a patient, as per UK Core standards.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.modifierExtension","Patient.modifierExtension","","extensions

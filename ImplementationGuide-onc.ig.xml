@@ -11,7 +11,7 @@
   <name value="OpenNursingCoreIG"/>
   <title value="Open Nursing Core FHIR Implementation Guide (ONC-IG)"/>
   <status value="active"/>
-  <date value="2025-12-25T10:01:16+00:00"/>
+  <date value="2025-12-25T10:09:41+00:00"/>
   <description value="Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules."/>
   <packageId value="onc.ig"/>
   <license value="MIT"/>
@@ -496,6 +496,7 @@
         <reference value="ValueSet/skintone-vs"/>
       </reference>
       <name value="Fitzpatrick Skin Tone Value Set"/>
+      <description value="Value set for Fitzpatrick skin type classifications"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -516,6 +517,7 @@
         <reference value="ValueSet/goal-evaluation-valueset"/>
       </reference>
       <name value="Goal Evaluation Value Set"/>
+      <description value="Value set for evaluating patient goal outcomes"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -526,6 +528,7 @@
         <reference value="ValueSet/housing-status-vs"/>
       </reference>
       <name value="Housing Status Value Set"/>
+      <description value="Value set for patient housing status"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -586,6 +589,7 @@
         <reference value="ValueSet/nursing-intervention-valueset"/>
       </reference>
       <name value="Nursing Intervention Value Set"/>
+      <description value="Value set for nursing interventions"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -606,6 +610,7 @@
         <reference value="ValueSet/nursing-problem-valueset"/>
       </reference>
       <name value="Nursing Problem Value Set"/>
+      <description value="Value set for nursing problems and diagnoses"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -646,6 +651,7 @@
         <reference value="StructureDefinition/onc-nhs-patient"/>
       </reference>
       <name value="ONC NHS Patient"/>
+      <description value="A patient profile for use in NHS nursing contexts with ethnic category extension."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -707,6 +713,7 @@
         <reference value="ValueSet/problem-category-valueset"/>
       </reference>
       <name value="Problem Category Value Set"/>
+      <description value="Value set for categorizing nursing problems"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -717,6 +724,7 @@
         <reference value="CodeSystem/onc-problem-type"/>
       </reference>
       <name value="Problem Type CodeSystem"/>
+      <description value="Code system for categorizing types of nursing problems"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -737,6 +745,7 @@
         <reference value="StructureDefinition/UKCore-Extension-EthnicCategory"/>
       </reference>
       <name value="UK Core Ethnic Category"/>
+      <description value="An extension to record the ethnic category of a patient, as per UK Core standards."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>
@@ -746,6 +755,14 @@
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
       <generation value="html"/>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
     </page>
     <parameter>
       <code value="path-resource"/>

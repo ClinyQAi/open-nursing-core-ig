@@ -11,6 +11,9 @@
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset | *Version*:1.0.0 |
 | Active as of 2025-12-25 | *Computable Name*:GoalEvaluationValueSet |
 
+ 
+Value set for evaluating patient goal outcomes 
+
  **References** 
 
 * [Goal Evaluation](StructureDefinition-onc-goal-evaluation.md)
@@ -47,17 +50,25 @@
   "name" : "GoalEvaluationValueSet",
   "title" : "Goal Evaluation Value Set",
   "status" : "active",
-  "date" : "2025-12-25T10:01:16+00:00",
+  "experimental" : false,
+  "date" : "2025-12-25T10:09:41+00:00",
+  "description" : "Value set for evaluating patient goal outcomes",
   "compose" : {
     "include" : [
       {
         "system" : "http://snomed.info/sct",
         "concept" : [
           {
-            "code" : "385633008"
+            "code" : "385633008",
+            "display" : "Resolved"
           },
           {
-            "code" : "385634002"
+            "code" : "385634002",
+            "display" : "Worsened"
+          },
+          {
+            "code" : "118222006",
+            "display" : "General finding of observation of patient"
           }
         ]
       }

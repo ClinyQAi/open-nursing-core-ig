@@ -11,6 +11,9 @@
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nhs-patient | *Version*:1.0.0 |
 | Active as of 2025-12-25 | *Computable Name*:ONCNHSPatient |
 
+ 
+A patient profile for use in NHS nursing contexts with ethnic category extension. 
+
 **Usages:**
 
 * Examples for this Profile: [Patient/patient-example-jane](Patient-patient-example-jane.md)
@@ -38,7 +41,8 @@ Other representations of profile: [CSV](StructureDefinition-onc-nhs-patient.csv)
   "name" : "ONCNHSPatient",
   "title" : "ONC NHS Patient",
   "status" : "active",
-  "date" : "2025-12-25T10:01:16+00:00",
+  "date" : "2025-12-25T10:09:41+00:00",
+  "description" : "A patient profile for use in NHS nursing contexts with ethnic category extension.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -90,14 +94,13 @@ Other representations of profile: [CSV](StructureDefinition-onc-nhs-patient.csv)
           ],
           "ordered" : false,
           "rules" : "open"
-        },
-        "min" : 1
+        }
       },
       {
         "id" : "Patient.extension:ethnicCategory",
         "path" : "Patient.extension",
         "sliceName" : "ethnicCategory",
-        "min" : 1,
+        "min" : 0,
         "max" : "1",
         "type" : [
           {

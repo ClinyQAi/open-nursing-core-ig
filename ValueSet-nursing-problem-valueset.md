@@ -11,6 +11,9 @@
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-problem-valueset | *Version*:1.0.0 |
 | Active as of 2025-12-25 | *Computable Name*:NursingProblemValueSet |
 
+ 
+Value set for nursing problems and diagnoses 
+
  **References** 
 
 * [Nursing Problem](StructureDefinition-onc-nursing-problem.md)
@@ -47,16 +50,29 @@
   "name" : "NursingProblemValueSet",
   "title" : "Nursing Problem Value Set",
   "status" : "active",
-  "date" : "2025-12-25T10:01:16+00:00",
+  "experimental" : false,
+  "date" : "2025-12-25T10:09:41+00:00",
+  "description" : "Value set for nursing problems and diagnoses",
   "compose" : {
     "include" : [
       {
         "system" : "http://snomed.info/sct",
-        "filter" : [
+        "concept" : [
           {
-            "property" : "concept",
-            "op" : "is-a",
-            "value" : "409586006"
+            "code" : "129839007",
+            "display" : "At risk for falls"
+          },
+          {
+            "code" : "162828007",
+            "display" : "Risk of falls"
+          },
+          {
+            "code" : "300893006",
+            "display" : "Nutritional finding"
+          },
+          {
+            "code" : "22253000",
+            "display" : "Pain"
           }
         ]
       }

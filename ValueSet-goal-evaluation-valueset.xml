@@ -3,22 +3,30 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="goal-evaluation-valueset"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet goal-evaluation-valueset</b></p><a name="goal-evaluation-valueset"> </a><a name="hcgoal-evaluation-valueset"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/385633008">385633008</a></td><td style="color: #cccccc">Improving (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/385634002">385634002</a></td><td style="color: #cccccc">Change patterns (qualifier value)</td></tr></table></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet goal-evaluation-valueset</b></p><a name="goal-evaluation-valueset"> </a><a name="hcgoal-evaluation-valueset"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/385633008">385633008</a></td><td>Resolved</td></tr><tr><td><a href="http://snomed.info/id/385634002">385634002</a></td><td>Worsened</td></tr><tr><td><a href="http://snomed.info/id/118222006">118222006</a></td><td>General finding of observation of patient</td></tr></table></li></ul></div>
   </text>
   <url value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset"/>
   <version value="1.0.0"/>
   <name value="GoalEvaluationValueSet"/>
   <title value="Goal Evaluation Value Set"/>
   <status value="active"/>
-  <date value="2025-12-25T10:01:16+00:00"/>
+  <experimental value="false"/>
+  <date value="2025-12-25T10:09:41+00:00"/>
+  <description value="Value set for evaluating patient goal outcomes"/>
   <compose>
     <include>
       <system value="http://snomed.info/sct"/>
       <concept>
         <code value="385633008"/>
+        <display value="Resolved"/>
       </concept>
       <concept>
         <code value="385634002"/>
+        <display value="Worsened"/>
+      </concept>
+      <concept>
+        <code value="118222006"/>
+        <display value="General finding of observation of patient"/>
       </concept>
     </include>
   </compose>

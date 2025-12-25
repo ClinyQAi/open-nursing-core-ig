@@ -1,23 +1,23 @@
 OpenNursingCoreIG : Validation Results
 =========================================
 
-err = 47, warn = 64, info = 12
+err = 47, warn = 38, info = 21
 $--
 Generated $--. FHIR version $-- for onc.ig#$-- (canonical = https://clinyqai.github.io/open-nursing-core-ig)
- Build Errors : 2 / 31 / 0
+ Build Errors : 1 / 22 / 0
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-monk-scale : 0 / 3 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-observation-codes : 2 / 2 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-problem-type : 0 / 3 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Condition-example-nursing-problem : 3 / 1 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-problem-type : 2 / 0 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Condition-example-nursing-problem : 2 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Goal-example-patient-goal : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ImplementationGuide-onc.ig : 0 / 0 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-goal-evaluation : 4 / 1 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-example-goal-evaluation : 2 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-observation-braden-scale : 8 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Observation-observation-skin-tone : 4 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Patient-patient-example-jane : 0 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Practitioner-practitioner-example : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/Procedure-example-nursing-intervention : 0 / 0 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-UKCore-Extension-EthnicCategory : 2 / 1 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-UKCore-Extension-EthnicCategory : 2 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-intervention-goal-reference : 0 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-observation-goal-reference : 0 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-braden-scale-assessment : 15 / 0 / 5
@@ -29,13 +29,13 @@ Generated $--. FHIR version $-- for onc.ig#$-- (canonical = https://clinyqai.git
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-nursing-problem : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-patient-goal : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-skintone-observation : 3 / 0 / 2
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-goal-evaluation-valueset : 0 / 2 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-housing-status-vs : 1 / 2 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-nursing-intervention-valueset : 0 / 2 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-nursing-problem-valueset : 0 / 3 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-goal-evaluation-valueset : 0 / 1 / 3
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-housing-status-vs : 1 / 0 / 3
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-nursing-intervention-valueset : 0 / 0 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-nursing-problem-valueset : 1 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-monk-scale-vs : 0 / 2 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-problem-category-valueset : 0 / 2 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-skintone-vs : 0 / 2 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-problem-category-valueset : 0 / 0 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-skintone-vs : 0 / 0 / 7
 </table>
 == n/a ==
 ERROR: ImplementationGuide.definition.parameter[23].value: Supressed messages file not found
@@ -43,22 +43,13 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/onc-monk-skintone-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/onc-nursing-intervention.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/onc-nursing-problem.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/onc-nhs-patient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/onc-nursing-assessment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/onc-patient-goal.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/onc-skintone-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/intervention-goal-reference.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/observation-goal-reference.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/UKCore-Extension-EthnicCategory.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/skintone-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/goal-evaluation-valueset.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/housing-status-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/onc-monk-scale-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/nursing-intervention-valueset.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/nursing-problem-valueset.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/problem-category-valueset.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/onc-monk-scale.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/onc-problem-type.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-goal-evaluation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Procedure/example-nursing-intervention.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/example-nursing-problem.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -66,7 +57,6 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/observation-skin-tone.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/patient-example-jane.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/practitioner-example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: searchform.html#/html/body/div/div/a/img/div/div/nav/div/div/ul/li/a at Line 63, column 21: The link 'index.html' for "Specification" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
@@ -83,22 +73,16 @@ WARNING: CodeSystem/onc-observation-codes: CodeSystem: Published code systems SH
 WARNING: CodeSystem/onc-observation-codes: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 ERROR: /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-observation-codes: URL Mismatch https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes vs http://open-nursing-core.org/CodeSystem/onc-observation-codes
 == fsh-generated/resources/CodeSystem-onc-problem-type.json ==
-INFORMATION: CodeSystem/onc-problem-type: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/onc-problem-type: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
-WARNING: CodeSystem/onc-problem-type: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
-WARNING: CodeSystem/onc-problem-type: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+ERROR: CodeSystem.where(url = 'http://open-nursing-core.org/CodeSystem/onc-problem-type'): Conformance resource /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-problem-type.json - the canonical URL (https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type) does not match the URL (http://open-nursing-core.org/CodeSystem/onc-problem-type). Use the special-url parameter if you really mean for it not to match
+ERROR: /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-problem-type: URL Mismatch https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type vs http://open-nursing-core.org/CodeSystem/onc-problem-type
 == fsh-generated/resources/Condition-example-nursing-problem.json ==
-WARNING: Condition/example-nursing-problem: Condition.category[0].coding[0].system: A definition for CodeSystem 'http://open-nursing-core.org/CodeSystem/onc-problem-type' could not be found, so the code cannot be validated
-ERROR: Condition/example-nursing-problem: Condition.category[0]: None of the codings provided are in the value set 'Problem Category Value Set' (https://clinyqai.github.io/open-nursing-core-ig/ValueSet/problem-category-valueset|1.0.0), and a coding from this value set is required) (codes = http://open-nursing-core.org/CodeSystem/onc-problem-type#nursing-diagnosis)
 ERROR: Condition/example-nursing-problem: Condition.code.coding[0].code: Unknown code '162828007' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
 ERROR: Condition/example-nursing-problem: Condition.code: None of the codings provided are in the value set 'Nursing Problem Value Set' (https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-problem-valueset|1.0.0), and a coding from this value set is required) (codes = http://snomed.info/sct#162828007)
 == fsh-generated/resources/Goal-example-patient-goal.json ==
 == fsh-generated/resources/ImplementationGuide-onc.ig.json ==
 == fsh-generated/resources/Observation-example-goal-evaluation.json ==
 ERROR: Observation/example-goal-evaluation: Observation.category[0].coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
-ERROR: Observation/example-goal-evaluation: Observation.code.coding[0].display: Wrong Display Name 'Goal achieved' for http://snomed.info/sct#385633008. Valid display is 'Improving (qualifier value)' (en) (for the language(s) 'en-US')
-ERROR: Observation/example-goal-evaluation: Observation.code: None of the codings provided are in the value set 'Goal Evaluation Value Set' (https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset|1.0.0), and a coding from this value set is required) (codes = http://snomed.info/sct#385633008)
-ERROR: Observation/example-goal-evaluation: Observation.value.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Goal achieved' for http://snomed.info/sct#385633008. Valid display is 'Improving (qualifier value)' (en) (for the language(s) 'en-US')
+ERROR: Observation/example-goal-evaluation: Observation.value.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Resolved' for http://snomed.info/sct#385633008. Valid display is 'Improving (qualifier value)' (en) (for the language(s) 'en-US')
 WARNING: Observation/example-goal-evaluation: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-observation-braden-scale.json ==
 ERROR: Observation/observation-braden-scale: Observation.category[0].coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
@@ -122,7 +106,6 @@ WARNING: Patient/patient-example-jane: Patient.extension[0].value.ofType(Codeabl
 == fsh-generated/resources/Procedure-example-nursing-intervention.json ==
 == fsh-generated/resources/StructureDefinition-UKCore-Extension-EthnicCategory.json ==
 ERROR: StructureDefinition.where(url = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Extension-EthnicCategory'): Conformance resource /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-UKCore-Extension-EthnicCategory.json - the canonical URL (https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/UKCore-Extension-EthnicCategory) does not match the URL (https://fhir.hl7.org.uk/StructureDefinition/UKCore-Extension-EthnicCategory). Use the special-url parameter if you really mean for it not to match
-WARNING: StructureDefinition/UKCore-Extension-EthnicCategory: StructureDefinition.context[0]: Review the extension type for UKCore-Extension-EthnicCategory: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 ERROR: /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-UKCore-Extension-EthnicCategory: URL Mismatch https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/UKCore-Extension-EthnicCategory vs https://fhir.hl7.org.uk/StructureDefinition/UKCore-Extension-EthnicCategory
 == fsh-generated/resources/StructureDefinition-intervention-goal-reference.json ==
 WARNING: StructureDefinition/intervention-goal-reference: StructureDefinition.context[0]: Review the extension type for intervention-goal-reference: extensions should not have a context of Element unless it's really intended that they can be used anywhere
@@ -171,25 +154,24 @@ ERROR: StructureDefinition/onc-skintone-observation: StructureDefinition.snapsho
 ERROR: StructureDefinition/onc-skintone-observation: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Fitzpatrick skin type' for http://loinc.org#66472-2. Valid display is one of 3 choices: 'During your life, altogether how many times have you injected drugs not prescribed by a doctor [PhenX]' (en-US), 'During your life, altogether how many times have you injected drugs not prescribed by a doctor [PhenX]' (en-US) or 'How many times injected nRate PhenX' (en-US) (for the language(s) 'en-US')
 INFORMATION: StructureDefinition/onc-skintone-observation: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/ValueSet-goal-evaluation-valueset.json ==
-WARNING: ValueSet/goal-evaluation-valueset: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet/goal-evaluation-valueset: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
+INFORMATION: ValueSet/goal-evaluation-valueset: ValueSet.compose.include[0].concept[0]: Wrong Display Name 'Resolved' for http://snomed.info/sct#385633008. Valid display is 'Improving (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/goal-evaluation-valueset: ValueSet.compose.include[0].concept[1]: Wrong Display Name 'Worsened' for http://snomed.info/sct#385634002. Valid display is 'Change patterns (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+WARNING: ValueSet/goal-evaluation-valueset: ValueSet.compose.include[0].concept[2]: The concept '118222006' has a status of inactive and its use should be reviewed
 == fsh-generated/resources/ValueSet-housing-status-vs.json ==
-ERROR: ValueSet/housing-status-vs: ValueSet.compose.include[0].concept[1]: The code '160753008' is not valid in the system http://snomed.info/sct (Unknown code '160753008' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201')
-WARNING: ValueSet/housing-status-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet/housing-status-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
+INFORMATION: ValueSet/housing-status-vs: ValueSet.compose.include[0].concept[0]: Wrong Display Name 'Housing problem' for http://snomed.info/sct#266935003. Valid display is 'Housing lack' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+ERROR: ValueSet/housing-status-vs: ValueSet.compose.include[0].concept[1]: The code '160724001' is not valid in the system http://snomed.info/sct (Unknown code '160724001' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
+INFORMATION: ValueSet/housing-status-vs: ValueSet.compose.include[0].concept[2]: Wrong Display Name 'Lives in own home' for http://snomed.info/sct#224224003. Valid display is 'Lives in staffed home' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
 == fsh-generated/resources/ValueSet-nursing-intervention-valueset.json ==
-WARNING: ValueSet/nursing-intervention-valueset: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet/nursing-intervention-valueset: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-nursing-problem-valueset.json ==
-WARNING: ValueSet/nursing-problem-valueset: ValueSet.compose.include[0].filter[0]: The code for the filter 'concept' is inactive ('409586006')
-WARNING: ValueSet/nursing-problem-valueset: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet/nursing-problem-valueset: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
+ERROR: ValueSet/nursing-problem-valueset: ValueSet.compose.include[0].concept[1]: The code '162828007' is not valid in the system http://snomed.info/sct (Unknown code '162828007' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
 == fsh-generated/resources/ValueSet-onc-monk-scale-vs.json ==
 WARNING: ValueSet/onc-monk-scale-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/onc-monk-scale-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-problem-category-valueset.json ==
-WARNING: ValueSet/problem-category-valueset: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet/problem-category-valueset: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-skintone-vs.json ==
-WARNING: ValueSet/skintone-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet/skintone-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
+INFORMATION: ValueSet/skintone-vs: ValueSet.compose.include[0].concept[0]: Wrong Display Name 'Fitzpatrick skin type I' for http://snomed.info/sct#403153005. Valid display is 'Centipede bite' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/skintone-vs: ValueSet.compose.include[0].concept[1]: Wrong Display Name 'Fitzpatrick skin type II' for http://snomed.info/sct#403154004. Valid display is 'Millipede burn (disorder)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/skintone-vs: ValueSet.compose.include[0].concept[2]: Wrong Display Name 'Fitzpatrick skin type III' for http://snomed.info/sct#403155003. Valid display is 'Dermatosis caused by Echinoidea (disorder)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/skintone-vs: ValueSet.compose.include[0].concept[3]: Wrong Display Name 'Fitzpatrick skin type IV' for http://snomed.info/sct#403156002. Valid display is 'Dermatosis caused by Coelenterata' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/skintone-vs: ValueSet.compose.include[0].concept[4]: Wrong Display Name 'Fitzpatrick skin type V' for http://snomed.info/sct#403157006. Valid display is 'Fire coral dermatitis (disorder)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/skintone-vs: ValueSet.compose.include[0].concept[5]: Wrong Display Name 'Fitzpatrick skin type VI' for http://snomed.info/sct#403158001. Valid display is 'Sea mat dermatitis' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code

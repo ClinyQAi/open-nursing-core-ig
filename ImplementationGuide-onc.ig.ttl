@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "OpenNursingCoreIG"] ; # 
   fhir:title [ fhir:v "Open Nursing Core FHIR Implementation Guide (ONC-IG)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-12-25T10:01:16+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-25T10:09:41+00:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules."] ; # 
   fhir:packageId [ fhir:v "onc.ig"] ; # 
   fhir:license [ fhir:v "MIT"] ; # 
@@ -1396,6 +1396,7 @@
          fhir:reference [ fhir:v "ValueSet/skintone-vs" ]
        ] ;
        fhir:name [ fhir:v "Fitzpatrick Skin Tone Value Set" ] ;
+       fhir:description [ fhir:v "Value set for Fitzpatrick skin type classifications" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1436,6 +1437,7 @@
          fhir:reference [ fhir:v "ValueSet/goal-evaluation-valueset" ]
        ] ;
        fhir:name [ fhir:v "Goal Evaluation Value Set" ] ;
+       fhir:description [ fhir:v "Value set for evaluating patient goal outcomes" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1456,6 +1458,7 @@
          fhir:reference [ fhir:v "ValueSet/housing-status-vs" ]
        ] ;
        fhir:name [ fhir:v "Housing Status Value Set" ] ;
+       fhir:description [ fhir:v "Value set for patient housing status" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1576,6 +1579,7 @@
          fhir:reference [ fhir:v "ValueSet/nursing-intervention-valueset" ]
        ] ;
        fhir:name [ fhir:v "Nursing Intervention Value Set" ] ;
+       fhir:description [ fhir:v "Value set for nursing interventions" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1616,6 +1620,7 @@
          fhir:reference [ fhir:v "ValueSet/nursing-problem-valueset" ]
        ] ;
        fhir:name [ fhir:v "Nursing Problem Value Set" ] ;
+       fhir:description [ fhir:v "Value set for nursing problems and diagnoses" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1698,6 +1703,7 @@
          fhir:reference [ fhir:v "StructureDefinition/onc-nhs-patient" ]
        ] ;
        fhir:name [ fhir:v "ONC NHS Patient" ] ;
+       fhir:description [ fhir:v "A patient profile for use in NHS nursing contexts with ethnic category extension." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1820,6 +1826,7 @@
          fhir:reference [ fhir:v "ValueSet/problem-category-valueset" ]
        ] ;
        fhir:name [ fhir:v "Problem Category Value Set" ] ;
+       fhir:description [ fhir:v "Value set for categorizing nursing problems" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1840,6 +1847,7 @@
          fhir:reference [ fhir:v "CodeSystem/onc-problem-type" ]
        ] ;
        fhir:name [ fhir:v "Problem Type CodeSystem" ] ;
+       fhir:description [ fhir:v "Code system for categorizing types of nursing problems" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1880,6 +1888,7 @@
          fhir:reference [ fhir:v "StructureDefinition/UKCore-Extension-EthnicCategory" ]
        ] ;
        fhir:name [ fhir:v "UK Core Ethnic Category" ] ;
+       fhir:description [ fhir:v "An extension to record the ethnic category of a patient, as per UK Core standards." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1903,7 +1912,27 @@
          fhir:l fhir:toc.html
        ] ;
        fhir:title [ fhir:v "Table of Contents" ] ;
-       fhir:generation [ fhir:v "html" ]
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "index.html"^^xsd:anyURI ;
+             fhir:l fhir:index.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "index.html"^^xsd:anyURI ;
+           fhir:l fhir:index.html
+         ] ;
+         fhir:title [ fhir:v "Home" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] )
      ] ;
      fhir:parameter ( [
        fhir:code [ fhir:v "path-resource" ] ;

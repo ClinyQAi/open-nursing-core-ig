@@ -11,6 +11,9 @@
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/housing-status-vs | *Version*:1.0.0 |
 | Active as of 2025-12-25 | *Computable Name*:HousingStatusVS |
 
+ 
+Value set for patient housing status 
+
  **References** 
 
 This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
@@ -47,17 +50,25 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "name" : "HousingStatusVS",
   "title" : "Housing Status Value Set",
   "status" : "active",
-  "date" : "2025-12-25T10:01:16+00:00",
+  "experimental" : false,
+  "date" : "2025-12-25T10:09:41+00:00",
+  "description" : "Value set for patient housing status",
   "compose" : {
     "include" : [
       {
         "system" : "http://snomed.info/sct",
         "concept" : [
           {
-            "code" : "32911000"
+            "code" : "266935003",
+            "display" : "Housing problem"
           },
           {
-            "code" : "160753008"
+            "code" : "160724001",
+            "display" : "Homeless"
+          },
+          {
+            "code" : "224224003",
+            "display" : "Lives in own home"
           }
         ]
       }
