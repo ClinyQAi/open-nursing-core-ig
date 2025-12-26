@@ -26,6 +26,8 @@ try:
 except ImportError:
     FHIR_AVAILABLE = False
 
+from core.safe_logging import mask_identifier
+
 logger = logging.getLogger(__name__)
 
 

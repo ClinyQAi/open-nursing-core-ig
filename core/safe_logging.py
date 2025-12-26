@@ -89,12 +89,6 @@ def mask_identifier(identifier: str, prefix: str = "id") -> str:
         >>> mask_identifier("", "id")
         'id_****'
     """
-    if not identifier:
-        return f"{prefix}_****"
-    
-    # Always mask the full identifier content; do not expose any characters.
-    # We still accept any type for identifier to keep the API compatible,
-    # but we never use its value in the returned string.
     return f"{prefix}_****"
 
 
