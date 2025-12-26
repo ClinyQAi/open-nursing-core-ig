@@ -1,0 +1,24 @@
+# CODEOWNERS file for Open Nursing Core IG
+# 
+# This file defines individuals or teams responsible for code in this repository.
+# When a PR is opened, GitHub automatically requests reviews from code owners.
+# 
+# More info: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owner for everything in the repo
+* @ClinyQAi
+
+# FSH profiles require nursing informatics expertise
+/input/fsh/ @ClinyQAi
+
+# CI/CD changes require DevOps review
+/.github/workflows/ @ClinyQAi
+
+# Security-sensitive files require owner review
+/SECURITY.md @ClinyQAi
+/.github/CODEOWNERS @ClinyQAi
+/CNAME @ClinyQAi
+
+# Documentation changes
+/README.md @ClinyQAi
+/CONTRIBUTING.md @ClinyQAi
