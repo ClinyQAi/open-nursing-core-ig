@@ -1,0 +1,77 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "onc-waterlow-score",
+  "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-waterlow-score",
+  "name": "ONCWaterlowScore",
+  "title": "Waterlow Score",
+  "status": "active",
+  "description": "Waterlow Pressure Ulcer Risk Assessment - NHS standard tool. Score ≥10 indicates at risk, ≥15 high risk, ≥20 very high risk.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "443846001",
+              "system": "http://snomed.info/sct",
+              "display": "Waterlow score (observable entity)"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "short": "Waterlow total score (0-64+, higher = higher risk)",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x].value",
+        "path": "Observation.value[x].value",
+        "constraint": [
+          {
+            "key": "waterlow-range",
+            "severity": "error",
+            "human": "Waterlow score must be 0 or greater",
+            "expression": "$this >= 0",
+            "source": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-waterlow-score"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x].unit",
+        "path": "Observation.value[x].unit",
+        "patternString": "{score}"
+      },
+      {
+        "id": "Observation.value[x].system",
+        "path": "Observation.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "short": "Risk factor components (build, skin type, age, continence, mobility, appetite, special risks)",
+        "mustSupport": true
+      }
+    ]
+  }
+}

@@ -44,5 +44,6 @@
 [ONCRespirationRate]: StructureDefinition-onc-respiration-rate.html
 [ONCSkinToneObservation]: StructureDefinition-onc-skintone-observation.html
 [UKCoreEthnicCategory]: StructureDefinition-UKCore-Extension-EthnicCategory.html
+[ONCWaterlowScore]: StructureDefinition-onc-waterlow-score.html
 [ONCWoundAssessment]: StructureDefinition-onc-wound-assessment.html
 [WoundStageValueSet]: ValueSet-wound-stage-vs.html
