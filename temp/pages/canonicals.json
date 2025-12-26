@@ -294,6 +294,48 @@
     "name" : "NursingProblemValueSet"
   },
   {
+    "id" : "onc-4at-acute-change-vs",
+    "type" : "ValueSet",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-4at-acute-change-vs",
+    "version" : "0.1.0",
+    "name" : "AcuteChangeVS"
+  },
+  {
+    "id" : "onc-4at-alertness-vs",
+    "type" : "ValueSet",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-4at-alertness-vs",
+    "version" : "0.1.0",
+    "name" : "AlertnessVS"
+  },
+  {
+    "id" : "onc-4at-amt4-vs",
+    "type" : "ValueSet",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-4at-amt4-vs",
+    "version" : "0.1.0",
+    "name" : "AMT4VS"
+  },
+  {
+    "id" : "onc-4at-attention-vs",
+    "type" : "ValueSet",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-4at-attention-vs",
+    "version" : "0.1.0",
+    "name" : "AttentionVS"
+  },
+  {
+    "id" : "onc-cfs-vs",
+    "type" : "ValueSet",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-cfs-vs",
+    "version" : "0.1.0",
+    "name" : "ClinicalFrailtyScaleVS"
+  },
+  {
+    "id" : "onc-mca-vs",
+    "type" : "ValueSet",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-mca-vs",
+    "version" : "0.1.0",
+    "name" : "MentalCapacityVS"
+  },
+  {
     "id" : "onc-monk-scale-vs",
     "type" : "ValueSet",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-monk-scale-vs",
@@ -327,5 +369,54 @@
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/wound-stage-vs",
     "version" : "0.1.0",
     "name" : "WoundStageValueSet"
+  },
+  {
+    "id" : "onc-4at-delirium",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-4at-delirium",
+    "version" : "0.1.0",
+    "name" : "ONC4ATDelirium"
+  },
+  {
+    "id" : "onc-clinical-frailty-scale",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale",
+    "version" : "0.1.0",
+    "name" : "ONCClinicalFrailtyScale"
+  },
+  {
+    "id" : "onc-mental-capacity",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity",
+    "version" : "0.1.0",
+    "name" : "ONCMentalCapacity"
+  },
+  {
+    "id" : "onc-patient-story",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-patient-story",
+    "version" : "0.1.0",
+    "name" : "ONCPatientStory"
+  },
+  {
+    "id" : "onc-reasonable-adjustment",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-reasonable-adjustment",
+    "version" : "0.1.0",
+    "name" : "ONCReasonableAdjustment"
+  },
+  {
+    "id" : "onc-relational-observation",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-relational-observation",
+    "version" : "0.1.0",
+    "name" : "ONCRelationalObservation"
+  },
+  {
+    "id" : "onc-what-matters",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-what-matters",
+    "version" : "0.1.0",
+    "name" : "ONCWhatMattersToMe"
   }
 ]

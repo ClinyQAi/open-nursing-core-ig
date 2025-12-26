@@ -95,6 +95,14 @@ Description: "Custom observation codes for Open Nursing Core"
 * #capacity-present "Capacity Present" "Patient has capacity for this decision"
 * #capacity-absent "Capacity Absent" "Patient lacks capacity for this decision"
 * #best-interest "Best Interest Decision" "Decision made in patient's best interest"
+* #bristol-score "Bristol Stool Score" "Bristol Stool Form Scale Score (1-7)"
+* #bristol-1 "Type 1" "Separate hard lumps, like nuts (hard to pass)"
+* #bristol-2 "Type 2" "Sausage-shaped but lumpy"
+* #bristol-3 "Type 3" "Like a sausage but with cracks on its surface"
+* #bristol-4 "Type 4" "Like a sausage or snake, smooth and soft"
+* #bristol-5 "Type 5" "Soft blobs with clear-cut edges (passed easily)"
+* #bristol-6 "Type 6" "Fluffy pieces with ragged edges, a mushy stool"
+* #bristol-7 "Type 7" "Watery, no solid pieces. Entirely liquid"
 
 ValueSet: ONCMonkScaleVS
 Id: onc-monk-scale-vs

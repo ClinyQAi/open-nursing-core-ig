@@ -32,6 +32,14 @@
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-onc-4at-delirium.html"
+                  title="StructureDefinition/onc-4at-delirium">4AT Delirium Assessment</a>
+            </td>
+            <td>{% capture desc %}Rapid clinical test for delirium (4AT) comprising Alertness, AMT4, Attention, and Acute Change/Fluctuating Course. A total score of 4 or more suggests possible delirium.{% endcapture %}
+{{ desc | markdownify}}</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-onc-acvpu.html"
                   title="StructureDefinition/onc-acvpu">ACVPU Consciousness Level</a>
             </td>
@@ -72,6 +80,14 @@
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-onc-clinical-frailty-scale.html"
+                  title="StructureDefinition/onc-clinical-frailty-scale">Clinical Frailty Scale (CFS)</a>
+            </td>
+            <td>{% capture desc %}Assessment of frailty using the Rockwood Clinical Frailty Scale (1-9). Essential for older adults to determine baseline functional status.{% endcapture %}
+{{ desc | markdownify}}</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-onc-glasgow-coma-scale.html"
                   title="StructureDefinition/onc-glasgow-coma-scale">Glasgow Coma Scale</a>
             </td>
@@ -108,6 +124,14 @@
                   title="StructureDefinition/onc-must-score">MUST Score (Malnutrition Universal Screening Tool)</a>
             </td>
             <td>{% capture desc %}Malnutrition Universal Screening Tool for identifying adults at risk of malnutrition. Score 0=low risk, 1=medium risk, 2+=high risk. NHS-standard nutritional screening.{% endcapture %}
+{{ desc | markdownify}}</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onc-mental-capacity.html"
+                  title="StructureDefinition/onc-mental-capacity">Mental Capacity Assessment</a>
+            </td>
+            <td>{% capture desc %}Records the outcome of a Mental Capacity Assessment for a specific decision. Fundamental legal safeguard in UK nursing practice.{% endcapture %}
 {{ desc | markdownify}}</td>
          </tr>
          <tr>
@@ -208,6 +232,30 @@
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-onc-patient-story.html"
+                  title="StructureDefinition/onc-patient-story">Patient Story</a>
+            </td>
+            <td>{% capture desc %}A narrative summary of the patient's background, biography, preferences, and personhood. Goes beyond clinical history to capture 'who the person is'.{% endcapture %}
+{{ desc | markdownify}}</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onc-reasonable-adjustment.html"
+                  title="StructureDefinition/onc-reasonable-adjustment">Reasonable Adjustment</a>
+            </td>
+            <td>{% capture desc %}Captures specific strict requirements for care adjustments under the Equality Act (e.g., 'Needs BSL Interpreter', 'Cannot use stairs', 'Requires large print').{% endcapture %}
+{{ desc | markdownify}}</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onc-relational-observation.html"
+                  title="StructureDefinition/onc-relational-observation">Relational Engagement Score</a>
+            </td>
+            <td>{% capture desc %}Assessment of the quality and depth of the nurse-patient relationship or engagement level. Supports the relational aspect of care.{% endcapture %}
+{{ desc | markdownify}}</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-onc-respiration-rate.html"
                   title="StructureDefinition/onc-respiration-rate">Respiration Rate</a>
             </td>
@@ -228,6 +276,14 @@
                   title="StructureDefinition/onc-waterlow-score">Waterlow Score</a>
             </td>
             <td>{% capture desc %}Waterlow Pressure Ulcer Risk Assessment - NHS standard tool. Score ≥10 indicates at risk, ≥15 high risk, ≥20 very high risk.{% endcapture %}
+{{ desc | markdownify}}</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onc-what-matters.html"
+                  title="StructureDefinition/onc-what-matters">What Matters to Me</a>
+            </td>
+            <td>{% capture desc %}Captures the patient's specific, personal priorities and non-clinical goals (e.g., 'I want to walk my daughter down the aisle'). Fundamental to person-centred care.{% endcapture %}
 {{ desc | markdownify}}</td>
          </tr>
          <tr>
@@ -286,9 +342,47 @@
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-onc-4at-amt4-vs.html" title="ValueSet/onc-4at-amt4-vs">4AT AMT4 Value Set</a>
+            </td>
+            <td>{% capture desc %}Scoring options for AMT4 (Age, DOB, Place, Year){% endcapture %}
+{{ desc | markdownify}}</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-onc-4at-acute-change-vs.html"
+                  title="ValueSet/onc-4at-acute-change-vs">4AT Acute Change Value Set</a>
+            </td>
+            <td>{% capture desc %}Scoring for Acute Change or Fluctuating Course{% endcapture %}
+{{ desc | markdownify}}</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-onc-4at-alertness-vs.html"
+                  title="ValueSet/onc-4at-alertness-vs">4AT Alertness Value Set</a>
+            </td>
+            <td>{% capture desc %}Scoring options for 4AT Alertness{% endcapture %}
+{{ desc | markdownify}}</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-onc-4at-attention-vs.html"
+                  title="ValueSet/onc-4at-attention-vs">4AT Attention Value Set</a>
+            </td>
+            <td>{% capture desc %}Scoring for Months Backwards test{% endcapture %}
+{{ desc | markdownify}}</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-acvpu-vs.html" title="ValueSet/acvpu-vs">ACVPU Value Set</a>
             </td>
             <td>{% capture desc %}ACVPU consciousness level codes{% endcapture %}
+{{ desc | markdownify}}</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-onc-cfs-vs.html" title="ValueSet/onc-cfs-vs">Clinical Frailty Scale Value Set</a>
+            </td>
+            <td>{% capture desc %}Codes for Rockwood Clinical Frailty Scale (1-9){% endcapture %}
 {{ desc | markdownify}}</td>
          </tr>
          <tr>
@@ -320,6 +414,13 @@
                   title="ValueSet/inspired-oxygen-vs">Inspired Oxygen Value Set</a>
             </td>
             <td>{% capture desc %}Codes for inspired oxygen status{% endcapture %}
+{{ desc | markdownify}}</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-onc-mca-vs.html" title="ValueSet/onc-mca-vs">Mental Capacity Finding Value Set</a>
+            </td>
+            <td>{% capture desc %}Codes indicating presence or absence of capacity{% endcapture %}
 {{ desc | markdownify}}</td>
          </tr>
          <tr>

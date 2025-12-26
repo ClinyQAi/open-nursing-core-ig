@@ -50,6 +50,9 @@ Your IG has excellent coverage of nursing assessments:
 - **Frailty & Delirium Module**:
   - `ONCClinicalFrailtyScale`: Rockwood 1-9
   - `ONC4ATDelirium`: Standard delirium assessment
+- **Equality & Mental Capacity Module**:
+  - `ONCReasonableAdjustment`: Equality Act compliance
+  - `ONCMentalCapacity`: Legal safeguard for decision making
 
 ---
 

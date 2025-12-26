@@ -9,6 +9,7 @@
 [ONCBloodPressure]: StructureDefinition-onc-blood-pressure.html
 [ONCBodyTemperature]: StructureDefinition-onc-body-temperature.html
 [ONCBradenScaleAssessment]: StructureDefinition-onc-braden-scale-assessment.html
+[ONCBristolStoolChart]: StructureDefinition-onc-bristol-stool-chart.html
 [ONCClinicalFrailtyScale]: StructureDefinition-onc-clinical-frailty-scale.html
 [ClinicalFrailtyScaleVS]: ValueSet-onc-cfs-vs.html
 [example-goal-evaluation]: Observation-example-goal-evaluation.html

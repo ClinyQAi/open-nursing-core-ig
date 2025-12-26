@@ -1,6 +1,6 @@
 Output File                                               Name                          Type        FSH File                        Lines
 CodeSystem-onc-monk-scale.json                            ONCMonkScale                  CodeSystem  onc-equity.fsh                  26 - 38
-CodeSystem-onc-observation-codes.json                     ONCObservationCodes           CodeSystem  onc-equity.fsh                  40 - 97
+CodeSystem-onc-observation-codes.json                     ONCObservationCodes           CodeSystem  onc-equity.fsh                  40 - 105
 CodeSystem-onc-problem-type.json                          ONCProblemType                CodeSystem  onc-terminology.fsh             64 - 73
 Condition-example-nursing-problem.json                    example-nursing-problem       Instance    onc-master-examples.fsh         79 - 85
 Goal-example-patient-goal.json                            example-patient-goal          Instance    onc-master-examples.fsh         87 - 93
@@ -19,6 +19,7 @@ StructureDefinition-onc-barthel-index.json                ONCBarthelIndex       
 StructureDefinition-onc-blood-pressure.json               ONCBloodPressure              Profile     onc-news2-full.fsh              101 - 119
 StructureDefinition-onc-body-temperature.json             ONCBodyTemperature            Profile     onc-news2-full.fsh              90 - 99
 StructureDefinition-onc-braden-scale-assessment.json      ONCBradenScaleAssessment      Profile     onc-profiles.fsh                17 - 48
+StructureDefinition-onc-bristol-stool-chart.json          ONCBristolStoolChart          Profile     onc-bristol.fsh                 4 - 21
 StructureDefinition-onc-clinical-frailty-scale.json       ONCClinicalFrailtyScale       Profile     onc-frailty.fsh                 10 - 23
 StructureDefinition-onc-glasgow-coma-scale.json           ONCGlasgowComaScale           Profile     onc-glasgow-coma-scale.fsh      4 - 38
 StructureDefinition-onc-goal-evaluation.json              ONCGoalEvaluation             Profile     onc-profiles.fsh                84 - 90
@@ -26,7 +27,7 @@ StructureDefinition-onc-heart-rate.json                   ONCHeartRate          
 StructureDefinition-onc-inspired-oxygen.json              ONCInspiredOxygen             Profile     onc-news2-full.fsh              151 - 160
 StructureDefinition-onc-mental-capacity.json              ONCMentalCapacity             Profile     onc-mental-capacity.fsh         7 - 22
 StructureDefinition-onc-mmse.json                         ONCMMSE                       Profile     onc-mmse.fsh                    4 - 17
-StructureDefinition-onc-monk-skintone-observation.json    ONCMonkSkinToneObservation    Profile     onc-equity.fsh                  104 - 111
+StructureDefinition-onc-monk-skintone-observation.json    ONCMonkSkinToneObservation    Profile     onc-equity.fsh                  112 - 119
 StructureDefinition-onc-morse-fall-scale.json             ONCMorseFallScale             Profile     onc-additional-assessments.fsh  4 - 17
 StructureDefinition-onc-must-score.json                   ONCMUSTScore                  Profile     onc-must-score.fsh              4 - 38
 StructureDefinition-onc-news2-score.json                  ONCNEWS2Score                 Profile     onc-news2-full.fsh              8 - 22
@@ -40,7 +41,7 @@ StructureDefinition-onc-pain-assessment.json              ONCPainAssessment     
 StructureDefinition-onc-patient-goal.json                 ONCPatientGoal                Profile     onc-profiles.fsh                62 - 70
 StructureDefinition-onc-patient-story.json                ONCPatientStory               Profile     onc-relational.fsh              28 - 40
 StructureDefinition-onc-qsofa.json                        ONCqSOFA                      Profile     onc-additional-assessments.fsh  27 - 40
-StructureDefinition-onc-reasonable-adjustment.json        ONCReasonableAdjustment       Profile     onc-equity.fsh                  116 - 129
+StructureDefinition-onc-reasonable-adjustment.json        ONCReasonableAdjustment       Profile     onc-equity.fsh                  124 - 137
 StructureDefinition-onc-relational-observation.json       ONCRelationalObservation      Profile     onc-relational.fsh              45 - 58
 StructureDefinition-onc-respiration-rate.json             ONCRespirationRate            Profile     onc-news2-full.fsh              68 - 77
 StructureDefinition-onc-skintone-observation.json         ONCSkinToneObservation        Profile     onc-equity.fsh                  17 - 24
@@ -61,7 +62,7 @@ ValueSet-onc-4at-amt4-vs.json                             AMT4VS                
 ValueSet-onc-4at-attention-vs.json                        AttentionVS                   ValueSet    onc-delirium.fsh                109 - 115
 ValueSet-onc-cfs-vs.json                                  ClinicalFrailtyScaleVS        ValueSet    onc-frailty.fsh                 25 - 37
 ValueSet-onc-mca-vs.json                                  MentalCapacityVS              ValueSet    onc-mental-capacity.fsh         24 - 30
-ValueSet-onc-monk-scale-vs.json                           ONCMonkScaleVS                ValueSet    onc-equity.fsh                  99 - 102
+ValueSet-onc-monk-scale-vs.json                           ONCMonkScaleVS                ValueSet    onc-equity.fsh                  107 - 110
 ValueSet-pain-assessment-code-vs.json                     PainAssessmentCodeValueSet    ValueSet    onc-clinical-assessments.fsh    27 - 32
 ValueSet-problem-category-valueset.json                   ProblemCategoryValueSet       ValueSet    onc-terminology.fsh             33 - 38
 ValueSet-skintone-vs.json                                 SkinToneVS                    ValueSet    onc-terminology.fsh             40 - 50
