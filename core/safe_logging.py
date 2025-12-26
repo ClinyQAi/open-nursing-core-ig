@@ -70,8 +70,8 @@ def mask_identifier(identifier: str, prefix: str = "id") -> str:
     """
     Mask an identifier for safe logging.
     
-    Shows first 3 and last 4 characters, masks the middle portion.
-    For short identifiers, shows only masked version.
+    For identifiers with 8 or more characters, shows the prefix and last 4 characters.
+    For shorter identifiers, shows only the prefix and masks all characters.
     
     Args:
         identifier: The identifier to mask (patient_id, username, etc.)
@@ -91,9 +91,11 @@ def mask_identifier(identifier: str, prefix: str = "id") -> str:
     if not identifier:
         return f"{prefix}_****"
     
-    # Always mask the full identifier content; do not expose any characters.
-    # We still accept any type for identifier to keep the API compatible,
-    # but we never use its value in the returned string.
+    # For identifiers with 8 or more characters, show last 4 digits
+    if len(identifier) >= 8:
+        return f"{prefix}_****{identifier[-4:]}"
+    
+    # For shorter identifiers, mask everything
     return f"{prefix}_****"
 
 
@@ -112,7 +114,7 @@ def safe_log_info(
         
     Example:
         >>> safe_log_info(logger, "Processing patient {patient_id}", 
-        ...               patient_id=("12345", "pat"))
+        ...               patient_id=("patient12345", "pat"))
         # Logs: "Processing patient pat_****2345"
     """
     masked_values = {}
@@ -141,7 +143,7 @@ def safe_log_warning(
         
     Example:
         >>> safe_log_warning(logger, "No data for patient {patient_id}", 
-        ...                  patient_id=("67890", "pat"))
+        ...                  patient_id=("patient67890", "pat"))
         # Logs: "No data for patient pat_****7890"
     """
     masked_values = {}

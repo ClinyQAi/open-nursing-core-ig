@@ -24,6 +24,8 @@ try:
 except ImportError:
     FHIR_AVAILABLE = False
 
+from core.safe_logging import mask_identifier
+
 logger = logging.getLogger(__name__)
 
 
@@ -545,7 +547,6 @@ class EHRIntegrationManager:
                 ),
                 "goals": self.fhir_client.get_patient_goals(patient_id),
             }
-            from core.safe_logging import mask_identifier
             logger.info(f"Synced patient data for {mask_identifier(patient_id, 'pat')}")
             return patient_data
         except Exception as e:
