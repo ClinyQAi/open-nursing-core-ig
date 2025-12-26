@@ -544,7 +544,7 @@ class EHRIntegrationManager:
                 ),
                 "goals": self.fhir_client.get_patient_goals(patient_id),
             }
-            logger.info(f"Synced patient data for {patient_id}")
+            logger.info("Synced patient data successfully")
             return patient_data
         except Exception as e:
             from core.safe_logging import log_exception_safe
