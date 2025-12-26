@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-barthel-index.cs
   "name" : "ONCBarthelIndex",
   "title" : "Barthel Index",
   "status" : "active",
-  "date" : "2025-12-26T01:02:00+00:00",
+  "date" : "2025-12-26T01:05:32+00:00",
   "description" : "Barthel Index for measuring independence in activities of daily living (ADL). Score 0-20=total dependency, 91-99=slight dependency, 100=independent. Total range 0-100.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
