@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="news2-subscore-code-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet news2-subscore-code-vs</b></p><a name="news2-subscore-code-vs"> </a><a name="hcnews2-subscore-code-vs"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/1104301000000104">1104301000000104</a></td><td>Royal College of Physicians National Early Warning Score 2 - pulse score</td></tr><tr><td><a href="http://snomed.info/id/1104311000000102">1104311000000102</a></td><td>Royal College of Physicians National Early Warning Score 2 - respiration rate score</td></tr><tr><td><a href="http://snomed.info/id/1104331000000106">1104331000000106</a></td><td>Royal College of Physicians National Early Warning Score 2 - temperature score</td></tr><tr><td><a href="http://snomed.info/id/1104351000000100">1104351000000100</a></td><td>Royal College of Physicians National Early Warning Score 2 - ACVPU score</td></tr><tr><td><a href="http://snomed.info/id/1104341000000103">1104341000000103</a></td><td>Royal College of Physicians National Early Warning Score 2 - oxygen saturation scale 1 score</td></tr><tr><td><a href="http://snomed.info/id/1104321000000108">1104321000000108</a></td><td>Royal College of Physicians National Early Warning Score 2 - systolic blood pressure score</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/news2-subscore-code-vs"/>
+  <version value="1.0.0"/>
+  <name value="NEWS2SubscoreCodeValueSet"/>
+  <title value="NEWS2 Sub-Score Codes"/>
+  <status value="active"/>
+  <date value="2025-12-26T00:02:21+00:00"/>
+  <description value="SNOMED codes for NEWS2 sub-scores"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="1104301000000104"/>
+        <display value="Royal College of Physicians National Early Warning Score 2 - pulse score"/>
+      </concept>
+      <concept>
+        <code value="1104311000000102"/>
+        <display value="Royal College of Physicians National Early Warning Score 2 - respiration rate score"/>
+      </concept>
+      <concept>
+        <code value="1104331000000106"/>
+        <display value="Royal College of Physicians National Early Warning Score 2 - temperature score"/>
+      </concept>
+      <concept>
+        <code value="1104351000000100"/>
+        <display value="Royal College of Physicians National Early Warning Score 2 - ACVPU score"/>
+      </concept>
+      <concept>
+        <code value="1104341000000103"/>
+        <display value="Royal College of Physicians National Early Warning Score 2 - oxygen saturation scale 1 score"/>
+      </concept>
+      <concept>
+        <code value="1104321000000108"/>
+        <display value="Royal College of Physicians National Early Warning Score 2 - systolic blood pressure score"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

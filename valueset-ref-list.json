@@ -1,6 +1,18 @@
 {
   "codeSystems" : [
     {
+      "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/acvpu-vs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ACVPUValueSet",
+      "title" : "ACVPU Value Set",
+      "description" : "ACVPU consciousness level codes",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-onc-acvpu.html" : "ACVPU Consciousness Level"
+    },
+    {
       "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset",
       "version" : "1.0.0",
       "status" : "active",
@@ -20,6 +32,42 @@
       "title" : "Housing Status Value Set",
       "description" : "Value set for patient housing status",
       "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/inspired-oxygen-vs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "InspiredOxygenValueSet",
+      "title" : "Inspired Oxygen Value Set",
+      "description" : "Codes for inspired oxygen status",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-onc-inspired-oxygen.html" : "Inspired Oxygen"
+    },
+    {
+      "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/news2-code-vs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "NEWS2CodeValueSet",
+      "title" : "NEWS2 Code Value Set",
+      "description" : "LOINC and SNOMED codes for NEWS2",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-onc-news2-score.html" : "NEWS2 Score"
+    },
+    {
+      "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/news2-subscore-code-vs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "NEWS2SubscoreCodeValueSet",
+      "title" : "NEWS2 Sub-Score Codes",
+      "description" : "SNOMED codes for NEWS2 sub-scores",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-onc-news2-subscore.html" : "NEWS2 Sub-Score"
     },
     {
       "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-intervention-valueset",

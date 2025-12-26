@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "OpenNursingCoreIG"] ; # 
   fhir:title [ fhir:v "Open Nursing Core FHIR Implementation Guide (ONC-IG)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-12-25T23:47:50+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-26T00:02:21+00:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules."] ; # 
   fhir:packageId [ fhir:v "onc.ig"] ; # 
   fhir:license [ fhir:v "MIT"] ; # 
@@ -1286,6 +1286,90 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-acvpu> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-acvpu" ]
+       ] ;
+       fhir:name [ fhir:v "ACVPU Consciousness Level" ] ;
+       fhir:description [ fhir:v "ACVPU consciousness level assessment for NEWS2 (Alert, Confusion, Voice, Pain, Unresponsive)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/acvpu-vs> ;
+         fhir:reference [ fhir:v "ValueSet/acvpu-vs" ]
+       ] ;
+       fhir:name [ fhir:v "ACVPU Value Set" ] ;
+       fhir:description [ fhir:v "ACVPU consciousness level codes" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-blood-pressure> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-blood-pressure" ]
+       ] ;
+       fhir:name [ fhir:v "Blood Pressure" ] ;
+       fhir:description [ fhir:v "Blood pressure observation for NEWS2 (systolic BP used for scoring)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-body-temperature> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-body-temperature" ]
+       ] ;
+       fhir:name [ fhir:v "Body Temperature" ] ;
+       fhir:description [ fhir:v "Body temperature observation for NEWS2" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-braden-scale-assessment> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-braden-scale-assessment" ]
        ] ;
@@ -1450,6 +1534,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-heart-rate> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-heart-rate" ]
+       ] ;
+       fhir:name [ fhir:v "Heart Rate" ] ;
+       fhir:description [ fhir:v "Heart rate (pulse) observation for NEWS2" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "ValueSet"
          ]
        ] ) ;
@@ -1459,6 +1564,48 @@
        ] ;
        fhir:name [ fhir:v "Housing Status Value Set" ] ;
        fhir:description [ fhir:v "Value set for patient housing status" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-inspired-oxygen> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-inspired-oxygen" ]
+       ] ;
+       fhir:name [ fhir:v "Inspired Oxygen" ] ;
+       fhir:description [ fhir:v "Inspired oxygen observation for NEWS2 (air vs supplemental oxygen)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/inspired-oxygen-vs> ;
+         fhir:reference [ fhir:v "ValueSet/inspired-oxygen-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Inspired Oxygen Value Set" ] ;
+       fhir:description [ fhir:v "Codes for inspired oxygen status" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1551,6 +1698,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/news2-code-vs> ;
+         fhir:reference [ fhir:v "ValueSet/news2-code-vs" ]
+       ] ;
+       fhir:name [ fhir:v "NEWS2 Code Value Set" ] ;
+       fhir:description [ fhir:v "LOINC and SNOMED codes for NEWS2" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -1559,7 +1727,49 @@
          fhir:reference [ fhir:v "StructureDefinition/onc-news2-score" ]
        ] ;
        fhir:name [ fhir:v "NEWS2 Score" ] ;
-       fhir:description [ fhir:v "National Early Warning Score 2 (NEWS2) for detecting clinical deterioration" ] ;
+       fhir:description [ fhir:v "National Early Warning Score 2 (NEWS2) for detecting clinical deterioration. Fully aligned with NHS CareConnect-NEWS2-Observation-1." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-news2-subscore> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-news2-subscore" ]
+       ] ;
+       fhir:name [ fhir:v "NEWS2 Sub-Score" ] ;
+       fhir:description [ fhir:v "Individual parameter sub-score for NEWS2 (0-3 for most parameters). References the related vital sign observation." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/news2-subscore-code-vs> ;
+         fhir:reference [ fhir:v "ValueSet/news2-subscore-code-vs" ]
+       ] ;
+       fhir:name [ fhir:v "NEWS2 Sub-Score Codes" ] ;
+       fhir:description [ fhir:v "SNOMED codes for NEWS2 sub-scores" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1782,6 +1992,27 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-oxygen-saturation> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-oxygen-saturation" ]
+       ] ;
+       fhir:name [ fhir:v "Oxygen Saturation" ] ;
+       fhir:description [ fhir:v "Oxygen saturation (SpO2) observation for NEWS2" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-pain-assessment> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-pain-assessment" ]
        ] ;
@@ -1911,6 +2142,27 @@
        ] ;
        fhir:name [ fhir:v "Problem Type CodeSystem" ] ;
        fhir:description [ fhir:v "Code system for categorizing types of nursing problems" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-respiration-rate> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-respiration-rate" ]
+       ] ;
+       fhir:name [ fhir:v "Respiration Rate" ] ;
+       fhir:description [ fhir:v "Respiration rate observation for NEWS2" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

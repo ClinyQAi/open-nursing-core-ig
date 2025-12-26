@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ImplementationGuide/onc.ig | *Version*:1.0.0 |
-| Active as of 2025-12-25 | *Computable Name*:OpenNursingCoreIG |
+| Active as of 2025-12-26 | *Computable Name*:OpenNursingCoreIG |
 
 # Open Nursing Core FHIR Implementation Guide
 
@@ -65,7 +65,7 @@ For questions or contributions, visit our [GitHub repository](https://github.com
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "active",
-  "date" : "2025-12-25T23:47:50+00:00",
+  "date" : "2025-12-26T00:02:21+00:00",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules.",
   "packageId" : "onc.ig",
   "license" : "MIT",
@@ -762,6 +762,62 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           }
         ],
         "reference" : {
+          "reference" : "StructureDefinition/onc-acvpu"
+        },
+        "name" : "ACVPU Consciousness Level",
+        "description" : "ACVPU consciousness level assessment for NEWS2 (Alert, Confusion, Voice, Pain, Unresponsive)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/acvpu-vs"
+        },
+        "name" : "ACVPU Value Set",
+        "description" : "ACVPU consciousness level codes",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-blood-pressure"
+        },
+        "name" : "Blood Pressure",
+        "description" : "Blood pressure observation for NEWS2 (systolic BP used for scoring)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-body-temperature"
+        },
+        "name" : "Body Temperature",
+        "description" : "Body temperature observation for NEWS2",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
           "reference" : "StructureDefinition/onc-braden-scale-assessment"
         },
         "name" : "Braden Scale Assessment",
@@ -866,6 +922,20 @@ For questions or contributions, visit our [GitHub repository](https://github.com
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-heart-rate"
+        },
+        "name" : "Heart Rate",
+        "description" : "Heart rate (pulse) observation for NEWS2",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "ValueSet"
           }
         ],
@@ -874,6 +944,34 @@ For questions or contributions, visit our [GitHub repository](https://github.com
         },
         "name" : "Housing Status Value Set",
         "description" : "Value set for patient housing status",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-inspired-oxygen"
+        },
+        "name" : "Inspired Oxygen",
+        "description" : "Inspired oxygen observation for NEWS2 (air vs supplemental oxygen)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/inspired-oxygen-vs"
+        },
+        "name" : "Inspired Oxygen Value Set",
+        "description" : "Codes for inspired oxygen status",
         "exampleBoolean" : false
       },
       {
@@ -932,6 +1030,20 @@ For questions or contributions, visit our [GitHub repository](https://github.com
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/news2-code-vs"
+        },
+        "name" : "NEWS2 Code Value Set",
+        "description" : "LOINC and SNOMED codes for NEWS2",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:resource"
           }
         ],
@@ -939,7 +1051,35 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           "reference" : "StructureDefinition/onc-news2-score"
         },
         "name" : "NEWS2 Score",
-        "description" : "National Early Warning Score 2 (NEWS2) for detecting clinical deterioration",
+        "description" : "National Early Warning Score 2 (NEWS2) for detecting clinical deterioration. Fully aligned with NHS CareConnect-NEWS2-Observation-1.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-news2-subscore"
+        },
+        "name" : "NEWS2 Sub-Score",
+        "description" : "Individual parameter sub-score for NEWS2 (0-3 for most parameters). References the related vital sign observation.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/news2-subscore-code-vs"
+        },
+        "name" : "NEWS2 Sub-Score Codes",
+        "description" : "SNOMED codes for NEWS2 sub-scores",
         "exampleBoolean" : false
       },
       {
@@ -1084,6 +1224,20 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           }
         ],
         "reference" : {
+          "reference" : "StructureDefinition/onc-oxygen-saturation"
+        },
+        "name" : "Oxygen Saturation",
+        "description" : "Oxygen saturation (SpO2) observation for NEWS2",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
           "reference" : "StructureDefinition/onc-pain-assessment"
         },
         "name" : "Pain Assessment (NRS 0-10)",
@@ -1169,6 +1323,20 @@ For questions or contributions, visit our [GitHub repository](https://github.com
         },
         "name" : "Problem Type CodeSystem",
         "description" : "Code system for categorizing types of nursing problems",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-respiration-rate"
+        },
+        "name" : "Respiration Rate",
+        "description" : "Respiration rate observation for NEWS2",
         "exampleBoolean" : false
       },
       {

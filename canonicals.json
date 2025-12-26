@@ -42,6 +42,27 @@
     "name" : "ObservationGoalReference"
   },
   {
+    "id" : "onc-acvpu",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-acvpu",
+    "version" : "1.0.0",
+    "name" : "ONCACVPU"
+  },
+  {
+    "id" : "onc-blood-pressure",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-blood-pressure",
+    "version" : "1.0.0",
+    "name" : "ONCBloodPressure"
+  },
+  {
+    "id" : "onc-body-temperature",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-body-temperature",
+    "version" : "1.0.0",
+    "name" : "ONCBodyTemperature"
+  },
+  {
     "id" : "onc-braden-scale-assessment",
     "type" : "StructureDefinition",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-braden-scale-assessment",
@@ -56,6 +77,20 @@
     "name" : "ONCGoalEvaluation"
   },
   {
+    "id" : "onc-heart-rate",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-heart-rate",
+    "version" : "1.0.0",
+    "name" : "ONCHeartRate"
+  },
+  {
+    "id" : "onc-inspired-oxygen",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-inspired-oxygen",
+    "version" : "1.0.0",
+    "name" : "ONCInspiredOxygen"
+  },
+  {
     "id" : "onc-monk-skintone-observation",
     "type" : "StructureDefinition",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-monk-skintone-observation",
@@ -68,6 +103,13 @@
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-news2-score",
     "version" : "1.0.0",
     "name" : "ONCNEWS2Score"
+  },
+  {
+    "id" : "onc-news2-subscore",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-news2-subscore",
+    "version" : "1.0.0",
+    "name" : "ONCNEWS2Subscore"
   },
   {
     "id" : "onc-nhs-patient",
@@ -98,6 +140,13 @@
     "name" : "ONCNursingProblem"
   },
   {
+    "id" : "onc-oxygen-saturation",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-oxygen-saturation",
+    "version" : "1.0.0",
+    "name" : "ONCOxygenSaturation"
+  },
+  {
     "id" : "onc-pain-assessment",
     "type" : "StructureDefinition",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-pain-assessment",
@@ -110,6 +159,13 @@
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-goal",
     "version" : "1.0.0",
     "name" : "ONCPatientGoal"
+  },
+  {
+    "id" : "onc-respiration-rate",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-respiration-rate",
+    "version" : "1.0.0",
+    "name" : "ONCRespirationRate"
   },
   {
     "id" : "onc-skintone-observation",
@@ -126,6 +182,13 @@
     "name" : "ONCWoundAssessment"
   },
   {
+    "id" : "acvpu-vs",
+    "type" : "ValueSet",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/acvpu-vs",
+    "version" : "1.0.0",
+    "name" : "ACVPUValueSet"
+  },
+  {
     "id" : "goal-evaluation-valueset",
     "type" : "ValueSet",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset",
@@ -138,6 +201,27 @@
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/housing-status-vs",
     "version" : "1.0.0",
     "name" : "HousingStatusVS"
+  },
+  {
+    "id" : "inspired-oxygen-vs",
+    "type" : "ValueSet",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/inspired-oxygen-vs",
+    "version" : "1.0.0",
+    "name" : "InspiredOxygenValueSet"
+  },
+  {
+    "id" : "news2-code-vs",
+    "type" : "ValueSet",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/news2-code-vs",
+    "version" : "1.0.0",
+    "name" : "NEWS2CodeValueSet"
+  },
+  {
+    "id" : "news2-subscore-code-vs",
+    "type" : "ValueSet",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/news2-subscore-code-vs",
+    "version" : "1.0.0",
+    "name" : "NEWS2SubscoreCodeValueSet"
   },
   {
     "id" : "nursing-intervention-valueset",

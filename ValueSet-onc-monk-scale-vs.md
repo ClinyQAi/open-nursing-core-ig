@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-monk-scale-vs | *Version*:1.0.0 |
-| Active as of 2025-12-25 | *Computable Name*:ONCMonkScaleVS |
+| Active as of 2025-12-26 | *Computable Name*:ONCMonkScaleVS |
 
  **References** 
 
@@ -47,7 +47,7 @@
   "name" : "ONCMonkScaleVS",
   "title" : "Monk Skin Tone Scale ValueSet",
   "status" : "active",
-  "date" : "2025-12-25T23:47:50+00:00",
+  "date" : "2025-12-26T00:02:21+00:00",
   "compose" : {
     "include" : [
       {

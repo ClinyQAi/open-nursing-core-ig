@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-problem-valueset | *Version*:1.0.0 |
-| Active as of 2025-12-25 | *Computable Name*:NursingProblemValueSet |
+| Active as of 2025-12-26 | *Computable Name*:NursingProblemValueSet |
 
  
 Value set for nursing problems and diagnoses 
@@ -51,7 +51,7 @@ Value set for nursing problems and diagnoses
   "title" : "Nursing Problem Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-25T23:47:50+00:00",
+  "date" : "2025-12-26T00:02:21+00:00",
   "description" : "Value set for nursing problems and diagnoses",
   "compose" : {
     "include" : [

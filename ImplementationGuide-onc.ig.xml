@@ -11,7 +11,7 @@
   <name value="OpenNursingCoreIG"/>
   <title value="Open Nursing Core FHIR Implementation Guide (ONC-IG)"/>
   <status value="active"/>
-  <date value="2025-12-25T23:47:50+00:00"/>
+  <date value="2025-12-26T00:02:21+00:00"/>
   <description value="Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules."/>
   <packageId value="onc.ig"/>
   <license value="MIT"/>
@@ -441,6 +441,50 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/onc-acvpu"/>
+      </reference>
+      <name value="ACVPU Consciousness Level"/>
+      <description value="ACVPU consciousness level assessment for NEWS2 (Alert, Confusion, Voice, Pain, Unresponsive)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/acvpu-vs"/>
+      </reference>
+      <name value="ACVPU Value Set"/>
+      <description value="ACVPU consciousness level codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onc-blood-pressure"/>
+      </reference>
+      <name value="Blood Pressure"/>
+      <description value="Blood pressure observation for NEWS2 (systolic BP used for scoring)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onc-body-temperature"/>
+      </reference>
+      <name value="Body Temperature"/>
+      <description value="Body temperature observation for NEWS2"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/onc-braden-scale-assessment"/>
       </reference>
       <name value="Braden Scale Assessment"/>
@@ -522,6 +566,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onc-heart-rate"/>
+      </reference>
+      <name value="Heart Rate"/>
+      <description value="Heart rate (pulse) observation for NEWS2"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -529,6 +584,28 @@
       </reference>
       <name value="Housing Status Value Set"/>
       <description value="Value set for patient housing status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onc-inspired-oxygen"/>
+      </reference>
+      <name value="Inspired Oxygen"/>
+      <description value="Inspired oxygen observation for NEWS2 (air vs supplemental oxygen)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/inspired-oxygen-vs"/>
+      </reference>
+      <name value="Inspired Oxygen Value Set"/>
+      <description value="Codes for inspired oxygen status"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -573,13 +650,46 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/news2-code-vs"/>
+      </reference>
+      <name value="NEWS2 Code Value Set"/>
+      <description value="LOINC and SNOMED codes for NEWS2"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/onc-news2-score"/>
       </reference>
       <name value="NEWS2 Score"/>
-      <description value="National Early Warning Score 2 (NEWS2) for detecting clinical deterioration"/>
+      <description value="National Early Warning Score 2 (NEWS2) for detecting clinical deterioration. Fully aligned with NHS CareConnect-NEWS2-Observation-1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onc-news2-subscore"/>
+      </reference>
+      <name value="NEWS2 Sub-Score"/>
+      <description value="Individual parameter sub-score for NEWS2 (0-3 for most parameters). References the related vital sign observation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/news2-subscore-code-vs"/>
+      </reference>
+      <name value="NEWS2 Sub-Score Codes"/>
+      <description value="SNOMED codes for NEWS2 sub-scores"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -691,6 +801,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/onc-oxygen-saturation"/>
+      </reference>
+      <name value="Oxygen Saturation"/>
+      <description value="Oxygen saturation (SpO2) observation for NEWS2"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/onc-pain-assessment"/>
       </reference>
       <name value="Pain Assessment (NRS 0-10)"/>
@@ -758,6 +879,17 @@
       </reference>
       <name value="Problem Type CodeSystem"/>
       <description value="Code system for categorizing types of nursing problems"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onc-respiration-rate"/>
+      </reference>
+      <name value="Respiration Rate"/>
+      <description value="Respiration rate observation for NEWS2"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

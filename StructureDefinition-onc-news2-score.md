@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-news2-score | *Version*:1.0.0 |
-| Active as of 2025-12-25 | *Computable Name*:ONCNEWS2Score |
+| Active as of 2025-12-26 | *Computable Name*:ONCNEWS2Score |
 
  
-National Early Warning Score 2 (NEWS2) for detecting clinical deterioration 
+National Early Warning Score 2 (NEWS2) for detecting clinical deterioration. Fully aligned with NHS CareConnect-NEWS2-Observation-1. 
 
 **Usages:**
 
@@ -41,8 +41,8 @@ Other representations of profile: [CSV](StructureDefinition-onc-news2-score.csv)
   "name" : "ONCNEWS2Score",
   "title" : "NEWS2 Score",
   "status" : "active",
-  "date" : "2025-12-25T23:47:50+00:00",
-  "description" : "National Early Warning Score 2 (NEWS2) for detecting clinical deterioration",
+  "date" : "2025-12-26T00:02:21+00:00",
+  "description" : "National Early Warning Score 2 (NEWS2) for detecting clinical deterioration. Fully aligned with NHS CareConnect-NEWS2-Observation-1.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -96,16 +96,11 @@ Other representations of profile: [CSV](StructureDefinition-onc-news2-score.csv)
       {
         "id" : "Observation.code",
         "path" : "Observation.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "http://loinc.org",
-              "code" : "88330-6",
-              "display" : "National Early Warning Score [NEWS]"
-            }
-          ]
-        },
-        "mustSupport" : true
+        "mustSupport" : true,
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/news2-code-vs"
+        }
       },
       {
         "id" : "Observation.value[x]",

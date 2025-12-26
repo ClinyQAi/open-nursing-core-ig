@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale | *Version*:1.0.0 |
-| Active as of 2025-12-25 | *Computable Name*:ONCMonkScale |
+| Active as of 2025-12-26 | *Computable Name*:ONCMonkScale |
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
@@ -28,7 +28,7 @@
   "name" : "ONCMonkScale",
   "title" : "Monk Skin Tone Scale CodeSystem",
   "status" : "active",
-  "date" : "2025-12-25T23:47:50+00:00",
+  "date" : "2025-12-26T00:02:21+00:00",
   "content" : "complete",
   "count" : 10,
   "concept" : [

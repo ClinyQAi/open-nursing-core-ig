@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="news2-code-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet news2-code-vs</b></p><a name="news2-code-vs"> </a><a name="hcnews2-code-vs"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/88330-6/">88330-6</a></td><td>National Early Warning Score [NEWS]</td></tr></table></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/1104051000000101">1104051000000101</a></td><td>National Early Warning Score 2 (observable entity)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/news2-code-vs"/>
+  <version value="1.0.0"/>
+  <name value="NEWS2CodeValueSet"/>
+  <title value="NEWS2 Code Value Set"/>
+  <status value="active"/>
+  <date value="2025-12-26T00:02:21+00:00"/>
+  <description value="LOINC and SNOMED codes for NEWS2"/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="88330-6"/>
+        <display value="National Early Warning Score [NEWS]"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="1104051000000101"/>
+        <display value="National Early Warning Score 2 (observable entity)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

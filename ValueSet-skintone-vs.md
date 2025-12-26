@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/skintone-vs | *Version*:1.0.0 |
-| Active as of 2025-12-25 | *Computable Name*:SkinToneVS |
+| Active as of 2025-12-26 | *Computable Name*:SkinToneVS |
 
  
 Value set for Fitzpatrick skin type classifications 
@@ -51,7 +51,7 @@ Value set for Fitzpatrick skin type classifications
   "title" : "Fitzpatrick Skin Tone Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-25T23:47:50+00:00",
+  "date" : "2025-12-26T00:02:21+00:00",
   "description" : "Value set for Fitzpatrick skin type classifications",
   "compose" : {
     "include" : [

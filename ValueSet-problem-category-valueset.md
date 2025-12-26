@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/problem-category-valueset | *Version*:1.0.0 |
-| Active as of 2025-12-25 | *Computable Name*:ProblemCategoryValueSet |
+| Active as of 2025-12-26 | *Computable Name*:ProblemCategoryValueSet |
 
  
 Value set for categorizing nursing problems 
@@ -51,7 +51,7 @@ Value set for categorizing nursing problems
   "title" : "Problem Category Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-25T23:47:50+00:00",
+  "date" : "2025-12-26T00:02:21+00:00",
   "description" : "Value set for categorizing nursing problems",
   "compose" : {
     "include" : [
