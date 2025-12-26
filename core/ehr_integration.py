@@ -80,8 +80,8 @@ class FHIRAPIClient:
             response = requests.get(url, headers=self.headers, timeout=10)
 
             if response.status_code == 200:
-                from core.safe_logging import mask_identifier
-                logger.info(f"Retrieved patient: {mask_identifier(patient_id, 'pat')}")
+                from core.safe_logging import safe_log_info
+                safe_log_info(logger, "Retrieved patient successfully")
                 return response.json()
             else:
                 logger.warning(
