@@ -49,6 +49,7 @@
 [ONCNHSPatient]: StructureDefinition-onc-nhs-patient.html
 [ONCObservationCodes]: CodeSystem-onc-observation-codes.html
 [ONCNursingAssessment]: StructureDefinition-onc-nursing-assessment.html
+[ONCOralHealth]: StructureDefinition-onc-oral-health.html
 [ONCOxygenSaturation]: StructureDefinition-onc-oxygen-saturation.html
 [ONCPainAssessment]: StructureDefinition-onc-pain-assessment.html
 [PainAssessmentCodeValueSet]: ValueSet-pain-assessment-code-vs.html
@@ -64,8 +65,11 @@
 [ONCReasonableAdjustment]: StructureDefinition-onc-reasonable-adjustment.html
 [ONCRelationalObservation]: StructureDefinition-onc-relational-observation.html
 [ONCRespirationRate]: StructureDefinition-onc-respiration-rate.html
+[ONCSeizureRecord]: StructureDefinition-onc-seizure-record.html
 [ONCSkinToneObservation]: StructureDefinition-onc-skintone-observation.html
+[ONCSleepPattern]: StructureDefinition-onc-sleep-pattern.html
 [UKCoreEthnicCategory]: StructureDefinition-UKCore-Extension-EthnicCategory.html
+[ONCUrinalysis]: StructureDefinition-onc-urinalysis.html
 [ONCWaterlowScore]: StructureDefinition-onc-waterlow-score.html
 [ONCWhatMattersToMe]: StructureDefinition-onc-what-matters.html
 [ONCWoundAssessment]: StructureDefinition-onc-wound-assessment.html

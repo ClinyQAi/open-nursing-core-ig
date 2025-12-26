@@ -416,6 +416,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/onc-oral-health"
+        },
+        "name": "Oral Health Assessment",
+        "description": "Assessment of oral cavity health. Critical for prevention of pneumonia in frail elderly and maintaining nutrition/hydration.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/onc-oxygen-saturation"
         },
         "name": "Oxygen Saturation",
@@ -534,6 +542,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/onc-seizure-record"
+        },
+        "name": "Seizure Record",
+        "description": "Record of a specific seizure event, including type, duration, triggers, and recovery phases. Essential for epilepsy management and identifying patterns.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/onc-skintone-observation"
         },
         "name": "Skin Tone Observation",
@@ -542,10 +558,26 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/onc-sleep-pattern"
+        },
+        "name": "Sleep Pattern",
+        "description": "Observation of sleep quality, duration, and disturbances. Sleep pattern disturbance is a key indicator for delirium and general wellbeing.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/UKCore-Extension-EthnicCategory"
         },
         "name": "UK Core Ethnic Category",
         "description": "An extension to record the ethnic category of a patient, as per UK Core standards.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-urinalysis"
+        },
+        "name": "Urinalysis",
+        "description": "Point-of-care urine dipstick test results. Used to screen for urinary tract infection (UTI), diabetes (glucose/ketones), and kidney health.",
         "exampleBoolean": false
       },
       {

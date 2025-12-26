@@ -132,7 +132,48 @@ Description: "Custom observation codes for Open Nursing Core"
 * #abc-consequence "Consequence" "What happened immediately after (response/outcome)"
 * #abc-function "Function of Behaviour" "Hypothesized function (e.g. Sensory, Escape, Attention, Tangible)"
 * #abc-duration "Duration" "Duration of the episode"
+* #abc-duration "Duration" "Duration of the episode"
 * #abc-intensity "Intensity" "Intensity of the behaviour (1-10)"
+
+// =============================================================================
+// Oral Health Codes
+// =============================================================================
+* #oral-health-score "Oral Health Score" "Total Oral Health Assessment Score"
+* #oral-lips "Lips" "Condition of lips (Pink/Moist vs Dry/Cracked)"
+* #oral-tongue "Tongue" "Condition of tongue (Pink/Moist vs Coated/Red)"
+* #oral-gums "Gums" "Condition of gums (Pink/Firm vs Bleeding/Receding)"
+* #oral-teeth "Teeth/Dentures" "Condition of teeth or dentures (Clean/Intact vs Decayed/Broken/Loose)"
+* #oral-saliva "Saliva" "Saliva quality (Moist/Watery vs Thick/Sticky/Absent)"
+
+// =============================================================================
+// Seizure Record Codes
+// =============================================================================
+* #seizure-record "Seizure Record" "Record of a seizure event"
+* #seizure-type "Seizure Type" "Type of seizure (Tonic-Clonic, Absence, Focal, etc)"
+* #seizure-duration "Seizure Duration" "Duration of the active seizure phase"
+* #seizure-recovery "Recovery Phase" "Duration/Description of post-ictal recovery"
+* #seizure-trigger "Trigger" "Suspected trigger for the seizure"
+
+// =============================================================================
+// Sleep Pattern Codes
+// =============================================================================
+* #sleep-record "Sleep Record" "Record of a sleep period"
+* #sleep-quality "Sleep Quality" "Subjective or observed quality of sleep"
+* #sleep-hours "Hours Slept" "Total hours of sleep achieved"
+* #sleep-disturbances "Disturbances" "Number or description of distinct awakenings"
+
+// =============================================================================
+// Urinalysis (Dipstick) Codes
+// =============================================================================
+* #urinalysis-panel "Urinalysis Panel" "Urine Dipstick Test Panel"
+* #ua-leukocytes "Leukocytes" "Leukocytes (WBCs) in urine"
+* #ua-nitrites "Nitrites" "Nitrites in urine"
+* #ua-protein "Protein" "Protein in urine"
+* #ua-blood "Blood" "Blood (Hemoglobin) in urine"
+* #ua-glucose "Glucose" "Glucose in urine"
+* #ua-ketones "Ketones" "Ketones in urine"
+* #ua-ph "pH" "Urine pH Level"
+* #ua-sg "Specific Gravity" "Urine Specific Gravity"
 
 ValueSet: ONCMonkScaleVS
 Id: onc-monk-scale-vs

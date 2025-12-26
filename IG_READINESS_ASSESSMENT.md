@@ -57,6 +57,8 @@ Your IG has excellent coverage of nursing assessments:
   - `ONCBristolStoolChart`: Bowel function (Types 1-7)
   - `ONCAbbeyPainScale`: Pain scale for dementia/non-verbal
   - `ONCFluidBalance`: Hydration monitoring (Input/Output)
+- **Positive Behaviour Support (PBS)** (New 🧠):
+  - `ONCABCChart`: Antecedent-Behaviour-Consequence monitoring
 
 ---
 
