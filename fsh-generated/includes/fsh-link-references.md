@@ -55,6 +55,8 @@
 [ONCPatientGoal]: StructureDefinition-onc-patient-goal.html
 [ONCPatientStory]: StructureDefinition-onc-patient-story.html
 [patient-example-jane]: Patient-patient-example-jane.html
+[ONCABCChart]: StructureDefinition-onc-abc-chart.html
+[PBSFunctionVS]: ValueSet-onc-pbs-function-vs.html
 [practitioner-example]: Practitioner-practitioner-example.html
 [ProblemCategoryValueSet]: ValueSet-problem-category-valueset.html
 [ONCProblemType]: CodeSystem-onc-problem-type.html

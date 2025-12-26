@@ -53,6 +53,10 @@ Your IG has excellent coverage of nursing assessments:
 - **Equality & Mental Capacity Module**:
   - `ONCReasonableAdjustment`: Equality Act compliance
   - `ONCMentalCapacity`: Legal safeguard for decision making
+- **Fundamental Care Module** (New 🌟):
+  - `ONCBristolStoolChart`: Bowel function (Types 1-7)
+  - `ONCAbbeyPainScale`: Pain scale for dementia/non-verbal
+  - `ONCFluidBalance`: Hydration monitoring (Input/Output)
 
 ---
 

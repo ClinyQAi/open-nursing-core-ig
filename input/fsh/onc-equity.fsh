@@ -123,6 +123,17 @@ Description: "Custom observation codes for Open Nursing Core"
 * #fluid-balance "Fluid Balance" "Total Input minus Total Output"
 * #urine-output "Urine Output" "Volume of urine passed"
 
+// =============================================================================
+// Positive Behaviour Support (PBS) Codes
+// =============================================================================
+* #abc-chart "ABC Chart" "Antecedent-Behaviour-Consequence Chart for PBS"
+* #abc-antecedent "Antecedent" "What happened immediately before the behaviour (triggers)"
+* #abc-behaviour "Behaviour" "Description of the behaviour itself (observable actions)"
+* #abc-consequence "Consequence" "What happened immediately after (response/outcome)"
+* #abc-function "Function of Behaviour" "Hypothesized function (e.g. Sensory, Escape, Attention, Tangible)"
+* #abc-duration "Duration" "Duration of the episode"
+* #abc-intensity "Intensity" "Intensity of the behaviour (1-10)"
+
 ValueSet: ONCMonkScaleVS
 Id: onc-monk-scale-vs
 Title: "Monk Skin Tone Scale ValueSet"
