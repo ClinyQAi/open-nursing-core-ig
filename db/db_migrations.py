@@ -71,7 +71,8 @@ def create_backup(backup_name: Optional[str] = None) -> str:
         )
         raise
     except Exception as e:
-        logger.error(f"Backup error: {e}")
+        from core.safe_logging import log_exception_safe
+        log_exception_safe(logger, "Backup error", e)
         raise
 
 
@@ -113,7 +114,8 @@ def restore_backup(backup_path: str) -> bool:
         logger.error("psql not found. Please install PostgreSQL client tools.")
         return False
     except Exception as e:
-        logger.error(f"Restore error: {e}")
+        from core.safe_logging import log_exception_safe
+        log_exception_safe(logger, "Restore error", e)
         return False
 
 
@@ -142,7 +144,8 @@ def cleanup_old_backups(keep_count: int = 10) -> int:
             deleted_count += 1
             logger.info(f"Deleted old backup: {backup.name}")
         except Exception as e:
-            logger.warning(f"Failed to delete {backup.name}: {e}")
+            from core.safe_logging import log_exception_safe
+            log_exception_safe(logger, "Failed to delete backup file", e, level="warning")
 
     logger.info(f"Cleaned up {deleted_count} old backups")
     return deleted_count
@@ -268,7 +271,8 @@ def run_migrations() -> bool:
         return True
 
     except Exception as e:
-        logger.error(f"Migration failed: {e}", exc_info=True)
+        from core.safe_logging import log_exception_safe
+        log_exception_safe(logger, "Migration failed", e)
         return False
 
 
@@ -306,5 +310,6 @@ def rollback_migration(steps: int = 1) -> bool:
         return True
 
     except Exception as e:
-        logger.error(f"Rollback failed: {e}", exc_info=True)
+        from core.safe_logging import log_exception_safe
+        log_exception_safe(logger, "Rollback failed", e)
         return False

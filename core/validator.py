@@ -88,7 +88,8 @@ def authenticate_user(username: str, password: str) -> Optional[str]:
                     )
                     return None
         except Exception as e:
-            logger.error(f"Database authentication error: {e}")
+            from core.safe_logging import log_exception_safe
+            log_exception_safe(logger, "Database authentication error", e)
             # Fall through to defaults if DB fails (optional behavior, strictly speaking should fail closed,
             # but legacy app.py allowed fallback. For security, maybe we should stop here if DB is configured.)
             # However, prompt implies 'Phase 2' supports fallback. I will keep fallback logic but log it.
@@ -125,7 +126,8 @@ def load_vector_db():
             logger.info(f"Copying vector DB to {local_db_path}")
             shutil.copytree(vector_db_path, local_db_path, dirs_exist_ok=True)
         except Exception as e:
-            logger.error(f"Failed to copy vector DB: {e}", exc_info=True)
+            from core.safe_logging import log_exception_safe
+            log_exception_safe(logger, "Failed to copy vector DB", e)
             return None
 
     try:
@@ -141,7 +143,8 @@ def load_vector_db():
         logger.info("Vector DB loaded successfully")
         return db
     except Exception as e:
-        logger.error(f"Failed to load vector DB: {e}", exc_info=True)
+        from core.safe_logging import log_exception_safe
+        log_exception_safe(logger, "Failed to load vector DB", e)
         return None
 
 def save_chat_message(username: str, role: str, content: str, chat_history_file: str = ".chat_history.json") -> bool:
@@ -154,7 +157,8 @@ def save_chat_message(username: str, role: str, content: str, chat_history_file:
                 db_save_chat_message(user["id"], role, content)
                 return True
         except Exception as e:
-            logger.warning(f"Failed to save to database: {e}")
+            from core.safe_logging import log_exception_safe
+            log_exception_safe(logger, "Failed to save to database", e, level="warning")
 
     # 2. Fallback to JSON
     try:
@@ -174,7 +178,8 @@ def save_chat_message(username: str, role: str, content: str, chat_history_file:
             json.dump(history_data, f, indent=2)
         return True
     except Exception as e:
-        logger.error(f"Failed to save chat history to file: {e}", exc_info=True)
+        from core.safe_logging import log_exception_safe
+        log_exception_safe(logger, "Failed to save chat history to file", e)
         return False
 
 def load_chat_history(username: str, chat_history_file: str = ".chat_history.json") -> List[Dict[str, Any]]:
@@ -190,7 +195,8 @@ def load_chat_history(username: str, chat_history_file: str = ".chat_history.jso
                     for msg in messages
                 ]
         except Exception as e:
-            logger.warning(f"Failed to load from database: {e}")
+            from core.safe_logging import log_exception_safe
+            log_exception_safe(logger, "Failed to load from database", e, level="warning")
 
     # 2. Fallback to JSON
     try:
@@ -200,7 +206,8 @@ def load_chat_history(username: str, chat_history_file: str = ".chat_history.jso
                 history_data = json.load(f)
                 return history_data.get(username, [])
     except Exception as e:
-        logger.warning(f"Failed to load chat history from file: {e}")
+        from core.safe_logging import log_exception_safe
+        log_exception_safe(logger, "Failed to load chat history from file", e, level="warning")
 
     return []
 
@@ -212,7 +219,8 @@ def audit_log(username: str, action: str, details: Optional[Dict] = None):
             if user:
                 log_audit_event(user["id"], action, changes=details)
         except Exception as e:
-            logger.warning(f"Failed to log audit event to DB: {e}")
+            from core.safe_logging import log_exception_safe
+            log_exception_safe(logger, "Failed to log audit event to DB", e, level="warning")
 
     logger.info(f"AUDIT - User: {username}, Action: {action}, Details: {details}")
 
@@ -224,4 +232,5 @@ def analytics_log(username: str, event_type: str, event_name: str, data: Optiona
             if user:
                 log_analytics_event(user["id"], event_type, event_name, data)
         except Exception as e:
-            logger.warning(f"Failed to log analytics to DB: {e}")
+            from core.safe_logging import log_exception_safe
+            log_exception_safe(logger, "Failed to log analytics to DB", e, level="warning")
