@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-observation-goal-ref
   "name" : "ObservationGoalReference",
   "title" : "Observation Goal Reference",
   "status" : "active",
-  "date" : "2025-12-26T10:42:17+00:00",
+  "date" : "2025-12-26T10:50:19+00:00",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
