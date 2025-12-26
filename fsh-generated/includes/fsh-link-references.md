@@ -1,5 +1,6 @@
 [ONCACVPU]: StructureDefinition-onc-acvpu.html
 [ACVPUValueSet]: ValueSet-acvpu-vs.html
+[ONCBarthelIndex]: StructureDefinition-onc-barthel-index.html
 [ONCBloodPressure]: StructureDefinition-onc-blood-pressure.html
 [ONCBodyTemperature]: StructureDefinition-onc-body-temperature.html
 [ONCBradenScaleAssessment]: StructureDefinition-onc-braden-scale-assessment.html
@@ -19,6 +20,7 @@
 [ONCMonkSkinToneObservation]: StructureDefinition-onc-monk-skintone-observation.html
 [ONCMonkScale]: CodeSystem-onc-monk-scale.html
 [ONCMonkScaleVS]: ValueSet-onc-monk-scale-vs.html
+[ONCMorseFallScale]: StructureDefinition-onc-morse-fall-scale.html
 [ONCMUSTScore]: StructureDefinition-onc-must-score.html
 [NEWS2CodeValueSet]: ValueSet-news2-code-vs.html
 [ONCNEWS2Score]: StructureDefinition-onc-news2-score.html
@@ -42,6 +44,7 @@
 [practitioner-example]: Practitioner-practitioner-example.html
 [ProblemCategoryValueSet]: ValueSet-problem-category-valueset.html
 [ONCProblemType]: CodeSystem-onc-problem-type.html
+[ONCqSOFA]: StructureDefinition-onc-qsofa.html
 [ONCRespirationRate]: StructureDefinition-onc-respiration-rate.html
 [ONCSkinToneObservation]: StructureDefinition-onc-skintone-observation.html
 [UKCoreEthnicCategory]: StructureDefinition-UKCore-Extension-EthnicCategory.html

@@ -1,0 +1,71 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "onc-morse-fall-scale",
+  "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-morse-fall-scale",
+  "name": "ONCMorseFallScale",
+  "title": "Morse Fall Scale",
+  "status": "active",
+  "description": "Morse Fall Scale for assessing fall risk. Score 0-24=no risk, 25-50=low risk, ≥51=high risk. Total range 0-125.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "73830-2",
+              "system": "http://loinc.org",
+              "display": "Morse Fall Scale panel"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "short": "Morse Fall Scale total (0-125)",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x].value",
+        "path": "Observation.value[x].value",
+        "constraint": [
+          {
+            "key": "morse-range",
+            "severity": "error",
+            "human": "Morse Fall Scale must be between 0 and 125",
+            "expression": "$this >= 0 and $this <= 125",
+            "source": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-morse-fall-scale"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x].unit",
+        "path": "Observation.value[x].unit",
+        "patternString": "{score}"
+      },
+      {
+        "id": "Observation.value[x].system",
+        "path": "Observation.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      }
+    ]
+  }
+}

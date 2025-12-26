@@ -1,0 +1,71 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "onc-barthel-index",
+  "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-barthel-index",
+  "name": "ONCBarthelIndex",
+  "title": "Barthel Index",
+  "status": "active",
+  "description": "Barthel Index for measuring independence in activities of daily living (ADL). Score 0-20=total dependency, 91-99=slight dependency, 100=independent. Total range 0-100.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "83254-5",
+              "system": "http://loinc.org",
+              "display": "Barthel Index"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "short": "Barthel Index total (0-100)",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x].value",
+        "path": "Observation.value[x].value",
+        "constraint": [
+          {
+            "key": "barthel-range",
+            "severity": "error",
+            "human": "Barthel Index must be between 0 and 100",
+            "expression": "$this >= 0 and $this <= 100",
+            "source": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-barthel-index"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x].unit",
+        "path": "Observation.value[x].unit",
+        "patternString": "{score}"
+      },
+      {
+        "id": "Observation.value[x].system",
+        "path": "Observation.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      }
+    ]
+  }
+}
