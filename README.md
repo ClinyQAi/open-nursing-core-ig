@@ -10,14 +10,14 @@
 
 ## 📘 Published Implementation Guide
 
-**🌐 Live IG:** [https://clinyqai.github.io/open-nursing-core-ig/](https://clinyqai.github.io/open-nursing-core-ig/)
+**🌐 Live IG:** [https://opennursingcoreig.com/](https://opennursingcoreig.com/)
 
 | Resource | Link |
 |----------|------|
-| **Home** | [Implementation Guide](https://clinyqai.github.io/open-nursing-core-ig/index.html) |
-| **Artifacts** | [All Profiles & Extensions](https://clinyqai.github.io/open-nursing-core-ig/artifacts.html) |
-| **Table of Contents** | [ToC](https://clinyqai.github.io/open-nursing-core-ig/toc.html) |
-| **QA Report** | [Validation Results](https://clinyqai.github.io/open-nursing-core-ig/qa.html) |
+| **Home** | [Implementation Guide](https://opennursingcoreig.com/index.html) |
+| **Artifacts** | [All Profiles & Extensions](https://opennursingcoreig.com/artifacts.html) |
+| **Table of Contents** | [ToC](https://opennursingcoreig.com/toc.html) |
+| **QA Report** | [Validation Results](https://opennursingcoreig.com/qa.html) |
 
 ---
 
@@ -241,7 +241,7 @@ This project is licensed under the **MIT License**.
 
 - **Issues**: [GitHub Issues](https://github.com/ClinyQAi/open-nursing-core-ig/issues)
 - **Organization**: [ClinyQAi](https://github.com/ClinyQAi)
-- **Live IG**: [https://clinyqai.github.io/open-nursing-core-ig/](https://clinyqai.github.io/open-nursing-core-ig/)
+- **Live IG**: [https://opennursingcoreig.com/](https://opennursingcoreig.com/)
 
 ---
 
