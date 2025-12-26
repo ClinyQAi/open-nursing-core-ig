@@ -50,7 +50,7 @@ SNOMED CT codes for pressure ulcer staging
   "name" : "WoundStageValueSet",
   "title" : "Wound Stage Value Set",
   "status" : "active",
-  "date" : "2025-12-26T11:30:54+00:00",
+  "date" : "2025-12-26T11:31:25+00:00",
   "description" : "SNOMED CT codes for pressure ulcer staging",
   "compose" : {
     "include" : [
