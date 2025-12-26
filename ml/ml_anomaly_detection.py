@@ -15,6 +15,8 @@ from scipy import stats
 from scipy.signal import savgol_filter
 import json
 
+from core.safe_logging import mask_identifier
+
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -237,7 +239,6 @@ class AdaptiveThresholdCalibration:
         self.patient_baselines[patient_id] = baselines
         self.calibration_history.append(calibration)
         
-        from core.safe_logging import mask_identifier
         logger.info(f"Thresholds calibrated for patient {mask_identifier(patient_id, 'pat')}")
         return calibration
     
@@ -246,7 +247,6 @@ class AdaptiveThresholdCalibration:
         if patient_id in self.patient_baselines:
             return self.patient_baselines[patient_id]
         else:
-            from core.safe_logging import mask_identifier
             logger.warning(f"No calibrated thresholds for patient {mask_identifier(patient_id, 'pat')}")
             return {}
     
@@ -337,7 +337,6 @@ class CriticalDeviationAlertSystem:
             
             self.active_alerts[alert['alert_id']] = alert
             self.alert_log.append(alert)
-            from core.safe_logging import mask_identifier
             logger.warning(f"ALERT: {alert['type']} for {mask_identifier(patient_id, 'pat')} - {vital_name}={current_value}")
         
         return alert
