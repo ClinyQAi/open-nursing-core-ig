@@ -80,13 +80,20 @@ class FHIRAPIClient:
             response = requests.get(url, headers=self.headers, timeout=10)
 
             if response.status_code == 200:
-                from core.safe_logging import mask_identifier
-                logger.info(f"Retrieved patient: {mask_identifier(patient_id, 'pat')}")
+                from core.safe_logging import safe_log_info
+                safe_log_info(
+                    logger,
+                    "Retrieved patient",
+                    patient_id=(patient_id, "pat"),
+                )
                 return response.json()
             else:
-                logger.warning(
-                    f"Failed to retrieve patient {patient_id}: "
-                    f"{response.status_code}"
+                from core.safe_logging import safe_log_warning
+                safe_log_warning(
+                    logger,
+                    "Failed to retrieve patient {patient_id}: {status_code}",
+                    patient_id=(patient_id, "pat"),
+                    status_code=response.status_code,
                 )
                 return None
         except Exception as e:
@@ -114,15 +121,21 @@ class FHIRAPIClient:
                 bundle = response.json()
                 entries = bundle.get("entry", [])
                 conditions = [entry["resource"] for entry in entries]
-                logger.info(
-                    f"Retrieved {len(conditions)} conditions for patient "
-                    f"{patient_id}"
+                from core.safe_logging import safe_log_info
+                safe_log_info(
+                    logger,
+                    "Retrieved {count} conditions for patient {patient_id}",
+                    count=len(conditions),
+                    patient_id=(patient_id, "pat"),
                 )
                 return conditions
             else:
-                logger.warning(
-                    f"Failed to retrieve conditions for patient {patient_id}: "
-                    f"{response.status_code}"
+                from core.safe_logging import safe_log_warning
+                safe_log_warning(
+                    logger,
+                    "Failed to retrieve conditions for patient {patient_id}: {status_code}",
+                    patient_id=(patient_id, "pat"),
+                    status_code=response.status_code,
                 )
                 return []
         except Exception as e:
