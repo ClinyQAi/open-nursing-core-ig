@@ -19,6 +19,7 @@
 [ONCMonkSkinToneObservation]: StructureDefinition-onc-monk-skintone-observation.html
 [ONCMonkScale]: CodeSystem-onc-monk-scale.html
 [ONCMonkScaleVS]: ValueSet-onc-monk-scale-vs.html
+[ONCMUSTScore]: StructureDefinition-onc-must-score.html
 [NEWS2CodeValueSet]: ValueSet-news2-code-vs.html
 [ONCNEWS2Score]: StructureDefinition-onc-news2-score.html
 [ONCNEWS2Subscore]: StructureDefinition-onc-news2-subscore.html
