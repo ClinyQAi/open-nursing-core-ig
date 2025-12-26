@@ -2,40 +2,58 @@
 
 Welcome to the **Open Nursing Core FHIR Implementation Guide (ONC-IG)**.
 
-This Implementation Guide provides foundational FHIR R4 profiles for documenting the nursing process (ADPIE - Assessment, Diagnosis, Planning, Implementation, Evaluation), with a focus on **Safety** and **Equity** in nursing care.
+This IG provides **Standardized Nursing Data Models** for the NHS and beyond, focusing on the complete nursing process (ADPIE) and specialized care needs.
 
-## Overview
+## 🌟 Core Philosophy
+- **Holistic**: Covers physical, mental, and social needs.
+- **Relational**: Captures "What Matters to Me" and patient stories.
+- **Equitable**: Includes Safe Skin Tone (Monk Scale) and Reasonable Adjustments.
 
-The ONC-IG defines standardized FHIR profiles for:
+---
 
-- **Patient Assessment** - Nursing observations and assessments
-- **Nursing Diagnosis** - Problem identification and categorization  
-- **Patient Goals** - Goal setting and outcome evaluation
-- **Nursing Interventions** - Care activities and procedures
-- **Safety Assessments** - Braden Scale for pressure ulcer risk
-- **Equity Considerations** - Skin tone documentation for equitable care
+## 📚 Profile Library
 
-## Key Profiles
+### 1. Foundation & Safety 🛡️
+Base profiles for standard nursing operations.
+- [OncNursingAssessment](StructureDefinition-onc-nursing-assessment.html)
+- [OncNursingProblem](StructureDefinition-onc-nursing-problem.html) (Diagnosis)
+- [OncPatientGoal](StructureDefinition-onc-patient-goal.html)
+- [OncNursingIntervention](StructureDefinition-onc-nursing-intervention.html)
+- [Braden Scale](StructureDefinition-onc-braden-scale-assessment.html) (Pressure Ulcer Risk)
+- [Waterlow Score](StructureDefinition-onc-waterlow-score.html)
+- [NEWS2](StructureDefinition-onc-news2-score.html) (Deterioration)
 
-| Profile | Description |
-|---------|-------------|
-| [ONC Nursing Assessment](StructureDefinition-onc-nursing-assessment.html) | Base profile for all nursing observations |
-| [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessment.html) | Pressure ulcer risk assessment |
-| [Nursing Problem](StructureDefinition-onc-nursing-problem.html) | Nursing diagnosis documentation |
-| [Patient Goal](StructureDefinition-onc-patient-goal.html) | Patient-centered goal setting |
-| [Nursing Intervention](StructureDefinition-onc-nursing-intervention.html) | Care activity documentation |
-| [Goal Evaluation](StructureDefinition-onc-goal-evaluation.html) | Outcome assessment |
-| [Skin Tone Observation](StructureDefinition-onc-skintone-observation.html) | Fitzpatrick skin type for equitable assessment |
+### 2. Relational & Inclusive Care ❤️
+Capturing the person behind the patient.
+- [What Matters To Me](StructureDefinition-onc-what-matters.html)
+- [Patient Story](StructureDefinition-onc-patient-story.html)
+- [Reasonable Adjustment](StructureDefinition-onc-reasonable-adjustment.html) (Equality Act)
+- [Mental Capacity Assessment](StructureDefinition-onc-mental-capacity.html)
+- [Skin Tone Observation](StructureDefinition-onc-skintone-observation.html) (Monk/Fitzpatrick)
 
-## Getting Started
+### 3. Fundamental Care 💧
+The essentials of daily nursing care.
+- [Bristol Stool Chart](StructureDefinition-onc-bristol-stool-chart.html) (Elimination)
+- [Fluid Balance](StructureDefinition-onc-fluid-balance.html) (Hydration)
+- [Abbey Pain Scale](StructureDefinition-onc-abbey-pain-scale.html) (Non-verbal pain)
+- [Oral Health](StructureDefinition-onc-oral-health.html)
+- [Sleep Pattern](StructureDefinition-onc-sleep-pattern.html)
 
-- Browse the [Artifacts](artifacts.html) for all profiles, extensions, and examples
-- Download the [full package](package.tgz) for use in your FHIR server
+### 4. Specialized & Mental Health 🧠
+Tools for Learning Disabilities, Mental Health, and Geriatrics.
+- [ABC Chart](StructureDefinition-onc-abc-chart.html) (Positive Behaviour Support)
+- [Seizure Record](StructureDefinition-onc-seizure-record.html) (Epilepsy)
+- [Clinical Frailty Scale](StructureDefinition-onc-clinical-frailty-scale.html)
+- [4AT Delirium Screen](StructureDefinition-onc-4at-delirium.html)
+- [Urinalysis](StructureDefinition-onc-urinalysis.html)
 
-## License
+---
 
-This Implementation Guide is released under the MIT License.
+## 🚀 Getting Started
 
-## Contact
+1. **Browse Artifacts**: See the [Artifacts Page](artifacts.html) for all JSON definitions.
+2. **Download Package**: `npm install @clinyqai/open-nursing-core-ig`
+3. **Contribute**: Visit [GitHub](https://github.com/ClinyQAi/open-nursing-core-ig).
 
-For questions or contributions, visit our [GitHub repository](https://github.com/ClinyQAi/open-nursing-core-ig).
+---
+*Built with ❤️ by the Open Nursing Community*

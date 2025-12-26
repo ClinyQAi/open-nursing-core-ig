@@ -59,6 +59,11 @@ Your IG has excellent coverage of nursing assessments:
   - `ONCFluidBalance`: Hydration monitoring (Input/Output)
 - **Positive Behaviour Support (PBS)** (New 🧠):
   - `ONCABCChart`: Antecedent-Behaviour-Consequence monitoring
+- **Holsitic Nursing & Specialized Care** (New 🏥):
+  - `ONCOralHealth`: Mouth care assessment
+  - `ONCSleepPattern`: Sleep duration and disturbance
+  - `ONCSeizureRecord`: Epilepsy event monitoring
+  - `ONCUrinalysis`: Dipstick for UTI/Diabetes screening
 
 ---
 
