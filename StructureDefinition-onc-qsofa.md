@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-qsofa.csv), [Exc
   "name" : "ONCqSOFA",
   "title" : "qSOFA (Quick SOFA)",
   "status" : "active",
-  "date" : "2025-12-26T10:16:19+00:00",
+  "date" : "2025-12-26T10:24:22+00:00",
   "description" : "Quick Sequential Organ Failure Assessment for sepsis screening. Score ≥2 indicates high risk. Total range 0-3.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
