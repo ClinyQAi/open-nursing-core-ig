@@ -115,6 +115,11 @@ def init_database_if_needed():
             st.warning("Database connection failed - using local storage")
 
 
+def _hash_user_password(password: str) -> str:
+    """Hash password and return hash - password not retained."""
+    return hash_password(password)
+
+
 def _seed_default_users():
     """Seed default users into database if they don't exist."""
     if not DB_AVAILABLE:
@@ -132,7 +137,9 @@ def _seed_default_users():
         try:
             user = get_user(username)
             if user is None:
-                password_hash = hash_password(password)
+                # Process password in isolation
+                password_hash = _hash_user_password(password)
+                del password  # Explicitly remove from scope
                 add_user(username, password_hash, role)
                 # Log only non-sensitive role information (no password-derived data)
                 logger.info(f"Seeded default user for role: {role}")
