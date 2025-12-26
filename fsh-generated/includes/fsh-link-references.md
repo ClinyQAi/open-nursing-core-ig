@@ -18,6 +18,7 @@
 [example-nursing-problem]: Condition-example-nursing-problem.html
 [example-patient-goal]: Goal-example-patient-goal.html
 [SkinToneVS]: ValueSet-skintone-vs.html
+[ONCFluidBalance]: StructureDefinition-onc-fluid-balance.html
 [ONCGlasgowComaScale]: StructureDefinition-onc-glasgow-coma-scale.html
 [ONCGoalEvaluation]: StructureDefinition-onc-goal-evaluation.html
 [GoalEvaluationValueSet]: ValueSet-goal-evaluation-valueset.html

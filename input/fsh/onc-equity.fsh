@@ -115,6 +115,14 @@ Description: "Custom observation codes for Open Nursing Core"
 * #abbey-psychological-change "Psychological Change" "Temperature, pulse, blood pressure changes, perspiration, pallor"
 * #abbey-physical-changes "Physical Changes" "Skin tears, pressure areas, arthritis, contractures, previous injuries"
 
+// =============================================================================
+// Fluid Balance Codes
+// =============================================================================
+* #fluid-input-total "Total Fluid Input" "Total fluid input over specified period (e.g. 24h)"
+* #fluid-output-total "Total Fluid Output" "Total fluid output over specified period (e.g. 24h)"
+* #fluid-balance "Fluid Balance" "Total Input minus Total Output"
+* #urine-output "Urine Output" "Volume of urine passed"
+
 ValueSet: ONCMonkScaleVS
 Id: onc-monk-scale-vs
 Title: "Monk Skin Tone Scale ValueSet"
