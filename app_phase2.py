@@ -134,7 +134,8 @@ def _seed_default_users():
             if user is None:
                 password_hash = hash_password(creds["password"])
                 add_user(username, password_hash, creds["role"])
-                logger.info(f"Seeded user: {username}")
+                from core.safe_logging import mask_identifier
+                logger.info(f"Seeded user: {mask_identifier(username, 'user')}")
         except Exception as e:
             from core.safe_logging import log_exception_safe
             log_exception_safe(logger, "Could not seed user", e, level="warning")

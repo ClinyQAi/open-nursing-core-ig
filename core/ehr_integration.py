@@ -80,7 +80,8 @@ class FHIRAPIClient:
             response = requests.get(url, headers=self.headers, timeout=10)
 
             if response.status_code == 200:
-                logger.info(f"Retrieved patient: {patient_id}")
+                from core.safe_logging import mask_identifier
+                logger.info(f"Retrieved patient: {mask_identifier(patient_id, 'pat')}")
                 return response.json()
             else:
                 logger.warning(
@@ -544,7 +545,8 @@ class EHRIntegrationManager:
                 ),
                 "goals": self.fhir_client.get_patient_goals(patient_id),
             }
-            logger.info(f"Synced patient data for {patient_id}")
+            from core.safe_logging import mask_identifier
+            logger.info(f"Synced patient data for {mask_identifier(patient_id, 'pat')}")
             return patient_data
         except Exception as e:
             from core.safe_logging import log_exception_safe

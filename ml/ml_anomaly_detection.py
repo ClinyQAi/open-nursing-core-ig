@@ -237,7 +237,8 @@ class AdaptiveThresholdCalibration:
         self.patient_baselines[patient_id] = baselines
         self.calibration_history.append(calibration)
         
-        logger.info(f"Thresholds calibrated for patient {patient_id}")
+        from core.safe_logging import mask_identifier
+        logger.info(f"Thresholds calibrated for patient {mask_identifier(patient_id, 'pat')}")
         return calibration
     
     def get_patient_thresholds(self, patient_id: str) -> Dict:
@@ -245,7 +246,8 @@ class AdaptiveThresholdCalibration:
         if patient_id in self.patient_baselines:
             return self.patient_baselines[patient_id]
         else:
-            logger.warning(f"No calibrated thresholds for patient {patient_id}")
+            from core.safe_logging import mask_identifier
+            logger.warning(f"No calibrated thresholds for patient {mask_identifier(patient_id, 'pat')}")
             return {}
     
     def update_thresholds(self, patient_id: str, vital_name: str, new_value: float):
@@ -335,7 +337,8 @@ class CriticalDeviationAlertSystem:
             
             self.active_alerts[alert['alert_id']] = alert
             self.alert_log.append(alert)
-            logger.warning(f"ALERT: {alert['type']} for {patient_id} - {vital_name}={current_value}")
+            from core.safe_logging import mask_identifier
+            logger.warning(f"ALERT: {alert['type']} for {mask_identifier(patient_id, 'pat')} - {vital_name}={current_value}")
         
         return alert
     
