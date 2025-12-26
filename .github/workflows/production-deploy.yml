@@ -1,8 +1,13 @@
 name: Production CI/CD Pipeline
 
+# Explicit permissions required since default is now read-only
 permissions:
-  contents: read
-  issues: write
+  contents: write      # For pushing to gh-pages branch
+  pages: write         # For GitHub Pages deployment
+  id-token: write      # For OIDC authentication
+  pull-requests: read  # For PR checks
+  actions: read        # For workflow artifacts
+  issues: write        # For commenting on issues
 
 on:
   push:
