@@ -22,7 +22,7 @@ except ImportError:
 # Core imports
 from core.settings import settings
 from core.logging_config import configure_logging
-from core.safe_logging import mask_identifier
+from core.safe_logging import mask_identifier, log_exception_safe
 from core.validator import (
     authenticate_user,
     load_vector_db,
@@ -34,7 +34,6 @@ from core.validator import (
     DB_AVAILABLE
 )
 from core.analytics_dashboard import render_dashboard
-from core.safe_logging import mask_identifier, log_exception_safe
 
 # Optional Imports with new paths
 try:
