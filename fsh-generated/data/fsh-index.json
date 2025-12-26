@@ -13,7 +13,7 @@
     "fshType": "CodeSystem",
     "fshFile": "onc-equity.fsh",
     "startLine": 40,
-    "endLine": 74
+    "endLine": 92
   },
   {
     "outputFile": "CodeSystem-onc-problem-type.json",
@@ -112,6 +112,14 @@
     "endLine": 96
   },
   {
+    "outputFile": "StructureDefinition-onc-4at-delirium.json",
+    "fshName": "ONC4ATDelirium",
+    "fshType": "Profile",
+    "fshFile": "onc-delirium.fsh",
+    "startLine": 10,
+    "endLine": 56
+  },
+  {
     "outputFile": "StructureDefinition-onc-acvpu.json",
     "fshName": "ONCACVPU",
     "fshType": "Profile",
@@ -150,6 +158,14 @@
     "fshFile": "onc-profiles.fsh",
     "startLine": 17,
     "endLine": 48
+  },
+  {
+    "outputFile": "StructureDefinition-onc-clinical-frailty-scale.json",
+    "fshName": "ONCClinicalFrailtyScale",
+    "fshType": "Profile",
+    "fshFile": "onc-frailty.fsh",
+    "startLine": 10,
+    "endLine": 23
   },
   {
     "outputFile": "StructureDefinition-onc-glasgow-coma-scale.json",
@@ -196,8 +212,8 @@
     "fshName": "ONCMonkSkinToneObservation",
     "fshType": "Profile",
     "fshFile": "onc-equity.fsh",
-    "startLine": 81,
-    "endLine": 88
+    "startLine": 99,
+    "endLine": 106
   },
   {
     "outputFile": "StructureDefinition-onc-morse-fall-scale.json",
@@ -288,12 +304,28 @@
     "endLine": 70
   },
   {
+    "outputFile": "StructureDefinition-onc-patient-story.json",
+    "fshName": "ONCPatientStory",
+    "fshType": "Profile",
+    "fshFile": "onc-relational.fsh",
+    "startLine": 28,
+    "endLine": 40
+  },
+  {
     "outputFile": "StructureDefinition-onc-qsofa.json",
     "fshName": "ONCqSOFA",
     "fshType": "Profile",
     "fshFile": "onc-additional-assessments.fsh",
     "startLine": 27,
     "endLine": 40
+  },
+  {
+    "outputFile": "StructureDefinition-onc-relational-observation.json",
+    "fshName": "ONCRelationalObservation",
+    "fshType": "Profile",
+    "fshFile": "onc-relational.fsh",
+    "startLine": 45,
+    "endLine": 58
   },
   {
     "outputFile": "StructureDefinition-onc-respiration-rate.json",
@@ -318,6 +350,14 @@
     "fshFile": "onc-waterlow-score.fsh",
     "startLine": 4,
     "endLine": 19
+  },
+  {
+    "outputFile": "StructureDefinition-onc-what-matters.json",
+    "fshName": "ONCWhatMattersToMe",
+    "fshType": "Profile",
+    "fshFile": "onc-relational.fsh",
+    "startLine": 11,
+    "endLine": 23
   },
   {
     "outputFile": "StructureDefinition-onc-wound-assessment.json",
@@ -392,12 +432,52 @@
     "endLine": 13
   },
   {
+    "outputFile": "ValueSet-onc-4at-acute-change-vs.json",
+    "fshName": "AcuteChangeVS",
+    "fshType": "ValueSet",
+    "fshFile": "onc-delirium.fsh",
+    "startLine": 117,
+    "endLine": 122
+  },
+  {
+    "outputFile": "ValueSet-onc-4at-alertness-vs.json",
+    "fshName": "AlertnessVS",
+    "fshType": "ValueSet",
+    "fshFile": "onc-delirium.fsh",
+    "startLine": 67,
+    "endLine": 99
+  },
+  {
+    "outputFile": "ValueSet-onc-4at-amt4-vs.json",
+    "fshName": "AMT4VS",
+    "fshType": "ValueSet",
+    "fshFile": "onc-delirium.fsh",
+    "startLine": 101,
+    "endLine": 107
+  },
+  {
+    "outputFile": "ValueSet-onc-4at-attention-vs.json",
+    "fshName": "AttentionVS",
+    "fshType": "ValueSet",
+    "fshFile": "onc-delirium.fsh",
+    "startLine": 109,
+    "endLine": 115
+  },
+  {
+    "outputFile": "ValueSet-onc-cfs-vs.json",
+    "fshName": "ClinicalFrailtyScaleVS",
+    "fshType": "ValueSet",
+    "fshFile": "onc-frailty.fsh",
+    "startLine": 25,
+    "endLine": 37
+  },
+  {
     "outputFile": "ValueSet-onc-monk-scale-vs.json",
     "fshName": "ONCMonkScaleVS",
     "fshType": "ValueSet",
     "fshFile": "onc-equity.fsh",
-    "startLine": 76,
-    "endLine": 79
+    "startLine": 94,
+    "endLine": 97
   },
   {
     "outputFile": "ValueSet-pain-assessment-code-vs.json",

@@ -42,6 +42,15 @@ Your IG has excellent coverage of nursing assessments:
 - 13 value sets + 3 code systems
 - 3 extensions
 
+### ✅ Unique Features Added (New)
+- **Relational Care Module**: 
+  - `ONCWhatMattersToMe`: Capturing patient priorities
+  - `ONCPatientStory`: Narrative background
+  - `ONCRelationalObservation`: Engagement quality
+- **Frailty & Delirium Module**:
+  - `ONCClinicalFrailtyScale`: Rockwood 1-9
+  - `ONC4ATDelirium`: Standard delirium assessment
+
 ---
 
 ## ❌ Resolved Critical Issues
