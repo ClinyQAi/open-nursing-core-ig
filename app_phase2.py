@@ -22,7 +22,6 @@ except ImportError:
 # Core imports
 from core.settings import settings
 from core.logging_config import configure_logging
-from core.safe_logging import mask_identifier
 from core.validator import (
     authenticate_user,
     load_vector_db,
