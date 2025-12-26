@@ -14,6 +14,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | | |
 | :--- | :--- |
 | [ACVPU Consciousness Level](StructureDefinition-onc-acvpu.md) | ACVPU consciousness level assessment for NEWS2 (Alert, Confusion, Voice, Pain, Unresponsive) |
+| [Barthel Index](StructureDefinition-onc-barthel-index.md) | Barthel Index for measuring independence in activities of daily living (ADL). Score 0-20=total dependency, 91-99=slight dependency, 100=independent. Total range 0-100. |
 | [Blood Pressure](StructureDefinition-onc-blood-pressure.md) | Blood pressure observation for NEWS2 (systolic BP used for scoring) |
 | [Body Temperature](StructureDefinition-onc-body-temperature.md) | Body temperature observation for NEWS2 |
 | [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessment.md) | A profile for the Braden Scale pressure ulcer risk assessment |
@@ -23,6 +24,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [Inspired Oxygen](StructureDefinition-onc-inspired-oxygen.md) | Inspired oxygen observation for NEWS2 (air vs supplemental oxygen) |
 | [MUST Score (Malnutrition Universal Screening Tool)](StructureDefinition-onc-must-score.md) | Malnutrition Universal Screening Tool for identifying adults at risk of malnutrition. Score 0=low risk, 1=medium risk, 2+=high risk. NHS-standard nutritional screening. |
 | [Monk Skin Tone Observation](StructureDefinition-onc-monk-skintone-observation.md) |  |
+| [Morse Fall Scale](StructureDefinition-onc-morse-fall-scale.md) | Morse Fall Scale for assessing fall risk. Score 0-24=no risk, 25-50=low risk, ≥51=high risk. Total range 0-125. |
 | [NEWS2 Score](StructureDefinition-onc-news2-score.md) | National Early Warning Score 2 (NEWS2) for detecting clinical deterioration. Fully aligned with NHS CareConnect-NEWS2-Observation-1. |
 | [NEWS2 Sub-Score](StructureDefinition-onc-news2-subscore.md) | Individual parameter sub-score for NEWS2 (0-3 for most parameters). References the related vital sign observation. |
 | [Nursing Intervention](StructureDefinition-onc-nursing-intervention.md) |  |
@@ -36,6 +38,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [Skin Tone Observation](StructureDefinition-onc-skintone-observation.md) |  |
 | [Waterlow Score](StructureDefinition-onc-waterlow-score.md) | Waterlow Pressure Ulcer Risk Assessment - NHS standard tool. Score ≥10 indicates at risk, ≥15 high risk, ≥20 very high risk. |
 | [Wound Assessment](StructureDefinition-onc-wound-assessment.md) | Comprehensive wound assessment including staging and dimensions |
+| [qSOFA (Quick SOFA)](StructureDefinition-onc-qsofa.md) | Quick Sequential Organ Failure Assessment for sepsis screening. Score ≥2 indicates high risk. Total range 0-3. |
 
 ### Structures: Extension Definitions 
 

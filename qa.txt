@@ -1,9 +1,9 @@
 OpenNursingCoreIG : Validation Results
 =========================================
 
-err = 84, warn = 62, info = 49
+err = 93, warn = 65, info = 52
 IG Publisher Version: 2.0.29
-Generated Fri Dec 26 00:38:04 UTC 2025. FHIR version 4.0.1 for onc.ig#1.0.0 (canonical = https://clinyqai.github.io/open-nursing-core-ig)
+Generated Fri Dec 26 00:42:58 UTC 2025. FHIR version 4.0.1 for onc.ig#1.0.0 (canonical = https://clinyqai.github.io/open-nursing-core-ig)
  Build Errors : 1 / 22 / 0
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-monk-scale : 0 / 3 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-observation-codes : 2 / 2 / 2
@@ -21,6 +21,7 @@ Generated Fri Dec 26 00:38:04 UTC 2025. FHIR version 4.0.1 for onc.ig#1.0.0 (can
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-intervention-goal-reference : 0 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-observation-goal-reference : 0 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-acvpu : 1 / 1 / 3
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-barthel-index : 3 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-blood-pressure : 1 / 1 / 4
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-body-temperature : 1 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-braden-scale-assessment : 15 / 0 / 4
@@ -29,6 +30,7 @@ Generated Fri Dec 26 00:38:04 UTC 2025. FHIR version 4.0.1 for onc.ig#1.0.0 (can
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-heart-rate : 1 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-inspired-oxygen : 1 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-monk-skintone-observation : 1 / 1 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-morse-fall-scale : 3 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-must-score : 9 / 1 / 4
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-news2-score : 1 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-news2-subscore : 1 / 1 / 2
@@ -39,6 +41,7 @@ Generated Fri Dec 26 00:38:04 UTC 2025. FHIR version 4.0.1 for onc.ig#1.0.0 (can
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-oxygen-saturation : 1 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-pain-assessment : 1 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-patient-goal : 0 / 0 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-qsofa : 3 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-respiration-rate : 1 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-skintone-observation : 3 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-waterlow-score : 3 / 1 / 2
@@ -136,6 +139,12 @@ INFORMATION: StructureDefinition/onc-acvpu: StructureDefinition.snapshot.element
 ERROR: StructureDefinition/onc-acvpu: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
 INFORMATION: StructureDefinition/onc-acvpu: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-acvpu'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-onc-barthel-index.json ==
+ERROR: StructureDefinition/onc-barthel-index: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
+ERROR: StructureDefinition/onc-barthel-index: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '83254-5' in the CodeSystem 'http://loinc.org' version '2.81'
+ERROR: StructureDefinition/onc-barthel-index: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '83254-5' in the CodeSystem 'http://loinc.org' version '2.81'
+INFORMATION: StructureDefinition/onc-barthel-index: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition.where(url = 'https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-barthel-index'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-onc-blood-pressure.json ==
 ERROR: StructureDefinition/onc-blood-pressure: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
 INFORMATION: StructureDefinition/onc-blood-pressure: StructureDefinition.differential.element[2].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
@@ -186,6 +195,12 @@ WARNING: StructureDefinition.where(url = 'https://clinyqai.github.io/open-nursin
 ERROR: StructureDefinition/onc-monk-skintone-observation: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
 INFORMATION: StructureDefinition/onc-monk-skintone-observation: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-monk-skintone-observation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-onc-morse-fall-scale.json ==
+ERROR: StructureDefinition/onc-morse-fall-scale: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
+ERROR: StructureDefinition/onc-morse-fall-scale: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Morse Fall Scale panel' for http://loinc.org#73830-2. Valid display is one of 3 choices: 'Fall risk assessment' (en-US), 'Fall risk assessment' (en-US) or 'Fall risk assessment' (en-US) (for the language(s) 'en-US')
+ERROR: StructureDefinition/onc-morse-fall-scale: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Morse Fall Scale panel' for http://loinc.org#73830-2. Valid display is one of 3 choices: 'Fall risk assessment' (en-US), 'Fall risk assessment' (en-US) or 'Fall risk assessment' (en-US) (for the language(s) 'en-US')
+INFORMATION: StructureDefinition/onc-morse-fall-scale: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition.where(url = 'https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-morse-fall-scale'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-onc-must-score.json ==
 ERROR: StructureDefinition/onc-must-score: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
 ERROR: StructureDefinition/onc-must-score: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '870431003' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
@@ -226,6 +241,12 @@ ERROR: StructureDefinition/onc-pain-assessment: StructureDefinition.snapshot.ele
 INFORMATION: StructureDefinition/onc-pain-assessment: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-pain-assessment'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-onc-patient-goal.json ==
+== fsh-generated/resources/StructureDefinition-onc-qsofa.json ==
+ERROR: StructureDefinition/onc-qsofa: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
+ERROR: StructureDefinition/onc-qsofa: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Quick Sequential Organ Failure Assessment panel' for http://loinc.org#96790-1. Valid display is one of 3 choices: 'SOFA Total Score' (en-US), 'SOFA Total Score' (en-US) or 'SOFA total score SOFA' (en-US) (for the language(s) 'en-US')
+ERROR: StructureDefinition/onc-qsofa: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Quick Sequential Organ Failure Assessment panel' for http://loinc.org#96790-1. Valid display is one of 3 choices: 'SOFA Total Score' (en-US), 'SOFA Total Score' (en-US) or 'SOFA total score SOFA' (en-US) (for the language(s) 'en-US')
+INFORMATION: StructureDefinition/onc-qsofa: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition.where(url = 'https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-qsofa'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-onc-respiration-rate.json ==
 ERROR: StructureDefinition/onc-respiration-rate: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
 INFORMATION: StructureDefinition/onc-respiration-rate: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)

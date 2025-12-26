@@ -65,7 +65,7 @@ For questions or contributions, visit our [GitHub repository](https://github.com
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "active",
-  "date" : "2025-12-26T00:35:52+00:00",
+  "date" : "2025-12-26T00:40:38+00:00",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules.",
   "packageId" : "onc.ig",
   "license" : "MIT",
@@ -790,6 +790,20 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           }
         ],
         "reference" : {
+          "reference" : "StructureDefinition/onc-barthel-index"
+        },
+        "name" : "Barthel Index",
+        "description" : "Barthel Index for measuring independence in activities of daily living (ADL). Score 0-20=total dependency, 91-99=slight dependency, 100=independent. Total range 0-100.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
           "reference" : "StructureDefinition/onc-blood-pressure"
         },
         "name" : "Blood Pressure",
@@ -1038,6 +1052,20 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           "reference" : "ValueSet/onc-monk-scale-vs"
         },
         "name" : "Monk Skin Tone Scale ValueSet",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-morse-fall-scale"
+        },
+        "name" : "Morse Fall Scale",
+        "description" : "Morse Fall Scale for assessing fall risk. Score 0-24=no risk, 25-50=low risk, ≥51=high risk. Total range 0-125.",
         "exampleBoolean" : false
       },
       {
@@ -1351,6 +1379,20 @@ For questions or contributions, visit our [GitHub repository](https://github.com
         },
         "name" : "Problem Type CodeSystem",
         "description" : "Code system for categorizing types of nursing problems",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-qsofa"
+        },
+        "name" : "qSOFA (Quick SOFA)",
+        "description" : "Quick Sequential Organ Failure Assessment for sepsis screening. Score ≥2 indicates high risk. Total range 0-3.",
         "exampleBoolean" : false
       },
       {

@@ -11,7 +11,7 @@
   <name value="OpenNursingCoreIG"/>
   <title value="Open Nursing Core FHIR Implementation Guide (ONC-IG)"/>
   <status value="active"/>
-  <date value="2025-12-26T00:35:52+00:00"/>
+  <date value="2025-12-26T00:40:38+00:00"/>
   <description value="Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules."/>
   <packageId value="onc.ig"/>
   <license value="MIT"/>
@@ -463,6 +463,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/onc-barthel-index"/>
+      </reference>
+      <name value="Barthel Index"/>
+      <description value="Barthel Index for measuring independence in activities of daily living (ADL). Score 0-20=total dependency, 91-99=slight dependency, 100=independent. Total range 0-100."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/onc-blood-pressure"/>
       </reference>
       <name value="Blood Pressure"/>
@@ -657,6 +668,17 @@
         <reference value="ValueSet/onc-monk-scale-vs"/>
       </reference>
       <name value="Monk Skin Tone Scale ValueSet"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onc-morse-fall-scale"/>
+      </reference>
+      <name value="Morse Fall Scale"/>
+      <description value="Morse Fall Scale for assessing fall risk. Score 0-24=no risk, 25-50=low risk, ≥51=high risk. Total range 0-125."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -901,6 +923,17 @@
       </reference>
       <name value="Problem Type CodeSystem"/>
       <description value="Code system for categorizing types of nursing problems"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onc-qsofa"/>
+      </reference>
+      <name value="qSOFA (Quick SOFA)"/>
+      <description value="Quick Sequential Organ Failure Assessment for sepsis screening. Score ≥2 indicates high risk. Total range 0-3."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

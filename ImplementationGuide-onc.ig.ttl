@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "OpenNursingCoreIG"] ; # 
   fhir:title [ fhir:v "Open Nursing Core FHIR Implementation Guide (ONC-IG)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-12-26T00:35:52+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-26T00:40:38+00:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules."] ; # 
   fhir:packageId [ fhir:v "onc.ig"] ; # 
   fhir:license [ fhir:v "MIT"] ; # 
@@ -1328,6 +1328,27 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-barthel-index> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-barthel-index" ]
+       ] ;
+       fhir:name [ fhir:v "Barthel Index" ] ;
+       fhir:description [ fhir:v "Barthel Index for measuring independence in activities of daily living (ADL). Score 0-20=total dependency, 91-99=slight dependency, 100=independent. Total range 0-100." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-blood-pressure> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-blood-pressure" ]
        ] ;
@@ -1707,6 +1728,27 @@
          fhir:reference [ fhir:v "ValueSet/onc-monk-scale-vs" ]
        ] ;
        fhir:name [ fhir:v "Monk Skin Tone Scale ValueSet" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-morse-fall-scale> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-morse-fall-scale" ]
+       ] ;
+       fhir:name [ fhir:v "Morse Fall Scale" ] ;
+       fhir:description [ fhir:v "Morse Fall Scale for assessing fall risk. Score 0-24=no risk, 25-50=low risk, ≥51=high risk. Total range 0-125." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2184,6 +2226,27 @@
        ] ;
        fhir:name [ fhir:v "Problem Type CodeSystem" ] ;
        fhir:description [ fhir:v "Code system for categorizing types of nursing problems" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-qsofa> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-qsofa" ]
+       ] ;
+       fhir:name [ fhir:v "qSOFA (Quick SOFA)" ] ;
+       fhir:description [ fhir:v "Quick Sequential Organ Failure Assessment for sepsis screening. Score ≥2 indicates high risk. Total range 0-3." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
