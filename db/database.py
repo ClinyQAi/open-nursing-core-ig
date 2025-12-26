@@ -26,6 +26,7 @@ except ImportError:
     RealDictCursor = None
 
 from core.settings import settings
+from core.safe_logging import mask_identifier
 
 logger = logging.getLogger(__name__)
 
@@ -237,7 +238,7 @@ def add_user(username: str, password_hash: str, role: str, email: Optional[str] 
                  cur.execute(query, (username, password_hash, role, email))
                  user_id = cur.lastrowid
                  
-            logger.info(f"User created: {username} (ID: {user_id})")
+            logger.info(f"User created: {mask_identifier(username, 'user')} (ID: {mask_identifier(str(user_id), 'id')})")
             return user_id
         except Exception as e:  # Catch IntegrityError equivalent
             logger.warning(

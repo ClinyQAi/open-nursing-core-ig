@@ -462,7 +462,8 @@ if __name__ == '__main__':
     rec = recommender.recommend_interventions('high blood pressure', patient_data)
     
     logger.info("Intervention Recommendation:")
-    print(json.dumps(rec, indent=2, default=str))
+    # Removed sensitive data logging - care plan data may contain PHI
+    # print(json.dumps(rec, indent=2, default=str))
     
     # Test care plan optimizer
     optimizer = CarePlanOptimizer()
@@ -473,7 +474,8 @@ if __name__ == '__main__':
     )
     
     logger.info("\nOptimized Care Plan:")
-    print(json.dumps(care_plan, indent=2, default=str))
+    # Removed sensitive data logging - care plan contains patient_id and PHI
+    # print(json.dumps(care_plan, indent=2, default=str))
     
     # Test pattern recognition
     pattern_engine = PatternRecognitionEngine()
@@ -487,6 +489,7 @@ if __name__ == '__main__':
     
     patterns = pattern_engine.recognize_patterns(vital_signs, {})
     logger.info("\nRecognized Patterns:")
-    print(json.dumps(patterns, indent=2, default=str))
+    # Removed sensitive data logging - patterns may contain patient-specific data
+    # print(json.dumps(patterns, indent=2, default=str))
     
     logger.info("\nPhase 3.2: Recommendations Engine - Ready for deployment")

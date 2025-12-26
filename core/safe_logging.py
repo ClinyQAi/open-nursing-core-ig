@@ -64,3 +64,88 @@ def get_safe_error_message(exception: Exception) -> str:
         >>> # safe_msg = "ValueError"
     """
     return type(exception).__name__
+
+
+def mask_identifier(identifier: str, prefix: str = "id") -> str:
+    """
+    Mask an identifier for safe logging.
+    
+    Completely masks the identifier value to prevent any sensitive data exposure.
+    Returns only the prefix with masked content, without revealing any characters
+    from the actual identifier.
+    
+    Args:
+        identifier: The identifier to mask (patient_id, username, etc.)
+        prefix: Prefix to use for the masked value (e.g., 'pat', 'user', 'id')
+        
+    Returns:
+        Masked identifier string in format: "{prefix}_****"
+        
+    Example:
+        >>> mask_identifier("patient12345", "pat")
+        'pat_****'
+        >>> mask_identifier("admin", "user")
+        'user_****'
+        >>> mask_identifier("", "id")
+        'id_****'
+    """
+    return f"{prefix}_****"
+
+
+def safe_log_info(
+    logger: logging.Logger,
+    message: str,
+    **identifiers
+) -> None:
+    """
+    Safely log an info message with masked identifiers.
+    
+    Args:
+        logger: Logger instance to use
+        message: Message template with {placeholders}
+        **identifiers: Key-value pairs of identifiers to mask
+        
+    Example:
+        >>> safe_log_info(logger, "Processing patient {patient_id}", 
+        ...               patient_id=("12345", "pat"))
+        # Logs: "Processing patient pat_****"
+    """
+    masked_values = {}
+    for key, value in identifiers.items():
+        if isinstance(value, tuple):
+            identifier, prefix = value
+            masked_values[key] = mask_identifier(identifier, prefix)
+        else:
+            masked_values[key] = mask_identifier(value, key)
+    
+    logger.info(message.format(**masked_values))
+
+
+def safe_log_warning(
+    logger: logging.Logger,
+    message: str,
+    **identifiers
+) -> None:
+    """
+    Safely log a warning message with masked identifiers.
+    
+    Args:
+        logger: Logger instance to use
+        message: Message template with {placeholders}
+        **identifiers: Key-value pairs of identifiers to mask
+        
+    Example:
+        >>> safe_log_warning(logger, "No data for patient {patient_id}", 
+        ...                  patient_id=("67890", "pat"))
+        # Logs: "No data for patient pat_****"
+    """
+    masked_values = {}
+    for key, value in identifiers.items():
+        if isinstance(value, tuple):
+            identifier, prefix = value
+            masked_values[key] = mask_identifier(identifier, prefix)
+        else:
+            masked_values[key] = mask_identifier(value, key)
+    
+    logger.warning(message.format(**masked_values))
+

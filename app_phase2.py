@@ -22,6 +22,7 @@ except ImportError:
 # Core imports
 from core.settings import settings
 from core.logging_config import configure_logging
+from core.safe_logging import mask_identifier
 from core.validator import (
     authenticate_user,
     load_vector_db,
@@ -33,6 +34,7 @@ from core.validator import (
     DB_AVAILABLE
 )
 from core.analytics_dashboard import render_dashboard
+from core.safe_logging import mask_identifier, log_exception_safe
 
 # Optional Imports with new paths
 try:
@@ -110,7 +112,6 @@ def init_database_if_needed():
                 # Seed default users into database
                 _seed_default_users()
         except Exception as e:
-            from core.safe_logging import log_exception_safe
             log_exception_safe(logger, "Database initialization failed", e)
             st.warning("Database connection failed - using local storage")
 
@@ -134,9 +135,8 @@ def _seed_default_users():
             if user is None:
                 password_hash = hash_password(creds["password"])
                 add_user(username, password_hash, creds["role"])
-                logger.info(f"Seeded user: {username}")
+                logger.info(f"Seeded user: {mask_identifier(username, 'user')}")
         except Exception as e:
-            from core.safe_logging import log_exception_safe
             log_exception_safe(logger, "Could not seed user", e, level="warning")
 
 
@@ -335,7 +335,6 @@ def main_app():
                         )
                         response = qa.run(user_input)
                     except Exception as e:
-                        from core.safe_logging import log_exception_safe
                         log_exception_safe(logger, "QA error", e)
                         response = (
                             f"Unable to process your question. "
