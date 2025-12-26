@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-observation-goal-ref
   "name" : "ObservationGoalReference",
   "title" : "Observation Goal Reference",
   "status" : "draft",
-  "date" : "2025-12-26T14:39:04+00:00",
+  "date" : "2025-12-26T14:39:51+00:00",
   "description" : "Extension to link goal evaluation observations to the patient goals being evaluated. Enables tracking of goal progress and outcomes over time.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
