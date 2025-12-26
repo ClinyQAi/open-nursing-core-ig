@@ -141,9 +141,9 @@ def _seed_default_users():
                 password_hash = _hash_user_password(password)
                 del password  # Explicitly remove from scope
                 add_user(username, password_hash, role)
-                # Log only non-sensitive role information (no password-derived data)
-                logger.info(f"Seeded default user for role: {role}")
-                logger.info(f"Seeded user: {mask_identifier(username, 'user')}")
+                # Log only non-sensitive, masked user information (no password- or role-derived data)
+                logger.info(f"Seeded default user: {mask_identifier(username, 'user')}")
+
         except Exception as e:
             log_exception_safe(logger, "Could not seed user", e, level="warning")
 
