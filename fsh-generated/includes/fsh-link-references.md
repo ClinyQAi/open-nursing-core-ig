@@ -3,6 +3,7 @@
 [AMT4VS]: ValueSet-onc-4at-amt4-vs.html
 [AttentionVS]: ValueSet-onc-4at-attention-vs.html
 [ONC4ATDelirium]: StructureDefinition-onc-4at-delirium.html
+[ONCAbbeyPainScale]: StructureDefinition-onc-abbey-pain-scale.html
 [ONCACVPU]: StructureDefinition-onc-acvpu.html
 [ACVPUValueSet]: ValueSet-acvpu-vs.html
 [ONCBarthelIndex]: StructureDefinition-onc-barthel-index.html

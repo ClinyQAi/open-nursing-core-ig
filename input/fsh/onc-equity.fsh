@@ -104,6 +104,17 @@ Description: "Custom observation codes for Open Nursing Core"
 * #bristol-6 "Type 6" "Fluffy pieces with ragged edges, a mushy stool"
 * #bristol-7 "Type 7" "Watery, no solid pieces. Entirely liquid"
 
+// =============================================================================
+// Abbey Pain Scale Codes
+// =============================================================================
+* #abbey-score "Abbey Pain Scale Score" "Total Abbey Pain Scale Score (0-100+ but usually 0-18+)"
+* #abbey-vocalization "Vocalization" "Whimpering, groaning, crying"
+* #abbey-facial-expression "Facial Expression" "Looking tense, frowning, grimacing, looking frightened"
+* #abbey-body-language "Body Language" "Fidgeting, rocking, guarding part of body, withdrawn"
+* #abbey-behavioral-change "Behavioral Change" "Increased confusion, refusing to eat, alteration in usual pattern"
+* #abbey-psychological-change "Psychological Change" "Temperature, pulse, blood pressure changes, perspiration, pallor"
+* #abbey-physical-changes "Physical Changes" "Skin tears, pressure areas, arthritis, contractures, previous injuries"
+
 ValueSet: ONCMonkScaleVS
 Id: onc-monk-scale-vs
 Title: "Monk Skin Tone Scale ValueSet"
