@@ -10,7 +10,7 @@
 
 ## 📘 Published Implementation Guide
 
-**🌐 Live IG:** [https://clinyqai.github.io/open-nursing-core-ig/](https://clinyqai.github.io/open-nursing-core-ig/)
+**🌐 Live IG:** [[https://clinyqai.github.io/open-nursing-core-ig/](https://clinyqai.github.io/open-nursing-core-ig/](https://opennursingcoreig.com/))
 
 | Resource | Link |
 |----------|------|
