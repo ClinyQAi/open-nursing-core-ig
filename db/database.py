@@ -26,6 +26,7 @@ except ImportError:
     RealDictCursor = None
 
 from core.settings import settings
+from core.safe_logging import mask_identifier
 
 logger = logging.getLogger(__name__)
 
@@ -237,9 +238,14 @@ def add_user(username: str, password_hash: str, role: str, email: Optional[str] 
                  cur.execute(query, (username, password_hash, role, email))
                  user_id = cur.lastrowid
                  
-            from core.safe_logging import mask_identifier
             logger.info(f"User created: {mask_identifier(username, 'user')} (ID: {mask_identifier(str(user_id), 'id')})")
             return user_id
+        except Exception as e:  # Catch IntegrityError equivalent
+            logger.warning(
+                "User creation failed (possible duplicate or constraint violation).",
+                exc_info=True,
+            )
+            raise  # Re-raise for controller handling if needed
         except Exception as e: # Catch IntegrityError equivalent
             from core.safe_logging import log_exception_safe
             log_exception_safe(logger, "User creation failed", e, level="warning")

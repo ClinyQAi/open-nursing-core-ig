@@ -74,6 +74,9 @@ def mask_identifier(identifier: str, prefix: str = "id") -> str:
     This security measure ensures no part of the identifier (which may contain
     or be derived from sensitive information) is exposed in logs.
     The prefix parameter is used to identify the type of identifier in logs.
+    Completely masks the identifier value to prevent any sensitive data exposure.
+    Returns only the prefix with masked content, without revealing any characters
+    from the actual identifier.
     
     Args:
         identifier: The identifier to mask (patient_id, username, etc.)
@@ -81,6 +84,7 @@ def mask_identifier(identifier: str, prefix: str = "id") -> str:
         
     Returns:
         Masked identifier string in the format: prefix_****
+        Masked identifier string in format: "{prefix}_****"
         
     Example:
         >>> mask_identifier("patient12345", "pat")
@@ -90,12 +94,6 @@ def mask_identifier(identifier: str, prefix: str = "id") -> str:
         >>> mask_identifier("", "id")  # Even empty strings are masked consistently
         'id_****'
     """
-    if not identifier:
-        return f"{prefix}_****"
-    
-    # Always mask the full identifier content; do not expose any characters.
-    # We still accept any type for identifier to keep the API compatible,
-    # but we never use its value in the returned string.
     return f"{prefix}_****"
 
 
