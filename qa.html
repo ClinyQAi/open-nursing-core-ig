@@ -47,7 +47,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for OpenNursingCoreIG</h1>
- <p>Generated Fri Dec 26 12:16:50 UTC 2025, FHIR version 4.0.1 for onc.ig#1.0.0 (canonical = <a href="https://clinyqai.github.io/open-nursing-core-ig">https://clinyqai.github.io/open-nursing-core-ig</a> (<a href="https://clinyqai.github.io/open-nursing-core-ig/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Fri Dec 26 12:24:27 UTC 2025, FHIR version 4.0.1 for onc.ig#1.0.0 (canonical = <a href="https://clinyqai.github.io/open-nursing-core-ig">https://clinyqai.github.io/open-nursing-core-ig</a> (<a href="https://clinyqai.github.io/open-nursing-core-ig/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v2.0.29</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = onc.ig, Canonical = https://clinyqai.github.io/open-nursing-core-ig</td></tr>
@@ -549,12 +549,12 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Observation&#8203;.value&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l45&#8203;/c4)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Resolved' for http://snomed.info/sct#385633008. Valid display is 'Improving (qualifier value)' (en) (for the language(s) 'en-US')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l80">log</a>, or see <a href="#vmi38" onClick="document.getElementById('vmi38').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi38" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
-16 0    : 0ms  : Prepare include: "()"
-16 0    : 0ms  : Validate "[http://snomed.info/sct#385633008 ("Resolved")]"
-16 0    : 0ms  : Check "http://snomed.info/sct#385633008"
-16 0    : 0ms  : Using CodeSystem "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" (content = complete)
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://snomed.info/sct#385633008 ("Resolved")]"
+0 0     : 0ms  : Check "http://snomed.info/sct#385633008"
+0 0     : 0ms  : Using CodeSystem "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -575,12 +575,12 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Observation&#8203;.code&#8203;.coding[0]&#8203;.code (l20&#8203;/c4)</b></td><td><b>error</b></td><td><b>Unknown code '38227-0' in the CodeSystem 'http://loinc.org' version '2.81'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l52">log</a>, or see <a href="#vmi41" onClick="document.getElementById('vmi41').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi41" style="display:none"><br/><pre>0 0 : start
-15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-15 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
-15 0    : 0ms  : Prepare include: "()"
-15 0    : 0ms  : Validate "[http://loinc.org#38227-0 ("Braden scale total score")]"
-15 0    : 0ms  : Check "http://loinc.org#38227-0"
-15 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://loinc.org#38227-0 ("Braden scale total score")]"
+16 0    : 0ms  : Check "http://loinc.org#38227-0"
+16 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -595,22 +595,22 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Observation&#8203;.component[1]&#8203;.code&#8203;.coding[0]&#8203;.code (l54&#8203;/c8)</b></td><td><b>error</b></td><td><b>Unknown code '38229-6' in the CodeSystem 'http://loinc.org' version '2.81'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l54">log</a>, or see <a href="#vmi43" onClick="document.getElementById('vmi43').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi43" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
-16 0    : 0ms  : Prepare include: "()"
-16 0    : 0ms  : Validate "[http://loinc.org#38229-6 ("Moisture Braden scale")]"
-16 0    : 0ms  : Check "http://loinc.org#38229-6"
-16 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://loinc.org#38229-6 ("Moisture Braden scale")]"
+0 0     : 0ms  : Check "http://loinc.org#38229-6"
+0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Observation&#8203;.component[2]&#8203;.code&#8203;.coding[0]&#8203;.code (l71&#8203;/c8)</b></td><td><b>error</b></td><td><b>Unknown code '38223-9' in the CodeSystem 'http://loinc.org' version '2.81'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l55">log</a>, or see <a href="#vmi44" onClick="document.getElementById('vmi44').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi44" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
-16 0    : 0ms  : Prepare include: "()"
-16 0    : 0ms  : Validate "[http://loinc.org#38223-9 ("Activity Braden scale")]"
-16 0    : 0ms  : Check "http://loinc.org#38223-9"
-16 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://loinc.org#38223-9 ("Activity Braden scale")]"
+0 0     : 0ms  : Check "http://loinc.org#38223-9"
+0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -625,12 +625,12 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Observation&#8203;.component[4]&#8203;.code&#8203;.coding[0]&#8203;.code (l105&#8203;/c8)</b></td><td><b>error</b></td><td><b>Unknown code '38225-4' in the CodeSystem 'http://loinc.org' version '2.81'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l57">log</a>, or see <a href="#vmi46" onClick="document.getElementById('vmi46').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi46" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://loinc.org#38225-4 ("Nutrition Braden scale")]"
-0 0     : 0ms  : Check "http://loinc.org#38225-4"
-0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://loinc.org#38225-4 ("Nutrition Braden scale")]"
+15 0    : 0ms  : Check "http://loinc.org#38225-4"
+15 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -800,22 +800,22 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[15]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.code (l1&#8203;/c52619)</b></td><td><b>error</b></td><td><b>Unknown code '83254-5' in the CodeSystem 'http://loinc.org' version '2.81'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l47">log</a>, or see <a href="#vmi64" onClick="document.getElementById('vmi64').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi64" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
-16 0    : 0ms  : Prepare include: "()"
-16 0    : 0ms  : Validate "[http://loinc.org#83254-5 ("Barthel Index")]"
-16 0    : 0ms  : Check "http://loinc.org#83254-5"
-16 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://loinc.org#83254-5 ("Barthel Index")]"
+0 0     : 0ms  : Check "http://loinc.org#83254-5"
+0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.code (l1&#8203;/c114684)</b></td><td><b>error</b></td><td><b>Unknown code '83254-5' in the CodeSystem 'http://loinc.org' version '2.81'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l47">log</a>, or see <a href="#vmi65" onClick="document.getElementById('vmi65').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi65" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
-16 0    : 0ms  : Prepare include: "()"
-16 0    : 0ms  : Validate "[http://loinc.org#83254-5 ("Barthel Index")]"
-16 0    : 0ms  : Check "http://loinc.org#83254-5"
-16 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://loinc.org#83254-5 ("Barthel Index")]"
+0 0     : 0ms  : Check "http://loinc.org#83254-5"
+0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -883,12 +883,12 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[15]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.code (l1&#8203;/c140016)</b></td><td><b>error</b></td><td><b>Unknown code '38227-0' in the CodeSystem 'http://loinc.org' version '2.81'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l52">log</a>, or see <a href="#vmi77" onClick="document.getElementById('vmi77').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi77" style="display:none"><br/><pre>0 0 : start
-15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-15 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
-15 0    : 0ms  : Prepare include: "()"
-15 0    : 0ms  : Validate "[http://loinc.org#38227-0 ("Braden scale total score")]"
-15 0    : 0ms  : Check "http://loinc.org#38227-0"
-15 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://loinc.org#38227-0 ("Braden scale total score")]"
+16 0    : 0ms  : Check "http://loinc.org#38227-0"
+16 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -903,22 +903,22 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[71]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.code (l1&#8203;/c223729)</b></td><td><b>error</b></td><td><b>Unknown code '38229-6' in the CodeSystem 'http://loinc.org' version '2.81'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l54">log</a>, or see <a href="#vmi79" onClick="document.getElementById('vmi79').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi79" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
-16 0    : 0ms  : Prepare include: "()"
-16 0    : 0ms  : Validate "[http://loinc.org#38229-6 ("Moisture Braden scale")]"
-16 0    : 0ms  : Check "http://loinc.org#38229-6"
-16 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://loinc.org#38229-6 ("Moisture Braden scale")]"
+0 0     : 0ms  : Check "http://loinc.org#38229-6"
+0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[80]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.code (l1&#8203;/c238515)</b></td><td><b>error</b></td><td><b>Unknown code '38223-9' in the CodeSystem 'http://loinc.org' version '2.81'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l55">log</a>, or see <a href="#vmi80" onClick="document.getElementById('vmi80').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi80" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
-16 0    : 0ms  : Prepare include: "()"
-16 0    : 0ms  : Validate "[http://loinc.org#38223-9 ("Activity Braden scale")]"
-16 0    : 0ms  : Check "http://loinc.org#38223-9"
-16 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://loinc.org#38223-9 ("Activity Braden scale")]"
+0 0     : 0ms  : Check "http://loinc.org#38223-9"
+0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -933,12 +933,12 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[98]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.code (l1&#8203;/c268094)</b></td><td><b>error</b></td><td><b>Unknown code '38225-4' in the CodeSystem 'http://loinc.org' version '2.81'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l57">log</a>, or see <a href="#vmi82" onClick="document.getElementById('vmi82').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi82" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://loinc.org#38225-4 ("Nutrition Braden scale")]"
-0 0     : 0ms  : Check "http://loinc.org#38225-4"
-0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://loinc.org#38225-4 ("Nutrition Braden scale")]"
+15 0    : 0ms  : Check "http://loinc.org#38225-4"
+15 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -953,12 +953,12 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.code (l1&#8203;/c290915)</b></td><td><b>error</b></td><td><b>Unknown code '38227-0' in the CodeSystem 'http://loinc.org' version '2.81'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l52">log</a>, or see <a href="#vmi84" onClick="document.getElementById('vmi84').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi84" style="display:none"><br/><pre>0 0 : start
-15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-15 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
-15 0    : 0ms  : Prepare include: "()"
-15 0    : 0ms  : Validate "[http://loinc.org#38227-0 ("Braden scale total score")]"
-15 0    : 0ms  : Check "http://loinc.org#38227-0"
-15 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://loinc.org#38227-0 ("Braden scale total score")]"
+16 0    : 0ms  : Check "http://loinc.org#38227-0"
+16 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -973,22 +973,22 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[12]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.code (l1&#8203;/c292341)</b></td><td><b>error</b></td><td><b>Unknown code '38229-6' in the CodeSystem 'http://loinc.org' version '2.81'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l54">log</a>, or see <a href="#vmi86" onClick="document.getElementById('vmi86').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi86" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
-16 0    : 0ms  : Prepare include: "()"
-16 0    : 0ms  : Validate "[http://loinc.org#38229-6 ("Moisture Braden scale")]"
-16 0    : 0ms  : Check "http://loinc.org#38229-6"
-16 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://loinc.org#38229-6 ("Moisture Braden scale")]"
+0 0     : 0ms  : Check "http://loinc.org#38229-6"
+0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[15]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.code (l1&#8203;/c292790)</b></td><td><b>error</b></td><td><b>Unknown code '38223-9' in the CodeSystem 'http://loinc.org' version '2.81'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l55">log</a>, or see <a href="#vmi87" onClick="document.getElementById('vmi87').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi87" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
-16 0    : 0ms  : Prepare include: "()"
-16 0    : 0ms  : Validate "[http://loinc.org#38223-9 ("Activity Braden scale")]"
-16 0    : 0ms  : Check "http://loinc.org#38223-9"
-16 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://loinc.org#38223-9 ("Activity Braden scale")]"
+0 0     : 0ms  : Check "http://loinc.org#38223-9"
+0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1003,12 +1003,12 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[21]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.code (l1&#8203;/c293692)</b></td><td><b>error</b></td><td><b>Unknown code '38225-4' in the CodeSystem 'http://loinc.org' version '2.81'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l57">log</a>, or see <a href="#vmi89" onClick="document.getElementById('vmi89').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi89" style="display:none"><br/><pre>0 0 : start
-0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
-0 0     : 0ms  : Prepare include: "()"
-0 0     : 0ms  : Validate "[http://loinc.org#38225-4 ("Nutrition Braden scale")]"
-0 0     : 0ms  : Check "http://loinc.org#38225-4"
-0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+15 0    : 0ms  : Prepare include: "()"
+15 0    : 0ms  : Validate "[http://loinc.org#38225-4 ("Nutrition Braden scale")]"
+15 0    : 0ms  : Check "http://loinc.org#38225-4"
+15 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1124,22 +1124,22 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[15]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c52524)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Mini-Mental State Examination (MMSE)' for http://loinc.org#72106-8. Valid display is one of 2 choices: 'Total score [MMSE]' (en-US) or 'Total score [MMSE]' (en-US) (for the language(s) 'en-US')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l65">log</a>, or see <a href="#vmi108" onClick="document.getElementById('vmi108').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi108" style="display:none"><br/><pre>0 0 : start
-15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-15 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
-15 0    : 0ms  : Prepare include: "()"
-15 0    : 0ms  : Validate "[http://loinc.org#72106-8 ("Mini-Mental State Examination (MMSE)")]"
-15 0    : 0ms  : Check "http://loinc.org#72106-8"
-15 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://loinc.org#72106-8 ("Mini-Mental State Examination (MMSE)")]"
+16 0    : 0ms  : Check "http://loinc.org#72106-8"
+16 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c114591)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Mini-Mental State Examination (MMSE)' for http://loinc.org#72106-8. Valid display is one of 2 choices: 'Total score [MMSE]' (en-US) or 'Total score [MMSE]' (en-US) (for the language(s) 'en-US')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l65">log</a>, or see <a href="#vmi109" onClick="document.getElementById('vmi109').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi109" style="display:none"><br/><pre>0 0 : start
-15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-15 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
-15 0    : 0ms  : Prepare include: "()"
-15 0    : 0ms  : Validate "[http://loinc.org#72106-8 ("Mini-Mental State Examination (MMSE)")]"
-15 0    : 0ms  : Check "http://loinc.org#72106-8"
-15 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://loinc.org#72106-8 ("Mini-Mental State Examination (MMSE)")]"
+16 0    : 0ms  : Check "http://loinc.org#72106-8"
+16 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -1182,22 +1182,22 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[15]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c52624)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Morse Fall Scale panel' for http://loinc.org#73830-2. Valid display is one of 3 choices: 'Fall risk assessment' (en-US), 'Fall risk assessment' (en-US) or 'Fall risk assessment' (en-US) (for the language(s) 'en-US')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l66">log</a>, or see <a href="#vmi116" onClick="document.getElementById('vmi116').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi116" style="display:none"><br/><pre>0 0 : start
-15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-15 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
-15 0    : 0ms  : Prepare include: "()"
-15 0    : 0ms  : Validate "[http://loinc.org#73830-2 ("Morse Fall Scale panel")]"
-15 0    : 0ms  : Check "http://loinc.org#73830-2"
-15 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://loinc.org#73830-2 ("Morse Fall Scale panel")]"
+0 0     : 0ms  : Check "http://loinc.org#73830-2"
+0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c114705)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Morse Fall Scale panel' for http://loinc.org#73830-2. Valid display is one of 3 choices: 'Fall risk assessment' (en-US), 'Fall risk assessment' (en-US) or 'Fall risk assessment' (en-US) (for the language(s) 'en-US')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l66">log</a>, or see <a href="#vmi117" onClick="document.getElementById('vmi117').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi117" style="display:none"><br/><pre>0 0 : start
-15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-15 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
-15 0    : 0ms  : Prepare include: "()"
-15 0    : 0ms  : Validate "[http://loinc.org#73830-2 ("Morse Fall Scale panel")]"
-15 0    : 0ms  : Check "http://loinc.org#73830-2"
-15 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://loinc.org#73830-2 ("Morse Fall Scale panel")]"
+0 0     : 0ms  : Check "http://loinc.org#73830-2"
+0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -1221,22 +1221,22 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[15]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.code (l1&#8203;/c119240)</b></td><td><b>error</b></td><td><b>Unknown code '870431003' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l67">log</a>, or see <a href="#vmi121" onClick="document.getElementById('vmi121').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi121" style="display:none"><br/><pre>0 0 : start
-15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-15 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
-15 0    : 0ms  : Prepare include: "()"
-15 0    : 0ms  : Validate "[http://snomed.info/sct#870431003 ("Malnutrition Universal Screening Tool score")]"
-15 0    : 0ms  : Check "http://snomed.info/sct#870431003"
-15 0    : 0ms  : Using CodeSystem "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://snomed.info/sct#870431003 ("Malnutrition Universal Screening Tool score")]"
+16 0    : 0ms  : Check "http://snomed.info/sct#870431003"
+16 0    : 0ms  : Using CodeSystem "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[62]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.code (l1&#8203;/c188322)</b></td><td><b>error</b></td><td><b>Unknown code '846931000000101' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l68">log</a>, or see <a href="#vmi122" onClick="document.getElementById('vmi122').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi122" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
-16 0    : 0ms  : Prepare include: "()"
-16 0    : 0ms  : Validate "[http://snomed.info/sct#846931000000101 ("Malnutrition Universal Screening Tool BMI score")]"
-16 0    : 0ms  : Check "http://snomed.info/sct#846931000000101"
-16 0    : 0ms  : Using CodeSystem "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" (content = complete)
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://snomed.info/sct#846931000000101 ("Malnutrition Universal Screening Tool BMI score")]"
+0 0     : 0ms  : Check "http://snomed.info/sct#846931000000101"
+0 0     : 0ms  : Using CodeSystem "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1261,22 +1261,22 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.code (l1&#8203;/c251048)</b></td><td><b>error</b></td><td><b>Unknown code '870431003' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l67">log</a>, or see <a href="#vmi125" onClick="document.getElementById('vmi125').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi125" style="display:none"><br/><pre>0 0 : start
-15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-15 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
-15 0    : 0ms  : Prepare include: "()"
-15 0    : 0ms  : Validate "[http://snomed.info/sct#870431003 ("Malnutrition Universal Screening Tool score")]"
-15 0    : 0ms  : Check "http://snomed.info/sct#870431003"
-15 0    : 0ms  : Using CodeSystem "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" (content = complete)
+16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+16 0    : 0ms  : Prepare include: "()"
+16 0    : 0ms  : Validate "[http://snomed.info/sct#870431003 ("Malnutrition Universal Screening Tool score")]"
+16 0    : 0ms  : Check "http://snomed.info/sct#870431003"
+16 0    : 0ms  : Using CodeSystem "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[9]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.code (l1&#8203;/c252290)</b></td><td><b>error</b></td><td><b>Unknown code '846931000000101' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l68">log</a>, or see <a href="#vmi126" onClick="document.getElementById('vmi126').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi126" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
-16 0    : 0ms  : Prepare include: "()"
-16 0    : 0ms  : Validate "[http://snomed.info/sct#846931000000101 ("Malnutrition Universal Screening Tool BMI score")]"
-16 0    : 0ms  : Check "http://snomed.info/sct#846931000000101"
-16 0    : 0ms  : Using CodeSystem "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" (content = complete)
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://snomed.info/sct#846931000000101 ("Malnutrition Universal Screening Tool BMI score")]"
+0 0     : 0ms  : Check "http://snomed.info/sct#846931000000101"
+0 0     : 0ms  : Using CodeSystem "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1467,22 +1467,22 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[15]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c52536)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Quick Sequential Organ Failure Assessment panel' for http://loinc.org#96790-1. Valid display is one of 3 choices: 'SOFA Total Score' (en-US), 'SOFA Total Score' (en-US) or 'SOFA total score SOFA' (en-US) (for the language(s) 'en-US')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l72">log</a>, or see <a href="#vmi151" onClick="document.getElementById('vmi151').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi151" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
-16 0    : 0ms  : Prepare include: "()"
-16 0    : 0ms  : Validate "[http://loinc.org#96790-1 ("Quick Sequential Organ Failure Assessment panel")]"
-16 0    : 0ms  : Check "http://loinc.org#96790-1"
-16 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://loinc.org#96790-1 ("Quick Sequential Organ Failure Assessment panel")]"
+0 0     : 0ms  : Check "http://loinc.org#96790-1"
+0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c114631)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Quick Sequential Organ Failure Assessment panel' for http://loinc.org#96790-1. Valid display is one of 3 choices: 'SOFA Total Score' (en-US), 'SOFA Total Score' (en-US) or 'SOFA total score SOFA' (en-US) (for the language(s) 'en-US')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l72">log</a>, or see <a href="#vmi152" onClick="document.getElementById('vmi152').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi152" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
-16 0    : 0ms  : Prepare include: "()"
-16 0    : 0ms  : Validate "[http://loinc.org#96790-1 ("Quick Sequential Organ Failure Assessment panel")]"
-16 0    : 0ms  : Check "http://loinc.org#96790-1"
-16 0    : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://loinc.org#96790-1 ("Quick Sequential Organ Failure Assessment panel")]"
+0 0     : 0ms  : Check "http://loinc.org#96790-1"
+0 0     : 0ms  : Using CodeSystem "http://loinc.org|2.81" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -1561,22 +1561,22 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[15]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c54639)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Waterlow score (observable entity)' for http://snomed.info/sct#443846001. Valid display is 'Detail of history of travel (observable entity)' (en) (for the language(s) 'en-US')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l74">log</a>, or see <a href="#vmi163" onClick="document.getElementById('vmi163').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi163" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
-16 0    : 0ms  : Prepare include: "()"
-16 0    : 0ms  : Validate "[http://snomed.info/sct#443846001 ("Waterlow score (observable entity)")]"
-16 0    : 0ms  : Check "http://snomed.info/sct#443846001"
-16 0    : 0ms  : Using CodeSystem "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" (content = complete)
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://snomed.info/sct#443846001 ("Waterlow score (observable entity)")]"
+0 0     : 0ms  : Check "http://snomed.info/sct#443846001"
+0 0     : 0ms  : Using CodeSystem "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c116832)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Waterlow score (observable entity)' for http://snomed.info/sct#443846001. Valid display is 'Detail of history of travel (observable entity)' (en) (for the language(s) 'en-US')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l74">log</a>, or see <a href="#vmi164" onClick="document.getElementById('vmi164').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi164" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
-16 0    : 0ms  : Prepare include: "()"
-16 0    : 0ms  : Validate "[http://snomed.info/sct#443846001 ("Waterlow score (observable entity)")]"
-16 0    : 0ms  : Check "http://snomed.info/sct#443846001"
-16 0    : 0ms  : Using CodeSystem "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" (content = complete)
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://snomed.info/sct#443846001 ("Waterlow score (observable entity)")]"
+0 0     : 0ms  : Check "http://snomed.info/sct#443846001"
+0 0     : 0ms  : Using CodeSystem "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -1610,12 +1610,12 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[71]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c203651)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Width' for http://snomed.info/sct#410669006. Valid display is 'Time (property) (qualifier value)' (en) (for the language(s) 'en-US')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l77">log</a>, or see <a href="#vmi169" onClick="document.getElementById('vmi169').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi169" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
-16 0    : 0ms  : Prepare include: "()"
-16 0    : 0ms  : Validate "[http://snomed.info/sct#410669006 ("Width")]"
-16 0    : 0ms  : Check "http://snomed.info/sct#410669006"
-16 0    : 0ms  : Using CodeSystem "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" (content = complete)
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://snomed.info/sct#410669006 ("Width")]"
+0 0     : 0ms  : Check "http://snomed.info/sct#410669006"
+0 0     : 0ms  : Using CodeSystem "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1640,12 +1640,12 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[13]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c244832)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Width' for http://snomed.info/sct#410669006. Valid display is 'Time (property) (qualifier value)' (en) (for the language(s) 'en-US')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l77">log</a>, or see <a href="#vmi172" onClick="document.getElementById('vmi172').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi172" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
-16 0    : 0ms  : Prepare include: "()"
-16 0    : 0ms  : Validate "[http://snomed.info/sct#410669006 ("Width")]"
-16 0    : 0ms  : Check "http://snomed.info/sct#410669006"
-16 0    : 0ms  : Using CodeSystem "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" (content = complete)
+0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+0 0     : 0ms  : Prepare include: "()"
+0 0     : 0ms  : Validate "[http://snomed.info/sct#410669006 ("Width")]"
+0 0     : 0ms  : Check "http://snomed.info/sct#410669006"
+0 0     : 0ms  : Using CodeSystem "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" (content = complete)
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
