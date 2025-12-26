@@ -21,6 +21,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [Goal Evaluation](StructureDefinition-onc-goal-evaluation.md) |  |
 | [Heart Rate](StructureDefinition-onc-heart-rate.md) | Heart rate (pulse) observation for NEWS2 |
 | [Inspired Oxygen](StructureDefinition-onc-inspired-oxygen.md) | Inspired oxygen observation for NEWS2 (air vs supplemental oxygen) |
+| [MUST Score (Malnutrition Universal Screening Tool)](StructureDefinition-onc-must-score.md) | Malnutrition Universal Screening Tool for identifying adults at risk of malnutrition. Score 0=low risk, 1=medium risk, 2+=high risk. NHS-standard nutritional screening. |
 | [Monk Skin Tone Observation](StructureDefinition-onc-monk-skintone-observation.md) |  |
 | [NEWS2 Score](StructureDefinition-onc-news2-score.md) | National Early Warning Score 2 (NEWS2) for detecting clinical deterioration. Fully aligned with NHS CareConnect-NEWS2-Observation-1. |
 | [NEWS2 Sub-Score](StructureDefinition-onc-news2-subscore.md) | Individual parameter sub-score for NEWS2 (0-3 for most parameters). References the related vital sign observation. |

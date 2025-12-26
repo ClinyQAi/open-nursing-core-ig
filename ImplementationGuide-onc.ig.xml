@@ -11,7 +11,7 @@
   <name value="OpenNursingCoreIG"/>
   <title value="Open Nursing Core FHIR Implementation Guide (ONC-IG)"/>
   <status value="active"/>
-  <date value="2025-12-26T00:14:27+00:00"/>
+  <date value="2025-12-26T00:35:52+00:00"/>
   <description value="Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules."/>
   <packageId value="onc.ig"/>
   <license value="MIT"/>
@@ -657,6 +657,17 @@
         <reference value="ValueSet/onc-monk-scale-vs"/>
       </reference>
       <name value="Monk Skin Tone Scale ValueSet"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onc-must-score"/>
+      </reference>
+      <name value="MUST Score (Malnutrition Universal Screening Tool)"/>
+      <description value="Malnutrition Universal Screening Tool for identifying adults at risk of malnutrition. Score 0=low risk, 1=medium risk, 2+=high risk. NHS-standard nutritional screening."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

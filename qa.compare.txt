@@ -1,7 +1,7 @@
 OpenNursingCoreIG : Validation Results
 =========================================
 
-err = 75, warn = 61, info = 46
+err = 84, warn = 62, info = 49
 $--
 Generated $--. FHIR version $-- for onc.ig#$-- (canonical = https://clinyqai.github.io/open-nursing-core-ig)
  Build Errors : 1 / 22 / 0
@@ -29,6 +29,7 @@ Generated $--. FHIR version $-- for onc.ig#$-- (canonical = https://clinyqai.git
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-heart-rate : 1 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-inspired-oxygen : 1 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-monk-skintone-observation : 1 / 1 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-must-score : 9 / 1 / 4
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-news2-score : 1 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-news2-subscore : 1 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-nhs-patient : 0 / 0 / 1
@@ -185,6 +186,20 @@ WARNING: StructureDefinition.where(url = 'https://clinyqai.github.io/open-nursin
 ERROR: StructureDefinition/onc-monk-skintone-observation: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
 INFORMATION: StructureDefinition/onc-monk-skintone-observation: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-monk-skintone-observation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-onc-must-score.json ==
+ERROR: StructureDefinition/onc-must-score: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
+ERROR: StructureDefinition/onc-must-score: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '870431003' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: StructureDefinition/onc-must-score: StructureDefinition.snapshot.element[62].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '846931000000101' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: StructureDefinition/onc-must-score: StructureDefinition.snapshot.element[78].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '846941000000105' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: StructureDefinition/onc-must-score: StructureDefinition.snapshot.element[94].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '846951000000107' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: StructureDefinition/onc-must-score: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '870431003' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: StructureDefinition/onc-must-score: StructureDefinition.differential.element[9].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '846931000000101' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: StructureDefinition/onc-must-score: StructureDefinition.differential.element[15].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '846941000000105' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: StructureDefinition/onc-must-score: StructureDefinition.differential.element[21].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '846951000000107' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+INFORMATION: StructureDefinition/onc-must-score: StructureDefinition.differential.element[7].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/onc-must-score: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/onc-must-score: StructureDefinition.snapshot.element[49].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition.where(url = 'https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-must-score'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-onc-news2-score.json ==
 ERROR: StructureDefinition/onc-news2-score: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
 INFORMATION: StructureDefinition/onc-news2-score: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)

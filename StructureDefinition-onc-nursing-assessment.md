@@ -13,7 +13,7 @@
 
 **Usages:**
 
-* Derived from this Profile: [ACVPU Consciousness Level](StructureDefinition-onc-acvpu.md), [Blood Pressure](StructureDefinition-onc-blood-pressure.md), [Body Temperature](StructureDefinition-onc-body-temperature.md), [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessment.md)...Show 13 more,[Glasgow Coma Scale](StructureDefinition-onc-glasgow-coma-scale.md),[Goal Evaluation](StructureDefinition-onc-goal-evaluation.md),[Heart Rate](StructureDefinition-onc-heart-rate.md),[Inspired Oxygen](StructureDefinition-onc-inspired-oxygen.md),[Monk Skin Tone Observation](StructureDefinition-onc-monk-skintone-observation.md),[NEWS2 Score](StructureDefinition-onc-news2-score.md),[NEWS2 Sub-Score](StructureDefinition-onc-news2-subscore.md),[Oxygen Saturation](StructureDefinition-onc-oxygen-saturation.md),[Pain Assessment (NRS 0-10)](StructureDefinition-onc-pain-assessment.md),[Respiration Rate](StructureDefinition-onc-respiration-rate.md),[Skin Tone Observation](StructureDefinition-onc-skintone-observation.md),[Waterlow Score](StructureDefinition-onc-waterlow-score.md)and[Wound Assessment](StructureDefinition-onc-wound-assessment.md)
+* Derived from this Profile: [ACVPU Consciousness Level](StructureDefinition-onc-acvpu.md), [Blood Pressure](StructureDefinition-onc-blood-pressure.md), [Body Temperature](StructureDefinition-onc-body-temperature.md), [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessment.md)...Show 14 more,[Glasgow Coma Scale](StructureDefinition-onc-glasgow-coma-scale.md),[Goal Evaluation](StructureDefinition-onc-goal-evaluation.md),[Heart Rate](StructureDefinition-onc-heart-rate.md),[Inspired Oxygen](StructureDefinition-onc-inspired-oxygen.md),[Monk Skin Tone Observation](StructureDefinition-onc-monk-skintone-observation.md),[MUST Score (Malnutrition Universal Screening Tool)](StructureDefinition-onc-must-score.md),[NEWS2 Score](StructureDefinition-onc-news2-score.md),[NEWS2 Sub-Score](StructureDefinition-onc-news2-subscore.md),[Oxygen Saturation](StructureDefinition-onc-oxygen-saturation.md),[Pain Assessment (NRS 0-10)](StructureDefinition-onc-pain-assessment.md),[Respiration Rate](StructureDefinition-onc-respiration-rate.md),[Skin Tone Observation](StructureDefinition-onc-skintone-observation.md),[Waterlow Score](StructureDefinition-onc-waterlow-score.md)and[Wound Assessment](StructureDefinition-onc-wound-assessment.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-nursing-assessment)
 
@@ -38,7 +38,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-assessme
   "name" : "ONCNursingAssessment",
   "title" : "Open Nursing Core Assessment",
   "status" : "active",
-  "date" : "2025-12-26T00:14:27+00:00",
+  "date" : "2025-12-26T00:35:52+00:00",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
