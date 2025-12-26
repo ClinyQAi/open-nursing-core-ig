@@ -11,27 +11,34 @@
   fhir:id [ fhir:v "nursing-intervention-valueset"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nursing-intervention-valueset</b></p><a name=\"nursing-intervention-valueset\"> </a><a name=\"hcnursing-intervention-valueset\"> </a><ul><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a 71388002 (Procedure)</li></ul></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nursing-intervention-valueset</b></p><a name=\"nursing-intervention-valueset\"> </a><a name=\"hcnursing-intervention-valueset\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/71388002\">71388002</a></td><td>Procedure</td></tr><tr><td><a href=\"http://snomed.info/id/225358003\">225358003</a></td><td>Wound care</td></tr><tr><td><a href=\"http://snomed.info/id/386373004\">386373004</a></td><td>Nutrition therapy</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-intervention-valueset"^^xsd:anyURI ;
      fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-intervention-valueset>
   ] ; # 
-  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "NursingInterventionValueSet"] ; # 
   fhir:title [ fhir:v "Nursing Intervention Value Set"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-11-28T01:24:36+00:00"^^xsd:dateTime] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-12-26T14:13:58+00:00"^^xsd:dateTime] ; # 
+  fhir:description [ fhir:v "Value set for nursing interventions"] ; # 
   fhir:compose [
      fhir:include ( [
        fhir:system [
          fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
          fhir:l <http://snomed.info/sct>
        ] ;
-       fhir:filter ( [
-         fhir:property [ fhir:v "concept" ] ;
-         fhir:op [ fhir:v "is-a" ] ;
-         fhir:value [ fhir:v "71388002" ]
+       fhir:concept ( [
+         fhir:code [ fhir:v "71388002" ] ;
+         fhir:display [ fhir:v "Procedure" ]
+       ] [
+         fhir:code [ fhir:v "225358003" ] ;
+         fhir:display [ fhir:v "Wound care" ]
+       ] [
+         fhir:code [ fhir:v "386373004" ] ;
+         fhir:display [ fhir:v "Nutrition therapy" ]
        ] )
      ] )
   ] . # 

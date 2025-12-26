@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "NEWS2CodeValueSet",
   "id": "news2-code-vs",
   "title": "NEWS2 Code Value Set",
@@ -9,20 +9,10 @@
   "compose": {
     "include": [
       {
-        "system": "http://loinc.org",
+        "system": "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
         "concept": [
           {
-            "code": "88330-6",
-            "display": "National Early Warning Score [NEWS]"
-          }
-        ]
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code": "1104051000000101",
-            "display": "National Early Warning Score 2 (observable entity)"
+            "code": "news2-score"
           }
         ]
       }

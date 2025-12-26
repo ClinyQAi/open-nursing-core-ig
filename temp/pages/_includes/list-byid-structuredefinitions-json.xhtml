@@ -1,12 +1,61 @@
-{% raw %} <li><a href="StructureDefinition-UKCore-Extension-EthnicCategory.json.html">UK Core Ethnic Category</a> UKCoreEthnicCategory</li>
- <li><a href="StructureDefinition-intervention-goal-reference.json.html">Intervention Goal Reference</a> InterventionGoalReference</li>
- <li><a href="StructureDefinition-observation-goal-reference.json.html">Observation Goal Reference</a> ObservationGoalReference</li>
- <li><a href="StructureDefinition-onc-braden-scale-assessment.json.html">Braden Scale Assessment</a> ONCBradenScaleAssessment</li>
- <li><a href="StructureDefinition-onc-goal-evaluation.json.html">Goal Evaluation</a> ONCGoalEvaluation</li>
- <li><a href="StructureDefinition-onc-nhs-patient.json.html">ONC NHS Patient</a> ONCNHSPatient</li>
- <li><a href="StructureDefinition-onc-nursing-assessment.json.html">Open Nursing Core Assessment</a> ONCNursingAssessment</li>
- <li><a href="StructureDefinition-onc-nursing-intervention.json.html">Nursing Intervention</a> ONCNursingIntervention</li>
- <li><a href="StructureDefinition-onc-nursing-problem.json.html">Nursing Problem</a> ONCNursingProblem</li>
- <li><a href="StructureDefinition-onc-patient-goal.json.html">Patient Goal</a> ONCPatientGoal</li>
- <li><a href="StructureDefinition-onc-skintone-observation.json.html">Skin Tone Observation</a> ONCSkinToneObservation</li>
+{% raw %} <li><a href="StructureDefinition-UKCore-Extension-EthnicCategory.json.html">UK Core Ethnic Category</a> <p>An extension to record the ethnic category of a patient, as per UK Core standards.</p>
+</li>
+ <li><a href="StructureDefinition-intervention-goal-reference.json.html">Intervention Goal Reference</a> <p>Extension to link nursing interventions to the patient goals they are intended to achieve. Supports goal-directed care planning and intervention tracking.</p>
+</li>
+ <li><a href="StructureDefinition-observation-goal-reference.json.html">Observation Goal Reference</a> <p>Extension to link goal evaluation observations to the patient goals being evaluated. Enables tracking of goal progress and outcomes over time.</p>
+</li>
+ <li><a href="StructureDefinition-onc-acvpu.json.html">ACVPU Consciousness Level</a> <p>ACVPU consciousness level assessment for NEWS2 (Alert, Confusion, Voice, Pain, Unresponsive)</p>
+</li>
+ <li><a href="StructureDefinition-onc-barthel-index.json.html">Barthel Index</a> <p>Barthel Index for measuring independence in activities of daily living (ADL). Score 0-20=total dependency, 91-99=slight dependency, 100=independent. Total range 0-100.</p>
+</li>
+ <li><a href="StructureDefinition-onc-blood-pressure.json.html">Blood Pressure</a> <p>Blood pressure observation for NEWS2 (systolic BP used for scoring)</p>
+</li>
+ <li><a href="StructureDefinition-onc-body-temperature.json.html">Body Temperature</a> <p>Body temperature observation for NEWS2</p>
+</li>
+ <li><a href="StructureDefinition-onc-braden-scale-assessment.json.html">Braden Scale Assessment</a> <p>A profile for the Braden Scale pressure ulcer risk assessment</p>
+</li>
+ <li><a href="StructureDefinition-onc-glasgow-coma-scale.json.html">Glasgow Coma Scale</a> <p>Glasgow Coma Scale (GCS) for assessing level of consciousness. Total score 3-15 with three required components: Eye (1-4), Verbal (1-5), Motor (1-6).</p>
+</li>
+ <li><a href="StructureDefinition-onc-goal-evaluation.json.html">Goal Evaluation</a> <p>Evaluation of patient goal outcomes and nursing intervention effectiveness. Assesses whether goals have been met, partially met, or not met. Part of the ADPIE framework's Evaluation phase.</p>
+</li>
+ <li><a href="StructureDefinition-onc-heart-rate.json.html">Heart Rate</a> <p>Heart rate (pulse) observation for NEWS2</p>
+</li>
+ <li><a href="StructureDefinition-onc-inspired-oxygen.json.html">Inspired Oxygen</a> <p>Inspired oxygen observation for NEWS2 (air vs supplemental oxygen)</p>
+</li>
+ <li><a href="StructureDefinition-onc-mmse.json.html">Mini Mental State Examination (MMSE)</a> <p>Mini Mental State Examination for cognitive function screening. Score 24-30=no impairment, 18-23=mild, 0-17=severe. Total range 0-30.</p>
+</li>
+ <li><a href="StructureDefinition-onc-monk-skintone-observation.json.html">Monk Skin Tone Observation</a> <p>Observation of patient skin tone using the Monk Skin Tone Scale (10-point scale A-J). Provides more granular skin tone assessment than Fitzpatrick scale, particularly for darker skin tones. Supports equitable care and accurate clinical assessment across diverse populations.</p>
+</li>
+ <li><a href="StructureDefinition-onc-morse-fall-scale.json.html">Morse Fall Scale</a> <p>Morse Fall Scale for assessing fall risk. Score 0-24=no risk, 25-50=low risk, ≥51=high risk. Total range 0-125.</p>
+</li>
+ <li><a href="StructureDefinition-onc-must-score.json.html">MUST Score (Malnutrition Universal Screening Tool)</a> <p>Malnutrition Universal Screening Tool for identifying adults at risk of malnutrition. Score 0=low risk, 1=medium risk, 2+=high risk. NHS-standard nutritional screening.</p>
+</li>
+ <li><a href="StructureDefinition-onc-news2-score.json.html">NEWS2 Score</a> <p>National Early Warning Score 2 (NEWS2) for detecting clinical deterioration. Fully aligned with NHS CareConnect-NEWS2-Observation-1.</p>
+</li>
+ <li><a href="StructureDefinition-onc-news2-subscore.json.html">NEWS2 Sub-Score</a> <p>Individual parameter sub-score for NEWS2 (0-3 for most parameters). References the related vital sign observation.</p>
+</li>
+ <li><a href="StructureDefinition-onc-nhs-patient.json.html">ONC NHS Patient</a> <p>A patient profile for use in NHS nursing contexts with ethnic category extension.</p>
+</li>
+ <li><a href="StructureDefinition-onc-nursing-assessment.json.html">Open Nursing Core Assessment</a> <p>Base profile for nursing assessment observations conforming to UK Core standards. Captures structured nursing assessment data as part of the ADPIE (Assessment, Diagnosis, Planning, Implementation, Evaluation) nursing process framework. Used as parent for specialized assessments like NEWS2, Braden Scale, and clinical observations.</p>
+</li>
+ <li><a href="StructureDefinition-onc-nursing-intervention.json.html">Nursing Intervention</a> <p>Nursing intervention or procedure performed to achieve patient goals. Documents actions taken by nursing staff to address identified problems and achieve desired outcomes. Part of the ADPIE framework's Implementation phase.</p>
+</li>
+ <li><a href="StructureDefinition-onc-nursing-problem.json.html">Nursing Problem</a> <p>Nursing diagnosis or problem identified during assessment. Represents clinical judgments about individual, family, or community responses to actual or potential health problems. Part of the ADPIE framework's Diagnosis phase.</p>
+</li>
+ <li><a href="StructureDefinition-onc-oxygen-saturation.json.html">Oxygen Saturation</a> <p>Oxygen saturation (SpO2) observation for NEWS2</p>
+</li>
+ <li><a href="StructureDefinition-onc-pain-assessment.json.html">Pain Assessment (NRS 0-10)</a> <p>Pain severity assessment using the Numeric Rating Scale (0-10)</p>
+</li>
+ <li><a href="StructureDefinition-onc-patient-goal.json.html">Patient Goal</a> <p>Patient-centered goal established in response to identified nursing problems. Defines measurable outcomes and addresses specific nursing diagnoses. Part of the ADPIE framework's Planning phase.</p>
+</li>
+ <li><a href="StructureDefinition-onc-qsofa.json.html">qSOFA (Quick SOFA)</a> <p>Quick Sequential Organ Failure Assessment for sepsis screening. Score ≥2 indicates high risk. Total range 0-3.</p>
+</li>
+ <li><a href="StructureDefinition-onc-respiration-rate.json.html">Respiration Rate</a> <p>Respiration rate observation for NEWS2</p>
+</li>
+ <li><a href="StructureDefinition-onc-skintone-observation.json.html">Skin Tone Observation</a> <p>Observation of patient skin tone using the Fitzpatrick skin type classification. Supports equitable care by enabling skin tone-aware clinical decision making, particularly for conditions that present differently across skin tones (e.g., pressure ulcers, cyanosis).</p>
+</li>
+ <li><a href="StructureDefinition-onc-waterlow-score.json.html">Waterlow Score</a> <p>Waterlow Pressure Ulcer Risk Assessment - NHS standard tool. Score ≥10 indicates at risk, ≥15 high risk, ≥20 very high risk.</p>
+</li>
+ <li><a href="StructureDefinition-onc-wound-assessment.json.html">Wound Assessment</a> <p>Comprehensive wound assessment including staging and dimensions</p>
+</li>
 {% endraw %}

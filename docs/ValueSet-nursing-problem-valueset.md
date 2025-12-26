@@ -1,4 +1,4 @@
-# Nursing Problem Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# Nursing Problem Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,11 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-problem-valueset | *Version*:1.0.0 |
-| Active as of 2025-11-28 | *Computable Name*:NursingProblemValueSet |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-problem-valueset | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:NursingProblemValueSet |
+
+ 
+Value set for nursing problems and diagnoses 
 
  **References** 
 
@@ -17,15 +20,9 @@
 
 ### Logical Definition (CLD)
 
-* Include codes from[`http://snomed.info/sct`](http://www.snomed.org/)version Not Stated (use latest from terminology server) where concept is-a 409586006 (Complaint (finding))
-
  
 
 ### Expansion
-
-Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
-
-This value set expansion contains 1 concepts.
 
 -------
 
@@ -49,20 +46,38 @@ This value set expansion contains 1 concepts.
   "resourceType" : "ValueSet",
   "id" : "nursing-problem-valueset",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-problem-valueset",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "NursingProblemValueSet",
   "title" : "Nursing Problem Value Set",
-  "status" : "active",
-  "date" : "2025-11-28T01:24:36+00:00",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-12-26T14:13:58+00:00",
+  "description" : "Value set for nursing problems and diagnoses",
   "compose" : {
     "include" : [
       {
         "system" : "http://snomed.info/sct",
-        "filter" : [
+        "concept" : [
           {
-            "property" : "concept",
-            "op" : "is-a",
-            "value" : "409586006"
+            "code" : "129839007",
+            "display" : "At risk for falls"
+          },
+          {
+            "code" : "300893006",
+            "display" : "Nutritional finding"
+          },
+          {
+            "code" : "22253000",
+            "display" : "Pain"
+          }
+        ]
+      },
+      {
+        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "concept" : [
+          {
+            "code" : "risk-falls",
+            "display" : "Risk of falls"
           }
         ]
       }

@@ -4,7 +4,7 @@
   "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nhs-patient",
   "name": "ONCNHSPatient",
   "title": "ONC NHS Patient",
-  "status": "active",
+  "status": "draft",
   "description": "A patient profile for use in NHS nursing contexts with ethnic category extension.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
@@ -38,7 +38,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Extension-EthnicCategory"
+              "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/UKCore-Extension-EthnicCategory"
             ]
           }
         ],

@@ -1,4 +1,4 @@
-# Patient Goal - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# Patient Goal - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,11 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-goal | *Version*:1.0.0 |
-| Active as of 2025-11-28 | *Computable Name*:ONCPatientGoal |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-goal | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:ONCPatientGoal |
+
+ 
+Patient-centered goal established in response to identified nursing problems. Defines measurable outcomes and addresses specific nursing diagnoses. Part of the ADPIE framework's Planning phase. 
 
 **Usages:**
 
@@ -35,11 +38,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-patient-goal.csv
   "resourceType" : "StructureDefinition",
   "id" : "onc-patient-goal",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-goal",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "ONCPatientGoal",
   "title" : "Patient Goal",
-  "status" : "active",
-  "date" : "2025-11-28T01:24:36+00:00",
+  "status" : "draft",
+  "date" : "2025-12-26T14:13:58+00:00",
+  "description" : "Patient-centered goal established in response to identified nursing problems. Defines measurable outcomes and addresses specific nursing diagnoses. Part of the ADPIE framework's Planning phase.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {

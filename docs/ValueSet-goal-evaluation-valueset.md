@@ -1,4 +1,4 @@
-# Goal Evaluation Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# Goal Evaluation Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,11 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset | *Version*:1.0.0 |
-| Active as of 2025-11-28 | *Computable Name*:GoalEvaluationValueSet |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:GoalEvaluationValueSet |
+
+ 
+Value set for evaluating patient goal outcomes 
 
  **References** 
 
@@ -20,10 +23,6 @@
  
 
 ### Expansion
-
-Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
-
-This value set contains 2 concepts
 
 -------
 
@@ -47,21 +46,29 @@ This value set contains 2 concepts
   "resourceType" : "ValueSet",
   "id" : "goal-evaluation-valueset",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "GoalEvaluationValueSet",
   "title" : "Goal Evaluation Value Set",
-  "status" : "active",
-  "date" : "2025-11-28T01:24:36+00:00",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-12-26T14:13:58+00:00",
+  "description" : "Value set for evaluating patient goal outcomes",
   "compose" : {
     "include" : [
       {
         "system" : "http://snomed.info/sct",
         "concept" : [
           {
-            "code" : "385633008"
+            "code" : "370996005",
+            "display" : "Patient condition resolved"
           },
           {
-            "code" : "385634002"
+            "code" : "385634002",
+            "display" : "Worsened"
+          },
+          {
+            "code" : "118222006",
+            "display" : "General finding of observation of patient"
           }
         ]
       }

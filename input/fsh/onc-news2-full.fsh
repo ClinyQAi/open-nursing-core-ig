@@ -12,7 +12,7 @@ Title: "NEWS2 Score"
 Description: "National Early Warning Score 2 (NEWS2) for detecting clinical deterioration. Fully aligned with NHS CareConnect-NEWS2-Observation-1."
 * status = #final
 * status MS
-* code from NEWS2CodeValueSet (required)
+* code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#news2-score "NEWS2 Score"
 * code MS
 * value[x] only Quantity
 * valueQuantity 1..1 MS
@@ -30,8 +30,7 @@ ValueSet: NEWS2CodeValueSet
 Id: news2-code-vs
 Title: "NEWS2 Code Value Set"
 Description: "LOINC and SNOMED codes for NEWS2"
-* http://loinc.org#88330-6 "National Early Warning Score [NEWS]"
-* http://snomed.info/sct#1104051000000101 "National Early Warning Score 2 (observable entity)"
+* include ONCObservationCodes#news2-score
 
 // -----------------------------------------------------------------------------
 // NEWS2 Sub-Score Profile
@@ -43,7 +42,7 @@ Title: "NEWS2 Sub-Score"
 Description: "Individual parameter sub-score for NEWS2 (0-3 for most parameters). References the related vital sign observation."
 * status = #final
 * status MS
-* code from NEWS2SubscoreCodeValueSet (required)
+* code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#news2-subscore "NEWS2 Sub-score"
 * code MS
 * value[x] only Quantity
 * valueQuantity 1..1 MS
@@ -60,12 +59,7 @@ ValueSet: NEWS2SubscoreCodeValueSet
 Id: news2-subscore-code-vs
 Title: "NEWS2 Sub-Score Codes"
 Description: "SNOMED codes for NEWS2 sub-scores"
-* http://snomed.info/sct#1104301000000104 "Royal College of Physicians National Early Warning Score 2 - pulse score"
-* http://snomed.info/sct#1104311000000102 "Royal College of Physicians National Early Warning Score 2 - respiration rate score"
-* http://snomed.info/sct#1104331000000106 "Royal College of Physicians National Early Warning Score 2 - temperature score"
-* http://snomed.info/sct#1104351000000100 "Royal College of Physicians National Early Warning Score 2 - ACVPU score"
-* http://snomed.info/sct#1104341000000103 "Royal College of Physicians National Early Warning Score 2 - oxygen saturation scale 1 score"
-* http://snomed.info/sct#1104321000000108 "Royal College of Physicians National Early Warning Score 2 - systolic blood pressure score"
+* include ONCObservationCodes#news2-subscore
 
 // -----------------------------------------------------------------------------
 // Supporting Vital Sign Observation Profiles

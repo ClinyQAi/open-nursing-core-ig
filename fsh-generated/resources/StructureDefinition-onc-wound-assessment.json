@@ -4,7 +4,7 @@
   "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-wound-assessment",
   "name": "ONCWoundAssessment",
   "title": "Wound Assessment",
-  "status": "active",
+  "status": "draft",
   "description": "Comprehensive wound assessment including staging and dimensions",
   "fhirVersion": "4.0.1",
   "kind": "resource",
@@ -134,9 +134,9 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "410669006",
+              "code": "401239006",
               "system": "http://snomed.info/sct",
-              "display": "Width"
+              "display": "Width of wound"
             }
           ]
         }
@@ -192,9 +192,9 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "410670007",
+              "code": "425094009",
               "system": "http://snomed.info/sct",
-              "display": "Depth"
+              "display": "Depth of wound"
             }
           ]
         }

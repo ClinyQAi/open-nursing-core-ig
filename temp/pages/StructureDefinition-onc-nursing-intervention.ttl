@@ -17,11 +17,12 @@
      fhir:v "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-intervention"^^xsd:anyURI ;
      fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-intervention>
   ] ; # 
-  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "ONCNursingIntervention"] ; # 
   fhir:title [ fhir:v "Nursing Intervention"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-11-28T01:24:36+00:00"^^xsd:dateTime] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-12-26T14:13:58+00:00"^^xsd:dateTime] ; # 
+  fhir:description [ fhir:v "Nursing intervention or procedure performed to achieve patient goals. Documents actions taken by nursing staff to address identified problems and achieve desired outcomes. Part of the ADPIE framework's Implementation phase."] ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
   fhir:mapping ( [
      fhir:identity [ fhir:v "workflow" ] ;
@@ -441,7 +442,7 @@
        fhir:path [ fhir:v "Procedure.extension" ] ;
        fhir:sliceName [ fhir:v "interventionGoal" ] ;
        fhir:short [ fhir:v "Intervention Goal Reference" ] ;
-       fhir:definition [ fhir:v "An Extension" ] ;
+       fhir:definition [ fhir:v "Extension to link nursing interventions to the patient goals they are intended to achieve. Supports goal-directed care planning and intervention tracking." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [

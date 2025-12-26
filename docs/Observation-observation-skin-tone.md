@@ -1,4 +1,4 @@
-# observation-skin-tone - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# observation-skin-tone - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -10,9 +10,9 @@ Profile: [Skin Tone Observation](StructureDefinition-onc-skintone-observation.md
 
 **status**: Final
 
-**category**: nursing
+**category**: Survey
 
-**code**: Fitzpatrick skin type
+**code**: Skin type [Fitzpatrick Classification Scale]
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
@@ -39,7 +39,7 @@ Profile: [Skin Tone Observation](StructureDefinition-onc-skintone-observation.md
       "coding" : [
         {
           "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "nursing"
+          "code" : "survey"
         }
       ]
     }
@@ -48,8 +48,8 @@ Profile: [Skin Tone Observation](StructureDefinition-onc-skintone-observation.md
     "coding" : [
       {
         "system" : "http://loinc.org",
-        "code" : "66472-2",
-        "display" : "Fitzpatrick skin type"
+        "code" : "66555-4",
+        "display" : "Skin type [Fitzpatrick Classification Scale]"
       }
     ]
   },

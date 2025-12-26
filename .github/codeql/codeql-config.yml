@@ -1,0 +1,26 @@
+# CodeQL Configuration
+# Excludes generated files and third-party dependencies from scanning
+
+name: \"CodeQL Config\"
+
+paths-ignore:
+  # Generated FHIR IG files
+  - docs/**
+  - temp/**
+  - template/content/assets/js/mermaid.js
+  
+  # Build outputs
+  - output/**
+  - qa/**
+  
+  # Third-party dependencies
+  - node_modules/**
+  - vendor/**
+
+# Only scan source files we control
+paths:
+  - core/**
+  - db/**
+  - ml/**
+  - app_phase2.py
+  - input/**

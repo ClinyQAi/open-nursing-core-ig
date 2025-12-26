@@ -1,4 +1,4 @@
-# example-patient-goal - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# example-patient-goal - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -14,7 +14,7 @@ Profile: [Patient Goal](StructureDefinition-onc-patient-goal.md)
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
-**addresses**: [Condition Risk of falls (finding)](Condition-example-nursing-problem.md)
+**addresses**: [Condition Risk of falls](Condition-example-nursing-problem.md)
 
 
 

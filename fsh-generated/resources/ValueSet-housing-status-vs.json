@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "HousingStatusVS",
   "id": "housing-status-vs",
   "title": "Housing Status Value Set",
@@ -14,15 +14,11 @@
         "concept": [
           {
             "code": "266935003",
-            "display": "Housing problem"
-          },
-          {
-            "code": "160724001",
-            "display": "Homeless"
+            "display": "Housing lack"
           },
           {
             "code": "224224003",
-            "display": "Lives in own home"
+            "display": "Lives in staffed home"
           }
         ]
       }

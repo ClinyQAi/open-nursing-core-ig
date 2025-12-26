@@ -1,4 +1,4 @@
-# ONC NHS Patient - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# ONC NHS Patient - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,11 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nhs-patient | *Version*:1.0.0 |
-| Active as of 2025-11-28 | *Computable Name*:ONCNHSPatient |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nhs-patient | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:ONCNHSPatient |
+
+ 
+A patient profile for use in NHS nursing contexts with ethnic category extension. 
 
 **Usages:**
 
@@ -34,11 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-nhs-patient.csv)
   "resourceType" : "StructureDefinition",
   "id" : "onc-nhs-patient",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nhs-patient",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "ONCNHSPatient",
   "title" : "ONC NHS Patient",
-  "status" : "active",
-  "date" : "2025-11-28T01:24:36+00:00",
+  "status" : "draft",
+  "date" : "2025-12-26T14:13:58+00:00",
+  "description" : "A patient profile for use in NHS nursing contexts with ethnic category extension.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -90,20 +94,19 @@ Other representations of profile: [CSV](StructureDefinition-onc-nhs-patient.csv)
           ],
           "ordered" : false,
           "rules" : "open"
-        },
-        "min" : 1
+        }
       },
       {
         "id" : "Patient.extension:ethnicCategory",
         "path" : "Patient.extension",
         "sliceName" : "ethnicCategory",
-        "min" : 1,
+        "min" : 0,
         "max" : "1",
         "type" : [
           {
             "code" : "Extension",
             "profile" : [
-              "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Extension-EthnicCategory"
+              "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/UKCore-Extension-EthnicCategory"
             ]
           }
         ],

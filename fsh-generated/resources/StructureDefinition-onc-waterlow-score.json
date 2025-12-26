@@ -4,7 +4,7 @@
   "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-waterlow-score",
   "name": "ONCWaterlowScore",
   "title": "Waterlow Score",
-  "status": "active",
+  "status": "draft",
   "description": "Waterlow Pressure Ulcer Risk Assessment - NHS standard tool. Score ≥10 indicates at risk, ≥15 high risk, ≥20 very high risk.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
@@ -25,9 +25,9 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "443846001",
-              "system": "http://snomed.info/sct",
-              "display": "Waterlow score (observable entity)"
+              "code": "waterlow-score",
+              "system": "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "display": "Waterlow Score"
             }
           ]
         },

@@ -23,7 +23,7 @@
       "coding": [
         {
           "code": "nursing-diagnosis",
-          "system": "http://open-nursing-core.org/CodeSystem/onc-problem-type",
+          "system": "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type",
           "display": "Nursing Diagnosis"
         }
       ]
@@ -32,9 +32,9 @@
   "code": {
     "coding": [
       {
-        "code": "162828007",
-        "system": "http://snomed.info/sct",
-        "display": "Risk of falls (finding)"
+        "code": "risk-falls",
+        "system": "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "display": "Risk of falls"
       }
     ]
   }

@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "NursingProblemValueSet",
   "id": "nursing-problem-valueset",
   "title": "Nursing Problem Value Set",
@@ -17,16 +17,21 @@
             "display": "At risk for falls"
           },
           {
-            "code": "162828007",
-            "display": "Risk of falls"
-          },
-          {
             "code": "300893006",
             "display": "Nutritional finding"
           },
           {
             "code": "22253000",
             "display": "Pain"
+          }
+        ]
+      },
+      {
+        "system": "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "concept": [
+          {
+            "code": "risk-falls",
+            "display": "Risk of falls"
           }
         ]
       }

@@ -1,4 +1,4 @@
-# Fitzpatrick Skin Tone Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# Fitzpatrick Skin Tone Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,11 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/skintone-vs | *Version*:1.0.0 |
-| Active as of 2025-11-28 | *Computable Name*:SkinToneVS |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/skintone-vs | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:SkinToneVS |
+
+ 
+Value set for Fitzpatrick skin type classifications 
 
  **References** 
 
@@ -17,15 +20,9 @@
 
 ### Logical Definition (CLD)
 
-* Include codes from[`http://snomed.info/sct`](http://www.snomed.org/)version Not Stated (use latest from terminology server) where concept is-a 403153005 (Centipede bite)
-
  
 
 ### Expansion
-
-Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
-
-This value set expansion contains 1 concepts.
 
 -------
 
@@ -49,20 +46,41 @@ This value set expansion contains 1 concepts.
   "resourceType" : "ValueSet",
   "id" : "skintone-vs",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/skintone-vs",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "SkinToneVS",
   "title" : "Fitzpatrick Skin Tone Value Set",
-  "status" : "active",
-  "date" : "2025-11-28T01:24:36+00:00",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-12-26T14:13:58+00:00",
+  "description" : "Value set for Fitzpatrick skin type classifications",
   "compose" : {
     "include" : [
       {
-        "system" : "http://snomed.info/sct",
-        "filter" : [
+        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "concept" : [
           {
-            "property" : "concept",
-            "op" : "is-a",
-            "value" : "403153005"
+            "code" : "fitzpatrick-1",
+            "display" : "Type I"
+          },
+          {
+            "code" : "fitzpatrick-2",
+            "display" : "Type II"
+          },
+          {
+            "code" : "fitzpatrick-3",
+            "display" : "Type III"
+          },
+          {
+            "code" : "fitzpatrick-4",
+            "display" : "Type IV"
+          },
+          {
+            "code" : "fitzpatrick-5",
+            "display" : "Type V"
+          },
+          {
+            "code" : "fitzpatrick-6",
+            "display" : "Type VI"
           }
         ]
       }
