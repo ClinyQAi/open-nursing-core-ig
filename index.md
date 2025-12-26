@@ -65,7 +65,7 @@ For questions or contributions, visit our [GitHub repository](https://github.com
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "active",
-  "date" : "2025-12-26T00:40:38+00:00",
+  "date" : "2025-12-26T00:44:33+00:00",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules.",
   "packageId" : "onc.ig",
   "license" : "MIT",
@@ -1013,6 +1013,20 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           "reference" : "StructureDefinition/intervention-goal-reference"
         },
         "name" : "Intervention Goal Reference",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-mmse"
+        },
+        "name" : "Mini Mental State Examination (MMSE)",
+        "description" : "Mini Mental State Examination for cognitive function screening. Score 24-30=no impairment, 18-23=mild, 0-17=severe. Total range 0-30.",
         "exampleBoolean" : false
       },
       {

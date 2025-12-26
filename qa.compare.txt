@@ -1,7 +1,7 @@
 OpenNursingCoreIG : Validation Results
 =========================================
 
-err = 93, warn = 65, info = 52
+err = 96, warn = 66, info = 53
 $--
 Generated $--. FHIR version $-- for onc.ig#$-- (canonical = https://clinyqai.github.io/open-nursing-core-ig)
  Build Errors : 1 / 22 / 0
@@ -29,6 +29,7 @@ Generated $--. FHIR version $-- for onc.ig#$-- (canonical = https://clinyqai.git
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-goal-evaluation : 1 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-heart-rate : 1 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-inspired-oxygen : 1 / 1 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-mmse : 3 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-monk-skintone-observation : 1 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-morse-fall-scale : 3 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-must-score : 9 / 1 / 4
@@ -191,6 +192,12 @@ WARNING: StructureDefinition.where(url = 'https://clinyqai.github.io/open-nursin
 ERROR: StructureDefinition/onc-inspired-oxygen: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
 INFORMATION: StructureDefinition/onc-inspired-oxygen: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-inspired-oxygen'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-onc-mmse.json ==
+ERROR: StructureDefinition/onc-mmse: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
+ERROR: StructureDefinition/onc-mmse: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Mini-Mental State Examination (MMSE)' for http://loinc.org#72106-8. Valid display is one of 2 choices: 'Total score [MMSE]' (en-US) or 'Total score [MMSE]' (en-US) (for the language(s) 'en-US')
+ERROR: StructureDefinition/onc-mmse: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Mini-Mental State Examination (MMSE)' for http://loinc.org#72106-8. Valid display is one of 2 choices: 'Total score [MMSE]' (en-US) or 'Total score [MMSE]' (en-US) (for the language(s) 'en-US')
+INFORMATION: StructureDefinition/onc-mmse: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition.where(url = 'https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-mmse'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-onc-monk-skintone-observation.json ==
 ERROR: StructureDefinition/onc-monk-skintone-observation: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
 INFORMATION: StructureDefinition/onc-monk-skintone-observation: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
