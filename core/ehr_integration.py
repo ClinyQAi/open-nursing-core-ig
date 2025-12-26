@@ -96,6 +96,20 @@ class FHIRAPIClient:
             response = requests.get(url, headers=self.headers, timeout=10)
 
             if response.status_code == 200:
+                from core.safe_logging import safe_log_info
+                safe_log_info(
+                    logger,
+                    "Retrieved patient",
+                    patient_id=(patient_id, "pat"),
+                )
+                return response.json()
+            else:
+                from core.safe_logging import safe_log_warning
+                safe_log_warning(
+                    logger,
+                    "Failed to retrieve patient {patient_id}: {status_code}",
+                    patient_id=(patient_id, "pat"),
+                    status_code=response.status_code,
                 safe_log_info(logger, "Retrieved patient successfully")
                 logger.info(
                     "Retrieved patient: %s",
@@ -133,6 +147,21 @@ class FHIRAPIClient:
                 bundle = response.json()
                 entries = bundle.get("entry", [])
                 conditions = [entry["resource"] for entry in entries]
+                from core.safe_logging import safe_log_info
+                safe_log_info(
+                    logger,
+                    "Retrieved {count} conditions for patient {patient_id}",
+                    count=len(conditions),
+                    patient_id=(patient_id, "pat"),
+                )
+                return conditions
+            else:
+                from core.safe_logging import safe_log_warning
+                safe_log_warning(
+                    logger,
+                    "Failed to retrieve conditions for patient {patient_id}: {status_code}",
+                    patient_id=(patient_id, "pat"),
+                    status_code=response.status_code,
                 logger.info(
                     "Retrieved %d conditions for patient %s",
                     len(conditions),
