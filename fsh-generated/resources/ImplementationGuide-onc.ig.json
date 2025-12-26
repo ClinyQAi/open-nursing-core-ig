@@ -220,6 +220,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/onc-mental-capacity"
+        },
+        "name": "Mental Capacity Assessment",
+        "description": "Records the outcome of a Mental Capacity Assessment for a specific decision. Fundamental legal safeguard in UK nursing practice.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/onc-mca-vs"
+        },
+        "name": "Mental Capacity Finding Value Set",
+        "description": "Codes indicating presence or absence of capacity",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/onc-mmse"
         },
         "name": "Mini Mental State Examination (MMSE)",
@@ -450,6 +466,14 @@
         },
         "name": "qSOFA (Quick SOFA)",
         "description": "Quick Sequential Organ Failure Assessment for sepsis screening. Score ≥2 indicates high risk. Total range 0-3.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-reasonable-adjustment"
+        },
+        "name": "Reasonable Adjustment",
+        "description": "Captures specific strict requirements for care adjustments under the Equality Act (e.g., 'Needs BSL Interpreter', 'Cannot use stairs', 'Requires large print').",
         "exampleBoolean": false
       },
       {

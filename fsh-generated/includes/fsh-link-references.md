@@ -24,6 +24,8 @@
 [ONCInspiredOxygen]: StructureDefinition-onc-inspired-oxygen.html
 [InspiredOxygenValueSet]: ValueSet-inspired-oxygen-vs.html
 [InterventionGoalReference]: StructureDefinition-intervention-goal-reference.html
+[ONCMentalCapacity]: StructureDefinition-onc-mental-capacity.html
+[MentalCapacityVS]: ValueSet-onc-mca-vs.html
 [ONCMMSE]: StructureDefinition-onc-mmse.html
 [ONCMonkSkinToneObservation]: StructureDefinition-onc-monk-skintone-observation.html
 [ONCMonkScale]: CodeSystem-onc-monk-scale.html
@@ -54,6 +56,7 @@
 [ProblemCategoryValueSet]: ValueSet-problem-category-valueset.html
 [ONCProblemType]: CodeSystem-onc-problem-type.html
 [ONCqSOFA]: StructureDefinition-onc-qsofa.html
+[ONCReasonableAdjustment]: StructureDefinition-onc-reasonable-adjustment.html
 [ONCRelationalObservation]: StructureDefinition-onc-relational-observation.html
 [ONCRespirationRate]: StructureDefinition-onc-respiration-rate.html
 [ONCSkinToneObservation]: StructureDefinition-onc-skintone-observation.html

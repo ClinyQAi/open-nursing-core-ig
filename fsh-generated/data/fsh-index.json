@@ -13,7 +13,7 @@
     "fshType": "CodeSystem",
     "fshFile": "onc-equity.fsh",
     "startLine": 40,
-    "endLine": 92
+    "endLine": 97
   },
   {
     "outputFile": "CodeSystem-onc-problem-type.json",
@@ -200,6 +200,14 @@
     "endLine": 160
   },
   {
+    "outputFile": "StructureDefinition-onc-mental-capacity.json",
+    "fshName": "ONCMentalCapacity",
+    "fshType": "Profile",
+    "fshFile": "onc-mental-capacity.fsh",
+    "startLine": 7,
+    "endLine": 22
+  },
+  {
     "outputFile": "StructureDefinition-onc-mmse.json",
     "fshName": "ONCMMSE",
     "fshType": "Profile",
@@ -212,8 +220,8 @@
     "fshName": "ONCMonkSkinToneObservation",
     "fshType": "Profile",
     "fshFile": "onc-equity.fsh",
-    "startLine": 99,
-    "endLine": 106
+    "startLine": 104,
+    "endLine": 111
   },
   {
     "outputFile": "StructureDefinition-onc-morse-fall-scale.json",
@@ -318,6 +326,14 @@
     "fshFile": "onc-additional-assessments.fsh",
     "startLine": 27,
     "endLine": 40
+  },
+  {
+    "outputFile": "StructureDefinition-onc-reasonable-adjustment.json",
+    "fshName": "ONCReasonableAdjustment",
+    "fshType": "Profile",
+    "fshFile": "onc-equity.fsh",
+    "startLine": 116,
+    "endLine": 129
   },
   {
     "outputFile": "StructureDefinition-onc-relational-observation.json",
@@ -472,12 +488,20 @@
     "endLine": 37
   },
   {
+    "outputFile": "ValueSet-onc-mca-vs.json",
+    "fshName": "MentalCapacityVS",
+    "fshType": "ValueSet",
+    "fshFile": "onc-mental-capacity.fsh",
+    "startLine": 24,
+    "endLine": 30
+  },
+  {
     "outputFile": "ValueSet-onc-monk-scale-vs.json",
     "fshName": "ONCMonkScaleVS",
     "fshType": "ValueSet",
     "fshFile": "onc-equity.fsh",
-    "startLine": 94,
-    "endLine": 97
+    "startLine": 99,
+    "endLine": 102
   },
   {
     "outputFile": "ValueSet-pain-assessment-code-vs.json",

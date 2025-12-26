@@ -90,6 +90,11 @@ Description: "Custom observation codes for Open Nursing Core"
 * #4at-amt4 "AMT4 Score" "4AT Item 2: Abbreviated Mental Test 4"
 * #4at-attention "Attention" "4AT Item 3: Attention (Months Backwards)"
 * #4at-acute-change "Acute Change" "4AT Item 4: Acute Change or Fluctuating Course"
+* #reasonable-adjustment "Reasonable Adjustment" "Requirement for adjustment to care delivery (Equality Act)"
+* #mca-assessment "Mental Capacity Assessment" "Assessment of capacity to make a specific decision"
+* #capacity-present "Capacity Present" "Patient has capacity for this decision"
+* #capacity-absent "Capacity Absent" "Patient lacks capacity for this decision"
+* #best-interest "Best Interest Decision" "Decision made in patient's best interest"
 
 ValueSet: ONCMonkScaleVS
 Id: onc-monk-scale-vs
@@ -104,3 +109,21 @@ Description: "Observation of patient skin tone using the Monk Skin Tone Scale (1
 * code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#mst-score "Monk Skin Tone Score"
 * value[x] only CodeableConcept
 * valueCodeableConcept from ONCMonkScaleVS (required)
+
+// =============================================================================
+// Reasonable Adjustment Profile (Equality Act)
+// =============================================================================
+Profile: ONCReasonableAdjustment
+Parent: ONCNursingAssessment
+Id: onc-reasonable-adjustment
+Title: "Reasonable Adjustment"
+Description: "Captures specific strict requirements for care adjustments under the Equality Act (e.g., 'Needs BSL Interpreter', 'Cannot use stairs', 'Requires large print')."
+* ^url = "https://fhir.clinyq.ai/StructureDefinition/onc-reasonable-adjustment"
+* ^version = "0.1.0"
+* ^status = #draft
+* category = http://terminology.hl7.org/CodeSystem/observation-category#exam
+* code = ONCObservationCodes#reasonable-adjustment
+* value[x] only string
+* valueString 1..1 MS
+* valueString ^short = "Description of required adjustment"
+* note 0..1 MS

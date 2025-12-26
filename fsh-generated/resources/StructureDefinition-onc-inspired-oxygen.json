@@ -39,7 +39,15 @@
           ],
           "ordered": false,
           "rules": "open"
-        }
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "CodeableConcept"
+          }
+        ]
       },
       {
         "id": "Observation.value[x]:valueQuantity",

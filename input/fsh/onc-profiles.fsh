@@ -12,7 +12,7 @@ Description: "Base profile for nursing assessment observations conforming to UK 
 * performer 1..1 MS
 * performer only Reference(Practitioner or PractitionerRole)
 * value[x] 1..1 MS
-* value[x] only CodeableConcept or Quantity
+* value[x] only CodeableConcept or Quantity or string
 
 Profile: ONCBradenScaleAssessment
 Parent: ONCNursingAssessment
