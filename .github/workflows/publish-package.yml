@@ -1,0 +1,54 @@
+name: Publish FHIR Package
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'docs/package.tgz'
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@clinyqai'
+
+      - name: Extract and Configure Package
+        run: |
+          mkdir -p temp-package
+          # Extract the existing package.tgz from the docs folder
+          if [ -f "docs/package.tgz" ]; then
+            tar -xzf docs/package.tgz -C temp-package
+          else
+            echo "Error: docs/package.tgz not found."
+            exit 1
+          fi
+
+          # The tgz usually contains a 'package' directory
+          cd temp-package/package
+
+          # Update package.json name to match GitHub scope requirements (@clinyqai/open-nursing-core-ig)
+          # We also ensure the version is valid semver (FHIR IGs usually use semver but sometimes X.Y.Z-draft)
+          jq '.name = "@clinyqai/open-nursing-core-ig" | .publishConfig = {"registry": "https://npm.pkg.github.com"}' package.json > package.json.tmp && mv package.json.tmp package.json
+
+          echo "Final package.json:"
+          cat package.json
+
+      - name: Publish to GitHub Packages
+        run: |
+          cd temp-package/package
+          npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
