@@ -107,7 +107,7 @@ def safe_log_info(
         
     Example:
         >>> safe_log_info(logger, "Processing patient {patient_id}", 
-        ...               patient_id=("12345", "pat"))
+        ...               patient_id=("patient12345", "pat"))
         # Logs: "Processing patient pat_****"
     """
     masked_values = {}
