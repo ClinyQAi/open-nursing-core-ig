@@ -11,6 +11,8 @@ from datetime import datetime
 from typing import Optional, Dict, Any, List
 from enum import Enum
 
+from core.safe_logging import safe_log_info, log_exception_safe, mask_identifier
+
 try:
     from fhir.resources.R4B.bundle import Bundle
     from fhir.resources.R4B.bundle import BundleEntry
@@ -82,7 +84,6 @@ class FHIRAPIClient:
             response = requests.get(url, headers=self.headers, timeout=10)
 
             if response.status_code == 200:
-                from core.safe_logging import safe_log_info
                 safe_log_info(logger, "Retrieved patient successfully")
                 return response.json()
             else:
@@ -92,7 +93,6 @@ class FHIRAPIClient:
                 )
                 return None
         except Exception as e:
-            from core.safe_logging import log_exception_safe
             log_exception_safe(logger, "Error retrieving patient", e)
             return None
 
@@ -128,7 +128,6 @@ class FHIRAPIClient:
                 )
                 return []
         except Exception as e:
-            from core.safe_logging import log_exception_safe
             log_exception_safe(logger, "Error retrieving conditions", e)
             return []
 
@@ -170,7 +169,6 @@ class FHIRAPIClient:
                 )
                 return []
         except Exception as e:
-            from core.safe_logging import log_exception_safe
             log_exception_safe(logger, "Error retrieving observations", e)
             return []
 
@@ -205,7 +203,6 @@ class FHIRAPIClient:
                 )
                 return []
         except Exception as e:
-            from core.safe_logging import log_exception_safe
             log_exception_safe(logger, "Error retrieving care plans", e)
             return []
 
@@ -237,7 +234,6 @@ class FHIRAPIClient:
                 logger.warning(f"Failed to retrieve goals: {response.status_code}")
                 return []
         except Exception as e:
-            from core.safe_logging import log_exception_safe
             log_exception_safe(logger, "Error retrieving goals", e)
             return []
 
@@ -282,7 +278,6 @@ class FHIRAPIClient:
                 )
                 return None
         except Exception as e:
-            from core.safe_logging import log_exception_safe
             log_exception_safe(logger, "Error creating observation", e)
             return None
 
@@ -316,7 +311,6 @@ class FHIRAPIClient:
                 )
                 return False
         except Exception as e:
-            from core.safe_logging import log_exception_safe
             log_exception_safe(logger, "Error updating care plan", e)
             return False
 
@@ -369,7 +363,6 @@ class HL7Parser:
             logger.info("Parsed HL7 message successfully")
             return parsed
         except Exception as e:
-            from core.safe_logging import log_exception_safe
             log_exception_safe(logger, "Error parsing HL7 message", e)
             return {}
 
@@ -410,7 +403,6 @@ class HL7Parser:
             logger.info(f"Created HL7 {message_type} message")
             return message
         except Exception as e:
-            from core.safe_logging import log_exception_safe
             log_exception_safe(logger, "Error creating HL7 message", e)
             return ""
 
@@ -550,7 +542,6 @@ class EHRIntegrationManager:
             logger.info(f"Synced patient data for {mask_identifier(patient_id, 'pat')}")
             return patient_data
         except Exception as e:
-            from core.safe_logging import log_exception_safe
             log_exception_safe(logger, "Error syncing patient data", e)
             return {}
 
@@ -574,7 +565,6 @@ class EHRIntegrationManager:
             logger.info(f"Sent observation to EHR: {obs_id}")
             return obs_id
         except Exception as e:
-            from core.safe_logging import log_exception_safe
             log_exception_safe(logger, "Error sending observation", e)
             return None
 
@@ -593,6 +583,5 @@ class EHRIntegrationManager:
             logger.info("Processed HL7 message successfully")
             return parsed
         except Exception as e:
-            from core.safe_logging import log_exception_safe
             log_exception_safe(logger, "Error processing HL7 message", e)
             return {}

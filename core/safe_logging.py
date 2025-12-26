@@ -70,32 +70,25 @@ def mask_identifier(identifier: str, prefix: str = "id") -> str:
     """
     Mask an identifier for safe logging.
     
-    For identifiers with 8 or more characters, shows the prefix and last 4 characters.
-    For shorter identifiers, shows only the prefix and masks all characters.
+    Completely masks the identifier value to prevent any sensitive data exposure.
+    Returns only the prefix with masked content, without revealing any characters
+    from the actual identifier.
     
     Args:
         identifier: The identifier to mask (patient_id, username, etc.)
         prefix: Prefix to use for the masked value (e.g., 'pat', 'user', 'id')
         
     Returns:
-        Masked identifier string
+        Masked identifier string in format: "{prefix}_****"
         
     Example:
         >>> mask_identifier("patient12345", "pat")
-        'pat_****2345'
+        'pat_****'
         >>> mask_identifier("admin", "user")
         'user_****'
         >>> mask_identifier("", "id")
         'id_****'
     """
-    if not identifier:
-        return f"{prefix}_****"
-    
-    # For identifiers with 8 or more characters, show last 4 digits
-    if len(identifier) >= 8:
-        return f"{prefix}_****{identifier[-4:]}"
-    
-    # For shorter identifiers, mask everything
     return f"{prefix}_****"
 
 
@@ -114,8 +107,8 @@ def safe_log_info(
         
     Example:
         >>> safe_log_info(logger, "Processing patient {patient_id}", 
-        ...               patient_id=("patient12345", "pat"))
-        # Logs: "Processing patient pat_****2345"
+        ...               patient_id=("12345", "pat"))
+        # Logs: "Processing patient pat_****"
     """
     masked_values = {}
     for key, value in identifiers.items():
@@ -143,8 +136,8 @@ def safe_log_warning(
         
     Example:
         >>> safe_log_warning(logger, "No data for patient {patient_id}", 
-        ...                  patient_id=("patient67890", "pat"))
-        # Logs: "No data for patient pat_****7890"
+        ...                  patient_id=("67890", "pat"))
+        # Logs: "No data for patient pat_****"
     """
     masked_values = {}
     for key, value in identifiers.items():
