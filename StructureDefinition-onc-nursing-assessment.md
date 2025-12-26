@@ -1,4 +1,4 @@
-# Open Nursing Core Assessment - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# Open Nursing Core Assessment - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,11 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment | *Version*:1.0.0 |
-| Active as of 2025-12-26 | *Computable Name*:ONCNursingAssessment |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:ONCNursingAssessment |
+
+ 
+Base profile for nursing assessment observations conforming to UK Core standards. Captures structured nursing assessment data as part of the ADPIE (Assessment, Diagnosis, Planning, Implementation, Evaluation) nursing process framework. Used as parent for specialized assessments like NEWS2, Braden Scale, and clinical observations. 
 
 **Usages:**
 
@@ -34,11 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-assessme
   "resourceType" : "StructureDefinition",
   "id" : "onc-nursing-assessment",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "ONCNursingAssessment",
   "title" : "Open Nursing Core Assessment",
-  "status" : "active",
-  "date" : "2025-12-26T12:21:51+00:00",
+  "status" : "draft",
+  "date" : "2025-12-26T14:28:37+00:00",
+  "description" : "Base profile for nursing assessment observations conforming to UK Core standards. Captures structured nursing assessment data as part of the ADPIE (Assessment, Diagnosis, Planning, Implementation, Evaluation) nursing process framework. Used as parent for specialized assessments like NEWS2, Braden Scale, and clinical observations.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -108,7 +112,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-assessme
           "coding" : [
             {
               "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-              "code" : "nursing"
+              "code" : "survey"
             }
           ]
         },

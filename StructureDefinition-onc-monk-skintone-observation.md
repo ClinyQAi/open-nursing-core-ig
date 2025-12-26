@@ -1,4 +1,4 @@
-# Monk Skin Tone Observation - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# Monk Skin Tone Observation - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,11 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-monk-skintone-observation | *Version*:1.0.0 |
-| Active as of 2025-12-26 | *Computable Name*:ONCMonkSkinToneObservation |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-monk-skintone-observation | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:ONCMonkSkinToneObservation |
+
+ 
+Observation of patient skin tone using the Monk Skin Tone Scale (10-point scale A-J). Provides more granular skin tone assessment than Fitzpatrick scale, particularly for darker skin tones. Supports equitable care and accurate clinical assessment across diverse populations. 
 
 **Usages:**
 
@@ -34,11 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-monk-skintone-ob
   "resourceType" : "StructureDefinition",
   "id" : "onc-monk-skintone-observation",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-monk-skintone-observation",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "ONCMonkSkinToneObservation",
   "title" : "Monk Skin Tone Observation",
-  "status" : "active",
-  "date" : "2025-12-26T12:21:51+00:00",
+  "status" : "draft",
+  "date" : "2025-12-26T14:28:37+00:00",
+  "description" : "Observation of patient skin tone using the Monk Skin Tone Scale (10-point scale A-J). Provides more granular skin tone assessment than Fitzpatrick scale, particularly for darker skin tones. Supports equitable care and accurate clinical assessment across diverse populations.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -89,7 +93,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-monk-skintone-ob
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://open-nursing-core.org/CodeSystem/onc-observation-codes",
+              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
               "code" : "mst-score",
               "display" : "Monk Skin Tone Score"
             }

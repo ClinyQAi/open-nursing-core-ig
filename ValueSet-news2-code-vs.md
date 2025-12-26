@@ -1,4 +1,4 @@
-# NEWS2 Code Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# NEWS2 Code Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,15 +8,15 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/news2-code-vs | *Version*:1.0.0 |
-| Active as of 2025-12-26 | *Computable Name*:NEWS2CodeValueSet |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/news2-code-vs | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:NEWS2CodeValueSet |
 
  
 LOINC and SNOMED codes for NEWS2 
 
  **References** 
 
-* [NEWS2 Score](StructureDefinition-onc-news2-score.md)
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
 
 ### Logical Definition (CLD)
 
@@ -46,29 +46,19 @@ LOINC and SNOMED codes for NEWS2
   "resourceType" : "ValueSet",
   "id" : "news2-code-vs",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/news2-code-vs",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "NEWS2CodeValueSet",
   "title" : "NEWS2 Code Value Set",
-  "status" : "active",
-  "date" : "2025-12-26T12:21:51+00:00",
+  "status" : "draft",
+  "date" : "2025-12-26T14:28:37+00:00",
   "description" : "LOINC and SNOMED codes for NEWS2",
   "compose" : {
     "include" : [
       {
-        "system" : "http://loinc.org",
+        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
         "concept" : [
           {
-            "code" : "88330-6",
-            "display" : "National Early Warning Score [NEWS]"
-          }
-        ]
-      },
-      {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "1104051000000101",
-            "display" : "National Early Warning Score 2 (observable entity)"
+            "code" : "news2-score"
           }
         ]
       }

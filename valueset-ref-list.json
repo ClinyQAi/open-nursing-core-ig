@@ -2,8 +2,8 @@
   "codeSystems" : [
     {
       "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/acvpu-vs",
-      "version" : "1.0.0",
-      "status" : "active",
+      "version" : "0.1.0",
+      "status" : "draft",
       "name" : "ACVPUValueSet",
       "title" : "ACVPU Value Set",
       "description" : "ACVPU consciousness level codes",
@@ -14,8 +14,8 @@
     },
     {
       "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset",
-      "version" : "1.0.0",
-      "status" : "active",
+      "version" : "0.1.0",
+      "status" : "draft",
       "name" : "GoalEvaluationValueSet",
       "title" : "Goal Evaluation Value Set",
       "description" : "Value set for evaluating patient goal outcomes",
@@ -26,8 +26,8 @@
     },
     {
       "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/housing-status-vs",
-      "version" : "1.0.0",
-      "status" : "active",
+      "version" : "0.1.0",
+      "status" : "draft",
       "name" : "HousingStatusVS",
       "title" : "Housing Status Value Set",
       "description" : "Value set for patient housing status",
@@ -35,8 +35,8 @@
     },
     {
       "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/inspired-oxygen-vs",
-      "version" : "1.0.0",
-      "status" : "active",
+      "version" : "0.1.0",
+      "status" : "draft",
       "name" : "InspiredOxygenValueSet",
       "title" : "Inspired Oxygen Value Set",
       "description" : "Codes for inspired oxygen status",
@@ -47,32 +47,30 @@
     },
     {
       "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/news2-code-vs",
-      "version" : "1.0.0",
-      "status" : "active",
+      "version" : "0.1.0",
+      "status" : "draft",
       "name" : "NEWS2CodeValueSet",
       "title" : "NEWS2 Code Value Set",
       "description" : "LOINC and SNOMED codes for NEWS2",
-      "systems" : ["http://loinc.org", "http://snomed.info/sct"],
-      "uses" : {
-      },
-      "StructureDefinition-onc-news2-score.html" : "NEWS2 Score"
+      "systems" : [
+        "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"
+      ]
     },
     {
       "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/news2-subscore-code-vs",
-      "version" : "1.0.0",
-      "status" : "active",
+      "version" : "0.1.0",
+      "status" : "draft",
       "name" : "NEWS2SubscoreCodeValueSet",
       "title" : "NEWS2 Sub-Score Codes",
       "description" : "SNOMED codes for NEWS2 sub-scores",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "StructureDefinition-onc-news2-subscore.html" : "NEWS2 Sub-Score"
+      "systems" : [
+        "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"
+      ]
     },
     {
       "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-intervention-valueset",
-      "version" : "1.0.0",
-      "status" : "active",
+      "version" : "0.1.0",
+      "status" : "draft",
       "name" : "NursingInterventionValueSet",
       "title" : "Nursing Intervention Value Set",
       "description" : "Value set for nursing interventions",
@@ -83,20 +81,23 @@
     },
     {
       "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-problem-valueset",
-      "version" : "1.0.0",
-      "status" : "active",
+      "version" : "0.1.0",
+      "status" : "draft",
       "name" : "NursingProblemValueSet",
       "title" : "Nursing Problem Value Set",
       "description" : "Value set for nursing problems and diagnoses",
-      "systems" : ["http://snomed.info/sct"],
+      "systems" : [
+        "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "http://snomed.info/sct"
+      ],
       "uses" : {
       },
       "StructureDefinition-onc-nursing-problem.html" : "Nursing Problem"
     },
     {
       "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-monk-scale-vs",
-      "version" : "1.0.0",
-      "status" : "active",
+      "version" : "0.1.0",
+      "status" : "draft",
       "name" : "ONCMonkScaleVS",
       "title" : "Monk Skin Tone Scale ValueSet",
       "description" : "",
@@ -109,8 +110,8 @@
     },
     {
       "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/pain-assessment-code-vs",
-      "version" : "1.0.0",
-      "status" : "active",
+      "version" : "0.1.0",
+      "status" : "draft",
       "name" : "PainAssessmentCodeValueSet",
       "title" : "Pain Assessment Code Value Set",
       "description" : "LOINC codes for pain severity assessment",
@@ -121,36 +122,42 @@
     },
     {
       "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/problem-category-valueset",
-      "version" : "1.0.0",
-      "status" : "active",
+      "version" : "0.1.0",
+      "status" : "draft",
       "name" : "ProblemCategoryValueSet",
       "title" : "Problem Category Value Set",
       "description" : "Value set for categorizing nursing problems",
-      "systems" : ["http://open-nursing-core.org/CodeSystem/onc-problem-type"],
+      "systems" : [
+        "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type"
+      ],
       "uses" : {
       },
       "StructureDefinition-onc-nursing-problem.html" : "Nursing Problem"
     },
     {
       "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/skintone-vs",
-      "version" : "1.0.0",
-      "status" : "active",
+      "version" : "0.1.0",
+      "status" : "draft",
       "name" : "SkinToneVS",
       "title" : "Fitzpatrick Skin Tone Value Set",
       "description" : "Value set for Fitzpatrick skin type classifications",
-      "systems" : ["http://snomed.info/sct"],
+      "systems" : [
+        "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"
+      ],
       "uses" : {
       },
       "StructureDefinition-onc-skintone-observation.html" : "Skin Tone Observation"
     },
     {
       "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/wound-stage-vs",
-      "version" : "1.0.0",
-      "status" : "active",
+      "version" : "0.1.0",
+      "status" : "draft",
       "name" : "WoundStageValueSet",
       "title" : "Wound Stage Value Set",
-      "description" : "SNOMED CT codes for pressure ulcer staging",
-      "systems" : ["http://snomed.info/sct"],
+      "description" : "",
+      "systems" : [
+        "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"
+      ],
       "uses" : {
       },
       "StructureDefinition-onc-wound-assessment.html" : "Wound Assessment"

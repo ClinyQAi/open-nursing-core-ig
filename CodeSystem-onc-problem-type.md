@@ -1,4 +1,4 @@
-# Problem Type CodeSystem - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# Problem Type CodeSystem - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://open-nursing-core.org/CodeSystem/onc-problem-type | *Version*:1.0.0 |
-| Active as of 2025-12-26 | *Computable Name*:ONCProblemType |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:ONCProblemType |
 
  
 Code system for categorizing types of nursing problems 
@@ -26,13 +26,13 @@ Code system for categorizing types of nursing problems
 {
   "resourceType" : "CodeSystem",
   "id" : "onc-problem-type",
-  "url" : "http://open-nursing-core.org/CodeSystem/onc-problem-type",
-  "version" : "1.0.0",
+  "url" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type",
+  "version" : "0.1.0",
   "name" : "ONCProblemType",
   "title" : "Problem Type CodeSystem",
-  "status" : "active",
+  "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-26T12:21:51+00:00",
+  "date" : "2025-12-26T14:28:37+00:00",
   "description" : "Code system for categorizing types of nursing problems",
   "caseSensitive" : true,
   "content" : "complete",

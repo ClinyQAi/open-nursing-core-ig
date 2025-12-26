@@ -1,4 +1,4 @@
-# Nursing Intervention Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# Nursing Intervention Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-intervention-valueset | *Version*:1.0.0 |
-| Active as of 2025-12-26 | *Computable Name*:NursingInterventionValueSet |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-intervention-valueset | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:NursingInterventionValueSet |
 
  
 Value set for nursing interventions 
@@ -46,12 +46,12 @@ Value set for nursing interventions
   "resourceType" : "ValueSet",
   "id" : "nursing-intervention-valueset",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-intervention-valueset",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "NursingInterventionValueSet",
   "title" : "Nursing Intervention Value Set",
-  "status" : "active",
+  "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-26T12:21:51+00:00",
+  "date" : "2025-12-26T14:28:37+00:00",
   "description" : "Value set for nursing interventions",
   "compose" : {
     "include" : [

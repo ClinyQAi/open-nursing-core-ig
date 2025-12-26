@@ -1,8 +1,15 @@
 {
   "package": "onc.ig",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "fhirVersion": "4.0.1",
   "extensions": [
+    {
+      "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/UKCore-Extension-EthnicCategory",
+      "title": "UK Core Ethnic Category",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
     {
       "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/intervention-goal-reference",
       "title": "Intervention Goal Reference",
@@ -15,13 +22,6 @@
       "title": "Observation Goal Reference",
       "types": [
         "Reference"
-      ]
-    },
-    {
-      "url": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Extension-EthnicCategory",
-      "title": "UK Core Ethnic Category",
-      "types": [
-        "CodeableConcept"
       ]
     }
   ],
@@ -117,14 +117,14 @@
     "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
       "StructureDefinition.snapshot"
     ],
+    "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/UKCore-Extension-EthnicCategory": [
+      "Patient"
+    ],
     "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/intervention-goal-reference": [
       "Procedure"
     ],
     "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/observation-goal-reference": [
       "Observation"
-    ],
-    "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Extension-EthnicCategory": [
-      "Patient"
     ]
   }
 }

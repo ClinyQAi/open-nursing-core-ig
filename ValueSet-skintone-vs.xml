@@ -3,42 +3,42 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="skintone-vs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet skintone-vs</b></p><a name="skintone-vs"> </a><a name="hcskintone-vs"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/403153005">403153005</a></td><td>Fitzpatrick skin type I</td></tr><tr><td><a href="http://snomed.info/id/403154004">403154004</a></td><td>Fitzpatrick skin type II</td></tr><tr><td><a href="http://snomed.info/id/403155003">403155003</a></td><td>Fitzpatrick skin type III</td></tr><tr><td><a href="http://snomed.info/id/403156002">403156002</a></td><td>Fitzpatrick skin type IV</td></tr><tr><td><a href="http://snomed.info/id/403157006">403157006</a></td><td>Fitzpatrick skin type V</td></tr><tr><td><a href="http://snomed.info/id/403158001">403158001</a></td><td>Fitzpatrick skin type VI</td></tr></table></li></ul></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet skintone-vs</b></p><a name="skintone-vs"> </a><a name="hcskintone-vs"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-onc-observation-codes.html"><code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-fitzpatrick-1">fitzpatrick-1</a></td><td>Type I</td><td>Pale white; always burns, never tans</td></tr><tr><td><a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-fitzpatrick-2">fitzpatrick-2</a></td><td>Type II</td><td>White; usually burns, tans with difficulty</td></tr><tr><td><a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-fitzpatrick-3">fitzpatrick-3</a></td><td>Type III</td><td>Cream white; sometimes mild burn, gradually tans</td></tr><tr><td><a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-fitzpatrick-4">fitzpatrick-4</a></td><td>Type IV</td><td>Moderate brown; rarely burns, tans with ease</td></tr><tr><td><a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-fitzpatrick-5">fitzpatrick-5</a></td><td>Type V</td><td>Dark brown; very rarely burns, tans very easily</td></tr><tr><td><a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-fitzpatrick-6">fitzpatrick-6</a></td><td>Type VI</td><td>Deeply pigmented dark brown to black; never burns, tans very easily</td></tr></table></li></ul></div>
   </text>
   <url value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/skintone-vs"/>
-  <version value="1.0.0"/>
+  <version value="0.1.0"/>
   <name value="SkinToneVS"/>
   <title value="Fitzpatrick Skin Tone Value Set"/>
-  <status value="active"/>
+  <status value="draft"/>
   <experimental value="false"/>
-  <date value="2025-12-26T12:21:51+00:00"/>
+  <date value="2025-12-26T14:28:37+00:00"/>
   <description value="Value set for Fitzpatrick skin type classifications"/>
   <compose>
     <include>
-      <system value="http://snomed.info/sct"/>
+      <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
       <concept>
-        <code value="403153005"/>
-        <display value="Fitzpatrick skin type I"/>
+        <code value="fitzpatrick-1"/>
+        <display value="Type I"/>
       </concept>
       <concept>
-        <code value="403154004"/>
-        <display value="Fitzpatrick skin type II"/>
+        <code value="fitzpatrick-2"/>
+        <display value="Type II"/>
       </concept>
       <concept>
-        <code value="403155003"/>
-        <display value="Fitzpatrick skin type III"/>
+        <code value="fitzpatrick-3"/>
+        <display value="Type III"/>
       </concept>
       <concept>
-        <code value="403156002"/>
-        <display value="Fitzpatrick skin type IV"/>
+        <code value="fitzpatrick-4"/>
+        <display value="Type IV"/>
       </concept>
       <concept>
-        <code value="403157006"/>
-        <display value="Fitzpatrick skin type V"/>
+        <code value="fitzpatrick-5"/>
+        <display value="Type V"/>
       </concept>
       <concept>
-        <code value="403158001"/>
-        <display value="Fitzpatrick skin type VI"/>
+        <code value="fitzpatrick-6"/>
+        <display value="Type VI"/>
       </concept>
     </include>
   </compose>

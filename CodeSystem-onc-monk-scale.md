@@ -1,4 +1,4 @@
-# Monk Skin Tone Scale CodeSystem - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# Monk Skin Tone Scale CodeSystem - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale | *Version*:1.0.0 |
-| Active as of 2025-12-26 | *Computable Name*:ONCMonkScale |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:ONCMonkScale |
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
@@ -24,11 +24,11 @@
   "resourceType" : "CodeSystem",
   "id" : "onc-monk-scale",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "ONCMonkScale",
   "title" : "Monk Skin Tone Scale CodeSystem",
-  "status" : "active",
-  "date" : "2025-12-26T12:21:51+00:00",
+  "status" : "draft",
+  "date" : "2025-12-26T14:28:37+00:00",
   "content" : "complete",
   "count" : 10,
   "concept" : [

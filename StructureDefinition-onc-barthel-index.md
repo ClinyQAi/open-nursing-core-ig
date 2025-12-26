@@ -1,4 +1,4 @@
-# Barthel Index - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# Barthel Index - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-barthel-index | *Version*:1.0.0 |
-| Active as of 2025-12-26 | *Computable Name*:ONCBarthelIndex |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-barthel-index | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:ONCBarthelIndex |
 
  
 Barthel Index for measuring independence in activities of daily living (ADL). Score 0-20=total dependency, 91-99=slight dependency, 100=independent. Total range 0-100. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-onc-barthel-index.cs
   "resourceType" : "StructureDefinition",
   "id" : "onc-barthel-index",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-barthel-index",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "ONCBarthelIndex",
   "title" : "Barthel Index",
-  "status" : "active",
-  "date" : "2025-12-26T12:21:51+00:00",
+  "status" : "draft",
+  "date" : "2025-12-26T14:28:37+00:00",
   "description" : "Barthel Index for measuring independence in activities of daily living (ADL). Score 0-20=total dependency, 91-99=slight dependency, 100=independent. Total range 0-100.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -98,9 +98,9 @@ Other representations of profile: [CSV](StructureDefinition-onc-barthel-index.cs
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://loinc.org",
-              "code" : "83254-5",
-              "display" : "Barthel Index"
+              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "code" : "barthel-score",
+              "display" : "Barthel Index Score"
             }
           ]
         },

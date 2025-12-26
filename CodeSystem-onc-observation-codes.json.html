@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ONC Observation Codes - JSON Representation - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0</title>
+    <title>ONC Observation Codes - JSON Representation - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -54,7 +54,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Open Nursing Core FHIR Implementation Guide (ONC-IG)</span>
             <br/>
-            <span style="display:inline-block;">1.0.0 - release
+            <span style="display:inline-block;">0.1.0 - draft
 
 
             </span>
@@ -108,7 +108,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Open Nursing Core FHIR Implementation Guide (ONC-IG) - Local Development build (v1.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://clinyqai.github.io/open-nursing-core-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Open Nursing Core FHIR Implementation Guide (ONC-IG) - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://clinyqai.github.io/open-nursing-core-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -156,12 +156,12 @@
 
 <h2 id="root">: ONC Observation Codes - JSON Representation</h2>
 
-  <table class="colsi">
+  <table class="colsd">
     <tr>
 
       <td colspan="2">
         
-          Active
+          Draft
           
             as of 2025-12-26
           
@@ -184,22 +184,167 @@
   "<a href="http://hl7.org/fhir/R4/resource.html#CodeSystem.id">id</a>" : "onc-observation-codes",
   "<a href="http://hl7.org/fhir/R4/domainresource.html#CodeSystem.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem onc-observation-codes&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;onc-observation-codes\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hconc-observation-codes\&quot;&gt; &lt;/a&gt;&lt;p&gt;This  code system &lt;code&gt;http://open-nursing-core.org/CodeSystem/onc-observation-codes&lt;/code&gt; defines the following code:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;mst-score&lt;a name=\&quot;onc-observation-codes-mst-score\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Monk Skin Tone Score&lt;/td&gt;&lt;td&gt;Assessment of skin tone using the Monk Skin Tone Scale&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem onc-observation-codes&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;onc-observation-codes\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hconc-observation-codes\&quot;&gt; &lt;/a&gt;&lt;p&gt;This  code system &lt;code&gt;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;mst-score&lt;a name=\&quot;onc-observation-codes-mst-score\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Monk Skin Tone Score&lt;/td&gt;&lt;td&gt;Assessment of skin tone using the Monk Skin Tone Scale&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;waterlow-score&lt;a name=\&quot;onc-observation-codes-waterlow-score\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Waterlow Score&lt;/td&gt;&lt;td&gt;Total score for Waterlow pressure ulcer risk assessment&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;must-score&lt;a name=\&quot;onc-observation-codes-must-score\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MUST Score&lt;/td&gt;&lt;td&gt;Malnutrition Universal Screening Tool total score&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;must-bmi-score&lt;a name=\&quot;onc-observation-codes-must-bmi-score\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MUST BMI Score&lt;/td&gt;&lt;td&gt;Malnutrition Universal Screening Tool BMI score&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;must-weight-loss-score&lt;a name=\&quot;onc-observation-codes-must-weight-loss-score\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MUST Weight Loss Score&lt;/td&gt;&lt;td&gt;Malnutrition Universal Screening Tool weight loss score&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;must-acute-disease-score&lt;a name=\&quot;onc-observation-codes-must-acute-disease-score\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MUST Acute Disease Score&lt;/td&gt;&lt;td&gt;Malnutrition Universal Screening Tool acute disease effect score&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;braden-total-score&lt;a name=\&quot;onc-observation-codes-braden-total-score\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Braden Total Score&lt;/td&gt;&lt;td&gt;Braden scale total score&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;braden-sensory&lt;a name=\&quot;onc-observation-codes-braden-sensory\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Braden Sensory Perception&lt;/td&gt;&lt;td&gt;Sensory perception Braden scale&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;braden-moisture&lt;a name=\&quot;onc-observation-codes-braden-moisture\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Braden Moisture&lt;/td&gt;&lt;td&gt;Moisture Braden scale&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;braden-activity&lt;a name=\&quot;onc-observation-codes-braden-activity\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Braden Activity&lt;/td&gt;&lt;td&gt;Activity Braden scale&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;braden-mobility&lt;a name=\&quot;onc-observation-codes-braden-mobility\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Braden Mobility&lt;/td&gt;&lt;td&gt;Mobility Braden scale&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;braden-nutrition&lt;a name=\&quot;onc-observation-codes-braden-nutrition\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Braden Nutrition&lt;/td&gt;&lt;td&gt;Nutrition Braden scale&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;braden-friction&lt;a name=\&quot;onc-observation-codes-braden-friction\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Braden Friction/Shear&lt;/td&gt;&lt;td&gt;Friction and shear Braden scale&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;barthel-score&lt;a name=\&quot;onc-observation-codes-barthel-score\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Barthel Index Score&lt;/td&gt;&lt;td&gt;Total score for Barthel Index assessment&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;news2-score&lt;a name=\&quot;onc-observation-codes-news2-score\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;NEWS2 Score&lt;/td&gt;&lt;td&gt;National Early Warning Score 2 Total Score&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;news2-subscore&lt;a name=\&quot;onc-observation-codes-news2-subscore\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;NEWS2 Sub-score&lt;/td&gt;&lt;td&gt;Sub-score for NEWS2 parameter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;wound-stage&lt;a name=\&quot;onc-observation-codes-wound-stage\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Wound Stage&lt;/td&gt;&lt;td&gt;Stage of the wound&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;stage-1&lt;a name=\&quot;onc-observation-codes-stage-1\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stage 1&lt;/td&gt;&lt;td&gt;Stage 1 pressure ulcer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;stage-2&lt;a name=\&quot;onc-observation-codes-stage-2\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stage 2&lt;/td&gt;&lt;td&gt;Stage 2 pressure ulcer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;stage-3&lt;a name=\&quot;onc-observation-codes-stage-3\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stage 3&lt;/td&gt;&lt;td&gt;Stage 3 pressure ulcer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;stage-4&lt;a name=\&quot;onc-observation-codes-stage-4\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stage 4&lt;/td&gt;&lt;td&gt;Stage 4 pressure ulcer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;unstageable&lt;a name=\&quot;onc-observation-codes-unstageable\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unstageable&lt;/td&gt;&lt;td&gt;Unstageable pressure ulcer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;deep-tissue&lt;a name=\&quot;onc-observation-codes-deep-tissue\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Deep Tissue Injury&lt;/td&gt;&lt;td&gt;Deep tissue injury&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;risk-falls&lt;a name=\&quot;onc-observation-codes-risk-falls\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Risk of Falls&lt;/td&gt;&lt;td&gt;Risk of falls diagnosis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;fitzpatrick-1&lt;a name=\&quot;onc-observation-codes-fitzpatrick-1\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Type I&lt;/td&gt;&lt;td&gt;Pale white; always burns, never tans&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;fitzpatrick-2&lt;a name=\&quot;onc-observation-codes-fitzpatrick-2\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Type II&lt;/td&gt;&lt;td&gt;White; usually burns, tans with difficulty&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;fitzpatrick-3&lt;a name=\&quot;onc-observation-codes-fitzpatrick-3\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Type III&lt;/td&gt;&lt;td&gt;Cream white; sometimes mild burn, gradually tans&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;fitzpatrick-4&lt;a name=\&quot;onc-observation-codes-fitzpatrick-4\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Type IV&lt;/td&gt;&lt;td&gt;Moderate brown; rarely burns, tans with ease&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;fitzpatrick-5&lt;a name=\&quot;onc-observation-codes-fitzpatrick-5\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Type V&lt;/td&gt;&lt;td&gt;Dark brown; very rarely burns, tans very easily&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;fitzpatrick-6&lt;a name=\&quot;onc-observation-codes-fitzpatrick-6\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Type VI&lt;/td&gt;&lt;td&gt;Deeply pigmented dark brown to black; never burns, tans very easily&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
   },
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "http://open-nursing-core.org/CodeSystem/onc-observation-codes",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "1.0.0",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "0.1.0",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "ONCObservationCodes",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "ONC Observation Codes",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2025-12-26T12:21:51+00:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "draft",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2025-12-26T14:28:37+00:00",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "Custom observation codes for Open Nursing Core",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a>" : "complete",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a>" : 1,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a>" : 30,
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
     {
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "mst-score",
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Monk Skin Tone Score",
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Assessment of skin tone using the Monk Skin Tone Scale"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "waterlow-score",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Waterlow Score",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Total score for Waterlow pressure ulcer risk assessment"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "must-score",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "MUST Score",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Malnutrition Universal Screening Tool total score"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "must-bmi-score",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "MUST BMI Score",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Malnutrition Universal Screening Tool BMI score"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "must-weight-loss-score",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "MUST Weight Loss Score",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Malnutrition Universal Screening Tool weight loss score"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "must-acute-disease-score",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "MUST Acute Disease Score",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Malnutrition Universal Screening Tool acute disease effect score"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "braden-total-score",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Braden Total Score",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Braden scale total score"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "braden-sensory",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Braden Sensory Perception",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Sensory perception Braden scale"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "braden-moisture",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Braden Moisture",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Moisture Braden scale"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "braden-activity",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Braden Activity",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Activity Braden scale"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "braden-mobility",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Braden Mobility",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Mobility Braden scale"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "braden-nutrition",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Braden Nutrition",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Nutrition Braden scale"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "braden-friction",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Braden Friction/Shear",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Friction and shear Braden scale"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "barthel-score",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Barthel Index Score",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Total score for Barthel Index assessment"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "news2-score",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "NEWS2 Score",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "National Early Warning Score 2 Total Score"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "news2-subscore",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "NEWS2 Sub-score",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Sub-score for NEWS2 parameter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "wound-stage",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Wound Stage",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Stage of the wound"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "stage-1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Stage 1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Stage 1 pressure ulcer"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "stage-2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Stage 2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Stage 2 pressure ulcer"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "stage-3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Stage 3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Stage 3 pressure ulcer"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "stage-4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Stage 4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Stage 4 pressure ulcer"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "unstageable",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Unstageable",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Unstageable pressure ulcer"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "deep-tissue",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Deep Tissue Injury",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Deep tissue injury"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "risk-falls",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Risk of Falls",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Risk of falls diagnosis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "fitzpatrick-1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Type I",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Pale white; always burns, never tans"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "fitzpatrick-2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Type II",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "White; usually burns, tans with difficulty"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "fitzpatrick-3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Type III",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Cream white; sometimes mild burn, gradually tans"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "fitzpatrick-4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Type IV",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Moderate brown; rarely burns, tans with ease"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "fitzpatrick-5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Type V",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Dark brown; very rarely burns, tans very easily"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "fitzpatrick-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Type VI",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Deeply pigmented dark brown to black; never burns, tans very easily"
     }
   ]
 }</code></pre>
@@ -226,7 +371,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package onc.ig#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 26, 2025 12:21+0000">2025-12-26</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package onc.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 26, 2025 14:28+0000">2025-12-26</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

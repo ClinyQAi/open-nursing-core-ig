@@ -25,7 +25,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.extension:ethnicCategory","Patient.extension","ethnicCategory","","",0,1,"Y","","","Extension {[CanonicalType[https://fhir.hl7.org.uk/StructureDefinition/UKCore-Extension-EthnicCategory]]} {[]}
+"Patient.extension:ethnicCategory","Patient.extension","ethnicCategory","","",0,1,"Y","","","Extension {[CanonicalType[https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/UKCore-Extension-EthnicCategory]]} {[]}
 ","UK Core Ethnic Category","An extension to record the ethnic category of a patient, as per UK Core standards.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"

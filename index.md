@@ -1,4 +1,4 @@
-# Home - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# Home - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ImplementationGuide/onc.ig | *Version*:1.0.0 |
-| Active as of 2025-12-26 | *Computable Name*:OpenNursingCoreIG |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ImplementationGuide/onc.ig | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:OpenNursingCoreIG |
 
 # Open Nursing Core FHIR Implementation Guide
 
@@ -61,12 +61,12 @@ For questions or contributions, visit our [GitHub repository](https://github.com
   "resourceType" : "ImplementationGuide",
   "id" : "onc.ig",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/ImplementationGuide/onc.ig",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
-  "status" : "active",
-  "date" : "2025-12-26T12:21:51+00:00",
-  "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules.",
+  "status" : "draft",
+  "date" : "2025-12-26T14:28:37+00:00",
+  "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome.",
   "packageId" : "onc.ig",
   "license" : "MIT",
   "fhirVersion" : ["4.0.1"],
@@ -119,7 +119,7 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           },
           {
             "url" : "value",
-            "valueString" : "release"
+            "valueString" : "draft"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -448,7 +448,7 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           },
           {
             "url" : "value",
-            "valueString" : "release"
+            "valueString" : "draft"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -930,6 +930,7 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           "reference" : "StructureDefinition/onc-goal-evaluation"
         },
         "name" : "Goal Evaluation",
+        "description" : "Evaluation of patient goal outcomes and nursing intervention effectiveness. Assesses whether goals have been met, partially met, or not met. Part of the ADPIE framework's Evaluation phase.",
         "exampleBoolean" : false
       },
       {
@@ -1013,6 +1014,7 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           "reference" : "StructureDefinition/intervention-goal-reference"
         },
         "name" : "Intervention Goal Reference",
+        "description" : "Extension to link nursing interventions to the patient goals they are intended to achieve. Supports goal-directed care planning and intervention tracking.",
         "exampleBoolean" : false
       },
       {
@@ -1040,6 +1042,7 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           "reference" : "StructureDefinition/onc-monk-skintone-observation"
         },
         "name" : "Monk Skin Tone Observation",
+        "description" : "Observation of patient skin tone using the Monk Skin Tone Scale (10-point scale A-J). Provides more granular skin tone assessment than Fitzpatrick scale, particularly for darker skin tones. Supports equitable care and accurate clinical assessment across diverse populations.",
         "exampleBoolean" : false
       },
       {
@@ -1163,6 +1166,7 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           "reference" : "StructureDefinition/onc-nursing-intervention"
         },
         "name" : "Nursing Intervention",
+        "description" : "Nursing intervention or procedure performed to achieve patient goals. Documents actions taken by nursing staff to address identified problems and achieve desired outcomes. Part of the ADPIE framework's Implementation phase.",
         "exampleBoolean" : false
       },
       {
@@ -1190,6 +1194,7 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           "reference" : "StructureDefinition/onc-nursing-problem"
         },
         "name" : "Nursing Problem",
+        "description" : "Nursing diagnosis or problem identified during assessment. Represents clinical judgments about individual, family, or community responses to actual or potential health problems. Part of the ADPIE framework's Diagnosis phase.",
         "exampleBoolean" : false
       },
       {
@@ -1217,6 +1222,7 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           "reference" : "StructureDefinition/observation-goal-reference"
         },
         "name" : "Observation Goal Reference",
+        "description" : "Extension to link goal evaluation observations to the patient goals being evaluated. Enables tracking of goal progress and outcomes over time.",
         "exampleBoolean" : false
       },
       {
@@ -1284,6 +1290,7 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           "reference" : "StructureDefinition/onc-nursing-assessment"
         },
         "name" : "Open Nursing Core Assessment",
+        "description" : "Base profile for nursing assessment observations conforming to UK Core standards. Captures structured nursing assessment data as part of the ADPIE (Assessment, Diagnosis, Planning, Implementation, Evaluation) nursing process framework. Used as parent for specialized assessments like NEWS2, Braden Scale, and clinical observations.",
         "exampleBoolean" : false
       },
       {
@@ -1339,6 +1346,7 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           "reference" : "StructureDefinition/onc-patient-goal"
         },
         "name" : "Patient Goal",
+        "description" : "Patient-centered goal established in response to identified nursing problems. Defines measurable outcomes and addresses specific nursing diagnoses. Part of the ADPIE framework's Planning phase.",
         "exampleBoolean" : false
       },
       {
@@ -1434,6 +1442,7 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           "reference" : "StructureDefinition/onc-skintone-observation"
         },
         "name" : "Skin Tone Observation",
+        "description" : "Observation of patient skin tone using the Fitzpatrick skin type classification. Supports equitable care by enabling skin tone-aware clinical decision making, particularly for conditions that present differently across skin tones (e.g., pressure ulcers, cyanosis).",
         "exampleBoolean" : false
       },
       {
@@ -1489,7 +1498,6 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           "reference" : "ValueSet/wound-stage-vs"
         },
         "name" : "Wound Stage Value Set",
-        "description" : "SNOMED CT codes for pressure ulcer staging",
         "exampleBoolean" : false
       }
     ],

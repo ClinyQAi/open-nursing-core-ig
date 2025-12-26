@@ -6,20 +6,20 @@
     <profile value="https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-braden-scale-assessment"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation observation-braden-scale</b></p><a name="observation-braden-scale"> </a><a name="hcobservation-braden-scale"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-onc-braden-scale-assessment.html">Braden Scale Assessment</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category nursing}">nursing</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 38227-0}">Braden scale total score</span></p><p><b>subject</b>: <a href="Patient-patient-example-jane.html">Jane Doe  Female, DoB Unknown</a></p><p><b>performer</b>: <a href="Practitioner-practitioner-example.html">Practitioner Nightingale </a></p><p><b>value</b>: 18 {score}<span style="background: LightGoldenRodYellow"> (Details: UCUM  code1 = '1')</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 38222-1}">Sensory perception Braden scale</span></p><p><b>value</b>: 3 {score}<span style="background: LightGoldenRodYellow"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 38229-6}">Moisture Braden scale</span></p><p><b>value</b>: 4 {score}<span style="background: LightGoldenRodYellow"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 38223-9}">Activity Braden scale</span></p><p><b>value</b>: 2 {score}<span style="background: LightGoldenRodYellow"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 38224-7}">Mobility Braden scale</span></p><p><b>value</b>: 3 {score}<span style="background: LightGoldenRodYellow"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 38225-4}">Nutrition Braden scale</span></p><p><b>value</b>: 3 {score}<span style="background: LightGoldenRodYellow"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 38226-2}">Friction and shear Braden scale</span></p><p><b>value</b>: 3 {score}<span style="background: LightGoldenRodYellow"> (Details: UCUM  code1 = '1')</span></p></blockquote></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation observation-braden-scale</b></p><a name="observation-braden-scale"> </a><a name="hcobservation-braden-scale"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-onc-braden-scale-assessment.html">Braden Scale Assessment</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}">Survey</span></p><p><b>code</b>: <span title="Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes braden-total-score}">Braden Total Score</span></p><p><b>subject</b>: <a href="Patient-patient-example-jane.html">Jane Doe  Female, DoB Unknown</a></p><p><b>performer</b>: <a href="Practitioner-practitioner-example.html">Practitioner Nightingale </a></p><p><b>value</b>: 18 {score}<span style="background: LightGoldenRodYellow"> (Details: UCUM  code1 = '1')</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes braden-sensory}">Braden Sensory Perception</span></p><p><b>value</b>: 3 {score}<span style="background: LightGoldenRodYellow"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes braden-moisture}">Braden Moisture</span></p><p><b>value</b>: 4 {score}<span style="background: LightGoldenRodYellow"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes braden-activity}">Braden Activity</span></p><p><b>value</b>: 2 {score}<span style="background: LightGoldenRodYellow"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes braden-mobility}">Braden Mobility</span></p><p><b>value</b>: 3 {score}<span style="background: LightGoldenRodYellow"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes braden-nutrition}">Braden Nutrition</span></p><p><b>value</b>: 3 {score}<span style="background: LightGoldenRodYellow"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes braden-friction}">Braden Friction/Shear</span></p><p><b>value</b>: 3 {score}<span style="background: LightGoldenRodYellow"> (Details: UCUM  code1 = '1')</span></p></blockquote></div>
   </text>
   <status value="final"/>
   <category>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-      <code value="nursing"/>
+      <code value="survey"/>
     </coding>
   </category>
   <code>
     <coding>
-      <system value="http://loinc.org"/>
-      <code value="38227-0"/>
-      <display value="Braden scale total score"/>
+      <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+      <code value="braden-total-score"/>
+      <display value="Braden Total Score"/>
     </coding>
   </code>
   <subject>
@@ -37,9 +37,9 @@
   <component>
     <code>
       <coding>
-        <system value="http://loinc.org"/>
-        <code value="38222-1"/>
-        <display value="Sensory perception Braden scale"/>
+        <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+        <code value="braden-sensory"/>
+        <display value="Braden Sensory Perception"/>
       </coding>
     </code>
     <valueQuantity>
@@ -52,9 +52,9 @@
   <component>
     <code>
       <coding>
-        <system value="http://loinc.org"/>
-        <code value="38229-6"/>
-        <display value="Moisture Braden scale"/>
+        <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+        <code value="braden-moisture"/>
+        <display value="Braden Moisture"/>
       </coding>
     </code>
     <valueQuantity>
@@ -67,9 +67,9 @@
   <component>
     <code>
       <coding>
-        <system value="http://loinc.org"/>
-        <code value="38223-9"/>
-        <display value="Activity Braden scale"/>
+        <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+        <code value="braden-activity"/>
+        <display value="Braden Activity"/>
       </coding>
     </code>
     <valueQuantity>
@@ -82,9 +82,9 @@
   <component>
     <code>
       <coding>
-        <system value="http://loinc.org"/>
-        <code value="38224-7"/>
-        <display value="Mobility Braden scale"/>
+        <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+        <code value="braden-mobility"/>
+        <display value="Braden Mobility"/>
       </coding>
     </code>
     <valueQuantity>
@@ -97,9 +97,9 @@
   <component>
     <code>
       <coding>
-        <system value="http://loinc.org"/>
-        <code value="38225-4"/>
-        <display value="Nutrition Braden scale"/>
+        <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+        <code value="braden-nutrition"/>
+        <display value="Braden Nutrition"/>
       </coding>
     </code>
     <valueQuantity>
@@ -112,9 +112,9 @@
   <component>
     <code>
       <coding>
-        <system value="http://loinc.org"/>
-        <code value="38226-2"/>
-        <display value="Friction and shear Braden scale"/>
+        <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+        <code value="braden-friction"/>
+        <display value="Braden Friction/Shear"/>
       </coding>
     </code>
     <valueQuantity>

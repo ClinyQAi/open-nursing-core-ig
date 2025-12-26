@@ -6,7 +6,7 @@
   },
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation example-goal-evaluation</b></p><a name=\"example-goal-evaluation\"> </a><a name=\"hcexample-goal-evaluation\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onc-goal-evaluation.html\">Goal Evaluation</a></p></div><p><b>Observation Goal Reference</b>: <a href=\"Goal-example-patient-goal.html\">Goal: lifecycleStatus = active; description = </a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category nursing}\">nursing</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 385633008}\">Resolved</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-jane.html\">Jane Doe  Female, DoB Unknown</a></p><p><b>performer</b>: <a href=\"Practitioner-practitioner-example.html\">Practitioner Nightingale </a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 385633008}\">Resolved</span></p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation example-goal-evaluation</b></p><a name=\"example-goal-evaluation\"> </a><a name=\"hcexample-goal-evaluation\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onc-goal-evaluation.html\">Goal Evaluation</a></p></div><p><b>Observation Goal Reference</b>: <a href=\"Goal-example-patient-goal.html\">Goal: lifecycleStatus = active; description = </a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 370996005}\">Patient condition resolved</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-jane.html\">Jane Doe  Female, DoB Unknown</a></p><p><b>performer</b>: <a href=\"Practitioner-practitioner-example.html\">Practitioner Nightingale </a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 370996005}\">Patient condition resolved</span></p></div>"
   },
   "extension" : [{
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/observation-goal-reference",
@@ -18,14 +18,14 @@
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-      "code" : "nursing"
+      "code" : "survey"
     }]
   }],
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "code" : "385633008",
-      "display" : "Resolved"
+      "code" : "370996005",
+      "display" : "Patient condition resolved"
     }]
   },
   "subject" : {
@@ -37,8 +37,8 @@
   "valueCodeableConcept" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "code" : "385633008",
-      "display" : "Resolved"
+      "code" : "370996005",
+      "display" : "Patient condition resolved"
     }]
   }
 }

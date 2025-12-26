@@ -11,24 +11,140 @@
   fhir:id [ fhir:v "onc-observation-codes"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem onc-observation-codes</b></p><a name=\"onc-observation-codes\"> </a><a name=\"hconc-observation-codes\"> </a><p>This  code system <code>http://open-nursing-core.org/CodeSystem/onc-observation-codes</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">mst-score<a name=\"onc-observation-codes-mst-score\"> </a></td><td>Monk Skin Tone Score</td><td>Assessment of skin tone using the Monk Skin Tone Scale</td></tr></table></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem onc-observation-codes</b></p><a name=\"onc-observation-codes\"> </a><a name=\"hconc-observation-codes\"> </a><p>This  code system <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">mst-score<a name=\"onc-observation-codes-mst-score\"> </a></td><td>Monk Skin Tone Score</td><td>Assessment of skin tone using the Monk Skin Tone Scale</td></tr><tr><td style=\"white-space:nowrap\">waterlow-score<a name=\"onc-observation-codes-waterlow-score\"> </a></td><td>Waterlow Score</td><td>Total score for Waterlow pressure ulcer risk assessment</td></tr><tr><td style=\"white-space:nowrap\">must-score<a name=\"onc-observation-codes-must-score\"> </a></td><td>MUST Score</td><td>Malnutrition Universal Screening Tool total score</td></tr><tr><td style=\"white-space:nowrap\">must-bmi-score<a name=\"onc-observation-codes-must-bmi-score\"> </a></td><td>MUST BMI Score</td><td>Malnutrition Universal Screening Tool BMI score</td></tr><tr><td style=\"white-space:nowrap\">must-weight-loss-score<a name=\"onc-observation-codes-must-weight-loss-score\"> </a></td><td>MUST Weight Loss Score</td><td>Malnutrition Universal Screening Tool weight loss score</td></tr><tr><td style=\"white-space:nowrap\">must-acute-disease-score<a name=\"onc-observation-codes-must-acute-disease-score\"> </a></td><td>MUST Acute Disease Score</td><td>Malnutrition Universal Screening Tool acute disease effect score</td></tr><tr><td style=\"white-space:nowrap\">braden-total-score<a name=\"onc-observation-codes-braden-total-score\"> </a></td><td>Braden Total Score</td><td>Braden scale total score</td></tr><tr><td style=\"white-space:nowrap\">braden-sensory<a name=\"onc-observation-codes-braden-sensory\"> </a></td><td>Braden Sensory Perception</td><td>Sensory perception Braden scale</td></tr><tr><td style=\"white-space:nowrap\">braden-moisture<a name=\"onc-observation-codes-braden-moisture\"> </a></td><td>Braden Moisture</td><td>Moisture Braden scale</td></tr><tr><td style=\"white-space:nowrap\">braden-activity<a name=\"onc-observation-codes-braden-activity\"> </a></td><td>Braden Activity</td><td>Activity Braden scale</td></tr><tr><td style=\"white-space:nowrap\">braden-mobility<a name=\"onc-observation-codes-braden-mobility\"> </a></td><td>Braden Mobility</td><td>Mobility Braden scale</td></tr><tr><td style=\"white-space:nowrap\">braden-nutrition<a name=\"onc-observation-codes-braden-nutrition\"> </a></td><td>Braden Nutrition</td><td>Nutrition Braden scale</td></tr><tr><td style=\"white-space:nowrap\">braden-friction<a name=\"onc-observation-codes-braden-friction\"> </a></td><td>Braden Friction/Shear</td><td>Friction and shear Braden scale</td></tr><tr><td style=\"white-space:nowrap\">barthel-score<a name=\"onc-observation-codes-barthel-score\"> </a></td><td>Barthel Index Score</td><td>Total score for Barthel Index assessment</td></tr><tr><td style=\"white-space:nowrap\">news2-score<a name=\"onc-observation-codes-news2-score\"> </a></td><td>NEWS2 Score</td><td>National Early Warning Score 2 Total Score</td></tr><tr><td style=\"white-space:nowrap\">news2-subscore<a name=\"onc-observation-codes-news2-subscore\"> </a></td><td>NEWS2 Sub-score</td><td>Sub-score for NEWS2 parameter</td></tr><tr><td style=\"white-space:nowrap\">wound-stage<a name=\"onc-observation-codes-wound-stage\"> </a></td><td>Wound Stage</td><td>Stage of the wound</td></tr><tr><td style=\"white-space:nowrap\">stage-1<a name=\"onc-observation-codes-stage-1\"> </a></td><td>Stage 1</td><td>Stage 1 pressure ulcer</td></tr><tr><td style=\"white-space:nowrap\">stage-2<a name=\"onc-observation-codes-stage-2\"> </a></td><td>Stage 2</td><td>Stage 2 pressure ulcer</td></tr><tr><td style=\"white-space:nowrap\">stage-3<a name=\"onc-observation-codes-stage-3\"> </a></td><td>Stage 3</td><td>Stage 3 pressure ulcer</td></tr><tr><td style=\"white-space:nowrap\">stage-4<a name=\"onc-observation-codes-stage-4\"> </a></td><td>Stage 4</td><td>Stage 4 pressure ulcer</td></tr><tr><td style=\"white-space:nowrap\">unstageable<a name=\"onc-observation-codes-unstageable\"> </a></td><td>Unstageable</td><td>Unstageable pressure ulcer</td></tr><tr><td style=\"white-space:nowrap\">deep-tissue<a name=\"onc-observation-codes-deep-tissue\"> </a></td><td>Deep Tissue Injury</td><td>Deep tissue injury</td></tr><tr><td style=\"white-space:nowrap\">risk-falls<a name=\"onc-observation-codes-risk-falls\"> </a></td><td>Risk of Falls</td><td>Risk of falls diagnosis</td></tr><tr><td style=\"white-space:nowrap\">fitzpatrick-1<a name=\"onc-observation-codes-fitzpatrick-1\"> </a></td><td>Type I</td><td>Pale white; always burns, never tans</td></tr><tr><td style=\"white-space:nowrap\">fitzpatrick-2<a name=\"onc-observation-codes-fitzpatrick-2\"> </a></td><td>Type II</td><td>White; usually burns, tans with difficulty</td></tr><tr><td style=\"white-space:nowrap\">fitzpatrick-3<a name=\"onc-observation-codes-fitzpatrick-3\"> </a></td><td>Type III</td><td>Cream white; sometimes mild burn, gradually tans</td></tr><tr><td style=\"white-space:nowrap\">fitzpatrick-4<a name=\"onc-observation-codes-fitzpatrick-4\"> </a></td><td>Type IV</td><td>Moderate brown; rarely burns, tans with ease</td></tr><tr><td style=\"white-space:nowrap\">fitzpatrick-5<a name=\"onc-observation-codes-fitzpatrick-5\"> </a></td><td>Type V</td><td>Dark brown; very rarely burns, tans very easily</td></tr><tr><td style=\"white-space:nowrap\">fitzpatrick-6<a name=\"onc-observation-codes-fitzpatrick-6\"> </a></td><td>Type VI</td><td>Deeply pigmented dark brown to black; never burns, tans very easily</td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
-     fhir:v "http://open-nursing-core.org/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
-     fhir:l <http://open-nursing-core.org/CodeSystem/onc-observation-codes>
+     fhir:v "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
+     fhir:l <https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes>
   ] ; # 
-  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "ONCObservationCodes"] ; # 
   fhir:title [ fhir:v "ONC Observation Codes"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-12-26T12:21:51+00:00"^^xsd:dateTime] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-12-26T14:28:37+00:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "Custom observation codes for Open Nursing Core"] ; # 
   fhir:content [ fhir:v "complete"] ; # 
-  fhir:count [ fhir:v "1"^^xsd:nonNegativeInteger] ; # 
+  fhir:count [ fhir:v "30"^^xsd:nonNegativeInteger] ; # 
   fhir:concept ( [
      fhir:code [ fhir:v "mst-score" ] ;
      fhir:display [ fhir:v "Monk Skin Tone Score" ] ;
      fhir:definition [ fhir:v "Assessment of skin tone using the Monk Skin Tone Scale" ]
+  ] [
+     fhir:code [ fhir:v "waterlow-score" ] ;
+     fhir:display [ fhir:v "Waterlow Score" ] ;
+     fhir:definition [ fhir:v "Total score for Waterlow pressure ulcer risk assessment" ]
+  ] [
+     fhir:code [ fhir:v "must-score" ] ;
+     fhir:display [ fhir:v "MUST Score" ] ;
+     fhir:definition [ fhir:v "Malnutrition Universal Screening Tool total score" ]
+  ] [
+     fhir:code [ fhir:v "must-bmi-score" ] ;
+     fhir:display [ fhir:v "MUST BMI Score" ] ;
+     fhir:definition [ fhir:v "Malnutrition Universal Screening Tool BMI score" ]
+  ] [
+     fhir:code [ fhir:v "must-weight-loss-score" ] ;
+     fhir:display [ fhir:v "MUST Weight Loss Score" ] ;
+     fhir:definition [ fhir:v "Malnutrition Universal Screening Tool weight loss score" ]
+  ] [
+     fhir:code [ fhir:v "must-acute-disease-score" ] ;
+     fhir:display [ fhir:v "MUST Acute Disease Score" ] ;
+     fhir:definition [ fhir:v "Malnutrition Universal Screening Tool acute disease effect score" ]
+  ] [
+     fhir:code [ fhir:v "braden-total-score" ] ;
+     fhir:display [ fhir:v "Braden Total Score" ] ;
+     fhir:definition [ fhir:v "Braden scale total score" ]
+  ] [
+     fhir:code [ fhir:v "braden-sensory" ] ;
+     fhir:display [ fhir:v "Braden Sensory Perception" ] ;
+     fhir:definition [ fhir:v "Sensory perception Braden scale" ]
+  ] [
+     fhir:code [ fhir:v "braden-moisture" ] ;
+     fhir:display [ fhir:v "Braden Moisture" ] ;
+     fhir:definition [ fhir:v "Moisture Braden scale" ]
+  ] [
+     fhir:code [ fhir:v "braden-activity" ] ;
+     fhir:display [ fhir:v "Braden Activity" ] ;
+     fhir:definition [ fhir:v "Activity Braden scale" ]
+  ] [
+     fhir:code [ fhir:v "braden-mobility" ] ;
+     fhir:display [ fhir:v "Braden Mobility" ] ;
+     fhir:definition [ fhir:v "Mobility Braden scale" ]
+  ] [
+     fhir:code [ fhir:v "braden-nutrition" ] ;
+     fhir:display [ fhir:v "Braden Nutrition" ] ;
+     fhir:definition [ fhir:v "Nutrition Braden scale" ]
+  ] [
+     fhir:code [ fhir:v "braden-friction" ] ;
+     fhir:display [ fhir:v "Braden Friction/Shear" ] ;
+     fhir:definition [ fhir:v "Friction and shear Braden scale" ]
+  ] [
+     fhir:code [ fhir:v "barthel-score" ] ;
+     fhir:display [ fhir:v "Barthel Index Score" ] ;
+     fhir:definition [ fhir:v "Total score for Barthel Index assessment" ]
+  ] [
+     fhir:code [ fhir:v "news2-score" ] ;
+     fhir:display [ fhir:v "NEWS2 Score" ] ;
+     fhir:definition [ fhir:v "National Early Warning Score 2 Total Score" ]
+  ] [
+     fhir:code [ fhir:v "news2-subscore" ] ;
+     fhir:display [ fhir:v "NEWS2 Sub-score" ] ;
+     fhir:definition [ fhir:v "Sub-score for NEWS2 parameter" ]
+  ] [
+     fhir:code [ fhir:v "wound-stage" ] ;
+     fhir:display [ fhir:v "Wound Stage" ] ;
+     fhir:definition [ fhir:v "Stage of the wound" ]
+  ] [
+     fhir:code [ fhir:v "stage-1" ] ;
+     fhir:display [ fhir:v "Stage 1" ] ;
+     fhir:definition [ fhir:v "Stage 1 pressure ulcer" ]
+  ] [
+     fhir:code [ fhir:v "stage-2" ] ;
+     fhir:display [ fhir:v "Stage 2" ] ;
+     fhir:definition [ fhir:v "Stage 2 pressure ulcer" ]
+  ] [
+     fhir:code [ fhir:v "stage-3" ] ;
+     fhir:display [ fhir:v "Stage 3" ] ;
+     fhir:definition [ fhir:v "Stage 3 pressure ulcer" ]
+  ] [
+     fhir:code [ fhir:v "stage-4" ] ;
+     fhir:display [ fhir:v "Stage 4" ] ;
+     fhir:definition [ fhir:v "Stage 4 pressure ulcer" ]
+  ] [
+     fhir:code [ fhir:v "unstageable" ] ;
+     fhir:display [ fhir:v "Unstageable" ] ;
+     fhir:definition [ fhir:v "Unstageable pressure ulcer" ]
+  ] [
+     fhir:code [ fhir:v "deep-tissue" ] ;
+     fhir:display [ fhir:v "Deep Tissue Injury" ] ;
+     fhir:definition [ fhir:v "Deep tissue injury" ]
+  ] [
+     fhir:code [ fhir:v "risk-falls" ] ;
+     fhir:display [ fhir:v "Risk of Falls" ] ;
+     fhir:definition [ fhir:v "Risk of falls diagnosis" ]
+  ] [
+     fhir:code [ fhir:v "fitzpatrick-1" ] ;
+     fhir:display [ fhir:v "Type I" ] ;
+     fhir:definition [ fhir:v "Pale white; always burns, never tans" ]
+  ] [
+     fhir:code [ fhir:v "fitzpatrick-2" ] ;
+     fhir:display [ fhir:v "Type II" ] ;
+     fhir:definition [ fhir:v "White; usually burns, tans with difficulty" ]
+  ] [
+     fhir:code [ fhir:v "fitzpatrick-3" ] ;
+     fhir:display [ fhir:v "Type III" ] ;
+     fhir:definition [ fhir:v "Cream white; sometimes mild burn, gradually tans" ]
+  ] [
+     fhir:code [ fhir:v "fitzpatrick-4" ] ;
+     fhir:display [ fhir:v "Type IV" ] ;
+     fhir:definition [ fhir:v "Moderate brown; rarely burns, tans with ease" ]
+  ] [
+     fhir:code [ fhir:v "fitzpatrick-5" ] ;
+     fhir:display [ fhir:v "Type V" ] ;
+     fhir:definition [ fhir:v "Dark brown; very rarely burns, tans very easily" ]
+  ] [
+     fhir:code [ fhir:v "fitzpatrick-6" ] ;
+     fhir:display [ fhir:v "Type VI" ] ;
+     fhir:definition [ fhir:v "Deeply pigmented dark brown to black; never burns, tans very easily" ]
   ] ) . # 
 
 # -------------------------------------------------------------------------------------

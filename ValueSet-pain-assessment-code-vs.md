@@ -1,4 +1,4 @@
-# Pain Assessment Code Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# Pain Assessment Code Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/pain-assessment-code-vs | *Version*:1.0.0 |
-| Active as of 2025-12-26 | *Computable Name*:PainAssessmentCodeValueSet |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/pain-assessment-code-vs | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:PainAssessmentCodeValueSet |
 
  
 LOINC codes for pain severity assessment 
@@ -46,11 +46,11 @@ LOINC codes for pain severity assessment
   "resourceType" : "ValueSet",
   "id" : "pain-assessment-code-vs",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/pain-assessment-code-vs",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "PainAssessmentCodeValueSet",
   "title" : "Pain Assessment Code Value Set",
-  "status" : "active",
-  "date" : "2025-12-26T12:21:51+00:00",
+  "status" : "draft",
+  "date" : "2025-12-26T14:28:37+00:00",
   "description" : "LOINC codes for pain severity assessment",
   "compose" : {
     "include" : [

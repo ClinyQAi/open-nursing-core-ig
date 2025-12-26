@@ -1,4 +1,4 @@
-# ACVPU Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# ACVPU Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/acvpu-vs | *Version*:1.0.0 |
-| Active as of 2025-12-26 | *Computable Name*:ACVPUValueSet |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/acvpu-vs | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:ACVPUValueSet |
 
  
 ACVPU consciousness level codes 
@@ -46,11 +46,11 @@ ACVPU consciousness level codes
   "resourceType" : "ValueSet",
   "id" : "acvpu-vs",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/acvpu-vs",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "ACVPUValueSet",
   "title" : "ACVPU Value Set",
-  "status" : "active",
-  "date" : "2025-12-26T12:21:51+00:00",
+  "status" : "draft",
+  "date" : "2025-12-26T14:28:37+00:00",
   "description" : "ACVPU consciousness level codes",
   "compose" : {
     "include" : [

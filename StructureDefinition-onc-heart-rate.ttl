@@ -18,11 +18,11 @@
      fhir:v "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-heart-rate"^^xsd:anyURI ;
      fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-heart-rate>
   ] ; # 
-  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "ONCHeartRate"] ; # 
   fhir:title [ fhir:v "Heart Rate"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-12-26T12:21:51+00:00"^^xsd:dateTime] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-12-26T14:28:37+00:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "Heart rate (pulse) observation for NEWS2"] ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
   fhir:mapping ( [
@@ -87,7 +87,7 @@
        ] ;
        fhir:value [
          a fhir:String ;
-         fhir:v "1.0.0"
+         fhir:v "0.1.0"
        ]
      ] ) ;
      fhir:element ( [
@@ -868,7 +868,7 @@
              fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
              fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
            ] ;
-           fhir:code [ fhir:v "nursing" ]
+           fhir:code [ fhir:v "survey" ]
          ] )
        ] ;
        fhir:constraint ( [

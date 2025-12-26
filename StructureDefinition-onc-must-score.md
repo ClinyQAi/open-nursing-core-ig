@@ -1,4 +1,4 @@
-# MUST Score (Malnutrition Universal Screening Tool) - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# MUST Score (Malnutrition Universal Screening Tool) - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-must-score | *Version*:1.0.0 |
-| Active as of 2025-12-26 | *Computable Name*:ONCMUSTScore |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-must-score | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:ONCMUSTScore |
 
  
 Malnutrition Universal Screening Tool for identifying adults at risk of malnutrition. Score 0=low risk, 1=medium risk, 2+=high risk. NHS-standard nutritional screening. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-onc-must-score.csv),
   "resourceType" : "StructureDefinition",
   "id" : "onc-must-score",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-must-score",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "ONCMUSTScore",
   "title" : "MUST Score (Malnutrition Universal Screening Tool)",
-  "status" : "active",
-  "date" : "2025-12-26T12:21:51+00:00",
+  "status" : "draft",
+  "date" : "2025-12-26T14:28:37+00:00",
   "description" : "Malnutrition Universal Screening Tool for identifying adults at risk of malnutrition. Score 0=low risk, 1=medium risk, 2+=high risk. NHS-standard nutritional screening.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -98,9 +98,9 @@ Other representations of profile: [CSV](StructureDefinition-onc-must-score.csv),
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://snomed.info/sct",
-              "code" : "870431003",
-              "display" : "Malnutrition Universal Screening Tool score"
+              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "code" : "must-score",
+              "display" : "MUST Score"
             }
           ]
         },
@@ -170,9 +170,9 @@ Other representations of profile: [CSV](StructureDefinition-onc-must-score.csv),
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://snomed.info/sct",
-              "code" : "846931000000101",
-              "display" : "Malnutrition Universal Screening Tool BMI score"
+              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "code" : "must-bmi-score",
+              "display" : "MUST BMI Score"
             }
           ]
         }
@@ -223,9 +223,9 @@ Other representations of profile: [CSV](StructureDefinition-onc-must-score.csv),
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://snomed.info/sct",
-              "code" : "846941000000105",
-              "display" : "Malnutrition Universal Screening Tool weight loss score"
+              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "code" : "must-weight-loss-score",
+              "display" : "MUST Weight Loss Score"
             }
           ]
         }
@@ -276,9 +276,9 @@ Other representations of profile: [CSV](StructureDefinition-onc-must-score.csv),
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://snomed.info/sct",
-              "code" : "846951000000107",
-              "display" : "Malnutrition Universal Screening Tool acute disease effect score"
+              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "code" : "must-acute-disease-score",
+              "display" : "MUST Acute Disease Score"
             }
           ]
         }

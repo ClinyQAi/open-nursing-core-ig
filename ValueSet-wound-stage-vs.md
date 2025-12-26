@@ -1,4 +1,4 @@
-# Wound Stage Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# Wound Stage Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,11 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/wound-stage-vs | *Version*:1.0.0 |
-| Active as of 2025-12-26 | *Computable Name*:WoundStageValueSet |
-
- 
-SNOMED CT codes for pressure ulcer staging 
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/wound-stage-vs | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:WoundStageValueSet |
 
  **References** 
 
@@ -46,40 +43,33 @@ SNOMED CT codes for pressure ulcer staging
   "resourceType" : "ValueSet",
   "id" : "wound-stage-vs",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/wound-stage-vs",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "WoundStageValueSet",
   "title" : "Wound Stage Value Set",
-  "status" : "active",
-  "date" : "2025-12-26T12:21:51+00:00",
-  "description" : "SNOMED CT codes for pressure ulcer staging",
+  "status" : "draft",
+  "date" : "2025-12-26T14:28:37+00:00",
   "compose" : {
     "include" : [
       {
-        "system" : "http://snomed.info/sct",
+        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
         "concept" : [
           {
-            "code" : "421257003",
-            "display" : "Stage 1 pressure ulcer"
+            "code" : "stage-1"
           },
           {
-            "code" : "420226007",
-            "display" : "Stage 2 pressure ulcer"
+            "code" : "stage-2"
           },
           {
-            "code" : "420555000",
-            "display" : "Stage 3 pressure ulcer"
+            "code" : "stage-3"
           },
           {
-            "code" : "420324007",
-            "display" : "Stage 4 pressure ulcer"
+            "code" : "stage-4"
           },
           {
-            "code" : "421076008",
-            "display" : "Unstageable pressure ulcer"
+            "code" : "unstageable"
           },
           {
-            "code" : "723071003",
-            "display" : "Deep tissue injury"
+            "code" : "deep-tissue"
           }
         ]
       }

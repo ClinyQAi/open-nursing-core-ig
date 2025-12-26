@@ -1,4 +1,4 @@
-# Observation Goal Reference - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# Observation Goal Reference - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,10 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/observation-goal-reference | *Version*:1.0.0 |
-| Active as of 2025-12-26 | *Computable Name*:ObservationGoalReference |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/observation-goal-reference | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:ObservationGoalReference |
+
+Extension to link goal evaluation observations to the patient goals being evaluated. Enables tracking of goal progress and outcomes over time.
 
 **Context of Use**
 
@@ -41,11 +43,12 @@ Other representations of profile: [CSV](StructureDefinition-observation-goal-ref
   "resourceType" : "StructureDefinition",
   "id" : "observation-goal-reference",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/observation-goal-reference",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "ObservationGoalReference",
   "title" : "Observation Goal Reference",
-  "status" : "active",
-  "date" : "2025-12-26T12:21:51+00:00",
+  "status" : "draft",
+  "date" : "2025-12-26T14:28:37+00:00",
+  "description" : "Extension to link goal evaluation observations to the patient goals being evaluated. Enables tracking of goal progress and outcomes over time.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -70,7 +73,8 @@ Other representations of profile: [CSV](StructureDefinition-observation-goal-ref
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Observation Goal Reference"
+        "short" : "Observation Goal Reference",
+        "definition" : "Extension to link goal evaluation observations to the patient goals being evaluated. Enables tracking of goal progress and outcomes over time."
       },
       {
         "id" : "Extension.extension",

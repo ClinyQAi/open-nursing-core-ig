@@ -1,4 +1,4 @@
-# Inspired Oxygen - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# Inspired Oxygen - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-inspired-oxygen | *Version*:1.0.0 |
-| Active as of 2025-12-26 | *Computable Name*:ONCInspiredOxygen |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-inspired-oxygen | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:ONCInspiredOxygen |
 
  
 Inspired oxygen observation for NEWS2 (air vs supplemental oxygen) 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-onc-inspired-oxygen.
   "resourceType" : "StructureDefinition",
   "id" : "onc-inspired-oxygen",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-inspired-oxygen",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "ONCInspiredOxygen",
   "title" : "Inspired Oxygen",
-  "status" : "active",
-  "date" : "2025-12-26T12:21:51+00:00",
+  "status" : "draft",
+  "date" : "2025-12-26T14:28:37+00:00",
   "description" : "Inspired oxygen observation for NEWS2 (air vs supplemental oxygen)",
   "fhirVersion" : "4.0.1",
   "mapping" : [

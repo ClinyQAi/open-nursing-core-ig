@@ -1,4 +1,4 @@
-# Braden Scale Assessment - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# Braden Scale Assessment - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-braden-scale-assessment | *Version*:1.0.0 |
-| Active as of 2025-12-26 | *Computable Name*:ONCBradenScaleAssessment |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-braden-scale-assessment | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:ONCBradenScaleAssessment |
 
  
 A profile for the Braden Scale pressure ulcer risk assessment 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
   "resourceType" : "StructureDefinition",
   "id" : "onc-braden-scale-assessment",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-braden-scale-assessment",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "ONCBradenScaleAssessment",
   "title" : "Braden Scale Assessment",
-  "status" : "active",
-  "date" : "2025-12-26T12:21:51+00:00",
+  "status" : "draft",
+  "date" : "2025-12-26T14:28:37+00:00",
   "description" : "A profile for the Braden Scale pressure ulcer risk assessment",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -99,9 +99,9 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://loinc.org",
-              "code" : "38227-0",
-              "display" : "Braden scale total score"
+              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "code" : "braden-total-score",
+              "display" : "Braden Total Score"
             }
           ]
         },
@@ -162,9 +162,9 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://loinc.org",
-              "code" : "38222-1",
-              "display" : "Sensory perception Braden scale"
+              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "code" : "braden-sensory",
+              "display" : "Braden Sensory Perception"
             }
           ]
         }
@@ -192,9 +192,9 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://loinc.org",
-              "code" : "38229-6",
-              "display" : "Moisture Braden scale"
+              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "code" : "braden-moisture",
+              "display" : "Braden Moisture"
             }
           ]
         }
@@ -222,9 +222,9 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://loinc.org",
-              "code" : "38223-9",
-              "display" : "Activity Braden scale"
+              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "code" : "braden-activity",
+              "display" : "Braden Activity"
             }
           ]
         }
@@ -252,9 +252,9 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://loinc.org",
-              "code" : "38224-7",
-              "display" : "Mobility Braden scale"
+              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "code" : "braden-mobility",
+              "display" : "Braden Mobility"
             }
           ]
         }
@@ -282,9 +282,9 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://loinc.org",
-              "code" : "38225-4",
-              "display" : "Nutrition Braden scale"
+              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "code" : "braden-nutrition",
+              "display" : "Braden Nutrition"
             }
           ]
         }
@@ -312,9 +312,9 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://loinc.org",
-              "code" : "38226-2",
-              "display" : "Friction and shear Braden scale"
+              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "code" : "braden-friction",
+              "display" : "Braden Friction/Shear"
             }
           ]
         }

@@ -1,4 +1,4 @@
-# Nursing Problem Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# Nursing Problem Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-problem-valueset | *Version*:1.0.0 |
-| Active as of 2025-12-26 | *Computable Name*:NursingProblemValueSet |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-problem-valueset | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:NursingProblemValueSet |
 
  
 Value set for nursing problems and diagnoses 
@@ -46,12 +46,12 @@ Value set for nursing problems and diagnoses
   "resourceType" : "ValueSet",
   "id" : "nursing-problem-valueset",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-problem-valueset",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "NursingProblemValueSet",
   "title" : "Nursing Problem Value Set",
-  "status" : "active",
+  "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-26T12:21:51+00:00",
+  "date" : "2025-12-26T14:28:37+00:00",
   "description" : "Value set for nursing problems and diagnoses",
   "compose" : {
     "include" : [
@@ -63,16 +63,21 @@ Value set for nursing problems and diagnoses
             "display" : "At risk for falls"
           },
           {
-            "code" : "162828007",
-            "display" : "Risk of falls"
-          },
-          {
             "code" : "300893006",
             "display" : "Nutritional finding"
           },
           {
             "code" : "22253000",
             "display" : "Pain"
+          }
+        ]
+      },
+      {
+        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "concept" : [
+          {
+            "code" : "risk-falls",
+            "display" : "Risk of falls"
           }
         ]
       }

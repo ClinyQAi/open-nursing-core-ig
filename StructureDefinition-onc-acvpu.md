@@ -1,4 +1,4 @@
-# ACVPU Consciousness Level - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# ACVPU Consciousness Level - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-acvpu | *Version*:1.0.0 |
-| Active as of 2025-12-26 | *Computable Name*:ONCACVPU |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-acvpu | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:ONCACVPU |
 
  
 ACVPU consciousness level assessment for NEWS2 (Alert, Confusion, Voice, Pain, Unresponsive) 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-onc-acvpu.csv), [Exc
   "resourceType" : "StructureDefinition",
   "id" : "onc-acvpu",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-acvpu",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "ONCACVPU",
   "title" : "ACVPU Consciousness Level",
-  "status" : "active",
-  "date" : "2025-12-26T12:21:51+00:00",
+  "status" : "draft",
+  "date" : "2025-12-26T14:28:37+00:00",
   "description" : "ACVPU consciousness level assessment for NEWS2 (Alert, Confusion, Voice, Pain, Unresponsive)",
   "fhirVersion" : "4.0.1",
   "mapping" : [

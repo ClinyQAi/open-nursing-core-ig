@@ -1,4 +1,4 @@
-# Goal Evaluation Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# Goal Evaluation Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset | *Version*:1.0.0 |
-| Active as of 2025-12-26 | *Computable Name*:GoalEvaluationValueSet |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:GoalEvaluationValueSet |
 
  
 Value set for evaluating patient goal outcomes 
@@ -46,12 +46,12 @@ Value set for evaluating patient goal outcomes
   "resourceType" : "ValueSet",
   "id" : "goal-evaluation-valueset",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "GoalEvaluationValueSet",
   "title" : "Goal Evaluation Value Set",
-  "status" : "active",
+  "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-26T12:21:51+00:00",
+  "date" : "2025-12-26T14:28:37+00:00",
   "description" : "Value set for evaluating patient goal outcomes",
   "compose" : {
     "include" : [
@@ -59,8 +59,8 @@ Value set for evaluating patient goal outcomes
         "system" : "http://snomed.info/sct",
         "concept" : [
           {
-            "code" : "385633008",
-            "display" : "Resolved"
+            "code" : "370996005",
+            "display" : "Patient condition resolved"
           },
           {
             "code" : "385634002",

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ONC Observation Codes - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0</title>
+    <title>ONC Observation Codes - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Open Nursing Core FHIR Implementation Guide (ONC-IG)</span>
             <br/>
-            <span style="display:inline-block;">1.0.0 - release
+            <span style="display:inline-block;">0.1.0 - draft
 
 
             </span>
@@ -106,7 +106,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Open Nursing Core FHIR Implementation Guide (ONC-IG) - Local Development build (v1.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://clinyqai.github.io/open-nursing-core-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Open Nursing Core FHIR Implementation Guide (ONC-IG) - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://clinyqai.github.io/open-nursing-core-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -153,13 +153,13 @@
 
   </h2>
 
-  <table class="colsi">
+  <table class="colsd">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://open-nursing-core.org/CodeSystem/onc-observation-codes<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://open-nursing-core.org/CodeSystem/onc-observation-codes"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">1.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://open-nursing-core.org/CodeSystem/onc-observation-codes|1.0.0"/></span>
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0"/></span>
       </td>
     </tr>
 
@@ -173,7 +173,7 @@
 
       <td colspan="4">
         
-          Active
+          Draft
           
             as of 2025-12-26
           
@@ -205,14 +205,107 @@
   </p>
 
   
-<ul><li>This CodeSystem is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)</li></ul>
+<ul>
+ <li><a href="ValueSet-news2-code-vs.html">NEWS2CodeValueSet</a></li>
+ <li><a href="ValueSet-news2-subscore-code-vs.html">NEWS2SubscoreCodeValueSet</a></li>
+ <li><a href="ValueSet-nursing-problem-valueset.html">NursingProblemValueSet</a></li>
+ <li><a href="ValueSet-skintone-vs.html">SkinToneVS</a></li>
+ <li><a href="ValueSet-wound-stage-vs.html">WoundStageValueSet</a></li>
+</ul>
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="onc-observation-codes"> </a><a name="hconc-observation-codes"> </a><p>This  code system <code>http://open-nursing-core.org/CodeSystem/onc-observation-codes</code> defines the following code:</p>
+  <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="onc-observation-codes"> </a><a name="hconc-observation-codes"> </a><p>This  code system <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes</code> defines the following codes:</p>
 <table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr>
 <tr><td style="white-space:nowrap">mst-score<a name="onc-observation-codes-mst-score"> </a></td>
 <td>Monk Skin Tone Score</td>
-<td>Assessment of skin tone using the Monk Skin Tone Scale</td></tr></table></div>
+<td>Assessment of skin tone using the Monk Skin Tone Scale</td></tr>
+<tr><td style="white-space:nowrap">waterlow-score<a name="onc-observation-codes-waterlow-score"> </a></td>
+<td>Waterlow Score</td>
+<td>Total score for Waterlow pressure ulcer risk assessment</td></tr>
+<tr><td style="white-space:nowrap">must-score<a name="onc-observation-codes-must-score"> </a></td>
+<td>MUST Score</td>
+<td>Malnutrition Universal Screening Tool total score</td></tr>
+<tr><td style="white-space:nowrap">must-bmi-score<a name="onc-observation-codes-must-bmi-score"> </a></td>
+<td>MUST BMI Score</td>
+<td>Malnutrition Universal Screening Tool BMI score</td></tr>
+<tr><td style="white-space:nowrap">must-weight-loss-score<a name="onc-observation-codes-must-weight-loss-score"> </a></td>
+<td>MUST Weight Loss Score</td>
+<td>Malnutrition Universal Screening Tool weight loss score</td></tr>
+<tr><td style="white-space:nowrap">must-acute-disease-score<a name="onc-observation-codes-must-acute-disease-score"> </a></td>
+<td>MUST Acute Disease Score</td>
+<td>Malnutrition Universal Screening Tool acute disease effect score</td></tr>
+<tr><td style="white-space:nowrap">braden-total-score<a name="onc-observation-codes-braden-total-score"> </a></td>
+<td>Braden Total Score</td>
+<td>Braden scale total score</td></tr>
+<tr><td style="white-space:nowrap">braden-sensory<a name="onc-observation-codes-braden-sensory"> </a></td>
+<td>Braden Sensory Perception</td>
+<td>Sensory perception Braden scale</td></tr>
+<tr><td style="white-space:nowrap">braden-moisture<a name="onc-observation-codes-braden-moisture"> </a></td>
+<td>Braden Moisture</td>
+<td>Moisture Braden scale</td></tr>
+<tr><td style="white-space:nowrap">braden-activity<a name="onc-observation-codes-braden-activity"> </a></td>
+<td>Braden Activity</td>
+<td>Activity Braden scale</td></tr>
+<tr><td style="white-space:nowrap">braden-mobility<a name="onc-observation-codes-braden-mobility"> </a></td>
+<td>Braden Mobility</td>
+<td>Mobility Braden scale</td></tr>
+<tr><td style="white-space:nowrap">braden-nutrition<a name="onc-observation-codes-braden-nutrition"> </a></td>
+<td>Braden Nutrition</td>
+<td>Nutrition Braden scale</td></tr>
+<tr><td style="white-space:nowrap">braden-friction<a name="onc-observation-codes-braden-friction"> </a></td>
+<td>Braden Friction/Shear</td>
+<td>Friction and shear Braden scale</td></tr>
+<tr><td style="white-space:nowrap">barthel-score<a name="onc-observation-codes-barthel-score"> </a></td>
+<td>Barthel Index Score</td>
+<td>Total score for Barthel Index assessment</td></tr>
+<tr><td style="white-space:nowrap">news2-score<a name="onc-observation-codes-news2-score"> </a></td>
+<td>NEWS2 Score</td>
+<td>National Early Warning Score 2 Total Score</td></tr>
+<tr><td style="white-space:nowrap">news2-subscore<a name="onc-observation-codes-news2-subscore"> </a></td>
+<td>NEWS2 Sub-score</td>
+<td>Sub-score for NEWS2 parameter</td></tr>
+<tr><td style="white-space:nowrap">wound-stage<a name="onc-observation-codes-wound-stage"> </a></td>
+<td>Wound Stage</td>
+<td>Stage of the wound</td></tr>
+<tr><td style="white-space:nowrap">stage-1<a name="onc-observation-codes-stage-1"> </a></td>
+<td>Stage 1</td>
+<td>Stage 1 pressure ulcer</td></tr>
+<tr><td style="white-space:nowrap">stage-2<a name="onc-observation-codes-stage-2"> </a></td>
+<td>Stage 2</td>
+<td>Stage 2 pressure ulcer</td></tr>
+<tr><td style="white-space:nowrap">stage-3<a name="onc-observation-codes-stage-3"> </a></td>
+<td>Stage 3</td>
+<td>Stage 3 pressure ulcer</td></tr>
+<tr><td style="white-space:nowrap">stage-4<a name="onc-observation-codes-stage-4"> </a></td>
+<td>Stage 4</td>
+<td>Stage 4 pressure ulcer</td></tr>
+<tr><td style="white-space:nowrap">unstageable<a name="onc-observation-codes-unstageable"> </a></td>
+<td>Unstageable</td>
+<td>Unstageable pressure ulcer</td></tr>
+<tr><td style="white-space:nowrap">deep-tissue<a name="onc-observation-codes-deep-tissue"> </a></td>
+<td>Deep Tissue Injury</td>
+<td>Deep tissue injury</td></tr>
+<tr><td style="white-space:nowrap">risk-falls<a name="onc-observation-codes-risk-falls"> </a></td>
+<td>Risk of Falls</td>
+<td>Risk of falls diagnosis</td></tr>
+<tr><td style="white-space:nowrap">fitzpatrick-1<a name="onc-observation-codes-fitzpatrick-1"> </a></td>
+<td>Type I</td>
+<td>Pale white; always burns, never tans</td></tr>
+<tr><td style="white-space:nowrap">fitzpatrick-2<a name="onc-observation-codes-fitzpatrick-2"> </a></td>
+<td>Type II</td>
+<td>White; usually burns, tans with difficulty</td></tr>
+<tr><td style="white-space:nowrap">fitzpatrick-3<a name="onc-observation-codes-fitzpatrick-3"> </a></td>
+<td>Type III</td>
+<td>Cream white; sometimes mild burn, gradually tans</td></tr>
+<tr><td style="white-space:nowrap">fitzpatrick-4<a name="onc-observation-codes-fitzpatrick-4"> </a></td>
+<td>Type IV</td>
+<td>Moderate brown; rarely burns, tans with ease</td></tr>
+<tr><td style="white-space:nowrap">fitzpatrick-5<a name="onc-observation-codes-fitzpatrick-5"> </a></td>
+<td>Type V</td>
+<td>Dark brown; very rarely burns, tans very easily</td></tr>
+<tr><td style="white-space:nowrap">fitzpatrick-6<a name="onc-observation-codes-fitzpatrick-6"> </a></td>
+<td>Type VI</td>
+<td>Deeply pigmented dark brown to black; never burns, tans very easily</td></tr></table></div>
 
   
 
@@ -239,7 +332,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package onc.ig#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 26, 2025 12:21+0000">2025-12-26</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package onc.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 26, 2025 14:28+0000">2025-12-26</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

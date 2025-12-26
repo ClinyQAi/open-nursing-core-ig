@@ -1,4 +1,4 @@
-# observation-braden-scale - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# observation-braden-scale - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -10,9 +10,9 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
 
 **status**: Final
 
-**category**: nursing
+**category**: Survey
 
-**code**: Braden scale total score
+**code**: Braden Total Score
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
@@ -20,17 +20,17 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
 
 **value**: 18 {score}(Details: UCUM code1 = '1')
 
-> **component****code**:Sensory perception Braden scale**value**: 3 {score}(Details: UCUM code1 = '1')
+> **component****code**:Braden Sensory Perception**value**: 3 {score}(Details: UCUM code1 = '1')
 
-> **component****code**:Moisture Braden scale**value**: 4 {score}(Details: UCUM code1 = '1')
+> **component****code**:Braden Moisture**value**: 4 {score}(Details: UCUM code1 = '1')
 
-> **component****code**:Activity Braden scale**value**: 2 {score}(Details: UCUM code1 = '1')
+> **component****code**:Braden Activity**value**: 2 {score}(Details: UCUM code1 = '1')
 
-> **component****code**:Mobility Braden scale**value**: 3 {score}(Details: UCUM code1 = '1')
+> **component****code**:Braden Mobility**value**: 3 {score}(Details: UCUM code1 = '1')
 
-> **component****code**:Nutrition Braden scale**value**: 3 {score}(Details: UCUM code1 = '1')
+> **component****code**:Braden Nutrition**value**: 3 {score}(Details: UCUM code1 = '1')
 
-> **component****code**:Friction and shear Braden scale**value**: 3 {score}(Details: UCUM code1 = '1')
+> **component****code**:Braden Friction/Shear**value**: 3 {score}(Details: UCUM code1 = '1')
 
 
 
@@ -51,7 +51,7 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
       "coding" : [
         {
           "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "nursing"
+          "code" : "survey"
         }
       ]
     }
@@ -59,9 +59,9 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
   "code" : {
     "coding" : [
       {
-        "system" : "http://loinc.org",
-        "code" : "38227-0",
-        "display" : "Braden scale total score"
+        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "code" : "braden-total-score",
+        "display" : "Braden Total Score"
       }
     ]
   },
@@ -84,9 +84,9 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
       "code" : {
         "coding" : [
           {
-            "system" : "http://loinc.org",
-            "code" : "38222-1",
-            "display" : "Sensory perception Braden scale"
+            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "code" : "braden-sensory",
+            "display" : "Braden Sensory Perception"
           }
         ]
       },
@@ -101,9 +101,9 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
       "code" : {
         "coding" : [
           {
-            "system" : "http://loinc.org",
-            "code" : "38229-6",
-            "display" : "Moisture Braden scale"
+            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "code" : "braden-moisture",
+            "display" : "Braden Moisture"
           }
         ]
       },
@@ -118,9 +118,9 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
       "code" : {
         "coding" : [
           {
-            "system" : "http://loinc.org",
-            "code" : "38223-9",
-            "display" : "Activity Braden scale"
+            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "code" : "braden-activity",
+            "display" : "Braden Activity"
           }
         ]
       },
@@ -135,9 +135,9 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
       "code" : {
         "coding" : [
           {
-            "system" : "http://loinc.org",
-            "code" : "38224-7",
-            "display" : "Mobility Braden scale"
+            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "code" : "braden-mobility",
+            "display" : "Braden Mobility"
           }
         ]
       },
@@ -152,9 +152,9 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
       "code" : {
         "coding" : [
           {
-            "system" : "http://loinc.org",
-            "code" : "38225-4",
-            "display" : "Nutrition Braden scale"
+            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "code" : "braden-nutrition",
+            "display" : "Braden Nutrition"
           }
         ]
       },
@@ -169,9 +169,9 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
       "code" : {
         "coding" : [
           {
-            "system" : "http://loinc.org",
-            "code" : "38226-2",
-            "display" : "Friction and shear Braden scale"
+            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "code" : "braden-friction",
+            "display" : "Braden Friction/Shear"
           }
         ]
       },

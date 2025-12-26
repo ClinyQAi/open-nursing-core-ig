@@ -1,4 +1,4 @@
-# Glasgow Coma Scale - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# Glasgow Coma Scale - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-glasgow-coma-scale | *Version*:1.0.0 |
-| Active as of 2025-12-26 | *Computable Name*:ONCGlasgowComaScale |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-glasgow-coma-scale | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:ONCGlasgowComaScale |
 
  
 Glasgow Coma Scale (GCS) for assessing level of consciousness. Total score 3-15 with three required components: Eye (1-4), Verbal (1-5), Motor (1-6). 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-onc-glasgow-coma-sca
   "resourceType" : "StructureDefinition",
   "id" : "onc-glasgow-coma-scale",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-glasgow-coma-scale",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "ONCGlasgowComaScale",
   "title" : "Glasgow Coma Scale",
-  "status" : "active",
-  "date" : "2025-12-26T12:21:51+00:00",
+  "status" : "draft",
+  "date" : "2025-12-26T14:28:37+00:00",
   "description" : "Glasgow Coma Scale (GCS) for assessing level of consciousness. Total score 3-15 with three required components: Eye (1-4), Verbal (1-5), Motor (1-6).",
   "fhirVersion" : "4.0.1",
   "mapping" : [

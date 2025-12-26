@@ -1,4 +1,4 @@
-# NEWS2 Sub-Score - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# NEWS2 Sub-Score - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-news2-subscore | *Version*:1.0.0 |
-| Active as of 2025-12-26 | *Computable Name*:ONCNEWS2Subscore |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-news2-subscore | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:ONCNEWS2Subscore |
 
  
 Individual parameter sub-score for NEWS2 (0-3 for most parameters). References the related vital sign observation. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-onc-news2-subscore.c
   "resourceType" : "StructureDefinition",
   "id" : "onc-news2-subscore",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-news2-subscore",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "ONCNEWS2Subscore",
   "title" : "NEWS2 Sub-Score",
-  "status" : "active",
-  "date" : "2025-12-26T12:21:51+00:00",
+  "status" : "draft",
+  "date" : "2025-12-26T14:28:37+00:00",
   "description" : "Individual parameter sub-score for NEWS2 (0-3 for most parameters). References the related vital sign observation.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -96,11 +96,16 @@ Other representations of profile: [CSV](StructureDefinition-onc-news2-subscore.c
       {
         "id" : "Observation.code",
         "path" : "Observation.code",
-        "mustSupport" : true,
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/news2-subscore-code-vs"
-        }
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "code" : "news2-subscore",
+              "display" : "NEWS2 Sub-score"
+            }
+          ]
+        },
+        "mustSupport" : true
       },
       {
         "id" : "Observation.value[x]",

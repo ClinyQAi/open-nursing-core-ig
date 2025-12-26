@@ -1,4 +1,4 @@
-# Nursing Problem - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# Nursing Problem - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,11 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-problem | *Version*:1.0.0 |
-| Active as of 2025-12-26 | *Computable Name*:ONCNursingProblem |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-problem | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:ONCNursingProblem |
+
+ 
+Nursing diagnosis or problem identified during assessment. Represents clinical judgments about individual, family, or community responses to actual or potential health problems. Part of the ADPIE framework's Diagnosis phase. 
 
 **Usages:**
 
@@ -35,11 +38,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-problem.
   "resourceType" : "StructureDefinition",
   "id" : "onc-nursing-problem",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-problem",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "ONCNursingProblem",
   "title" : "Nursing Problem",
-  "status" : "active",
-  "date" : "2025-12-26T12:21:51+00:00",
+  "status" : "draft",
+  "date" : "2025-12-26T14:28:37+00:00",
+  "description" : "Nursing diagnosis or problem identified during assessment. Represents clinical judgments about individual, family, or community responses to actual or potential health problems. Part of the ADPIE framework's Diagnosis phase.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="1147f651-69a9-4404-9234-11b300ce679e"/>
+  <id value="6daaf459-84b2-466b-a916-c85bd5daa611"/>
   <meta>
-    <lastUpdated value="2025-12-26T12:21:51.470+00:00"/>
+    <lastUpdated value="2025-12-26T14:28:37.016+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -142,14 +142,14 @@
           </div>
         </text>
         <url value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/acvpu-vs"/>
-        <version value="1.0.0"/>
+        <version value="0.1.0"/>
         <name value="ACVPUValueSet"/>
         <title value="ACVPU Value Set"/>
-        <status value="active"/>
-        <date value="2025-12-26T12:21:51+00:00"/>
+        <status value="draft"/>
+        <date value="2025-12-26T14:28:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:c84bcefb-2930-422c-b363-3cd3f674ead6"/>
-          <timestamp value="2025-12-26T12:23:21+00:00"/>
+          <identifier value="urn:uuid:fbcefcac-af92-4f6c-9d2c-fbd3e6d3ce33"/>
+          <timestamp value="2025-12-26T14:29:36+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -247,23 +247,23 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-385633008"> </a>
+                  <a name="x-http://snomed.info/sct-370996005"> </a>
                   <code>http://snomed.info/sct</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/385633008">385633008</a>
+                  <a href="http://snomed.info/id/370996005">370996005</a>
                 </td>
-                <td>Improving (qualifier value)</td>
+                <td>Patient condition resolved (finding)</td>
                 <td/>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;385633008&quot;, &quot;display&quot;: &quot;Improving (qualifier value)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;370996005&quot;, &quot;display&quot;: &quot;Patient condition resolved (finding)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;385633008&quot;&gt;&lt;display value=&quot;Improving (qualifier value)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;370996005&quot;&gt;&lt;display value=&quot;Patient condition resolved (finding)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -315,15 +315,15 @@
           </div>
         </text>
         <url value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset"/>
-        <version value="1.0.0"/>
+        <version value="0.1.0"/>
         <name value="GoalEvaluationValueSet"/>
         <title value="Goal Evaluation Value Set"/>
-        <status value="active"/>
+        <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-12-26T12:21:51+00:00"/>
+        <date value="2025-12-26T14:28:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:031c14df-b905-420e-8b5c-65e2ff35b511"/>
-          <timestamp value="2025-12-26T12:23:24+00:00"/>
+          <identifier value="urn:uuid:0f48c784-9775-4553-a869-0cf4e7f0f9bb"/>
+          <timestamp value="2025-12-26T14:29:39+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -356,8 +356,8 @@
           </property>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="385633008"/>
-            <display value="Improving (qualifier value)"/>
+            <code value="370996005"/>
+            <display value="Patient condition resolved (finding)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -454,15 +454,15 @@
           </div>
         </text>
         <url value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/housing-status-vs"/>
-        <version value="1.0.0"/>
+        <version value="0.1.0"/>
         <name value="HousingStatusVS"/>
         <title value="Housing Status Value Set"/>
-        <status value="active"/>
+        <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-12-26T12:21:51+00:00"/>
+        <date value="2025-12-26T14:28:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:b08c27b2-0328-4854-9867-c639bd4dd9ac"/>
-          <timestamp value="2025-12-26T12:23:35+00:00"/>
+          <identifier value="urn:uuid:dee2606c-27d0-4c0a-b5e1-d051f1a7595c"/>
+          <timestamp value="2025-12-26T14:29:46+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -579,14 +579,14 @@
           </div>
         </text>
         <url value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/inspired-oxygen-vs"/>
-        <version value="1.0.0"/>
+        <version value="0.1.0"/>
         <name value="InspiredOxygenValueSet"/>
         <title value="Inspired Oxygen Value Set"/>
-        <status value="active"/>
-        <date value="2025-12-26T12:21:51+00:00"/>
+        <status value="draft"/>
+        <date value="2025-12-26T14:28:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:d7fc816f-c409-4817-a540-74f02e5ea4b9"/>
-          <timestamp value="2025-12-26T12:23:25+00:00"/>
+          <identifier value="urn:uuid:cef49683-c44c-460e-bc84-e6a6c5746d77"/>
+          <timestamp value="2025-12-26T14:29:39+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -635,21 +635,12 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
-            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
-              <p>Expansion from tx.fhir.org based on:</p>
-              <ul>
-                <li>Loinc v2.81
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="http://loinc.org|2.81" title="Click to Copy URL" class="btn-copy"> </button>
-                  </span>
-                </li>
-                <li>SNOMED CT International edition 01-Feb 2025
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
-                  </span>
-                </li>
-              </ul>
-            </div>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-onc-observation-codes.html">codesystem ONC Observation Codes v0.1.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
             <p>This value set contains 1 concepts</p>
             <table class="codes" data-fhir="generated">
               <tr>
@@ -663,6 +654,9 @@
                   <b>Display (en)</b>
                 </td>
                 <td>
+                  <b>Definition</b>
+                </td>
+                <td>
                   <b>JSON</b>
                 </td>
                 <td>
@@ -671,21 +665,22 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://loinc.org-88330-6"> </a>
-                  <code>http://loinc.org</code>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes-news2-score"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="https://loinc.org/88330-6/">88330-6</a>
+                  <a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-news2-score">news2-score</a>
                 </td>
-                <td>Mobility - admission performance during 3 day assessment period [CMS Assessment]</td>
+                <td>NEWS2 Score</td>
+                <td>National Early Warning Score 2 Total Score</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;88330-6&quot;, &quot;display&quot;: &quot;Mobility - admission performance during 3 day assessment period [CMS Assessment]&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;news2-score&quot;, &quot;display&quot;: &quot;NEWS2 Score&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;88330-6&quot;&gt;&lt;display value=&quot;Mobility - admission performance during 3 day assessment period [CMS Assessment]&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;news2-score&quot;&gt;&lt;display value=&quot;NEWS2 Score&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -693,14 +688,14 @@
           </div>
         </text>
         <url value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/news2-code-vs"/>
-        <version value="1.0.0"/>
+        <version value="0.1.0"/>
         <name value="NEWS2CodeValueSet"/>
         <title value="NEWS2 Code Value Set"/>
-        <status value="active"/>
-        <date value="2025-12-26T12:21:51+00:00"/>
+        <status value="draft"/>
+        <date value="2025-12-26T14:28:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:0da2cc3a-fed6-41ac-95c6-9837f9e0d8cb"/>
-          <timestamp value="2025-12-26T12:23:27+00:00"/>
+          <identifier value="urn:uuid:cbf65082-3d31-4c11-b742-b28256ccd961"/>
+          <timestamp value="2025-12-26T14:29:46+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -720,25 +715,13 @@
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://loinc.org|2.81"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+            <valueUri value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://loinc.org"/>
-            <code value="88330-6"/>
-            <display value="Mobility - admission performance during 3 day assessment period [CMS Assessment]"/>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+            <code value="news2-score"/>
+            <display value="NEWS2 Score"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -752,12 +735,13 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-onc-observation-codes.html">codesystem ONC Observation Codes v0.1.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
-            <p>This value set contains 0 concepts</p>
+            <p>This value set contains 1 concepts</p>
             <table class="codes" data-fhir="generated">
               <tr>
                 <td>
@@ -770,25 +754,49 @@
                   <b>Display (en)</b>
                 </td>
                 <td>
+                  <b>Definition</b>
+                </td>
+                <td>
                   <b>JSON</b>
                 </td>
                 <td>
                   <b>XML</b>
                 </td>
               </tr>
+              <tr>
+                <td>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes-news2-subscore"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-news2-subscore">news2-subscore</a>
+                </td>
+                <td>NEWS2 Sub-score</td>
+                <td>Sub-score for NEWS2 parameter</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;news2-subscore&quot;, &quot;display&quot;: &quot;NEWS2 Sub-score&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;news2-subscore&quot;&gt;&lt;display value=&quot;NEWS2 Sub-score&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
             </table>
           </div>
         </text>
         <url value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/news2-subscore-code-vs"/>
-        <version value="1.0.0"/>
+        <version value="0.1.0"/>
         <name value="NEWS2SubscoreCodeValueSet"/>
         <title value="NEWS2 Sub-Score Codes"/>
-        <status value="active"/>
-        <date value="2025-12-26T12:21:51+00:00"/>
+        <status value="draft"/>
+        <date value="2025-12-26T14:28:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:4540f3bb-2ec0-4fd9-b581-bf066b5bf0ca"/>
-          <timestamp value="2025-12-26T12:23:28+00:00"/>
-          <total value="0"/>
+          <identifier value="urn:uuid:240a1b8d-747f-4c27-8413-9cd7dae560a3"/>
+          <timestamp value="2025-12-26T14:29:46+00:00"/>
+          <total value="1"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -807,13 +815,14 @@
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+            <valueUri value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0"/>
           </parameter>
+          <contains>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+            <code value="news2-subscore"/>
+            <display value="NEWS2 Sub-score"/>
+          </contains>
         </expansion>
       </ValueSet>
     </resource>
@@ -914,15 +923,15 @@
           </div>
         </text>
         <url value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-intervention-valueset"/>
-        <version value="1.0.0"/>
+        <version value="0.1.0"/>
         <name value="NursingInterventionValueSet"/>
         <title value="Nursing Intervention Value Set"/>
-        <status value="active"/>
+        <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-12-26T12:21:51+00:00"/>
+        <date value="2025-12-26T14:28:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:2824d3d2-9971-4fdf-a023-5e397ca76bfa"/>
-          <timestamp value="2025-12-26T12:23:35+00:00"/>
+          <identifier value="urn:uuid:2affca31-5560-4603-89cd-93d770cd5cf3"/>
+          <timestamp value="2025-12-26T14:29:46+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -976,12 +985,23 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
-              <span class="copy-text-inline">
-                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
-              </span>
-            </p>
-            <p>This value set contains 3 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from tx.fhir.org based on:</p>
+              <ul>
+                <li>SNOMED CT International edition 01-Feb 2025
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>
+                  <a href="CodeSystem-onc-observation-codes.html">codesystem ONC Observation Codes v0.1.0 (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 4 concepts</p>
             <table class="codes" data-fhir="generated">
               <tr>
                 <td>
@@ -992,6 +1012,9 @@
                 </td>
                 <td>
                   <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
                 </td>
                 <td>
                   <b>JSON</b>
@@ -1009,6 +1032,7 @@
                   <a href="http://snomed.info/id/129839007">129839007</a>
                 </td>
                 <td>At risk for falls</td>
+                <td/>
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;129839007&quot;, &quot;display&quot;: &quot;At risk for falls&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
@@ -1029,6 +1053,7 @@
                   <a href="http://snomed.info/id/300893006">300893006</a>
                 </td>
                 <td>Nutritional finding</td>
+                <td/>
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;300893006&quot;, &quot;display&quot;: &quot;Nutritional finding&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
@@ -1049,6 +1074,7 @@
                   <a href="http://snomed.info/id/22253000">22253000</a>
                 </td>
                 <td>Pain</td>
+                <td/>
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;22253000&quot;, &quot;display&quot;: &quot;Pain&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
@@ -1060,20 +1086,41 @@
                   </span>
                 </td>
               </tr>
+              <tr>
+                <td>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes-risk-falls"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-risk-falls">risk-falls</a>
+                </td>
+                <td>Risk of falls</td>
+                <td>Risk of falls diagnosis</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;risk-falls&quot;, &quot;display&quot;: &quot;Risk of falls&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;risk-falls&quot;&gt;&lt;display value=&quot;Risk of falls&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
             </table>
           </div>
         </text>
         <url value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-problem-valueset"/>
-        <version value="1.0.0"/>
+        <version value="0.1.0"/>
         <name value="NursingProblemValueSet"/>
         <title value="Nursing Problem Value Set"/>
-        <status value="active"/>
+        <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-12-26T12:21:51+00:00"/>
+        <date value="2025-12-26T14:28:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:98c2f7ba-4666-4f83-bd4d-2b21f9a6bad7"/>
-          <timestamp value="2025-12-26T12:23:29+00:00"/>
-          <total value="3"/>
+          <identifier value="urn:uuid:cad2715b-2690-43ab-8c88-472c2ec354bb"/>
+          <timestamp value="2025-12-26T14:29:43+00:00"/>
+          <total value="4"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -1099,6 +1146,10 @@
             <name value="used-codesystem"/>
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0"/>
+          </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="129839007"/>
@@ -1114,6 +1165,11 @@
             <code value="22253000"/>
             <display value="Pain"/>
           </contains>
+          <contains>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+            <code value="risk-falls"/>
+            <display value="Risk of falls"/>
+          </contains>
         </expansion>
       </ValueSet>
     </resource>
@@ -1127,9 +1183,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-onc-monk-scale.html">codesystem Monk Skin Tone Scale CodeSystem v1.0.0 (CodeSystem)</a>
+              <a href="CodeSystem-onc-monk-scale.html">codesystem Monk Skin Tone Scale CodeSystem v0.1.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 10 concepts</p>
@@ -1162,12 +1218,12 @@
                 <td>Light Skin</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;A&quot;, &quot;display&quot;: &quot;Light Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;A&quot;, &quot;display&quot;: &quot;Light Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;A&quot;&gt;&lt;display value=&quot;Light Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;A&quot;&gt;&lt;display value=&quot;Light Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1182,12 +1238,12 @@
                 <td>Light-Medium Skin</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;B&quot;, &quot;display&quot;: &quot;Light-Medium Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;B&quot;, &quot;display&quot;: &quot;Light-Medium Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;B&quot;&gt;&lt;display value=&quot;Light-Medium Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;B&quot;&gt;&lt;display value=&quot;Light-Medium Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1202,12 +1258,12 @@
                 <td>Medium Skin</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;C&quot;, &quot;display&quot;: &quot;Medium Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;C&quot;, &quot;display&quot;: &quot;Medium Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;C&quot;&gt;&lt;display value=&quot;Medium Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;C&quot;&gt;&lt;display value=&quot;Medium Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1222,12 +1278,12 @@
                 <td>Medium-Dark Skin</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;D&quot;, &quot;display&quot;: &quot;Medium-Dark Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;D&quot;, &quot;display&quot;: &quot;Medium-Dark Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;D&quot;&gt;&lt;display value=&quot;Medium-Dark Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;D&quot;&gt;&lt;display value=&quot;Medium-Dark Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1242,12 +1298,12 @@
                 <td>Dark Skin</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;E&quot;, &quot;display&quot;: &quot;Dark Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;E&quot;, &quot;display&quot;: &quot;Dark Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;E&quot;&gt;&lt;display value=&quot;Dark Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;E&quot;&gt;&lt;display value=&quot;Dark Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1262,12 +1318,12 @@
                 <td>Deep Dark Skin</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;F&quot;, &quot;display&quot;: &quot;Deep Dark Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;F&quot;, &quot;display&quot;: &quot;Deep Dark Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;F&quot;&gt;&lt;display value=&quot;Deep Dark Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;F&quot;&gt;&lt;display value=&quot;Deep Dark Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1282,12 +1338,12 @@
                 <td>Very Dark Skin</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;G&quot;, &quot;display&quot;: &quot;Very Dark Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;G&quot;, &quot;display&quot;: &quot;Very Dark Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;G&quot;&gt;&lt;display value=&quot;Very Dark Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;G&quot;&gt;&lt;display value=&quot;Very Dark Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1302,12 +1358,12 @@
                 <td>Deepest Dark Skin</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;H&quot;, &quot;display&quot;: &quot;Deepest Dark Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;H&quot;, &quot;display&quot;: &quot;Deepest Dark Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;H&quot;&gt;&lt;display value=&quot;Deepest Dark Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;H&quot;&gt;&lt;display value=&quot;Deepest Dark Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1322,12 +1378,12 @@
                 <td>Ultra Dark Skin</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;I&quot;, &quot;display&quot;: &quot;Ultra Dark Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;I&quot;, &quot;display&quot;: &quot;Ultra Dark Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;I&quot;&gt;&lt;display value=&quot;Ultra Dark Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;I&quot;&gt;&lt;display value=&quot;Ultra Dark Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1342,12 +1398,12 @@
                 <td>Black Skin</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;J&quot;, &quot;display&quot;: &quot;Black Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;J&quot;, &quot;display&quot;: &quot;Black Skin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;J&quot;&gt;&lt;display value=&quot;Black Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;J&quot;&gt;&lt;display value=&quot;Black Skin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1355,14 +1411,14 @@
           </div>
         </text>
         <url value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-monk-scale-vs"/>
-        <version value="1.0.0"/>
+        <version value="0.1.0"/>
         <name value="ONCMonkScaleVS"/>
         <title value="Monk Skin Tone Scale ValueSet"/>
-        <status value="active"/>
-        <date value="2025-12-26T12:21:51+00:00"/>
+        <status value="draft"/>
+        <date value="2025-12-26T14:28:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:0506dfc6-46b3-4f88-8d92-c994997d4b03"/>
-          <timestamp value="2025-12-26T12:23:26+00:00"/>
+          <identifier value="urn:uuid:f87e311a-ee7c-4c1e-bff0-1218d52ffc6d"/>
+          <timestamp value="2025-12-26T14:29:40+00:00"/>
           <total value="10"/>
           <offset value="0"/>
           <parameter>
@@ -1383,7 +1439,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale|1.0.0"/>
+            <valueUri value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale|0.1.0"/>
           </parameter>
           <contains>
             <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale"/>
@@ -1515,14 +1571,14 @@
           </div>
         </text>
         <url value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/pain-assessment-code-vs"/>
-        <version value="1.0.0"/>
+        <version value="0.1.0"/>
         <name value="PainAssessmentCodeValueSet"/>
         <title value="Pain Assessment Code Value Set"/>
-        <status value="active"/>
-        <date value="2025-12-26T12:21:51+00:00"/>
+        <status value="draft"/>
+        <date value="2025-12-26T14:28:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:9d186970-f752-46e0-abe3-4ee3797cfd21"/>
-          <timestamp value="2025-12-26T12:23:30+00:00"/>
+          <identifier value="urn:uuid:e6a314c4-b0f8-41d2-8b1e-2e77b91d1cdc"/>
+          <timestamp value="2025-12-26T14:29:44+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1572,9 +1628,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-onc-problem-type.html">codesystem Problem Type CodeSystem v1.0.0 (CodeSystem)</a>
+              <a href="CodeSystem-onc-problem-type.html">codesystem Problem Type CodeSystem v0.1.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://open-nursing-core.org/CodeSystem/onc-problem-type|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 3 concepts</p>
@@ -1601,8 +1657,8 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://open-nursing-core.org/CodeSystem/onc-problem-type-nursing-diagnosis"> </a>
-                  <code>http://open-nursing-core.org/CodeSystem/onc-problem-type</code>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type-nursing-diagnosis"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-onc-problem-type.html#onc-problem-type-nursing-diagnosis">nursing-diagnosis</a>
@@ -1611,19 +1667,19 @@
                 <td>A clinical judgment about individual, family, or community responses to actual or potential health problems</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://open-nursing-core.org/CodeSystem/onc-problem-type&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;nursing-diagnosis&quot;, &quot;display&quot;: &quot;Nursing Diagnosis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;nursing-diagnosis&quot;, &quot;display&quot;: &quot;Nursing Diagnosis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://open-nursing-core.org/CodeSystem/onc-problem-type&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;nursing-diagnosis&quot;&gt;&lt;display value=&quot;Nursing Diagnosis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;nursing-diagnosis&quot;&gt;&lt;display value=&quot;Nursing Diagnosis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://open-nursing-core.org/CodeSystem/onc-problem-type-risk-diagnosis"> </a>
-                  <code>http://open-nursing-core.org/CodeSystem/onc-problem-type</code>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type-risk-diagnosis"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-onc-problem-type.html#onc-problem-type-risk-diagnosis">risk-diagnosis</a>
@@ -1632,19 +1688,19 @@
                 <td>A clinical judgment about an individual's vulnerability to developing an undesirable health condition</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://open-nursing-core.org/CodeSystem/onc-problem-type&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;risk-diagnosis&quot;, &quot;display&quot;: &quot;Risk Diagnosis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;risk-diagnosis&quot;, &quot;display&quot;: &quot;Risk Diagnosis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://open-nursing-core.org/CodeSystem/onc-problem-type&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;risk-diagnosis&quot;&gt;&lt;display value=&quot;Risk Diagnosis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;risk-diagnosis&quot;&gt;&lt;display value=&quot;Risk Diagnosis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://open-nursing-core.org/CodeSystem/onc-problem-type-health-promotion"> </a>
-                  <code>http://open-nursing-core.org/CodeSystem/onc-problem-type</code>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type-health-promotion"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-onc-problem-type.html#onc-problem-type-health-promotion">health-promotion</a>
@@ -1653,12 +1709,12 @@
                 <td>A clinical judgment about motivation to increase wellbeing</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://open-nursing-core.org/CodeSystem/onc-problem-type&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;health-promotion&quot;, &quot;display&quot;: &quot;Health Promotion Diagnosis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;health-promotion&quot;, &quot;display&quot;: &quot;Health Promotion Diagnosis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://open-nursing-core.org/CodeSystem/onc-problem-type&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;health-promotion&quot;&gt;&lt;display value=&quot;Health Promotion Diagnosis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;health-promotion&quot;&gt;&lt;display value=&quot;Health Promotion Diagnosis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1666,15 +1722,15 @@
           </div>
         </text>
         <url value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/problem-category-valueset"/>
-        <version value="1.0.0"/>
+        <version value="0.1.0"/>
         <name value="ProblemCategoryValueSet"/>
         <title value="Problem Category Value Set"/>
-        <status value="active"/>
+        <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-12-26T12:21:51+00:00"/>
+        <date value="2025-12-26T14:28:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:5705e50b-687e-4bc1-96b1-3fea0e739676"/>
-          <timestamp value="2025-12-26T12:23:29+00:00"/>
+          <identifier value="urn:uuid:f517d3bd-8f2c-4e1c-a4ab-23f696988bd2"/>
+          <timestamp value="2025-12-26T14:29:43+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1695,20 +1751,20 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://open-nursing-core.org/CodeSystem/onc-problem-type|1.0.0"/>
+            <valueUri value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://open-nursing-core.org/CodeSystem/onc-problem-type"/>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type"/>
             <code value="nursing-diagnosis"/>
             <display value="Nursing Diagnosis"/>
           </contains>
           <contains>
-            <system value="http://open-nursing-core.org/CodeSystem/onc-problem-type"/>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type"/>
             <code value="risk-diagnosis"/>
             <display value="Risk Diagnosis"/>
           </contains>
           <contains>
-            <system value="http://open-nursing-core.org/CodeSystem/onc-problem-type"/>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type"/>
             <code value="health-promotion"/>
             <display value="Health Promotion Diagnosis"/>
           </contains>
@@ -1724,9 +1780,10 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-onc-observation-codes.html">codesystem ONC Observation Codes v0.1.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 6 concepts</p>
@@ -1742,6 +1799,9 @@
                   <b>Display (en)</b>
                 </td>
                 <td>
+                  <b>Definition</b>
+                </td>
+                <td>
                   <b>JSON</b>
                 </td>
                 <td>
@@ -1750,121 +1810,127 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-403153005"> </a>
-                  <code>http://snomed.info/sct</code>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes-fitzpatrick-1"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/403153005">403153005</a>
+                  <a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-fitzpatrick-1">fitzpatrick-1</a>
                 </td>
-                <td>Centipede bite</td>
+                <td>Type I</td>
+                <td>Pale white; always burns, never tans</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;403153005&quot;, &quot;display&quot;: &quot;Centipede bite&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;fitzpatrick-1&quot;, &quot;display&quot;: &quot;Type I&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;403153005&quot;&gt;&lt;display value=&quot;Centipede bite&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;fitzpatrick-1&quot;&gt;&lt;display value=&quot;Type I&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-403154004"> </a>
-                  <code>http://snomed.info/sct</code>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes-fitzpatrick-2"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/403154004">403154004</a>
+                  <a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-fitzpatrick-2">fitzpatrick-2</a>
                 </td>
-                <td>Millipede burn (disorder)</td>
+                <td>Type II</td>
+                <td>White; usually burns, tans with difficulty</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;403154004&quot;, &quot;display&quot;: &quot;Millipede burn (disorder)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;fitzpatrick-2&quot;, &quot;display&quot;: &quot;Type II&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;403154004&quot;&gt;&lt;display value=&quot;Millipede burn (disorder)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;fitzpatrick-2&quot;&gt;&lt;display value=&quot;Type II&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-403155003"> </a>
-                  <code>http://snomed.info/sct</code>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes-fitzpatrick-3"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/403155003">403155003</a>
+                  <a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-fitzpatrick-3">fitzpatrick-3</a>
                 </td>
-                <td>Dermatosis caused by Echinoidea (disorder)</td>
+                <td>Type III</td>
+                <td>Cream white; sometimes mild burn, gradually tans</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;403155003&quot;, &quot;display&quot;: &quot;Dermatosis caused by Echinoidea (disorder)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;fitzpatrick-3&quot;, &quot;display&quot;: &quot;Type III&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;403155003&quot;&gt;&lt;display value=&quot;Dermatosis caused by Echinoidea (disorder)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;fitzpatrick-3&quot;&gt;&lt;display value=&quot;Type III&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-403156002"> </a>
-                  <code>http://snomed.info/sct</code>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes-fitzpatrick-4"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/403156002">403156002</a>
+                  <a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-fitzpatrick-4">fitzpatrick-4</a>
                 </td>
-                <td>Dermatosis caused by Coelenterata</td>
+                <td>Type IV</td>
+                <td>Moderate brown; rarely burns, tans with ease</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;403156002&quot;, &quot;display&quot;: &quot;Dermatosis caused by Coelenterata&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;fitzpatrick-4&quot;, &quot;display&quot;: &quot;Type IV&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;403156002&quot;&gt;&lt;display value=&quot;Dermatosis caused by Coelenterata&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;fitzpatrick-4&quot;&gt;&lt;display value=&quot;Type IV&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-403157006"> </a>
-                  <code>http://snomed.info/sct</code>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes-fitzpatrick-5"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/403157006">403157006</a>
+                  <a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-fitzpatrick-5">fitzpatrick-5</a>
                 </td>
-                <td>Fire coral dermatitis (disorder)</td>
+                <td>Type V</td>
+                <td>Dark brown; very rarely burns, tans very easily</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;403157006&quot;, &quot;display&quot;: &quot;Fire coral dermatitis (disorder)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;fitzpatrick-5&quot;, &quot;display&quot;: &quot;Type V&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;403157006&quot;&gt;&lt;display value=&quot;Fire coral dermatitis (disorder)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;fitzpatrick-5&quot;&gt;&lt;display value=&quot;Type V&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-403158001"> </a>
-                  <code>http://snomed.info/sct</code>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes-fitzpatrick-6"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/403158001">403158001</a>
+                  <a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-fitzpatrick-6">fitzpatrick-6</a>
                 </td>
-                <td>Sea mat dermatitis</td>
+                <td>Type VI</td>
+                <td>Deeply pigmented dark brown to black; never burns, tans very easily</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;403158001&quot;, &quot;display&quot;: &quot;Sea mat dermatitis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;fitzpatrick-6&quot;, &quot;display&quot;: &quot;Type VI&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;403158001&quot;&gt;&lt;display value=&quot;Sea mat dermatitis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;fitzpatrick-6&quot;&gt;&lt;display value=&quot;Type VI&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1872,15 +1938,15 @@
           </div>
         </text>
         <url value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/skintone-vs"/>
-        <version value="1.0.0"/>
+        <version value="0.1.0"/>
         <name value="SkinToneVS"/>
         <title value="Fitzpatrick Skin Tone Value Set"/>
-        <status value="active"/>
+        <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-12-26T12:21:51+00:00"/>
+        <date value="2025-12-26T14:28:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:7a006874-fd48-4668-b692-fd7f06b288a1"/>
-          <timestamp value="2025-12-26T12:23:33+00:00"/>
+          <identifier value="urn:uuid:2bc25c84-7b6e-437f-9632-fbc42d41f33b"/>
+          <timestamp value="2025-12-26T14:29:45+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -1900,42 +1966,38 @@
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+            <valueUri value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="403153005"/>
-            <display value="Centipede bite"/>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+            <code value="fitzpatrick-1"/>
+            <display value="Type I"/>
           </contains>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="403154004"/>
-            <display value="Millipede burn (disorder)"/>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+            <code value="fitzpatrick-2"/>
+            <display value="Type II"/>
           </contains>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="403155003"/>
-            <display value="Dermatosis caused by Echinoidea (disorder)"/>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+            <code value="fitzpatrick-3"/>
+            <display value="Type III"/>
           </contains>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="403156002"/>
-            <display value="Dermatosis caused by Coelenterata"/>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+            <code value="fitzpatrick-4"/>
+            <display value="Type IV"/>
           </contains>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="403157006"/>
-            <display value="Fire coral dermatitis (disorder)"/>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+            <code value="fitzpatrick-5"/>
+            <display value="Type V"/>
           </contains>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="403158001"/>
-            <display value="Sea mat dermatitis"/>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+            <code value="fitzpatrick-6"/>
+            <display value="Type VI"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -1949,12 +2011,13 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-onc-observation-codes.html">codesystem ONC Observation Codes v0.1.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
-            <p>This value set contains 4 concepts</p>
+            <p>This value set contains 6 concepts</p>
             <table class="codes" data-fhir="generated">
               <tr>
                 <td>
@@ -1967,12 +2030,7 @@
                   <b>Display (en)</b>
                 </td>
                 <td>
-                  <b>Inactive</b>
-                </td>
-                <td>
-                  <b>
-                    <a href="http://hl7.org/fhir/concept-properties#status">status</a>
-                  </b>
+                  <b>Definition</b>
                 </td>
                 <td>
                   <b>JSON</b>
@@ -1983,89 +2041,127 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-421257003"> </a>
-                  <code>http://snomed.info/sct</code>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes-stage-1"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/421257003">421257003</a>
+                  <a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-stage-1">stage-1</a>
                 </td>
-                <td>Insert - dosing instruction imperative (qualifier value)</td>
-                <td/>
-                <td/>
+                <td>Stage 1</td>
+                <td>Stage 1 pressure ulcer</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;421257003&quot;, &quot;display&quot;: &quot;Insert - dosing instruction imperative (qualifier value)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;stage-1&quot;, &quot;display&quot;: &quot;Stage 1&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;421257003&quot;&gt;&lt;display value=&quot;Insert - dosing instruction imperative (qualifier value)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;stage-1&quot;&gt;&lt;display value=&quot;Stage 1&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-420324007"> </a>
-                  <code>http://snomed.info/sct</code>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes-stage-2"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/420324007">420324007</a>
+                  <a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-stage-2">stage-2</a>
                 </td>
-                <td>Pressure ulcer stage 2 (disorder)</td>
-                <td>inactive</td>
-                <td>inactive</td>
+                <td>Stage 2</td>
+                <td>Stage 2 pressure ulcer</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;420324007&quot;, &quot;display&quot;: &quot;Pressure ulcer stage 2 (disorder)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;stage-2&quot;, &quot;display&quot;: &quot;Stage 2&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;420324007&quot;&gt;&lt;display value=&quot;Pressure ulcer stage 2 (disorder)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;stage-2&quot;&gt;&lt;display value=&quot;Stage 2&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-421076008"> </a>
-                  <code>http://snomed.info/sct</code>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes-stage-3"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/421076008">421076008</a>
+                  <a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-stage-3">stage-3</a>
                 </td>
-                <td>Pressure ulcer stage 1 (disorder)</td>
-                <td>inactive</td>
-                <td>inactive</td>
+                <td>Stage 3</td>
+                <td>Stage 3 pressure ulcer</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;421076008&quot;, &quot;display&quot;: &quot;Pressure ulcer stage 1 (disorder)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;stage-3&quot;, &quot;display&quot;: &quot;Stage 3&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;421076008&quot;&gt;&lt;display value=&quot;Pressure ulcer stage 1 (disorder)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;stage-3&quot;&gt;&lt;display value=&quot;Stage 3&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-723071003"> </a>
-                  <code>http://snomed.info/sct</code>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes-stage-4"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/723071003">723071003</a>
+                  <a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-stage-4">stage-4</a>
                 </td>
-                <td>Pressure injury of deep tissue (disorder)</td>
-                <td/>
-                <td/>
+                <td>Stage 4</td>
+                <td>Stage 4 pressure ulcer</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;723071003&quot;, &quot;display&quot;: &quot;Pressure injury of deep tissue (disorder)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;stage-4&quot;, &quot;display&quot;: &quot;Stage 4&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;723071003&quot;&gt;&lt;display value=&quot;Pressure injury of deep tissue (disorder)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;stage-4&quot;&gt;&lt;display value=&quot;Stage 4&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes-unstageable"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-unstageable">unstageable</a>
+                </td>
+                <td>Unstageable</td>
+                <td>Unstageable pressure ulcer</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;unstageable&quot;, &quot;display&quot;: &quot;Unstageable&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;unstageable&quot;&gt;&lt;display value=&quot;Unstageable&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes-deep-tissue"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-deep-tissue">deep-tissue</a>
+                </td>
+                <td>Deep Tissue Injury</td>
+                <td>Deep tissue injury</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;deep-tissue&quot;, &quot;display&quot;: &quot;Deep Tissue Injury&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;deep-tissue&quot;&gt;&lt;display value=&quot;Deep Tissue Injury&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2073,15 +2169,15 @@
           </div>
         </text>
         <url value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/wound-stage-vs"/>
-        <version value="1.0.0"/>
+        <version value="0.1.0"/>
         <name value="WoundStageValueSet"/>
         <title value="Wound Stage Value Set"/>
-        <status value="active"/>
-        <date value="2025-12-26T12:21:51+00:00"/>
+        <status value="draft"/>
+        <date value="2025-12-26T14:28:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:4aa5732d-b8b4-4758-bc47-f69bf518538c"/>
-          <timestamp value="2025-12-26T12:23:34+00:00"/>
-          <total value="4"/>
+          <identifier value="urn:uuid:434296c5-9f22-4ae4-b186-cac9ea50fb48"/>
+          <timestamp value="2025-12-26T14:29:45+00:00"/>
+          <total value="6"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -2100,46 +2196,38 @@
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+            <valueUri value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0"/>
           </parameter>
-          <property>
-            <code value="status"/>
-            <uri value="http://hl7.org/fhir/concept-properties#status"/>
-          </property>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="421257003"/>
-            <display value="Insert - dosing instruction imperative (qualifier value)"/>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+            <code value="stage-1"/>
+            <display value="Stage 1"/>
           </contains>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <inactive value="true"/>
-            <code value="420324007"/>
-            <display value="Pressure ulcer stage 2 (disorder)"/>
-            <property>
-              <code value="status"/>
-              <valueCode value="inactive"/>
-            </property>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+            <code value="stage-2"/>
+            <display value="Stage 2"/>
           </contains>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <inactive value="true"/>
-            <code value="421076008"/>
-            <display value="Pressure ulcer stage 1 (disorder)"/>
-            <property>
-              <code value="status"/>
-              <valueCode value="inactive"/>
-            </property>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+            <code value="stage-3"/>
+            <display value="Stage 3"/>
           </contains>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="723071003"/>
-            <display value="Pressure injury of deep tissue (disorder)"/>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+            <code value="stage-4"/>
+            <display value="Stage 4"/>
+          </contains>
+          <contains>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+            <code value="unstageable"/>
+            <display value="Unstageable"/>
+          </contains>
+          <contains>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+            <code value="deep-tissue"/>
+            <display value="Deep Tissue Injury"/>
           </contains>
         </expansion>
       </ValueSet>

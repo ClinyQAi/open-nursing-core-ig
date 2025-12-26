@@ -1,4 +1,4 @@
-# Pain Assessment (NRS 0-10) - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# Pain Assessment (NRS 0-10) - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-pain-assessment | *Version*:1.0.0 |
-| Active as of 2025-12-26 | *Computable Name*:ONCPainAssessment |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-pain-assessment | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:ONCPainAssessment |
 
  
 Pain severity assessment using the Numeric Rating Scale (0-10) 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-onc-pain-assessment.
   "resourceType" : "StructureDefinition",
   "id" : "onc-pain-assessment",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-pain-assessment",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "ONCPainAssessment",
   "title" : "Pain Assessment (NRS 0-10)",
-  "status" : "active",
-  "date" : "2025-12-26T12:21:51+00:00",
+  "status" : "draft",
+  "date" : "2025-12-26T14:28:37+00:00",
   "description" : "Pain severity assessment using the Numeric Rating Scale (0-10)",
   "fhirVersion" : "4.0.1",
   "mapping" : [

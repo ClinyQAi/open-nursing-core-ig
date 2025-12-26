@@ -12,7 +12,7 @@
   <sch:pattern>
     <sch:title>f:Patient</sch:title>
     <sch:rule context="f:Patient">
-      <sch:assert test="count(f:extension[@url = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Extension-EthnicCategory']) &lt;= 1">extension with URL = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Extension-EthnicCategory': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/UKCore-Extension-EthnicCategory']) &lt;= 1">extension with URL = 'https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/UKCore-Extension-EthnicCategory': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

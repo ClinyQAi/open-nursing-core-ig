@@ -26,7 +26,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Observation.extension:goalReference","Observation.extension","goalReference","","",1,1,"Y","","","Extension {[CanonicalType[https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/observation-goal-reference]]} {[]}
-","Observation Goal Reference","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Observation Goal Reference","Extension to link goal evaluation observations to the patient goals being evaluated. Enables tracking of goal progress and outcomes over time.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Observation.modifierExtension","Observation.modifierExtension","","extensions
@@ -57,7 +57,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>
-    <code value=""nursing""/>
+    <code value=""survey""/>
   </coding>
 </valueCodeableConcept>","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category|4.0.1","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".outboundRelationship[typeCode=""COMP].target[classCode=""LIST"", moodCode=""EVN""].code","FiveWs.class"

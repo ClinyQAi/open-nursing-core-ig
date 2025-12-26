@@ -11,24 +11,24 @@
   fhir:id [ fhir:v "problem-category-valueset"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet problem-category-valueset</b></p><a name=\"problem-category-valueset\"> </a><a name=\"hcproblem-category-valueset\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-onc-problem-type.html\"><code>http://open-nursing-core.org/CodeSystem/onc-problem-type</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?1.0.0</span></li></ul></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet problem-category-valueset</b></p><a name=\"problem-category-valueset\"> </a><a name=\"hcproblem-category-valueset\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-onc-problem-type.html\"><code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/problem-category-valueset"^^xsd:anyURI ;
      fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/problem-category-valueset>
   ] ; # 
-  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "ProblemCategoryValueSet"] ; # 
   fhir:title [ fhir:v "Problem Category Value Set"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2025-12-26T12:21:51+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-26T14:28:37+00:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "Value set for categorizing nursing problems"] ; # 
   fhir:compose [
      fhir:include ( [
        fhir:system [
-         fhir:v "http://open-nursing-core.org/CodeSystem/onc-problem-type"^^xsd:anyURI ;
-         fhir:l <http://open-nursing-core.org/CodeSystem/onc-problem-type>
+         fhir:v "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type"^^xsd:anyURI ;
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type>
        ]
      ] )
   ] . # 

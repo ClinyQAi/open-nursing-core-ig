@@ -1,4 +1,4 @@
-# Inspired Oxygen Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# Inspired Oxygen Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/inspired-oxygen-vs | *Version*:1.0.0 |
-| Active as of 2025-12-26 | *Computable Name*:InspiredOxygenValueSet |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/inspired-oxygen-vs | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:InspiredOxygenValueSet |
 
  
 Codes for inspired oxygen status 
@@ -46,11 +46,11 @@ Codes for inspired oxygen status
   "resourceType" : "ValueSet",
   "id" : "inspired-oxygen-vs",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/inspired-oxygen-vs",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "InspiredOxygenValueSet",
   "title" : "Inspired Oxygen Value Set",
-  "status" : "active",
-  "date" : "2025-12-26T12:21:51+00:00",
+  "status" : "draft",
+  "date" : "2025-12-26T14:28:37+00:00",
   "description" : "Codes for inspired oxygen status",
   "compose" : {
     "include" : [

@@ -53,7 +53,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>
-    <code value=""nursing""/>
+    <code value=""survey""/>
   </coding>
 </valueCodeableConcept>","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category|4.0.1","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".outboundRelationship[typeCode=""COMP].target[classCode=""LIST"", moodCode=""EVN""].code","FiveWs.class"
@@ -61,9 +61,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
 ","Type of observation (code / type)","Describes what was observed. Sometimes this is called the observation ""name"".","*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://loinc.org""/>
-    <code value=""38227-0""/>
-    <display value=""Braden scale total score""/>
+    <system value=""https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes""/>
+    <code value=""braden-total-score""/>
+    <display value=""Braden Total Score""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code","< 363787002 |Observable entity| OR < 386053000 |Evaluation procedure|","OBX-3","code","FiveWs.what[x]","116680003 |Is a|"
@@ -235,9 +235,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.component:sensoryPerception.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://loinc.org""/>
-    <code value=""38222-1""/>
-    <display value=""Sensory perception Braden scale""/>
+    <system value=""https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes""/>
+    <code value=""braden-sensory""/>
+    <display value=""Braden Sensory Perception""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","< 363787002 |Observable entity| OR < 386053000 |Evaluation procedure|","OBX-3","code","FiveWs.what[x]"
@@ -275,9 +275,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.component:moisture.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://loinc.org""/>
-    <code value=""38229-6""/>
-    <display value=""Moisture Braden scale""/>
+    <system value=""https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes""/>
+    <code value=""braden-moisture""/>
+    <display value=""Braden Moisture""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","< 363787002 |Observable entity| OR < 386053000 |Evaluation procedure|","OBX-3","code","FiveWs.what[x]"
@@ -315,9 +315,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.component:activity.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://loinc.org""/>
-    <code value=""38223-9""/>
-    <display value=""Activity Braden scale""/>
+    <system value=""https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes""/>
+    <code value=""braden-activity""/>
+    <display value=""Braden Activity""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","< 363787002 |Observable entity| OR < 386053000 |Evaluation procedure|","OBX-3","code","FiveWs.what[x]"
@@ -355,9 +355,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.component:mobility.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://loinc.org""/>
-    <code value=""38224-7""/>
-    <display value=""Mobility Braden scale""/>
+    <system value=""https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes""/>
+    <code value=""braden-mobility""/>
+    <display value=""Braden Mobility""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","< 363787002 |Observable entity| OR < 386053000 |Evaluation procedure|","OBX-3","code","FiveWs.what[x]"
@@ -395,9 +395,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.component:nutrition.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://loinc.org""/>
-    <code value=""38225-4""/>
-    <display value=""Nutrition Braden scale""/>
+    <system value=""https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes""/>
+    <code value=""braden-nutrition""/>
+    <display value=""Braden Nutrition""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","< 363787002 |Observable entity| OR < 386053000 |Evaluation procedure|","OBX-3","code","FiveWs.what[x]"
@@ -435,9 +435,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.component:frictionAndShear.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://loinc.org""/>
-    <code value=""38226-2""/>
-    <display value=""Friction and shear Braden scale""/>
+    <system value=""https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes""/>
+    <code value=""braden-friction""/>
+    <display value=""Braden Friction/Shear""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","< 363787002 |Observable entity| OR < 386053000 |Evaluation procedure|","OBX-3","code","FiveWs.what[x]"

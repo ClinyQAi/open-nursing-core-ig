@@ -1,4 +1,4 @@
-# Problem Category Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# Problem Category Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/problem-category-valueset | *Version*:1.0.0 |
-| Active as of 2025-12-26 | *Computable Name*:ProblemCategoryValueSet |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/problem-category-valueset | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:ProblemCategoryValueSet |
 
  
 Value set for categorizing nursing problems 
@@ -46,17 +46,17 @@ Value set for categorizing nursing problems
   "resourceType" : "ValueSet",
   "id" : "problem-category-valueset",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/problem-category-valueset",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "ProblemCategoryValueSet",
   "title" : "Problem Category Value Set",
-  "status" : "active",
+  "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-26T12:21:51+00:00",
+  "date" : "2025-12-26T14:28:37+00:00",
   "description" : "Value set for categorizing nursing problems",
   "compose" : {
     "include" : [
       {
-        "system" : "http://open-nursing-core.org/CodeSystem/onc-problem-type"
+        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type"
       }
     ]
   }

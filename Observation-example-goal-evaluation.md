@@ -1,4 +1,4 @@
-# example-goal-evaluation - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# example-goal-evaluation - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -12,15 +12,15 @@ Profile: [Goal Evaluation](StructureDefinition-onc-goal-evaluation.md)
 
 **status**: Final
 
-**category**: nursing
+**category**: Survey
 
-**code**: Resolved
+**code**: Patient condition resolved
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
 **performer**: [Practitioner Nightingale](Practitioner-practitioner-example.md)
 
-**value**: Resolved
+**value**: Patient condition resolved
 
 
 
@@ -49,7 +49,7 @@ Profile: [Goal Evaluation](StructureDefinition-onc-goal-evaluation.md)
       "coding" : [
         {
           "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "nursing"
+          "code" : "survey"
         }
       ]
     }
@@ -58,8 +58,8 @@ Profile: [Goal Evaluation](StructureDefinition-onc-goal-evaluation.md)
     "coding" : [
       {
         "system" : "http://snomed.info/sct",
-        "code" : "385633008",
-        "display" : "Resolved"
+        "code" : "370996005",
+        "display" : "Patient condition resolved"
       }
     ]
   },
@@ -75,8 +75,8 @@ Profile: [Goal Evaluation](StructureDefinition-onc-goal-evaluation.md)
     "coding" : [
       {
         "system" : "http://snomed.info/sct",
-        "code" : "385633008",
-        "display" : "Resolved"
+        "code" : "370996005",
+        "display" : "Patient condition resolved"
       }
     ]
   }

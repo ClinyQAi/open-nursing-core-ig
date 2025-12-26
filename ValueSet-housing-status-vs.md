@@ -1,4 +1,4 @@
-# Housing Status Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# Housing Status Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/housing-status-vs | *Version*:1.0.0 |
-| Active as of 2025-12-26 | *Computable Name*:HousingStatusVS |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/housing-status-vs | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:HousingStatusVS |
 
  
 Value set for patient housing status 
@@ -46,12 +46,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "housing-status-vs",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/housing-status-vs",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "HousingStatusVS",
   "title" : "Housing Status Value Set",
-  "status" : "active",
+  "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-26T12:21:51+00:00",
+  "date" : "2025-12-26T14:28:37+00:00",
   "description" : "Value set for patient housing status",
   "compose" : {
     "include" : [
@@ -60,15 +60,11 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
         "concept" : [
           {
             "code" : "266935003",
-            "display" : "Housing problem"
-          },
-          {
-            "code" : "160724001",
-            "display" : "Homeless"
+            "display" : "Housing lack"
           },
           {
             "code" : "224224003",
-            "display" : "Lives in own home"
+            "display" : "Lives in staffed home"
           }
         ]
       }

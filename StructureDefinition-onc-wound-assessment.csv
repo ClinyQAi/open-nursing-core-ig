@@ -53,7 +53,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>
-    <code value=""nursing""/>
+    <code value=""survey""/>
   </coding>
 </valueCodeableConcept>","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category|4.0.1","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".outboundRelationship[typeCode=""COMP].target[classCode=""LIST"", moodCode=""EVN""].code","FiveWs.class"
@@ -276,8 +276,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://snomed.info/sct""/>
-    <code value=""410669006""/>
-    <display value=""Width""/>
+    <code value=""401239006""/>
+    <display value=""Width of wound""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","< 363787002 |Observable entity| OR < 386053000 |Evaluation procedure|","OBX-3","code","FiveWs.what[x]"
@@ -339,8 +339,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://snomed.info/sct""/>
-    <code value=""410670007""/>
-    <display value=""Depth""/>
+    <code value=""425094009""/>
+    <display value=""Depth of wound""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","< 363787002 |Observable entity| OR < 386053000 |Evaluation procedure|","OBX-3","code","FiveWs.what[x]"

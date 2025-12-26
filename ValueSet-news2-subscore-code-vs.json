@@ -2,42 +2,21 @@
   "resourceType" : "ValueSet",
   "id" : "news2-subscore-code-vs",
   "text" : {
-    "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet news2-subscore-code-vs</b></p><a name=\"news2-subscore-code-vs\"> </a><a name=\"hcnews2-subscore-code-vs\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/1104301000000104\">1104301000000104</a></td><td>Royal College of Physicians National Early Warning Score 2 - pulse score</td></tr><tr><td><a href=\"http://snomed.info/id/1104311000000102\">1104311000000102</a></td><td>Royal College of Physicians National Early Warning Score 2 - respiration rate score</td></tr><tr><td><a href=\"http://snomed.info/id/1104331000000106\">1104331000000106</a></td><td>Royal College of Physicians National Early Warning Score 2 - temperature score</td></tr><tr><td><a href=\"http://snomed.info/id/1104351000000100\">1104351000000100</a></td><td>Royal College of Physicians National Early Warning Score 2 - ACVPU score</td></tr><tr><td><a href=\"http://snomed.info/id/1104341000000103\">1104341000000103</a></td><td>Royal College of Physicians National Early Warning Score 2 - oxygen saturation scale 1 score</td></tr><tr><td><a href=\"http://snomed.info/id/1104321000000108\">1104321000000108</a></td><td>Royal College of Physicians National Early Warning Score 2 - systolic blood pressure score</td></tr></table></li></ul></div>"
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet news2-subscore-code-vs</b></p><a name=\"news2-subscore-code-vs\"> </a><a name=\"hcnews2-subscore-code-vs\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-onc-observation-codes.html\"><code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-news2-subscore\">news2-subscore</a></td><td style=\"color: #cccccc\">NEWS2 Sub-score</td><td>Sub-score for NEWS2 parameter</td></tr></table></li></ul></div>"
   },
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/news2-subscore-code-vs",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "NEWS2SubscoreCodeValueSet",
   "title" : "NEWS2 Sub-Score Codes",
-  "status" : "active",
-  "date" : "2025-12-26T12:21:51+00:00",
+  "status" : "draft",
+  "date" : "2025-12-26T14:28:37+00:00",
   "description" : "SNOMED codes for NEWS2 sub-scores",
   "compose" : {
     "include" : [{
-      "system" : "http://snomed.info/sct",
+      "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
       "concept" : [{
-        "code" : "1104301000000104",
-        "display" : "Royal College of Physicians National Early Warning Score 2 - pulse score"
-      },
-      {
-        "code" : "1104311000000102",
-        "display" : "Royal College of Physicians National Early Warning Score 2 - respiration rate score"
-      },
-      {
-        "code" : "1104331000000106",
-        "display" : "Royal College of Physicians National Early Warning Score 2 - temperature score"
-      },
-      {
-        "code" : "1104351000000100",
-        "display" : "Royal College of Physicians National Early Warning Score 2 - ACVPU score"
-      },
-      {
-        "code" : "1104341000000103",
-        "display" : "Royal College of Physicians National Early Warning Score 2 - oxygen saturation scale 1 score"
-      },
-      {
-        "code" : "1104321000000108",
-        "display" : "Royal College of Physicians National Early Warning Score 2 - systolic blood pressure score"
+        "code" : "news2-subscore"
       }]
     }]
   }

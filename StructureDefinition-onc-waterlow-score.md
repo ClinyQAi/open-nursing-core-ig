@@ -1,4 +1,4 @@
-# Waterlow Score - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# Waterlow Score - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-waterlow-score | *Version*:1.0.0 |
-| Active as of 2025-12-26 | *Computable Name*:ONCWaterlowScore |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-waterlow-score | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:ONCWaterlowScore |
 
  
 Waterlow Pressure Ulcer Risk Assessment - NHS standard tool. Score ≥10 indicates at risk, ≥15 high risk, ≥20 very high risk. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-onc-waterlow-score.c
   "resourceType" : "StructureDefinition",
   "id" : "onc-waterlow-score",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-waterlow-score",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "ONCWaterlowScore",
   "title" : "Waterlow Score",
-  "status" : "active",
-  "date" : "2025-12-26T12:21:51+00:00",
+  "status" : "draft",
+  "date" : "2025-12-26T14:28:37+00:00",
   "description" : "Waterlow Pressure Ulcer Risk Assessment - NHS standard tool. Score ≥10 indicates at risk, ≥15 high risk, ≥20 very high risk.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -98,9 +98,9 @@ Other representations of profile: [CSV](StructureDefinition-onc-waterlow-score.c
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://snomed.info/sct",
-              "code" : "443846001",
-              "display" : "Waterlow score (observable entity)"
+              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "code" : "waterlow-score",
+              "display" : "Waterlow Score"
             }
           ]
         },

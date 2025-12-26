@@ -11,7 +11,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Nursing Problem - XML Representation - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0</title>
+    <title>Nursing Problem - XML Representation - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -60,7 +60,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Open Nursing Core FHIR Implementation Guide (ONC-IG)</span>
             <br/>
-            <span style="display:inline-block;">1.0.0 - release
+            <span style="display:inline-block;">0.1.0 - draft
 
 
             </span>
@@ -114,7 +114,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Open Nursing Core FHIR Implementation Guide (ONC-IG) - Local Development build (v1.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://clinyqai.github.io/open-nursing-core-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Open Nursing Core FHIR Implementation Guide (ONC-IG) - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://clinyqai.github.io/open-nursing-core-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -190,12 +190,12 @@
 <a name="root"> </a>
 <h2 id="root">Resource Profile: ONCNursingProblem - XML Profile</h2>
 
-  <table class="colsi">
+  <table class="colsd">
     <tr>
 
       <td colspan="2">
         
-          Active
+          Draft
           
             as of 2025-12-26
           
@@ -228,11 +228,13 @@
   &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#StructureDefinition.text">text</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.url">url</a>
        <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-problem&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.0.0&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.1.0&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ONCNursingProblem&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Nursing Problem&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2025-12-26T12:21:51+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2025-12-26T14:28:37+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.description">description</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Nursing diagnosis or problem identified during assessment. Represents clinical judgments about individual, family, or community responses to actual or potential health problems. Part of the ADPIE framework's Diagnosis phase.&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.fhirVersion">fhirVersion</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;4.0.1&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping">mapping</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;workflow&quot;/&gt;
@@ -2103,7 +2105,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package onc.ig#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 26, 2025 12:21+0000">2025-12-26</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package onc.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 26, 2025 14:28+0000">2025-12-26</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
