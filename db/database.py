@@ -26,6 +26,7 @@ except ImportError:
     RealDictCursor = None
 
 from core.settings import settings
+from core.safe_logging import mask_identifier, log_exception_safe
 
 logger = logging.getLogger(__name__)
 
@@ -67,7 +68,6 @@ def init_connection_pool():
                 )
                 logger.info("PostgreSQL connection pool initialized successfully")
             except Exception as e:
-                from core.safe_logging import log_exception_safe
                 log_exception_safe(logger, "Failed to initialize PG pooling", e)
                 raise
 
@@ -81,7 +81,6 @@ def get_connection():
             conn.commit()
         except Exception as e:
             conn.rollback()
-            from core.safe_logging import log_exception_safe
             log_exception_safe(logger, "SQLite DB error", e)
             raise
     else:
@@ -93,7 +92,6 @@ def get_connection():
             conn.commit()
         except Exception as e:
             conn.rollback()
-            from core.safe_logging import log_exception_safe
             log_exception_safe(logger, "Postgres DB error", e)
             raise
         finally:
@@ -215,7 +213,6 @@ def init_database():
             conn.commit()
             logger.info("Database schema initialized successfully")
         except Exception as e:
-            from core.safe_logging import log_exception_safe
             log_exception_safe(logger, "Failed to initialize schema", e)
             raise
 
@@ -237,11 +234,15 @@ def add_user(username: str, password_hash: str, role: str, email: Optional[str] 
                  cur.execute(query, (username, password_hash, role, email))
                  user_id = cur.lastrowid
                  
-            from core.safe_logging import mask_identifier
             logger.info(f"User created: {mask_identifier(username, 'user')} (ID: {mask_identifier(str(user_id), 'id')})")
             return user_id
+        except Exception as e:  # Catch IntegrityError equivalent
+            logger.warning(
+                "User creation failed (possible duplicate or constraint violation).",
+                exc_info=True,
+            )
+            raise  # Re-raise for controller handling if needed
         except Exception as e: # Catch IntegrityError equivalent
-            from core.safe_logging import log_exception_safe
             log_exception_safe(logger, "User creation failed", e, level="warning")
             raise # Re-raise for controller handling if needed
 

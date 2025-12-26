@@ -70,36 +70,31 @@ def mask_identifier(identifier: str, prefix: str = "id") -> str:
     """
     Mask an identifier for safe logging.
     
-    Shows first 3 and last 4 characters, masks the middle portion.
-    For short identifiers, shows only masked version.
+    Completely masks the identifier to prevent any sensitive data leakage.
+    This security measure ensures no part of the identifier (which may contain
+    or be derived from sensitive information) is exposed in logs.
+    The prefix parameter is used to identify the type of identifier in logs.
+    Completely masks the identifier value to prevent any sensitive data exposure.
+    Returns only the prefix with masked content, without revealing any characters
+    from the actual identifier.
     
     Args:
         identifier: The identifier to mask (patient_id, username, etc.)
         prefix: Prefix to use for the masked value (e.g., 'pat', 'user', 'id')
         
     Returns:
-        Masked identifier string
+        Masked identifier string in the format: prefix_****
+        Masked identifier string in format: "{prefix}_****"
         
     Example:
         >>> mask_identifier("patient12345", "pat")
-        'pat_****2345'
+        'pat_****'
         >>> mask_identifier("admin", "user")
         'user_****'
-        >>> mask_identifier("", "id")
+        >>> mask_identifier("", "id")  # Even empty strings are masked consistently
         'id_****'
     """
-    if not identifier:
-        return f"{prefix}_****"
-    
-    # Convert to string in case it's an int or other type
-    identifier = str(identifier)
-    
-    # For short identifiers, just mask everything
-    if len(identifier) < 8:
-        return f"{prefix}_****"
-    
-    # Show first 3 and last 4 characters
-    return f"{identifier[:3]}_****{identifier[-4:]}"
+    return f"{prefix}_****"
 
 
 def safe_log_info(
@@ -117,8 +112,8 @@ def safe_log_info(
         
     Example:
         >>> safe_log_info(logger, "Processing patient {patient_id}", 
-        ...               patient_id=("12345", "pat"))
-        # Logs: "Processing patient pat_****2345"
+        ...               patient_id=("patient12345", "pat"))
+        # Logs: "Processing patient pat_****"
     """
     masked_values = {}
     for key, value in identifiers.items():
@@ -147,7 +142,7 @@ def safe_log_warning(
     Example:
         >>> safe_log_warning(logger, "No data for patient {patient_id}", 
         ...                  patient_id=("67890", "pat"))
-        # Logs: "No data for patient pat_****7890"
+        # Logs: "No data for patient pat_****"
     """
     masked_values = {}
     for key, value in identifiers.items():
