@@ -67,7 +67,8 @@ def init_connection_pool():
                 )
                 logger.info("PostgreSQL connection pool initialized successfully")
             except Exception as e:
-                logger.error(f"Failed to initialize PG pooling: {e}")
+                from core.safe_logging import log_exception_safe
+                log_exception_safe(logger, "Failed to initialize PG pooling", e)
                 raise
 
 @contextmanager
@@ -80,7 +81,8 @@ def get_connection():
             conn.commit()
         except Exception as e:
             conn.rollback()
-            logger.error(f"SQLite DB error: {e}", exc_info=True)
+            from core.safe_logging import log_exception_safe
+            log_exception_safe(logger, "SQLite DB error", e)
             raise
     else:
         # Postgres
@@ -91,7 +93,8 @@ def get_connection():
             conn.commit()
         except Exception as e:
             conn.rollback()
-            logger.error(f"Postgres DB error: {e}", exc_info=True)
+            from core.safe_logging import log_exception_safe
+            log_exception_safe(logger, "Postgres DB error", e)
             raise
         finally:
             _pg_pool.putconn(conn)
@@ -212,7 +215,8 @@ def init_database():
             conn.commit()
             logger.info("Database schema initialized successfully")
         except Exception as e:
-            logger.error(f"Failed to initialize schema: {e}", exc_info=True)
+            from core.safe_logging import log_exception_safe
+            log_exception_safe(logger, "Failed to initialize schema", e)
             raise
 
 def add_user(username: str, password_hash: str, role: str, email: Optional[str] = None) -> int:
@@ -236,7 +240,8 @@ def add_user(username: str, password_hash: str, role: str, email: Optional[str] 
             logger.info(f"User created: {username} (ID: {user_id})")
             return user_id
         except Exception as e: # Catch IntegrityError equivalent
-            logger.warning(f"User might already exist ({username}): {e}")
+            from core.safe_logging import log_exception_safe
+            log_exception_safe(logger, "User creation failed", e, level="warning")
             raise # Re-raise for controller handling if needed
 
 def get_user(username: str) -> Optional[Dict[str, Any]]:

@@ -110,7 +110,8 @@ def init_database_if_needed():
                 # Seed default users into database
                 _seed_default_users()
         except Exception as e:
-            logger.error(f"Database initialization failed: {e}", exc_info=True)
+            from core.safe_logging import log_exception_safe
+            log_exception_safe(logger, "Database initialization failed", e)
             st.warning("Database connection failed - using local storage")
 
 
@@ -135,7 +136,8 @@ def _seed_default_users():
                 add_user(username, password_hash, creds["role"])
                 logger.info(f"Seeded user: {username}")
         except Exception as e:
-            logger.warning(f"Could not seed user {username}: {e}")
+            from core.safe_logging import log_exception_safe
+            log_exception_safe(logger, "Could not seed user", e, level="warning")
 
 
 def login_page():
@@ -333,7 +335,8 @@ def main_app():
                         )
                         response = qa.run(user_input)
                     except Exception as e:
-                        logger.error(f"QA error: {e}", exc_info=True)
+                        from core.safe_logging import log_exception_safe
+                        log_exception_safe(logger, "QA error", e)
                         response = (
                             f"Unable to process your question. "
                             f"Error: {str(e)}"

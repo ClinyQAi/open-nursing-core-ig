@@ -87,7 +87,8 @@ class AnalyticsDashboard:
                 st.metric("Events (24h)", events_24h)
 
         except Exception as e:
-            logger.error(f"Failed to load metrics: {e}")
+            from core.safe_logging import log_exception_safe
+            log_exception_safe(logger, "Failed to load metrics", e)
             st.error(f"Error loading metrics: {e}")
 
     def display_usage_dashboard(self):
@@ -169,7 +170,8 @@ class AnalyticsDashboard:
                     st.plotly_chart(fig, use_container_width=True)
 
         except Exception as e:
-            logger.error(f"Failed to load usage analytics: {e}")
+            from core.safe_logging import log_exception_safe
+            log_exception_safe(logger, "Failed to load usage analytics", e)
             st.error(f"Error loading analytics: {e}")
 
     def display_compliance_report(self):
@@ -275,7 +277,8 @@ class AnalyticsDashboard:
                     st.dataframe(df_events, use_container_width=True)
 
         except Exception as e:
-            logger.error(f"Failed to load compliance report: {e}")
+            from core.safe_logging import log_exception_safe
+            log_exception_safe(logger, "Failed to load compliance report", e)
             st.error(f"Error loading compliance report: {e}")
 
     def display_knowledge_gaps(self):
@@ -325,7 +328,8 @@ class AnalyticsDashboard:
                     st.plotly_chart(fig, use_container_width=True)
 
         except Exception as e:
-            logger.error(f"Failed to load knowledge gaps: {e}")
+            from core.safe_logging import log_exception_safe
+            log_exception_safe(logger, "Failed to load knowledge gaps", e)
             st.error(f"Error loading knowledge gaps: {e}")
 
     def display_clinical_outcomes(self):
@@ -407,7 +411,8 @@ class AnalyticsDashboard:
                         st.metric("Avg Messages/User", f"{df_activity['Messages'].mean():.1f}")
 
         except Exception as e:
-            logger.error(f"Failed to load user activity: {e}")
+            from core.safe_logging import log_exception_safe
+            log_exception_safe(logger, "Failed to load user activity", e)
             st.error(f"Error loading user activity: {e}")
 
     def display_system_health(self):
