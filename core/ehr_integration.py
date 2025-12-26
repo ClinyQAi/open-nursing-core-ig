@@ -10,6 +10,7 @@ import logging
 from datetime import datetime
 from typing import Optional, Dict, Any, List
 from enum import Enum
+import hashlib
 
 from core.safe_logging import safe_log_info, log_exception_safe, mask_identifier
 
@@ -67,6 +68,17 @@ class FHIRAPIClient:
 
         logger.info(f"FHIR API client initialized for {base_url}")
 
+    def _safe_patient_id_for_log(self, patient_id: str) -> str:
+        """
+        Return a non-reversible, shortened representation of a patient ID
+        suitable for logging without exposing the raw identifier.
+        """
+        if not patient_id:
+            return "pid:unknown"
+        digest = hashlib.sha256(patient_id.encode("utf-8")).hexdigest()
+        # Truncate to reduce log size while remaining collision-resistant for debugging.
+        return f"pid:{digest[:8]}"
+
     def get_patient(self, patient_id: str) -> Optional[Dict[str, Any]]:
         """
         Retrieve a patient resource from the FHIR server.
@@ -85,11 +97,16 @@ class FHIRAPIClient:
 
             if response.status_code == 200:
                 safe_log_info(logger, "Retrieved patient successfully")
+                logger.info(
+                    "Retrieved patient: %s",
+                    self._safe_patient_id_for_log(patient_id),
+                )
                 return response.json()
             else:
                 logger.warning(
-                    f"Failed to retrieve patient {patient_id}: "
-                    f"{response.status_code}"
+                    "Failed to retrieve patient %s: %s",
+                    self._safe_patient_id_for_log(patient_id),
+                    response.status_code,
                 )
                 return None
         except Exception as e:
@@ -117,14 +134,16 @@ class FHIRAPIClient:
                 entries = bundle.get("entry", [])
                 conditions = [entry["resource"] for entry in entries]
                 logger.info(
-                    f"Retrieved {len(conditions)} conditions for patient "
-                    f"{patient_id}"
+                    "Retrieved %d conditions for patient %s",
+                    len(conditions),
+                    self._safe_patient_id_for_log(patient_id),
                 )
                 return conditions
             else:
                 logger.warning(
-                    f"Failed to retrieve conditions for patient {patient_id}: "
-                    f"{response.status_code}"
+                    "Failed to retrieve conditions for patient %s: %s",
+                    self._safe_patient_id_for_log(patient_id),
+                    response.status_code,
                 )
                 return []
         except Exception as e:
@@ -540,6 +559,7 @@ class EHRIntegrationManager:
                 "goals": self.fhir_client.get_patient_goals(patient_id),
             }
             logger.info(f"Synced patient data for {mask_identifier(patient_id, 'pat')}")
+            logger.info("Synced patient data successfully")
             return patient_data
         except Exception as e:
             log_exception_safe(logger, "Error syncing patient data", e)
