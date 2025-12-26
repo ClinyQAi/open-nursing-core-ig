@@ -17,6 +17,7 @@
 [ONCInspiredOxygen]: StructureDefinition-onc-inspired-oxygen.html
 [InspiredOxygenValueSet]: ValueSet-inspired-oxygen-vs.html
 [InterventionGoalReference]: StructureDefinition-intervention-goal-reference.html
+[ONCMMSE]: StructureDefinition-onc-mmse.html
 [ONCMonkSkinToneObservation]: StructureDefinition-onc-monk-skintone-observation.html
 [ONCMonkScale]: CodeSystem-onc-monk-scale.html
 [ONCMonkScaleVS]: ValueSet-onc-monk-scale-vs.html
