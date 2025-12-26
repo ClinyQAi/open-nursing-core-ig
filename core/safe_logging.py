@@ -71,6 +71,8 @@ def mask_identifier(identifier: str, prefix: str = "id") -> str:
     Mask an identifier for safe logging.
     
     Completely masks the identifier to prevent any sensitive data leakage.
+    This security measure ensures no part of the identifier (which may contain
+    or be derived from sensitive information) is exposed in logs.
     The prefix parameter is used to identify the type of identifier in logs.
     
     Args:
@@ -85,7 +87,7 @@ def mask_identifier(identifier: str, prefix: str = "id") -> str:
         'pat_****'
         >>> mask_identifier("admin", "user")
         'user_****'
-        >>> mask_identifier("", "id")
+        >>> mask_identifier("", "id")  # Even empty strings are masked consistently
         'id_****'
     """
     if not identifier:
