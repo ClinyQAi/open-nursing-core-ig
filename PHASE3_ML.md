@@ -792,12 +792,44 @@ from ml_anomaly_detection import CriticalDeviationAlertSystem
 with get_connection() as conn:
     cursor = conn.cursor()
     
-    # Get all patients
-    cursor.execute("""
-        SELECT patient_id, age, comorbidities, previous_readmissions
-        FROM patients
-    """)
+
+---
+
+## Phase 3.5: Generative AI (Hugging Face)
+
+**File**: `scripts/train_nursing_llm.ipynb`  
+**Purpose**: Fine-tune Large Language Models (LLMs) like Llama-3 or Mistral to perform SBAR summarization on clinical transcripts.
+
+### Overview
+Due to hardware constraints (lack of local GPU), training is offloaded to cloud environments like Google Colab using QLoRA (Quantized Low-Rank Adapters).
+
+### Workflow
+
+1.  **Upload Dataset**:
+    Use `scripts/upload_dataset.py` to push your local JSONL dataset to the Hugging Face Hub.
+    ```bash
+    python scripts/upload_dataset.py --repo "your-username/nursing-sbar-instruct" --token "hf_..."
+    ```
+
+2.  **Fine-Tune on Colab**:
+    Upload `scripts/train_nursing_llm.ipynb` to Google Colab.
+    - **Base Model**: `unsloth/llama-3-8b-bnb-4bit` (Medical-grade reasoning)
+    - **Technique**: QLoRA (4-bit quantization)
+    - **Compute**: Free Tesla T4 GPU
+    - **Output**: An adapter model (`adapter_model.bin`) merged and pushed back to your HF profile.
+
+3.  **Inference**:
+    Once trained, the model can generate SBAR summaries from nurse-patient transcripts.
+    ```python
+    # Example Inference Input
+    prompt = """Transcript: Patient complains of chest pain...
+    <|assistant|>"""
     
+    # Example Output
+    # Situation: Patient experiencing chest pain...
+    # ...
+    ```
+
     patient_rows = cursor.fetchall()
 
 # Convert to DataFrame

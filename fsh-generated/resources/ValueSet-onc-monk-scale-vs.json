@@ -1,0 +1,15 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ONCMonkScaleVS",
+  "id": "onc-monk-scale-vs",
+  "title": "Monk Skin Tone Scale ValueSet",
+  "url": "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-monk-scale-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale"
+      }
+    ]
+  }
+}

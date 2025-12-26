@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "NEWS2CodeValueSet",
+  "id": "news2-code-vs",
+  "title": "NEWS2 Code Value Set",
+  "description": "LOINC and SNOMED codes for NEWS2",
+  "url": "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/news2-code-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "88330-6",
+            "display": "National Early Warning Score [NEWS]"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "1104051000000101",
+            "display": "National Early Warning Score 2 (observable entity)"
+          }
+        ]
+      }
+    ]
+  }
+}

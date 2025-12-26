@@ -1,0 +1,42 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "onc-patient-goal",
+  "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-goal",
+  "name": "ONCPatientGoal",
+  "title": "Patient Goal",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Goal",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Goal",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Goal.lifecycleStatus",
+        "path": "Goal.lifecycleStatus",
+        "mustSupport": true
+      },
+      {
+        "id": "Goal.description",
+        "path": "Goal.description",
+        "mustSupport": true
+      },
+      {
+        "id": "Goal.addresses",
+        "path": "Goal.addresses",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-problem"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

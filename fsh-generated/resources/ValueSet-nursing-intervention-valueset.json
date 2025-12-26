@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "NursingInterventionValueSet",
+  "id": "nursing-intervention-valueset",
+  "title": "Nursing Intervention Value Set",
+  "description": "Value set for nursing interventions",
+  "url": "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-intervention-valueset",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "71388002",
+            "display": "Procedure"
+          },
+          {
+            "code": "225358003",
+            "display": "Wound care"
+          },
+          {
+            "code": "386373004",
+            "display": "Nutrition therapy"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,241 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "onc-wound-assessment",
+  "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-wound-assessment",
+  "name": "ONCWoundAssessment",
+  "title": "Wound Assessment",
+  "status": "active",
+  "description": "Comprehensive wound assessment including staging and dimensions",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "399912005",
+              "system": "http://snomed.info/sct",
+              "display": "Pressure Ulcer"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "short": "Wound stage",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/wound-stage-vs"
+        }
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:length",
+        "path": "Observation.component",
+        "sliceName": "length",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:length.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "410668003",
+              "system": "http://snomed.info/sct",
+              "display": "Length"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:length.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:length.value[x].value",
+        "path": "Observation.component.value[x].value",
+        "constraint": [
+          {
+            "key": "positive-dimension",
+            "severity": "error",
+            "human": "Wound dimensions must be positive",
+            "expression": "$this > 0",
+            "source": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-wound-assessment"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:length.value[x].unit",
+        "path": "Observation.component.value[x].unit",
+        "patternString": "cm"
+      },
+      {
+        "id": "Observation.component:length.value[x].system",
+        "path": "Observation.component.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.component:length.value[x].code",
+        "path": "Observation.component.value[x].code",
+        "patternCode": "cm"
+      },
+      {
+        "id": "Observation.component:width",
+        "path": "Observation.component",
+        "sliceName": "width",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:width.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "410669006",
+              "system": "http://snomed.info/sct",
+              "display": "Width"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:width.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:width.value[x].value",
+        "path": "Observation.component.value[x].value",
+        "constraint": [
+          {
+            "key": "positive-dimension",
+            "severity": "error",
+            "human": "Wound dimensions must be positive",
+            "expression": "$this > 0",
+            "source": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-wound-assessment"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:width.value[x].unit",
+        "path": "Observation.component.value[x].unit",
+        "patternString": "cm"
+      },
+      {
+        "id": "Observation.component:width.value[x].system",
+        "path": "Observation.component.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.component:width.value[x].code",
+        "path": "Observation.component.value[x].code",
+        "patternCode": "cm"
+      },
+      {
+        "id": "Observation.component:depth",
+        "path": "Observation.component",
+        "sliceName": "depth",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:depth.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "410670007",
+              "system": "http://snomed.info/sct",
+              "display": "Depth"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:depth.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:depth.value[x].value",
+        "path": "Observation.component.value[x].value",
+        "constraint": [
+          {
+            "key": "positive-dimension",
+            "severity": "error",
+            "human": "Wound dimensions must be positive",
+            "expression": "$this > 0",
+            "source": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-wound-assessment"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:depth.value[x].unit",
+        "path": "Observation.component.value[x].unit",
+        "patternString": "cm"
+      },
+      {
+        "id": "Observation.component:depth.value[x].system",
+        "path": "Observation.component.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.component:depth.value[x].code",
+        "path": "Observation.component.value[x].code",
+        "patternCode": "cm"
+      }
+    ]
+  }
+}

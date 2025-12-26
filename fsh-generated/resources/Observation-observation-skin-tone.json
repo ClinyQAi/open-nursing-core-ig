@@ -1,0 +1,46 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-skin-tone",
+  "meta": {
+    "profile": [
+      "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-skintone-observation"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "nursing",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "66472-2",
+        "system": "http://loinc.org",
+        "display": "Fitzpatrick skin type"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/patient-example-jane"
+  },
+  "performer": [
+    {
+      "reference": "Practitioner/practitioner-example"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "403154004",
+        "system": "http://snomed.info/sct",
+        "display": "Fitzpatrick skin type II"
+      }
+    ]
+  }
+}

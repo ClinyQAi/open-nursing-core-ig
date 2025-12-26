@@ -1,0 +1,44 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "onc-monk-skintone-observation",
+  "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-monk-skintone-observation",
+  "name": "ONCMonkSkinToneObservation",
+  "title": "Monk Skin Tone Observation",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "mst-score",
+              "system": "http://open-nursing-core.org/CodeSystem/onc-observation-codes",
+              "display": "Monk Skin Tone Score"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-monk-scale-vs"
+        }
+      }
+    ]
+  }
+}

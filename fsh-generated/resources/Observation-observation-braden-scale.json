@@ -1,0 +1,147 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-braden-scale",
+  "meta": {
+    "profile": [
+      "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-braden-scale-assessment"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "nursing",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "38227-0",
+        "system": "http://loinc.org",
+        "display": "Braden scale total score"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "unit": "{score}",
+    "system": "http://unitsofmeasure.org",
+    "code": "1",
+    "value": 18
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "38222-1",
+            "system": "http://loinc.org",
+            "display": "Sensory perception Braden scale"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 3,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "1"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "38229-6",
+            "system": "http://loinc.org",
+            "display": "Moisture Braden scale"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 4,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "1"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "38223-9",
+            "system": "http://loinc.org",
+            "display": "Activity Braden scale"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 2,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "1"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "38224-7",
+            "system": "http://loinc.org",
+            "display": "Mobility Braden scale"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 3,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "1"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "38225-4",
+            "system": "http://loinc.org",
+            "display": "Nutrition Braden scale"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 3,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "1"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "38226-2",
+            "system": "http://loinc.org",
+            "display": "Friction and shear Braden scale"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 3,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "1"
+      }
+    }
+  ],
+  "subject": {
+    "reference": "Patient/patient-example-jane"
+  },
+  "performer": [
+    {
+      "reference": "Practitioner/practitioner-example"
+    }
+  ]
+}

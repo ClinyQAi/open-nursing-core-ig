@@ -9,10 +9,19 @@ import logging
 from typing import Optional, List, Dict, Any, Union
 
 import streamlit as st
-from langchain_openai import AzureOpenAI
-from langchain_openai import AzureOpenAIEmbeddings
-from langchain_chroma import Chroma
-from langchain.chains import RetrievalQA
+try:
+    from langchain_openai import AzureOpenAI
+    from langchain_openai import AzureOpenAIEmbeddings
+    from langchain_chroma import Chroma
+    from langchain.chains import RetrievalQA
+    AI_AVAILABLE = True
+except ImportError:
+    AI_AVAILABLE = False
+    # Define dummy classes or None to prevent NameError if used in type hints or default args
+    AzureOpenAI = None
+    AzureOpenAIEmbeddings = None
+    Chroma = None
+    RetrievalQA = None
 
 from core.settings import settings
 
@@ -100,6 +109,10 @@ def authenticate_user(username: str, password: str) -> Optional[str]:
 @st.cache_resource
 def load_vector_db():
     """Load and cache ChromaDB vector database."""
+    if not AI_AVAILABLE:
+        logger.warning("AI modules not available - vector DB disabled")
+        return None
+
     vector_db_path = settings.VECTOR_DB_PATH
     local_db_path = settings.LOCAL_DB_PATH
 

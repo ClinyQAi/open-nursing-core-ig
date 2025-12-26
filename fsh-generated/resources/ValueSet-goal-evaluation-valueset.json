@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "GoalEvaluationValueSet",
+  "id": "goal-evaluation-valueset",
+  "title": "Goal Evaluation Value Set",
+  "description": "Value set for evaluating patient goal outcomes",
+  "url": "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "385633008",
+            "display": "Resolved"
+          },
+          {
+            "code": "385634002",
+            "display": "Worsened"
+          },
+          {
+            "code": "118222006",
+            "display": "General finding of observation of patient"
+          }
+        ]
+      }
+    ]
+  }
+}

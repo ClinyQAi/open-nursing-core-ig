@@ -1,0 +1,30 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "ONCProblemType",
+  "id": "onc-problem-type",
+  "title": "Problem Type CodeSystem",
+  "description": "Code system for categorizing types of nursing problems",
+  "url": "http://open-nursing-core.org/CodeSystem/onc-problem-type",
+  "concept": [
+    {
+      "code": "nursing-diagnosis",
+      "display": "Nursing Diagnosis",
+      "definition": "A clinical judgment about individual, family, or community responses to actual or potential health problems"
+    },
+    {
+      "code": "risk-diagnosis",
+      "display": "Risk Diagnosis",
+      "definition": "A clinical judgment about an individual's vulnerability to developing an undesirable health condition"
+    },
+    {
+      "code": "health-promotion",
+      "display": "Health Promotion Diagnosis",
+      "definition": "A clinical judgment about motivation to increase wellbeing"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 3
+}

@@ -1,28 +1,4 @@
 // =============================================================================
-// NEWS2 (National Early Warning Score 2) Profile
-// =============================================================================
-Profile: ONCNEWS2Score
-Parent: ONCNursingAssessment
-Id: onc-news2-score
-Title: "NEWS2 Score"
-Description: "National Early Warning Score 2 (NEWS2) for detecting clinical deterioration"
-* status = #final
-* status MS
-* code = http://loinc.org#88330-6 "National Early Warning Score [NEWS]"
-* code MS
-* value[x] only Quantity
-* valueQuantity 1..1 MS
-* valueQuantity.value obeys news2-range
-* valueQuantity.unit = "{score}"
-* valueQuantity.system = "http://unitsofmeasure.org"
-* valueQuantity ^short = "NEWS2 total score (0-20)"
-
-Invariant: news2-range
-Description: "NEWS2 score must be between 0 and 20"
-Expression: "$this >= 0 and $this <= 20"
-Severity: #error
-
-// =============================================================================
 // Pain Assessment (Numeric Rating Scale 0-10) Profile
 // =============================================================================
 Profile: ONCPainAssessment

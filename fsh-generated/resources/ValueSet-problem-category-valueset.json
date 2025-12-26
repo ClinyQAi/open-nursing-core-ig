@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ProblemCategoryValueSet",
+  "id": "problem-category-valueset",
+  "title": "Problem Category Value Set",
+  "description": "Value set for categorizing nursing problems",
+  "url": "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/problem-category-valueset",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://open-nursing-core.org/CodeSystem/onc-problem-type"
+      }
+    ]
+  }
+}

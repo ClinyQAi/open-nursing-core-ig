@@ -1,0 +1,38 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ACVPUValueSet",
+  "id": "acvpu-vs",
+  "title": "ACVPU Value Set",
+  "description": "ACVPU consciousness level codes",
+  "url": "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/acvpu-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "248234008",
+            "display": "Mentally alert"
+          },
+          {
+            "code": "300202002",
+            "display": "Responds to voice"
+          },
+          {
+            "code": "450847001",
+            "display": "Responds to pain"
+          },
+          {
+            "code": "422768004",
+            "display": "Unresponsive"
+          },
+          {
+            "code": "130987000",
+            "display": "Acute confusion"
+          }
+        ]
+      }
+    ]
+  }
+}

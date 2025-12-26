@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "PainAssessmentCodeValueSet",
+  "id": "pain-assessment-code-vs",
+  "title": "Pain Assessment Code Value Set",
+  "description": "LOINC codes for pain severity assessment",
+  "url": "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/pain-assessment-code-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "72514-3",
+            "display": "Pain severity - 0-10 verbal numeric rating"
+          },
+          {
+            "code": "38208-5",
+            "display": "Pain severity - Reported"
+          }
+        ]
+      }
+    ]
+  }
+}

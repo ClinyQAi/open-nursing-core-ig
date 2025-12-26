@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "NursingProblemValueSet",
+  "id": "nursing-problem-valueset",
+  "title": "Nursing Problem Value Set",
+  "description": "Value set for nursing problems and diagnoses",
+  "url": "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-problem-valueset",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "129839007",
+            "display": "At risk for falls"
+          },
+          {
+            "code": "162828007",
+            "display": "Risk of falls"
+          },
+          {
+            "code": "300893006",
+            "display": "Nutritional finding"
+          },
+          {
+            "code": "22253000",
+            "display": "Pain"
+          }
+        ]
+      }
+    ]
+  }
+}

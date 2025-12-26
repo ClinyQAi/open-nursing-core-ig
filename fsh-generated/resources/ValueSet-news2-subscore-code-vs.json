@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "NEWS2SubscoreCodeValueSet",
+  "id": "news2-subscore-code-vs",
+  "title": "NEWS2 Sub-Score Codes",
+  "description": "SNOMED codes for NEWS2 sub-scores",
+  "url": "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/news2-subscore-code-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "1104301000000104",
+            "display": "Royal College of Physicians National Early Warning Score 2 - pulse score"
+          },
+          {
+            "code": "1104311000000102",
+            "display": "Royal College of Physicians National Early Warning Score 2 - respiration rate score"
+          },
+          {
+            "code": "1104331000000106",
+            "display": "Royal College of Physicians National Early Warning Score 2 - temperature score"
+          },
+          {
+            "code": "1104351000000100",
+            "display": "Royal College of Physicians National Early Warning Score 2 - ACVPU score"
+          },
+          {
+            "code": "1104341000000103",
+            "display": "Royal College of Physicians National Early Warning Score 2 - oxygen saturation scale 1 score"
+          },
+          {
+            "code": "1104321000000108",
+            "display": "Royal College of Physicians National Early Warning Score 2 - systolic blood pressure score"
+          }
+        ]
+      }
+    ]
+  }
+}

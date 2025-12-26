@@ -30,6 +30,10 @@ class Settings(BaseSettings):
 
     # Database
     USE_DATABASE: bool = Field(default=True)
+    DB_TYPE: str = Field(default="sqlite")  # postgres or sqlite
+    SQLITE_DB_PATH: str = Field(default="nursing_validator.db")
+    
+    # Postgres Settings
     DB_HOST: str = Field(default="localhost")
     DB_PORT: str = Field(default="5432")
     DB_NAME: str = Field(default="nursing_validator")

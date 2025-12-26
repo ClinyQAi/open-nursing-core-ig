@@ -10,8 +10,14 @@ import logging
 from typing import Optional, Dict, List, Any
 
 import streamlit as st
-from langchain_openai import AzureOpenAI
-from langchain.chains import RetrievalQA
+# AI/ML Imports (Optional for basic platform run)
+try:
+    from langchain_openai import AzureOpenAI
+    from langchain.chains import RetrievalQA
+    AI_AVAILABLE = True
+except ImportError:
+    AI_AVAILABLE = False
+    logging.warning("LangChain/AI modules not available (running in non-AI mode)")
 
 # Core imports
 from core.settings import settings
@@ -26,6 +32,7 @@ from core.validator import (
     hash_password,
     DB_AVAILABLE
 )
+from core.analytics_dashboard import render_dashboard
 
 # Optional Imports with new paths
 try:
@@ -249,10 +256,22 @@ def main_app():
 
     if ML_AVAILABLE:
         tabs.append("🔮 ML Analytics")
+        
+    if st.session_state.role == "admin":
+        tabs.append("📊 Analytics")
 
     tabs.append("⚙️ Admin" if st.session_state.role == "admin" else "ℹ️ Info")
 
     selected_tabs = st.tabs(tabs)
+
+    # ... [Existing Tabs] ...
+
+    # Analytics Tab (Before Admin/Info)
+    if "📊 Analytics" in tabs:
+        # Find index dynamically or just check constraint
+        idx = tabs.index("📊 Analytics")
+        with selected_tabs[idx]:
+            render_dashboard()
 
     # Chat Assistant (Tab 1)
     with selected_tabs[0]:
@@ -294,7 +313,7 @@ def main_app():
                 st.markdown(user_input)
 
             with st.chat_message("assistant"):
-                if vector_db:
+                if vector_db and AI_AVAILABLE:
                     try:
                         # Use AzureOpenAI with settings handled implicitly or explicitly if needed
                         # LangChain's AzureOpenAI usually picks up env vars if not passed,

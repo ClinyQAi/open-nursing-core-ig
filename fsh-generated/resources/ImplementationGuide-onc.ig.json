@@ -1,0 +1,398 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "onc.ig",
+  "url": "https://clinyqai.github.io/open-nursing-core-ig/ImplementationGuide/onc.ig",
+  "version": "1.0.0",
+  "name": "OpenNursingCoreIG",
+  "title": "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
+  "status": "active",
+  "description": "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules.",
+  "packageId": "onc.ig",
+  "license": "MIT",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-acvpu"
+        },
+        "name": "ACVPU Consciousness Level",
+        "description": "ACVPU consciousness level assessment for NEWS2 (Alert, Confusion, Voice, Pain, Unresponsive)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/acvpu-vs"
+        },
+        "name": "ACVPU Value Set",
+        "description": "ACVPU consciousness level codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-blood-pressure"
+        },
+        "name": "Blood Pressure",
+        "description": "Blood pressure observation for NEWS2 (systolic BP used for scoring)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-body-temperature"
+        },
+        "name": "Body Temperature",
+        "description": "Body temperature observation for NEWS2",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-braden-scale-assessment"
+        },
+        "name": "Braden Scale Assessment",
+        "description": "A profile for the Braden Scale pressure ulcer risk assessment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/example-goal-evaluation"
+        },
+        "name": "example-goal-evaluation",
+        "exampleCanonical": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-goal-evaluation"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/example-nursing-intervention"
+        },
+        "name": "example-nursing-intervention",
+        "exampleCanonical": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-intervention"
+      },
+      {
+        "reference": {
+          "reference": "Condition/example-nursing-problem"
+        },
+        "name": "example-nursing-problem",
+        "exampleCanonical": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-problem"
+      },
+      {
+        "reference": {
+          "reference": "Goal/example-patient-goal"
+        },
+        "name": "example-patient-goal",
+        "exampleCanonical": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-goal"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/skintone-vs"
+        },
+        "name": "Fitzpatrick Skin Tone Value Set",
+        "description": "Value set for Fitzpatrick skin type classifications",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-goal-evaluation"
+        },
+        "name": "Goal Evaluation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/goal-evaluation-valueset"
+        },
+        "name": "Goal Evaluation Value Set",
+        "description": "Value set for evaluating patient goal outcomes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-heart-rate"
+        },
+        "name": "Heart Rate",
+        "description": "Heart rate (pulse) observation for NEWS2",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/housing-status-vs"
+        },
+        "name": "Housing Status Value Set",
+        "description": "Value set for patient housing status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-inspired-oxygen"
+        },
+        "name": "Inspired Oxygen",
+        "description": "Inspired oxygen observation for NEWS2 (air vs supplemental oxygen)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/inspired-oxygen-vs"
+        },
+        "name": "Inspired Oxygen Value Set",
+        "description": "Codes for inspired oxygen status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/intervention-goal-reference"
+        },
+        "name": "Intervention Goal Reference",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-monk-skintone-observation"
+        },
+        "name": "Monk Skin Tone Observation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/onc-monk-scale"
+        },
+        "name": "Monk Skin Tone Scale CodeSystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/onc-monk-scale-vs"
+        },
+        "name": "Monk Skin Tone Scale ValueSet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/news2-code-vs"
+        },
+        "name": "NEWS2 Code Value Set",
+        "description": "LOINC and SNOMED codes for NEWS2",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-news2-score"
+        },
+        "name": "NEWS2 Score",
+        "description": "National Early Warning Score 2 (NEWS2) for detecting clinical deterioration. Fully aligned with NHS CareConnect-NEWS2-Observation-1.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-news2-subscore"
+        },
+        "name": "NEWS2 Sub-Score",
+        "description": "Individual parameter sub-score for NEWS2 (0-3 for most parameters). References the related vital sign observation.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/news2-subscore-code-vs"
+        },
+        "name": "NEWS2 Sub-Score Codes",
+        "description": "SNOMED codes for NEWS2 sub-scores",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-nursing-intervention"
+        },
+        "name": "Nursing Intervention",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nursing-intervention-valueset"
+        },
+        "name": "Nursing Intervention Value Set",
+        "description": "Value set for nursing interventions",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-nursing-problem"
+        },
+        "name": "Nursing Problem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nursing-problem-valueset"
+        },
+        "name": "Nursing Problem Value Set",
+        "description": "Value set for nursing problems and diagnoses",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/observation-goal-reference"
+        },
+        "name": "Observation Goal Reference",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-braden-scale"
+        },
+        "name": "observation-braden-scale",
+        "exampleCanonical": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-braden-scale-assessment"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-skin-tone"
+        },
+        "name": "observation-skin-tone",
+        "exampleCanonical": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-skintone-observation"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-nhs-patient"
+        },
+        "name": "ONC NHS Patient",
+        "description": "A patient profile for use in NHS nursing contexts with ethnic category extension.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/onc-observation-codes"
+        },
+        "name": "ONC Observation Codes",
+        "description": "Custom observation codes for Open Nursing Core",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-nursing-assessment"
+        },
+        "name": "Open Nursing Core Assessment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-oxygen-saturation"
+        },
+        "name": "Oxygen Saturation",
+        "description": "Oxygen saturation (SpO2) observation for NEWS2",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-pain-assessment"
+        },
+        "name": "Pain Assessment (NRS 0-10)",
+        "description": "Pain severity assessment using the Numeric Rating Scale (0-10)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/pain-assessment-code-vs"
+        },
+        "name": "Pain Assessment Code Value Set",
+        "description": "LOINC codes for pain severity assessment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-patient-goal"
+        },
+        "name": "Patient Goal",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Patient/patient-example-jane"
+        },
+        "name": "patient-example-jane",
+        "exampleCanonical": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nhs-patient"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/practitioner-example"
+        },
+        "name": "practitioner-example",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/problem-category-valueset"
+        },
+        "name": "Problem Category Value Set",
+        "description": "Value set for categorizing nursing problems",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/onc-problem-type"
+        },
+        "name": "Problem Type CodeSystem",
+        "description": "Code system for categorizing types of nursing problems",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-respiration-rate"
+        },
+        "name": "Respiration Rate",
+        "description": "Respiration rate observation for NEWS2",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-skintone-observation"
+        },
+        "name": "Skin Tone Observation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/UKCore-Extension-EthnicCategory"
+        },
+        "name": "UK Core Ethnic Category",
+        "description": "An extension to record the ethnic category of a patient, as per UK Core standards.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-wound-assessment"
+        },
+        "name": "Wound Assessment",
+        "description": "Comprehensive wound assessment including staging and dimensions",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/wound-stage-vs"
+        },
+        "name": "Wound Stage Value Set",
+        "description": "SNOMED CT codes for pressure ulcer staging",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2025+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "release"
+      }
+    ]
+  }
+}
