@@ -38,7 +38,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-monk-skintone-ob
   "name" : "ONCMonkSkinToneObservation",
   "title" : "Monk Skin Tone Observation",
   "status" : "active",
-  "date" : "2025-12-26T01:59:09+00:00",
+  "date" : "2025-12-26T02:26:51+00:00",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {

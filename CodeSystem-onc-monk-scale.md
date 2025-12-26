@@ -28,7 +28,7 @@
   "name" : "ONCMonkScale",
   "title" : "Monk Skin Tone Scale CodeSystem",
   "status" : "active",
-  "date" : "2025-12-26T01:59:09+00:00",
+  "date" : "2025-12-26T02:26:51+00:00",
   "content" : "complete",
   "count" : 10,
   "concept" : [
