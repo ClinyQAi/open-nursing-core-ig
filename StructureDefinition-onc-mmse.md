@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-mmse.csv), [Exce
   "name" : "ONCMMSE",
   "title" : "Mini Mental State Examination (MMSE)",
   "status" : "active",
-  "date" : "2025-12-26T10:24:22+00:00",
+  "date" : "2025-12-26T10:42:17+00:00",
   "description" : "Mini Mental State Examination for cognitive function screening. Score 24-30=no impairment, 18-23=mild, 0-17=severe. Total range 0-30.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
