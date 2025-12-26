@@ -11,7 +11,7 @@
   <name value="OpenNursingCoreIG"/>
   <title value="Open Nursing Core FHIR Implementation Guide (ONC-IG)"/>
   <status value="active"/>
-  <date value="2025-12-26T00:13:32+00:00"/>
+  <date value="2025-12-26T00:14:27+00:00"/>
   <description value="Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules."/>
   <packageId value="onc.ig"/>
   <license value="MIT"/>
@@ -922,6 +922,17 @@
       </reference>
       <name value="UK Core Ethnic Category"/>
       <description value="An extension to record the ethnic category of a patient, as per UK Core standards."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onc-waterlow-score"/>
+      </reference>
+      <name value="Waterlow Score"/>
+      <description value="Waterlow Pressure Ulcer Risk Assessment - NHS standard tool. Score ≥10 indicates at risk, ≥15 high risk, ≥20 very high risk."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

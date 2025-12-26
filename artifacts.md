@@ -33,6 +33,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [Patient Goal](StructureDefinition-onc-patient-goal.md) |  |
 | [Respiration Rate](StructureDefinition-onc-respiration-rate.md) | Respiration rate observation for NEWS2 |
 | [Skin Tone Observation](StructureDefinition-onc-skintone-observation.md) |  |
+| [Waterlow Score](StructureDefinition-onc-waterlow-score.md) | Waterlow Pressure Ulcer Risk Assessment - NHS standard tool. Score ≥10 indicates at risk, ≥15 high risk, ≥20 very high risk. |
 | [Wound Assessment](StructureDefinition-onc-wound-assessment.md) | Comprehensive wound assessment including staging and dimensions |
 
 ### Structures: Extension Definitions 

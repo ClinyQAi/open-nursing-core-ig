@@ -1,9 +1,9 @@
 OpenNursingCoreIG : Validation Results
 =========================================
 
-err = 72, warn = 60, info = 45
+err = 75, warn = 61, info = 46
 IG Publisher Version: 2.0.29
-Generated Fri Dec 26 00:15:34 UTC 2025. FHIR version 4.0.1 for onc.ig#1.0.0 (canonical = https://clinyqai.github.io/open-nursing-core-ig)
+Generated Fri Dec 26 00:16:33 UTC 2025. FHIR version 4.0.1 for onc.ig#1.0.0 (canonical = https://clinyqai.github.io/open-nursing-core-ig)
  Build Errors : 1 / 22 / 0
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-monk-scale : 0 / 3 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/CodeSystem-onc-observation-codes : 2 / 2 / 2
@@ -40,6 +40,7 @@ Generated Fri Dec 26 00:15:34 UTC 2025. FHIR version 4.0.1 for onc.ig#1.0.0 (can
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-patient-goal : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-respiration-rate : 1 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-skintone-observation : 3 / 0 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-waterlow-score : 3 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-wound-assessment : 5 / 3 / 4
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-acvpu-vs : 0 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-goal-evaluation-valueset : 0 / 1 / 3
@@ -219,6 +220,12 @@ ERROR: StructureDefinition/onc-skintone-observation: StructureDefinition.snapsho
 ERROR: StructureDefinition/onc-skintone-observation: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Fitzpatrick skin type' for http://loinc.org#66472-2. Valid display is one of 3 choices: 'During your life, altogether how many times have you injected drugs not prescribed by a doctor [PhenX]' (en-US), 'During your life, altogether how many times have you injected drugs not prescribed by a doctor [PhenX]' (en-US) or 'How many times injected nRate PhenX' (en-US) (for the language(s) 'en-US')
 ERROR: StructureDefinition/onc-skintone-observation: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Fitzpatrick skin type' for http://loinc.org#66472-2. Valid display is one of 3 choices: 'During your life, altogether how many times have you injected drugs not prescribed by a doctor [PhenX]' (en-US), 'During your life, altogether how many times have you injected drugs not prescribed by a doctor [PhenX]' (en-US) or 'How many times injected nRate PhenX' (en-US) (for the language(s) 'en-US')
 INFORMATION: StructureDefinition/onc-skintone-observation: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+== fsh-generated/resources/StructureDefinition-onc-waterlow-score.json ==
+ERROR: StructureDefinition/onc-waterlow-score: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
+ERROR: StructureDefinition/onc-waterlow-score: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Waterlow score (observable entity)' for http://snomed.info/sct#443846001. Valid display is 'Detail of history of travel (observable entity)' (en) (for the language(s) 'en-US')
+ERROR: StructureDefinition/onc-waterlow-score: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Waterlow score (observable entity)' for http://snomed.info/sct#443846001. Valid display is 'Detail of history of travel (observable entity)' (en) (for the language(s) 'en-US')
+INFORMATION: StructureDefinition/onc-waterlow-score: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition.where(url = 'https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-waterlow-score'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-onc-wound-assessment.json ==
 ERROR: StructureDefinition/onc-wound-assessment: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
 WARNING: StructureDefinition/onc-wound-assessment: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept).coding[0]: The concept '399912005' has a status of inactive and its use should be reviewed

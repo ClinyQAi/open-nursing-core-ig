@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-oxygen-saturatio
   "name" : "ONCOxygenSaturation",
   "title" : "Oxygen Saturation",
   "status" : "active",
-  "date" : "2025-12-26T00:13:32+00:00",
+  "date" : "2025-12-26T00:14:27+00:00",
   "description" : "Oxygen saturation (SpO2) observation for NEWS2",
   "fhirVersion" : "4.0.1",
   "mapping" : [

@@ -50,7 +50,7 @@ LOINC codes for pain severity assessment
   "name" : "PainAssessmentCodeValueSet",
   "title" : "Pain Assessment Code Value Set",
   "status" : "active",
-  "date" : "2025-12-26T00:13:32+00:00",
+  "date" : "2025-12-26T00:14:27+00:00",
   "description" : "LOINC codes for pain severity assessment",
   "compose" : {
     "include" : [
