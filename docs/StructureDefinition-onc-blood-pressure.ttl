@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "ONCBloodPressure"] ; # 
   fhir:title [ fhir:v "Blood Pressure"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-12-26T14:13:58+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-26T15:22:58+00:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "Blood pressure observation for NEWS2 (systolic BP used for scoring)"] ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
   fhir:mapping ( [
@@ -1335,6 +1335,11 @@
          fhir:code [
            fhir:v "CodeableConcept"^^xsd:anyURI ;
            fhir:l fhir:CodeableConcept
+         ]
+       ] [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
          ]
        ] ) ;
        fhir:condition ( [ fhir:v "obs-7" ] ) ;

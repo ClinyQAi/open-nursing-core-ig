@@ -47,7 +47,7 @@
   "name" : "ONCMonkScaleVS",
   "title" : "Monk Skin Tone Scale ValueSet",
   "status" : "draft",
-  "date" : "2025-12-26T14:13:58+00:00",
+  "date" : "2025-12-26T15:22:58+00:00",
   "compose" : {
     "include" : [
       {

@@ -80,6 +80,67 @@
       ]
     },
     {
+      "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-4at-acute-change-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "AcuteChangeVS",
+      "title" : "4AT Acute Change Value Set",
+      "description" : "Scoring for Acute Change or Fluctuating Course",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-4at-alertness-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "AlertnessVS",
+      "title" : "4AT Alertness Value Set",
+      "description" : "Scoring options for 4AT Alertness",
+      "systems" : [
+        "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-4at-amt4-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "AMT4VS",
+      "title" : "4AT AMT4 Value Set",
+      "description" : "Scoring options for AMT4 (Age, DOB, Place, Year)",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-4at-attention-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "AttentionVS",
+      "title" : "4AT Attention Value Set",
+      "description" : "Scoring for Months Backwards test",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-cfs-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ClinicalFrailtyScaleVS",
+      "title" : "Clinical Frailty Scale Value Set",
+      "description" : "Codes for Rockwood Clinical Frailty Scale (1-9)",
+      "systems" : [
+        "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"
+      ]
+    },
+    {
+      "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-mca-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MentalCapacityVS",
+      "title" : "Mental Capacity Finding Value Set",
+      "description" : "Codes indicating presence or absence of capacity",
+      "systems" : [
+        "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"
+      ]
+    },
+    {
       "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-monk-scale-vs",
       "version" : "0.1.0",
       "status" : "draft",

@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-glasgow-coma-sca
   "name" : "ONCGlasgowComaScale",
   "title" : "Glasgow Coma Scale",
   "status" : "draft",
-  "date" : "2025-12-26T14:13:58+00:00",
+  "date" : "2025-12-26T15:22:58+00:00",
   "description" : "Glasgow Coma Scale (GCS) for assessing level of consciousness. Total score 3-15 with three required components: Eye (1-4), Verbal (1-5), Motor (1-6).",
   "fhirVersion" : "4.0.1",
   "mapping" : [

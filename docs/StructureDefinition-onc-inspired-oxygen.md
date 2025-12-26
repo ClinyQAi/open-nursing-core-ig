@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-inspired-oxygen.
   "name" : "ONCInspiredOxygen",
   "title" : "Inspired Oxygen",
   "status" : "draft",
-  "date" : "2025-12-26T14:13:58+00:00",
+  "date" : "2025-12-26T15:22:58+00:00",
   "description" : "Inspired oxygen observation for NEWS2 (air vs supplemental oxygen)",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -112,7 +112,15 @@ Other representations of profile: [CSV](StructureDefinition-onc-inspired-oxygen.
           ],
           "ordered" : false,
           "rules" : "open"
-        }
+        },
+        "type" : [
+          {
+            "code" : "Quantity"
+          },
+          {
+            "code" : "CodeableConcept"
+          }
+        ]
       },
       {
         "id" : "Observation.value[x]:valueQuantity",

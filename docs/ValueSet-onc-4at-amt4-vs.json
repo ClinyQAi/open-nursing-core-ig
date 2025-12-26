@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "onc-4at-amt4-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet onc-4at-amt4-vs</b></p><a name=\"onc-4at-amt4-vs\"> </a><a name=\"hconc-4at-amt4-vs\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/4851000147101\">4851000147101</a></td><td>No mistakes</td></tr><tr><td><a href=\"http://snomed.info/id/4861000147105\">4861000147105</a></td><td>1 mistake</td></tr><tr><td><a href=\"http://snomed.info/id/4871000147108\">4871000147108</a></td><td>2 or more mistakes/untestable</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-4at-amt4-vs",
+  "version" : "0.1.0",
+  "name" : "AMT4VS",
+  "title" : "4AT AMT4 Value Set",
+  "status" : "draft",
+  "date" : "2025-12-26T15:22:58+00:00",
+  "description" : "Scoring options for AMT4 (Age, DOB, Place, Year)",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "4851000147101",
+        "display" : "No mistakes"
+      },
+      {
+        "code" : "4861000147105",
+        "display" : "1 mistake"
+      },
+      {
+        "code" : "4871000147108",
+        "display" : "2 or more mistakes/untestable"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,134 @@
+# Reasonable Adjustment - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Reasonable Adjustment**
+
+## Resource Profile: Reasonable Adjustment 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-reasonable-adjustment | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:ONCReasonableAdjustment |
+
+ 
+Captures specific strict requirements for care adjustments under the Equality Act (e.g., 'Needs BSL Interpreter', 'Cannot use stairs', 'Requires large print'). 
+
+**Usages:**
+
+* This Profile is not used by any profiles in this Implementation Guide
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-reasonable-adjustment)
+
+### Formal Views of Profile Content
+
+ [Description of Profiles, Differentials, Snapshots and how the different presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](StructureDefinition-onc-reasonable-adjustment.csv), [Excel](StructureDefinition-onc-reasonable-adjustment.xlsx), [Schematron](StructureDefinition-onc-reasonable-adjustment.sch) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "onc-reasonable-adjustment",
+  "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-reasonable-adjustment",
+  "version" : "0.1.0",
+  "name" : "ONCReasonableAdjustment",
+  "title" : "Reasonable Adjustment",
+  "status" : "draft",
+  "date" : "2025-12-26T15:22:58+00:00",
+  "description" : "Captures specific strict requirements for care adjustments under the Equality Act (e.g., 'Needs BSL Interpreter', 'Cannot use stairs', 'Requires large print').",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [
+    {
+      "identity" : "workflow",
+      "uri" : "http://hl7.org/fhir/workflow",
+      "name" : "Workflow Pattern"
+    },
+    {
+      "identity" : "sct-concept",
+      "uri" : "http://snomed.info/conceptdomain",
+      "name" : "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity" : "v2",
+      "uri" : "http://hl7.org/v2",
+      "name" : "HL7 v2 Mapping"
+    },
+    {
+      "identity" : "rim",
+      "uri" : "http://hl7.org/v3",
+      "name" : "RIM Mapping"
+    },
+    {
+      "identity" : "w5",
+      "uri" : "http://hl7.org/fhir/fivews",
+      "name" : "FiveWs Pattern Mapping"
+    },
+    {
+      "identity" : "sct-attr",
+      "uri" : "http://snomed.org/attributebinding",
+      "name" : "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind" : "resource",
+  "abstract" : false,
+  "type" : "Observation",
+  "baseDefinition" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [
+      {
+        "id" : "Observation",
+        "path" : "Observation"
+      },
+      {
+        "id" : "Observation.category",
+        "path" : "Observation.category",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+              "code" : "exam"
+            }
+          ]
+        }
+      },
+      {
+        "id" : "Observation.code",
+        "path" : "Observation.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "code" : "reasonable-adjustment"
+            }
+          ]
+        }
+      },
+      {
+        "id" : "Observation.value[x]",
+        "path" : "Observation.value[x]",
+        "short" : "Description of required adjustment",
+        "type" : [
+          {
+            "code" : "string"
+          }
+        ]
+      },
+      {
+        "id" : "Observation.note",
+        "path" : "Observation.note",
+        "max" : "1",
+        "mustSupport" : true
+      }
+    ]
+  }
+}
+
+```

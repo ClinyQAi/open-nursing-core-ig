@@ -11,7 +11,7 @@
   <name value="OpenNursingCoreIG"/>
   <title value="Open Nursing Core FHIR Implementation Guide (ONC-IG)"/>
   <status value="draft"/>
-  <date value="2025-12-26T14:13:58+00:00"/>
+  <date value="2025-12-26T15:22:58+00:00"/>
   <description value="Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome."/>
   <packageId value="onc.ig"/>
   <license value="MIT"/>
@@ -438,6 +438,61 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/onc-4at-acute-change-vs"/>
+      </reference>
+      <name value="4AT Acute Change Value Set"/>
+      <description value="Scoring for Acute Change or Fluctuating Course"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/onc-4at-alertness-vs"/>
+      </reference>
+      <name value="4AT Alertness Value Set"/>
+      <description value="Scoring options for 4AT Alertness"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/onc-4at-amt4-vs"/>
+      </reference>
+      <name value="4AT AMT4 Value Set"/>
+      <description value="Scoring options for AMT4 (Age, DOB, Place, Year)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/onc-4at-attention-vs"/>
+      </reference>
+      <name value="4AT Attention Value Set"/>
+      <description value="Scoring for Months Backwards test"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onc-4at-delirium"/>
+      </reference>
+      <name value="4AT Delirium Assessment"/>
+      <description value="Rapid clinical test for delirium (4AT) comprising Alertness, AMT4, Attention, and Acute Change/Fluctuating Course. A total score of 4 or more suggests possible delirium."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -500,6 +555,28 @@
       </reference>
       <name value="Braden Scale Assessment"/>
       <description value="A profile for the Braden Scale pressure ulcer risk assessment"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onc-clinical-frailty-scale"/>
+      </reference>
+      <name value="Clinical Frailty Scale (CFS)"/>
+      <description value="Assessment of frailty using the Rockwood Clinical Frailty Scale (1-9). Essential for older adults to determine baseline functional status."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/onc-cfs-vs"/>
+      </reference>
+      <name value="Clinical Frailty Scale Value Set"/>
+      <description value="Codes for Rockwood Clinical Frailty Scale (1-9)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -640,6 +717,28 @@
       </reference>
       <name value="Intervention Goal Reference"/>
       <description value="Extension to link nursing interventions to the patient goals they are intended to achieve. Supports goal-directed care planning and intervention tracking."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onc-mental-capacity"/>
+      </reference>
+      <name value="Mental Capacity Assessment"/>
+      <description value="Records the outcome of a Mental Capacity Assessment for a specific decision. Fundamental legal safeguard in UK nursing practice."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/onc-mca-vs"/>
+      </reference>
+      <name value="Mental Capacity Finding Value Set"/>
+      <description value="Codes indicating presence or absence of capacity"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -904,6 +1003,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onc-patient-story"/>
+      </reference>
+      <name value="Patient Story"/>
+      <description value="A narrative summary of the patient's background, biography, preferences, and personhood. Goes beyond clinical history to capture 'who the person is'."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
@@ -960,6 +1070,28 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/onc-reasonable-adjustment"/>
+      </reference>
+      <name value="Reasonable Adjustment"/>
+      <description value="Captures specific strict requirements for care adjustments under the Equality Act (e.g., 'Needs BSL Interpreter', 'Cannot use stairs', 'Requires large print')."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onc-relational-observation"/>
+      </reference>
+      <name value="Relational Engagement Score"/>
+      <description value="Assessment of the quality and depth of the nurse-patient relationship or engagement level. Supports the relational aspect of care."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/onc-respiration-rate"/>
       </reference>
       <name value="Respiration Rate"/>
@@ -997,6 +1129,17 @@
       </reference>
       <name value="Waterlow Score"/>
       <description value="Waterlow Pressure Ulcer Risk Assessment - NHS standard tool. Score ≥10 indicates at risk, ≥15 high risk, ≥20 very high risk."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onc-what-matters"/>
+      </reference>
+      <name value="What Matters to Me"/>
+      <description value="Captures the patient's specific, personal priorities and non-clinical goals (e.g., 'I want to walk my daughter down the aisle'). Fundamental to person-centred care."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

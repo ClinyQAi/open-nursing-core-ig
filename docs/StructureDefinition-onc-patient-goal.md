@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-patient-goal.csv
   "name" : "ONCPatientGoal",
   "title" : "Patient Goal",
   "status" : "draft",
-  "date" : "2025-12-26T14:13:58+00:00",
+  "date" : "2025-12-26T15:22:58+00:00",
   "description" : "Patient-centered goal established in response to identified nursing problems. Defines measurable outcomes and addresses specific nursing diagnoses. Part of the ADPIE framework's Planning phase.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
