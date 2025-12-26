@@ -17,6 +17,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [Blood Pressure](StructureDefinition-onc-blood-pressure.md) | Blood pressure observation for NEWS2 (systolic BP used for scoring) |
 | [Body Temperature](StructureDefinition-onc-body-temperature.md) | Body temperature observation for NEWS2 |
 | [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessment.md) | A profile for the Braden Scale pressure ulcer risk assessment |
+| [Glasgow Coma Scale](StructureDefinition-onc-glasgow-coma-scale.md) | Glasgow Coma Scale (GCS) for assessing level of consciousness. Total score 3-15 with three required components: Eye (1-4), Verbal (1-5), Motor (1-6). |
 | [Goal Evaluation](StructureDefinition-onc-goal-evaluation.md) |  |
 | [Heart Rate](StructureDefinition-onc-heart-rate.md) | Heart rate (pulse) observation for NEWS2 |
 | [Inspired Oxygen](StructureDefinition-onc-inspired-oxygen.md) | Inspired oxygen observation for NEWS2 (air vs supplemental oxygen) |

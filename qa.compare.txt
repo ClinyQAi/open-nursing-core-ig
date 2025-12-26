@@ -1,7 +1,7 @@
 OpenNursingCoreIG : Validation Results
 =========================================
 
-err = 71, warn = 59, info = 42
+err = 72, warn = 60, info = 45
 $--
 Generated $--. FHIR version $-- for onc.ig#$-- (canonical = https://clinyqai.github.io/open-nursing-core-ig)
  Build Errors : 1 / 22 / 0
@@ -24,6 +24,7 @@ Generated $--. FHIR version $-- for onc.ig#$-- (canonical = https://clinyqai.git
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-blood-pressure : 1 / 1 / 4
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-body-temperature : 1 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-braden-scale-assessment : 15 / 0 / 4
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-glasgow-coma-scale : 1 / 1 / 4
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-goal-evaluation : 1 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-heart-rate : 1 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-inspired-oxygen : 1 / 1 / 2
@@ -162,6 +163,12 @@ ERROR: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.diff
 INFORMATION: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.differential.element[7].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.snapshot.element[49].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+== fsh-generated/resources/StructureDefinition-onc-glasgow-coma-scale.json ==
+ERROR: StructureDefinition/onc-glasgow-coma-scale: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
+INFORMATION: StructureDefinition/onc-glasgow-coma-scale: StructureDefinition.differential.element[7].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/onc-glasgow-coma-scale: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/onc-glasgow-coma-scale: StructureDefinition.snapshot.element[49].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition.where(url = 'https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-glasgow-coma-scale'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-onc-goal-evaluation.json ==
 ERROR: StructureDefinition/onc-goal-evaluation: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'nursing' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
 INFORMATION: StructureDefinition/onc-goal-evaluation: StructureDefinition.snapshot.element[14].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)

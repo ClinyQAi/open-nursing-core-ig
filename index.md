@@ -65,7 +65,7 @@ For questions or contributions, visit our [GitHub repository](https://github.com
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "active",
-  "date" : "2025-12-26T00:05:34+00:00",
+  "date" : "2025-12-26T00:13:32+00:00",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules.",
   "packageId" : "onc.ig",
   "license" : "MIT",
@@ -889,6 +889,20 @@ For questions or contributions, visit our [GitHub repository](https://github.com
         },
         "name" : "Fitzpatrick Skin Tone Value Set",
         "description" : "Value set for Fitzpatrick skin type classifications",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-glasgow-coma-scale"
+        },
+        "name" : "Glasgow Coma Scale",
+        "description" : "Glasgow Coma Scale (GCS) for assessing level of consciousness. Total score 3-15 with three required components: Eye (1-4), Verbal (1-5), Motor (1-6).",
         "exampleBoolean" : false
       },
       {

@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "OpenNursingCoreIG"] ; # 
   fhir:title [ fhir:v "Open Nursing Core FHIR Implementation Guide (ONC-IG)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-12-26T00:05:34+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-26T00:13:32+00:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules."] ; # 
   fhir:packageId [ fhir:v "onc.ig"] ; # 
   fhir:license [ fhir:v "MIT"] ; # 
@@ -1481,6 +1481,27 @@
        ] ;
        fhir:name [ fhir:v "Fitzpatrick Skin Tone Value Set" ] ;
        fhir:description [ fhir:v "Value set for Fitzpatrick skin type classifications" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-glasgow-coma-scale> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-glasgow-coma-scale" ]
+       ] ;
+       fhir:name [ fhir:v "Glasgow Coma Scale" ] ;
+       fhir:description [ fhir:v "Glasgow Coma Scale (GCS) for assessing level of consciousness. Total score 3-15 with three required components: Eye (1-4), Verbal (1-5), Motor (1-6)." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

@@ -11,7 +11,7 @@
   <name value="OpenNursingCoreIG"/>
   <title value="Open Nursing Core FHIR Implementation Guide (ONC-IG)"/>
   <status value="active"/>
-  <date value="2025-12-26T00:05:34+00:00"/>
+  <date value="2025-12-26T00:13:32+00:00"/>
   <description value="Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules."/>
   <packageId value="onc.ig"/>
   <license value="MIT"/>
@@ -541,6 +541,17 @@
       </reference>
       <name value="Fitzpatrick Skin Tone Value Set"/>
       <description value="Value set for Fitzpatrick skin type classifications"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onc-glasgow-coma-scale"/>
+      </reference>
+      <name value="Glasgow Coma Scale"/>
+      <description value="Glasgow Coma Scale (GCS) for assessing level of consciousness. Total score 3-15 with three required components: Eye (1-4), Verbal (1-5), Motor (1-6)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
