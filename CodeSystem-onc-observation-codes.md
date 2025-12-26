@@ -19,6 +19,8 @@ Custom observation codes for Open Nursing Core
 * [NEWS2CodeValueSet](ValueSet-news2-code-vs.md)
 * [NEWS2SubscoreCodeValueSet](ValueSet-news2-subscore-code-vs.md)
 * [NursingProblemValueSet](ValueSet-nursing-problem-valueset.md)
+* [AlertnessVS](ValueSet-onc-4at-alertness-vs.md)
+* [ClinicalFrailtyScaleVS](ValueSet-onc-cfs-vs.md)
 * [SkinToneVS](ValueSet-skintone-vs.md)
 * [WoundStageValueSet](ValueSet-wound-stage-vs.md)
 
@@ -35,10 +37,10 @@ Custom observation codes for Open Nursing Core
   "name" : "ONCObservationCodes",
   "title" : "ONC Observation Codes",
   "status" : "draft",
-  "date" : "2025-12-26T14:39:51+00:00",
+  "date" : "2025-12-26T15:08:13+00:00",
   "description" : "Custom observation codes for Open Nursing Core",
   "content" : "complete",
-  "count" : 30,
+  "count" : 48,
   "concept" : [
     {
       "code" : "mst-score",
@@ -189,6 +191,96 @@ Custom observation codes for Open Nursing Core
       "code" : "fitzpatrick-6",
       "display" : "Type VI",
       "definition" : "Deeply pigmented dark brown to black; never burns, tans very easily"
+    },
+    {
+      "code" : "what-matters",
+      "display" : "What Matters to Me",
+      "definition" : "Patient-identified priorities and non-clinical goals"
+    },
+    {
+      "code" : "patient-story",
+      "display" : "Patient Story",
+      "definition" : "Narrative summary of patient background, preferences, and autobiography"
+    },
+    {
+      "code" : "relational-engagement",
+      "display" : "Relational Engagement Score",
+      "definition" : "Assessment of the quality of nurse-patient engagement (1-5)"
+    },
+    {
+      "code" : "cfs-score",
+      "display" : "Clinical Frailty Scale Score",
+      "definition" : "Total score for Rockwood Clinical Frailty Scale"
+    },
+    {
+      "code" : "cfs-1",
+      "display" : "Very Fit",
+      "definition" : "Robus, active, energetic and motivated"
+    },
+    {
+      "code" : "cfs-2",
+      "display" : "Well",
+      "definition" : "No active disease symptoms but less fit than category 1"
+    },
+    {
+      "code" : "cfs-3",
+      "display" : "Managing Well",
+      "definition" : "Medical problems are well controlled, but not regularly active"
+    },
+    {
+      "code" : "cfs-4",
+      "display" : "Vulnerable",
+      "definition" : "Not dependent for daily help, but symptoms limit activities"
+    },
+    {
+      "code" : "cfs-5",
+      "display" : "Mildly Frail",
+      "definition" : "Need help with high order IADLs (finances, transportation, heavy housework)"
+    },
+    {
+      "code" : "cfs-6",
+      "display" : "Moderately Frail",
+      "definition" : "Need help with all outside activities and some housekeeping"
+    },
+    {
+      "code" : "cfs-7",
+      "display" : "Severely Frail",
+      "definition" : "Completely dependent for personal care"
+    },
+    {
+      "code" : "cfs-8",
+      "display" : "Very Severely Frail",
+      "definition" : "Completely dependent, approaching end of life"
+    },
+    {
+      "code" : "cfs-9",
+      "display" : "Terminally Ill",
+      "definition" : "Approaching the end of life (life expectancy <6 months)"
+    },
+    {
+      "code" : "4at-score",
+      "display" : "4AT Delirium Score",
+      "definition" : "Total score for 4AT assessment"
+    },
+    {
+      "code" : "4at-alertness",
+      "display" : "Alertness",
+      "definition" : "4AT Item 1: Alertness"
+    },
+    {
+      "code" : "4at-amt4",
+      "display" : "AMT4 Score",
+      "definition" : "4AT Item 2: Abbreviated Mental Test 4"
+    },
+    {
+      "code" : "4at-attention",
+      "display" : "Attention",
+      "definition" : "4AT Item 3: Attention (Months Backwards)"
+    },
+    {
+      "code" : "4at-acute-change",
+      "display" : "Acute Change",
+      "definition" : "4AT Item 4: Acute Change or Fluctuating Course"
     }
   ]
 }

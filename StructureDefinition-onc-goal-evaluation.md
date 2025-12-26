@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-goal-evaluation.
   "name" : "ONCGoalEvaluation",
   "title" : "Goal Evaluation",
   "status" : "draft",
-  "date" : "2025-12-26T14:39:51+00:00",
+  "date" : "2025-12-26T15:08:13+00:00",
   "description" : "Evaluation of patient goal outcomes and nursing intervention effectiveness. Assesses whether goals have been met, partially met, or not met. Part of the ADPIE framework's Evaluation phase.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

@@ -13,11 +13,13 @@ These define constraints on FHIR resources for systems conforming to this implem
 
 | | |
 | :--- | :--- |
+| [4AT Delirium Assessment](StructureDefinition-onc-4at-delirium.md) | Rapid clinical test for delirium (4AT) comprising Alertness, AMT4, Attention, and Acute Change/Fluctuating Course. A total score of 4 or more suggests possible delirium. |
 | [ACVPU Consciousness Level](StructureDefinition-onc-acvpu.md) | ACVPU consciousness level assessment for NEWS2 (Alert, Confusion, Voice, Pain, Unresponsive) |
 | [Barthel Index](StructureDefinition-onc-barthel-index.md) | Barthel Index for measuring independence in activities of daily living (ADL). Score 0-20=total dependency, 91-99=slight dependency, 100=independent. Total range 0-100. |
 | [Blood Pressure](StructureDefinition-onc-blood-pressure.md) | Blood pressure observation for NEWS2 (systolic BP used for scoring) |
 | [Body Temperature](StructureDefinition-onc-body-temperature.md) | Body temperature observation for NEWS2 |
 | [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessment.md) | A profile for the Braden Scale pressure ulcer risk assessment |
+| [Clinical Frailty Scale (CFS)](StructureDefinition-onc-clinical-frailty-scale.md) | Assessment of frailty using the Rockwood Clinical Frailty Scale (1-9). Essential for older adults to determine baseline functional status. |
 | [Glasgow Coma Scale](StructureDefinition-onc-glasgow-coma-scale.md) | Glasgow Coma Scale (GCS) for assessing level of consciousness. Total score 3-15 with three required components: Eye (1-4), Verbal (1-5), Motor (1-6). |
 | [Goal Evaluation](StructureDefinition-onc-goal-evaluation.md) | Evaluation of patient goal outcomes and nursing intervention effectiveness. Assesses whether goals have been met, partially met, or not met. Part of the ADPIE framework's Evaluation phase. |
 | [Heart Rate](StructureDefinition-onc-heart-rate.md) | Heart rate (pulse) observation for NEWS2 |
@@ -35,9 +37,12 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [Oxygen Saturation](StructureDefinition-onc-oxygen-saturation.md) | Oxygen saturation (SpO2) observation for NEWS2 |
 | [Pain Assessment (NRS 0-10)](StructureDefinition-onc-pain-assessment.md) | Pain severity assessment using the Numeric Rating Scale (0-10) |
 | [Patient Goal](StructureDefinition-onc-patient-goal.md) | Patient-centered goal established in response to identified nursing problems. Defines measurable outcomes and addresses specific nursing diagnoses. Part of the ADPIE framework's Planning phase. |
+| [Patient Story](StructureDefinition-onc-patient-story.md) | A narrative summary of the patient's background, biography, preferences, and personhood. Goes beyond clinical history to capture 'who the person is'. |
+| [Relational Engagement Score](StructureDefinition-onc-relational-observation.md) | Assessment of the quality and depth of the nurse-patient relationship or engagement level. Supports the relational aspect of care. |
 | [Respiration Rate](StructureDefinition-onc-respiration-rate.md) | Respiration rate observation for NEWS2 |
 | [Skin Tone Observation](StructureDefinition-onc-skintone-observation.md) | Observation of patient skin tone using the Fitzpatrick skin type classification. Supports equitable care by enabling skin tone-aware clinical decision making, particularly for conditions that present differently across skin tones (e.g., pressure ulcers, cyanosis). |
 | [Waterlow Score](StructureDefinition-onc-waterlow-score.md) | Waterlow Pressure Ulcer Risk Assessment - NHS standard tool. Score ≥10 indicates at risk, ≥15 high risk, ≥20 very high risk. |
+| [What Matters to Me](StructureDefinition-onc-what-matters.md) | Captures the patient's specific, personal priorities and non-clinical goals (e.g., 'I want to walk my daughter down the aisle'). Fundamental to person-centred care. |
 | [Wound Assessment](StructureDefinition-onc-wound-assessment.md) | Comprehensive wound assessment including staging and dimensions |
 | [qSOFA (Quick SOFA)](StructureDefinition-onc-qsofa.md) | Quick Sequential Organ Failure Assessment for sepsis screening. Score ≥2 indicates high risk. Total range 0-3. |
 
@@ -57,7 +62,12 @@ These define sets of codes used by systems conforming to this implementation gui
 
 | | |
 | :--- | :--- |
+| [4AT AMT4 Value Set](ValueSet-onc-4at-amt4-vs.md) | Scoring options for AMT4 (Age, DOB, Place, Year) |
+| [4AT Acute Change Value Set](ValueSet-onc-4at-acute-change-vs.md) | Scoring for Acute Change or Fluctuating Course |
+| [4AT Alertness Value Set](ValueSet-onc-4at-alertness-vs.md) | Scoring options for 4AT Alertness |
+| [4AT Attention Value Set](ValueSet-onc-4at-attention-vs.md) | Scoring for Months Backwards test |
 | [ACVPU Value Set](ValueSet-acvpu-vs.md) | ACVPU consciousness level codes |
+| [Clinical Frailty Scale Value Set](ValueSet-onc-cfs-vs.md) | Codes for Rockwood Clinical Frailty Scale (1-9) |
 | [Fitzpatrick Skin Tone Value Set](ValueSet-skintone-vs.md) | Value set for Fitzpatrick skin type classifications |
 | [Goal Evaluation Value Set](ValueSet-goal-evaluation-valueset.md) | Value set for evaluating patient goal outcomes |
 | [Housing Status Value Set](ValueSet-housing-status-vs.md) | Value set for patient housing status |

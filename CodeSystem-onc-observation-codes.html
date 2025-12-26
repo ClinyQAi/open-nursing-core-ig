@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"2.45"}
-    h3,h4,h5,h6{--heading-prefix:"2.45"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.55"}
+    h3,h4,h5,h6{--heading-prefix:"2.55"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -209,6 +209,8 @@
  <li><a href="ValueSet-news2-code-vs.html">NEWS2CodeValueSet</a></li>
  <li><a href="ValueSet-news2-subscore-code-vs.html">NEWS2SubscoreCodeValueSet</a></li>
  <li><a href="ValueSet-nursing-problem-valueset.html">NursingProblemValueSet</a></li>
+ <li><a href="ValueSet-onc-4at-alertness-vs.html">AlertnessVS</a></li>
+ <li><a href="ValueSet-onc-cfs-vs.html">ClinicalFrailtyScaleVS</a></li>
  <li><a href="ValueSet-skintone-vs.html">SkinToneVS</a></li>
  <li><a href="ValueSet-wound-stage-vs.html">WoundStageValueSet</a></li>
 </ul>
@@ -305,7 +307,61 @@
 <td>Dark brown; very rarely burns, tans very easily</td></tr>
 <tr><td style="white-space:nowrap">fitzpatrick-6<a name="onc-observation-codes-fitzpatrick-6"> </a></td>
 <td>Type VI</td>
-<td>Deeply pigmented dark brown to black; never burns, tans very easily</td></tr></table></div>
+<td>Deeply pigmented dark brown to black; never burns, tans very easily</td></tr>
+<tr><td style="white-space:nowrap">what-matters<a name="onc-observation-codes-what-matters"> </a></td>
+<td>What Matters to Me</td>
+<td>Patient-identified priorities and non-clinical goals</td></tr>
+<tr><td style="white-space:nowrap">patient-story<a name="onc-observation-codes-patient-story"> </a></td>
+<td>Patient Story</td>
+<td>Narrative summary of patient background, preferences, and autobiography</td></tr>
+<tr><td style="white-space:nowrap">relational-engagement<a name="onc-observation-codes-relational-engagement"> </a></td>
+<td>Relational Engagement Score</td>
+<td>Assessment of the quality of nurse-patient engagement (1-5)</td></tr>
+<tr><td style="white-space:nowrap">cfs-score<a name="onc-observation-codes-cfs-score"> </a></td>
+<td>Clinical Frailty Scale Score</td>
+<td>Total score for Rockwood Clinical Frailty Scale</td></tr>
+<tr><td style="white-space:nowrap">cfs-1<a name="onc-observation-codes-cfs-1"> </a></td>
+<td>Very Fit</td>
+<td>Robus, active, energetic and motivated</td></tr>
+<tr><td style="white-space:nowrap">cfs-2<a name="onc-observation-codes-cfs-2"> </a></td>
+<td>Well</td>
+<td>No active disease symptoms but less fit than category 1</td></tr>
+<tr><td style="white-space:nowrap">cfs-3<a name="onc-observation-codes-cfs-3"> </a></td>
+<td>Managing Well</td>
+<td>Medical problems are well controlled, but not regularly active</td></tr>
+<tr><td style="white-space:nowrap">cfs-4<a name="onc-observation-codes-cfs-4"> </a></td>
+<td>Vulnerable</td>
+<td>Not dependent for daily help, but symptoms limit activities</td></tr>
+<tr><td style="white-space:nowrap">cfs-5<a name="onc-observation-codes-cfs-5"> </a></td>
+<td>Mildly Frail</td>
+<td>Need help with high order IADLs (finances, transportation, heavy housework)</td></tr>
+<tr><td style="white-space:nowrap">cfs-6<a name="onc-observation-codes-cfs-6"> </a></td>
+<td>Moderately Frail</td>
+<td>Need help with all outside activities and some housekeeping</td></tr>
+<tr><td style="white-space:nowrap">cfs-7<a name="onc-observation-codes-cfs-7"> </a></td>
+<td>Severely Frail</td>
+<td>Completely dependent for personal care</td></tr>
+<tr><td style="white-space:nowrap">cfs-8<a name="onc-observation-codes-cfs-8"> </a></td>
+<td>Very Severely Frail</td>
+<td>Completely dependent, approaching end of life</td></tr>
+<tr><td style="white-space:nowrap">cfs-9<a name="onc-observation-codes-cfs-9"> </a></td>
+<td>Terminally Ill</td>
+<td>Approaching the end of life (life expectancy &lt;6 months)</td></tr>
+<tr><td style="white-space:nowrap">4at-score<a name="onc-observation-codes-4at-score"> </a></td>
+<td>4AT Delirium Score</td>
+<td>Total score for 4AT assessment</td></tr>
+<tr><td style="white-space:nowrap">4at-alertness<a name="onc-observation-codes-4at-alertness"> </a></td>
+<td>Alertness</td>
+<td>4AT Item 1: Alertness</td></tr>
+<tr><td style="white-space:nowrap">4at-amt4<a name="onc-observation-codes-4at-amt4"> </a></td>
+<td>AMT4 Score</td>
+<td>4AT Item 2: Abbreviated Mental Test 4</td></tr>
+<tr><td style="white-space:nowrap">4at-attention<a name="onc-observation-codes-4at-attention"> </a></td>
+<td>Attention</td>
+<td>4AT Item 3: Attention (Months Backwards)</td></tr>
+<tr><td style="white-space:nowrap">4at-acute-change<a name="onc-observation-codes-4at-acute-change"> </a></td>
+<td>Acute Change</td>
+<td>4AT Item 4: Acute Change or Fluctuating Course</td></tr></table></div>
 
   
 
@@ -332,7 +388,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package onc.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 26, 2025 14:39+0000">2025-12-26</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package onc.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 26, 2025 15:08+0000">2025-12-26</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

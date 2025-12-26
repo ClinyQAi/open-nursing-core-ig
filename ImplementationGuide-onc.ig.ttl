@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "OpenNursingCoreIG"] ; # 
   fhir:title [ fhir:v "Open Nursing Core FHIR Implementation Guide (ONC-IG)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-12-26T14:39:51+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-26T15:08:13+00:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome."] ; # 
   fhir:packageId [ fhir:v "onc.ig"] ; # 
   fhir:license [ fhir:v "MIT"] ; # 
@@ -1282,6 +1282,111 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-4at-acute-change-vs> ;
+         fhir:reference [ fhir:v "ValueSet/onc-4at-acute-change-vs" ]
+       ] ;
+       fhir:name [ fhir:v "4AT Acute Change Value Set" ] ;
+       fhir:description [ fhir:v "Scoring for Acute Change or Fluctuating Course" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-4at-alertness-vs> ;
+         fhir:reference [ fhir:v "ValueSet/onc-4at-alertness-vs" ]
+       ] ;
+       fhir:name [ fhir:v "4AT Alertness Value Set" ] ;
+       fhir:description [ fhir:v "Scoring options for 4AT Alertness" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-4at-amt4-vs> ;
+         fhir:reference [ fhir:v "ValueSet/onc-4at-amt4-vs" ]
+       ] ;
+       fhir:name [ fhir:v "4AT AMT4 Value Set" ] ;
+       fhir:description [ fhir:v "Scoring options for AMT4 (Age, DOB, Place, Year)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-4at-attention-vs> ;
+         fhir:reference [ fhir:v "ValueSet/onc-4at-attention-vs" ]
+       ] ;
+       fhir:name [ fhir:v "4AT Attention Value Set" ] ;
+       fhir:description [ fhir:v "Scoring for Months Backwards test" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-4at-delirium> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-4at-delirium" ]
+       ] ;
+       fhir:name [ fhir:v "4AT Delirium Assessment" ] ;
+       fhir:description [ fhir:v "Rapid clinical test for delirium (4AT) comprising Alertness, AMT4, Attention, and Acute Change/Fluctuating Course. A total score of 4 or more suggests possible delirium." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -1396,6 +1501,48 @@
        ] ;
        fhir:name [ fhir:v "Braden Scale Assessment" ] ;
        fhir:description [ fhir:v "A profile for the Braden Scale pressure ulcer risk assessment" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-clinical-frailty-scale> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-clinical-frailty-scale" ]
+       ] ;
+       fhir:name [ fhir:v "Clinical Frailty Scale (CFS)" ] ;
+       fhir:description [ fhir:v "Assessment of frailty using the Rockwood Clinical Frailty Scale (1-9). Essential for older adults to determine baseline functional status." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-cfs-vs> ;
+         fhir:reference [ fhir:v "ValueSet/onc-cfs-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Clinical Frailty Scale Value Set" ] ;
+       fhir:description [ fhir:v "Codes for Rockwood Clinical Frailty Scale (1-9)" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2184,6 +2331,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-story> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-patient-story" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Story" ] ;
+       fhir:description [ fhir:v "A narrative summary of the patient's background, biography, preferences, and personhood. Goes beyond clinical history to capture 'who the person is'." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "Patient"
          ]
        ] ) ;
@@ -2292,6 +2460,27 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-relational-observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-relational-observation" ]
+       ] ;
+       fhir:name [ fhir:v "Relational Engagement Score" ] ;
+       fhir:description [ fhir:v "Assessment of the quality and depth of the nurse-patient relationship or engagement level. Supports the relational aspect of care." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-respiration-rate> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-respiration-rate" ]
        ] ;
@@ -2360,6 +2549,27 @@
        ] ;
        fhir:name [ fhir:v "Waterlow Score" ] ;
        fhir:description [ fhir:v "Waterlow Pressure Ulcer Risk Assessment - NHS standard tool. Score ≥10 indicates at risk, ≥15 high risk, ≥20 very high risk." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-what-matters> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-what-matters" ]
+       ] ;
+       fhir:name [ fhir:v "What Matters to Me" ] ;
+       fhir:description [ fhir:v "Captures the patient's specific, personal priorities and non-clinical goals (e.g., 'I want to walk my daughter down the aisle'). Fundamental to person-centred care." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

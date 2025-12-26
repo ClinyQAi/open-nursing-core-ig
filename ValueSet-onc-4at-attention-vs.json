@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "onc-4at-attention-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet onc-4at-attention-vs</b></p><a name=\"onc-4at-attention-vs\"> </a><a name=\"hconc-4at-attention-vs\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/4851000147101\">4851000147101</a></td><td>Achieves 7 months or more correctly</td></tr><tr><td><a href=\"http://snomed.info/id/4861000147105\">4861000147105</a></td><td>Starts but scores &lt;7 months / refuses</td></tr><tr><td><a href=\"http://snomed.info/id/4871000147108\">4871000147108</a></td><td>Untestable</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-4at-attention-vs",
+  "version" : "0.1.0",
+  "name" : "AttentionVS",
+  "title" : "4AT Attention Value Set",
+  "status" : "draft",
+  "date" : "2025-12-26T15:08:13+00:00",
+  "description" : "Scoring for Months Backwards test",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "4851000147101",
+        "display" : "Achieves 7 months or more correctly"
+      },
+      {
+        "code" : "4861000147105",
+        "display" : "Starts but scores <7 months / refuses"
+      },
+      {
+        "code" : "4871000147108",
+        "display" : "Untestable"
+      }]
+    }]
+  }
+}

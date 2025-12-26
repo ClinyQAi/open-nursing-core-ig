@@ -1,7 +1,7 @@
 OpenNursingCoreIG : Validation Results
 =========================================
 
-err = 3, warn = 57, info = 93
+err = 21, warn = 67, info = 131
 $--
 Generated $--. FHIR version $-- for onc.ig#$-- (canonical = https://clinyqai.github.io/open-nursing-core-ig)
  Build Errors : 1 / 14 / 0
@@ -20,11 +20,13 @@ Generated $--. FHIR version $-- for onc.ig#$-- (canonical = https://clinyqai.git
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-UKCore-Extension-EthnicCategory : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-intervention-goal-reference : 0 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-observation-goal-reference : 0 / 1 / 1
- /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-acvpu : 0 / 1 / 3
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-4at-delirium : 2 / 1 / 16
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-acvpu : 0 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-barthel-index : 0 / 1 / 4
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-blood-pressure : 0 / 1 / 4
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-body-temperature : 0 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-braden-scale-assessment : 0 / 0 / 18
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-clinical-frailty-scale : 2 / 1 / 5
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-glasgow-coma-scale : 0 / 1 / 4
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-goal-evaluation : 0 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-heart-rate : 0 / 1 / 2
@@ -42,10 +44,13 @@ Generated $--. FHIR version $-- for onc.ig#$-- (canonical = https://clinyqai.git
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-oxygen-saturation : 0 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-pain-assessment : 0 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-patient-goal : 0 / 0 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-patient-story : 2 / 1 / 4
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-qsofa : 0 / 1 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-relational-observation : 2 / 1 / 4
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-respiration-rate : 0 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-skintone-observation : 0 / 0 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-waterlow-score : 0 / 1 / 4
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-what-matters : 2 / 1 / 4
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-wound-assessment : 0 / 3 / 4
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-acvpu-vs : 0 / 1 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-goal-evaluation-valueset : 0 / 1 / 2
@@ -55,6 +60,11 @@ Generated $--. FHIR version $-- for onc.ig#$-- (canonical = https://clinyqai.git
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-news2-subscore-code-vs : 0 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-nursing-intervention-valueset : 0 / 0 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-nursing-problem-valueset : 0 / 0 / 2
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-4at-acute-change-vs : 2 / 1 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-4at-alertness-vs : 0 / 1 / 3
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-4at-amt4-vs : 3 / 1 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-4at-attention-vs : 3 / 1 / 1
+ /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-cfs-vs : 0 / 1 / 10
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-onc-monk-scale-vs : 0 / 2 / 1
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-pain-assessment-code-vs : 0 / 1 / 2
  /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/ValueSet-problem-category-valueset : 0 / 0 / 1
@@ -114,8 +124,26 @@ WARNING: Patient/patient-example-jane: Patient.extension[0].value.ofType(Codeabl
 WARNING: StructureDefinition/intervention-goal-reference: StructureDefinition.context[0]: Review the extension type for intervention-goal-reference: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 == fsh-generated/resources/StructureDefinition-observation-goal-reference.json ==
 WARNING: StructureDefinition/observation-goal-reference: StructureDefinition.context[0]: Review the extension type for observation-goal-reference: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+== fsh-generated/resources/StructureDefinition-onc-4at-delirium.json ==
+ERROR: StructureDefinition.where(url = 'https://fhir.clinyq.ai/StructureDefinition/onc-4at-delirium'): Conformance resource /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-4at-delirium.json - the canonical URL (https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-4at-delirium) does not match the URL (https://fhir.clinyq.ai/StructureDefinition/onc-4at-delirium). Use the special-url parameter if you really mean for it not to match
+INFORMATION: StructureDefinition/onc-4at-delirium: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+INFORMATION: StructureDefinition/onc-4at-delirium: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: StructureDefinition/onc-4at-delirium: StructureDefinition.snapshot.element[62].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: StructureDefinition/onc-4at-delirium: StructureDefinition.snapshot.element[71].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: StructureDefinition/onc-4at-delirium: StructureDefinition.snapshot.element[80].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: StructureDefinition/onc-4at-delirium: StructureDefinition.snapshot.element[89].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: StructureDefinition/onc-4at-delirium: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: StructureDefinition/onc-4at-delirium: StructureDefinition.differential.element[10].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: StructureDefinition/onc-4at-delirium: StructureDefinition.differential.element[13].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: StructureDefinition/onc-4at-delirium: StructureDefinition.differential.element[16].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: StructureDefinition/onc-4at-delirium: StructureDefinition.differential.element[19].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: StructureDefinition/onc-4at-delirium: StructureDefinition.differential.element[8].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/onc-4at-delirium: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/onc-4at-delirium: StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/onc-4at-delirium: StructureDefinition.snapshot.element[49].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition.where(url = 'https://fhir.clinyq.ai/StructureDefinition/onc-4at-delirium'): The Implementation Guide contains no examples for this profile
+ERROR: /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-4at-delirium: URL Mismatch https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-4at-delirium vs https://fhir.clinyq.ai/StructureDefinition/onc-4at-delirium
 == fsh-generated/resources/StructureDefinition-onc-acvpu.json ==
-INFORMATION: StructureDefinition/onc-acvpu: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 INFORMATION: StructureDefinition/onc-acvpu: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-acvpu'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-onc-barthel-index.json ==
@@ -149,6 +177,14 @@ INFORMATION: StructureDefinition/onc-braden-scale-assessment: StructureDefinitio
 INFORMATION: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.differential.element[7].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/onc-braden-scale-assessment: StructureDefinition.snapshot.element[49].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+== fsh-generated/resources/StructureDefinition-onc-clinical-frailty-scale.json ==
+ERROR: StructureDefinition.where(url = 'https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale'): Conformance resource /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-clinical-frailty-scale.json - the canonical URL (https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-clinical-frailty-scale) does not match the URL (https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale). Use the special-url parameter if you really mean for it not to match
+INFORMATION: StructureDefinition/onc-clinical-frailty-scale: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: StructureDefinition/onc-clinical-frailty-scale: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: StructureDefinition/onc-clinical-frailty-scale: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/onc-clinical-frailty-scale: StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+WARNING: StructureDefinition.where(url = 'https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale'): The Implementation Guide contains no examples for this profile
+ERROR: /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-clinical-frailty-scale: URL Mismatch https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-clinical-frailty-scale vs https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale
 == fsh-generated/resources/StructureDefinition-onc-glasgow-coma-scale.json ==
 INFORMATION: StructureDefinition/onc-glasgow-coma-scale: StructureDefinition.differential.element[7].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/onc-glasgow-coma-scale: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
@@ -210,9 +246,23 @@ WARNING: StructureDefinition.where(url = 'https://clinyqai.github.io/open-nursin
 INFORMATION: StructureDefinition/onc-pain-assessment: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-pain-assessment'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-onc-patient-goal.json ==
+== fsh-generated/resources/StructureDefinition-onc-patient-story.json ==
+ERROR: StructureDefinition.where(url = 'https://fhir.clinyq.ai/StructureDefinition/onc-patient-story'): Conformance resource /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-patient-story.json - the canonical URL (https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-story) does not match the URL (https://fhir.clinyq.ai/StructureDefinition/onc-patient-story). Use the special-url parameter if you really mean for it not to match
+INFORMATION: StructureDefinition/onc-patient-story: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: StructureDefinition/onc-patient-story: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: StructureDefinition/onc-patient-story: StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+WARNING: StructureDefinition.where(url = 'https://fhir.clinyq.ai/StructureDefinition/onc-patient-story'): The Implementation Guide contains no examples for this profile
+ERROR: /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-patient-story: URL Mismatch https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-story vs https://fhir.clinyq.ai/StructureDefinition/onc-patient-story
 == fsh-generated/resources/StructureDefinition-onc-qsofa.json ==
 INFORMATION: StructureDefinition/onc-qsofa: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-qsofa'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-onc-relational-observation.json ==
+ERROR: StructureDefinition.where(url = 'https://fhir.clinyq.ai/StructureDefinition/onc-relational-observation'): Conformance resource /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-relational-observation.json - the canonical URL (https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-relational-observation) does not match the URL (https://fhir.clinyq.ai/StructureDefinition/onc-relational-observation). Use the special-url parameter if you really mean for it not to match
+INFORMATION: StructureDefinition/onc-relational-observation: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: StructureDefinition/onc-relational-observation: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: StructureDefinition/onc-relational-observation: StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+WARNING: StructureDefinition.where(url = 'https://fhir.clinyq.ai/StructureDefinition/onc-relational-observation'): The Implementation Guide contains no examples for this profile
+ERROR: /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-relational-observation: URL Mismatch https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-relational-observation vs https://fhir.clinyq.ai/StructureDefinition/onc-relational-observation
 == fsh-generated/resources/StructureDefinition-onc-respiration-rate.json ==
 INFORMATION: StructureDefinition/onc-respiration-rate: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-respiration-rate'): The Implementation Guide contains no examples for this profile
@@ -223,6 +273,13 @@ INFORMATION: StructureDefinition/onc-waterlow-score: StructureDefinition.snapsho
 INFORMATION: StructureDefinition/onc-waterlow-score: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0
 INFORMATION: StructureDefinition/onc-waterlow-score: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-waterlow-score'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-onc-what-matters.json ==
+ERROR: StructureDefinition.where(url = 'https://fhir.clinyq.ai/StructureDefinition/onc-what-matters'): Conformance resource /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-what-matters.json - the canonical URL (https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-what-matters) does not match the URL (https://fhir.clinyq.ai/StructureDefinition/onc-what-matters). Use the special-url parameter if you really mean for it not to match
+INFORMATION: StructureDefinition/onc-what-matters: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: StructureDefinition/onc-what-matters: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: StructureDefinition/onc-what-matters: StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+WARNING: StructureDefinition.where(url = 'https://fhir.clinyq.ai/StructureDefinition/onc-what-matters'): The Implementation Guide contains no examples for this profile
+ERROR: /home/runner/work/open-nursing-core-ig/open-nursing-core-ig/fsh-generated/resources/StructureDefinition-onc-what-matters: URL Mismatch https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-what-matters vs https://fhir.clinyq.ai/StructureDefinition/onc-what-matters
 == fsh-generated/resources/StructureDefinition-onc-wound-assessment.json ==
 WARNING: StructureDefinition/onc-wound-assessment: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept).coding[0]: The concept '399912005' has a status of inactive and its use should be reviewed
 WARNING: StructureDefinition/onc-wound-assessment: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0]: The concept '399912005' has a status of inactive and its use should be reviewed
@@ -247,6 +304,35 @@ WARNING: ValueSet/news2-subscore-code-vs: ValueSet: Published value sets SHOULD 
 == fsh-generated/resources/ValueSet-nursing-intervention-valueset.json ==
 == fsh-generated/resources/ValueSet-nursing-problem-valueset.json ==
 INFORMATION: ValueSet/nursing-problem-valueset: ValueSet.compose.include[1].concept[0]: Reference to draft CodeSystem https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0
+== fsh-generated/resources/ValueSet-onc-4at-acute-change-vs.json ==
+ERROR: ValueSet/onc-4at-acute-change-vs: ValueSet.compose.include[0].concept[0]: The code '521000176101' is not valid in the system http://snomed.info/sct (Unknown code '521000176101' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
+ERROR: ValueSet/onc-4at-acute-change-vs: ValueSet.compose.include[0].concept[1]: The code '531000176103' is not valid in the system http://snomed.info/sct (Unknown code '531000176103' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
+WARNING: ValueSet/onc-4at-acute-change-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-onc-4at-alertness-vs.json ==
+INFORMATION: ValueSet/onc-4at-alertness-vs: ValueSet.compose.include[0].concept[0]: Reference to draft CodeSystem https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: ValueSet/onc-4at-alertness-vs: ValueSet.compose.include[0].concept[0]: Wrong Display Name 'Normal (fully alert, not agitated)' for https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#4at-alertness. Valid display is 'Alertness' (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+WARNING: ValueSet/onc-4at-alertness-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-onc-4at-amt4-vs.json ==
+ERROR: ValueSet/onc-4at-amt4-vs: ValueSet.compose.include[0].concept[0]: The code '4851000147101' is not valid in the system http://snomed.info/sct (Unknown code '4851000147101' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
+ERROR: ValueSet/onc-4at-amt4-vs: ValueSet.compose.include[0].concept[1]: The code '4861000147105' is not valid in the system http://snomed.info/sct (Unknown code '4861000147105' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
+ERROR: ValueSet/onc-4at-amt4-vs: ValueSet.compose.include[0].concept[2]: The code '4871000147108' is not valid in the system http://snomed.info/sct (Unknown code '4871000147108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
+WARNING: ValueSet/onc-4at-amt4-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-onc-4at-attention-vs.json ==
+ERROR: ValueSet/onc-4at-attention-vs: ValueSet.compose.include[0].concept[0]: The code '4851000147101' is not valid in the system http://snomed.info/sct (Unknown code '4851000147101' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
+ERROR: ValueSet/onc-4at-attention-vs: ValueSet.compose.include[0].concept[1]: The code '4861000147105' is not valid in the system http://snomed.info/sct (Unknown code '4861000147105' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
+ERROR: ValueSet/onc-4at-attention-vs: ValueSet.compose.include[0].concept[2]: The code '4871000147108' is not valid in the system http://snomed.info/sct (Unknown code '4871000147108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
+WARNING: ValueSet/onc-4at-attention-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-onc-cfs-vs.json ==
+INFORMATION: ValueSet/onc-cfs-vs: ValueSet.compose.include[0].concept[0]: Reference to draft CodeSystem https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: ValueSet/onc-cfs-vs: ValueSet.compose.include[0].concept[1]: Reference to draft CodeSystem https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: ValueSet/onc-cfs-vs: ValueSet.compose.include[0].concept[2]: Reference to draft CodeSystem https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: ValueSet/onc-cfs-vs: ValueSet.compose.include[0].concept[3]: Reference to draft CodeSystem https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: ValueSet/onc-cfs-vs: ValueSet.compose.include[0].concept[4]: Reference to draft CodeSystem https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: ValueSet/onc-cfs-vs: ValueSet.compose.include[0].concept[5]: Reference to draft CodeSystem https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: ValueSet/onc-cfs-vs: ValueSet.compose.include[0].concept[6]: Reference to draft CodeSystem https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: ValueSet/onc-cfs-vs: ValueSet.compose.include[0].concept[7]: Reference to draft CodeSystem https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0
+INFORMATION: ValueSet/onc-cfs-vs: ValueSet.compose.include[0].concept[8]: Reference to draft CodeSystem https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0
+WARNING: ValueSet/onc-cfs-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-onc-monk-scale-vs.json ==
 WARNING: ValueSet/onc-monk-scale-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/onc-monk-scale-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present

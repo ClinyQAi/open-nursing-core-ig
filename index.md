@@ -65,7 +65,7 @@ For questions or contributions, visit our [GitHub repository](https://github.com
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "draft",
-  "date" : "2025-12-26T14:39:51+00:00",
+  "date" : "2025-12-26T15:08:13+00:00",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome.",
   "packageId" : "onc.ig",
   "license" : "MIT",
@@ -758,6 +758,76 @@ For questions or contributions, visit our [GitHub repository](https://github.com
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/onc-4at-acute-change-vs"
+        },
+        "name" : "4AT Acute Change Value Set",
+        "description" : "Scoring for Acute Change or Fluctuating Course",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/onc-4at-alertness-vs"
+        },
+        "name" : "4AT Alertness Value Set",
+        "description" : "Scoring options for 4AT Alertness",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/onc-4at-amt4-vs"
+        },
+        "name" : "4AT AMT4 Value Set",
+        "description" : "Scoring options for AMT4 (Age, DOB, Place, Year)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/onc-4at-attention-vs"
+        },
+        "name" : "4AT Attention Value Set",
+        "description" : "Scoring for Months Backwards test",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-4at-delirium"
+        },
+        "name" : "4AT Delirium Assessment",
+        "description" : "Rapid clinical test for delirium (4AT) comprising Alertness, AMT4, Attention, and Acute Change/Fluctuating Course. A total score of 4 or more suggests possible delirium.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:resource"
           }
         ],
@@ -836,6 +906,34 @@ For questions or contributions, visit our [GitHub repository](https://github.com
         },
         "name" : "Braden Scale Assessment",
         "description" : "A profile for the Braden Scale pressure ulcer risk assessment",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-clinical-frailty-scale"
+        },
+        "name" : "Clinical Frailty Scale (CFS)",
+        "description" : "Assessment of frailty using the Rockwood Clinical Frailty Scale (1-9). Essential for older adults to determine baseline functional status.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/onc-cfs-vs"
+        },
+        "name" : "Clinical Frailty Scale Value Set",
+        "description" : "Codes for Rockwood Clinical Frailty Scale (1-9)",
         "exampleBoolean" : false
       },
       {
@@ -1353,6 +1451,20 @@ For questions or contributions, visit our [GitHub repository](https://github.com
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-patient-story"
+        },
+        "name" : "Patient Story",
+        "description" : "A narrative summary of the patient's background, biography, preferences, and personhood. Goes beyond clinical history to capture 'who the person is'.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Patient"
           }
         ],
@@ -1425,6 +1537,20 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           }
         ],
         "reference" : {
+          "reference" : "StructureDefinition/onc-relational-observation"
+        },
+        "name" : "Relational Engagement Score",
+        "description" : "Assessment of the quality and depth of the nurse-patient relationship or engagement level. Supports the relational aspect of care.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
           "reference" : "StructureDefinition/onc-respiration-rate"
         },
         "name" : "Respiration Rate",
@@ -1471,6 +1597,20 @@ For questions or contributions, visit our [GitHub repository](https://github.com
         },
         "name" : "Waterlow Score",
         "description" : "Waterlow Pressure Ulcer Risk Assessment - NHS standard tool. Score ≥10 indicates at risk, ≥15 high risk, ≥20 very high risk.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-what-matters"
+        },
+        "name" : "What Matters to Me",
+        "description" : "Captures the patient's specific, personal priorities and non-clinical goals (e.g., 'I want to walk my daughter down the aisle'). Fundamental to person-centred care.",
         "exampleBoolean" : false
       },
       {
