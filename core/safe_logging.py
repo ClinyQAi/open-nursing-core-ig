@@ -91,15 +91,10 @@ def mask_identifier(identifier: str, prefix: str = "id") -> str:
     if not identifier:
         return f"{prefix}_****"
     
-    # Convert to string in case it's an int or other type
-    identifier = str(identifier)
-    
-    # For short identifiers, just mask everything
-    if len(identifier) < 8:
-        return f"{prefix}_****"
-    
-    # Show first 3 and last 4 characters
-    return f"{identifier[:3]}_****{identifier[-4:]}"
+    # Always mask the full identifier content; do not expose any characters.
+    # We still accept any type for identifier to keep the API compatible,
+    # but we never use its value in the returned string.
+    return f"{prefix}_****"
 
 
 def safe_log_info(
