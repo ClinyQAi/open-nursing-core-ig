@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-wound-assessment
   "name" : "ONCWoundAssessment",
   "title" : "Wound Assessment",
   "status" : "active",
-  "date" : "2025-12-26T12:06:48+00:00",
+  "date" : "2025-12-26T12:07:46+00:00",
   "description" : "Comprehensive wound assessment including staging and dimensions",
   "fhirVersion" : "4.0.1",
   "mapping" : [
