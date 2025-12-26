@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-intervention-goal-re
   "name" : "InterventionGoalReference",
   "title" : "Intervention Goal Reference",
   "status" : "active",
-  "date" : "2025-12-26T02:26:51+00:00",
+  "date" : "2025-12-26T10:04:19+00:00",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
