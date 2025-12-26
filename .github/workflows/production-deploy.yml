@@ -61,7 +61,7 @@ jobs:
         bandit -r app.py visualizations.py -f json -o bandit-report.json || true
     
     - name: Upload code quality reports
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: code-quality-reports
         path: bandit-report.json
@@ -184,7 +184,7 @@ jobs:
       continue-on-error: true
     
     - name: Upload test results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: integration-test-results
         path: test-results/
