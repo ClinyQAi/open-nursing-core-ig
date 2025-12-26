@@ -22,6 +22,7 @@ except ImportError:
 # Core imports
 from core.settings import settings
 from core.logging_config import configure_logging
+from core.safe_logging import mask_identifier, log_exception_safe
 from core.validator import (
     authenticate_user,
     load_vector_db,
@@ -110,9 +111,13 @@ def init_database_if_needed():
                 # Seed default users into database
                 _seed_default_users()
         except Exception as e:
-            from core.safe_logging import log_exception_safe
             log_exception_safe(logger, "Database initialization failed", e)
             st.warning("Database connection failed - using local storage")
+
+
+def _hash_user_password(password: str) -> str:
+    """Hash password and return hash - password not retained."""
+    return hash_password(password)
 
 
 def _seed_default_users():
@@ -123,21 +128,23 @@ def _seed_default_users():
     # Get defaults from core settings/validator logic?
     # Or just use the env vars directly here since it's admin logic.
     users_to_seed = {
-        "admin": {"password": settings.ADMIN_PASSWORD, "role": "admin"},
-        "nurse": {"password": settings.NURSE_PASSWORD, "role": "nurse"},
-        "clinician": {"password": settings.CLINICIAN_PASSWORD, "role": "clinician"}
+        "admin": (settings.ADMIN_PASSWORD, "admin"),
+        "nurse": (settings.NURSE_PASSWORD, "nurse"),
+        "clinician": (settings.CLINICIAN_PASSWORD, "clinician"),
     }
 
-    for username, creds in users_to_seed.items():
+    for username, (password, role) in users_to_seed.items():
         try:
             user = get_user(username)
             if user is None:
-                password_hash = hash_password(creds["password"])
-                add_user(username, password_hash, creds["role"])
-                from core.safe_logging import mask_identifier
-                logger.info(f"Seeded user: {mask_identifier(username, 'user')}")
+                # Process password in isolation
+                password_hash = _hash_user_password(password)
+                del password  # Explicitly remove from scope
+                add_user(username, password_hash, role)
+                # Log only non-sensitive, masked user information (no password- or role-derived data)
+                logger.info(f"Seeded default user: {mask_identifier(username, 'user')}")
+
         except Exception as e:
-            from core.safe_logging import log_exception_safe
             log_exception_safe(logger, "Could not seed user", e, level="warning")
 
 
@@ -336,7 +343,6 @@ def main_app():
                         )
                         response = qa.run(user_input)
                     except Exception as e:
-                        from core.safe_logging import log_exception_safe
                         log_exception_safe(logger, "QA error", e)
                         response = (
                             f"Unable to process your question. "
