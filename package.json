@@ -1,0 +1,57 @@
+{
+    "name": "@cliniqai/open-nursing-core-ig",
+    "version": "0.1.0",
+    "description": "Open Nursing Core FHIR Implementation Guide - UK Core compliant nursing profiles for NEWS2, clinical assessments, and care documentation. BETA RELEASE - Feedback Welcome.",
+    "main": "package/package.json",
+    "files": [
+        "docs/package.tgz",
+        "docs/package/**",
+        "input/**",
+        "fsh-generated/**",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "./_genonce.sh",
+        "build:windows": "_genonce.bat",
+        "prepublishOnly": "npm run build"
+    },
+    "keywords": [
+        "fhir",
+        "nursing",
+        "uk-core",
+        "nhs",
+        "implementation-guide",
+        "hl7",
+        "news2",
+        "clinical-assessment",
+        "healthcare",
+        "interoperability"
+    ],
+    "author": "ClinyQAi",
+    "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ClinyQAi/open-nursing-core-ig.git"
+    },
+    "bugs": {
+        "url": "https://github.com/ClinyQAi/open-nursing-core-ig/issues"
+    },
+    "homepage": "https://fhir.clinyq.ai",
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com",
+        "access": "public"
+    },
+    "fhir": {
+        "canonical": "https://fhir.clinyq.ai",
+        "version": "4.0.1",
+        "jurisdiction": "GB",
+        "dependencies": {
+            "hl7.fhir.r4.core": "4.0.1",
+            "fhir.r4.ukcore.stu3.currentbuild": "0.0.6-pre-release"
+        }
+    },
+    "engines": {
+        "node": ">=14.0.0"
+    }
+}

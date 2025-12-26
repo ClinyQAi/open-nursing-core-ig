@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
   "id": "UKCore-Extension-EthnicCategory",
-  "url": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Extension-EthnicCategory",
+  "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/UKCore-Extension-EthnicCategory",
   "name": "UKCoreEthnicCategory",
   "title": "UK Core Ethnic Category",
-  "status": "active",
+  "status": "draft",
   "description": "An extension to record the ethnic category of a patient, as per UK Core standards.",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
@@ -34,7 +34,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Extension-EthnicCategory"
+        "fixedUri": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/UKCore-Extension-EthnicCategory"
       },
       {
         "id": "Extension.value[x]",

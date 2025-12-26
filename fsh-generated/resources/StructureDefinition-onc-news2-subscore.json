@@ -4,7 +4,7 @@
   "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-news2-subscore",
   "name": "ONCNEWS2Subscore",
   "title": "NEWS2 Sub-Score",
-  "status": "active",
+  "status": "draft",
   "description": "Individual parameter sub-score for NEWS2 (0-3 for most parameters). References the related vital sign observation.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
@@ -23,11 +23,16 @@
       {
         "id": "Observation.code",
         "path": "Observation.code",
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/news2-subscore-code-vs"
-        }
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "news2-subscore",
+              "system": "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "display": "NEWS2 Sub-score"
+            }
+          ]
+        },
+        "mustSupport": true
       },
       {
         "id": "Observation.value[x]",

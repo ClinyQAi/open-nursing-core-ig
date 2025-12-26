@@ -1,135 +1,331 @@
 [
   {
+    "id" : "onc-monk-scale",
+    "type" : "CodeSystem",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale",
+    "version" : "0.1.0",
+    "name" : "ONCMonkScale"
+  },
+  {
+    "id" : "onc-observation-codes",
+    "type" : "CodeSystem",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+    "version" : "0.1.0",
+    "name" : "ONCObservationCodes"
+  },
+  {
     "id" : "onc-problem-type",
     "type" : "CodeSystem",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type",
-    "version" : "1.0.0",
+    "version" : "0.1.0",
     "name" : "ONCProblemType"
   },
   {
     "id" : "onc.ig",
     "type" : "ImplementationGuide",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/ImplementationGuide/onc.ig",
-    "version" : "1.0.0",
+    "version" : "0.1.0",
     "name" : "OpenNursingCoreIG"
+  },
+  {
+    "id" : "UKCore-Extension-EthnicCategory",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/UKCore-Extension-EthnicCategory",
+    "version" : "0.1.0",
+    "name" : "UKCoreEthnicCategory"
   },
   {
     "id" : "intervention-goal-reference",
     "type" : "StructureDefinition",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/intervention-goal-reference",
-    "version" : "1.0.0",
+    "version" : "0.1.0",
     "name" : "InterventionGoalReference"
   },
   {
     "id" : "observation-goal-reference",
     "type" : "StructureDefinition",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/observation-goal-reference",
-    "version" : "1.0.0",
+    "version" : "0.1.0",
     "name" : "ObservationGoalReference"
+  },
+  {
+    "id" : "onc-acvpu",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-acvpu",
+    "version" : "0.1.0",
+    "name" : "ONCACVPU"
+  },
+  {
+    "id" : "onc-barthel-index",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-barthel-index",
+    "version" : "0.1.0",
+    "name" : "ONCBarthelIndex"
+  },
+  {
+    "id" : "onc-blood-pressure",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-blood-pressure",
+    "version" : "0.1.0",
+    "name" : "ONCBloodPressure"
+  },
+  {
+    "id" : "onc-body-temperature",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-body-temperature",
+    "version" : "0.1.0",
+    "name" : "ONCBodyTemperature"
   },
   {
     "id" : "onc-braden-scale-assessment",
     "type" : "StructureDefinition",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-braden-scale-assessment",
-    "version" : "1.0.0",
+    "version" : "0.1.0",
     "name" : "ONCBradenScaleAssessment"
+  },
+  {
+    "id" : "onc-glasgow-coma-scale",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-glasgow-coma-scale",
+    "version" : "0.1.0",
+    "name" : "ONCGlasgowComaScale"
   },
   {
     "id" : "onc-goal-evaluation",
     "type" : "StructureDefinition",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-goal-evaluation",
-    "version" : "1.0.0",
+    "version" : "0.1.0",
     "name" : "ONCGoalEvaluation"
+  },
+  {
+    "id" : "onc-heart-rate",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-heart-rate",
+    "version" : "0.1.0",
+    "name" : "ONCHeartRate"
+  },
+  {
+    "id" : "onc-inspired-oxygen",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-inspired-oxygen",
+    "version" : "0.1.0",
+    "name" : "ONCInspiredOxygen"
+  },
+  {
+    "id" : "onc-mmse",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-mmse",
+    "version" : "0.1.0",
+    "name" : "ONCMMSE"
+  },
+  {
+    "id" : "onc-monk-skintone-observation",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-monk-skintone-observation",
+    "version" : "0.1.0",
+    "name" : "ONCMonkSkinToneObservation"
+  },
+  {
+    "id" : "onc-morse-fall-scale",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-morse-fall-scale",
+    "version" : "0.1.0",
+    "name" : "ONCMorseFallScale"
+  },
+  {
+    "id" : "onc-must-score",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-must-score",
+    "version" : "0.1.0",
+    "name" : "ONCMUSTScore"
+  },
+  {
+    "id" : "onc-news2-score",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-news2-score",
+    "version" : "0.1.0",
+    "name" : "ONCNEWS2Score"
+  },
+  {
+    "id" : "onc-news2-subscore",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-news2-subscore",
+    "version" : "0.1.0",
+    "name" : "ONCNEWS2Subscore"
   },
   {
     "id" : "onc-nhs-patient",
     "type" : "StructureDefinition",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nhs-patient",
-    "version" : "1.0.0",
+    "version" : "0.1.0",
     "name" : "ONCNHSPatient"
   },
   {
     "id" : "onc-nursing-assessment",
     "type" : "StructureDefinition",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
-    "version" : "1.0.0",
+    "version" : "0.1.0",
     "name" : "ONCNursingAssessment"
   },
   {
     "id" : "onc-nursing-intervention",
     "type" : "StructureDefinition",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-intervention",
-    "version" : "1.0.0",
+    "version" : "0.1.0",
     "name" : "ONCNursingIntervention"
   },
   {
     "id" : "onc-nursing-problem",
     "type" : "StructureDefinition",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-problem",
-    "version" : "1.0.0",
+    "version" : "0.1.0",
     "name" : "ONCNursingProblem"
+  },
+  {
+    "id" : "onc-oxygen-saturation",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-oxygen-saturation",
+    "version" : "0.1.0",
+    "name" : "ONCOxygenSaturation"
+  },
+  {
+    "id" : "onc-pain-assessment",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-pain-assessment",
+    "version" : "0.1.0",
+    "name" : "ONCPainAssessment"
   },
   {
     "id" : "onc-patient-goal",
     "type" : "StructureDefinition",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-goal",
-    "version" : "1.0.0",
+    "version" : "0.1.0",
     "name" : "ONCPatientGoal"
+  },
+  {
+    "id" : "onc-qsofa",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-qsofa",
+    "version" : "0.1.0",
+    "name" : "ONCqSOFA"
+  },
+  {
+    "id" : "onc-respiration-rate",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-respiration-rate",
+    "version" : "0.1.0",
+    "name" : "ONCRespirationRate"
   },
   {
     "id" : "onc-skintone-observation",
     "type" : "StructureDefinition",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-skintone-observation",
-    "version" : "1.0.0",
+    "version" : "0.1.0",
     "name" : "ONCSkinToneObservation"
+  },
+  {
+    "id" : "onc-waterlow-score",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-waterlow-score",
+    "version" : "0.1.0",
+    "name" : "ONCWaterlowScore"
+  },
+  {
+    "id" : "onc-wound-assessment",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-wound-assessment",
+    "version" : "0.1.0",
+    "name" : "ONCWoundAssessment"
+  },
+  {
+    "id" : "acvpu-vs",
+    "type" : "ValueSet",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/acvpu-vs",
+    "version" : "0.1.0",
+    "name" : "ACVPUValueSet"
   },
   {
     "id" : "goal-evaluation-valueset",
     "type" : "ValueSet",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset",
-    "version" : "1.0.0",
+    "version" : "0.1.0",
     "name" : "GoalEvaluationValueSet"
   },
   {
     "id" : "housing-status-vs",
     "type" : "ValueSet",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/housing-status-vs",
-    "version" : "1.0.0",
+    "version" : "0.1.0",
     "name" : "HousingStatusVS"
+  },
+  {
+    "id" : "inspired-oxygen-vs",
+    "type" : "ValueSet",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/inspired-oxygen-vs",
+    "version" : "0.1.0",
+    "name" : "InspiredOxygenValueSet"
+  },
+  {
+    "id" : "news2-code-vs",
+    "type" : "ValueSet",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/news2-code-vs",
+    "version" : "0.1.0",
+    "name" : "NEWS2CodeValueSet"
+  },
+  {
+    "id" : "news2-subscore-code-vs",
+    "type" : "ValueSet",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/news2-subscore-code-vs",
+    "version" : "0.1.0",
+    "name" : "NEWS2SubscoreCodeValueSet"
   },
   {
     "id" : "nursing-intervention-valueset",
     "type" : "ValueSet",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-intervention-valueset",
-    "version" : "1.0.0",
+    "version" : "0.1.0",
     "name" : "NursingInterventionValueSet"
   },
   {
     "id" : "nursing-problem-valueset",
     "type" : "ValueSet",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-problem-valueset",
-    "version" : "1.0.0",
+    "version" : "0.1.0",
     "name" : "NursingProblemValueSet"
+  },
+  {
+    "id" : "onc-monk-scale-vs",
+    "type" : "ValueSet",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-monk-scale-vs",
+    "version" : "0.1.0",
+    "name" : "ONCMonkScaleVS"
+  },
+  {
+    "id" : "pain-assessment-code-vs",
+    "type" : "ValueSet",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/pain-assessment-code-vs",
+    "version" : "0.1.0",
+    "name" : "PainAssessmentCodeValueSet"
   },
   {
     "id" : "problem-category-valueset",
     "type" : "ValueSet",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/problem-category-valueset",
-    "version" : "1.0.0",
+    "version" : "0.1.0",
     "name" : "ProblemCategoryValueSet"
   },
   {
     "id" : "skintone-vs",
     "type" : "ValueSet",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/skintone-vs",
-    "version" : "1.0.0",
+    "version" : "0.1.0",
     "name" : "SkinToneVS"
   },
   {
-    "id" : "UKCore-Extension-EthnicCategory",
-    "type" : "StructureDefinition",
-    "url" : "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Extension-EthnicCategory",
-    "version" : "1.0.0",
-    "name" : "UKCoreEthnicCategory"
+    "id" : "wound-stage-vs",
+    "type" : "ValueSet",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/wound-stage-vs",
+    "version" : "0.1.0",
+    "name" : "WoundStageValueSet"
   }
 ]

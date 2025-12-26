@@ -1,4 +1,4 @@
-# Nursing Intervention Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# Nursing Intervention Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,11 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-intervention-valueset | *Version*:1.0.0 |
-| Active as of 2025-11-28 | *Computable Name*:NursingInterventionValueSet |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-intervention-valueset | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:NursingInterventionValueSet |
+
+ 
+Value set for nursing interventions 
 
  **References** 
 
@@ -17,15 +20,9 @@
 
 ### Logical Definition (CLD)
 
-* Include codes from[`http://snomed.info/sct`](http://www.snomed.org/)version Not Stated (use latest from terminology server) where concept is-a 71388002 (Procedure)
-
  
 
 ### Expansion
-
-Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
-
-This value set has >1000 codes in it. In order to keep the publication size manageable, only a selection (1000 codes) of the whole set of codes is shown
 
 -------
 
@@ -49,20 +46,29 @@ This value set has >1000 codes in it. In order to keep the publication size mana
   "resourceType" : "ValueSet",
   "id" : "nursing-intervention-valueset",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-intervention-valueset",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "NursingInterventionValueSet",
   "title" : "Nursing Intervention Value Set",
-  "status" : "active",
-  "date" : "2025-11-28T01:24:36+00:00",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-12-26T14:13:58+00:00",
+  "description" : "Value set for nursing interventions",
   "compose" : {
     "include" : [
       {
         "system" : "http://snomed.info/sct",
-        "filter" : [
+        "concept" : [
           {
-            "property" : "concept",
-            "op" : "is-a",
-            "value" : "71388002"
+            "code" : "71388002",
+            "display" : "Procedure"
+          },
+          {
+            "code" : "225358003",
+            "display" : "Wound care"
+          },
+          {
+            "code" : "386373004",
+            "display" : "Nutrition therapy"
           }
         ]
       }

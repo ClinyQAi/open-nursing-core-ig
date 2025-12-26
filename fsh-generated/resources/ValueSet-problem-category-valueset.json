@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "ProblemCategoryValueSet",
   "id": "problem-category-valueset",
   "title": "Problem Category Value Set",
@@ -10,7 +10,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://open-nursing-core.org/CodeSystem/onc-problem-type"
+        "system": "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type"
       }
     ]
   }

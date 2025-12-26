@@ -10,28 +10,44 @@
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "nursing-problem-valueset"] ; # 
   fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nursing-problem-valueset</b></p><a name=\"nursing-problem-valueset\"> </a><a name=\"hcnursing-problem-valueset\"> </a><ul><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a 409586006 (Complaint (finding))</li></ul></div>"^^rdf:XMLLiteral ]
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nursing-problem-valueset</b></p><a name=\"nursing-problem-valueset\"> </a><a name=\"hcnursing-problem-valueset\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/129839007\">129839007</a></td><td>At risk for falls</td></tr><tr><td><a href=\"http://snomed.info/id/300893006\">300893006</a></td><td>Nutritional finding</td></tr><tr><td><a href=\"http://snomed.info/id/22253000\">22253000</a></td><td>Pain</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-onc-observation-codes.html\"><code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-risk-falls\">risk-falls</a></td><td>Risk of falls</td><td>Risk of falls diagnosis</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-problem-valueset"^^xsd:anyURI ;
      fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-problem-valueset>
   ] ; # 
-  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "NursingProblemValueSet"] ; # 
   fhir:title [ fhir:v "Nursing Problem Value Set"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-11-28T01:24:36+00:00"^^xsd:dateTime] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-12-26T14:13:58+00:00"^^xsd:dateTime] ; # 
+  fhir:description [ fhir:v "Value set for nursing problems and diagnoses"] ; # 
   fhir:compose [
      fhir:include ( [
        fhir:system [
          fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
          fhir:l <http://snomed.info/sct>
        ] ;
-       fhir:filter ( [
-         fhir:property [ fhir:v "concept" ] ;
-         fhir:op [ fhir:v "is-a" ] ;
-         fhir:value [ fhir:v "409586006" ]
+       fhir:concept ( [
+         fhir:code [ fhir:v "129839007" ] ;
+         fhir:display [ fhir:v "At risk for falls" ]
+       ] [
+         fhir:code [ fhir:v "300893006" ] ;
+         fhir:display [ fhir:v "Nutritional finding" ]
+       ] [
+         fhir:code [ fhir:v "22253000" ] ;
+         fhir:display [ fhir:v "Pain" ]
+       ] )
+     ] [
+       fhir:system [
+         fhir:v "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "risk-falls" ] ;
+         fhir:display [ fhir:v "Risk of falls" ]
        ] )
      ] )
   ] . # 

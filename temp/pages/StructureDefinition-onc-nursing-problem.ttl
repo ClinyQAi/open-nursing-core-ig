@@ -17,11 +17,12 @@
      fhir:v "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-problem"^^xsd:anyURI ;
      fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-problem>
   ] ; # 
-  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "ONCNursingProblem"] ; # 
   fhir:title [ fhir:v "Nursing Problem"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-11-28T01:24:36+00:00"^^xsd:dateTime] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-12-26T14:13:58+00:00"^^xsd:dateTime] ; # 
+  fhir:description [ fhir:v "Nursing diagnosis or problem identified during assessment. Represents clinical judgments about individual, family, or community responses to actual or potential health problems. Part of the ADPIE framework's Diagnosis phase."] ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
   fhir:mapping ( [
      fhir:identity [ fhir:v "workflow" ] ;

@@ -1,4 +1,4 @@
-# Open Nursing Core Assessment - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# Open Nursing Core Assessment - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,12 +8,15 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment | *Version*:1.0.0 |
-| Active as of 2025-11-28 | *Computable Name*:ONCNursingAssessment |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:ONCNursingAssessment |
+
+ 
+Base profile for nursing assessment observations conforming to UK Core standards. Captures structured nursing assessment data as part of the ADPIE (Assessment, Diagnosis, Planning, Implementation, Evaluation) nursing process framework. Used as parent for specialized assessments like NEWS2, Braden Scale, and clinical observations. 
 
 **Usages:**
 
-* Derived from this Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessment.md), [Goal Evaluation](StructureDefinition-onc-goal-evaluation.md) and [Skin Tone Observation](StructureDefinition-onc-skintone-observation.md)
+* Derived from this Profile: [ACVPU Consciousness Level](StructureDefinition-onc-acvpu.md), [Barthel Index](StructureDefinition-onc-barthel-index.md), [Blood Pressure](StructureDefinition-onc-blood-pressure.md), [Body Temperature](StructureDefinition-onc-body-temperature.md)...Show 18 more,[Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessment.md),[Glasgow Coma Scale](StructureDefinition-onc-glasgow-coma-scale.md),[Goal Evaluation](StructureDefinition-onc-goal-evaluation.md),[Heart Rate](StructureDefinition-onc-heart-rate.md),[Inspired Oxygen](StructureDefinition-onc-inspired-oxygen.md),[Mini Mental State Examination (MMSE)](StructureDefinition-onc-mmse.md),[Monk Skin Tone Observation](StructureDefinition-onc-monk-skintone-observation.md),[Morse Fall Scale](StructureDefinition-onc-morse-fall-scale.md),[MUST Score (Malnutrition Universal Screening Tool)](StructureDefinition-onc-must-score.md),[NEWS2 Score](StructureDefinition-onc-news2-score.md),[NEWS2 Sub-Score](StructureDefinition-onc-news2-subscore.md),[Oxygen Saturation](StructureDefinition-onc-oxygen-saturation.md),[Pain Assessment (NRS 0-10)](StructureDefinition-onc-pain-assessment.md),[qSOFA (Quick SOFA)](StructureDefinition-onc-qsofa.md),[Respiration Rate](StructureDefinition-onc-respiration-rate.md),[Skin Tone Observation](StructureDefinition-onc-skintone-observation.md),[Waterlow Score](StructureDefinition-onc-waterlow-score.md)and[Wound Assessment](StructureDefinition-onc-wound-assessment.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-nursing-assessment)
 
@@ -34,11 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-assessme
   "resourceType" : "StructureDefinition",
   "id" : "onc-nursing-assessment",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "ONCNursingAssessment",
   "title" : "Open Nursing Core Assessment",
-  "status" : "active",
-  "date" : "2025-11-28T01:24:36+00:00",
+  "status" : "draft",
+  "date" : "2025-12-26T14:13:58+00:00",
+  "description" : "Base profile for nursing assessment observations conforming to UK Core standards. Captures structured nursing assessment data as part of the ADPIE (Assessment, Diagnosis, Planning, Implementation, Evaluation) nursing process framework. Used as parent for specialized assessments like NEWS2, Braden Scale, and clinical observations.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -90,7 +94,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-assessme
           "discriminator" : [
             {
               "type" : "pattern",
-              "path" : "coding.code"
+              "path" : "$this"
             }
           ],
           "ordered" : false,
@@ -104,18 +108,15 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-assessme
         "sliceName" : "nursing",
         "min" : 1,
         "max" : "1",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+              "code" : "survey"
+            }
+          ]
+        },
         "mustSupport" : true
-      },
-      {
-        "id" : "Observation.category:nursing.coding.system",
-        "path" : "Observation.category.coding.system",
-        "patternUri" : "http://terminology.hl7.org/CodeSystem/observation-category"
-      },
-      {
-        "id" : "Observation.category:nursing.coding.code",
-        "path" : "Observation.category.coding.code",
-        "min" : 1,
-        "patternCode" : "nursing"
       },
       {
         "id" : "Observation.performer",

@@ -7,7 +7,7 @@ Id: onc-waterlow-score
 Title: "Waterlow Score"
 Description: "Waterlow Pressure Ulcer Risk Assessment - NHS standard tool. Score ≥10 indicates at risk, ≥15 high risk, ≥20 very high risk."
 * status MS
-* code = http://snomed.info/sct#443846001 "Waterlow score (observable entity)"
+* code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#waterlow-score "Waterlow Score"
 * code MS
 * value[x] only Quantity
 * valueQuantity 1..1 MS

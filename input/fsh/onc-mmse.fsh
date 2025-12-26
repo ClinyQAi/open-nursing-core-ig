@@ -7,7 +7,7 @@ Id: onc-mmse
 Title: "Mini Mental State Examination (MMSE)"
 Description: "Mini Mental State Examination for cognitive function screening. Score 24-30=no impairment, 18-23=mild, 0-17=severe. Total range 0-30."
 * status MS
-* code = http://loinc.org#72106-8 "Mini-Mental State Examination (MMSE)"
+* code = http://loinc.org#72106-8 "Total score [MMSE]"
 * code MS
 * value[x] only Quantity
 * valueQuantity 1..1 MS

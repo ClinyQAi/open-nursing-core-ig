@@ -1,39 +1,32 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "WoundStageValueSet",
   "id": "wound-stage-vs",
   "title": "Wound Stage Value Set",
-  "description": "SNOMED CT codes for pressure ulcer staging",
   "url": "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/wound-stage-vs",
   "compose": {
     "include": [
       {
-        "system": "http://snomed.info/sct",
+        "system": "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
         "concept": [
           {
-            "code": "421257003",
-            "display": "Stage 1 pressure ulcer"
+            "code": "stage-1"
           },
           {
-            "code": "420226007",
-            "display": "Stage 2 pressure ulcer"
+            "code": "stage-2"
           },
           {
-            "code": "420555000",
-            "display": "Stage 3 pressure ulcer"
+            "code": "stage-3"
           },
           {
-            "code": "420324007",
-            "display": "Stage 4 pressure ulcer"
+            "code": "stage-4"
           },
           {
-            "code": "421076008",
-            "display": "Unstageable pressure ulcer"
+            "code": "unstageable"
           },
           {
-            "code": "723071003",
-            "display": "Deep tissue injury"
+            "code": "deep-tissue"
           }
         ]
       }

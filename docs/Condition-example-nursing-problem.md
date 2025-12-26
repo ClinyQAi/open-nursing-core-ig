@@ -1,4 +1,4 @@
-# example-nursing-problem - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# example-nursing-problem - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -12,7 +12,7 @@ Profile: [Nursing Problem](StructureDefinition-onc-nursing-problem.md)
 
 **category**: Nursing Diagnosis
 
-**code**: Risk of falls (finding)
+**code**: Risk of falls
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
@@ -42,7 +42,7 @@ Profile: [Nursing Problem](StructureDefinition-onc-nursing-problem.md)
     {
       "coding" : [
         {
-          "system" : "http://open-nursing-core.org/CodeSystem/onc-problem-type",
+          "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type",
           "code" : "nursing-diagnosis",
           "display" : "Nursing Diagnosis"
         }
@@ -52,9 +52,9 @@ Profile: [Nursing Problem](StructureDefinition-onc-nursing-problem.md)
   "code" : {
     "coding" : [
       {
-        "system" : "http://snomed.info/sct",
-        "code" : "162828007",
-        "display" : "Risk of falls (finding)"
+        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "code" : "risk-falls",
+        "display" : "Risk of falls"
       }
     ]
   },

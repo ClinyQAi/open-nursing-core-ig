@@ -1,4 +1,4 @@
-# Housing Status Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# Housing Status Value Set - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,11 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/housing-status-vs | *Version*:1.0.0 |
-| Active as of 2025-11-28 | *Computable Name*:HousingStatusVS |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/housing-status-vs | *Version*:0.1.0 |
+| Draft as of 2025-12-26 | *Computable Name*:HousingStatusVS |
+
+ 
+Value set for patient housing status 
 
  **References** 
 
@@ -20,10 +23,6 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
  
 
 ### Expansion
-
-Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
-
-This value set contains 1 concepts
 
 -------
 
@@ -47,21 +46,25 @@ This value set contains 1 concepts
   "resourceType" : "ValueSet",
   "id" : "housing-status-vs",
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/housing-status-vs",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "HousingStatusVS",
   "title" : "Housing Status Value Set",
-  "status" : "active",
-  "date" : "2025-11-28T01:24:36+00:00",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-12-26T14:13:58+00:00",
+  "description" : "Value set for patient housing status",
   "compose" : {
     "include" : [
       {
         "system" : "http://snomed.info/sct",
         "concept" : [
           {
-            "code" : "32911000"
+            "code" : "266935003",
+            "display" : "Housing lack"
           },
           {
-            "code" : "160753008"
+            "code" : "224224003",
+            "display" : "Lives in staffed home"
           }
         ]
       }

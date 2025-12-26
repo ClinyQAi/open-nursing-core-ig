@@ -4,7 +4,7 @@
   "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-braden-scale-assessment",
   "name": "ONCBradenScaleAssessment",
   "title": "Braden Scale Assessment",
-  "status": "active",
+  "status": "draft",
   "description": "A profile for the Braden Scale pressure ulcer risk assessment",
   "fhirVersion": "4.0.1",
   "kind": "resource",
@@ -26,9 +26,9 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "38227-0",
-              "system": "http://loinc.org",
-              "display": "Braden scale total score"
+              "code": "braden-total-score",
+              "system": "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "display": "Braden Total Score"
             }
           ]
         },
@@ -89,9 +89,9 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "38222-1",
-              "system": "http://loinc.org",
-              "display": "Sensory perception Braden scale"
+              "code": "braden-sensory",
+              "system": "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "display": "Braden Sensory Perception"
             }
           ]
         }
@@ -119,9 +119,9 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "38229-6",
-              "system": "http://loinc.org",
-              "display": "Moisture Braden scale"
+              "code": "braden-moisture",
+              "system": "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "display": "Braden Moisture"
             }
           ]
         }
@@ -149,9 +149,9 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "38223-9",
-              "system": "http://loinc.org",
-              "display": "Activity Braden scale"
+              "code": "braden-activity",
+              "system": "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "display": "Braden Activity"
             }
           ]
         }
@@ -179,9 +179,9 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "38224-7",
-              "system": "http://loinc.org",
-              "display": "Mobility Braden scale"
+              "code": "braden-mobility",
+              "system": "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "display": "Braden Mobility"
             }
           ]
         }
@@ -209,9 +209,9 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "38225-4",
-              "system": "http://loinc.org",
-              "display": "Nutrition Braden scale"
+              "code": "braden-nutrition",
+              "system": "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "display": "Braden Nutrition"
             }
           ]
         }
@@ -239,9 +239,9 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "38226-2",
-              "system": "http://loinc.org",
-              "display": "Friction and shear Braden scale"
+              "code": "braden-friction",
+              "system": "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "display": "Braden Friction/Shear"
             }
           ]
         }

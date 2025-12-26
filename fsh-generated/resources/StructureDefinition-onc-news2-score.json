@@ -4,7 +4,7 @@
   "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-news2-score",
   "name": "ONCNEWS2Score",
   "title": "NEWS2 Score",
-  "status": "active",
+  "status": "draft",
   "description": "National Early Warning Score 2 (NEWS2) for detecting clinical deterioration. Fully aligned with NHS CareConnect-NEWS2-Observation-1.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
@@ -23,11 +23,16 @@
       {
         "id": "Observation.code",
         "path": "Observation.code",
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/news2-code-vs"
-        }
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "news2-score",
+              "system": "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "display": "NEWS2 Score"
+            }
+          ]
+        },
+        "mustSupport": true
       },
       {
         "id": "Observation.value[x]",

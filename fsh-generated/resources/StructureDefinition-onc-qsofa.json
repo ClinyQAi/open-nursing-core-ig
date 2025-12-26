@@ -4,7 +4,7 @@
   "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-qsofa",
   "name": "ONCqSOFA",
   "title": "qSOFA (Quick SOFA)",
-  "status": "active",
+  "status": "draft",
   "description": "Quick Sequential Organ Failure Assessment for sepsis screening. Score ≥2 indicates high risk. Total range 0-3.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
@@ -27,7 +27,7 @@
             {
               "code": "96790-1",
               "system": "http://loinc.org",
-              "display": "Quick Sequential Organ Failure Assessment panel"
+              "display": "SOFA Total Score"
             }
           ]
         },

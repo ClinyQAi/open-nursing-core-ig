@@ -7,7 +7,7 @@ Id: onc-morse-fall-scale
 Title: "Morse Fall Scale"
 Description: "Morse Fall Scale for assessing fall risk. Score 0-24=no risk, 25-50=low risk, ≥51=high risk. Total range 0-125."
 * status MS
-* code = http://loinc.org#73830-2 "Morse Fall Scale panel"
+* code = http://loinc.org#73830-2 "Fall risk assessment"
 * code MS
 * value[x] only Quantity
 * valueQuantity 1..1 MS
@@ -30,7 +30,7 @@ Id: onc-qsofa
 Title: "qSOFA (Quick SOFA)"
 Description: "Quick Sequential Organ Failure Assessment for sepsis screening. Score ≥2 indicates high risk. Total range 0-3."
 * status MS
-* code = http://loinc.org#96790-1 "Quick Sequential Organ Failure Assessment panel"
+* code = http://loinc.org#96790-1 "SOFA Total Score"
 * code MS
 * value[x] only Quantity
 * valueQuantity 1..1 MS
@@ -53,7 +53,7 @@ Id: onc-barthel-index
 Title: "Barthel Index"
 Description: "Barthel Index for measuring independence in activities of daily living (ADL). Score 0-20=total dependency, 91-99=slight dependency, 100=independent. Total range 0-100."
 * status MS
-* code = http://loinc.org#83254-5 "Barthel Index"
+* code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#barthel-score "Barthel Index Score"
 * code MS
 * value[x] only Quantity
 * valueQuantity 1..1 MS

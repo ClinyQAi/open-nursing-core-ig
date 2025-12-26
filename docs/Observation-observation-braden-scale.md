@@ -1,4 +1,4 @@
-# observation-braden-scale - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# observation-braden-scale - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -10,27 +10,27 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
 
 **status**: Final
 
-**category**: nursing
+**category**: Survey
 
-**code**: Braden Scale total score
+**code**: Braden Total Score
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
 **performer**: [Practitioner Nightingale](Practitioner-practitioner-example.md)
 
-**value**: 18 score(Details: UCUM codescore = 'score')
+**value**: 18 {score}(Details: UCUM code1 = '1')
 
-> **component****code**:Sensory Perception**value**: 3 score(Details: UCUM codescore = 'score')
+> **component****code**:Braden Sensory Perception**value**: 3 {score}(Details: UCUM code1 = '1')
 
-> **component****code**:Moisture**value**: 4 score(Details: UCUM codescore = 'score')
+> **component****code**:Braden Moisture**value**: 4 {score}(Details: UCUM code1 = '1')
 
-> **component****code**:Activity**value**: 2 score(Details: UCUM codescore = 'score')
+> **component****code**:Braden Activity**value**: 2 {score}(Details: UCUM code1 = '1')
 
-> **component****code**:Mobility**value**: 3 score(Details: UCUM codescore = 'score')
+> **component****code**:Braden Mobility**value**: 3 {score}(Details: UCUM code1 = '1')
 
-> **component****code**:Nutrition**value**: 3 score(Details: UCUM codescore = 'score')
+> **component****code**:Braden Nutrition**value**: 3 {score}(Details: UCUM code1 = '1')
 
-> **component****code**:Friction and Shear**value**: 3 score(Details: UCUM codescore = 'score')
+> **component****code**:Braden Friction/Shear**value**: 3 {score}(Details: UCUM code1 = '1')
 
 
 
@@ -51,7 +51,7 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
       "coding" : [
         {
           "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "nursing"
+          "code" : "survey"
         }
       ]
     }
@@ -59,9 +59,9 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
   "code" : {
     "coding" : [
       {
-        "system" : "http://loinc.org",
-        "code" : "9017-7",
-        "display" : "Braden Scale total score"
+        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "code" : "braden-total-score",
+        "display" : "Braden Total Score"
       }
     ]
   },
@@ -75,111 +75,111 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
   ],
   "valueQuantity" : {
     "value" : 18,
-    "unit" : "score",
+    "unit" : "{score}",
     "system" : "http://unitsofmeasure.org",
-    "code" : "score"
+    "code" : "1"
   },
   "component" : [
     {
       "code" : {
         "coding" : [
           {
-            "system" : "http://loinc.org",
-            "code" : "74012-8",
-            "display" : "Sensory Perception"
+            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "code" : "braden-sensory",
+            "display" : "Braden Sensory Perception"
           }
         ]
       },
       "valueQuantity" : {
         "value" : 3,
-        "unit" : "score",
+        "unit" : "{score}",
         "system" : "http://unitsofmeasure.org",
-        "code" : "score"
+        "code" : "1"
       }
     },
     {
       "code" : {
         "coding" : [
           {
-            "system" : "http://loinc.org",
-            "code" : "74013-6",
-            "display" : "Moisture"
+            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "code" : "braden-moisture",
+            "display" : "Braden Moisture"
           }
         ]
       },
       "valueQuantity" : {
         "value" : 4,
-        "unit" : "score",
+        "unit" : "{score}",
         "system" : "http://unitsofmeasure.org",
-        "code" : "score"
+        "code" : "1"
       }
     },
     {
       "code" : {
         "coding" : [
           {
-            "system" : "http://loinc.org",
-            "code" : "74014-4",
-            "display" : "Activity"
+            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "code" : "braden-activity",
+            "display" : "Braden Activity"
           }
         ]
       },
       "valueQuantity" : {
         "value" : 2,
-        "unit" : "score",
+        "unit" : "{score}",
         "system" : "http://unitsofmeasure.org",
-        "code" : "score"
+        "code" : "1"
       }
     },
     {
       "code" : {
         "coding" : [
           {
-            "system" : "http://loinc.org",
-            "code" : "74015-1",
-            "display" : "Mobility"
+            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "code" : "braden-mobility",
+            "display" : "Braden Mobility"
           }
         ]
       },
       "valueQuantity" : {
         "value" : 3,
-        "unit" : "score",
+        "unit" : "{score}",
         "system" : "http://unitsofmeasure.org",
-        "code" : "score"
+        "code" : "1"
       }
     },
     {
       "code" : {
         "coding" : [
           {
-            "system" : "http://loinc.org",
-            "code" : "74016-9",
-            "display" : "Nutrition"
+            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "code" : "braden-nutrition",
+            "display" : "Braden Nutrition"
           }
         ]
       },
       "valueQuantity" : {
         "value" : 3,
-        "unit" : "score",
+        "unit" : "{score}",
         "system" : "http://unitsofmeasure.org",
-        "code" : "score"
+        "code" : "1"
       }
     },
     {
       "code" : {
         "coding" : [
           {
-            "system" : "http://loinc.org",
-            "code" : "74017-7",
-            "display" : "Friction and Shear"
+            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "code" : "braden-friction",
+            "display" : "Braden Friction/Shear"
           }
         ]
       },
       "valueQuantity" : {
         "value" : 3,
-        "unit" : "score",
+        "unit" : "{score}",
         "system" : "http://unitsofmeasure.org",
-        "code" : "score"
+        "code" : "1"
       }
     }
   ]

@@ -3,14 +3,16 @@
   "id" : "problem-category-valueset",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet problem-category-valueset</b></p><a name=\"problem-category-valueset\"> </a><a name=\"hcproblem-category-valueset\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-onc-problem-type.html\"><code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;1.0.0</span></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet problem-category-valueset</b></p><a name=\"problem-category-valueset\"> </a><a name=\"hcproblem-category-valueset\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-onc-problem-type.html\"><code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
   },
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/problem-category-valueset",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "ProblemCategoryValueSet",
   "title" : "Problem Category Value Set",
-  "status" : "active",
-  "date" : "2025-11-28T01:24:36+00:00",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-12-26T14:13:58+00:00",
+  "description" : "Value set for categorizing nursing problems",
   "compose" : {
     "include" : [{
       "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type"

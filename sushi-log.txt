@@ -1,0 +1,53 @@
+info  Running SUSHI v3.16.5 (implements FHIR Shorthand specification v3.0.0)
+info  Arguments:
+info    C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig
+info  path-to-fsh-defs defaulted to current working directory
+info  No output path specified. Output to .
+info  Using configuration file: C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\sushi-config.yaml
+warn  Configuration property publisher has a value with an unexpected type.
+info  Importing FSH text...
+error Assignment rules must include at least one space both before and after the '=' sign
+  File: C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\input\fsh\onc-equity.fsh
+  Line: 22
+info  Preprocessed 11 documents with 0 aliases.
+info  Imported 46 definitions and 8 instances.
+info  Loaded virtual package sushi-r5forR4#1.0.0 with 7 resources
+info  Resolved hl7.fhir.uv.tools.r4#latest to concrete version 0.9.0
+info  Loaded hl7.fhir.uv.tools.r4#0.9.0 with 117 resources
+info  Resolved hl7.terminology.r4#latest to concrete version 7.0.1
+info  Loaded hl7.terminology.r4#7.0.1 with 4096 resources
+info  Resolved hl7.fhir.uv.extensions.r4#latest to concrete version 5.2.0
+info  Loaded hl7.fhir.uv.extensions.r4#5.2.0 with 759 resources
+info  Loaded hl7.fhir.r4.core#4.0.1 with 4578 resources
+info  Loaded virtual package sushi-local#LOCAL with 0 resources
+info  Converting FSH to FHIR resources...
+info  Converted 30 FHIR StructureDefinitions.
+info  Converted 3 FHIR CodeSystems.
+info  Converted 13 FHIR ValueSets.
+error Element Observation.code has minimum cardinality 1 but occurs 0 time(s).
+  File: C:\Users\g0226\OneDrive\Desktop\fhir-git\open-nursing-core-ig\input\fsh\onc-master-examples.fsh
+  Line: 20 - 28
+info  Converted 8 FHIR instances.
+info  Exporting FHIR resources as JSON...
+info  Exported 54 FHIR resources as JSON.
+info  Assembling Implementation Guide sources...
+info  Generated ImplementationGuide-onc.ig.json
+info  Assembled Implementation Guide sources; ready for IG Publisher.
+info  The sample-ig located at https://github.com/FHIR/sample-ig contains scripts useful for downloading and running the IG Publisher.
+
+========================= SUSHI RESULTS ===========================
+|  -------------------------------------------------------------  |
+| |    Profiles   |  Extensions  |   Logicals   |   Resources   | |
+| |-------------------------------------------------------------| |
+| |      27       |      3       |      0       |       0       | |
+|  -------------------------------------------------------------  |
+|  -------------------------------------------------------------  |
+| |      ValueSets     |    CodeSystems    |     Instances      | |
+| |-------------------------------------------------------------| |
+| |         13         |         3         |         8          | |
+|  -------------------------------------------------------------  |
+|                                                                 |
+===================================================================
+| You whaley need to turn this around.   2 Errors       1 Warning |
+===================================================================
+

@@ -1,4 +1,4 @@
-# patient-example-jane - Open Nursing Core FHIR Implementation Guide (ONC-IG) v1.0.0
+# patient-example-jane - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -31,7 +31,7 @@ Jane Doe Female, DoB Unknown
   },
   "extension" : [
     {
-      "url" : "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Extension-EthnicCategory",
+      "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/UKCore-Extension-EthnicCategory",
       "valueCodeableConcept" : {
         "coding" : [
           {

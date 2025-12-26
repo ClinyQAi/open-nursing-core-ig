@@ -58,13 +58,13 @@ Description: "Comprehensive wound assessment including staging and dimensions"
 * component[length].valueQuantity.unit = "cm"
 * component[length].valueQuantity.system = "http://unitsofmeasure.org"
 * component[length].valueQuantity.code = #cm
-* component[width].code = http://snomed.info/sct#410669006 "Width"
+* component[width].code = http://snomed.info/sct#401239006 "Width of wound"
 * component[width].value[x] only Quantity
 * component[width].valueQuantity.value obeys positive-dimension
 * component[width].valueQuantity.unit = "cm"
 * component[width].valueQuantity.system = "http://unitsofmeasure.org"
 * component[width].valueQuantity.code = #cm
-* component[depth].code = http://snomed.info/sct#410670007 "Depth"
+* component[depth].code = http://snomed.info/sct#425094009 "Depth of wound"
 * component[depth].value[x] only Quantity
 * component[depth].valueQuantity.value obeys positive-dimension
 * component[depth].valueQuantity.unit = "cm"
@@ -79,10 +79,9 @@ Severity: #error
 ValueSet: WoundStageValueSet
 Id: wound-stage-vs
 Title: "Wound Stage Value Set"
-Description: "SNOMED CT codes for pressure ulcer staging"
-* http://snomed.info/sct#421257003 "Stage 1 pressure ulcer"
-* http://snomed.info/sct#420226007 "Stage 2 pressure ulcer"
-* http://snomed.info/sct#420555000 "Stage 3 pressure ulcer"
-* http://snomed.info/sct#420324007 "Stage 4 pressure ulcer"
-* http://snomed.info/sct#421076008 "Unstageable pressure ulcer"
-* http://snomed.info/sct#723071003 "Deep tissue injury"
+* include ONCObservationCodes#stage-1
+* include ONCObservationCodes#stage-2
+* include ONCObservationCodes#stage-3
+* include ONCObservationCodes#stage-4
+* include ONCObservationCodes#unstageable
+* include ONCObservationCodes#deep-tissue
