@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-body-temperature
   "name" : "ONCBodyTemperature",
   "title" : "Body Temperature",
   "status" : "active",
-  "date" : "2025-12-26T11:32:15+00:00",
+  "date" : "2025-12-26T11:32:54+00:00",
   "description" : "Body temperature observation for NEWS2",
   "fhirVersion" : "4.0.1",
   "mapping" : [
