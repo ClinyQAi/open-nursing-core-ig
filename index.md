@@ -65,7 +65,7 @@ For questions or contributions, visit our [GitHub repository](https://github.com
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "draft",
-  "date" : "2025-12-26T14:29:21+00:00",
+  "date" : "2025-12-26T14:36:57+00:00",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome.",
   "packageId" : "onc.ig",
   "license" : "MIT",

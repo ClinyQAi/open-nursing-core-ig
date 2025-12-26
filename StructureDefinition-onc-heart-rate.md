@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-heart-rate.csv),
   "name" : "ONCHeartRate",
   "title" : "Heart Rate",
   "status" : "draft",
-  "date" : "2025-12-26T14:29:21+00:00",
+  "date" : "2025-12-26T14:36:57+00:00",
   "description" : "Heart rate (pulse) observation for NEWS2",
   "fhirVersion" : "4.0.1",
   "mapping" : [

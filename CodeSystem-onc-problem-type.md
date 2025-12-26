@@ -32,7 +32,7 @@ Code system for categorizing types of nursing problems
   "title" : "Problem Type CodeSystem",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-26T14:29:21+00:00",
+  "date" : "2025-12-26T14:36:57+00:00",
   "description" : "Code system for categorizing types of nursing problems",
   "caseSensitive" : true,
   "content" : "complete",

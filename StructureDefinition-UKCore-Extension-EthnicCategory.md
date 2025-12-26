@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-UKCore-Extension-Eth
   "name" : "UKCoreEthnicCategory",
   "title" : "UK Core Ethnic Category",
   "status" : "draft",
-  "date" : "2025-12-26T14:29:21+00:00",
+  "date" : "2025-12-26T14:36:57+00:00",
   "description" : "An extension to record the ethnic category of a patient, as per UK Core standards.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
