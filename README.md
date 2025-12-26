@@ -25,11 +25,13 @@
 
 The **Open Nursing Core (ONC)** is a nurse-led, open-source initiative to codify the nursing process (**ADPIE** - Assessment, Diagnosis, Planning, Implementation, Evaluation) into rigorous digital standards using HL7 FHIR.
 
-**This IG is the technical implementation of [NHS England's Unified Vision of Nursing Documentation](https://www.england.nhs.uk/long-read/towards-a-unified-vision-of-nursing-and-midwifery-documentation/).**
+**This independent project aligns with [NHS England's Unified Vision of Nursing Documentation](https://www.england.nhs.uk/long-read/towards-a-unified-vision-of-nursing-and-midwifery-documentation/), providing a practical FHIR-based implementation of their strategic goals.**
 
-### 🏥 NHS England Alignment
+> **Note**: This is an independent open-source project and is not officially endorsed by or affiliated with NHS England. It is developed by the nursing informatics community to support the vision outlined in NHS England's guidance.
 
-This Implementation Guide directly supports NHS England's strategic vision by:
+### 🏥 Alignment with NHS England Vision
+
+This Implementation Guide supports the goals outlined in NHS England's unified vision by:
 
 - ✅ **Standardising nursing documentation** across health and social care
 - ✅ **Reducing unwarranted variation** through validated FHIR profiles
@@ -210,7 +212,9 @@ This implementation is built upon the scholarship and research of nursing innova
 - **Dr Clare Cable** (Chief Executive, Burdett Trust for Nursing) - For pioneering work on Relational Intelligence in nursing
 - **Kumbi Kariwo** (Nurse Citizen Developer) - For leading the technical integration of Skin Tone Inclusivity and equity measures
 - **Robylin 'Tweetie' Diya** - For foundational work on MCINDS (Minimum Core International Nursing Data Set)
-- **NHS England Digital Team** - For the unified vision of nursing documentation
+
+**Inspiration & Alignment:**
+- **NHS England** - For publishing the unified vision of nursing documentation that inspired this technical implementation
 
 ---
 
