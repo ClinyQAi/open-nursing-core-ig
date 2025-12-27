@@ -54,7 +54,7 @@ Prism.languages.fhirpath = {
 	],
 	'variable': [
 		/(%\w+)\b/,
-		/(%`(?:\w|x[0-9a-fA-F]{2}|u[0-9a-fA-F]{4}|[ \-\."\\\/fnrt])+`)/ // this isn;t quite right, but it's a start
+		/(%`(?:x[0-9a-fA-F]{2}|u[0-9a-fA-F]{4}|[A-EO-TV-Za-dg-qs-z0-9_ \-\."\\\/fnrt])+`)/ // this isn;t quite right, but it's a start
 	],
 	'identifier': [
 		{
