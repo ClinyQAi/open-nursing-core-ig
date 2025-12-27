@@ -108,17 +108,6 @@ class FHIRAPIClient:
                     "Failed to retrieve patient {patient_id}: {status_code}",
                     patient_id=(patient_id, "pat"),
                     status_code=response.status_code,
-                safe_log_info(logger, "Retrieved patient successfully")
-                logger.info(
-                    "Retrieved patient: %s",
-                    self._safe_patient_id_for_log(patient_id),
-                )
-                return response.json()
-            else:
-                logger.warning(
-                    "Failed to retrieve patient %s: %s",
-                    self._safe_patient_id_for_log(patient_id),
-                    response.status_code,
                 )
                 return None
         except Exception as e:
@@ -160,17 +149,6 @@ class FHIRAPIClient:
                     "Failed to retrieve conditions for patient {patient_id}: {status_code}",
                     patient_id=(patient_id, "pat"),
                     status_code=response.status_code,
-                logger.info(
-                    "Retrieved %d conditions for patient %s",
-                    len(conditions),
-                    self._safe_patient_id_for_log(patient_id),
-                )
-                return conditions
-            else:
-                logger.warning(
-                    "Failed to retrieve conditions for patient %s: %s",
-                    self._safe_patient_id_for_log(patient_id),
-                    response.status_code,
                 )
                 return []
         except Exception as e:
