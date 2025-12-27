@@ -186,7 +186,7 @@ def login_page():
                 st.session_state.username = username
                 st.session_state.role = role
                 audit_log(username, "login")
-                logger.info(f"User logged in: {username} ({role})")
+                logger.info("User login successful")
                 st.success(f"Welcome back, {username}!")
                 st.rerun()
             else:
