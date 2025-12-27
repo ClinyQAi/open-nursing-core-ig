@@ -12,7 +12,7 @@ from typing import Optional, Dict, Any, List
 from enum import Enum
 import hashlib
 
-from core.safe_logging import safe_log_info, log_exception_safe, mask_identifier
+from core.safe_logging import safe_log_info, safe_log_warning, log_exception_safe, mask_identifier
 
 try:
     from fhir.resources.R4B.bundle import Bundle
@@ -94,7 +94,6 @@ class FHIRAPIClient:
             response = requests.get(url, headers=self.headers, timeout=10)
 
             if response.status_code == 200:
-                from core.safe_logging import safe_log_info
                 safe_log_info(
                     logger,
                     "Retrieved patient",
@@ -102,23 +101,11 @@ class FHIRAPIClient:
                 )
                 return response.json()
             else:
-                from core.safe_logging import safe_log_warning
                 safe_log_warning(
                     logger,
                     "Failed to retrieve patient {patient_id}: {status_code}",
                     patient_id=(patient_id, "pat"),
                     status_code=response.status_code,
-                safe_log_info(logger, "Retrieved patient successfully")
-                logger.info(
-                    "Retrieved patient: %s",
-                    self._safe_patient_id_for_log(patient_id),
-                )
-                return response.json()
-            else:
-                logger.warning(
-                    "Failed to retrieve patient %s: %s",
-                    self._safe_patient_id_for_log(patient_id),
-                    response.status_code,
                 )
                 return None
         except Exception as e:
@@ -145,7 +132,6 @@ class FHIRAPIClient:
                 bundle = response.json()
                 entries = bundle.get("entry", [])
                 conditions = [entry["resource"] for entry in entries]
-                from core.safe_logging import safe_log_info
                 safe_log_info(
                     logger,
                     "Retrieved {count} conditions for patient {patient_id}",
@@ -154,23 +140,11 @@ class FHIRAPIClient:
                 )
                 return conditions
             else:
-                from core.safe_logging import safe_log_warning
                 safe_log_warning(
                     logger,
                     "Failed to retrieve conditions for patient {patient_id}: {status_code}",
                     patient_id=(patient_id, "pat"),
                     status_code=response.status_code,
-                logger.info(
-                    "Retrieved %d conditions for patient %s",
-                    len(conditions),
-                    self._safe_patient_id_for_log(patient_id),
-                )
-                return conditions
-            else:
-                logger.warning(
-                    "Failed to retrieve conditions for patient %s: %s",
-                    self._safe_patient_id_for_log(patient_id),
-                    response.status_code,
                 )
                 return []
         except Exception as e:
