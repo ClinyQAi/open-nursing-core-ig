@@ -1,0 +1,61 @@
+{
+    "resourceType": "PlanDefinition",
+    "id": "news2-escalation-plan",
+    "url": "http://opennursingcore.org/PlanDefinition/news2-escalation",
+    "version": "1.0.0",
+    "name": "NEWS2_Escalation_Protocol",
+    "title": "NEWS2 Escalation Protocol",
+    "status": "active",
+    "type": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+                "code": "clinical-protocol"
+            }
+        ]
+    },
+    "library": [
+        "http://opennursingcore.org/Library/ONC-NEWS2-CQL"
+    ],
+    "action": [
+        {
+            "title": "High Clinical Risk - Emergency Response",
+            "description": "NEWS2 Score of 7 or more indicates high clinical risk. Urgent response required.",
+            "code": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "225365006",
+                            "display": "Care plan"
+                        }
+                    ]
+                }
+            ],
+            "trigger": [
+                {
+                    "type": "named-event",
+                    "name": "news2-score-calculated"
+                }
+            ],
+            "condition": [
+                {
+                    "kind": "applicability",
+                    "expression": {
+                        "language": "text/cql",
+                        "expression": "Clinical Risk Category = 'High'"
+                    }
+                }
+            ],
+            "dynamicValue": [
+                {
+                    "path": "description",
+                    "expression": {
+                        "language": "text/cql",
+                        "expression": "'URGENT: NEWS2 Score is ' + ToString(\"NEWS2 Total Score\") + '. Immediate medical review required.'"
+                    }
+                }
+            ]
+        }
+    ]
+}

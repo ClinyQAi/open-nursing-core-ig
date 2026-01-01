@@ -47,6 +47,16 @@ Description: "A profile for the Braden Scale pressure ulcer risk assessment"
 * component[frictionAndShear].code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#braden-friction "Braden Friction/Shear"
 * component[frictionAndShear].value[x] only Quantity
 
+* obeys onc-equity-skin-tone-required
+* hasMember MS
+* hasMember ^slicing.discriminator.type = #pattern
+* hasMember ^slicing.discriminator.path = "resolve().code"
+* hasMember ^slicing.rules = #open
+* hasMember contains skinTone 1..1 MS
+* hasMember[skinTone] only Reference(ONCSkinToneObservation or ONCMonkSkinToneObservation)
+* hasMember[skinTone] ^short = "Mandatory Skin Tone Context (Equity Gate)"
+
+
 
 Profile: ONCNursingProblem
 Parent: Condition
@@ -59,44 +69,3 @@ Description: "Nursing diagnosis or problem identified during assessment. Represe
 * code 1..1 MS
 * code from NursingProblemValueSet (required)
 
-Profile: ONCPatientGoal
-Parent: Goal
-Id: onc-patient-goal
-Title: "Patient Goal"
-Description: "Patient-centered goal established in response to identified nursing problems. Defines measurable outcomes and addresses specific nursing diagnoses. Part of the ADPIE framework's Planning phase."
-* lifecycleStatus 1..1 MS
-* description 1..1 MS
-* addresses 1..* MS
-* addresses only Reference(ONCNursingProblem)
-
-Profile: ONCNursingIntervention
-Parent: Procedure
-Id: onc-nursing-intervention
-Title: "Nursing Intervention"
-Description: "Nursing intervention or procedure performed to achieve patient goals. Documents actions taken by nursing staff to address identified problems and achieve desired outcomes. Part of the ADPIE framework's Implementation phase."
-// FIX: Separated Value and MS Flag
-* status = #completed
-* status MS
-* code 1..1 MS
-* code from NursingInterventionValueSet (required)
-* extension contains InterventionGoalReference named interventionGoal 0..* MS
-
-Profile: ONCGoalEvaluation
-Parent: ONCNursingAssessment
-Id: onc-goal-evaluation
-Title: "Goal Evaluation"
-Description: "Evaluation of patient goal outcomes and nursing intervention effectiveness. Assesses whether goals have been met, partially met, or not met. Part of the ADPIE framework's Evaluation phase."
-* code from GoalEvaluationValueSet (required)
-* extension contains ObservationGoalReference named goalReference 1..1 MS
-
-Extension: ObservationGoalReference
-Id: observation-goal-reference
-Title: "Observation Goal Reference"
-Description: "Extension to link goal evaluation observations to the patient goals being evaluated. Enables tracking of goal progress and outcomes over time."
-* value[x] only Reference(ONCPatientGoal)
-
-Extension: InterventionGoalReference
-Id: intervention-goal-reference
-Title: "Intervention Goal Reference"
-Description: "Extension to link nursing interventions to the patient goals they are intended to achieve. Supports goal-directed care planning and intervention tracking."
-* value[x] only Reference(ONCPatientGoal)

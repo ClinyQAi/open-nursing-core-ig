@@ -206,3 +206,12 @@ Description: "Captures specific strict requirements for care adjustments under t
 * valueString 1..1 MS
 * valueString ^short = "Description of required adjustment"
 * note 0..1 MS
+
+// =============================================================================
+// Equity Invariants (The "AI Safety Gate")
+// =============================================================================
+Invariant: onc-equity-skin-tone-required
+Description: "Wound assessments MUST have an associated skin tone observation to ensure equitable care (AI Safety Gate)."
+Expression: "hasMember.resolve().code.coding.where(code = '66555-4' or code = 'mst-score').exists()"
+Severity: #error
+

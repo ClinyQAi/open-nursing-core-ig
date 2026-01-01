@@ -18,6 +18,16 @@ Description: "Waterlow Pressure Ulcer Risk Assessment - NHS standard tool. Score
 * component 0..* MS
 * component ^short = "Risk factor components (build, skin type, age, continence, mobility, appetite, special risks)"
 
+* obeys onc-equity-skin-tone-required
+* hasMember MS
+* hasMember ^slicing.discriminator.type = #pattern
+* hasMember ^slicing.discriminator.path = "resolve().code"
+* hasMember ^slicing.rules = #open
+* hasMember contains skinTone 1..1 MS
+* hasMember[skinTone] only Reference(ONCSkinToneObservation or ONCMonkSkinToneObservation)
+* hasMember[skinTone] ^short = "Mandatory Skin Tone Context (Equity Gate)"
+
+
 Invariant: waterlow-range
 Description: "Waterlow score must be 0 or greater"
 Expression: "$this >= 0"

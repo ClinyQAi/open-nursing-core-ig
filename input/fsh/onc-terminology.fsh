@@ -26,9 +26,11 @@ Id: goal-evaluation-valueset
 Title: "Goal Evaluation Value Set"
 Description: "Value set for evaluating patient goal outcomes"
 * ^experimental = false
-* include http://snomed.info/sct#370996005 "Patient condition resolved"
-* include http://snomed.info/sct#385634002 "Worsened"
-* include http://snomed.info/sct#118222006 "General finding of observation of patient"
+* include http://snomed.info/sct#385652002 "Objective achieved"
+* include http://snomed.info/sct#385651009 "Objective not achieved"
+* include http://snomed.info/sct#255609007 "Partial achievement"
+* include http://snomed.info/sct#723510000 "Sustained improvement"
+* include http://snomed.info/sct#260388008 "Worsening"
 
 ValueSet: ProblemCategoryValueSet
 Id: problem-category-valueset
