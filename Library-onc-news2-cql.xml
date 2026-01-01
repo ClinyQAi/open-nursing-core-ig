@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Library xmlns="http://hl7.org/fhir">
+  <id value="onc-news2-cql"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">
+<div>
+    <table class="grid dict">
+        
+        
+        <tr>
+            <th scope="row"><b>Title: </b></th>
+            <td style="padding-left: 4px;">ONC NEWS2 Auto-Calculation Logic</td>
+        </tr>
+        
+
+        
+        
+        <tr>
+            <th scope="row"><b>Id: </b></th>
+            <td style="padding-left: 4px;">onc-news2-cql</td>
+        </tr>
+        
+
+        
+        
+        <tr>
+            <th scope="row"><b>Version: </b></th>
+            <td style="padding-left: 4px;">0.1.0</td>
+        </tr>
+        
+
+        
+        <tr>
+            <th scope="row"><b>Url: </b></th>
+            <td style="padding-left: 4px;"><a href="Library-onc-news2-cql.html">ONC NEWS2 Auto-Calculation Logic</a></td>
+        </tr>
+        
+
+        
+
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Experimental: </b></th>
+            <td style="padding-left: 4px;">true</td>
+        </tr>
+        
+
+        
+        <tr>
+            <th scope="row"><b>Type: </b></th>
+            <td style="padding-left: 4px;">
+                
+                    
+                        
+                        <p style="margin-bottom: 5px;">
+                            <b>system: </b> <span><a href="http://terminology.hl7.org/7.0.1/CodeSystem-library-type.html">http://terminology.hl7.org/CodeSystem/library-type</a></span>
+                        </p>
+                        
+                        
+                        <p style="margin-bottom: 5px;">
+                            <b>code: </b> <span>logic-library</span>
+                        </p>
+                        
+                        
+                    
+                
+                
+            </td>
+        </tr>
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Date: </b></th>
+            <td style="padding-left: 4px;">2026-01-01 16:16:25+0000</td>
+        </tr>
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Description: </b></th>
+            <td style="padding-left: 4px;"><div><p>Logic library for calculating National Early Warning Score 2 (NEWS2) from FHIR Observations.</p>
+</div></td>
+        </tr>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        
+        <tr>
+          <td colspan="2">
+            <table>
+              <tr><th><a id="cql-content"><b>Content: </b></a> text/cql</th></tr>
+              <tr><td><pre><code class="language-cql"/></pre></td></tr>
+            </table>
+          </td>
+        </tr>
+        
+        
+        
+    </table>
+</div>
+</div>
+  </text>
+  <url value="http://opennursingcore.org/Library/ONC-NEWS2-CQL"/>
+  <version value="0.1.0"/>
+  <name value="ONC_NEWS2_Logic"/>
+  <title value="ONC NEWS2 Auto-Calculation Logic"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/library-type"/>
+      <code value="logic-library"/>
+    </coding>
+  </type>
+  <date value="2026-01-01T16:16:25+00:00"/>
+  <description value="Logic library for calculating National Early Warning Score 2 (NEWS2) from FHIR Observations."/>
+  <content>
+    <contentType value="text/cql"/>
+    <url value="input/cql/ONC_NEWS2_Logic.cql"/>
+  </content>
+</Library>

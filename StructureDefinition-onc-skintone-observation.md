@@ -9,13 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-skintone-observation | *Version*:0.1.0 |
-| Draft as of 2025-12-26 | *Computable Name*:ONCSkinToneObservation |
+| Draft as of 2026-01-01 | *Computable Name*:ONCSkinToneObservation |
 
  
 Observation of patient skin tone using the Fitzpatrick skin type classification. Supports equitable care by enabling skin tone-aware clinical decision making, particularly for conditions that present differently across skin tones (e.g., pressure ulcers, cyanosis). 
 
 **Usages:**
 
+* Refer to this Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessment.md) and [Waterlow Score](StructureDefinition-onc-waterlow-score.md)
 * Examples for this Profile: [Observation/observation-skin-tone](Observation-observation-skin-tone.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-skintone-observation)
@@ -41,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-skintone-observa
   "name" : "ONCSkinToneObservation",
   "title" : "Skin Tone Observation",
   "status" : "draft",
-  "date" : "2025-12-26T15:08:13+00:00",
+  "date" : "2026-01-01T16:16:25+00:00",
   "description" : "Observation of patient skin tone using the Fitzpatrick skin type classification. Supports equitable care by enabling skin tone-aware clinical decision making, particularly for conditions that present differently across skin tones (e.g., pressure ulcers, cyanosis).",
   "fhirVersion" : "4.0.1",
   "mapping" : [

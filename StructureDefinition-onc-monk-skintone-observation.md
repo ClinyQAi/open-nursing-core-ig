@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-monk-skintone-observation | *Version*:0.1.0 |
-| Draft as of 2025-12-26 | *Computable Name*:ONCMonkSkinToneObservation |
+| Draft as of 2026-01-01 | *Computable Name*:ONCMonkSkinToneObservation |
 
  
 Observation of patient skin tone using the Monk Skin Tone Scale (10-point scale A-J). Provides more granular skin tone assessment than Fitzpatrick scale, particularly for darker skin tones. Supports equitable care and accurate clinical assessment across diverse populations. 
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Refer to this Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessment.md) and [Waterlow Score](StructureDefinition-onc-waterlow-score.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-monk-skintone-observation)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-monk-skintone-ob
   "name" : "ONCMonkSkinToneObservation",
   "title" : "Monk Skin Tone Observation",
   "status" : "draft",
-  "date" : "2025-12-26T15:08:13+00:00",
+  "date" : "2026-01-01T16:16:25+00:00",
   "description" : "Observation of patient skin tone using the Monk Skin Tone Scale (10-point scale A-J). Provides more granular skin tone assessment than Fitzpatrick scale, particularly for darker skin tones. Supports equitable care and accurate clinical assessment across diverse populations.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

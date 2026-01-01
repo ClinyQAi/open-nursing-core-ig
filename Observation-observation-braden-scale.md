@@ -20,6 +20,8 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
 
 **value**: 18 {score}(Details: UCUM code1 = '1')
 
+**hasMember**: [Observation Skin type [Fitzpatrick Classification Scale]](Observation-observation-skin-tone.md)
+
 > **component****code**:Braden Sensory Perception**value**: 3 {score}(Details: UCUM code1 = '1')
 
 > **component****code**:Braden Moisture**value**: 4 {score}(Details: UCUM code1 = '1')
@@ -79,6 +81,11 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
     "system" : "http://unitsofmeasure.org",
     "code" : "1"
   },
+  "hasMember" : [
+    {
+      "reference" : "Observation/observation-skin-tone"
+    }
+  ],
   "component" : [
     {
       "code" : {

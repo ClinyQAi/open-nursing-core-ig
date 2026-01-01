@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type | *Version*:0.1.0 |
-| Draft as of 2025-12-26 | *Computable Name*:ONCProblemType |
+| Draft as of 2026-01-01 | *Computable Name*:ONCProblemType |
 
  
 Code system for categorizing types of nursing problems 
@@ -32,7 +32,7 @@ Code system for categorizing types of nursing problems
   "title" : "Problem Type CodeSystem",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-26T15:08:13+00:00",
+  "date" : "2026-01-01T16:16:25+00:00",
   "description" : "Code system for categorizing types of nursing problems",
   "caseSensitive" : true,
   "content" : "complete",

@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment | *Version*:0.1.0 |
-| Draft as of 2025-12-26 | *Computable Name*:ONCNursingAssessment |
+| Draft as of 2026-01-01 | *Computable Name*:ONCNursingAssessment |
 
  
 Base profile for nursing assessment observations conforming to UK Core standards. Captures structured nursing assessment data as part of the ADPIE (Assessment, Diagnosis, Planning, Implementation, Evaluation) nursing process framework. Used as parent for specialized assessments like NEWS2, Braden Scale, and clinical observations. 
 
 **Usages:**
 
-* Derived from this Profile: [4AT Delirium Assessment](StructureDefinition-onc-4at-delirium.md), [ACVPU Consciousness Level](StructureDefinition-onc-acvpu.md), [Barthel Index](StructureDefinition-onc-barthel-index.md), [Blood Pressure](StructureDefinition-onc-blood-pressure.md)...Show 20 more,[Body Temperature](StructureDefinition-onc-body-temperature.md),[Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessment.md),[Clinical Frailty Scale (CFS)](StructureDefinition-onc-clinical-frailty-scale.md),[Glasgow Coma Scale](StructureDefinition-onc-glasgow-coma-scale.md),[Goal Evaluation](StructureDefinition-onc-goal-evaluation.md),[Heart Rate](StructureDefinition-onc-heart-rate.md),[Inspired Oxygen](StructureDefinition-onc-inspired-oxygen.md),[Mini Mental State Examination (MMSE)](StructureDefinition-onc-mmse.md),[Monk Skin Tone Observation](StructureDefinition-onc-monk-skintone-observation.md),[Morse Fall Scale](StructureDefinition-onc-morse-fall-scale.md),[MUST Score (Malnutrition Universal Screening Tool)](StructureDefinition-onc-must-score.md),[NEWS2 Score](StructureDefinition-onc-news2-score.md),[NEWS2 Sub-Score](StructureDefinition-onc-news2-subscore.md),[Oxygen Saturation](StructureDefinition-onc-oxygen-saturation.md),[Pain Assessment (NRS 0-10)](StructureDefinition-onc-pain-assessment.md),[qSOFA (Quick SOFA)](StructureDefinition-onc-qsofa.md),[Respiration Rate](StructureDefinition-onc-respiration-rate.md),[Skin Tone Observation](StructureDefinition-onc-skintone-observation.md),[Waterlow Score](StructureDefinition-onc-waterlow-score.md)and[Wound Assessment](StructureDefinition-onc-wound-assessment.md)
+* Derived from this Profile: [4AT Delirium Assessment](StructureDefinition-onc-4at-delirium.md), [Abbey Pain Scale](StructureDefinition-onc-abbey-pain-scale.md), [PBS ABC Chart](StructureDefinition-onc-abc-chart.md), [ACVPU Consciousness Level](StructureDefinition-onc-acvpu.md)...Show 41 more,[Barthel Index](StructureDefinition-onc-barthel-index.md),[Bladder Assessment](StructureDefinition-onc-bladder-assessment.md),[Blood Pressure](StructureDefinition-onc-blood-pressure.md),[Body Temperature](StructureDefinition-onc-body-temperature.md),[Bowel Assessment](StructureDefinition-onc-bowel-assessment.md),[Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessment.md),[Bristol Stool Chart](StructureDefinition-onc-bristol-stool-chart.md),[Catheter Care](StructureDefinition-onc-catheter-care.md),[Clinical Frailty Scale (CFS)](StructureDefinition-onc-clinical-frailty-scale.md),[Continence Assessment](StructureDefinition-onc-continence-assessment.md),[Dietary Requirements](StructureDefinition-onc-dietary-requirements.md),[Fluid Balance](StructureDefinition-onc-fluid-balance.md),[Glasgow Coma Scale](StructureDefinition-onc-glasgow-coma-scale.md),[Heart Rate](StructureDefinition-onc-heart-rate.md),[Personal Hygiene Needs Assessment](StructureDefinition-onc-hygiene-assessment.md),[Inspired Oxygen](StructureDefinition-onc-inspired-oxygen.md),[Medication Management Ability](StructureDefinition-onc-medication-ability.md),[Medication Self-Administration Observation](StructureDefinition-onc-medication-self-admin.md),[Mental Capacity Assessment](StructureDefinition-onc-mental-capacity.md),[Mini Mental State Examination (MMSE)](StructureDefinition-onc-mmse.md),[Mobility Assessment](StructureDefinition-onc-mobility-assessment.md),[Monk Skin Tone Observation](StructureDefinition-onc-monk-skintone-observation.md),[Morse Fall Scale](StructureDefinition-onc-morse-fall-scale.md),[MUST Score (Malnutrition Universal Screening Tool)](StructureDefinition-onc-must-score.md),[NEWS2 Score](StructureDefinition-onc-news2-score.md),[NEWS2 Sub-Score](StructureDefinition-onc-news2-subscore.md),[Oral Care Needs Assessment](StructureDefinition-onc-oral-care-assessment.md),[Oral Health Assessment](StructureDefinition-onc-oral-health.md),[Oral Intake Assessment](StructureDefinition-onc-oral-intake-assessment.md),[Oxygen Saturation](StructureDefinition-onc-oxygen-saturation.md),[Pain Assessment (NRS 0-10)](StructureDefinition-onc-pain-assessment.md),[qSOFA (Quick SOFA)](StructureDefinition-onc-qsofa.md),[Reasonable Adjustment](StructureDefinition-onc-reasonable-adjustment.md),[Respiration Rate](StructureDefinition-onc-respiration-rate.md),[Seizure Record](StructureDefinition-onc-seizure-record.md),[Skin Tone Observation](StructureDefinition-onc-skintone-observation.md),[Sleep Pattern](StructureDefinition-onc-sleep-pattern.md),[Swallowing Assessment](StructureDefinition-onc-swallowing-assessment.md),[Urinalysis](StructureDefinition-onc-urinalysis.md),[Waterlow Score](StructureDefinition-onc-waterlow-score.md)and[Wound Assessment](StructureDefinition-onc-wound-assessment.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-nursing-assessment)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-assessme
   "name" : "ONCNursingAssessment",
   "title" : "Open Nursing Core Assessment",
   "status" : "draft",
-  "date" : "2025-12-26T15:08:13+00:00",
+  "date" : "2026-01-01T16:16:25+00:00",
   "description" : "Base profile for nursing assessment observations conforming to UK Core standards. Captures structured nursing assessment data as part of the ADPIE (Assessment, Diagnosis, Planning, Implementation, Evaluation) nursing process framework. Used as parent for specialized assessments like NEWS2, Braden Scale, and clinical observations.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -144,6 +144,9 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-assessme
           },
           {
             "code" : "CodeableConcept"
+          },
+          {
+            "code" : "string"
           }
         ],
         "mustSupport" : true

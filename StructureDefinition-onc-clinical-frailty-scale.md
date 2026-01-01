@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale | *Version*:0.1.0 |
-| Draft as of 2025-12-26 | *Computable Name*:ONCClinicalFrailtyScale |
+| Draft as of 2026-01-01 | *Computable Name*:ONCClinicalFrailtyScale |
 
  
 Assessment of frailty using the Rockwood Clinical Frailty Scale (1-9). Essential for older adults to determine baseline functional status. 
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Examples for this Profile: [Observation/example-clinical-frailty](Observation-example-clinical-frailty.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-clinical-frailty-scale)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-clinical-frailty
   "name" : "ONCClinicalFrailtyScale",
   "title" : "Clinical Frailty Scale (CFS)",
   "status" : "draft",
-  "date" : "2025-12-26T15:08:13+00:00",
+  "date" : "2026-01-01T16:16:25+00:00",
   "description" : "Assessment of frailty using the Rockwood Clinical Frailty Scale (1-9). Essential for older adults to determine baseline functional status.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

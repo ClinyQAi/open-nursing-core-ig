@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="news2-escalation-plan"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">
+<div>
+    <table class="grid dict">
+        
+        <tr>
+            <th scope="row"><b>Id: </b></th>
+            <td style="padding-left: 4px;">news2-escalation-plan</td>
+        </tr>
+        
+
+        
+        <tr>
+            <th scope="row"><b>Url: </b></th>
+            <td style="padding-left: 4px;"><a href="PlanDefinition-news2-escalation-plan.html">NEWS2 Escalation Protocol</a></td>
+        </tr>
+        
+
+        
+        <tr>
+            <th scope="row"><b>Version: </b></th>
+            <td style="padding-left: 4px;">0.1.0</td>
+        </tr>
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Title: </b></th>
+            <td style="padding-left: 4px;">NEWS2 Escalation Protocol</td>
+        </tr>
+        
+
+        
+
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Type: </b></th>
+            <td style="padding-left: 4px;">
+                
+                    
+                        
+                        <p style="margin-bottom: 5px;">
+                            <b>system: </b> <span><a href="http://terminology.hl7.org/7.0.1/CodeSystem-plan-definition-type.html">http://terminology.hl7.org/CodeSystem/plan-definition-type</a></span>
+                        </p>
+                        
+                        
+                        <p style="margin-bottom: 5px;">
+                            <b>code: </b> <span>clinical-protocol</span>
+                        </p>
+                        
+                        
+                    
+                
+                
+            </td>
+        </tr>
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Date: </b></th>
+            <td style="padding-left: 4px;">2026-01-01 16:16:25+0000</td>
+        </tr>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Libraries: </b></th>
+            <td style="padding-left: 4px;">
+                <table class="grid-dict">
+                    
+                    <tr>
+                        <td><a href="Library-onc-news2-cql.html">ONC NEWS2 Auto-Calculation Logic</a></td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+        
+
+        
+        <tr>
+            <th scope="row"><b>Actions: </b></th>
+            <td style="padding-left: 4px;">
+                <table class="grid-dict">
+                    
+                    <tr>
+                        <td>
+                            
+                            <b> High Clinical Risk - Emergency Response:</b> NEWS2 Score of 7 or more indicates high clinical risk. Urgent response required.
+                            
+                            <br/>
+                            
+                            <b>When:</b>
+                            
+                            <i>Named Event:</i> news2-score-calculated
+                            <br/>
+                            
+                            
+                            
+                            <b>If:</b>
+                            
+                            <i>Applicability:</i>
+                            
+                            <i>(Clinical Risk Category = 'High')</i>
+                            <br/>
+                            
+                            
+                            
+                            
+                            
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+        
+    </table>
+</div>
+</div>
+  </text>
+  <url value="http://opennursingcore.org/PlanDefinition/news2-escalation"/>
+  <version value="0.1.0"/>
+  <name value="NEWS2_Escalation_Protocol"/>
+  <title value="NEWS2 Escalation Protocol"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="clinical-protocol"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <date value="2026-01-01T16:16:25+00:00"/>
+  <library value="http://opennursingcore.org/Library/ONC-NEWS2-CQL"/>
+  <action>
+    <title value="High Clinical Risk - Emergency Response"/>
+    <description value="NEWS2 Score of 7 or more indicates high clinical risk. Urgent response required."/>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="225365006"/>
+        <display value="Care plan"/>
+      </coding>
+    </code>
+    <trigger>
+      <type value="named-event"/>
+      <name value="news2-score-calculated"/>
+    </trigger>
+    <condition>
+      <kind value="applicability"/>
+      <expression>
+        <language value="text/cql"/>
+        <expression value="Clinical Risk Category = 'High'"/>
+      </expression>
+    </condition>
+    <dynamicValue>
+      <path value="description"/>
+      <expression>
+        <language value="text/cql"/>
+        <expression value="'URGENT: NEWS2 Score is ' + ToString(&quot;NEWS2 Total Score&quot;) + '. Immediate medical review required.'"/>
+      </expression>
+    </dynamicValue>
+  </action>
+</PlanDefinition>

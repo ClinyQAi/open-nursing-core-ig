@@ -6,13 +6,20 @@
 
 ## Example Goal: example-patient-goal
 
-Profile: [Patient Goal](StructureDefinition-onc-patient-goal.md)
+Profile: [ONC Nursing Goal](StructureDefinition-onc-nursing-goal.md)
 
 **lifecycleStatus**: Active
 
 **description**: Patient will remain free from falls.
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
+
+### Targets
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| - | **Measure** | **Detail[x]** | **Due[x]** |
+| * | Functional status | Objective achieved | 2025-12-31 |
 
 **addresses**: [Condition Risk of falls](Condition-example-nursing-problem.md)
 
@@ -26,7 +33,7 @@ Profile: [Patient Goal](StructureDefinition-onc-patient-goal.md)
   "id" : "example-patient-goal",
   "meta" : {
     "profile" : [
-      "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-goal"
+      "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal"
     ]
   },
   "lifecycleStatus" : "active",
@@ -36,6 +43,29 @@ Profile: [Patient Goal](StructureDefinition-onc-patient-goal.md)
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
+  "target" : [
+    {
+      "measure" : {
+        "coding" : [
+          {
+            "system" : "http://loinc.org",
+            "code" : "88020-3",
+            "display" : "Functional status"
+          }
+        ]
+      },
+      "detailCodeableConcept" : {
+        "coding" : [
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "385652002",
+            "display" : "Objective achieved"
+          }
+        ]
+      },
+      "dueDate" : "2025-12-31"
+    }
+  ],
   "addresses" : [
     {
       "reference" : "Condition/example-nursing-problem"

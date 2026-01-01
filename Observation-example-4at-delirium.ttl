@@ -1,0 +1,141 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://clinyqai.github.io/open-nursing-core-ig/Observation/example-4at-delirium> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-4at-delirium"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-4at-delirium"^^xsd:anyURI ;
+       fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-4at-delirium>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation example-4at-delirium</b></p><a name=\"example-4at-delirium\"> </a><a name=\"hcexample-4at-delirium\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onc-4at-delirium.html\">4AT Delirium Assessment</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category exam}\">Exam</span></p><p><b>code</b>: <span title=\"Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes 4at-score}\">4AT Delirium Score</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-jane.html\">Jane Doe  Female, DoB Unknown</a></p><p><b>performer</b>: <a href=\"Practitioner-practitioner-example.html\">Practitioner Nightingale </a></p><p><b>value</b>: 5 {score}</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes 4at-alertness}\">Alertness</span></p><p><b>value</b>: <span title=\"Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes 4at-alert-normal}\">Normal</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes 4at-amt4}\">AMT4 Score</span></p><p><b>value</b>: <span title=\"Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes 4at-amt4-1error}\">1 Error</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes 4at-attention}\">Attention</span></p><p><b>value</b>: <span title=\"Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes 4at-attention-gt7}\">Months backwards &lt; 7 months correct</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes 4at-acute-change}\">Acute Change</span></p><p><b>value</b>: <span title=\"Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes 4at-change-no}\">No</span></p></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
+       fhir:code [ fhir:v "exam" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes>
+       ] ;
+       fhir:code [ fhir:v "4at-score" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Patient/patient-example-jane> ;
+     fhir:reference [ fhir:v "Patient/patient-example-jane" ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Practitioner/practitioner-example> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "{score}" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
+           fhir:l <https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes>
+         ] ;
+         fhir:code [ fhir:v "4at-alertness" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
+           fhir:l <https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes>
+         ] ;
+         fhir:code [ fhir:v "4at-alert-normal" ] ;
+         fhir:display [ fhir:v "Normal" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
+           fhir:l <https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes>
+         ] ;
+         fhir:code [ fhir:v "4at-amt4" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
+           fhir:l <https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes>
+         ] ;
+         fhir:code [ fhir:v "4at-amt4-1error" ] ;
+         fhir:display [ fhir:v "1 Error" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
+           fhir:l <https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes>
+         ] ;
+         fhir:code [ fhir:v "4at-attention" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
+           fhir:l <https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes>
+         ] ;
+         fhir:code [ fhir:v "4at-attention-gt7" ] ;
+         fhir:display [ fhir:v "Months backwards < 7 months correct" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
+           fhir:l <https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes>
+         ] ;
+         fhir:code [ fhir:v "4at-acute-change" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
+           fhir:l <https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes>
+         ] ;
+         fhir:code [ fhir:v "4at-change-no" ] ;
+         fhir:display [ fhir:v "No" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

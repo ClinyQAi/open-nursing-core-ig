@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-blood-pressure | *Version*:0.1.0 |
-| Draft as of 2025-12-26 | *Computable Name*:ONCBloodPressure |
+| Draft as of 2026-01-01 | *Computable Name*:ONCBloodPressure |
 
  
 Blood pressure observation for NEWS2 (systolic BP used for scoring) 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-blood-pressure.c
   "name" : "ONCBloodPressure",
   "title" : "Blood Pressure",
   "status" : "draft",
-  "date" : "2025-12-26T15:08:13+00:00",
+  "date" : "2026-01-01T16:16:25+00:00",
   "description" : "Blood pressure observation for NEWS2 (systolic BP used for scoring)",
   "fhirVersion" : "4.0.1",
   "mapping" : [

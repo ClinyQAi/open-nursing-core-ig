@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-4at-amt4-vs | *Version*:0.1.0 |
-| Draft as of 2025-12-26 | *Computable Name*:AMT4VS |
+| Draft as of 2026-01-01 | *Computable Name*:AMT4VS |
 
  
 Scoring options for AMT4 (Age, DOB, Place, Year) 
@@ -50,7 +50,7 @@ Scoring options for AMT4 (Age, DOB, Place, Year)
   "name" : "AMT4VS",
   "title" : "4AT AMT4 Value Set",
   "status" : "draft",
-  "date" : "2025-12-26T15:08:13+00:00",
+  "date" : "2026-01-01T16:16:25+00:00",
   "description" : "Scoring options for AMT4 (Age, DOB, Place, Year)",
   "compose" : {
     "include" : [

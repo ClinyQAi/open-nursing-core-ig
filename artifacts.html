@@ -125,19 +125,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Structures: Resource Profiles</a>
+         <a href="#1">Knowledge Artifacts: Plan Definitions</a>
       </li>
       <li>
-         <a href="#2">Structures: Extension Definitions</a>
+         <a href="#2">Knowledge Artifacts: Libraries</a>
       </li>
       <li>
-         <a href="#3">Terminology: Value Sets</a>
+         <a href="#3">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#4">Terminology: Code Systems</a>
+         <a href="#4">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#5">Example: Example Instances</a>
+         <a href="#5">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#6">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#7">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -146,6 +152,36 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:html="http://www.w3.org/1999/xhtml">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
+   <h3>Knowledge Artifacts: Plan Definitions </h3>
+    <p>These define workflows, rules, strategies, or protocols as part of content in this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PlanDefinition-news2-escalation-plan.html"
+                  title="PlanDefinition/news2-escalation-plan">NEWS2 Escalation Protocol</a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Knowledge Artifacts: Libraries </h3>
+    <p>These define logic, asset collections and other libraries as part of content in this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Library-onc-news2-cql.html" title="Library/onc-news2-cql">ONC NEWS2 Auto-Calculation Logic</a>
+            </td>
+            <td>
+<p>Logic library for calculating National Early Warning Score 2 (NEWS2) from FHIR Observations.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
    <h3>Structures: Resource Profiles </h3>
     <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -171,11 +207,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-onc-abbey-pain-scale.html"
+                  title="StructureDefinition/onc-abbey-pain-scale">Abbey Pain Scale</a>
+            </td>
+            <td>
+<p>Pain assessment for people with dementia or who cannot verbalise. Assesses 6 parameters: Vocalization, Facial Expression, Body Language, Behavioral Change, Physiological Change, Physical Changes. Total score determines pain severity (0-2 No pain, 3-7 Mild, 8-13 Moderate, 14+ Severe).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-onc-barthel-index.html"
                   title="StructureDefinition/onc-barthel-index">Barthel Index</a>
             </td>
             <td>
 <p>Barthel Index for measuring independence in activities of daily living (ADL). Score 0-20=total dependency, 91-99=slight dependency, 100=independent. Total range 0-100.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onc-bladder-assessment.html"
+                  title="StructureDefinition/onc-bladder-assessment">Bladder Assessment</a>
+            </td>
+            <td>
+<p>Detailed assessment of bladder function, including voiding patterns.</p>
 </td>
          </tr>
          <tr>
@@ -198,11 +252,38 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-onc-bowel-assessment.html"
+                  title="StructureDefinition/onc-bowel-assessment">Bowel Assessment</a>
+            </td>
+            <td>
+<p>Detailed assessment of bowel function and regularity.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-onc-braden-scale-assessment.html"
                   title="StructureDefinition/onc-braden-scale-assessment">Braden Scale Assessment</a>
             </td>
             <td>
 <p>A profile for the Braden Scale pressure ulcer risk assessment</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onc-bristol-stool-chart.html"
+                  title="StructureDefinition/onc-bristol-stool-chart">Bristol Stool Chart</a>
+            </td>
+            <td>
+<p>Assessment of stool form using the Bristol Stool Chart (Types 1-7). Gold standard for bowel function assessment.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onc-catheter-care.html"
+                  title="StructureDefinition/onc-catheter-care">Catheter Care</a>
+            </td>
+            <td>
+<p>Documentation of catheter site care and status.</p>
 </td>
          </tr>
          <tr>
@@ -216,20 +297,47 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-onc-continence-assessment.html"
+                  title="StructureDefinition/onc-continence-assessment">Continence Assessment</a>
+            </td>
+            <td>
+<p>Assessment of bladder and bowel control status.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onc-device-use-statement.html"
+                  title="StructureDefinition/onc-device-use-statement">Device Use Statement</a>
+            </td>
+            <td>
+<p>Documentation of mobility aids or other devices used by the patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onc-dietary-requirements.html"
+                  title="StructureDefinition/onc-dietary-requirements">Dietary Requirements</a>
+            </td>
+            <td>
+<p>Documentation of specific dietary needs (e.g. textural modification, cultural).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onc-fluid-balance.html"
+                  title="StructureDefinition/onc-fluid-balance">Fluid Balance</a>
+            </td>
+            <td>
+<p>Assessment of fluid intake, output, and balance. Critical for renal function, hydration status, and heart failure monitoring.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-onc-glasgow-coma-scale.html"
                   title="StructureDefinition/onc-glasgow-coma-scale">Glasgow Coma Scale</a>
             </td>
             <td>
 <p>Glasgow Coma Scale (GCS) for assessing level of consciousness. Total score 3-15 with three required components: Eye (1-4), Verbal (1-5), Motor (1-6).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-onc-goal-evaluation.html"
-                  title="StructureDefinition/onc-goal-evaluation">Goal Evaluation</a>
-            </td>
-            <td>
-<p>Evaluation of patient goal outcomes and nursing intervention effectiveness. Assesses whether goals have been met, partially met, or not met. Part of the ADPIE framework's Evaluation phase.</p>
 </td>
          </tr>
          <tr>
@@ -261,11 +369,47 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-onc-medication-ability.html"
+                  title="StructureDefinition/onc-medication-ability">Medication Management Ability</a>
+            </td>
+            <td>
+<p>Assessment of the patient's ability to manage their own medication.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onc-medication-self-admin.html"
+                  title="StructureDefinition/onc-medication-self-admin">Medication Self-Administration Observation</a>
+            </td>
+            <td>
+<p>Observation of the patient performing self-administration.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onc-mental-capacity.html"
+                  title="StructureDefinition/onc-mental-capacity">Mental Capacity Assessment</a>
+            </td>
+            <td>
+<p>Records the outcome of a Mental Capacity Assessment for a specific decision. Fundamental legal safeguard in UK nursing practice.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-onc-mmse.html"
                   title="StructureDefinition/onc-mmse">Mini Mental State Examination (MMSE)</a>
             </td>
             <td>
 <p>Mini Mental State Examination for cognitive function screening. Score 24-30=no impairment, 18-23=mild, 0-17=severe. Total range 0-30.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onc-mobility-assessment.html"
+                  title="StructureDefinition/onc-mobility-assessment">Mobility Assessment</a>
+            </td>
+            <td>
+<p>Assessment of capability to move and limitations.</p>
 </td>
          </tr>
          <tr>
@@ -306,20 +450,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-onc-nursing-intervention.html"
-                  title="StructureDefinition/onc-nursing-intervention">Nursing Intervention</a>
-            </td>
-            <td>
-<p>Nursing intervention or procedure performed to achieve patient goals. Documents actions taken by nursing staff to address identified problems and achieve desired outcomes. Part of the ADPIE framework's Implementation phase.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-onc-nursing-problem.html"
                   title="StructureDefinition/onc-nursing-problem">Nursing Problem</a>
             </td>
             <td>
 <p>Nursing diagnosis or problem identified during assessment. Represents clinical judgments about individual, family, or community responses to actual or potential health problems. Part of the ADPIE framework's Diagnosis phase.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onc-goal-evaluation.html"
+                  title="StructureDefinition/onc-goal-evaluation">ONC Goal Evaluation</a>
+            </td>
+            <td>
+<p>Explicit evaluation of whether a nursing goal was achieved, closing the ADPIE loop.</p>
 </td>
          </tr>
          <tr>
@@ -333,11 +477,65 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-onc-nursing-clinical-impression.html"
+                  title="StructureDefinition/onc-nursing-clinical-impression">ONC Nursing Clinical Impression</a>
+            </td>
+            <td>
+<p>Nurse's synthesis of patient progress against care plan, aggregating multiple goal evaluations.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onc-nursing-goal.html"
+                  title="StructureDefinition/onc-nursing-goal">ONC Nursing Goal</a>
+            </td>
+            <td>
+<p>Patient-centered goal with mandatory evaluation requirements. Serves as the 'spine' of the CarePlan, linking problems to outcomes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onc-nursing-intervention.html"
+                  title="StructureDefinition/onc-nursing-intervention">ONC Nursing Intervention</a>
+            </td>
+            <td>
+<p>Nursing intervention performed to achieve patient goals. Part of ADPIE Implementation phase.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-onc-nursing-assessment.html"
                   title="StructureDefinition/onc-nursing-assessment">Open Nursing Core Assessment</a>
             </td>
             <td>
 <p>Base profile for nursing assessment observations conforming to UK Core standards. Captures structured nursing assessment data as part of the ADPIE (Assessment, Diagnosis, Planning, Implementation, Evaluation) nursing process framework. Used as parent for specialized assessments like NEWS2, Braden Scale, and clinical observations.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onc-oral-care-assessment.html"
+                  title="StructureDefinition/onc-oral-care-assessment">Oral Care Needs Assessment</a>
+            </td>
+            <td>
+<p>Assessment of mouth care needs and oral health.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onc-oral-health.html"
+                  title="StructureDefinition/onc-oral-health">Oral Health Assessment</a>
+            </td>
+            <td>
+<p>Assessment of oral cavity health. Critical for prevention of pneumonia in frail elderly and maintaining nutrition/hydration.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onc-oral-intake-assessment.html"
+                  title="StructureDefinition/onc-oral-intake-assessment">Oral Intake Assessment</a>
+            </td>
+            <td>
+<p>Assessment of ability to take food and fluids orally.</p>
 </td>
          </tr>
          <tr>
@@ -351,6 +549,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-onc-abc-chart.html"
+                  title="StructureDefinition/onc-abc-chart">PBS ABC Chart</a>
+            </td>
+            <td>
+<p>Antecedent-Behaviour-Consequence (ABC) Chart for recording behaviours of concern. Fundamental tool in Positive Behaviour Support (PBS) for Learning Disabilities.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-onc-pain-assessment.html"
                   title="StructureDefinition/onc-pain-assessment">Pain Assessment (NRS 0-10)</a>
             </td>
@@ -360,20 +567,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-onc-patient-goal.html"
-                  title="StructureDefinition/onc-patient-goal">Patient Goal</a>
-            </td>
-            <td>
-<p>Patient-centered goal established in response to identified nursing problems. Defines measurable outcomes and addresses specific nursing diagnoses. Part of the ADPIE framework's Planning phase.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-onc-patient-story.html"
                   title="StructureDefinition/onc-patient-story">Patient Story</a>
             </td>
             <td>
 <p>A narrative summary of the patient's background, biography, preferences, and personhood. Goes beyond clinical history to capture 'who the person is'.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onc-hygiene-assessment.html"
+                  title="StructureDefinition/onc-hygiene-assessment">Personal Hygiene Needs Assessment</a>
+            </td>
+            <td>
+<p>Assessment of assistance required for personal hygiene.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onc-reasonable-adjustment.html"
+                  title="StructureDefinition/onc-reasonable-adjustment">Reasonable Adjustment</a>
+            </td>
+            <td>
+<p>Captures specific strict requirements for care adjustments under the Equality Act (e.g., 'Needs BSL Interpreter', 'Cannot use stairs', 'Requires large print').</p>
 </td>
          </tr>
          <tr>
@@ -396,11 +612,47 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-onc-seizure-record.html"
+                  title="StructureDefinition/onc-seizure-record">Seizure Record</a>
+            </td>
+            <td>
+<p>Record of a specific seizure event, including type, duration, triggers, and recovery phases. Essential for epilepsy management and identifying patterns.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-onc-skintone-observation.html"
                   title="StructureDefinition/onc-skintone-observation">Skin Tone Observation</a>
             </td>
             <td>
 <p>Observation of patient skin tone using the Fitzpatrick skin type classification. Supports equitable care by enabling skin tone-aware clinical decision making, particularly for conditions that present differently across skin tones (e.g., pressure ulcers, cyanosis).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onc-sleep-pattern.html"
+                  title="StructureDefinition/onc-sleep-pattern">Sleep Pattern</a>
+            </td>
+            <td>
+<p>Observation of sleep quality, duration, and disturbances. Sleep pattern disturbance is a key indicator for delirium and general wellbeing.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onc-swallowing-assessment.html"
+                  title="StructureDefinition/onc-swallowing-assessment">Swallowing Assessment</a>
+            </td>
+            <td>
+<p>Screening for dysphagia and swallowing difficulties.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onc-urinalysis.html"
+                  title="StructureDefinition/onc-urinalysis">Urinalysis</a>
+            </td>
+            <td>
+<p>Point-of-care urine dipstick test results. Used to screen for urinary tract infection (UTI), diabetes (glucose/ketones), and kidney health.</p>
 </td>
          </tr>
          <tr>
@@ -441,7 +693,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="2"> </a>
+   <a name="4"> </a>
    <h3>Structures: Extension Definitions </h3>
     <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -453,7 +705,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/intervention-goal-reference">Intervention Goal Reference</a>
             </td>
             <td>
-<p>Extension to link nursing interventions to the patient goals they are intended to achieve. Supports goal-directed care planning and intervention tracking.</p>
+<p>Extension to link nursing interventions to the patient goals they are intended to achieve.</p>
 </td>
          </tr>
          <tr>
@@ -462,7 +714,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/observation-goal-reference">Observation Goal Reference</a>
             </td>
             <td>
-<p>Extension to link goal evaluation observations to the patient goals being evaluated. Enables tracking of goal progress and outcomes over time.</p>
+<p>Extension to link goal evaluation observations to the patient goals being evaluated.</p>
 </td>
          </tr>
          <tr>
@@ -476,7 +728,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="3"> </a>
+   <a name="5"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -552,6 +804,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-onc-goal-target-measure-vs.html"
+                  title="ValueSet/onc-goal-target-measure-vs">Goal Target Measure ValueSet</a>
+            </td>
+            <td>
+<p>Codes used for goal target measures</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-housing-status-vs.html"
                   title="ValueSet/housing-status-vs">Housing Status Value Set</a>
             </td>
@@ -566,6 +827,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Codes for inspired oxygen status</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-onc-mca-vs.html" title="ValueSet/onc-mca-vs">Mental Capacity Finding Value Set</a>
+            </td>
+            <td>
+<p>Codes indicating presence or absence of capacity</p>
 </td>
          </tr>
          <tr>
@@ -614,6 +883,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-onc-prognosis-vs.html" title="ValueSet/onc-prognosis-vs">Nursing Prognosis ValueSet</a>
+            </td>
+            <td>
+<p>Prognosis codes for clinical impression</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-onc-pbs-function-vs.html"
+                  title="ValueSet/onc-pbs-function-vs">PBS Behaviour Function ValueSet</a>
+            </td>
+            <td>
+<p>Common functions of behaviour (SEAT)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-pain-assessment-code-vs.html"
                   title="ValueSet/pain-assessment-code-vs">Pain Assessment Code Value Set</a>
             </td>
@@ -640,7 +926,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="4"> </a>
+   <a name="6"> </a>
    <h3>Terminology: Code Systems </h3>
     <p>These define new code systems used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -674,7 +960,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="5"> </a>
+   <a name="7"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -682,8 +968,71 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="Observation-example-4at-delirium.html"
+                  title="Observation/example-4at-delirium">example-4at-delirium</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-example-abbey-pain.html"
+                  title="Observation/example-abbey-pain">example-abbey-pain</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-example-abc-chart.html"
+                  title="Observation/example-abc-chart">example-abc-chart</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-example-bristol-stool.html"
+                  title="Observation/example-bristol-stool">example-bristol-stool</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-example-clinical-frailty.html"
+                  title="Observation/example-clinical-frailty">example-clinical-frailty</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-example-fluid-balance.html"
+                  title="Observation/example-fluid-balance">example-fluid-balance</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Observation-example-goal-evaluation.html"
                   title="Observation/example-goal-evaluation">example-goal-evaluation</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-example-mental-capacity.html"
+                  title="Observation/example-mental-capacity">example-mental-capacity</a>
             </td>
             <td>
 
@@ -709,10 +1058,64 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Observation-example-oral-health.html"
+                  title="Observation/example-oral-health">example-oral-health</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Goal-example-patient-goal.html" title="Goal/example-patient-goal">example-patient-goal</a>
             </td>
             <td>
 <p>Patient will remain free from falls.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-example-patient-story.html"
+                  title="Observation/example-patient-story">example-patient-story</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-example-reasonable-adjustment.html"
+                  title="Observation/example-reasonable-adjustment">example-reasonable-adjustment</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-example-seizure-record.html"
+                  title="Observation/example-seizure-record">example-seizure-record</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-example-urinalysis.html"
+                  title="Observation/example-urinalysis">example-urinalysis</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-example-what-matters.html"
+                  title="Observation/example-what-matters">example-what-matters</a>
+            </td>
+            <td>
+
 </td>
          </tr>
          <tr>
@@ -771,7 +1174,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package onc.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 26, 2025 15:08+0000">2025-12-26</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package onc.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 1, 2026 16:16+0000">2026-01-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

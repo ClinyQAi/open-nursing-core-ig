@@ -1,0 +1,115 @@
+# Oral Care Needs Assessment - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Oral Care Needs Assessment**
+
+## Resource Profile: Oral Care Needs Assessment 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-oral-care-assessment | *Version*:0.1.0 |
+| Draft as of 2026-01-01 | *Computable Name*:ONCOralCareAssessment |
+
+ 
+Assessment of mouth care needs and oral health. 
+
+**Usages:**
+
+* This Profile is not used by any profiles in this Implementation Guide
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-oral-care-assessment)
+
+### Formal Views of Profile Content
+
+ [Description of Profiles, Differentials, Snapshots and how the different presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](StructureDefinition-onc-oral-care-assessment.csv), [Excel](StructureDefinition-onc-oral-care-assessment.xlsx), [Schematron](StructureDefinition-onc-oral-care-assessment.sch) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "onc-oral-care-assessment",
+  "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-oral-care-assessment",
+  "version" : "0.1.0",
+  "name" : "ONCOralCareAssessment",
+  "title" : "Oral Care Needs Assessment",
+  "status" : "draft",
+  "date" : "2026-01-01T16:16:25+00:00",
+  "description" : "Assessment of mouth care needs and oral health.",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [
+    {
+      "identity" : "workflow",
+      "uri" : "http://hl7.org/fhir/workflow",
+      "name" : "Workflow Pattern"
+    },
+    {
+      "identity" : "sct-concept",
+      "uri" : "http://snomed.info/conceptdomain",
+      "name" : "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity" : "v2",
+      "uri" : "http://hl7.org/v2",
+      "name" : "HL7 v2 Mapping"
+    },
+    {
+      "identity" : "rim",
+      "uri" : "http://hl7.org/v3",
+      "name" : "RIM Mapping"
+    },
+    {
+      "identity" : "w5",
+      "uri" : "http://hl7.org/fhir/fivews",
+      "name" : "FiveWs Pattern Mapping"
+    },
+    {
+      "identity" : "sct-attr",
+      "uri" : "http://snomed.org/attributebinding",
+      "name" : "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind" : "resource",
+  "abstract" : false,
+  "type" : "Observation",
+  "baseDefinition" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [
+      {
+        "id" : "Observation",
+        "path" : "Observation"
+      },
+      {
+        "id" : "Observation.code",
+        "path" : "Observation.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "code" : "oral-care"
+            }
+          ]
+        }
+      },
+      {
+        "id" : "Observation.value[x]",
+        "path" : "Observation.value[x]",
+        "type" : [
+          {
+            "code" : "CodeableConcept"
+          }
+        ]
+      }
+    ]
+  }
+}
+
+```

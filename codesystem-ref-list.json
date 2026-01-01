@@ -10,16 +10,19 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-inspired-oxygen-vs.html" : "Inspired Oxygen Value Set",
-      "ValueSet-onc-4at-attention-vs.html" : "4AT Attention Value Set",
       "ValueSet-housing-status-vs.html" : "Housing Status Value Set",
       "ValueSet-onc-4at-acute-change-vs.html" : "4AT Acute Change Value Set",
-      "ValueSet-acvpu-vs.html" : "ACVPU Value Set",
-      "ValueSet-goal-evaluation-valueset.html" : "Goal Evaluation Value Set",
-      "ValueSet-nursing-intervention-valueset.html" : "Nursing Intervention Value Set",
+      "ValueSet-onc-goal-target-measure-vs.html" : "Goal Target Measure ValueSet",
       "ValueSet-onc-4at-amt4-vs.html" : "4AT AMT4 Value Set",
-      "ValueSet-onc-4at-alertness-vs.html" : "4AT Alertness Value Set",
-      "ValueSet-nursing-problem-valueset.html" : "Nursing Problem Value Set"
+      "ValueSet-onc-4at-attention-vs.html" : "4AT Attention Value Set",
+      "ValueSet-acvpu-vs.html" : "ACVPU Value Set",
+      "http://hl7.org/fhir/R4/valueset-consistency-type.html" : "Fluid Consistency Type Codes",
+      "ValueSet-inspired-oxygen-vs.html" : "Inspired Oxygen Value Set",
+      "ValueSet-nursing-problem-valueset.html" : "Nursing Problem Value Set",
+      "ValueSet-onc-prognosis-vs.html" : "Nursing Prognosis ValueSet",
+      "ValueSet-nursing-intervention-valueset.html" : "Nursing Intervention Value Set",
+      "ValueSet-goal-evaluation-valueset.html" : "Goal Evaluation Value Set",
+      "ValueSet-onc-4at-alertness-vs.html" : "4AT Alertness Value Set"
     },
     {
       "url" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale",
@@ -41,13 +44,15 @@
       "description" : "Custom observation codes for Open Nursing Core",
       "uses" : {
       },
-      "ValueSet-onc-cfs-vs.html" : "Clinical Frailty Scale Value Set",
       "ValueSet-skintone-vs.html" : "Fitzpatrick Skin Tone Value Set",
-      "ValueSet-wound-stage-vs.html" : "Wound Stage Value Set",
-      "ValueSet-news2-subscore-code-vs.html" : "NEWS2 Sub-Score Codes",
-      "ValueSet-onc-4at-alertness-vs.html" : "4AT Alertness Value Set",
       "ValueSet-nursing-problem-valueset.html" : "Nursing Problem Value Set",
-      "ValueSet-news2-code-vs.html" : "NEWS2 Code Value Set"
+      "ValueSet-news2-subscore-code-vs.html" : "NEWS2 Sub-Score Codes",
+      "ValueSet-news2-code-vs.html" : "NEWS2 Code Value Set",
+      "ValueSet-wound-stage-vs.html" : "Wound Stage Value Set",
+      "ValueSet-onc-pbs-function-vs.html" : "PBS Behaviour Function ValueSet",
+      "ValueSet-onc-mca-vs.html" : "Mental Capacity Finding Value Set",
+      "ValueSet-onc-4at-alertness-vs.html" : "4AT Alertness Value Set",
+      "ValueSet-onc-cfs-vs.html" : "Clinical Frailty Scale Value Set"
     },
     {
       "url" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type",

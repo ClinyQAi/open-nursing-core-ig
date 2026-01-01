@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="example-oral-health"/>
+  <meta>
+    <profile value="https://fhir.clinyq.ai/StructureDefinition/onc-oral-health"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation example-oral-health</b></p><a name="example-oral-health"> </a><a name="hcexample-oral-health"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-onc-oral-health.html">Oral Health Assessment</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category exam}">Exam</span></p><p><b>code</b>: <span title="Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes oral-health-score}">Oral Health Score</span></p><p><b>subject</b>: <a href="Patient-patient-example-jane.html">Jane Doe  Female, DoB Unknown</a></p><p><b>performer</b>: <a href="Practitioner-practitioner-example.html">Practitioner Nightingale </a></p><p><b>value</b>: 0 {score}</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes oral-lips}">Lips</span></p><p><b>value</b>: Pink, moist</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes oral-tongue}">Tongue</span></p><p><b>value</b>: Pink, moist</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes oral-gums}">Gums</span></p><p><b>value</b>: Healthy</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes oral-teeth}">Teeth/Dentures</span></p><p><b>value</b>: Own teeth, good repair</p></blockquote></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="exam"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+      <code value="oral-health-score"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patient-example-jane"/>
+  </subject>
+  <performer>
+    <reference value="Practitioner/practitioner-example"/>
+  </performer>
+  <valueQuantity>
+    <value value="0"/>
+    <unit value="{score}"/>
+  </valueQuantity>
+  <component>
+    <code>
+      <coding>
+        <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+        <code value="oral-lips"/>
+      </coding>
+    </code>
+    <valueString value="Pink, moist"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+        <code value="oral-tongue"/>
+      </coding>
+    </code>
+    <valueString value="Pink, moist"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+        <code value="oral-gums"/>
+      </coding>
+    </code>
+    <valueString value="Healthy"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+        <code value="oral-teeth"/>
+      </coding>
+    </code>
+    <valueString value="Own teeth, good repair"/>
+  </component>
+</Observation>

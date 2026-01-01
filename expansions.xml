@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="abd76e61-d298-4755-95e6-80e27a84768c"/>
+  <id value="9fa7da15-4187-4bb6-bf69-af4470d6ab16"/>
   <meta>
-    <lastUpdated value="2025-12-26T15:08:13.756+00:00"/>
+    <lastUpdated value="2026-01-01T16:16:25.755+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -146,10 +146,10 @@
         <name value="ACVPUValueSet"/>
         <title value="ACVPU Value Set"/>
         <status value="draft"/>
-        <date value="2025-12-26T15:08:13+00:00"/>
+        <date value="2026-01-01T16:16:25+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:5b2df5c9-b765-4316-830e-2c8f8b88769d"/>
-          <timestamp value="2025-12-26T15:09:20+00:00"/>
+          <identifier value="urn:uuid:4072e656-14a4-40af-bbd0-ddf7224cb651"/>
+          <timestamp value="2026-01-01T16:17:42+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -218,7 +218,7 @@
                 <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
-            <p>This value set contains 3 concepts</p>
+            <p>This value set contains 4 concepts</p>
             <table class="codes" data-fhir="generated">
               <tr>
                 <td>
@@ -231,14 +231,6 @@
                   <b>Display (en)</b>
                 </td>
                 <td>
-                  <b>Inactive</b>
-                </td>
-                <td>
-                  <b>
-                    <a href="http://hl7.org/fhir/concept-properties#status">status</a>
-                  </b>
-                </td>
-                <td>
                   <b>JSON</b>
                 </td>
                 <td>
@@ -247,67 +239,81 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-370996005"> </a>
+                  <a name="x-http://snomed.info/sct-385652002"> </a>
                   <code>http://snomed.info/sct</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/370996005">370996005</a>
+                  <a href="http://snomed.info/id/385652002">385652002</a>
                 </td>
-                <td>Patient condition resolved (finding)</td>
-                <td/>
-                <td/>
+                <td>Started (qualifier value)</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;370996005&quot;, &quot;display&quot;: &quot;Patient condition resolved (finding)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;385652002&quot;, &quot;display&quot;: &quot;Started (qualifier value)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;370996005&quot;&gt;&lt;display value=&quot;Patient condition resolved (finding)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;385652002&quot;&gt;&lt;display value=&quot;Started (qualifier value)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-385634002"> </a>
+                  <a name="x-http://snomed.info/sct-385651009"> </a>
                   <code>http://snomed.info/sct</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/385634002">385634002</a>
+                  <a href="http://snomed.info/id/385651009">385651009</a>
                 </td>
-                <td>Change patterns (qualifier value)</td>
-                <td/>
-                <td/>
+                <td>In progress (qualifier value)</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;385634002&quot;, &quot;display&quot;: &quot;Change patterns (qualifier value)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;385651009&quot;, &quot;display&quot;: &quot;In progress (qualifier value)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;385634002&quot;&gt;&lt;display value=&quot;Change patterns (qualifier value)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;385651009&quot;&gt;&lt;display value=&quot;In progress (qualifier value)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-118222006"> </a>
+                  <a name="x-http://snomed.info/sct-255609007"> </a>
                   <code>http://snomed.info/sct</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/118222006">118222006</a>
+                  <a href="http://snomed.info/id/255609007">255609007</a>
                 </td>
-                <td>General finding of observation of patient</td>
-                <td>inactive</td>
-                <td>inactive</td>
+                <td>Partial</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;118222006&quot;, &quot;display&quot;: &quot;General finding of observation of patient&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;255609007&quot;, &quot;display&quot;: &quot;Partial&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;118222006&quot;&gt;&lt;display value=&quot;General finding of observation of patient&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;255609007&quot;&gt;&lt;display value=&quot;Partial&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-723510000"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/723510000">723510000</a>
+                </td>
+                <td>Entered in error (qualifier value)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;723510000&quot;, &quot;display&quot;: &quot;Entered in error (qualifier value)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;723510000&quot;&gt;&lt;display value=&quot;Entered in error (qualifier value)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -320,11 +326,11 @@
         <title value="Goal Evaluation Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-12-26T15:08:13+00:00"/>
+        <date value="2026-01-01T16:16:25+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:72a57470-6008-442e-bdaa-bfe2ca6bb2dc"/>
-          <timestamp value="2025-12-26T15:09:23+00:00"/>
-          <total value="3"/>
+          <identifier value="urn:uuid:18dc9655-39e2-46f6-8dcf-c2f111953e8c"/>
+          <timestamp value="2026-01-01T16:17:48+00:00"/>
+          <total value="4"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -350,29 +356,25 @@
             <name value="used-codesystem"/>
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
-          <property>
-            <code value="status"/>
-            <uri value="http://hl7.org/fhir/concept-properties#status"/>
-          </property>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="370996005"/>
-            <display value="Patient condition resolved (finding)"/>
+            <code value="385652002"/>
+            <display value="Started (qualifier value)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="385634002"/>
-            <display value="Change patterns (qualifier value)"/>
+            <code value="385651009"/>
+            <display value="In progress (qualifier value)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <inactive value="true"/>
-            <code value="118222006"/>
-            <display value="General finding of observation of patient"/>
-            <property>
-              <code value="status"/>
-              <valueCode value="inactive"/>
-            </property>
+            <code value="255609007"/>
+            <display value="Partial"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="723510000"/>
+            <display value="Entered in error (qualifier value)"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -459,10 +461,10 @@
         <title value="Housing Status Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-12-26T15:08:13+00:00"/>
+        <date value="2026-01-01T16:16:25+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:d772101a-7608-481c-8035-8de021ca54e9"/>
-          <timestamp value="2025-12-26T15:09:31+00:00"/>
+          <identifier value="urn:uuid:0b0cbf62-00eb-4967-9355-d3f9dddaa56e"/>
+          <timestamp value="2026-01-01T16:17:58+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -583,10 +585,10 @@
         <name value="InspiredOxygenValueSet"/>
         <title value="Inspired Oxygen Value Set"/>
         <status value="draft"/>
-        <date value="2025-12-26T15:08:13+00:00"/>
+        <date value="2026-01-01T16:16:25+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:edb1bafa-a23a-4318-bcd3-4a8afe1204ef"/>
-          <timestamp value="2025-12-26T15:09:24+00:00"/>
+          <identifier value="urn:uuid:7b256fdc-1ddf-4336-ba2f-201fb0aff51d"/>
+          <timestamp value="2026-01-01T16:17:49+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -692,10 +694,10 @@
         <name value="NEWS2CodeValueSet"/>
         <title value="NEWS2 Code Value Set"/>
         <status value="draft"/>
-        <date value="2025-12-26T15:08:13+00:00"/>
+        <date value="2026-01-01T16:16:25+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:7c9d863f-1168-45e6-bcf0-4b0493346a41"/>
-          <timestamp value="2025-12-26T15:09:31+00:00"/>
+          <identifier value="urn:uuid:bf634560-ab5c-425c-bffa-c15f79793c13"/>
+          <timestamp value="2026-01-01T16:17:58+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -792,10 +794,10 @@
         <name value="NEWS2SubscoreCodeValueSet"/>
         <title value="NEWS2 Sub-Score Codes"/>
         <status value="draft"/>
-        <date value="2025-12-26T15:08:13+00:00"/>
+        <date value="2026-01-01T16:16:25+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:0035928f-8d77-4a94-8811-b22714d33064"/>
-          <timestamp value="2025-12-26T15:09:31+00:00"/>
+          <identifier value="urn:uuid:bec6f023-9d3b-4e33-b456-dc0626010feb"/>
+          <timestamp value="2026-01-01T16:17:58+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -928,10 +930,10 @@
         <title value="Nursing Intervention Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-12-26T15:08:13+00:00"/>
+        <date value="2026-01-01T16:16:25+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:08d2f864-0a16-48cc-aa6a-0197778755ce"/>
-          <timestamp value="2025-12-26T15:09:31+00:00"/>
+          <identifier value="urn:uuid:1857fdd2-e197-4d03-998f-594203f45ce1"/>
+          <timestamp value="2026-01-01T16:17:59+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1116,10 +1118,10 @@
         <title value="Nursing Problem Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-12-26T15:08:13+00:00"/>
+        <date value="2026-01-01T16:16:25+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:8221b151-e6c9-4163-a2b3-1d817b6be26e"/>
-          <timestamp value="2025-12-26T15:09:28+00:00"/>
+          <identifier value="urn:uuid:f139b3ac-f733-4e46-8888-641a93fc1e3c"/>
+          <timestamp value="2026-01-01T16:17:53+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -1214,10 +1216,10 @@
         <name value="AcuteChangeVS"/>
         <title value="4AT Acute Change Value Set"/>
         <status value="draft"/>
-        <date value="2025-12-26T15:08:13+00:00"/>
+        <date value="2026-01-01T16:16:25+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:b35c0ca6-be95-4683-8806-fd6091938fe8"/>
-          <timestamp value="2025-12-26T15:09:20+00:00"/>
+          <identifier value="urn:uuid:5d0f6f2a-3800-44d0-904a-7218f86f65e0"/>
+          <timestamp value="2026-01-01T16:17:40+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -1365,10 +1367,10 @@
         <name value="AlertnessVS"/>
         <title value="4AT Alertness Value Set"/>
         <status value="draft"/>
-        <date value="2025-12-26T15:08:13+00:00"/>
+        <date value="2026-01-01T16:16:25+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:4562dd01-3eb2-4442-b391-cca200504ddd"/>
-          <timestamp value="2025-12-26T15:09:19+00:00"/>
+          <identifier value="urn:uuid:8d761ad8-9f4e-472a-83e1-30f3669993f7"/>
+          <timestamp value="2026-01-01T16:17:40+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1462,10 +1464,10 @@
         <name value="AMT4VS"/>
         <title value="4AT AMT4 Value Set"/>
         <status value="draft"/>
-        <date value="2025-12-26T15:08:13+00:00"/>
+        <date value="2026-01-01T16:16:25+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:791d78c4-c3ee-43b6-b65a-a10ef67912bd"/>
-          <timestamp value="2025-12-26T15:09:19+00:00"/>
+          <identifier value="urn:uuid:0773ebb8-3c43-46a1-ac27-be00a1899df0"/>
+          <timestamp value="2026-01-01T16:17:40+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -1536,10 +1538,10 @@
         <name value="AttentionVS"/>
         <title value="4AT Attention Value Set"/>
         <status value="draft"/>
-        <date value="2025-12-26T15:08:13+00:00"/>
+        <date value="2026-01-01T16:16:25+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:33cb441a-79f4-4e80-b78b-197fea604ac7"/>
-          <timestamp value="2025-12-26T15:09:19+00:00"/>
+          <identifier value="urn:uuid:b841247b-706b-4601-b4c0-093626b55a72"/>
+          <timestamp value="2026-01-01T16:17:40+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -1803,10 +1805,10 @@
         <name value="ClinicalFrailtyScaleVS"/>
         <title value="Clinical Frailty Scale Value Set"/>
         <status value="draft"/>
-        <date value="2025-12-26T15:08:13+00:00"/>
+        <date value="2026-01-01T16:16:25+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:1cb7e16a-b687-4105-848f-503063a28675"/>
-          <timestamp value="2025-12-26T15:09:22+00:00"/>
+          <identifier value="urn:uuid:9dcb5cb4-b624-42fa-862f-97480f43e2e7"/>
+          <timestamp value="2026-01-01T16:17:46+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -1873,6 +1875,300 @@
             <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
             <code value="cfs-9"/>
             <display value="Terminally Ill"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-goal-target-measure-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from tx.fhir.org based on:</p>
+              <ul>
+                <li>Loinc v2.81
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://loinc.org|2.81" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>SNOMED CT International edition 01-Feb 2025
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-59408-5"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/59408-5/">59408-5</a>
+                </td>
+                <td>Oxygen saturation in Arterial blood by Pulse oximetry</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;59408-5&quot;, &quot;display&quot;: &quot;Oxygen saturation in Arterial blood by Pulse oximetry&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;59408-5&quot;&gt;&lt;display value=&quot;Oxygen saturation in Arterial blood by Pulse oximetry&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-225358003"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/225358003">225358003</a>
+                </td>
+                <td>Wound care</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;225358003&quot;, &quot;display&quot;: &quot;Wound care&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;225358003&quot;&gt;&lt;display value=&quot;Wound care&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-goal-target-measure-vs"/>
+        <version value="0.1.0"/>
+        <name value="ONCGoalTargetMeasureVS"/>
+        <title value="Goal Target Measure ValueSet"/>
+        <status value="draft"/>
+        <date value="2026-01-01T16:16:25+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:afb14407-3f41-4b37-bf2d-c8fb221fcbb9"/>
+          <timestamp value="2026-01-01T16:17:59+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.81"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="59408-5"/>
+            <display value="Oxygen saturation in Arterial blood by Pulse oximetry"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="225358003"/>
+            <display value="Wound care"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-mca-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-onc-observation-codes.html">codesystem ONC Observation Codes v0.1.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes-capacity-present"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-capacity-present">capacity-present</a>
+                </td>
+                <td>Capacity Present</td>
+                <td>Patient has capacity for this decision</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;capacity-present&quot;, &quot;display&quot;: &quot;Capacity Present&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;capacity-present&quot;&gt;&lt;display value=&quot;Capacity Present&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes-capacity-absent"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-capacity-absent">capacity-absent</a>
+                </td>
+                <td>Capacity Absent</td>
+                <td>Patient lacks capacity for this decision</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;capacity-absent&quot;, &quot;display&quot;: &quot;Capacity Absent&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;capacity-absent&quot;&gt;&lt;display value=&quot;Capacity Absent&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes-best-interest"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-best-interest">best-interest</a>
+                </td>
+                <td>Best Interest Decision Required</td>
+                <td>Decision made in patient's best interest</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;best-interest&quot;, &quot;display&quot;: &quot;Best Interest Decision Required&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;best-interest&quot;&gt;&lt;display value=&quot;Best Interest Decision Required&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-mca-vs"/>
+        <version value="0.1.0"/>
+        <name value="MentalCapacityVS"/>
+        <title value="Mental Capacity Finding Value Set"/>
+        <status value="draft"/>
+        <date value="2026-01-01T16:16:25+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:c5235b33-1875-4c29-8007-5307fef6c2a2"/>
+          <timestamp value="2026-01-01T16:17:50+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+            <code value="capacity-present"/>
+            <display value="Capacity Present"/>
+          </contains>
+          <contains>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+            <code value="capacity-absent"/>
+            <display value="Capacity Absent"/>
+          </contains>
+          <contains>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+            <code value="best-interest"/>
+            <display value="Best Interest Decision Required"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -2119,10 +2415,10 @@
         <name value="ONCMonkScaleVS"/>
         <title value="Monk Skin Tone Scale ValueSet"/>
         <status value="draft"/>
-        <date value="2025-12-26T15:08:13+00:00"/>
+        <date value="2026-01-01T16:16:25+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:bcbd0bce-b377-435b-a24a-54bea823d01a"/>
-          <timestamp value="2025-12-26T15:09:25+00:00"/>
+          <identifier value="urn:uuid:156d70ab-a86a-4aae-9f90-7f9f9cddfea0"/>
+          <timestamp value="2026-01-01T16:17:51+00:00"/>
           <total value="10"/>
           <offset value="0"/>
           <parameter>
@@ -2194,6 +2490,230 @@
             <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale"/>
             <code value="J"/>
             <display value="Black Skin"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-pbs-function-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-onc-observation-codes.html">codesystem ONC Observation Codes v0.1.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 1 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes-abc-function"> </a>
+                  <code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-abc-function">abc-function</a>
+                </td>
+                <td>Function of Behaviour</td>
+                <td>Hypothesized function (e.g. Sensory, Escape, Attention, Tangible)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;abc-function&quot;, &quot;display&quot;: &quot;Function of Behaviour&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;abc-function&quot;&gt;&lt;display value=&quot;Function of Behaviour&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-pbs-function-vs"/>
+        <version value="0.1.0"/>
+        <name value="PBSFunctionVS"/>
+        <title value="PBS Behaviour Function ValueSet"/>
+        <status value="draft"/>
+        <date value="2026-01-01T16:16:25+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:852b207a-479b-4f76-822c-f422062d076f"/>
+          <timestamp value="2026-01-01T16:17:42+00:00"/>
+          <total value="1"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+            <code value="abc-function"/>
+            <display value="Function of Behaviour"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-prognosis-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-17621005"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/17621005">17621005</a>
+                </td>
+                <td>Normal</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;17621005&quot;, &quot;display&quot;: &quot;Normal&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;17621005&quot;&gt;&lt;display value=&quot;Normal&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-385633008"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/385633008">385633008</a>
+                </td>
+                <td>Improving (qualifier value)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;385633008&quot;, &quot;display&quot;: &quot;Improving (qualifier value)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;385633008&quot;&gt;&lt;display value=&quot;Improving (qualifier value)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-prognosis-vs"/>
+        <version value="0.1.0"/>
+        <name value="ONCPrognosisVS"/>
+        <title value="Nursing Prognosis ValueSet"/>
+        <status value="draft"/>
+        <date value="2026-01-01T16:16:25+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:a3522839-84f9-406d-8170-87b7b37d82b5"/>
+          <timestamp value="2026-01-01T16:17:59+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="17621005"/>
+            <display value="Normal"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="385633008"/>
+            <display value="Improving (qualifier value)"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -2279,10 +2799,10 @@
         <name value="PainAssessmentCodeValueSet"/>
         <title value="Pain Assessment Code Value Set"/>
         <status value="draft"/>
-        <date value="2025-12-26T15:08:13+00:00"/>
+        <date value="2026-01-01T16:16:25+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:77eadd72-04fb-4c84-95e8-7d0554a14067"/>
-          <timestamp value="2025-12-26T15:09:28+00:00"/>
+          <identifier value="urn:uuid:a9b4b5f9-5194-4246-ac80-c1f4ccd12d81"/>
+          <timestamp value="2026-01-01T16:17:54+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -2431,10 +2951,10 @@
         <title value="Problem Category Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-12-26T15:08:13+00:00"/>
+        <date value="2026-01-01T16:16:25+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:4ecd7e6b-a911-4299-ba04-22fdde5d3be5"/>
-          <timestamp value="2025-12-26T15:09:28+00:00"/>
+          <identifier value="urn:uuid:01d87db2-6cbb-4107-9ba8-7c23331b4ea6"/>
+          <timestamp value="2026-01-01T16:17:53+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -2647,10 +3167,10 @@
         <title value="Fitzpatrick Skin Tone Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-12-26T15:08:13+00:00"/>
+        <date value="2026-01-01T16:16:25+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:3b7e643f-9580-442b-a6c1-7de70e102266"/>
-          <timestamp value="2025-12-26T15:09:30+00:00"/>
+          <identifier value="urn:uuid:be806205-3fae-4219-9388-83063346e557"/>
+          <timestamp value="2026-01-01T16:17:56+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -2877,10 +3397,10 @@
         <name value="WoundStageValueSet"/>
         <title value="Wound Stage Value Set"/>
         <status value="draft"/>
-        <date value="2025-12-26T15:08:13+00:00"/>
+        <date value="2026-01-01T16:16:25+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:dcba0feb-2468-455e-a6a9-bb070c27819b"/>
-          <timestamp value="2025-12-26T15:09:31+00:00"/>
+          <identifier value="urn:uuid:5abed099-44cc-47b9-a9c1-425984e4245d"/>
+          <timestamp value="2026-01-01T16:17:58+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>

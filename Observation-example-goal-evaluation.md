@@ -6,21 +6,21 @@
 
 ## Example Observation: example-goal-evaluation
 
-Profile: [Goal Evaluation](StructureDefinition-onc-goal-evaluation.md)
-
-**Observation Goal Reference**: [Goal: lifecycleStatus = active; description =](Goal-example-patient-goal.md)
+Profile: [ONC Goal Evaluation](StructureDefinition-onc-goal-evaluation.md)
 
 **status**: Final
 
 **category**: Survey
 
-**code**: Patient condition resolved
+**code**: Follow-up assessment
 
 **subject**: [Jane Doe Female, DoB Unknown](Patient-patient-example-jane.md)
 
+**focus**: [Goal: lifecycleStatus = active; description =](Goal-example-patient-goal.md)
+
 **performer**: [Practitioner Nightingale](Practitioner-practitioner-example.md)
 
-**value**: Patient condition resolved
+**value**: Objective achieved
 
 
 
@@ -35,14 +35,6 @@ Profile: [Goal Evaluation](StructureDefinition-onc-goal-evaluation.md)
       "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-goal-evaluation"
     ]
   },
-  "extension" : [
-    {
-      "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/observation-goal-reference",
-      "valueReference" : {
-        "reference" : "Goal/example-patient-goal"
-      }
-    }
-  ],
   "status" : "final",
   "category" : [
     {
@@ -58,14 +50,19 @@ Profile: [Goal Evaluation](StructureDefinition-onc-goal-evaluation.md)
     "coding" : [
       {
         "system" : "http://snomed.info/sct",
-        "code" : "370996005",
-        "display" : "Patient condition resolved"
+        "code" : "390906007",
+        "display" : "Follow-up assessment"
       }
     ]
   },
   "subject" : {
     "reference" : "Patient/patient-example-jane"
   },
+  "focus" : [
+    {
+      "reference" : "Goal/example-patient-goal"
+    }
+  ],
   "performer" : [
     {
       "reference" : "Practitioner/practitioner-example"
@@ -75,8 +72,8 @@ Profile: [Goal Evaluation](StructureDefinition-onc-goal-evaluation.md)
     "coding" : [
       {
         "system" : "http://snomed.info/sct",
-        "code" : "370996005",
-        "display" : "Patient condition resolved"
+        "code" : "385652002",
+        "display" : "Objective achieved"
       }
     ]
   }

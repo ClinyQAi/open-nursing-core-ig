@@ -1,0 +1,115 @@
+# Mobility Assessment - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Mobility Assessment**
+
+## Resource Profile: Mobility Assessment 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-mobility-assessment | *Version*:0.1.0 |
+| Draft as of 2026-01-01 | *Computable Name*:ONCMobilityAssessment |
+
+ 
+Assessment of capability to move and limitations. 
+
+**Usages:**
+
+* This Profile is not used by any profiles in this Implementation Guide
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-mobility-assessment)
+
+### Formal Views of Profile Content
+
+ [Description of Profiles, Differentials, Snapshots and how the different presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](StructureDefinition-onc-mobility-assessment.csv), [Excel](StructureDefinition-onc-mobility-assessment.xlsx), [Schematron](StructureDefinition-onc-mobility-assessment.sch) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "onc-mobility-assessment",
+  "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-mobility-assessment",
+  "version" : "0.1.0",
+  "name" : "ONCMobilityAssessment",
+  "title" : "Mobility Assessment",
+  "status" : "draft",
+  "date" : "2026-01-01T16:16:25+00:00",
+  "description" : "Assessment of capability to move and limitations.",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [
+    {
+      "identity" : "workflow",
+      "uri" : "http://hl7.org/fhir/workflow",
+      "name" : "Workflow Pattern"
+    },
+    {
+      "identity" : "sct-concept",
+      "uri" : "http://snomed.info/conceptdomain",
+      "name" : "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity" : "v2",
+      "uri" : "http://hl7.org/v2",
+      "name" : "HL7 v2 Mapping"
+    },
+    {
+      "identity" : "rim",
+      "uri" : "http://hl7.org/v3",
+      "name" : "RIM Mapping"
+    },
+    {
+      "identity" : "w5",
+      "uri" : "http://hl7.org/fhir/fivews",
+      "name" : "FiveWs Pattern Mapping"
+    },
+    {
+      "identity" : "sct-attr",
+      "uri" : "http://snomed.org/attributebinding",
+      "name" : "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind" : "resource",
+  "abstract" : false,
+  "type" : "Observation",
+  "baseDefinition" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [
+      {
+        "id" : "Observation",
+        "path" : "Observation"
+      },
+      {
+        "id" : "Observation.code",
+        "path" : "Observation.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "code" : "mobility"
+            }
+          ]
+        }
+      },
+      {
+        "id" : "Observation.value[x]",
+        "path" : "Observation.value[x]",
+        "type" : [
+          {
+            "code" : "CodeableConcept"
+          }
+        ]
+      }
+    ]
+  }
+}
+
+```

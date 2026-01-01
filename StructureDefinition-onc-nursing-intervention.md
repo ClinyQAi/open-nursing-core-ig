@@ -1,18 +1,18 @@
-# Nursing Intervention - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
+# ONC Nursing Intervention - Open Nursing Core FHIR Implementation Guide (ONC-IG) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Nursing Intervention**
+* **ONC Nursing Intervention**
 
-## Resource Profile: Nursing Intervention 
+## Resource Profile: ONC Nursing Intervention 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-intervention | *Version*:0.1.0 |
-| Draft as of 2025-12-26 | *Computable Name*:ONCNursingIntervention |
+| Draft as of 2026-01-01 | *Computable Name*:ONCNursingIntervention |
 
  
-Nursing intervention or procedure performed to achieve patient goals. Documents actions taken by nursing staff to address identified problems and achieve desired outcomes. Part of the ADPIE framework's Implementation phase. 
+Nursing intervention performed to achieve patient goals. Part of ADPIE Implementation phase. 
 
 **Usages:**
 
@@ -39,10 +39,10 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-interven
   "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-intervention",
   "version" : "0.1.0",
   "name" : "ONCNursingIntervention",
-  "title" : "Nursing Intervention",
+  "title" : "ONC Nursing Intervention",
   "status" : "draft",
-  "date" : "2025-12-26T15:08:13+00:00",
-  "description" : "Nursing intervention or procedure performed to achieve patient goals. Documents actions taken by nursing staff to address identified problems and achieve desired outcomes. Part of the ADPIE framework's Implementation phase.",
+  "date" : "2026-01-01T16:16:25+00:00",
+  "description" : "Nursing intervention performed to achieve patient goals. Part of ADPIE Implementation phase.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
