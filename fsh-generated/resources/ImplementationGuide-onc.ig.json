@@ -88,6 +88,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/onc-bladder-assessment"
+        },
+        "name": "Bladder Assessment",
+        "description": "Detailed assessment of bladder function, including voiding patterns.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/onc-blood-pressure"
         },
         "name": "Blood Pressure",
@@ -100,6 +108,14 @@
         },
         "name": "Body Temperature",
         "description": "Body temperature observation for NEWS2",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-bowel-assessment"
+        },
+        "name": "Bowel Assessment",
+        "description": "Detailed assessment of bowel function and regularity.",
         "exampleBoolean": false
       },
       {
@@ -120,6 +136,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/onc-catheter-care"
+        },
+        "name": "Catheter Care",
+        "description": "Documentation of catheter site care and status.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/onc-clinical-frailty-scale"
         },
         "name": "Clinical Frailty Scale (CFS)",
@@ -132,6 +156,30 @@
         },
         "name": "Clinical Frailty Scale Value Set",
         "description": "Codes for Rockwood Clinical Frailty Scale (1-9)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-continence-assessment"
+        },
+        "name": "Continence Assessment",
+        "description": "Assessment of bladder and bowel control status.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-device-use-statement"
+        },
+        "name": "Device Use Statement",
+        "description": "Documentation of mobility aids or other devices used by the patient.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-dietary-requirements"
+        },
+        "name": "Dietary Requirements",
+        "description": "Documentation of specific dietary needs (e.g. textural modification, cultural).",
         "exampleBoolean": false
       },
       {
@@ -216,7 +264,7 @@
           "reference": "Goal/example-patient-goal"
         },
         "name": "example-patient-goal",
-        "exampleCanonical": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-goal"
+        "exampleCanonical": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal"
       },
       {
         "reference": {
@@ -279,18 +327,18 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/onc-goal-evaluation"
-        },
-        "name": "Goal Evaluation",
-        "description": "Evaluation of patient goal outcomes and nursing intervention effectiveness. Assesses whether goals have been met, partially met, or not met. Part of the ADPIE framework's Evaluation phase.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/goal-evaluation-valueset"
         },
         "name": "Goal Evaluation Value Set",
         "description": "Value set for evaluating patient goal outcomes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/onc-goal-target-measure-vs"
+        },
+        "name": "Goal Target Measure ValueSet",
+        "description": "Codes used for goal target measures",
         "exampleBoolean": false
       },
       {
@@ -330,7 +378,23 @@
           "reference": "StructureDefinition/intervention-goal-reference"
         },
         "name": "Intervention Goal Reference",
-        "description": "Extension to link nursing interventions to the patient goals they are intended to achieve. Supports goal-directed care planning and intervention tracking.",
+        "description": "Extension to link nursing interventions to the patient goals they are intended to achieve.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-medication-ability"
+        },
+        "name": "Medication Management Ability",
+        "description": "Assessment of the patient's ability to manage their own medication.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-medication-self-admin"
+        },
+        "name": "Medication Self-Administration Observation",
+        "description": "Observation of the patient performing self-administration.",
         "exampleBoolean": false
       },
       {
@@ -355,6 +419,14 @@
         },
         "name": "Mini Mental State Examination (MMSE)",
         "description": "Mini Mental State Examination for cognitive function screening. Score 24-30=no impairment, 18-23=mild, 0-17=severe. Total range 0-30.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-mobility-assessment"
+        },
+        "name": "Mobility Assessment",
+        "description": "Assessment of capability to move and limitations.",
         "exampleBoolean": false
       },
       {
@@ -405,6 +477,13 @@
       },
       {
         "reference": {
+          "reference": "PlanDefinition/news2-escalation-plan"
+        },
+        "exampleBoolean": false,
+        "name": "NEWS2 Escalation Protocol"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/onc-news2-score"
         },
         "name": "NEWS2 Score",
@@ -425,14 +504,6 @@
         },
         "name": "NEWS2 Sub-Score Codes",
         "description": "SNOMED codes for NEWS2 sub-scores",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/onc-nursing-intervention"
-        },
-        "name": "Nursing Intervention",
-        "description": "Nursing intervention or procedure performed to achieve patient goals. Documents actions taken by nursing staff to address identified problems and achieve desired outcomes. Part of the ADPIE framework's Implementation phase.",
         "exampleBoolean": false
       },
       {
@@ -461,10 +532,18 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/onc-prognosis-vs"
+        },
+        "name": "Nursing Prognosis ValueSet",
+        "description": "Prognosis codes for clinical impression",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/observation-goal-reference"
         },
         "name": "Observation Goal Reference",
-        "description": "Extension to link goal evaluation observations to the patient goals being evaluated. Enables tracking of goal progress and outcomes over time.",
+        "description": "Extension to link goal evaluation observations to the patient goals being evaluated.",
         "exampleBoolean": false
       },
       {
@@ -483,10 +562,50 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/onc-goal-evaluation"
+        },
+        "name": "ONC Goal Evaluation",
+        "description": "Explicit evaluation of whether a nursing goal was achieved, closing the ADPIE loop.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Library/onc-news2-cql"
+        },
+        "description": "Logic library for calculating National Early Warning Score 2 (NEWS2) from FHIR Observations.",
+        "exampleBoolean": false,
+        "name": "ONC NEWS2 Auto-Calculation Logic"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/onc-nhs-patient"
         },
         "name": "ONC NHS Patient",
         "description": "A patient profile for use in NHS nursing contexts with ethnic category extension.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-nursing-clinical-impression"
+        },
+        "name": "ONC Nursing Clinical Impression",
+        "description": "Nurse's synthesis of patient progress against care plan, aggregating multiple goal evaluations.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-nursing-goal"
+        },
+        "name": "ONC Nursing Goal",
+        "description": "Patient-centered goal with mandatory evaluation requirements. Serves as the 'spine' of the CarePlan, linking problems to outcomes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-nursing-intervention"
+        },
+        "name": "ONC Nursing Intervention",
+        "description": "Nursing intervention performed to achieve patient goals. Part of ADPIE Implementation phase.",
         "exampleBoolean": false
       },
       {
@@ -507,10 +626,26 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/onc-oral-care-assessment"
+        },
+        "name": "Oral Care Needs Assessment",
+        "description": "Assessment of mouth care needs and oral health.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/onc-oral-health"
         },
         "name": "Oral Health Assessment",
         "description": "Assessment of oral cavity health. Critical for prevention of pneumonia in frail elderly and maintaining nutrition/hydration.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-oral-intake-assessment"
+        },
+        "name": "Oral Intake Assessment",
+        "description": "Assessment of ability to take food and fluids orally.",
         "exampleBoolean": false
       },
       {
@@ -535,14 +670,6 @@
         },
         "name": "Pain Assessment Code Value Set",
         "description": "LOINC codes for pain severity assessment",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/onc-patient-goal"
-        },
-        "name": "Patient Goal",
-        "description": "Patient-centered goal established in response to identified nursing problems. Defines measurable outcomes and addresses specific nursing diagnoses. Part of the ADPIE framework's Planning phase.",
         "exampleBoolean": false
       },
       {
@@ -574,6 +701,14 @@
         },
         "name": "PBS Behaviour Function ValueSet",
         "description": "Common functions of behaviour (SEAT)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-hygiene-assessment"
+        },
+        "name": "Personal Hygiene Needs Assessment",
+        "description": "Assessment of assistance required for personal hygiene.",
         "exampleBoolean": false
       },
       {
@@ -653,6 +788,14 @@
         },
         "name": "Sleep Pattern",
         "description": "Observation of sleep quality, duration, and disturbances. Sleep pattern disturbance is a key indicator for delirium and general wellbeing.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onc-swallowing-assessment"
+        },
+        "name": "Swallowing Assessment",
+        "description": "Screening for dysphagia and swallowing difficulties.",
         "exampleBoolean": false
       },
       {

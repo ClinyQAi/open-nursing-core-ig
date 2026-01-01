@@ -3,14 +3,14 @@
   "id": "onc-goal-evaluation",
   "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-goal-evaluation",
   "name": "ONCGoalEvaluation",
-  "title": "Goal Evaluation",
+  "title": "ONC Goal Evaluation",
   "status": "draft",
-  "description": "Evaluation of patient goal outcomes and nursing intervention effectiveness. Assesses whether goals have been met, partially met, or not met. Part of the ADPIE framework's Evaluation phase.",
+  "description": "Explicit evaluation of whether a nursing goal was achieved, closing the ADPIE loop.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -26,14 +26,13 @@
           ],
           "ordered": false,
           "rules": "open"
-        },
-        "min": 1
+        }
       },
       {
         "id": "Observation.extension:goalReference",
         "path": "Observation.extension",
         "sliceName": "goalReference",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -46,12 +45,81 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.code",
         "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "390906007",
+              "system": "http://snomed.info/sct",
+              "display": "Follow-up assessment"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.focus",
+        "path": "Observation.focus",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
         "binding": {
           "strength": "required",
           "valueSet": "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset"
         }
+      },
+      {
+        "id": "Observation.note",
+        "path": "Observation.note",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.derivedFrom",
+        "path": "Observation.derivedFrom",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Observation"
+            ]
+          }
+        ],
+        "mustSupport": true
       }
     ]
   }

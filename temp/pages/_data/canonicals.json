@@ -1,5 +1,19 @@
 [
   {
+    "id" : "onc-news2-cql",
+    "type" : "Library",
+    "url" : "http://opennursingcore.org/Library/ONC-NEWS2-CQL",
+    "version" : "0.1.0",
+    "name" : "ONC_NEWS2_Logic"
+  },
+  {
+    "id" : "news2-escalation-plan",
+    "type" : "PlanDefinition",
+    "url" : "http://opennursingcore.org/PlanDefinition/news2-escalation",
+    "version" : "0.1.0",
+    "name" : "NEWS2_Escalation_Protocol"
+  },
+  {
     "id" : "onc-monk-scale",
     "type" : "CodeSystem",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale",
@@ -168,6 +182,20 @@
     "name" : "ONCNursingAssessment"
   },
   {
+    "id" : "onc-nursing-clinical-impression",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-clinical-impression",
+    "version" : "0.1.0",
+    "name" : "ONCNursingClinicalImpression"
+  },
+  {
+    "id" : "onc-nursing-goal",
+    "type" : "StructureDefinition",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal",
+    "version" : "0.1.0",
+    "name" : "ONCNursingGoal"
+  },
+  {
     "id" : "onc-nursing-intervention",
     "type" : "StructureDefinition",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-intervention",
@@ -194,13 +222,6 @@
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-pain-assessment",
     "version" : "0.1.0",
     "name" : "ONCPainAssessment"
-  },
-  {
-    "id" : "onc-patient-goal",
-    "type" : "StructureDefinition",
-    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-goal",
-    "version" : "0.1.0",
-    "name" : "ONCPatientGoal"
   },
   {
     "id" : "onc-qsofa",
@@ -329,6 +350,13 @@
     "name" : "ClinicalFrailtyScaleVS"
   },
   {
+    "id" : "onc-goal-target-measure-vs",
+    "type" : "ValueSet",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-goal-target-measure-vs",
+    "version" : "0.1.0",
+    "name" : "ONCGoalTargetMeasureVS"
+  },
+  {
     "id" : "onc-mca-vs",
     "type" : "ValueSet",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-mca-vs",
@@ -341,6 +369,20 @@
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-monk-scale-vs",
     "version" : "0.1.0",
     "name" : "ONCMonkScaleVS"
+  },
+  {
+    "id" : "onc-pbs-function-vs",
+    "type" : "ValueSet",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-pbs-function-vs",
+    "version" : "0.1.0",
+    "name" : "PBSFunctionVS"
+  },
+  {
+    "id" : "onc-prognosis-vs",
+    "type" : "ValueSet",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-prognosis-vs",
+    "version" : "0.1.0",
+    "name" : "ONCPrognosisVS"
   },
   {
     "id" : "pain-assessment-code-vs",
@@ -378,6 +420,27 @@
     "name" : "ONC4ATDelirium"
   },
   {
+    "id" : "onc-abbey-pain-scale",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-abbey-pain-scale",
+    "version" : "0.1.0",
+    "name" : "ONCAbbeyPainScale"
+  },
+  {
+    "id" : "onc-abc-chart",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-abc-chart",
+    "version" : "0.1.0",
+    "name" : "ONCABCChart"
+  },
+  {
+    "id" : "onc-bristol-stool-chart",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-bristol-stool-chart",
+    "version" : "0.1.0",
+    "name" : "ONCBristolStoolChart"
+  },
+  {
     "id" : "onc-clinical-frailty-scale",
     "type" : "StructureDefinition",
     "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale",
@@ -385,11 +448,25 @@
     "name" : "ONCClinicalFrailtyScale"
   },
   {
+    "id" : "onc-fluid-balance",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-fluid-balance",
+    "version" : "0.1.0",
+    "name" : "ONCFluidBalance"
+  },
+  {
     "id" : "onc-mental-capacity",
     "type" : "StructureDefinition",
     "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity",
     "version" : "0.1.0",
     "name" : "ONCMentalCapacity"
+  },
+  {
+    "id" : "onc-oral-health",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-oral-health",
+    "version" : "0.1.0",
+    "name" : "ONCOralHealth"
   },
   {
     "id" : "onc-patient-story",
@@ -411,6 +488,27 @@
     "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-relational-observation",
     "version" : "0.1.0",
     "name" : "ONCRelationalObservation"
+  },
+  {
+    "id" : "onc-seizure-record",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-seizure-record",
+    "version" : "0.1.0",
+    "name" : "ONCSeizureRecord"
+  },
+  {
+    "id" : "onc-sleep-pattern",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-sleep-pattern",
+    "version" : "0.1.0",
+    "name" : "ONCSleepPattern"
+  },
+  {
+    "id" : "onc-urinalysis",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis",
+    "version" : "0.1.0",
+    "name" : "ONCUrinalysis"
   },
   {
     "id" : "onc-what-matters",

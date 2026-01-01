@@ -3,7 +3,7 @@
   "id": "example-patient-goal",
   "meta": {
     "profile": [
-      "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-goal"
+      "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal"
     ]
   },
   "lifecycleStatus": "active",
@@ -16,6 +16,29 @@
   "addresses": [
     {
       "reference": "Condition/example-nursing-problem"
+    }
+  ],
+  "target": [
+    {
+      "measure": {
+        "coding": [
+          {
+            "code": "88020-3",
+            "system": "http://loinc.org",
+            "display": "Functional status"
+          }
+        ]
+      },
+      "detailCodeableConcept": {
+        "coding": [
+          {
+            "code": "385652002",
+            "system": "http://snomed.info/sct",
+            "display": "Objective achieved"
+          }
+        ]
+      },
+      "dueDate": "2025-12-31"
     }
   ]
 }

@@ -22,7 +22,7 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-onc-goal-evaluation.html" : "Goal Evaluation"
+      "StructureDefinition-onc-goal-evaluation.html" : "ONC Goal Evaluation"
     },
     {
       "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/housing-status-vs",
@@ -77,7 +77,7 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-onc-nursing-intervention.html" : "Nursing Intervention"
+      "StructureDefinition-onc-nursing-intervention.html" : "ONC Nursing Intervention"
     },
     {
       "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-problem-valueset",
@@ -160,6 +160,18 @@
       "StructureDefinition-onc-clinical-frailty-scale.html" : "Clinical Frailty Scale (CFS)"
     },
     {
+      "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-goal-target-measure-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ONCGoalTargetMeasureVS",
+      "title" : "Goal Target Measure ValueSet",
+      "description" : "Codes used for goal target measures",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-onc-nursing-goal.html" : "ONC Nursing Goal"
+    },
+    {
       "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-mca-vs",
       "version" : "0.1.0",
       "status" : "draft",
@@ -186,6 +198,32 @@
       "uses" : {
       },
       "StructureDefinition-onc-monk-skintone-observation.html" : "Monk Skin Tone Observation"
+    },
+    {
+      "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-pbs-function-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PBSFunctionVS",
+      "title" : "PBS Behaviour Function ValueSet",
+      "description" : "Common functions of behaviour (SEAT)",
+      "systems" : [
+        "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-onc-abc-chart.html" : "PBS ABC Chart"
+    },
+    {
+      "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-prognosis-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ONCPrognosisVS",
+      "title" : "Nursing Prognosis ValueSet",
+      "description" : "Prognosis codes for clinical impression",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-onc-nursing-clinical-impression.html" : "ONC Nursing Clinical Impression"
     },
     {
       "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/pain-assessment-code-vs",

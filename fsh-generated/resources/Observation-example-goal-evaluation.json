@@ -6,6 +6,24 @@
       "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-goal-evaluation"
     ]
   },
+  "code": {
+    "coding": [
+      {
+        "code": "390906007",
+        "system": "http://snomed.info/sct",
+        "display": "Follow-up assessment"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/patient-example-jane"
+  },
+  "performer": [
+    {
+      "reference": "Practitioner/practitioner-example"
+    }
+  ],
   "category": [
     {
       "coding": [
@@ -16,39 +34,18 @@
       ]
     }
   ],
-  "extension": [
-    {
-      "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/observation-goal-reference",
-      "valueReference": {
-        "reference": "Goal/example-patient-goal"
-      }
-    }
-  ],
-  "status": "final",
-  "subject": {
-    "reference": "Patient/patient-example-jane"
-  },
-  "performer": [
-    {
-      "reference": "Practitioner/practitioner-example"
-    }
-  ],
-  "code": {
-    "coding": [
-      {
-        "code": "370996005",
-        "system": "http://snomed.info/sct",
-        "display": "Patient condition resolved"
-      }
-    ]
-  },
   "valueCodeableConcept": {
     "coding": [
       {
-        "code": "370996005",
+        "code": "385652002",
         "system": "http://snomed.info/sct",
-        "display": "Patient condition resolved"
+        "display": "Objective achieved"
       }
     ]
-  }
+  },
+  "focus": [
+    {
+      "reference": "Goal/example-patient-goal"
+    }
+  ]
 }

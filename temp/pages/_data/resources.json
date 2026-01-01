@@ -13,7 +13,7 @@
     "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome.",
     "descriptionlang" : {
     },
@@ -37,7 +37,7 @@
     "title" : "Monk Skin Tone Scale CodeSystem",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "status" : {
       "class" : "colsd",
       "status" : "Draft"
@@ -58,7 +58,7 @@
     "title" : "ONC Observation Codes",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Custom observation codes for Open Nursing Core",
     "descriptionlang" : {
     },
@@ -83,7 +83,7 @@
     "titlelang" : {
     },
     "experimental" : false,
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Code system for categorizing types of nursing problems",
     "descriptionlang" : {
     },
@@ -116,14 +116,170 @@
       "class" : "colsi"
     }
   },
-  "Observation/example-goal-evaluation" : {
+  "Observation/example-4at-delirium" : {
     "history" : false,
     "testplan" : false,
     "testscript" : false,
     "index" : 6,
+    "source" : "fsh-generated/resources/Observation-example-4at-delirium.json",
+    "sourceTail" : "Observation-example-4at-delirium.json",
+    "path" : "Observation-example-4at-delirium.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Observation/example-abbey-pain" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 7,
+    "source" : "fsh-generated/resources/Observation-example-abbey-pain.json",
+    "sourceTail" : "Observation-example-abbey-pain.json",
+    "path" : "Observation-example-abbey-pain.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Observation/example-abc-chart" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 8,
+    "source" : "fsh-generated/resources/Observation-example-abc-chart.json",
+    "sourceTail" : "Observation-example-abc-chart.json",
+    "path" : "Observation-example-abc-chart.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Observation/example-bristol-stool" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 9,
+    "source" : "fsh-generated/resources/Observation-example-bristol-stool.json",
+    "sourceTail" : "Observation-example-bristol-stool.json",
+    "path" : "Observation-example-bristol-stool.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Observation/example-clinical-frailty" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 10,
+    "source" : "fsh-generated/resources/Observation-example-clinical-frailty.json",
+    "sourceTail" : "Observation-example-clinical-frailty.json",
+    "path" : "Observation-example-clinical-frailty.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Observation/example-fluid-balance" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 11,
+    "source" : "fsh-generated/resources/Observation-example-fluid-balance.json",
+    "sourceTail" : "Observation-example-fluid-balance.json",
+    "path" : "Observation-example-fluid-balance.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Observation/example-goal-evaluation" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 12,
     "source" : "fsh-generated/resources/Observation-example-goal-evaluation.json",
     "sourceTail" : "Observation-example-goal-evaluation.json",
     "path" : "Observation-example-goal-evaluation.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Observation/example-mental-capacity" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 13,
+    "source" : "fsh-generated/resources/Observation-example-mental-capacity.json",
+    "sourceTail" : "Observation-example-mental-capacity.json",
+    "path" : "Observation-example-mental-capacity.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Observation/example-oral-health" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 14,
+    "source" : "fsh-generated/resources/Observation-example-oral-health.json",
+    "sourceTail" : "Observation-example-oral-health.json",
+    "path" : "Observation-example-oral-health.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Observation/example-patient-story" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 15,
+    "source" : "fsh-generated/resources/Observation-example-patient-story.json",
+    "sourceTail" : "Observation-example-patient-story.json",
+    "path" : "Observation-example-patient-story.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Observation/example-reasonable-adjustment" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 16,
+    "source" : "fsh-generated/resources/Observation-example-reasonable-adjustment.json",
+    "sourceTail" : "Observation-example-reasonable-adjustment.json",
+    "path" : "Observation-example-reasonable-adjustment.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Observation/example-seizure-record" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 17,
+    "source" : "fsh-generated/resources/Observation-example-seizure-record.json",
+    "sourceTail" : "Observation-example-seizure-record.json",
+    "path" : "Observation-example-seizure-record.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Observation/example-urinalysis" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 18,
+    "source" : "fsh-generated/resources/Observation-example-urinalysis.json",
+    "sourceTail" : "Observation-example-urinalysis.json",
+    "path" : "Observation-example-urinalysis.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "Observation/example-what-matters" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 19,
+    "source" : "fsh-generated/resources/Observation-example-what-matters.json",
+    "sourceTail" : "Observation-example-what-matters.json",
+    "path" : "Observation-example-what-matters.html",
     "status" : {
       "class" : "colsi"
     }
@@ -132,7 +288,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 7,
+    "index" : 20,
     "source" : "fsh-generated/resources/Observation-observation-braden-scale.json",
     "sourceTail" : "Observation-observation-braden-scale.json",
     "path" : "Observation-observation-braden-scale.html",
@@ -144,7 +300,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 8,
+    "index" : 21,
     "source" : "fsh-generated/resources/Observation-observation-skin-tone.json",
     "sourceTail" : "Observation-observation-skin-tone.json",
     "path" : "Observation-observation-skin-tone.html",
@@ -156,7 +312,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 9,
+    "index" : 22,
     "source" : "fsh-generated/resources/Patient-patient-example-jane.json",
     "sourceTail" : "Patient-patient-example-jane.json",
     "path" : "Patient-patient-example-jane.html",
@@ -168,7 +324,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 10,
+    "index" : 23,
     "source" : "fsh-generated/resources/Practitioner-practitioner-example.json",
     "sourceTail" : "Practitioner-practitioner-example.json",
     "path" : "Practitioner-practitioner-example.html",
@@ -180,7 +336,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 11,
+    "index" : 24,
     "source" : "fsh-generated/resources/Procedure-example-nursing-intervention.json",
     "sourceTail" : "Procedure-example-nursing-intervention.json",
     "path" : "Procedure-example-nursing-intervention.html",
@@ -192,7 +348,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 12,
+    "index" : 25,
     "source" : "fsh-generated/resources/StructureDefinition-UKCore-Extension-EthnicCategory.json",
     "sourceTail" : "StructureDefinition-UKCore-Extension-EthnicCategory.json",
     "path" : "StructureDefinition-UKCore-Extension-EthnicCategory.html",
@@ -202,7 +358,7 @@
     "title" : "UK Core Ethnic Category",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "An extension to record the ethnic category of a patient, as per UK Core standards.",
     "descriptionlang" : {
     },
@@ -215,7 +371,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 13,
+    "index" : 26,
     "source" : "fsh-generated/resources/StructureDefinition-intervention-goal-reference.json",
     "sourceTail" : "StructureDefinition-intervention-goal-reference.json",
     "path" : "StructureDefinition-intervention-goal-reference.html",
@@ -225,8 +381,8 @@
     "title" : "Intervention Goal Reference",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
-    "description" : "Extension to link nursing interventions to the patient goals they are intended to achieve. Supports goal-directed care planning and intervention tracking.",
+    "date" : "2026-01-01T13:37:23+00:00",
+    "description" : "Extension to link nursing interventions to the patient goals they are intended to achieve.",
     "descriptionlang" : {
     },
     "status" : {
@@ -238,7 +394,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 14,
+    "index" : 27,
     "source" : "fsh-generated/resources/StructureDefinition-observation-goal-reference.json",
     "sourceTail" : "StructureDefinition-observation-goal-reference.json",
     "path" : "StructureDefinition-observation-goal-reference.html",
@@ -248,8 +404,8 @@
     "title" : "Observation Goal Reference",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
-    "description" : "Extension to link goal evaluation observations to the patient goals being evaluated. Enables tracking of goal progress and outcomes over time.",
+    "date" : "2026-01-01T13:37:23+00:00",
+    "description" : "Extension to link goal evaluation observations to the patient goals being evaluated.",
     "descriptionlang" : {
     },
     "status" : {
@@ -261,7 +417,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 15,
+    "index" : 28,
     "source" : "fsh-generated/resources/StructureDefinition-onc-4at-delirium.json",
     "sourceTail" : "StructureDefinition-onc-4at-delirium.json",
     "path" : "StructureDefinition-onc-4at-delirium.html",
@@ -271,8 +427,54 @@
     "title" : "4AT Delirium Assessment",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Rapid clinical test for delirium (4AT) comprising Alertness, AMT4, Attention, and Acute Change/Fluctuating Course. A total score of 4 or more suggests possible delirium.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/onc-abbey-pain-scale" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 29,
+    "source" : "fsh-generated/resources/StructureDefinition-onc-abbey-pain-scale.json",
+    "sourceTail" : "StructureDefinition-onc-abbey-pain-scale.json",
+    "path" : "StructureDefinition-onc-abbey-pain-scale.html",
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-abbey-pain-scale",
+    "version" : "0.1.0",
+    "name" : "ONCAbbeyPainScale",
+    "title" : "Abbey Pain Scale",
+    "titlelang" : {
+    },
+    "date" : "2026-01-01T13:37:23+00:00",
+    "description" : "Pain assessment for people with dementia or who cannot verbalise. Assesses 6 parameters: Vocalization, Facial Expression, Body Language, Behavioral Change, Physiological Change, Physical Changes. Total score determines pain severity (0-2 No pain, 3-7 Mild, 8-13 Moderate, 14+ Severe).",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/onc-abc-chart" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 30,
+    "source" : "fsh-generated/resources/StructureDefinition-onc-abc-chart.json",
+    "sourceTail" : "StructureDefinition-onc-abc-chart.json",
+    "path" : "StructureDefinition-onc-abc-chart.html",
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-abc-chart",
+    "version" : "0.1.0",
+    "name" : "ONCABCChart",
+    "title" : "PBS ABC Chart",
+    "titlelang" : {
+    },
+    "date" : "2026-01-01T13:37:23+00:00",
+    "description" : "Antecedent-Behaviour-Consequence (ABC) Chart for recording behaviours of concern. Fundamental tool in Positive Behaviour Support (PBS) for Learning Disabilities.",
     "descriptionlang" : {
     },
     "status" : {
@@ -284,7 +486,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 16,
+    "index" : 31,
     "source" : "fsh-generated/resources/StructureDefinition-onc-acvpu.json",
     "sourceTail" : "StructureDefinition-onc-acvpu.json",
     "path" : "StructureDefinition-onc-acvpu.html",
@@ -294,7 +496,7 @@
     "title" : "ACVPU Consciousness Level",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "ACVPU consciousness level assessment for NEWS2 (Alert, Confusion, Voice, Pain, Unresponsive)",
     "descriptionlang" : {
     },
@@ -307,7 +509,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 17,
+    "index" : 32,
     "source" : "fsh-generated/resources/StructureDefinition-onc-barthel-index.json",
     "sourceTail" : "StructureDefinition-onc-barthel-index.json",
     "path" : "StructureDefinition-onc-barthel-index.html",
@@ -317,7 +519,7 @@
     "title" : "Barthel Index",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Barthel Index for measuring independence in activities of daily living (ADL). Score 0-20=total dependency, 91-99=slight dependency, 100=independent. Total range 0-100.",
     "descriptionlang" : {
     },
@@ -330,7 +532,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 18,
+    "index" : 33,
     "source" : "fsh-generated/resources/StructureDefinition-onc-blood-pressure.json",
     "sourceTail" : "StructureDefinition-onc-blood-pressure.json",
     "path" : "StructureDefinition-onc-blood-pressure.html",
@@ -340,7 +542,7 @@
     "title" : "Blood Pressure",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Blood pressure observation for NEWS2 (systolic BP used for scoring)",
     "descriptionlang" : {
     },
@@ -353,7 +555,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 19,
+    "index" : 34,
     "source" : "fsh-generated/resources/StructureDefinition-onc-body-temperature.json",
     "sourceTail" : "StructureDefinition-onc-body-temperature.json",
     "path" : "StructureDefinition-onc-body-temperature.html",
@@ -363,7 +565,7 @@
     "title" : "Body Temperature",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Body temperature observation for NEWS2",
     "descriptionlang" : {
     },
@@ -376,7 +578,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 20,
+    "index" : 35,
     "source" : "fsh-generated/resources/StructureDefinition-onc-braden-scale-assessment.json",
     "sourceTail" : "StructureDefinition-onc-braden-scale-assessment.json",
     "path" : "StructureDefinition-onc-braden-scale-assessment.html",
@@ -386,8 +588,31 @@
     "title" : "Braden Scale Assessment",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "A profile for the Braden Scale pressure ulcer risk assessment",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/onc-bristol-stool-chart" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 36,
+    "source" : "fsh-generated/resources/StructureDefinition-onc-bristol-stool-chart.json",
+    "sourceTail" : "StructureDefinition-onc-bristol-stool-chart.json",
+    "path" : "StructureDefinition-onc-bristol-stool-chart.html",
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-bristol-stool-chart",
+    "version" : "0.1.0",
+    "name" : "ONCBristolStoolChart",
+    "title" : "Bristol Stool Chart",
+    "titlelang" : {
+    },
+    "date" : "2026-01-01T13:37:23+00:00",
+    "description" : "Assessment of stool form using the Bristol Stool Chart (Types 1-7). Gold standard for bowel function assessment.",
     "descriptionlang" : {
     },
     "status" : {
@@ -399,7 +624,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 21,
+    "index" : 37,
     "source" : "fsh-generated/resources/StructureDefinition-onc-clinical-frailty-scale.json",
     "sourceTail" : "StructureDefinition-onc-clinical-frailty-scale.json",
     "path" : "StructureDefinition-onc-clinical-frailty-scale.html",
@@ -409,8 +634,31 @@
     "title" : "Clinical Frailty Scale (CFS)",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Assessment of frailty using the Rockwood Clinical Frailty Scale (1-9). Essential for older adults to determine baseline functional status.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/onc-fluid-balance" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 38,
+    "source" : "fsh-generated/resources/StructureDefinition-onc-fluid-balance.json",
+    "sourceTail" : "StructureDefinition-onc-fluid-balance.json",
+    "path" : "StructureDefinition-onc-fluid-balance.html",
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-fluid-balance",
+    "version" : "0.1.0",
+    "name" : "ONCFluidBalance",
+    "title" : "Fluid Balance",
+    "titlelang" : {
+    },
+    "date" : "2026-01-01T13:37:23+00:00",
+    "description" : "Assessment of fluid intake, output, and balance. Critical for renal function, hydration status, and heart failure monitoring.",
     "descriptionlang" : {
     },
     "status" : {
@@ -422,7 +670,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 22,
+    "index" : 39,
     "source" : "fsh-generated/resources/StructureDefinition-onc-glasgow-coma-scale.json",
     "sourceTail" : "StructureDefinition-onc-glasgow-coma-scale.json",
     "path" : "StructureDefinition-onc-glasgow-coma-scale.html",
@@ -432,7 +680,7 @@
     "title" : "Glasgow Coma Scale",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Glasgow Coma Scale (GCS) for assessing level of consciousness. Total score 3-15 with three required components: Eye (1-4), Verbal (1-5), Motor (1-6).",
     "descriptionlang" : {
     },
@@ -445,18 +693,18 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 23,
+    "index" : 40,
     "source" : "fsh-generated/resources/StructureDefinition-onc-goal-evaluation.json",
     "sourceTail" : "StructureDefinition-onc-goal-evaluation.json",
     "path" : "StructureDefinition-onc-goal-evaluation.html",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-goal-evaluation",
     "version" : "0.1.0",
     "name" : "ONCGoalEvaluation",
-    "title" : "Goal Evaluation",
+    "title" : "ONC Goal Evaluation",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
-    "description" : "Evaluation of patient goal outcomes and nursing intervention effectiveness. Assesses whether goals have been met, partially met, or not met. Part of the ADPIE framework's Evaluation phase.",
+    "date" : "2026-01-01T13:37:23+00:00",
+    "description" : "Explicit evaluation of whether a nursing goal was achieved, closing the ADPIE loop.",
     "descriptionlang" : {
     },
     "status" : {
@@ -468,7 +716,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 24,
+    "index" : 41,
     "source" : "fsh-generated/resources/StructureDefinition-onc-heart-rate.json",
     "sourceTail" : "StructureDefinition-onc-heart-rate.json",
     "path" : "StructureDefinition-onc-heart-rate.html",
@@ -478,7 +726,7 @@
     "title" : "Heart Rate",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Heart rate (pulse) observation for NEWS2",
     "descriptionlang" : {
     },
@@ -491,7 +739,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 25,
+    "index" : 42,
     "source" : "fsh-generated/resources/StructureDefinition-onc-inspired-oxygen.json",
     "sourceTail" : "StructureDefinition-onc-inspired-oxygen.json",
     "path" : "StructureDefinition-onc-inspired-oxygen.html",
@@ -501,7 +749,7 @@
     "title" : "Inspired Oxygen",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Inspired oxygen observation for NEWS2 (air vs supplemental oxygen)",
     "descriptionlang" : {
     },
@@ -514,7 +762,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 26,
+    "index" : 43,
     "source" : "fsh-generated/resources/StructureDefinition-onc-mental-capacity.json",
     "sourceTail" : "StructureDefinition-onc-mental-capacity.json",
     "path" : "StructureDefinition-onc-mental-capacity.html",
@@ -524,7 +772,7 @@
     "title" : "Mental Capacity Assessment",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Records the outcome of a Mental Capacity Assessment for a specific decision. Fundamental legal safeguard in UK nursing practice.",
     "descriptionlang" : {
     },
@@ -537,7 +785,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 27,
+    "index" : 44,
     "source" : "fsh-generated/resources/StructureDefinition-onc-mmse.json",
     "sourceTail" : "StructureDefinition-onc-mmse.json",
     "path" : "StructureDefinition-onc-mmse.html",
@@ -547,7 +795,7 @@
     "title" : "Mini Mental State Examination (MMSE)",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Mini Mental State Examination for cognitive function screening. Score 24-30=no impairment, 18-23=mild, 0-17=severe. Total range 0-30.",
     "descriptionlang" : {
     },
@@ -560,7 +808,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 28,
+    "index" : 45,
     "source" : "fsh-generated/resources/StructureDefinition-onc-monk-skintone-observation.json",
     "sourceTail" : "StructureDefinition-onc-monk-skintone-observation.json",
     "path" : "StructureDefinition-onc-monk-skintone-observation.html",
@@ -570,7 +818,7 @@
     "title" : "Monk Skin Tone Observation",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Observation of patient skin tone using the Monk Skin Tone Scale (10-point scale A-J). Provides more granular skin tone assessment than Fitzpatrick scale, particularly for darker skin tones. Supports equitable care and accurate clinical assessment across diverse populations.",
     "descriptionlang" : {
     },
@@ -583,7 +831,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 29,
+    "index" : 46,
     "source" : "fsh-generated/resources/StructureDefinition-onc-morse-fall-scale.json",
     "sourceTail" : "StructureDefinition-onc-morse-fall-scale.json",
     "path" : "StructureDefinition-onc-morse-fall-scale.html",
@@ -593,7 +841,7 @@
     "title" : "Morse Fall Scale",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Morse Fall Scale for assessing fall risk. Score 0-24=no risk, 25-50=low risk, ≥51=high risk. Total range 0-125.",
     "descriptionlang" : {
     },
@@ -606,7 +854,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 30,
+    "index" : 47,
     "source" : "fsh-generated/resources/StructureDefinition-onc-must-score.json",
     "sourceTail" : "StructureDefinition-onc-must-score.json",
     "path" : "StructureDefinition-onc-must-score.html",
@@ -616,7 +864,7 @@
     "title" : "MUST Score (Malnutrition Universal Screening Tool)",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Malnutrition Universal Screening Tool for identifying adults at risk of malnutrition. Score 0=low risk, 1=medium risk, 2+=high risk. NHS-standard nutritional screening.",
     "descriptionlang" : {
     },
@@ -629,7 +877,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 31,
+    "index" : 48,
     "source" : "fsh-generated/resources/StructureDefinition-onc-news2-score.json",
     "sourceTail" : "StructureDefinition-onc-news2-score.json",
     "path" : "StructureDefinition-onc-news2-score.html",
@@ -639,7 +887,7 @@
     "title" : "NEWS2 Score",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "National Early Warning Score 2 (NEWS2) for detecting clinical deterioration. Fully aligned with NHS CareConnect-NEWS2-Observation-1.",
     "descriptionlang" : {
     },
@@ -652,7 +900,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 32,
+    "index" : 49,
     "source" : "fsh-generated/resources/StructureDefinition-onc-news2-subscore.json",
     "sourceTail" : "StructureDefinition-onc-news2-subscore.json",
     "path" : "StructureDefinition-onc-news2-subscore.html",
@@ -662,7 +910,7 @@
     "title" : "NEWS2 Sub-Score",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Individual parameter sub-score for NEWS2 (0-3 for most parameters). References the related vital sign observation.",
     "descriptionlang" : {
     },
@@ -675,7 +923,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 33,
+    "index" : 50,
     "source" : "fsh-generated/resources/StructureDefinition-onc-nhs-patient.json",
     "sourceTail" : "StructureDefinition-onc-nhs-patient.json",
     "path" : "StructureDefinition-onc-nhs-patient.html",
@@ -685,7 +933,7 @@
     "title" : "ONC NHS Patient",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "A patient profile for use in NHS nursing contexts with ethnic category extension.",
     "descriptionlang" : {
     },
@@ -698,7 +946,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 34,
+    "index" : 51,
     "source" : "fsh-generated/resources/StructureDefinition-onc-nursing-assessment.json",
     "sourceTail" : "StructureDefinition-onc-nursing-assessment.json",
     "path" : "StructureDefinition-onc-nursing-assessment.html",
@@ -708,8 +956,54 @@
     "title" : "Open Nursing Core Assessment",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Base profile for nursing assessment observations conforming to UK Core standards. Captures structured nursing assessment data as part of the ADPIE (Assessment, Diagnosis, Planning, Implementation, Evaluation) nursing process framework. Used as parent for specialized assessments like NEWS2, Braden Scale, and clinical observations.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/onc-nursing-clinical-impression" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 52,
+    "source" : "fsh-generated/resources/StructureDefinition-onc-nursing-clinical-impression.json",
+    "sourceTail" : "StructureDefinition-onc-nursing-clinical-impression.json",
+    "path" : "StructureDefinition-onc-nursing-clinical-impression.html",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-clinical-impression",
+    "version" : "0.1.0",
+    "name" : "ONCNursingClinicalImpression",
+    "title" : "ONC Nursing Clinical Impression",
+    "titlelang" : {
+    },
+    "date" : "2026-01-01T13:37:23+00:00",
+    "description" : "Nurse's synthesis of patient progress against care plan, aggregating multiple goal evaluations.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/onc-nursing-goal" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 53,
+    "source" : "fsh-generated/resources/StructureDefinition-onc-nursing-goal.json",
+    "sourceTail" : "StructureDefinition-onc-nursing-goal.json",
+    "path" : "StructureDefinition-onc-nursing-goal.html",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal",
+    "version" : "0.1.0",
+    "name" : "ONCNursingGoal",
+    "title" : "ONC Nursing Goal",
+    "titlelang" : {
+    },
+    "date" : "2026-01-01T13:37:23+00:00",
+    "description" : "Patient-centered goal with mandatory evaluation requirements. Serves as the 'spine' of the CarePlan, linking problems to outcomes.",
     "descriptionlang" : {
     },
     "status" : {
@@ -721,18 +1015,18 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 35,
+    "index" : 54,
     "source" : "fsh-generated/resources/StructureDefinition-onc-nursing-intervention.json",
     "sourceTail" : "StructureDefinition-onc-nursing-intervention.json",
     "path" : "StructureDefinition-onc-nursing-intervention.html",
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-intervention",
     "version" : "0.1.0",
     "name" : "ONCNursingIntervention",
-    "title" : "Nursing Intervention",
+    "title" : "ONC Nursing Intervention",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
-    "description" : "Nursing intervention or procedure performed to achieve patient goals. Documents actions taken by nursing staff to address identified problems and achieve desired outcomes. Part of the ADPIE framework's Implementation phase.",
+    "date" : "2026-01-01T13:37:23+00:00",
+    "description" : "Nursing intervention performed to achieve patient goals. Part of ADPIE Implementation phase.",
     "descriptionlang" : {
     },
     "status" : {
@@ -744,7 +1038,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 36,
+    "index" : 55,
     "source" : "fsh-generated/resources/StructureDefinition-onc-nursing-problem.json",
     "sourceTail" : "StructureDefinition-onc-nursing-problem.json",
     "path" : "StructureDefinition-onc-nursing-problem.html",
@@ -754,8 +1048,31 @@
     "title" : "Nursing Problem",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Nursing diagnosis or problem identified during assessment. Represents clinical judgments about individual, family, or community responses to actual or potential health problems. Part of the ADPIE framework's Diagnosis phase.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/onc-oral-health" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 56,
+    "source" : "fsh-generated/resources/StructureDefinition-onc-oral-health.json",
+    "sourceTail" : "StructureDefinition-onc-oral-health.json",
+    "path" : "StructureDefinition-onc-oral-health.html",
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-oral-health",
+    "version" : "0.1.0",
+    "name" : "ONCOralHealth",
+    "title" : "Oral Health Assessment",
+    "titlelang" : {
+    },
+    "date" : "2026-01-01T13:37:23+00:00",
+    "description" : "Assessment of oral cavity health. Critical for prevention of pneumonia in frail elderly and maintaining nutrition/hydration.",
     "descriptionlang" : {
     },
     "status" : {
@@ -767,7 +1084,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 37,
+    "index" : 57,
     "source" : "fsh-generated/resources/StructureDefinition-onc-oxygen-saturation.json",
     "sourceTail" : "StructureDefinition-onc-oxygen-saturation.json",
     "path" : "StructureDefinition-onc-oxygen-saturation.html",
@@ -777,7 +1094,7 @@
     "title" : "Oxygen Saturation",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Oxygen saturation (SpO2) observation for NEWS2",
     "descriptionlang" : {
     },
@@ -790,7 +1107,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 38,
+    "index" : 58,
     "source" : "fsh-generated/resources/StructureDefinition-onc-pain-assessment.json",
     "sourceTail" : "StructureDefinition-onc-pain-assessment.json",
     "path" : "StructureDefinition-onc-pain-assessment.html",
@@ -800,31 +1117,8 @@
     "title" : "Pain Assessment (NRS 0-10)",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Pain severity assessment using the Numeric Rating Scale (0-10)",
-    "descriptionlang" : {
-    },
-    "status" : {
-      "class" : "colsd",
-      "status" : "Draft"
-    }
-  },
-  "StructureDefinition/onc-patient-goal" : {
-    "history" : false,
-    "testplan" : false,
-    "testscript" : false,
-    "index" : 39,
-    "source" : "fsh-generated/resources/StructureDefinition-onc-patient-goal.json",
-    "sourceTail" : "StructureDefinition-onc-patient-goal.json",
-    "path" : "StructureDefinition-onc-patient-goal.html",
-    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-goal",
-    "version" : "0.1.0",
-    "name" : "ONCPatientGoal",
-    "title" : "Patient Goal",
-    "titlelang" : {
-    },
-    "date" : "2025-12-26T15:22:58+00:00",
-    "description" : "Patient-centered goal established in response to identified nursing problems. Defines measurable outcomes and addresses specific nursing diagnoses. Part of the ADPIE framework's Planning phase.",
     "descriptionlang" : {
     },
     "status" : {
@@ -836,7 +1130,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 40,
+    "index" : 59,
     "source" : "fsh-generated/resources/StructureDefinition-onc-patient-story.json",
     "sourceTail" : "StructureDefinition-onc-patient-story.json",
     "path" : "StructureDefinition-onc-patient-story.html",
@@ -846,7 +1140,7 @@
     "title" : "Patient Story",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "A narrative summary of the patient's background, biography, preferences, and personhood. Goes beyond clinical history to capture 'who the person is'.",
     "descriptionlang" : {
     },
@@ -859,7 +1153,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 41,
+    "index" : 60,
     "source" : "fsh-generated/resources/StructureDefinition-onc-qsofa.json",
     "sourceTail" : "StructureDefinition-onc-qsofa.json",
     "path" : "StructureDefinition-onc-qsofa.html",
@@ -869,7 +1163,7 @@
     "title" : "qSOFA (Quick SOFA)",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Quick Sequential Organ Failure Assessment for sepsis screening. Score ≥2 indicates high risk. Total range 0-3.",
     "descriptionlang" : {
     },
@@ -882,7 +1176,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 42,
+    "index" : 61,
     "source" : "fsh-generated/resources/StructureDefinition-onc-reasonable-adjustment.json",
     "sourceTail" : "StructureDefinition-onc-reasonable-adjustment.json",
     "path" : "StructureDefinition-onc-reasonable-adjustment.html",
@@ -892,7 +1186,7 @@
     "title" : "Reasonable Adjustment",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Captures specific strict requirements for care adjustments under the Equality Act (e.g., 'Needs BSL Interpreter', 'Cannot use stairs', 'Requires large print').",
     "descriptionlang" : {
     },
@@ -905,7 +1199,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 43,
+    "index" : 62,
     "source" : "fsh-generated/resources/StructureDefinition-onc-relational-observation.json",
     "sourceTail" : "StructureDefinition-onc-relational-observation.json",
     "path" : "StructureDefinition-onc-relational-observation.html",
@@ -915,7 +1209,7 @@
     "title" : "Relational Engagement Score",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Assessment of the quality and depth of the nurse-patient relationship or engagement level. Supports the relational aspect of care.",
     "descriptionlang" : {
     },
@@ -928,7 +1222,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 44,
+    "index" : 63,
     "source" : "fsh-generated/resources/StructureDefinition-onc-respiration-rate.json",
     "sourceTail" : "StructureDefinition-onc-respiration-rate.json",
     "path" : "StructureDefinition-onc-respiration-rate.html",
@@ -938,8 +1232,31 @@
     "title" : "Respiration Rate",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Respiration rate observation for NEWS2",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/onc-seizure-record" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 64,
+    "source" : "fsh-generated/resources/StructureDefinition-onc-seizure-record.json",
+    "sourceTail" : "StructureDefinition-onc-seizure-record.json",
+    "path" : "StructureDefinition-onc-seizure-record.html",
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-seizure-record",
+    "version" : "0.1.0",
+    "name" : "ONCSeizureRecord",
+    "title" : "Seizure Record",
+    "titlelang" : {
+    },
+    "date" : "2026-01-01T13:37:23+00:00",
+    "description" : "Record of a specific seizure event, including type, duration, triggers, and recovery phases. Essential for epilepsy management and identifying patterns.",
     "descriptionlang" : {
     },
     "status" : {
@@ -951,7 +1268,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 45,
+    "index" : 65,
     "source" : "fsh-generated/resources/StructureDefinition-onc-skintone-observation.json",
     "sourceTail" : "StructureDefinition-onc-skintone-observation.json",
     "path" : "StructureDefinition-onc-skintone-observation.html",
@@ -961,8 +1278,54 @@
     "title" : "Skin Tone Observation",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Observation of patient skin tone using the Fitzpatrick skin type classification. Supports equitable care by enabling skin tone-aware clinical decision making, particularly for conditions that present differently across skin tones (e.g., pressure ulcers, cyanosis).",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/onc-sleep-pattern" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 66,
+    "source" : "fsh-generated/resources/StructureDefinition-onc-sleep-pattern.json",
+    "sourceTail" : "StructureDefinition-onc-sleep-pattern.json",
+    "path" : "StructureDefinition-onc-sleep-pattern.html",
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-sleep-pattern",
+    "version" : "0.1.0",
+    "name" : "ONCSleepPattern",
+    "title" : "Sleep Pattern",
+    "titlelang" : {
+    },
+    "date" : "2026-01-01T13:37:23+00:00",
+    "description" : "Observation of sleep quality, duration, and disturbances. Sleep pattern disturbance is a key indicator for delirium and general wellbeing.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/onc-urinalysis" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 67,
+    "source" : "fsh-generated/resources/StructureDefinition-onc-urinalysis.json",
+    "sourceTail" : "StructureDefinition-onc-urinalysis.json",
+    "path" : "StructureDefinition-onc-urinalysis.html",
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis",
+    "version" : "0.1.0",
+    "name" : "ONCUrinalysis",
+    "title" : "Urinalysis",
+    "titlelang" : {
+    },
+    "date" : "2026-01-01T13:37:23+00:00",
+    "description" : "Point-of-care urine dipstick test results. Used to screen for urinary tract infection (UTI), diabetes (glucose/ketones), and kidney health.",
     "descriptionlang" : {
     },
     "status" : {
@@ -974,7 +1337,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 46,
+    "index" : 68,
     "source" : "fsh-generated/resources/StructureDefinition-onc-waterlow-score.json",
     "sourceTail" : "StructureDefinition-onc-waterlow-score.json",
     "path" : "StructureDefinition-onc-waterlow-score.html",
@@ -984,7 +1347,7 @@
     "title" : "Waterlow Score",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Waterlow Pressure Ulcer Risk Assessment - NHS standard tool. Score ≥10 indicates at risk, ≥15 high risk, ≥20 very high risk.",
     "descriptionlang" : {
     },
@@ -997,7 +1360,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 47,
+    "index" : 69,
     "source" : "fsh-generated/resources/StructureDefinition-onc-what-matters.json",
     "sourceTail" : "StructureDefinition-onc-what-matters.json",
     "path" : "StructureDefinition-onc-what-matters.html",
@@ -1007,7 +1370,7 @@
     "title" : "What Matters to Me",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Captures the patient's specific, personal priorities and non-clinical goals (e.g., 'I want to walk my daughter down the aisle'). Fundamental to person-centred care.",
     "descriptionlang" : {
     },
@@ -1020,7 +1383,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 48,
+    "index" : 70,
     "source" : "fsh-generated/resources/StructureDefinition-onc-wound-assessment.json",
     "sourceTail" : "StructureDefinition-onc-wound-assessment.json",
     "path" : "StructureDefinition-onc-wound-assessment.html",
@@ -1030,7 +1393,7 @@
     "title" : "Wound Assessment",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Comprehensive wound assessment including staging and dimensions",
     "descriptionlang" : {
     },
@@ -1043,7 +1406,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 49,
+    "index" : 71,
     "source" : "fsh-generated/resources/ValueSet-acvpu-vs.json",
     "sourceTail" : "ValueSet-acvpu-vs.json",
     "path" : "ValueSet-acvpu-vs.html",
@@ -1053,7 +1416,7 @@
     "title" : "ACVPU Value Set",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "ACVPU consciousness level codes",
     "descriptionlang" : {
     },
@@ -1066,7 +1429,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 50,
+    "index" : 72,
     "source" : "fsh-generated/resources/ValueSet-goal-evaluation-valueset.json",
     "sourceTail" : "ValueSet-goal-evaluation-valueset.json",
     "path" : "ValueSet-goal-evaluation-valueset.html",
@@ -1077,7 +1440,7 @@
     "titlelang" : {
     },
     "experimental" : false,
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Value set for evaluating patient goal outcomes",
     "descriptionlang" : {
     },
@@ -1090,7 +1453,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 51,
+    "index" : 73,
     "source" : "fsh-generated/resources/ValueSet-housing-status-vs.json",
     "sourceTail" : "ValueSet-housing-status-vs.json",
     "path" : "ValueSet-housing-status-vs.html",
@@ -1101,7 +1464,7 @@
     "titlelang" : {
     },
     "experimental" : false,
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Value set for patient housing status",
     "descriptionlang" : {
     },
@@ -1114,7 +1477,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 52,
+    "index" : 74,
     "source" : "fsh-generated/resources/ValueSet-inspired-oxygen-vs.json",
     "sourceTail" : "ValueSet-inspired-oxygen-vs.json",
     "path" : "ValueSet-inspired-oxygen-vs.html",
@@ -1124,7 +1487,7 @@
     "title" : "Inspired Oxygen Value Set",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Codes for inspired oxygen status",
     "descriptionlang" : {
     },
@@ -1137,7 +1500,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 53,
+    "index" : 75,
     "source" : "fsh-generated/resources/ValueSet-news2-code-vs.json",
     "sourceTail" : "ValueSet-news2-code-vs.json",
     "path" : "ValueSet-news2-code-vs.html",
@@ -1147,7 +1510,7 @@
     "title" : "NEWS2 Code Value Set",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "LOINC and SNOMED codes for NEWS2",
     "descriptionlang" : {
     },
@@ -1160,7 +1523,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 54,
+    "index" : 76,
     "source" : "fsh-generated/resources/ValueSet-news2-subscore-code-vs.json",
     "sourceTail" : "ValueSet-news2-subscore-code-vs.json",
     "path" : "ValueSet-news2-subscore-code-vs.html",
@@ -1170,7 +1533,7 @@
     "title" : "NEWS2 Sub-Score Codes",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "SNOMED codes for NEWS2 sub-scores",
     "descriptionlang" : {
     },
@@ -1183,7 +1546,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 55,
+    "index" : 77,
     "source" : "fsh-generated/resources/ValueSet-nursing-intervention-valueset.json",
     "sourceTail" : "ValueSet-nursing-intervention-valueset.json",
     "path" : "ValueSet-nursing-intervention-valueset.html",
@@ -1194,7 +1557,7 @@
     "titlelang" : {
     },
     "experimental" : false,
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Value set for nursing interventions",
     "descriptionlang" : {
     },
@@ -1207,7 +1570,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 56,
+    "index" : 78,
     "source" : "fsh-generated/resources/ValueSet-nursing-problem-valueset.json",
     "sourceTail" : "ValueSet-nursing-problem-valueset.json",
     "path" : "ValueSet-nursing-problem-valueset.html",
@@ -1218,7 +1581,7 @@
     "titlelang" : {
     },
     "experimental" : false,
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Value set for nursing problems and diagnoses",
     "descriptionlang" : {
     },
@@ -1231,7 +1594,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 57,
+    "index" : 79,
     "source" : "fsh-generated/resources/ValueSet-onc-4at-acute-change-vs.json",
     "sourceTail" : "ValueSet-onc-4at-acute-change-vs.json",
     "path" : "ValueSet-onc-4at-acute-change-vs.html",
@@ -1241,7 +1604,7 @@
     "title" : "4AT Acute Change Value Set",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Scoring for Acute Change or Fluctuating Course",
     "descriptionlang" : {
     },
@@ -1254,7 +1617,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 58,
+    "index" : 80,
     "source" : "fsh-generated/resources/ValueSet-onc-4at-alertness-vs.json",
     "sourceTail" : "ValueSet-onc-4at-alertness-vs.json",
     "path" : "ValueSet-onc-4at-alertness-vs.html",
@@ -1264,7 +1627,7 @@
     "title" : "4AT Alertness Value Set",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Scoring options for 4AT Alertness",
     "descriptionlang" : {
     },
@@ -1277,7 +1640,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 59,
+    "index" : 81,
     "source" : "fsh-generated/resources/ValueSet-onc-4at-amt4-vs.json",
     "sourceTail" : "ValueSet-onc-4at-amt4-vs.json",
     "path" : "ValueSet-onc-4at-amt4-vs.html",
@@ -1287,7 +1650,7 @@
     "title" : "4AT AMT4 Value Set",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Scoring options for AMT4 (Age, DOB, Place, Year)",
     "descriptionlang" : {
     },
@@ -1300,7 +1663,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 60,
+    "index" : 82,
     "source" : "fsh-generated/resources/ValueSet-onc-4at-attention-vs.json",
     "sourceTail" : "ValueSet-onc-4at-attention-vs.json",
     "path" : "ValueSet-onc-4at-attention-vs.html",
@@ -1310,7 +1673,7 @@
     "title" : "4AT Attention Value Set",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Scoring for Months Backwards test",
     "descriptionlang" : {
     },
@@ -1323,7 +1686,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 61,
+    "index" : 83,
     "source" : "fsh-generated/resources/ValueSet-onc-cfs-vs.json",
     "sourceTail" : "ValueSet-onc-cfs-vs.json",
     "path" : "ValueSet-onc-cfs-vs.html",
@@ -1333,8 +1696,31 @@
     "title" : "Clinical Frailty Scale Value Set",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Codes for Rockwood Clinical Frailty Scale (1-9)",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "status" : "Draft"
+    }
+  },
+  "ValueSet/onc-goal-target-measure-vs" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 84,
+    "source" : "fsh-generated/resources/ValueSet-onc-goal-target-measure-vs.json",
+    "sourceTail" : "ValueSet-onc-goal-target-measure-vs.json",
+    "path" : "ValueSet-onc-goal-target-measure-vs.html",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-goal-target-measure-vs",
+    "version" : "0.1.0",
+    "name" : "ONCGoalTargetMeasureVS",
+    "title" : "Goal Target Measure ValueSet",
+    "titlelang" : {
+    },
+    "date" : "2026-01-01T13:37:23+00:00",
+    "description" : "Codes used for goal target measures",
     "descriptionlang" : {
     },
     "status" : {
@@ -1346,7 +1732,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 62,
+    "index" : 85,
     "source" : "fsh-generated/resources/ValueSet-onc-mca-vs.json",
     "sourceTail" : "ValueSet-onc-mca-vs.json",
     "path" : "ValueSet-onc-mca-vs.html",
@@ -1356,7 +1742,7 @@
     "title" : "Mental Capacity Finding Value Set",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Codes indicating presence or absence of capacity",
     "descriptionlang" : {
     },
@@ -1369,7 +1755,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 63,
+    "index" : 86,
     "source" : "fsh-generated/resources/ValueSet-onc-monk-scale-vs.json",
     "sourceTail" : "ValueSet-onc-monk-scale-vs.json",
     "path" : "ValueSet-onc-monk-scale-vs.html",
@@ -1379,7 +1765,53 @@
     "title" : "Monk Skin Tone Scale ValueSet",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
+    "status" : {
+      "class" : "colsd",
+      "status" : "Draft"
+    }
+  },
+  "ValueSet/onc-pbs-function-vs" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 87,
+    "source" : "fsh-generated/resources/ValueSet-onc-pbs-function-vs.json",
+    "sourceTail" : "ValueSet-onc-pbs-function-vs.json",
+    "path" : "ValueSet-onc-pbs-function-vs.html",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-pbs-function-vs",
+    "version" : "0.1.0",
+    "name" : "PBSFunctionVS",
+    "title" : "PBS Behaviour Function ValueSet",
+    "titlelang" : {
+    },
+    "date" : "2026-01-01T13:37:23+00:00",
+    "description" : "Common functions of behaviour (SEAT)",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "status" : "Draft"
+    }
+  },
+  "ValueSet/onc-prognosis-vs" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 88,
+    "source" : "fsh-generated/resources/ValueSet-onc-prognosis-vs.json",
+    "sourceTail" : "ValueSet-onc-prognosis-vs.json",
+    "path" : "ValueSet-onc-prognosis-vs.html",
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-prognosis-vs",
+    "version" : "0.1.0",
+    "name" : "ONCPrognosisVS",
+    "title" : "Nursing Prognosis ValueSet",
+    "titlelang" : {
+    },
+    "date" : "2026-01-01T13:37:23+00:00",
+    "description" : "Prognosis codes for clinical impression",
+    "descriptionlang" : {
+    },
     "status" : {
       "class" : "colsd",
       "status" : "Draft"
@@ -1389,7 +1821,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 64,
+    "index" : 89,
     "source" : "fsh-generated/resources/ValueSet-pain-assessment-code-vs.json",
     "sourceTail" : "ValueSet-pain-assessment-code-vs.json",
     "path" : "ValueSet-pain-assessment-code-vs.html",
@@ -1399,7 +1831,7 @@
     "title" : "Pain Assessment Code Value Set",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "LOINC codes for pain severity assessment",
     "descriptionlang" : {
     },
@@ -1412,7 +1844,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 65,
+    "index" : 90,
     "source" : "fsh-generated/resources/ValueSet-problem-category-valueset.json",
     "sourceTail" : "ValueSet-problem-category-valueset.json",
     "path" : "ValueSet-problem-category-valueset.html",
@@ -1423,7 +1855,7 @@
     "titlelang" : {
     },
     "experimental" : false,
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Value set for categorizing nursing problems",
     "descriptionlang" : {
     },
@@ -1436,7 +1868,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 66,
+    "index" : 91,
     "source" : "fsh-generated/resources/ValueSet-skintone-vs.json",
     "sourceTail" : "ValueSet-skintone-vs.json",
     "path" : "ValueSet-skintone-vs.html",
@@ -1447,7 +1879,7 @@
     "titlelang" : {
     },
     "experimental" : false,
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "description" : "Value set for Fitzpatrick skin type classifications",
     "descriptionlang" : {
     },
@@ -1460,7 +1892,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 67,
+    "index" : 92,
     "source" : "fsh-generated/resources/ValueSet-wound-stage-vs.json",
     "sourceTail" : "ValueSet-wound-stage-vs.json",
     "path" : "ValueSet-wound-stage-vs.html",
@@ -1470,10 +1902,54 @@
     "title" : "Wound Stage Value Set",
     "titlelang" : {
     },
-    "date" : "2025-12-26T15:22:58+00:00",
+    "date" : "2026-01-01T13:37:23+00:00",
     "status" : {
       "class" : "colsd",
       "status" : "Draft"
+    }
+  },
+  "Library/onc-news2-cql" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 93,
+    "source" : "input/resources/Library-onc-news2-cql.json",
+    "sourceTail" : "Library-onc-news2-cql.json",
+    "path" : "Library-onc-news2-cql.html",
+    "url" : "http://opennursingcore.org/Library/ONC-NEWS2-CQL",
+    "version" : "0.1.0",
+    "name" : "ONC_NEWS2_Logic",
+    "title" : "ONC NEWS2 Auto-Calculation Logic",
+    "titlelang" : {
+    },
+    "experimental" : true,
+    "date" : "2026-01-01T13:37:23+00:00",
+    "description" : "Logic library for calculating National Early Warning Score 2 (NEWS2) from FHIR Observations.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsi",
+      "status" : "Active"
+    }
+  },
+  "PlanDefinition/news2-escalation-plan" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 94,
+    "source" : "input/resources/PlanDefinition-news2-escalation.json",
+    "sourceTail" : "PlanDefinition-news2-escalation.json",
+    "path" : "PlanDefinition-news2-escalation-plan.html",
+    "url" : "http://opennursingcore.org/PlanDefinition/news2-escalation",
+    "version" : "0.1.0",
+    "name" : "NEWS2_Escalation_Protocol",
+    "title" : "NEWS2 Escalation Protocol",
+    "titlelang" : {
+    },
+    "date" : "2026-01-01T13:37:23+00:00",
+    "status" : {
+      "class" : "colsi",
+      "status" : "Active"
     }
   }
 }

@@ -13,31 +13,31 @@
     "fshType": "CodeSystem",
     "fshFile": "onc-equity.fsh",
     "startLine": 40,
-    "endLine": 176
+    "endLine": 196
   },
   {
     "outputFile": "CodeSystem-onc-problem-type.json",
     "fshName": "ONCProblemType",
     "fshType": "CodeSystem",
     "fshFile": "onc-terminology.fsh",
-    "startLine": 64,
-    "endLine": 73
+    "startLine": 66,
+    "endLine": 75
   },
   {
     "outputFile": "Condition-example-nursing-problem.json",
     "fshName": "example-nursing-problem",
     "fshType": "Instance",
     "fshFile": "onc-master-examples.fsh",
-    "startLine": 79,
-    "endLine": 85
+    "startLine": 80,
+    "endLine": 86
   },
   {
     "outputFile": "Goal-example-patient-goal.json",
     "fshName": "example-patient-goal",
     "fshType": "Instance",
     "fshFile": "onc-master-examples.fsh",
-    "startLine": 87,
-    "endLine": 93
+    "startLine": 88,
+    "endLine": 97
   },
   {
     "outputFile": "Observation-example-4at-delirium.json",
@@ -52,24 +52,24 @@
     "fshName": "example-abbey-pain",
     "fshType": "Instance",
     "fshFile": "onc-new-examples.fsh",
-    "startLine": 82,
-    "endLine": 95
+    "startLine": 85,
+    "endLine": 99
   },
   {
     "outputFile": "Observation-example-abc-chart.json",
     "fshName": "example-abc-chart",
     "fshType": "Instance",
     "fshFile": "onc-new-examples.fsh",
-    "startLine": 112,
-    "endLine": 122
+    "startLine": 118,
+    "endLine": 129
   },
   {
     "outputFile": "Observation-example-bristol-stool.json",
     "fshName": "example-bristol-stool",
     "fshType": "Instance",
     "fshFile": "onc-new-examples.fsh",
-    "startLine": 73,
-    "endLine": 80
+    "startLine": 75,
+    "endLine": 83
   },
   {
     "outputFile": "Observation-example-clinical-frailty.json",
@@ -84,32 +84,32 @@
     "fshName": "example-fluid-balance",
     "fshType": "Instance",
     "fshFile": "onc-new-examples.fsh",
-    "startLine": 97,
-    "endLine": 107
+    "startLine": 101,
+    "endLine": 113
   },
   {
     "outputFile": "Observation-example-goal-evaluation.json",
     "fshName": "example-goal-evaluation",
     "fshType": "Instance",
     "fshFile": "onc-master-examples.fsh",
-    "startLine": 104,
-    "endLine": 113
+    "startLine": 109,
+    "endLine": 117
   },
   {
     "outputFile": "Observation-example-mental-capacity.json",
     "fshName": "example-mental-capacity",
     "fshType": "Instance",
     "fshFile": "onc-new-examples.fsh",
-    "startLine": 61,
-    "endLine": 68
+    "startLine": 62,
+    "endLine": 70
   },
   {
     "outputFile": "Observation-example-oral-health.json",
     "fshName": "example-oral-health",
     "fshType": "Instance",
     "fshFile": "onc-new-examples.fsh",
-    "startLine": 124,
-    "endLine": 134
+    "startLine": 131,
+    "endLine": 143
   },
   {
     "outputFile": "Observation-example-patient-story.json",
@@ -125,23 +125,23 @@
     "fshType": "Instance",
     "fshFile": "onc-new-examples.fsh",
     "startLine": 53,
-    "endLine": 59
+    "endLine": 60
   },
   {
     "outputFile": "Observation-example-seizure-record.json",
     "fshName": "example-seizure-record",
     "fshType": "Instance",
     "fshFile": "onc-new-examples.fsh",
-    "startLine": 136,
-    "endLine": 146
+    "startLine": 145,
+    "endLine": 156
   },
   {
     "outputFile": "Observation-example-urinalysis.json",
     "fshName": "example-urinalysis",
     "fshType": "Instance",
     "fshFile": "onc-new-examples.fsh",
-    "startLine": 148,
-    "endLine": 159
+    "startLine": 158,
+    "endLine": 170
   },
   {
     "outputFile": "Observation-example-what-matters.json",
@@ -157,7 +157,7 @@
     "fshType": "Instance",
     "fshFile": "onc-master-examples.fsh",
     "startLine": 33,
-    "endLine": 73
+    "endLine": 74
   },
   {
     "outputFile": "Observation-observation-skin-tone.json",
@@ -188,8 +188,8 @@
     "fshName": "example-nursing-intervention",
     "fshType": "Instance",
     "fshFile": "onc-master-examples.fsh",
-    "startLine": 95,
-    "endLine": 102
+    "startLine": 100,
+    "endLine": 107
   },
   {
     "outputFile": "StructureDefinition-UKCore-Extension-EthnicCategory.json",
@@ -203,17 +203,17 @@
     "outputFile": "StructureDefinition-intervention-goal-reference.json",
     "fshName": "InterventionGoalReference",
     "fshType": "Extension",
-    "fshFile": "onc-profiles.fsh",
-    "startLine": 98,
-    "endLine": 102
+    "fshFile": "onc-goal-evaluation.fsh",
+    "startLine": 96,
+    "endLine": 100
   },
   {
     "outputFile": "StructureDefinition-observation-goal-reference.json",
     "fshName": "ObservationGoalReference",
     "fshType": "Extension",
-    "fshFile": "onc-profiles.fsh",
-    "startLine": 92,
-    "endLine": 96
+    "fshFile": "onc-goal-evaluation.fsh",
+    "startLine": 90,
+    "endLine": 94
   },
   {
     "outputFile": "StructureDefinition-onc-4at-delirium.json",
@@ -256,6 +256,14 @@
     "endLine": 63
   },
   {
+    "outputFile": "StructureDefinition-onc-bladder-assessment.json",
+    "fshName": "ONCBladderAssessment",
+    "fshType": "Profile",
+    "fshFile": "onc-alignment-prsb.fsh",
+    "startLine": 18,
+    "endLine": 24
+  },
+  {
     "outputFile": "StructureDefinition-onc-blood-pressure.json",
     "fshName": "ONCBloodPressure",
     "fshType": "Profile",
@@ -272,12 +280,20 @@
     "endLine": 99
   },
   {
+    "outputFile": "StructureDefinition-onc-bowel-assessment.json",
+    "fshName": "ONCBowelAssessment",
+    "fshType": "Profile",
+    "fshFile": "onc-alignment-prsb.fsh",
+    "startLine": 26,
+    "endLine": 32
+  },
+  {
     "outputFile": "StructureDefinition-onc-braden-scale-assessment.json",
     "fshName": "ONCBradenScaleAssessment",
     "fshType": "Profile",
     "fshFile": "onc-profiles.fsh",
     "startLine": 17,
-    "endLine": 48
+    "endLine": 57
   },
   {
     "outputFile": "StructureDefinition-onc-bristol-stool-chart.json",
@@ -288,12 +304,44 @@
     "endLine": 21
   },
   {
+    "outputFile": "StructureDefinition-onc-catheter-care.json",
+    "fshName": "ONCCatheterCare",
+    "fshType": "Profile",
+    "fshFile": "onc-alignment-prsb.fsh",
+    "startLine": 34,
+    "endLine": 40
+  },
+  {
     "outputFile": "StructureDefinition-onc-clinical-frailty-scale.json",
     "fshName": "ONCClinicalFrailtyScale",
     "fshType": "Profile",
     "fshFile": "onc-frailty.fsh",
     "startLine": 10,
     "endLine": 23
+  },
+  {
+    "outputFile": "StructureDefinition-onc-continence-assessment.json",
+    "fshName": "ONCContinenceAssessment",
+    "fshType": "Profile",
+    "fshFile": "onc-alignment-prsb.fsh",
+    "startLine": 9,
+    "endLine": 16
+  },
+  {
+    "outputFile": "StructureDefinition-onc-device-use-statement.json",
+    "fshName": "ONCDeviceUseStatement",
+    "fshType": "Profile",
+    "fshFile": "onc-alignment-prsb.fsh",
+    "startLine": 80,
+    "endLine": 88
+  },
+  {
+    "outputFile": "StructureDefinition-onc-dietary-requirements.json",
+    "fshName": "ONCDietaryRequirements",
+    "fshType": "Profile",
+    "fshFile": "onc-alignment-prsb.fsh",
+    "startLine": 61,
+    "endLine": 67
   },
   {
     "outputFile": "StructureDefinition-onc-fluid-balance.json",
@@ -315,9 +363,9 @@
     "outputFile": "StructureDefinition-onc-goal-evaluation.json",
     "fshName": "ONCGoalEvaluation",
     "fshType": "Profile",
-    "fshFile": "onc-profiles.fsh",
-    "startLine": 84,
-    "endLine": 90
+    "fshFile": "onc-goal-evaluation.fsh",
+    "startLine": 45,
+    "endLine": 61
   },
   {
     "outputFile": "StructureDefinition-onc-heart-rate.json",
@@ -328,12 +376,36 @@
     "endLine": 130
   },
   {
+    "outputFile": "StructureDefinition-onc-hygiene-assessment.json",
+    "fshName": "ONCHygieneAssessment",
+    "fshType": "Profile",
+    "fshFile": "onc-alignment-prsb.fsh",
+    "startLine": 93,
+    "endLine": 99
+  },
+  {
     "outputFile": "StructureDefinition-onc-inspired-oxygen.json",
     "fshName": "ONCInspiredOxygen",
     "fshType": "Profile",
     "fshFile": "onc-news2-full.fsh",
     "startLine": 151,
     "endLine": 160
+  },
+  {
+    "outputFile": "StructureDefinition-onc-medication-ability.json",
+    "fshName": "ONCMedicationAbility",
+    "fshType": "Profile",
+    "fshFile": "onc-alignment-prsb.fsh",
+    "startLine": 112,
+    "endLine": 118
+  },
+  {
+    "outputFile": "StructureDefinition-onc-medication-self-admin.json",
+    "fshName": "ONCMedicationSelfAdmin",
+    "fshType": "Profile",
+    "fshFile": "onc-alignment-prsb.fsh",
+    "startLine": 120,
+    "endLine": 126
   },
   {
     "outputFile": "StructureDefinition-onc-mental-capacity.json",
@@ -352,12 +424,20 @@
     "endLine": 17
   },
   {
+    "outputFile": "StructureDefinition-onc-mobility-assessment.json",
+    "fshName": "ONCMobilityAssessment",
+    "fshType": "Profile",
+    "fshFile": "onc-alignment-prsb.fsh",
+    "startLine": 72,
+    "endLine": 78
+  },
+  {
     "outputFile": "StructureDefinition-onc-monk-skintone-observation.json",
     "fshName": "ONCMonkSkinToneObservation",
     "fshType": "Profile",
     "fshFile": "onc-equity.fsh",
-    "startLine": 183,
-    "endLine": 190
+    "startLine": 204,
+    "endLine": 211
   },
   {
     "outputFile": "StructureDefinition-onc-morse-fall-scale.json",
@@ -408,20 +488,44 @@
     "endLine": 15
   },
   {
+    "outputFile": "StructureDefinition-onc-nursing-clinical-impression.json",
+    "fshName": "ONCNursingClinicalImpression",
+    "fshType": "Profile",
+    "fshFile": "onc-goal-evaluation.fsh",
+    "startLine": 67,
+    "endLine": 84
+  },
+  {
+    "outputFile": "StructureDefinition-onc-nursing-goal.json",
+    "fshName": "ONCNursingGoal",
+    "fshType": "Profile",
+    "fshFile": "onc-goal-evaluation.fsh",
+    "startLine": 8,
+    "endLine": 25
+  },
+  {
     "outputFile": "StructureDefinition-onc-nursing-intervention.json",
     "fshName": "ONCNursingIntervention",
     "fshType": "Profile",
-    "fshFile": "onc-profiles.fsh",
-    "startLine": 72,
-    "endLine": 82
+    "fshFile": "onc-goal-evaluation.fsh",
+    "startLine": 30,
+    "endLine": 40
   },
   {
     "outputFile": "StructureDefinition-onc-nursing-problem.json",
     "fshName": "ONCNursingProblem",
     "fshType": "Profile",
     "fshFile": "onc-profiles.fsh",
-    "startLine": 51,
-    "endLine": 60
+    "startLine": 61,
+    "endLine": 70
+  },
+  {
+    "outputFile": "StructureDefinition-onc-oral-care-assessment.json",
+    "fshName": "ONCOralCareAssessment",
+    "fshType": "Profile",
+    "fshFile": "onc-alignment-prsb.fsh",
+    "startLine": 101,
+    "endLine": 107
   },
   {
     "outputFile": "StructureDefinition-onc-oral-health.json",
@@ -429,7 +533,15 @@
     "fshType": "Profile",
     "fshFile": "onc-oral-health.fsh",
     "startLine": 4,
-    "endLine": 42
+    "endLine": 45
+  },
+  {
+    "outputFile": "StructureDefinition-onc-oral-intake-assessment.json",
+    "fshName": "ONCOralIntakeAssessment",
+    "fshType": "Profile",
+    "fshFile": "onc-alignment-prsb.fsh",
+    "startLine": 45,
+    "endLine": 51
   },
   {
     "outputFile": "StructureDefinition-onc-oxygen-saturation.json",
@@ -446,14 +558,6 @@
     "fshFile": "onc-clinical-assessments.fsh",
     "startLine": 4,
     "endLine": 20
-  },
-  {
-    "outputFile": "StructureDefinition-onc-patient-goal.json",
-    "fshName": "ONCPatientGoal",
-    "fshType": "Profile",
-    "fshFile": "onc-profiles.fsh",
-    "startLine": 62,
-    "endLine": 70
   },
   {
     "outputFile": "StructureDefinition-onc-patient-story.json",
@@ -476,8 +580,8 @@
     "fshName": "ONCReasonableAdjustment",
     "fshType": "Profile",
     "fshFile": "onc-equity.fsh",
-    "startLine": 195,
-    "endLine": 208
+    "startLine": 216,
+    "endLine": 229
   },
   {
     "outputFile": "StructureDefinition-onc-relational-observation.json",
@@ -520,6 +624,14 @@
     "endLine": 38
   },
   {
+    "outputFile": "StructureDefinition-onc-swallowing-assessment.json",
+    "fshName": "ONCSwallowingAssessment",
+    "fshType": "Profile",
+    "fshFile": "onc-alignment-prsb.fsh",
+    "startLine": 53,
+    "endLine": 59
+  },
+  {
     "outputFile": "StructureDefinition-onc-urinalysis.json",
     "fshName": "ONCUrinalysis",
     "fshType": "Profile",
@@ -533,7 +645,7 @@
     "fshType": "Profile",
     "fshFile": "onc-waterlow-score.fsh",
     "startLine": 4,
-    "endLine": 19
+    "endLine": 28
   },
   {
     "outputFile": "StructureDefinition-onc-what-matters.json",
@@ -565,15 +677,15 @@
     "fshType": "ValueSet",
     "fshFile": "onc-terminology.fsh",
     "startLine": 24,
-    "endLine": 31
+    "endLine": 33
   },
   {
     "outputFile": "ValueSet-housing-status-vs.json",
     "fshName": "HousingStatusVS",
     "fshType": "ValueSet",
     "fshFile": "onc-terminology.fsh",
-    "startLine": 52,
-    "endLine": 58
+    "startLine": 54,
+    "endLine": 60
   },
   {
     "outputFile": "ValueSet-inspired-oxygen-vs.json",
@@ -656,6 +768,14 @@
     "endLine": 37
   },
   {
+    "outputFile": "ValueSet-onc-goal-target-measure-vs.json",
+    "fshName": "ONCGoalTargetMeasureVS",
+    "fshType": "ValueSet",
+    "fshFile": "onc-goal-evaluation.fsh",
+    "startLine": 102,
+    "endLine": 107
+  },
+  {
     "outputFile": "ValueSet-onc-mca-vs.json",
     "fshName": "MentalCapacityVS",
     "fshType": "ValueSet",
@@ -668,8 +788,8 @@
     "fshName": "ONCMonkScaleVS",
     "fshType": "ValueSet",
     "fshFile": "onc-equity.fsh",
-    "startLine": 178,
-    "endLine": 181
+    "startLine": 199,
+    "endLine": 202
   },
   {
     "outputFile": "ValueSet-onc-pbs-function-vs.json",
@@ -678,6 +798,14 @@
     "fshFile": "onc-pbs.fsh",
     "startLine": 57,
     "endLine": 61
+  },
+  {
+    "outputFile": "ValueSet-onc-prognosis-vs.json",
+    "fshName": "ONCPrognosisVS",
+    "fshType": "ValueSet",
+    "fshFile": "onc-goal-evaluation.fsh",
+    "startLine": 110,
+    "endLine": 116
   },
   {
     "outputFile": "ValueSet-pain-assessment-code-vs.json",
@@ -692,16 +820,16 @@
     "fshName": "ProblemCategoryValueSet",
     "fshType": "ValueSet",
     "fshFile": "onc-terminology.fsh",
-    "startLine": 33,
-    "endLine": 38
+    "startLine": 35,
+    "endLine": 40
   },
   {
     "outputFile": "ValueSet-skintone-vs.json",
     "fshName": "SkinToneVS",
     "fshType": "ValueSet",
     "fshFile": "onc-terminology.fsh",
-    "startLine": 40,
-    "endLine": 50
+    "startLine": 42,
+    "endLine": 52
   },
   {
     "outputFile": "ValueSet-wound-stage-vs.json",

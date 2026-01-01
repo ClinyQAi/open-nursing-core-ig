@@ -102,5 +102,14 @@
       <code>value.empty() or component.code.where(coding.intersect(%resource.code.coding).exists()).empty()</code>
     </td>
   </tr>
+  <tr>
+    <td>onc-equity-skin-tone-required</td>
+    <td>error</td>
+    <td>Observation</td>
+    <td>Wound assessments MUST have an associated skin tone observation to ensure equitable care (AI Safety Gate).</td>
+    <td>
+      <code>hasMember.resolve().code.coding.where(code = '66555-4' or code = 'mst-score').exists()</code>
+    </td>
+  </tr>
 </table>
 {% endraw %}

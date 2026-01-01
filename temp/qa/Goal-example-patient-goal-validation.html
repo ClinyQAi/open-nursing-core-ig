@@ -7,7 +7,9 @@
 <body>
 <table class="grid" data-fhir="generated-heirarchy">
 <tr><td><b>Level</b></td><td><b>Type</b></td><td><b>Location</b></td><td><b>Message</b></td></tr>
-<tr><td>information</td><td>informational</td><td>Goal/example-patient-goal: Goal</td><td>Validate resource against profile https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-goal|0.1.0</td><td></td></tr>
+<tr><td>error</td><td>invalid</td><td>Goal/example-patient-goal: Goal.target[0].measure.coding[0].display</td><td>Wrong Display Name 'Functional status' for http://loinc.org#88020-3. Valid display is one of 3 choices: 'Functional capacity NYHA' (en-US), 'Functional capacity NYHA' (en-US) or 'Functional capacity NYHA' (en-US) (for the language(s) 'en-US')</td><td></td></tr>
+<tr><td>error</td><td>invalid</td><td>Goal/example-patient-goal: Goal.target[0].detail.ofType(CodeableConcept).coding[0].display</td><td>Wrong Display Name 'Objective achieved' for http://snomed.info/sct#385652002. Valid display is 'Started (qualifier value)' (en) (for the language(s) 'en-US')</td><td></td></tr>
+<tr><td>information</td><td>informational</td><td>Goal/example-patient-goal: Goal</td><td>Validate resource against profile https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal|0.1.0</td><td></td></tr>
 </table>
 </body>
 </html>

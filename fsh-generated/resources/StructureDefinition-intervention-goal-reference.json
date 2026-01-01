@@ -5,7 +5,7 @@
   "name": "InterventionGoalReference",
   "title": "Intervention Goal Reference",
   "status": "draft",
-  "description": "Extension to link nursing interventions to the patient goals they are intended to achieve. Supports goal-directed care planning and intervention tracking.",
+  "description": "Extension to link nursing interventions to the patient goals they are intended to achieve.",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -24,7 +24,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "Intervention Goal Reference",
-        "definition": "Extension to link nursing interventions to the patient goals they are intended to achieve. Supports goal-directed care planning and intervention tracking."
+        "definition": "Extension to link nursing interventions to the patient goals they are intended to achieve."
       },
       {
         "id": "Extension.extension",
@@ -43,7 +43,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-goal"
+              "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal"
             ]
           }
         ]

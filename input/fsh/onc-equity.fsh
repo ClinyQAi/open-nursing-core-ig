@@ -132,7 +132,7 @@ Description: "Custom observation codes for Open Nursing Core"
 * #abc-consequence "Consequence" "What happened immediately after (response/outcome)"
 * #abc-function "Function of Behaviour" "Hypothesized function (e.g. Sensory, Escape, Attention, Tangible)"
 * #abc-duration "Duration" "Duration of the episode"
-* #abc-duration "Duration" "Duration of the episode"
+
 * #abc-intensity "Intensity" "Intensity of the behaviour (1-10)"
 
 // =============================================================================
@@ -174,6 +174,27 @@ Description: "Custom observation codes for Open Nursing Core"
 * #ua-ketones "Ketones" "Ketones in urine"
 * #ua-ph "pH" "Urine pH Level"
 * #ua-sg "Specific Gravity" "Urine Specific Gravity"
+* #mca-present "Capacity Present" "Patient has capacity for this decision"
+* #4at-change-no "No Acute Change" "No indication of acute change or fluctuating course"
+* #4at-amt4-1error "1 Error" "1 error in AMT4 test"
+* #4at-attention-gt7 "Months Backwards < 7 months" "Less than 7 months correctly recited backwards"
+* #4at-alert-normal "Normal Alertness" "Patient is fully alert"
+
+// PRSB Alignment Codes
+* #continence-assessment "Continence Assessment" "Assessment of bladder and bowel control"
+* #bladder-assessment "Bladder Assessment" "Detailed assessment of bladder function"
+* #bowel-assessment "Bowel Assessment" "Detailed assessment of bowel function"
+* #catheter-care "Catheter Care Interaction" "Nursing interaction related to catheter care"
+* #oral-intake "Oral Intake Assessment" "Assessment of food and fluid intake capability"
+* #swallowing "Swallowing Assessment" "Assessment of swallowing ability (dysphagia risk)"
+* #dietary-requirements "Dietary Requirements" "Specific dietary needs or restrictions"
+* #mobility "Mobility Assessment" "Assessment of physical mobility and transfer ability"
+* #device-use "Device/Aid Usage" "Observation of device or mobility aid usage"
+* #hygiene-needs "Personal Hygiene Needs" "Assessment of assistance required for hygiene"
+* #oral-care "Oral Care Needs" "Assessment of oral health and care requirements"
+* #medication-ability "Medication Management Ability" "Ability to manage own medications"
+* #medication-self-admin "Medication Self-Administration" "Observation of self-administration technique"
+
 
 ValueSet: ONCMonkScaleVS
 Id: onc-monk-scale-vs

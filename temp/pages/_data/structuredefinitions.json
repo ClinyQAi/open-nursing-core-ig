@@ -15,7 +15,7 @@
     "basepath" : "http://hl7.org/fhir/R4/extensibility.html#Extension",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -52,7 +52,7 @@
     "basepath" : "http://hl7.org/fhir/R4/extensibility.html#Extension",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -61,7 +61,7 @@
     "copyright" : null,
     "copyrightlang" : {
     },
-    "description" : "Extension to link nursing interventions to the patient goals they are intended to achieve. Supports goal-directed care planning and intervention tracking.",
+    "description" : "Extension to link nursing interventions to the patient goals they are intended to achieve.",
     "descriptionlang" : {
     },
     "obligations" : false,
@@ -89,7 +89,7 @@
     "basepath" : "http://hl7.org/fhir/R4/extensibility.html#Extension",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -98,7 +98,7 @@
     "copyright" : null,
     "copyrightlang" : {
     },
-    "description" : "Extension to link goal evaluation observations to the patient goals being evaluated. Enables tracking of goal progress and outcomes over time.",
+    "description" : "Extension to link goal evaluation observations to the patient goals being evaluated.",
     "descriptionlang" : {
     },
     "obligations" : false,
@@ -126,7 +126,7 @@
     "basepath" : "StructureDefinition-onc-nursing-assessment.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -140,8 +140,68 @@
     },
     "obligations" : false
   },
-  "onc-acvpu" : {
+  "onc-abbey-pain-scale" : {
     "index" : 4,
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-abbey-pain-scale",
+    "name" : "ONCAbbeyPainScale",
+    "title" : "Abbey Pain Scale",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-onc-abbey-pain-scale.html",
+    "kind" : "resource",
+    "type" : "Observation",
+    "base" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+    "basename" : "ONCNursingAssessment",
+    "basepath" : "StructureDefinition-onc-nursing-assessment.html",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : null,
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "Pain assessment for people with dementia or who cannot verbalise. Assesses 6 parameters: Vocalization, Facial Expression, Body Language, Behavioral Change, Physiological Change, Physical Changes. Total score determines pain severity (0-2 No pain, 3-7 Mild, 8-13 Moderate, 14+ Severe).",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
+  "onc-abc-chart" : {
+    "index" : 5,
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-abc-chart",
+    "name" : "ONCABCChart",
+    "title" : "PBS ABC Chart",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-onc-abc-chart.html",
+    "kind" : "resource",
+    "type" : "Observation",
+    "base" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+    "basename" : "ONCNursingAssessment",
+    "basepath" : "StructureDefinition-onc-nursing-assessment.html",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : null,
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "Antecedent-Behaviour-Consequence (ABC) Chart for recording behaviours of concern. Fundamental tool in Positive Behaviour Support (PBS) for Learning Disabilities.",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
+  "onc-acvpu" : {
+    "index" : 6,
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-acvpu",
     "name" : "ONCACVPU",
     "title" : "ACVPU Consciousness Level",
@@ -156,7 +216,7 @@
     "basepath" : "StructureDefinition-onc-nursing-assessment.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -171,7 +231,7 @@
     "obligations" : false
   },
   "onc-barthel-index" : {
-    "index" : 5,
+    "index" : 7,
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-barthel-index",
     "name" : "ONCBarthelIndex",
     "title" : "Barthel Index",
@@ -186,7 +246,7 @@
     "basepath" : "StructureDefinition-onc-nursing-assessment.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -201,7 +261,7 @@
     "obligations" : false
   },
   "onc-blood-pressure" : {
-    "index" : 6,
+    "index" : 8,
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-blood-pressure",
     "name" : "ONCBloodPressure",
     "title" : "Blood Pressure",
@@ -216,7 +276,7 @@
     "basepath" : "StructureDefinition-onc-nursing-assessment.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -231,7 +291,7 @@
     "obligations" : false
   },
   "onc-body-temperature" : {
-    "index" : 7,
+    "index" : 9,
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-body-temperature",
     "name" : "ONCBodyTemperature",
     "title" : "Body Temperature",
@@ -246,7 +306,7 @@
     "basepath" : "StructureDefinition-onc-nursing-assessment.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -261,7 +321,7 @@
     "obligations" : false
   },
   "onc-braden-scale-assessment" : {
-    "index" : 8,
+    "index" : 10,
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-braden-scale-assessment",
     "name" : "ONCBradenScaleAssessment",
     "title" : "Braden Scale Assessment",
@@ -276,7 +336,7 @@
     "basepath" : "StructureDefinition-onc-nursing-assessment.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -290,8 +350,38 @@
     },
     "obligations" : false
   },
+  "onc-bristol-stool-chart" : {
+    "index" : 11,
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-bristol-stool-chart",
+    "name" : "ONCBristolStoolChart",
+    "title" : "Bristol Stool Chart",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-onc-bristol-stool-chart.html",
+    "kind" : "resource",
+    "type" : "Observation",
+    "base" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+    "basename" : "ONCNursingAssessment",
+    "basepath" : "StructureDefinition-onc-nursing-assessment.html",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : null,
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "Assessment of stool form using the Bristol Stool Chart (Types 1-7). Gold standard for bowel function assessment.",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
   "onc-clinical-frailty-scale" : {
-    "index" : 9,
+    "index" : 12,
     "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale",
     "name" : "ONCClinicalFrailtyScale",
     "title" : "Clinical Frailty Scale (CFS)",
@@ -306,7 +396,7 @@
     "basepath" : "StructureDefinition-onc-nursing-assessment.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -320,8 +410,38 @@
     },
     "obligations" : false
   },
+  "onc-fluid-balance" : {
+    "index" : 13,
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-fluid-balance",
+    "name" : "ONCFluidBalance",
+    "title" : "Fluid Balance",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-onc-fluid-balance.html",
+    "kind" : "resource",
+    "type" : "Observation",
+    "base" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+    "basename" : "ONCNursingAssessment",
+    "basepath" : "StructureDefinition-onc-nursing-assessment.html",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : null,
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "Assessment of fluid intake, output, and balance. Critical for renal function, hydration status, and heart failure monitoring.",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
   "onc-glasgow-coma-scale" : {
-    "index" : 10,
+    "index" : 14,
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-glasgow-coma-scale",
     "name" : "ONCGlasgowComaScale",
     "title" : "Glasgow Coma Scale",
@@ -336,7 +456,7 @@
     "basepath" : "StructureDefinition-onc-nursing-assessment.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -351,22 +471,22 @@
     "obligations" : false
   },
   "onc-goal-evaluation" : {
-    "index" : 11,
+    "index" : 15,
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-goal-evaluation",
     "name" : "ONCGoalEvaluation",
-    "title" : "Goal Evaluation",
+    "title" : "ONC Goal Evaluation",
     "uml" : false,
     "titlelang" : {
     },
     "path" : "StructureDefinition-onc-goal-evaluation.html",
     "kind" : "resource",
     "type" : "Observation",
-    "base" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
-    "basename" : "ONCNursingAssessment",
-    "basepath" : "StructureDefinition-onc-nursing-assessment.html",
+    "base" : "http://hl7.org/fhir/StructureDefinition/Observation",
+    "basename" : "Observation",
+    "basepath" : "http://hl7.org/fhir/R4/observation.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -375,13 +495,13 @@
     "copyright" : null,
     "copyrightlang" : {
     },
-    "description" : "Evaluation of patient goal outcomes and nursing intervention effectiveness. Assesses whether goals have been met, partially met, or not met. Part of the ADPIE framework's Evaluation phase.",
+    "description" : "Explicit evaluation of whether a nursing goal was achieved, closing the ADPIE loop.",
     "descriptionlang" : {
     },
     "obligations" : false
   },
   "onc-heart-rate" : {
-    "index" : 12,
+    "index" : 16,
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-heart-rate",
     "name" : "ONCHeartRate",
     "title" : "Heart Rate",
@@ -396,7 +516,7 @@
     "basepath" : "StructureDefinition-onc-nursing-assessment.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -411,7 +531,7 @@
     "obligations" : false
   },
   "onc-inspired-oxygen" : {
-    "index" : 13,
+    "index" : 17,
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-inspired-oxygen",
     "name" : "ONCInspiredOxygen",
     "title" : "Inspired Oxygen",
@@ -426,7 +546,7 @@
     "basepath" : "StructureDefinition-onc-nursing-assessment.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -441,7 +561,7 @@
     "obligations" : false
   },
   "onc-mental-capacity" : {
-    "index" : 14,
+    "index" : 18,
     "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity",
     "name" : "ONCMentalCapacity",
     "title" : "Mental Capacity Assessment",
@@ -456,7 +576,7 @@
     "basepath" : "StructureDefinition-onc-nursing-assessment.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -471,7 +591,7 @@
     "obligations" : false
   },
   "onc-mmse" : {
-    "index" : 15,
+    "index" : 19,
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-mmse",
     "name" : "ONCMMSE",
     "title" : "Mini Mental State Examination (MMSE)",
@@ -486,7 +606,7 @@
     "basepath" : "StructureDefinition-onc-nursing-assessment.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -501,7 +621,7 @@
     "obligations" : false
   },
   "onc-monk-skintone-observation" : {
-    "index" : 16,
+    "index" : 20,
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-monk-skintone-observation",
     "name" : "ONCMonkSkinToneObservation",
     "title" : "Monk Skin Tone Observation",
@@ -516,7 +636,7 @@
     "basepath" : "StructureDefinition-onc-nursing-assessment.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -531,7 +651,7 @@
     "obligations" : false
   },
   "onc-morse-fall-scale" : {
-    "index" : 17,
+    "index" : 21,
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-morse-fall-scale",
     "name" : "ONCMorseFallScale",
     "title" : "Morse Fall Scale",
@@ -546,7 +666,7 @@
     "basepath" : "StructureDefinition-onc-nursing-assessment.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -561,7 +681,7 @@
     "obligations" : false
   },
   "onc-must-score" : {
-    "index" : 18,
+    "index" : 22,
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-must-score",
     "name" : "ONCMUSTScore",
     "title" : "MUST Score (Malnutrition Universal Screening Tool)",
@@ -576,7 +696,7 @@
     "basepath" : "StructureDefinition-onc-nursing-assessment.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -591,7 +711,7 @@
     "obligations" : false
   },
   "onc-news2-score" : {
-    "index" : 19,
+    "index" : 23,
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-news2-score",
     "name" : "ONCNEWS2Score",
     "title" : "NEWS2 Score",
@@ -606,7 +726,7 @@
     "basepath" : "StructureDefinition-onc-nursing-assessment.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -621,7 +741,7 @@
     "obligations" : false
   },
   "onc-news2-subscore" : {
-    "index" : 20,
+    "index" : 24,
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-news2-subscore",
     "name" : "ONCNEWS2Subscore",
     "title" : "NEWS2 Sub-Score",
@@ -636,7 +756,7 @@
     "basepath" : "StructureDefinition-onc-nursing-assessment.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -651,7 +771,7 @@
     "obligations" : false
   },
   "onc-nhs-patient" : {
-    "index" : 21,
+    "index" : 25,
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nhs-patient",
     "name" : "ONCNHSPatient",
     "title" : "ONC NHS Patient",
@@ -666,7 +786,7 @@
     "basepath" : "http://hl7.org/fhir/R4/patient.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -681,7 +801,7 @@
     "obligations" : false
   },
   "onc-nursing-assessment" : {
-    "index" : 22,
+    "index" : 26,
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
     "name" : "ONCNursingAssessment",
     "title" : "Open Nursing Core Assessment",
@@ -696,7 +816,7 @@
     "basepath" : "http://hl7.org/fhir/R4/observation.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -710,11 +830,71 @@
     },
     "obligations" : false
   },
+  "onc-nursing-clinical-impression" : {
+    "index" : 27,
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-clinical-impression",
+    "name" : "ONCNursingClinicalImpression",
+    "title" : "ONC Nursing Clinical Impression",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-onc-nursing-clinical-impression.html",
+    "kind" : "resource",
+    "type" : "ClinicalImpression",
+    "base" : "http://hl7.org/fhir/StructureDefinition/ClinicalImpression",
+    "basename" : "ClinicalImpression",
+    "basepath" : "http://hl7.org/fhir/R4/clinicalimpression.html",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : null,
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "Nurse's synthesis of patient progress against care plan, aggregating multiple goal evaluations.",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
+  "onc-nursing-goal" : {
+    "index" : 28,
+    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal",
+    "name" : "ONCNursingGoal",
+    "title" : "ONC Nursing Goal",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-onc-nursing-goal.html",
+    "kind" : "resource",
+    "type" : "Goal",
+    "base" : "http://hl7.org/fhir/StructureDefinition/Goal",
+    "basename" : "Goal",
+    "basepath" : "http://hl7.org/fhir/R4/goal.html",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : null,
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "Patient-centered goal with mandatory evaluation requirements. Serves as the 'spine' of the CarePlan, linking problems to outcomes.",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
   "onc-nursing-intervention" : {
-    "index" : 23,
+    "index" : 29,
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-intervention",
     "name" : "ONCNursingIntervention",
-    "title" : "Nursing Intervention",
+    "title" : "ONC Nursing Intervention",
     "uml" : false,
     "titlelang" : {
     },
@@ -726,7 +906,7 @@
     "basepath" : "http://hl7.org/fhir/R4/procedure.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -735,13 +915,13 @@
     "copyright" : null,
     "copyrightlang" : {
     },
-    "description" : "Nursing intervention or procedure performed to achieve patient goals. Documents actions taken by nursing staff to address identified problems and achieve desired outcomes. Part of the ADPIE framework's Implementation phase.",
+    "description" : "Nursing intervention performed to achieve patient goals. Part of ADPIE Implementation phase.",
     "descriptionlang" : {
     },
     "obligations" : false
   },
   "onc-nursing-problem" : {
-    "index" : 24,
+    "index" : 30,
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-problem",
     "name" : "ONCNursingProblem",
     "title" : "Nursing Problem",
@@ -756,7 +936,7 @@
     "basepath" : "http://hl7.org/fhir/R4/condition.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -770,8 +950,38 @@
     },
     "obligations" : false
   },
+  "onc-oral-health" : {
+    "index" : 31,
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-oral-health",
+    "name" : "ONCOralHealth",
+    "title" : "Oral Health Assessment",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-onc-oral-health.html",
+    "kind" : "resource",
+    "type" : "Observation",
+    "base" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+    "basename" : "ONCNursingAssessment",
+    "basepath" : "StructureDefinition-onc-nursing-assessment.html",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : null,
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "Assessment of oral cavity health. Critical for prevention of pneumonia in frail elderly and maintaining nutrition/hydration.",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
   "onc-oxygen-saturation" : {
-    "index" : 25,
+    "index" : 32,
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-oxygen-saturation",
     "name" : "ONCOxygenSaturation",
     "title" : "Oxygen Saturation",
@@ -786,7 +996,7 @@
     "basepath" : "StructureDefinition-onc-nursing-assessment.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -801,7 +1011,7 @@
     "obligations" : false
   },
   "onc-pain-assessment" : {
-    "index" : 26,
+    "index" : 33,
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-pain-assessment",
     "name" : "ONCPainAssessment",
     "title" : "Pain Assessment (NRS 0-10)",
@@ -816,7 +1026,7 @@
     "basepath" : "StructureDefinition-onc-nursing-assessment.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -830,38 +1040,8 @@
     },
     "obligations" : false
   },
-  "onc-patient-goal" : {
-    "index" : 27,
-    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-goal",
-    "name" : "ONCPatientGoal",
-    "title" : "Patient Goal",
-    "uml" : false,
-    "titlelang" : {
-    },
-    "path" : "StructureDefinition-onc-patient-goal.html",
-    "kind" : "resource",
-    "type" : "Goal",
-    "base" : "http://hl7.org/fhir/StructureDefinition/Goal",
-    "basename" : "Goal",
-    "basepath" : "http://hl7.org/fhir/R4/goal.html",
-    "adl" : false,
-    "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
-    "abstract" : false,
-    "derivation" : "constraint",
-    "publisher" : null,
-    "publisherlang" : {
-    },
-    "copyright" : null,
-    "copyrightlang" : {
-    },
-    "description" : "Patient-centered goal established in response to identified nursing problems. Defines measurable outcomes and addresses specific nursing diagnoses. Part of the ADPIE framework's Planning phase.",
-    "descriptionlang" : {
-    },
-    "obligations" : false
-  },
   "onc-patient-story" : {
-    "index" : 28,
+    "index" : 34,
     "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-patient-story",
     "name" : "ONCPatientStory",
     "title" : "Patient Story",
@@ -876,7 +1056,7 @@
     "basepath" : "http://hl7.org/fhir/R4/observation.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -891,7 +1071,7 @@
     "obligations" : false
   },
   "onc-qsofa" : {
-    "index" : 29,
+    "index" : 35,
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-qsofa",
     "name" : "ONCqSOFA",
     "title" : "qSOFA (Quick SOFA)",
@@ -906,7 +1086,7 @@
     "basepath" : "StructureDefinition-onc-nursing-assessment.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -921,7 +1101,7 @@
     "obligations" : false
   },
   "onc-reasonable-adjustment" : {
-    "index" : 30,
+    "index" : 36,
     "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-reasonable-adjustment",
     "name" : "ONCReasonableAdjustment",
     "title" : "Reasonable Adjustment",
@@ -936,7 +1116,7 @@
     "basepath" : "StructureDefinition-onc-nursing-assessment.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -951,7 +1131,7 @@
     "obligations" : false
   },
   "onc-relational-observation" : {
-    "index" : 31,
+    "index" : 37,
     "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-relational-observation",
     "name" : "ONCRelationalObservation",
     "title" : "Relational Engagement Score",
@@ -966,7 +1146,7 @@
     "basepath" : "http://hl7.org/fhir/R4/observation.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -981,7 +1161,7 @@
     "obligations" : false
   },
   "onc-respiration-rate" : {
-    "index" : 32,
+    "index" : 38,
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-respiration-rate",
     "name" : "ONCRespirationRate",
     "title" : "Respiration Rate",
@@ -996,7 +1176,7 @@
     "basepath" : "StructureDefinition-onc-nursing-assessment.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -1010,8 +1190,38 @@
     },
     "obligations" : false
   },
+  "onc-seizure-record" : {
+    "index" : 39,
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-seizure-record",
+    "name" : "ONCSeizureRecord",
+    "title" : "Seizure Record",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-onc-seizure-record.html",
+    "kind" : "resource",
+    "type" : "Observation",
+    "base" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+    "basename" : "ONCNursingAssessment",
+    "basepath" : "StructureDefinition-onc-nursing-assessment.html",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : null,
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "Record of a specific seizure event, including type, duration, triggers, and recovery phases. Essential for epilepsy management and identifying patterns.",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
   "onc-skintone-observation" : {
-    "index" : 33,
+    "index" : 40,
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-skintone-observation",
     "name" : "ONCSkinToneObservation",
     "title" : "Skin Tone Observation",
@@ -1026,7 +1236,7 @@
     "basepath" : "StructureDefinition-onc-nursing-assessment.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -1040,8 +1250,68 @@
     },
     "obligations" : false
   },
+  "onc-sleep-pattern" : {
+    "index" : 41,
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-sleep-pattern",
+    "name" : "ONCSleepPattern",
+    "title" : "Sleep Pattern",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-onc-sleep-pattern.html",
+    "kind" : "resource",
+    "type" : "Observation",
+    "base" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+    "basename" : "ONCNursingAssessment",
+    "basepath" : "StructureDefinition-onc-nursing-assessment.html",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : null,
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "Observation of sleep quality, duration, and disturbances. Sleep pattern disturbance is a key indicator for delirium and general wellbeing.",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
+  "onc-urinalysis" : {
+    "index" : 42,
+    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis",
+    "name" : "ONCUrinalysis",
+    "title" : "Urinalysis",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-onc-urinalysis.html",
+    "kind" : "resource",
+    "type" : "Observation",
+    "base" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+    "basename" : "ONCNursingAssessment",
+    "basepath" : "StructureDefinition-onc-nursing-assessment.html",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : null,
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "Point-of-care urine dipstick test results. Used to screen for urinary tract infection (UTI), diabetes (glucose/ketones), and kidney health.",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
   "onc-waterlow-score" : {
-    "index" : 34,
+    "index" : 43,
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-waterlow-score",
     "name" : "ONCWaterlowScore",
     "title" : "Waterlow Score",
@@ -1056,7 +1326,7 @@
     "basepath" : "StructureDefinition-onc-nursing-assessment.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -1071,7 +1341,7 @@
     "obligations" : false
   },
   "onc-what-matters" : {
-    "index" : 35,
+    "index" : 44,
     "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-what-matters",
     "name" : "ONCWhatMattersToMe",
     "title" : "What Matters to Me",
@@ -1086,7 +1356,7 @@
     "basepath" : "http://hl7.org/fhir/R4/observation.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,
@@ -1101,7 +1371,7 @@
     "obligations" : false
   },
   "onc-wound-assessment" : {
-    "index" : 36,
+    "index" : 45,
     "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-wound-assessment",
     "name" : "ONCWoundAssessment",
     "title" : "Wound Assessment",
@@ -1116,7 +1386,7 @@
     "basepath" : "StructureDefinition-onc-nursing-assessment.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Fri Dec 26 15:22:58 GMT 2025",
+    "date" : "Thu Jan 01 13:37:23 GMT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : null,

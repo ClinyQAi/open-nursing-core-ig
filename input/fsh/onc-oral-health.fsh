@@ -11,9 +11,12 @@ Description: "Assessment of oral cavity health. Critical for prevention of pneum
 * ^status = #draft
 * category = http://terminology.hl7.org/CodeSystem/observation-category#exam
 * code = ONCObservationCodes#oral-health-score
-* value[x] only integer or string
-* valueInteger 1..1 MS
-* valueInteger ^short = "Total Score (if using a scored tool like OHAT)"
+* value[x] only Quantity or string
+* valueQuantity 1..1 MS
+* valueQuantity ^short = "Total Score (if using a scored tool like OHAT)"
+* valueQuantity.unit = "{score}"
+* valueQuantity.code = #1
+* valueQuantity.system = "http://unitsofmeasure.org"
 * component 0..* MS
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"

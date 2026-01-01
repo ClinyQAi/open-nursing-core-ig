@@ -28,6 +28,14 @@
   "profiles": {
     "Observation": [
       {
+        "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-oxygen-saturation",
+        "title": "Oxygen Saturation"
+      },
+      {
+        "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-pain-assessment",
+        "title": "Pain Assessment (NRS 0-10)"
+      },
+      {
         "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-qsofa",
         "title": "qSOFA (Quick SOFA)"
       },
@@ -52,12 +60,32 @@
         "title": "4AT Delirium Assessment"
       },
       {
+        "url": "https://fhir.clinyq.ai/StructureDefinition/onc-abbey-pain-scale",
+        "title": "Abbey Pain Scale"
+      },
+      {
+        "url": "https://fhir.clinyq.ai/StructureDefinition/onc-abc-chart",
+        "title": "PBS ABC Chart"
+      },
+      {
+        "url": "https://fhir.clinyq.ai/StructureDefinition/onc-bristol-stool-chart",
+        "title": "Bristol Stool Chart"
+      },
+      {
         "url": "https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale",
         "title": "Clinical Frailty Scale (CFS)"
       },
       {
+        "url": "https://fhir.clinyq.ai/StructureDefinition/onc-fluid-balance",
+        "title": "Fluid Balance"
+      },
+      {
         "url": "https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity",
         "title": "Mental Capacity Assessment"
+      },
+      {
+        "url": "https://fhir.clinyq.ai/StructureDefinition/onc-oral-health",
+        "title": "Oral Health Assessment"
       },
       {
         "url": "https://fhir.clinyq.ai/StructureDefinition/onc-patient-story",
@@ -72,6 +100,18 @@
         "title": "Relational Engagement Score"
       },
       {
+        "url": "https://fhir.clinyq.ai/StructureDefinition/onc-seizure-record",
+        "title": "Seizure Record"
+      },
+      {
+        "url": "https://fhir.clinyq.ai/StructureDefinition/onc-sleep-pattern",
+        "title": "Sleep Pattern"
+      },
+      {
+        "url": "https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis",
+        "title": "Urinalysis"
+      },
+      {
         "url": "https://fhir.clinyq.ai/StructureDefinition/onc-what-matters",
         "title": "What Matters to Me"
       }
@@ -82,22 +122,28 @@
         "title": "ONC NHS Patient"
       }
     ],
+    "ClinicalImpression": [
+      {
+        "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-clinical-impression",
+        "title": "ONC Nursing Clinical Impression"
+      }
+    ],
+    "Goal": [
+      {
+        "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal",
+        "title": "ONC Nursing Goal"
+      }
+    ],
     "Procedure": [
       {
         "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-intervention",
-        "title": "Nursing Intervention"
+        "title": "ONC Nursing Intervention"
       }
     ],
     "Condition": [
       {
         "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-problem",
         "title": "Nursing Problem"
-      }
-    ],
-    "Goal": [
-      {
-        "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-goal",
-        "title": "Patient Goal"
       }
     ]
   },

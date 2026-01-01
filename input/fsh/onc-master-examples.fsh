@@ -24,7 +24,7 @@ Usage: #example
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
 // FIX: Added the mandatory Nursing Category
-* category[nursing].coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
+* category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * valueCodeableConcept = http://snomed.info/sct#403154004 "Fitzpatrick skin type II"
 
 // ==============================================================================
@@ -36,7 +36,7 @@ Usage: #example
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
-* category[nursing].coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
+* category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * valueQuantity.value = 18
 * valueQuantity.unit = "{score}"
 * valueQuantity.system = "http://unitsofmeasure.org"
@@ -71,6 +71,7 @@ Usage: #example
 * component[frictionAndShear].valueQuantity.unit = "{score}"
 * component[frictionAndShear].valueQuantity.system = "http://unitsofmeasure.org"
 * component[frictionAndShear].valueQuantity.code = #1
+* hasMember[skinTone] = Reference(observation-skin-tone)
 
 
 // ==============================================================================
@@ -85,12 +86,16 @@ Usage: #example
 * code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#risk-falls "Risk of falls"
 
 Instance: example-patient-goal
-InstanceOf: ONCPatientGoal
+InstanceOf: ONCNursingGoal
 Usage: #example
 * lifecycleStatus = #active
 * subject = Reference(patient-example-jane)
 * description.text = "Patient will remain free from falls."
 * addresses = Reference(example-nursing-problem)
+* target.measure = http://loinc.org#88020-3 "Functional status"
+* target.detailCodeableConcept = http://snomed.info/sct#385652002 "Objective achieved"
+* target.dueDate = "2025-12-31"
+
 
 Instance: example-nursing-intervention
 InstanceOf: ONCNursingIntervention
@@ -107,7 +112,6 @@ Usage: #example
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
-* category[nursing].coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = http://snomed.info/sct#370996005 "Patient condition resolved"
-* valueCodeableConcept = http://snomed.info/sct#370996005 "Patient condition resolved"
-* extension[goalReference].valueReference = Reference(example-patient-goal)
+* category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
+* valueCodeableConcept = http://snomed.info/sct#385652002 "Objective achieved"
+* focus = Reference(example-patient-goal)
