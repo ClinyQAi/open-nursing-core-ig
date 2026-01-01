@@ -37,7 +37,7 @@ Id: onc-catheter-care
 Title: "Catheter Care"
 Description: "Documentation of catheter site care and status."
 * code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#catheter-care
-* value[x] only String or CodeableConcept
+* value[x] only string or CodeableConcept
 
 // -----------------------------------------------------------------------------
 // 2. Eating and Drinking
@@ -64,7 +64,7 @@ Id: onc-dietary-requirements
 Title: "Dietary Requirements"
 Description: "Documentation of specific dietary needs (e.g. textural modification, cultural)."
 * code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#dietary-requirements
-* value[x] only CodeableConcept or String
+* value[x] only CodeableConcept or string
 
 // -----------------------------------------------------------------------------
 // 3. Mobility
