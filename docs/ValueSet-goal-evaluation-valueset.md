@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset | *Version*:0.1.0 |
-| Draft as of 2025-12-26 | *Computable Name*:GoalEvaluationValueSet |
+| Draft as of 2026-01-01 | *Computable Name*:GoalEvaluationValueSet |
 
  
 Value set for evaluating patient goal outcomes 
 
  **References** 
 
-* [Goal Evaluation](StructureDefinition-onc-goal-evaluation.md)
+* [ONC Goal Evaluation](StructureDefinition-onc-goal-evaluation.md)
 
 ### Logical Definition (CLD)
 
@@ -51,7 +51,7 @@ Value set for evaluating patient goal outcomes
   "title" : "Goal Evaluation Value Set",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-26T15:22:58+00:00",
+  "date" : "2026-01-01T13:37:23+00:00",
   "description" : "Value set for evaluating patient goal outcomes",
   "compose" : {
     "include" : [
@@ -59,16 +59,24 @@ Value set for evaluating patient goal outcomes
         "system" : "http://snomed.info/sct",
         "concept" : [
           {
-            "code" : "370996005",
-            "display" : "Patient condition resolved"
+            "code" : "385652002",
+            "display" : "Objective achieved"
           },
           {
-            "code" : "385634002",
-            "display" : "Worsened"
+            "code" : "385651009",
+            "display" : "Objective not achieved"
           },
           {
-            "code" : "118222006",
-            "display" : "General finding of observation of patient"
+            "code" : "255609007",
+            "display" : "Partial achievement"
+          },
+          {
+            "code" : "723510000",
+            "display" : "Sustained improvement"
+          },
+          {
+            "code" : "260388008",
+            "display" : "Worsening"
           }
         ]
       }

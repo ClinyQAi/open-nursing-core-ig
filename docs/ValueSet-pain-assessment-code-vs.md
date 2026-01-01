@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/pain-assessment-code-vs | *Version*:0.1.0 |
-| Draft as of 2025-12-26 | *Computable Name*:PainAssessmentCodeValueSet |
+| Draft as of 2026-01-01 | *Computable Name*:PainAssessmentCodeValueSet |
 
  
 LOINC codes for pain severity assessment 
@@ -50,7 +50,7 @@ LOINC codes for pain severity assessment
   "name" : "PainAssessmentCodeValueSet",
   "title" : "Pain Assessment Code Value Set",
   "status" : "draft",
-  "date" : "2025-12-26T15:22:58+00:00",
+  "date" : "2026-01-01T13:37:23+00:00",
   "description" : "LOINC codes for pain severity assessment",
   "compose" : {
     "include" : [

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-news2-subscore | *Version*:0.1.0 |
-| Draft as of 2025-12-26 | *Computable Name*:ONCNEWS2Subscore |
+| Draft as of 2026-01-01 | *Computable Name*:ONCNEWS2Subscore |
 
  
 Individual parameter sub-score for NEWS2 (0-3 for most parameters). References the related vital sign observation. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-news2-subscore.c
   "name" : "ONCNEWS2Subscore",
   "title" : "NEWS2 Sub-Score",
   "status" : "draft",
-  "date" : "2025-12-26T15:22:58+00:00",
+  "date" : "2026-01-01T13:37:23+00:00",
   "description" : "Individual parameter sub-score for NEWS2 (0-3 for most parameters). References the related vital sign observation.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

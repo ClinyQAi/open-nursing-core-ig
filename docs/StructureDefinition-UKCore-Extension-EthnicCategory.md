@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/UKCore-Extension-EthnicCategory | *Version*:0.1.0 |
-| Draft as of 2025-12-26 | *Computable Name*:UKCoreEthnicCategory |
+| Draft as of 2026-01-01 | *Computable Name*:UKCoreEthnicCategory |
 
 An extension to record the ethnic category of a patient, as per UK Core standards.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-UKCore-Extension-Eth
   "name" : "UKCoreEthnicCategory",
   "title" : "UK Core Ethnic Category",
   "status" : "draft",
-  "date" : "2025-12-26T15:22:58+00:00",
+  "date" : "2026-01-01T13:37:23+00:00",
   "description" : "An extension to record the ethnic category of a patient, as per UK Core standards.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

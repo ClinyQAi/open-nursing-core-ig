@@ -1,0 +1,88 @@
+{
+  "resourceType" : "Observation",
+  "id" : "example-abbey-pain",
+  "meta" : {
+    "profile" : ["https://fhir.clinyq.ai/StructureDefinition/onc-abbey-pain-scale"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation example-abbey-pain</b></p><a name=\"example-abbey-pain\"> </a><a name=\"hcexample-abbey-pain\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onc-abbey-pain-scale.html\">Abbey Pain Scale</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category exam}\">Exam</span></p><p><b>code</b>: <span title=\"Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes abbey-score}\">Abbey Pain Scale Score</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-jane.html\">Jane Doe  Female, DoB Unknown</a></p><p><b>performer</b>: <a href=\"Practitioner-practitioner-example.html\">Practitioner Nightingale </a></p><p><b>value</b>: 2 {score}</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes abbey-vocalization}\">Vocalization</span></p><p><b>value</b>: 0</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes abbey-facial-expression}\">Facial Expression</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes abbey-body-language}\">Body Language</span></p><p><b>value</b>: 0</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes abbey-behavioral-change}\">Behavioral Change</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes abbey-psychological-change}\">Psychological Change</span></p><p><b>value</b>: 0</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes abbey-physical-changes}\">Physical Changes</span></p><p><b>value</b>: 0</p></blockquote></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "exam"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+      "code" : "abbey-score"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/patient-example-jane"
+  },
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-example"
+  }],
+  "valueQuantity" : {
+    "value" : 2,
+    "unit" : "{score}"
+  },
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "code" : "abbey-vocalization"
+      }]
+    },
+    "valueInteger" : 0
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "code" : "abbey-facial-expression"
+      }]
+    },
+    "valueInteger" : 1
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "code" : "abbey-body-language"
+      }]
+    },
+    "valueInteger" : 0
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "code" : "abbey-behavioral-change"
+      }]
+    },
+    "valueInteger" : 1
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "code" : "abbey-psychological-change"
+      }]
+    },
+    "valueInteger" : 0
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "code" : "abbey-physical-changes"
+      }]
+    },
+    "valueInteger" : 0
+  }]
+}

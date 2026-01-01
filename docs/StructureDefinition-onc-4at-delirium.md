@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-4at-delirium | *Version*:0.1.0 |
-| Draft as of 2025-12-26 | *Computable Name*:ONC4ATDelirium |
+| Draft as of 2026-01-01 | *Computable Name*:ONC4ATDelirium |
 
  
 Rapid clinical test for delirium (4AT) comprising Alertness, AMT4, Attention, and Acute Change/Fluctuating Course. A total score of 4 or more suggests possible delirium. 
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Examples for this Profile: [Observation/example-4at-delirium](Observation-example-4at-delirium.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/onc-4at-delirium)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-4at-delirium.csv
   "name" : "ONC4ATDelirium",
   "title" : "4AT Delirium Assessment",
   "status" : "draft",
-  "date" : "2025-12-26T15:22:58+00:00",
+  "date" : "2026-01-01T13:37:23+00:00",
   "description" : "Rapid clinical test for delirium (4AT) comprising Alertness, AMT4, Attention, and Acute Change/Fluctuating Course. A total score of 4 or more suggests possible delirium.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

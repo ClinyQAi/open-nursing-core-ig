@@ -2,6 +2,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
@@ -11,7 +12,7 @@
   fhir:id [ fhir:v "onc-goal-evaluation"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition onc-goal-evaluation</b></p><a name=\"onc-goal-evaluation\"> </a><a name=\"hconc-goal-evaluation\"> </a><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onc-goal-evaluation-definitions.html#Observation\">Observation</a><a name=\"Observation\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-onc-nursing-assessment.html\">ONCNursingAssessment</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Measurements and simple assertions</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onc-goal-evaluation-definitions.html#Observation.extension\">Slices for extension</a><a name=\"Observation.extension\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">Slice: </span>Unordered, Open by value:url</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck124.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onc-goal-evaluation-definitions.html#Observation.extension:goalReference\" title=\"Extension URL = https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/observation-goal-reference\">extension:goalReference</a><a name=\"Observation.extension.2\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-onc-patient-goal.html\">Patient Goal</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Observation Goal Reference</span><br/><span style=\"font-weight:bold\">URL: </span><a href=\"StructureDefinition-observation-goal-reference.html\">https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/observation-goal-reference</a></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onc-goal-evaluation-definitions.html#Observation.code\">code</a><a name=\"Observation.code\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Type of observation (code / type)</span><br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-goal-evaluation-valueset.html\" title=\"https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset\" class=\"binding\">Goal Evaluation Value Set</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition onc-goal-evaluation</b></p><a name=\"onc-goal-evaluation\"> </a><a name=\"hconc-goal-evaluation\"> </a><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onc-goal-evaluation-definitions.html#Observation\">Observation</a><a name=\"Observation\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Measurements and simple assertions</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onc-goal-evaluation-definitions.html#Observation.extension\">Slices for extension</a><a name=\"Observation.extension\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">Slice: </span>Unordered, Open by value:url</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck124.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onc-goal-evaluation-definitions.html#Observation.extension:goalReference\" title=\"Extension URL = https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/observation-goal-reference\">extension:goalReference</a><a name=\"Observation.extension.2\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-onc-nursing-goal.html\">ONC Nursing Goal</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Observation Goal Reference</span><br/><span style=\"font-weight:bold\">URL: </span><a href=\"StructureDefinition-observation-goal-reference.html\">https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/observation-goal-reference</a></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onc-goal-evaluation-definitions.html#Observation.status\">status</a><a name=\"Observation.status\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">registered | preliminary | final | amended +</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onc-goal-evaluation-definitions.html#Observation.code\">code</a><a name=\"Observation.code\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Type of observation (code / type)</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">At least the following</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#CodeableConcept.coding\">coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Code defined by a terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">(Complex)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.system\">system</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identity of the terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">http://snomed.info/sct</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Symbol in syntax defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">390906007</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.display\">display</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Representation defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">Follow-up assessment</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onc-goal-evaluation-definitions.html#Observation.subject\">subject</a><a name=\"Observation.subject\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Who and/or what the observation is about</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onc-goal-evaluation-definitions.html#Observation.focus\">focus</a><a name=\"Observation.focus\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-onc-nursing-goal.html\">ONC Nursing Goal</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">What the observation is about, when it is not about the subject of record</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onc-goal-evaluation-definitions.html#Observation.value[x]\">value[x]</a><a name=\"Observation.value_x_\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Actual result</span><br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-goal-evaluation-valueset.html\" title=\"https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset\" class=\"binding\">Goal Evaluation Value Set</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onc-goal-evaluation-definitions.html#Observation.note\">note</a><a name=\"Observation.note\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span>..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Annotation\">Annotation</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Comments about the observation</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onc-goal-evaluation-definitions.html#Observation.derivedFrom\">derivedFrom</a><a name=\"Observation.derivedFrom\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Related measurements the observation is made from</span></td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-goal-evaluation"^^xsd:anyURI ;
@@ -19,10 +20,10 @@
   ] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "ONCGoalEvaluation"] ; # 
-  fhir:title [ fhir:v "Goal Evaluation"] ; # 
+  fhir:title [ fhir:v "ONC Goal Evaluation"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-12-26T15:22:58+00:00"^^xsd:dateTime] ; # 
-  fhir:description [ fhir:v "Evaluation of patient goal outcomes and nursing intervention effectiveness. Assesses whether goals have been met, partially met, or not met. Part of the ADPIE framework's Evaluation phase."] ; # 
+  fhir:date [ fhir:v "2026-01-01T13:37:23+00:00"^^xsd:dateTime] ; # 
+  fhir:description [ fhir:v "Explicit evaluation of whether a nursing goal was achieved, closing the ADPIE loop."] ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
   fhir:mapping ( [
      fhir:identity [ fhir:v "workflow" ] ;
@@ -74,8 +75,8 @@
      fhir:l fhir:Observation
   ] ; # 
   fhir:baseDefinition [
-     fhir:v "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment"^^xsd:anyURI ;
-     fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment>
+     fhir:v "http://hl7.org/fhir/StructureDefinition/Observation"^^xsd:anyURI ;
+     fhir:l <http://hl7.org/fhir/StructureDefinition/Observation>
   ] ; # 
   fhir:derivation [ fhir:v "constraint"] ; # 
   fhir:snapshot [
@@ -86,7 +87,7 @@
        ] ;
        fhir:value [
          a fhir:String ;
-         fhir:v "0.1.0"
+         fhir:v "4.0.1"
        ]
      ] ) ;
      fhir:element ( [
@@ -443,7 +444,7 @@
        ] ;
        fhir:short [ fhir:v "Extension" ] ;
        fhir:definition [ fhir:v "An Extension" ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [
          fhir:path [ fhir:v "DomainResource.extension" ] ;
@@ -484,8 +485,8 @@
        fhir:path [ fhir:v "Observation.extension" ] ;
        fhir:sliceName [ fhir:v "goalReference" ] ;
        fhir:short [ fhir:v "Observation Goal Reference" ] ;
-       fhir:definition [ fhir:v "Extension to link goal evaluation observations to the patient goals being evaluated. Enables tracking of goal progress and outcomes over time." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:definition [ fhir:v "Extension to link goal evaluation observations to the patient goals being evaluated." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
          fhir:path [ fhir:v "DomainResource.extension" ] ;
@@ -786,6 +787,7 @@
            fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
+       fhir:mustSupport [ fhir:v true ] ;
        fhir:isModifier [ fhir:v true ] ;
        fhir:isModifierReason [ fhir:v "This element is labeled as a modifier because it is a status element that contains status entered-in-error which means that the resource should not be treated as valid" ] ;
        fhir:isSummary [ fhir:v true ] ;
@@ -826,19 +828,11 @@
      ] [
        fhir:id [ fhir:v "Observation.category" ] ;
        fhir:path [ fhir:v "Observation.category" ] ;
-       fhir:slicing [
-         fhir:discriminator ( [
-           fhir:type [ fhir:v "pattern" ] ;
-           fhir:path [ fhir:v "$this" ]
-         ] ) ;
-         fhir:ordered [ fhir:v false ] ;
-         fhir:rules [ fhir:v "open" ]
-       ] ;
        fhir:short [ fhir:v "Classification of  type of observation" ] ;
        fhir:definition [ fhir:v "A code that classifies the general type of observation being made." ] ;
        fhir:comment [ fhir:v "In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set." ] ;
        fhir:requirements [ fhir:v "Used for filtering what observations are retrieved and displayed." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [
          fhir:path [ fhir:v "Observation.category" ] ;
@@ -862,76 +856,6 @@
            fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isModifier [ fhir:v false ] ;
-       fhir:isSummary [ fhir:v false ] ;
-       fhir:binding [
-         fhir:extension ( [
-           fhir:url [
-             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
-             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
-           ] ;
-           fhir:value [
-             a fhir:String ;
-             fhir:v "ObservationCategory"
-           ]
-         ] ) ;
-         fhir:strength [ fhir:v "preferred" ] ;
-         fhir:description [ fhir:v "Codes for high level observation categories." ] ;
-         fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/observation-category|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/ValueSet/observation-category?version=4.0.1>
-         ]
-       ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "w5" ] ;
-         fhir:map [ fhir:v "FiveWs.class" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v ".outboundRelationship[typeCode=\"COMP].target[classCode=\"LIST\", moodCode=\"EVN\"].code" ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "Observation.category:nursing" ] ;
-       fhir:path [ fhir:v "Observation.category" ] ;
-       fhir:sliceName [ fhir:v "nursing" ] ;
-       fhir:short [ fhir:v "Classification of  type of observation" ] ;
-       fhir:definition [ fhir:v "A code that classifies the general type of observation being made." ] ;
-       fhir:comment [ fhir:v "In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set." ] ;
-       fhir:requirements [ fhir:v "Used for filtering what observations are retrieved and displayed." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "Observation.category" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "*" ]
-       ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "CodeableConcept"^^xsd:anyURI ;
-           fhir:l fhir:CodeableConcept
-         ]
-       ] ) ;
-       fhir:pattern [
-         a fhir:CodeableConcept ;
-         fhir:coding ( [
-           fhir:system [
-             fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
-             fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
-           ] ;
-           fhir:code [ fhir:v "survey" ]
-         ] )
-       ] ;
-       fhir:constraint ( [
-         fhir:key [ fhir:v "ele-1" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
-         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
-         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
-         fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ] ) ;
-       fhir:mustSupport [ fhir:v true ] ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:binding [
@@ -980,6 +904,18 @@
            fhir:l fhir:CodeableConcept
          ]
        ] ) ;
+       fhir:pattern [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:390906007 ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:l <http://snomed.info/sct>
+           ] ;
+           fhir:code [ fhir:v "390906007" ] ;
+           fhir:display [ fhir:v "Follow-up assessment" ]
+         ] )
+       ] ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -994,10 +930,21 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
-         fhir:strength [ fhir:v "required" ] ;
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
+           fhir:value [
+             a fhir:String ;
+             fhir:v "ObservationCode"
+           ]
+         ] ) ;
+         fhir:strength [ fhir:v "example" ] ;
+         fhir:description [ fhir:v "Codes identifying names of simple observations." ] ;
          fhir:valueSet [
-           fhir:v "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset"^^xsd:anyURI ;
-           fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset>
+           fhir:v "http://hl7.org/fhir/ValueSet/observation-codes|4.0.1"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/ValueSet/observation-codes?version=4.0.1>
          ]
        ] ;
        fhir:mapping ( [
@@ -1039,17 +986,8 @@
            fhir:l fhir:Reference
          ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Patient|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Patient?version=4.0.1>
-         ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Group|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Group?version=4.0.1>
-         ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Device|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Device?version=4.0.1>
-         ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Location|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Location?version=4.0.1>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Patient"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Patient>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1087,8 +1025,8 @@
        fhir:short [ fhir:v "What the observation is about, when it is not about the subject of record" ] ;
        fhir:definition [ fhir:v "The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus observations in a mother's record.  The focus of an observation could also be an existing condition,  an intervention, the subject's diet,  another observation of the subject,  or a body structure such as tumor or implanted device.   An example use case would be using the Observation resource to capture whether the mother is trained to change her child's tracheostomy tube. In this example, the child is the patient of record and the mother is the focus." ] ;
        fhir:comment [ fhir:v "Typically, an observation is made about the subject - a patient, or group of patients, location, or device - and the distinction between the subject and what is directly measured for an observation is specified in the observation code itself ( e.g., \"Blood Glucose\") and does not need to be represented separately using this element.  Use `specimen` if a reference to a specimen is required.  If a code is required instead of a resource use either  `bodysite` for bodysites or the standard extension [focusCode](http://hl7.org/fhir/R4/extension-observation-focuscode.html)." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "*" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
        fhir:base [
          fhir:path [ fhir:v "Observation.focus" ] ;
          fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
@@ -1100,8 +1038,8 @@
            fhir:l fhir:Reference
          ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Resource|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Resource?version=4.0.1>
+           fhir:v "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal"^^xsd:anyURI ;
+           fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1115,6 +1053,7 @@
            fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
+       fhir:mustSupport [ fhir:v true ] ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
@@ -1291,8 +1230,8 @@
        fhir:short [ fhir:v "Who is responsible for the observation" ] ;
        fhir:definition [ fhir:v "Who was responsible for asserting the observed value as \"true\"." ] ;
        fhir:requirements [ fhir:v "May give a degree of confidence in the observation and also indicates where follow-up questions should be directed." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
        fhir:base [
          fhir:path [ fhir:v "Observation.performer" ] ;
          fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
@@ -1304,11 +1243,23 @@
            fhir:l fhir:Reference
          ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Practitioner>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Practitioner?version=4.0.1>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/PractitionerRole"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/PractitionerRole>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/PractitionerRole?version=4.0.1>
+         ] [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Organization?version=4.0.1>
+         ] [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/CareTeam|4.0.1"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/CareTeam?version=4.0.1>
+         ] [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Patient|4.0.1"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Patient?version=4.0.1>
+         ] [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/RelatedPerson?version=4.0.1>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1322,7 +1273,6 @@
            fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v true ] ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
@@ -1345,7 +1295,7 @@
        fhir:definition [ fhir:v "The information determined as a result of making the observation, if the information has a simple value." ] ;
        fhir:comment [ fhir:v "An observation may have; 1)  a single value here, 2)  both a value and a set of related or component values,  or 3)  only a set of related or component values. If a value is present, the datatype for this element should be determined by Observation.code.  A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](http://hl7.org/fhir/R4/observation.html#notes) below." ] ;
        fhir:requirements [ fhir:v "An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
          fhir:path [ fhir:v "Observation.value[x]" ] ;
@@ -1354,18 +1304,8 @@
        ] ;
        fhir:type ( [
          fhir:code [
-           fhir:v "Quantity"^^xsd:anyURI ;
-           fhir:l fhir:Quantity
-         ]
-       ] [
-         fhir:code [
            fhir:v "CodeableConcept"^^xsd:anyURI ;
            fhir:l fhir:CodeableConcept
-         ]
-       ] [
-         fhir:code [
-           fhir:v "string"^^xsd:anyURI ;
-           fhir:l fhir:string
          ]
        ] ) ;
        fhir:condition ( [ fhir:v "obs-7" ] ) ;
@@ -1380,9 +1320,15 @@
            fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v true ] ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ] ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset"^^xsd:anyURI ;
+           fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset>
+         ]
+       ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "sct-concept" ] ;
          fhir:map [ fhir:v "< 441742003 |Evaluation finding|" ]
@@ -1528,7 +1474,7 @@
        fhir:comment [ fhir:v "May include general statements about the observation, or statements about significant, unexpected or unreliable results values, or information about its source when relevant to its interpretation." ] ;
        fhir:requirements [ fhir:v "Need to be able to provide free text additional information." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "*" ] ;
+       fhir:max [ fhir:v "1" ] ;
        fhir:base [
          fhir:path [ fhir:v "Observation.note" ] ;
          fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
@@ -1551,6 +1497,7 @@
            fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
+       fhir:mustSupport [ fhir:v true ] ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
@@ -2314,23 +2261,8 @@
            fhir:l fhir:Reference
          ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DocumentReference|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/DocumentReference?version=4.0.1>
-         ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ImagingStudy|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/ImagingStudy?version=4.0.1>
-         ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Media|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Media?version=4.0.1>
-         ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse?version=4.0.1>
-         ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Observation|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Observation?version=4.0.1>
-         ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/MolecularSequence|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/MolecularSequence?version=4.0.1>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Observation"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Observation>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -2344,6 +2276,7 @@
            fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
+       fhir:mustSupport [ fhir:v true ] ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
@@ -2863,13 +2796,12 @@
          ] ) ;
          fhir:ordered [ fhir:v false ] ;
          fhir:rules [ fhir:v "open" ]
-       ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ]
+       ]
      ] [
        fhir:id [ fhir:v "Observation.extension:goalReference" ] ;
        fhir:path [ fhir:v "Observation.extension" ] ;
        fhir:sliceName [ fhir:v "goalReference" ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:type ( [
          fhir:code [
@@ -2883,8 +2815,62 @@
        ] ) ;
        fhir:mustSupport [ fhir:v true ]
      ] [
+       fhir:id [ fhir:v "Observation.status" ] ;
+       fhir:path [ fhir:v "Observation.status" ] ;
+       fhir:mustSupport [ fhir:v true ]
+     ] [
        fhir:id [ fhir:v "Observation.code" ] ;
        fhir:path [ fhir:v "Observation.code" ] ;
+       fhir:pattern [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:390906007 ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:l <http://snomed.info/sct>
+           ] ;
+           fhir:code [ fhir:v "390906007" ] ;
+           fhir:display [ fhir:v "Follow-up assessment" ]
+         ] )
+       ]
+     ] [
+       fhir:id [ fhir:v "Observation.subject" ] ;
+       fhir:path [ fhir:v "Observation.subject" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
+         fhir:targetProfile ( [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Patient"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Patient>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "Observation.focus" ] ;
+       fhir:path [ fhir:v "Observation.focus" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
+         fhir:targetProfile ( [
+           fhir:v "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal"^^xsd:anyURI ;
+           fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal>
+         ] )
+       ] ) ;
+       fhir:mustSupport [ fhir:v true ]
+     ] [
+       fhir:id [ fhir:v "Observation.value[x]" ] ;
+       fhir:path [ fhir:v "Observation.value[x]" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
+       ] ) ;
        fhir:binding [
          fhir:strength [ fhir:v "required" ] ;
          fhir:valueSet [
@@ -2892,6 +2878,25 @@
            fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset>
          ]
        ]
+     ] [
+       fhir:id [ fhir:v "Observation.note" ] ;
+       fhir:path [ fhir:v "Observation.note" ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:mustSupport [ fhir:v true ]
+     ] [
+       fhir:id [ fhir:v "Observation.derivedFrom" ] ;
+       fhir:path [ fhir:v "Observation.derivedFrom" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
+         fhir:targetProfile ( [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Observation"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Observation>
+         ] )
+       ] ) ;
+       fhir:mustSupport [ fhir:v true ]
      ] )
   ] . # 
 

@@ -8,49 +8,77 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ImplementationGuide/onc.ig | *Version*:0.1.0 |
-| Draft as of 2025-12-26 | *Computable Name*:OpenNursingCoreIG |
+| Draft as of 2026-01-01 | *Computable Name*:OpenNursingCoreIG |
 
 # Open Nursing Core FHIR Implementation Guide
 
 Welcome to the **Open Nursing Core FHIR Implementation Guide (ONC-IG)**.
 
-This Implementation Guide provides foundational FHIR R4 profiles for documenting the nursing process (ADPIE - Assessment, Diagnosis, Planning, Implementation, Evaluation), with a focus on **Safety** and **Equity** in nursing care.
+This IG provides **Standardized Nursing Data Models** for the NHS and beyond, focusing on the complete nursing process (ADPIE) and specialized care needs.
 
-## Overview
+## 🌟 Core Philosophy
 
-The ONC-IG defines standardized FHIR profiles for:
+* **Holistic**: Covers physical, mental, and social needs.
+* **Relational**: Captures "What Matters to Me" and patient stories.
+* **Equitable**: Includes Safe Skin Tone (Monk Scale) and Reasonable Adjustments.
 
-* **Patient Assessment** - Nursing observations and assessments
-* **Nursing Diagnosis** - Problem identification and categorization
-* **Patient Goals** - Goal setting and outcome evaluation
-* **Nursing Interventions** - Care activities and procedures
-* **Safety Assessments** - Braden Scale for pressure ulcer risk
-* **Equity Considerations** - Skin tone documentation for equitable care
+-------
 
-## Key Profiles
+## 📚 Profile Library
 
-| | |
-| :--- | :--- |
-| [ONC Nursing Assessment](StructureDefinition-onc-nursing-assessment.md) | Base profile for all nursing observations |
-| [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessment.md) | Pressure ulcer risk assessment |
-| [Nursing Problem](StructureDefinition-onc-nursing-problem.md) | Nursing diagnosis documentation |
-| [Patient Goal](StructureDefinition-onc-patient-goal.md) | Patient-centered goal setting |
-| [Nursing Intervention](StructureDefinition-onc-nursing-intervention.md) | Care activity documentation |
-| [Goal Evaluation](StructureDefinition-onc-goal-evaluation.md) | Outcome assessment |
-| [Skin Tone Observation](StructureDefinition-onc-skintone-observation.md) | Fitzpatrick skin type for equitable assessment |
+### 1. Foundation & Safety 🛡️
 
-## Getting Started
+Base profiles for standard nursing operations.
 
-* Browse the [Artifacts](artifacts.md) for all profiles, extensions, and examples
-* Download the [full package](package.tgz) for use in your FHIR server
+* [OncNursingAssessment](StructureDefinition-onc-nursing-assessment.md)
+* [OncNursingProblem](StructureDefinition-onc-nursing-problem.md) (Diagnosis)
+* [OncPatientGoal](StructureDefinition-onc-patient-goal.md)
+* [OncNursingIntervention](StructureDefinition-onc-nursing-intervention.md)
+* [Braden Scale](StructureDefinition-onc-braden-scale-assessment.md) (Pressure Ulcer Risk)
+* [Waterlow Score](StructureDefinition-onc-waterlow-score.md)
+* [NEWS2](StructureDefinition-onc-news2-score.md) (Deterioration)
 
-## License
+### 2. Relational & Inclusive Care ❤️
 
-This Implementation Guide is released under the MIT License.
+Capturing the person behind the patient.
 
-## Contact
+* [What Matters To Me](StructureDefinition-onc-what-matters.md)
+* [Patient Story](StructureDefinition-onc-patient-story.md)
+* [Reasonable Adjustment](StructureDefinition-onc-reasonable-adjustment.md) (Equality Act)
+* [Mental Capacity Assessment](StructureDefinition-onc-mental-capacity.md)
+* [Skin Tone Observation](StructureDefinition-onc-skintone-observation.md) (Monk/Fitzpatrick)
 
-For questions or contributions, visit our [GitHub repository](https://github.com/ClinyQAi/open-nursing-core-ig).
+### 3. Fundamental Care 💧
+
+The essentials of daily nursing care.
+
+* [Bristol Stool Chart](StructureDefinition-onc-bristol-stool-chart.md) (Elimination)
+* [Fluid Balance](StructureDefinition-onc-fluid-balance.md) (Hydration)
+* [Abbey Pain Scale](StructureDefinition-onc-abbey-pain-scale.md) (Non-verbal pain)
+* [Oral Health](StructureDefinition-onc-oral-health.md)
+* [Sleep Pattern](StructureDefinition-onc-sleep-pattern.md)
+
+### 4. Specialized & Mental Health 🧠
+
+Tools for Learning Disabilities, Mental Health, and Geriatrics.
+
+* [ABC Chart](StructureDefinition-onc-abc-chart.md) (Positive Behaviour Support)
+* [Seizure Record](StructureDefinition-onc-seizure-record.md) (Epilepsy)
+* [Clinical Frailty Scale](StructureDefinition-onc-clinical-frailty-scale.md)
+* [4AT Delirium Screen](StructureDefinition-onc-4at-delirium.md)
+* [Urinalysis](StructureDefinition-onc-urinalysis.md)
+
+-------
+
+## 🚀 Getting Started
+
+1. **Browse Artifacts**: See the[Artifacts Page](artifacts.md)for all JSON definitions.
+1. **Download Package**:`npm install @clinyqai/open-nursing-core-ig`
+1. **Contribute**: Visit[GitHub](https://github.com/ClinyQAi/open-nursing-core-ig).
+
+-------
+
+**Built with ❤️ by the Open Nursing Community**
 
 
 
@@ -65,7 +93,7 @@ For questions or contributions, visit our [GitHub repository](https://github.com
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "draft",
-  "date" : "2025-12-26T15:22:58+00:00",
+  "date" : "2026-01-01T13:37:23+00:00",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome.",
   "packageId" : "onc.ig",
   "license" : "MIT",
@@ -832,6 +860,20 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           }
         ],
         "reference" : {
+          "reference" : "StructureDefinition/onc-abbey-pain-scale"
+        },
+        "name" : "Abbey Pain Scale",
+        "description" : "Pain assessment for people with dementia or who cannot verbalise. Assesses 6 parameters: Vocalization, Facial Expression, Body Language, Behavioral Change, Physiological Change, Physical Changes. Total score determines pain severity (0-2 No pain, 3-7 Mild, 8-13 Moderate, 14+ Severe).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
           "reference" : "StructureDefinition/onc-acvpu"
         },
         "name" : "ACVPU Consciousness Level",
@@ -916,6 +958,20 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           }
         ],
         "reference" : {
+          "reference" : "StructureDefinition/onc-bristol-stool-chart"
+        },
+        "name" : "Bristol Stool Chart",
+        "description" : "Assessment of stool form using the Bristol Stool Chart (Types 1-7). Gold standard for bowel function assessment.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
           "reference" : "StructureDefinition/onc-clinical-frailty-scale"
         },
         "name" : "Clinical Frailty Scale (CFS)",
@@ -944,10 +1000,101 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           }
         ],
         "reference" : {
+          "reference" : "Observation/example-4at-delirium"
+        },
+        "name" : "example-4at-delirium",
+        "exampleCanonical" : "https://fhir.clinyq.ai/StructureDefinition/onc-4at-delirium"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/example-abbey-pain"
+        },
+        "name" : "example-abbey-pain",
+        "exampleCanonical" : "https://fhir.clinyq.ai/StructureDefinition/onc-abbey-pain-scale"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/example-abc-chart"
+        },
+        "name" : "example-abc-chart",
+        "exampleCanonical" : "https://fhir.clinyq.ai/StructureDefinition/onc-abc-chart"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/example-bristol-stool"
+        },
+        "name" : "example-bristol-stool",
+        "exampleCanonical" : "https://fhir.clinyq.ai/StructureDefinition/onc-bristol-stool-chart"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/example-clinical-frailty"
+        },
+        "name" : "example-clinical-frailty",
+        "exampleCanonical" : "https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/example-fluid-balance"
+        },
+        "name" : "example-fluid-balance",
+        "exampleCanonical" : "https://fhir.clinyq.ai/StructureDefinition/onc-fluid-balance"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
           "reference" : "Observation/example-goal-evaluation"
         },
         "name" : "example-goal-evaluation",
         "exampleCanonical" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-goal-evaluation"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/example-mental-capacity"
+        },
+        "name" : "example-mental-capacity",
+        "exampleCanonical" : "https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity"
       },
       {
         "extension" : [
@@ -979,6 +1126,19 @@ For questions or contributions, visit our [GitHub repository](https://github.com
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/example-oral-health"
+        },
+        "name" : "example-oral-health",
+        "exampleCanonical" : "https://fhir.clinyq.ai/StructureDefinition/onc-oral-health"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Goal"
           }
         ],
@@ -987,7 +1147,72 @@ For questions or contributions, visit our [GitHub repository](https://github.com
         },
         "name" : "example-patient-goal",
         "description" : "Patient will remain free from falls.",
-        "exampleCanonical" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-goal"
+        "exampleCanonical" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/example-patient-story"
+        },
+        "name" : "example-patient-story",
+        "exampleCanonical" : "https://fhir.clinyq.ai/StructureDefinition/onc-patient-story"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/example-reasonable-adjustment"
+        },
+        "name" : "example-reasonable-adjustment",
+        "exampleCanonical" : "https://fhir.clinyq.ai/StructureDefinition/onc-reasonable-adjustment"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/example-seizure-record"
+        },
+        "name" : "example-seizure-record",
+        "exampleCanonical" : "https://fhir.clinyq.ai/StructureDefinition/onc-seizure-record"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/example-urinalysis"
+        },
+        "name" : "example-urinalysis",
+        "exampleCanonical" : "https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/example-what-matters"
+        },
+        "name" : "example-what-matters",
+        "exampleCanonical" : "https://fhir.clinyq.ai/StructureDefinition/onc-what-matters"
       },
       {
         "extension" : [
@@ -1011,10 +1236,10 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/onc-glasgow-coma-scale"
+          "reference" : "StructureDefinition/onc-fluid-balance"
         },
-        "name" : "Glasgow Coma Scale",
-        "description" : "Glasgow Coma Scale (GCS) for assessing level of consciousness. Total score 3-15 with three required components: Eye (1-4), Verbal (1-5), Motor (1-6).",
+        "name" : "Fluid Balance",
+        "description" : "Assessment of fluid intake, output, and balance. Critical for renal function, hydration status, and heart failure monitoring.",
         "exampleBoolean" : false
       },
       {
@@ -1025,10 +1250,10 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/onc-goal-evaluation"
+          "reference" : "StructureDefinition/onc-glasgow-coma-scale"
         },
-        "name" : "Goal Evaluation",
-        "description" : "Evaluation of patient goal outcomes and nursing intervention effectiveness. Assesses whether goals have been met, partially met, or not met. Part of the ADPIE framework's Evaluation phase.",
+        "name" : "Glasgow Coma Scale",
+        "description" : "Glasgow Coma Scale (GCS) for assessing level of consciousness. Total score 3-15 with three required components: Eye (1-4), Verbal (1-5), Motor (1-6).",
         "exampleBoolean" : false
       },
       {
@@ -1043,6 +1268,20 @@ For questions or contributions, visit our [GitHub repository](https://github.com
         },
         "name" : "Goal Evaluation Value Set",
         "description" : "Value set for evaluating patient goal outcomes",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/onc-goal-target-measure-vs"
+        },
+        "name" : "Goal Target Measure ValueSet",
+        "description" : "Codes used for goal target measures",
         "exampleBoolean" : false
       },
       {
@@ -1112,7 +1351,7 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           "reference" : "StructureDefinition/intervention-goal-reference"
         },
         "name" : "Intervention Goal Reference",
-        "description" : "Extension to link nursing interventions to the patient goals they are intended to achieve. Supports goal-directed care planning and intervention tracking.",
+        "description" : "Extension to link nursing interventions to the patient goals they are intended to achieve.",
         "exampleBoolean" : false
       },
       {
@@ -1243,6 +1482,19 @@ For questions or contributions, visit our [GitHub repository](https://github.com
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "PlanDefinition"
+          }
+        ],
+        "reference" : {
+          "reference" : "PlanDefinition/news2-escalation-plan"
+        },
+        "name" : "NEWS2 Escalation Protocol",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:resource"
           }
         ],
@@ -1279,20 +1531,6 @@ For questions or contributions, visit our [GitHub repository](https://github.com
         },
         "name" : "NEWS2 Sub-Score Codes",
         "description" : "SNOMED codes for NEWS2 sub-scores",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/onc-nursing-intervention"
-        },
-        "name" : "Nursing Intervention",
-        "description" : "Nursing intervention or procedure performed to achieve patient goals. Documents actions taken by nursing staff to address identified problems and achieve desired outcomes. Part of the ADPIE framework's Implementation phase.",
         "exampleBoolean" : false
       },
       {
@@ -1341,6 +1579,20 @@ For questions or contributions, visit our [GitHub repository](https://github.com
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/onc-prognosis-vs"
+        },
+        "name" : "Nursing Prognosis ValueSet",
+        "description" : "Prognosis codes for clinical impression",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:extension"
           }
         ],
@@ -1348,7 +1600,7 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           "reference" : "StructureDefinition/observation-goal-reference"
         },
         "name" : "Observation Goal Reference",
-        "description" : "Extension to link goal evaluation observations to the patient goals being evaluated. Enables tracking of goal progress and outcomes over time.",
+        "description" : "Extension to link goal evaluation observations to the patient goals being evaluated.",
         "exampleBoolean" : false
       },
       {
@@ -1385,10 +1637,80 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           }
         ],
         "reference" : {
+          "reference" : "StructureDefinition/onc-goal-evaluation"
+        },
+        "name" : "ONC Goal Evaluation",
+        "description" : "Explicit evaluation of whether a nursing goal was achieved, closing the ADPIE loop.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Library"
+          }
+        ],
+        "reference" : {
+          "reference" : "Library/onc-news2-cql"
+        },
+        "name" : "ONC NEWS2 Auto-Calculation Logic",
+        "description" : "Logic library for calculating National Early Warning Score 2 (NEWS2) from FHIR Observations.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
           "reference" : "StructureDefinition/onc-nhs-patient"
         },
         "name" : "ONC NHS Patient",
         "description" : "A patient profile for use in NHS nursing contexts with ethnic category extension.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-nursing-clinical-impression"
+        },
+        "name" : "ONC Nursing Clinical Impression",
+        "description" : "Nurse's synthesis of patient progress against care plan, aggregating multiple goal evaluations.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-nursing-goal"
+        },
+        "name" : "ONC Nursing Goal",
+        "description" : "Patient-centered goal with mandatory evaluation requirements. Serves as the 'spine' of the CarePlan, linking problems to outcomes.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-nursing-intervention"
+        },
+        "name" : "ONC Nursing Intervention",
+        "description" : "Nursing intervention performed to achieve patient goals. Part of ADPIE Implementation phase.",
         "exampleBoolean" : false
       },
       {
@@ -1417,6 +1739,20 @@ For questions or contributions, visit our [GitHub repository](https://github.com
         },
         "name" : "Open Nursing Core Assessment",
         "description" : "Base profile for nursing assessment observations conforming to UK Core standards. Captures structured nursing assessment data as part of the ADPIE (Assessment, Diagnosis, Planning, Implementation, Evaluation) nursing process framework. Used as parent for specialized assessments like NEWS2, Braden Scale, and clinical observations.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-oral-health"
+        },
+        "name" : "Oral Health Assessment",
+        "description" : "Assessment of oral cavity health. Critical for prevention of pneumonia in frail elderly and maintaining nutrition/hydration.",
         "exampleBoolean" : false
       },
       {
@@ -1469,20 +1805,6 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/onc-patient-goal"
-        },
-        "name" : "Patient Goal",
-        "description" : "Patient-centered goal established in response to identified nursing problems. Defines measurable outcomes and addresses specific nursing diagnoses. Part of the ADPIE framework's Planning phase.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
           "reference" : "StructureDefinition/onc-patient-story"
         },
         "name" : "Patient Story",
@@ -1501,6 +1823,34 @@ For questions or contributions, visit our [GitHub repository](https://github.com
         },
         "name" : "patient-example-jane",
         "exampleCanonical" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nhs-patient"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-abc-chart"
+        },
+        "name" : "PBS ABC Chart",
+        "description" : "Antecedent-Behaviour-Consequence (ABC) Chart for recording behaviours of concern. Fundamental tool in Positive Behaviour Support (PBS) for Learning Disabilities.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/onc-pbs-function-vs"
+        },
+        "name" : "PBS Behaviour Function ValueSet",
+        "description" : "Common functions of behaviour (SEAT)",
+        "exampleBoolean" : false
       },
       {
         "extension" : [
@@ -1607,10 +1957,38 @@ For questions or contributions, visit our [GitHub repository](https://github.com
           }
         ],
         "reference" : {
+          "reference" : "StructureDefinition/onc-seizure-record"
+        },
+        "name" : "Seizure Record",
+        "description" : "Record of a specific seizure event, including type, duration, triggers, and recovery phases. Essential for epilepsy management and identifying patterns.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
           "reference" : "StructureDefinition/onc-skintone-observation"
         },
         "name" : "Skin Tone Observation",
         "description" : "Observation of patient skin tone using the Fitzpatrick skin type classification. Supports equitable care by enabling skin tone-aware clinical decision making, particularly for conditions that present differently across skin tones (e.g., pressure ulcers, cyanosis).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-sleep-pattern"
+        },
+        "name" : "Sleep Pattern",
+        "description" : "Observation of sleep quality, duration, and disturbances. Sleep pattern disturbance is a key indicator for delirium and general wellbeing.",
         "exampleBoolean" : false
       },
       {
@@ -1625,6 +2003,20 @@ For questions or contributions, visit our [GitHub repository](https://github.com
         },
         "name" : "UK Core Ethnic Category",
         "description" : "An extension to record the ethnic category of a patient, as per UK Core standards.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-urinalysis"
+        },
+        "name" : "Urinalysis",
+        "description" : "Point-of-care urine dipstick test results. Used to screen for urinary tract infection (UTI), diabetes (glucose/ketones), and kidney health.",
         "exampleBoolean" : false
       },
       {

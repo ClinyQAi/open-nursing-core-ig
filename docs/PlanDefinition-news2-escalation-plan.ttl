@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://clinyqai.github.io/open-nursing-core-ig/PlanDefinition/news2-escalation-plan> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "news2-escalation-plan"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<div>\n    <table class=\"grid dict\">\n        \n        <tr>\n            <th scope=\"row\"><b>Id: </b></th>\n            <td style=\"padding-left: 4px;\">news2-escalation-plan</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Url: </b></th>\n            <td style=\"padding-left: 4px;\"><a href=\"PlanDefinition-news2-escalation-plan.html\">NEWS2 Escalation Protocol</a></td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Version: </b></th>\n            <td style=\"padding-left: 4px;\">0.1.0</td>\n        </tr>\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Title: </b></th>\n            <td style=\"padding-left: 4px;\">NEWS2 Escalation Protocol</td>\n        </tr>\n        \n\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Type: </b></th>\n            <td style=\"padding-left: 4px;\">\n                \n                    \n                        \n                        <p style=\"margin-bottom: 5px;\">\n                            <b>system: </b> <span><a href=\"http://terminology.hl7.org/7.0.1/CodeSystem-plan-definition-type.html\">http://terminology.hl7.org/CodeSystem/plan-definition-type</a></span>\n                        </p>\n                        \n                        \n                        <p style=\"margin-bottom: 5px;\">\n                            <b>code: </b> <span>clinical-protocol</span>\n                        </p>\n                        \n                        \n                    \n                \n                \n            </td>\n        </tr>\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Date: </b></th>\n            <td style=\"padding-left: 4px;\">2026-01-01 13:37:23+0000</td>\n        </tr>\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Libraries: </b></th>\n            <td style=\"padding-left: 4px;\">\n                <table class=\"grid-dict\">\n                    \n                    <tr>\n                        <td><a href=\"Library-onc-news2-cql.html\">ONC NEWS2 Auto-Calculation Logic</a></td>\n                    </tr>\n                    \n                </table>\n            </td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Actions: </b></th>\n            <td style=\"padding-left: 4px;\">\n                <table class=\"grid-dict\">\n                    \n                    <tr>\n                        <td>\n                            \n                            <b> High Clinical Risk - Emergency Response:</b> NEWS2 Score of 7 or more indicates high clinical risk. Urgent response required.\n                            \n                            <br/>\n                            \n                            <b>When:</b>\n                            \n                            <i>Named Event:</i> news2-score-calculated\n                            <br/>\n                            \n                            \n                            \n                            <b>If:</b>\n                            \n                            <i>Applicability:</i>\n                            \n                            <i>(Clinical Risk Category = 'High')</i>\n                            <br/>\n                            \n                            \n                            \n                            \n                            \n                        </td>\n                    </tr>\n                    \n                </table>\n            </td>\n        </tr>\n        \n    </table>\n</div>\n</div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://opennursingcore.org/PlanDefinition/news2-escalation"^^xsd:anyURI ;
+     fhir:l <http://opennursingcore.org/PlanDefinition/news2-escalation>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "NEWS2_Escalation_Protocol"] ; # 
+  fhir:title [ fhir:v "NEWS2 Escalation Protocol"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/plan-definition-type"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/plan-definition-type>
+       ] ;
+       fhir:code [ fhir:v "clinical-protocol" ]
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-01-01T13:37:23+00:00"^^xsd:dateTime] ; # 
+  fhir:library ( [
+     fhir:v "http://opennursingcore.org/Library/ONC-NEWS2-CQL"^^xsd:anyURI ;
+     fhir:l <http://opennursingcore.org/Library/ONC-NEWS2-CQL>
+  ] ) ; # 
+  fhir:action ( [
+     fhir:title [ fhir:v "High Clinical Risk - Emergency Response" ] ;
+     fhir:description [ fhir:v "NEWS2 Score of 7 or more indicates high clinical risk. Urgent response required." ] ;
+     fhir:code ( [
+       fhir:coding ( [
+         a sct:225365006 ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
+         fhir:code [ fhir:v "225365006" ] ;
+         fhir:display [ fhir:v "Care plan" ]
+       ] )
+     ] ) ;
+     fhir:trigger ( [
+       fhir:type [ fhir:v "named-event" ] ;
+       fhir:name [ fhir:v "news2-score-calculated" ]
+     ] ) ;
+     fhir:condition ( [
+       fhir:kind [ fhir:v "applicability" ] ;
+       fhir:expression [
+         fhir:language [ fhir:v "text/cql" ] ;
+         fhir:expression [ fhir:v "Clinical Risk Category = 'High'" ]
+       ]
+     ] ) ;
+     fhir:dynamicValue ( [
+       fhir:path [ fhir:v "description" ] ;
+       fhir:expression [
+         fhir:language [ fhir:v "text/cql" ] ;
+         fhir:expression [ fhir:v "'URGENT: NEWS2 Score is ' + ToString(\"NEWS2 Total Score\") + '. Immediate medical review required.'" ]
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

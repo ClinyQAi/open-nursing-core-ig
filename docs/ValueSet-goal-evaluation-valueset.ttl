@@ -11,7 +11,7 @@
   fhir:id [ fhir:v "goal-evaluation-valueset"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet goal-evaluation-valueset</b></p><a name=\"goal-evaluation-valueset\"> </a><a name=\"hcgoal-evaluation-valueset\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/370996005\">370996005</a></td><td>Patient condition resolved</td></tr><tr><td><a href=\"http://snomed.info/id/385634002\">385634002</a></td><td>Worsened</td></tr><tr><td><a href=\"http://snomed.info/id/118222006\">118222006</a></td><td>General finding of observation of patient</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet goal-evaluation-valueset</b></p><a name=\"goal-evaluation-valueset\"> </a><a name=\"hcgoal-evaluation-valueset\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/385652002\">385652002</a></td><td>Objective achieved</td></tr><tr><td><a href=\"http://snomed.info/id/385651009\">385651009</a></td><td>Objective not achieved</td></tr><tr><td><a href=\"http://snomed.info/id/255609007\">255609007</a></td><td>Partial achievement</td></tr><tr><td><a href=\"http://snomed.info/id/723510000\">723510000</a></td><td>Sustained improvement</td></tr><tr><td><a href=\"http://snomed.info/id/260388008\">260388008</a></td><td>Worsening</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset"^^xsd:anyURI ;
@@ -22,7 +22,7 @@
   fhir:title [ fhir:v "Goal Evaluation Value Set"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2025-12-26T15:22:58+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-01T13:37:23+00:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "Value set for evaluating patient goal outcomes"] ; # 
   fhir:compose [
      fhir:include ( [
@@ -31,14 +31,20 @@
          fhir:l <http://snomed.info/sct>
        ] ;
        fhir:concept ( [
-         fhir:code [ fhir:v "370996005" ] ;
-         fhir:display [ fhir:v "Patient condition resolved" ]
+         fhir:code [ fhir:v "385652002" ] ;
+         fhir:display [ fhir:v "Objective achieved" ]
        ] [
-         fhir:code [ fhir:v "385634002" ] ;
-         fhir:display [ fhir:v "Worsened" ]
+         fhir:code [ fhir:v "385651009" ] ;
+         fhir:display [ fhir:v "Objective not achieved" ]
        ] [
-         fhir:code [ fhir:v "118222006" ] ;
-         fhir:display [ fhir:v "General finding of observation of patient" ]
+         fhir:code [ fhir:v "255609007" ] ;
+         fhir:display [ fhir:v "Partial achievement" ]
+       ] [
+         fhir:code [ fhir:v "723510000" ] ;
+         fhir:display [ fhir:v "Sustained improvement" ]
+       ] [
+         fhir:code [ fhir:v "260388008" ] ;
+         fhir:display [ fhir:v "Worsening" ]
        ] )
      ] )
   ] . # 

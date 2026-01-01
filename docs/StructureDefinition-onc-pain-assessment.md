@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-pain-assessment | *Version*:0.1.0 |
-| Draft as of 2025-12-26 | *Computable Name*:ONCPainAssessment |
+| Draft as of 2026-01-01 | *Computable Name*:ONCPainAssessment |
 
  
 Pain severity assessment using the Numeric Rating Scale (0-10) 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-pain-assessment.
   "name" : "ONCPainAssessment",
   "title" : "Pain Assessment (NRS 0-10)",
   "status" : "draft",
-  "date" : "2025-12-26T15:22:58+00:00",
+  "date" : "2026-01-01T13:37:23+00:00",
   "description" : "Pain severity assessment using the Numeric Rating Scale (0-10)",
   "fhirVersion" : "4.0.1",
   "mapping" : [

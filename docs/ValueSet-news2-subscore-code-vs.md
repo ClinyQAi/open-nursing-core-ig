@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/news2-subscore-code-vs | *Version*:0.1.0 |
-| Draft as of 2025-12-26 | *Computable Name*:NEWS2SubscoreCodeValueSet |
+| Draft as of 2026-01-01 | *Computable Name*:NEWS2SubscoreCodeValueSet |
 
  
 SNOMED codes for NEWS2 sub-scores 
@@ -50,7 +50,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "name" : "NEWS2SubscoreCodeValueSet",
   "title" : "NEWS2 Sub-Score Codes",
   "status" : "draft",
-  "date" : "2025-12-26T15:22:58+00:00",
+  "date" : "2026-01-01T13:37:23+00:00",
   "description" : "SNOMED codes for NEWS2 sub-scores",
   "compose" : {
     "include" : [

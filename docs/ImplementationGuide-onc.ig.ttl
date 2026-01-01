@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "OpenNursingCoreIG"] ; # 
   fhir:title [ fhir:v "Open Nursing Core FHIR Implementation Guide (ONC-IG)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-12-26T15:22:58+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-01T13:37:23+00:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome."] ; # 
   fhir:packageId [ fhir:v "onc.ig"] ; # 
   fhir:license [ fhir:v "MIT"] ; # 
@@ -1391,6 +1391,27 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-abbey-pain-scale> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-abbey-pain-scale" ]
+       ] ;
+       fhir:name [ fhir:v "Abbey Pain Scale" ] ;
+       fhir:description [ fhir:v "Pain assessment for people with dementia or who cannot verbalise. Assesses 6 parameters: Vocalization, Facial Expression, Body Language, Behavioral Change, Physiological Change, Physical Changes. Total score determines pain severity (0-2 No pain, 3-7 Mild, 8-13 Moderate, 14+ Severe)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-acvpu> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-acvpu" ]
        ] ;
@@ -1517,6 +1538,27 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-bristol-stool-chart> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-bristol-stool-chart" ]
+       ] ;
+       fhir:name [ fhir:v "Bristol Stool Chart" ] ;
+       fhir:description [ fhir:v "Assessment of stool form using the Bristol Stool Chart (Types 1-7). Gold standard for bowel function assessment." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-clinical-frailty-scale> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-clinical-frailty-scale" ]
        ] ;
@@ -1559,6 +1601,132 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/example-4at-delirium> ;
+         fhir:reference [ fhir:v "Observation/example-4at-delirium" ]
+       ] ;
+       fhir:name [ fhir:v "example-4at-delirium" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-4at-delirium"^^xsd:anyURI ;
+         fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-4at-delirium>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/example-abbey-pain> ;
+         fhir:reference [ fhir:v "Observation/example-abbey-pain" ]
+       ] ;
+       fhir:name [ fhir:v "example-abbey-pain" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-abbey-pain-scale"^^xsd:anyURI ;
+         fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-abbey-pain-scale>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/example-abc-chart> ;
+         fhir:reference [ fhir:v "Observation/example-abc-chart" ]
+       ] ;
+       fhir:name [ fhir:v "example-abc-chart" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-abc-chart"^^xsd:anyURI ;
+         fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-abc-chart>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/example-bristol-stool> ;
+         fhir:reference [ fhir:v "Observation/example-bristol-stool" ]
+       ] ;
+       fhir:name [ fhir:v "example-bristol-stool" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-bristol-stool-chart"^^xsd:anyURI ;
+         fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-bristol-stool-chart>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/example-clinical-frailty> ;
+         fhir:reference [ fhir:v "Observation/example-clinical-frailty" ]
+       ] ;
+       fhir:name [ fhir:v "example-clinical-frailty" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale"^^xsd:anyURI ;
+         fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-clinical-frailty-scale>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/example-fluid-balance> ;
+         fhir:reference [ fhir:v "Observation/example-fluid-balance" ]
+       ] ;
+       fhir:name [ fhir:v "example-fluid-balance" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-fluid-balance"^^xsd:anyURI ;
+         fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-fluid-balance>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/example-goal-evaluation> ;
          fhir:reference [ fhir:v "Observation/example-goal-evaluation" ]
        ] ;
@@ -1567,6 +1735,27 @@
          a fhir:Canonical ;
          fhir:v "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-goal-evaluation"^^xsd:anyURI ;
          fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-goal-evaluation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/example-mental-capacity> ;
+         fhir:reference [ fhir:v "Observation/example-mental-capacity" ]
+       ] ;
+       fhir:name [ fhir:v "example-mental-capacity" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity"^^xsd:anyURI ;
+         fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity>
        ]
      ] [
        fhir:extension ( [
@@ -1618,6 +1807,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/example-oral-health> ;
+         fhir:reference [ fhir:v "Observation/example-oral-health" ]
+       ] ;
+       fhir:name [ fhir:v "example-oral-health" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-oral-health"^^xsd:anyURI ;
+         fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-oral-health>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "Goal"
          ]
        ] ) ;
@@ -1629,8 +1839,113 @@
        fhir:description [ fhir:v "Patient will remain free from falls." ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-goal"^^xsd:anyURI ;
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-goal>
+         fhir:v "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal"^^xsd:anyURI ;
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/example-patient-story> ;
+         fhir:reference [ fhir:v "Observation/example-patient-story" ]
+       ] ;
+       fhir:name [ fhir:v "example-patient-story" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-patient-story"^^xsd:anyURI ;
+         fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-patient-story>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/example-reasonable-adjustment> ;
+         fhir:reference [ fhir:v "Observation/example-reasonable-adjustment" ]
+       ] ;
+       fhir:name [ fhir:v "example-reasonable-adjustment" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-reasonable-adjustment"^^xsd:anyURI ;
+         fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-reasonable-adjustment>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/example-seizure-record> ;
+         fhir:reference [ fhir:v "Observation/example-seizure-record" ]
+       ] ;
+       fhir:name [ fhir:v "example-seizure-record" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-seizure-record"^^xsd:anyURI ;
+         fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-seizure-record>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/example-urinalysis> ;
+         fhir:reference [ fhir:v "Observation/example-urinalysis" ]
+       ] ;
+       fhir:name [ fhir:v "example-urinalysis" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis"^^xsd:anyURI ;
+         fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/example-what-matters> ;
+         fhir:reference [ fhir:v "Observation/example-what-matters" ]
+       ] ;
+       fhir:name [ fhir:v "example-what-matters" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-what-matters"^^xsd:anyURI ;
+         fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-what-matters>
        ]
      ] [
        fhir:extension ( [
@@ -1665,11 +1980,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-glasgow-coma-scale> ;
-         fhir:reference [ fhir:v "StructureDefinition/onc-glasgow-coma-scale" ]
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-fluid-balance> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-fluid-balance" ]
        ] ;
-       fhir:name [ fhir:v "Glasgow Coma Scale" ] ;
-       fhir:description [ fhir:v "Glasgow Coma Scale (GCS) for assessing level of consciousness. Total score 3-15 with three required components: Eye (1-4), Verbal (1-5), Motor (1-6)." ] ;
+       fhir:name [ fhir:v "Fluid Balance" ] ;
+       fhir:description [ fhir:v "Assessment of fluid intake, output, and balance. Critical for renal function, hydration status, and heart failure monitoring." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1686,11 +2001,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-goal-evaluation> ;
-         fhir:reference [ fhir:v "StructureDefinition/onc-goal-evaluation" ]
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-glasgow-coma-scale> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-glasgow-coma-scale" ]
        ] ;
-       fhir:name [ fhir:v "Goal Evaluation" ] ;
-       fhir:description [ fhir:v "Evaluation of patient goal outcomes and nursing intervention effectiveness. Assesses whether goals have been met, partially met, or not met. Part of the ADPIE framework's Evaluation phase." ] ;
+       fhir:name [ fhir:v "Glasgow Coma Scale" ] ;
+       fhir:description [ fhir:v "Glasgow Coma Scale (GCS) for assessing level of consciousness. Total score 3-15 with three required components: Eye (1-4), Verbal (1-5), Motor (1-6)." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1712,6 +2027,27 @@
        ] ;
        fhir:name [ fhir:v "Goal Evaluation Value Set" ] ;
        fhir:description [ fhir:v "Value set for evaluating patient goal outcomes" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-goal-target-measure-vs> ;
+         fhir:reference [ fhir:v "ValueSet/onc-goal-target-measure-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Goal Target Measure ValueSet" ] ;
+       fhir:description [ fhir:v "Codes used for goal target measures" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1816,7 +2152,7 @@
          fhir:reference [ fhir:v "StructureDefinition/intervention-goal-reference" ]
        ] ;
        fhir:name [ fhir:v "Intervention Goal Reference" ] ;
-       fhir:description [ fhir:v "Extension to link nursing interventions to the patient goals they are intended to achieve. Supports goal-directed care planning and intervention tracking." ] ;
+       fhir:description [ fhir:v "Extension to link nursing interventions to the patient goals they are intended to achieve." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2016,6 +2352,26 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "PlanDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/PlanDefinition/news2-escalation-plan> ;
+         fhir:reference [ fhir:v "PlanDefinition/news2-escalation-plan" ]
+       ] ;
+       fhir:name [ fhir:v "NEWS2 Escalation Protocol" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -2067,27 +2423,6 @@
        ] ;
        fhir:name [ fhir:v "NEWS2 Sub-Score Codes" ] ;
        fhir:description [ fhir:v "SNOMED codes for NEWS2 sub-scores" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-intervention> ;
-         fhir:reference [ fhir:v "StructureDefinition/onc-nursing-intervention" ]
-       ] ;
-       fhir:name [ fhir:v "Nursing Intervention" ] ;
-       fhir:description [ fhir:v "Nursing intervention or procedure performed to achieve patient goals. Documents actions taken by nursing staff to address identified problems and achieve desired outcomes. Part of the ADPIE framework's Implementation phase." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2163,6 +2498,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-prognosis-vs> ;
+         fhir:reference [ fhir:v "ValueSet/onc-prognosis-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Nursing Prognosis ValueSet" ] ;
+       fhir:description [ fhir:v "Prognosis codes for clinical impression" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
@@ -2171,7 +2527,7 @@
          fhir:reference [ fhir:v "StructureDefinition/observation-goal-reference" ]
        ] ;
        fhir:name [ fhir:v "Observation Goal Reference" ] ;
-       fhir:description [ fhir:v "Extension to link goal evaluation observations to the patient goals being evaluated. Enables tracking of goal progress and outcomes over time." ] ;
+       fhir:description [ fhir:v "Extension to link goal evaluation observations to the patient goals being evaluated." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2230,11 +2586,116 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-goal-evaluation> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-goal-evaluation" ]
+       ] ;
+       fhir:name [ fhir:v "ONC Goal Evaluation" ] ;
+       fhir:description [ fhir:v "Explicit evaluation of whether a nursing goal was achieved, closing the ADPIE loop." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Library"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Library/onc-news2-cql> ;
+         fhir:reference [ fhir:v "Library/onc-news2-cql" ]
+       ] ;
+       fhir:name [ fhir:v "ONC NEWS2 Auto-Calculation Logic" ] ;
+       fhir:description [ fhir:v "Logic library for calculating National Early Warning Score 2 (NEWS2) from FHIR Observations." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nhs-patient> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-nhs-patient" ]
        ] ;
        fhir:name [ fhir:v "ONC NHS Patient" ] ;
        fhir:description [ fhir:v "A patient profile for use in NHS nursing contexts with ethnic category extension." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-clinical-impression> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-nursing-clinical-impression" ]
+       ] ;
+       fhir:name [ fhir:v "ONC Nursing Clinical Impression" ] ;
+       fhir:description [ fhir:v "Nurse's synthesis of patient progress against care plan, aggregating multiple goal evaluations." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-nursing-goal" ]
+       ] ;
+       fhir:name [ fhir:v "ONC Nursing Goal" ] ;
+       fhir:description [ fhir:v "Patient-centered goal with mandatory evaluation requirements. Serves as the 'spine' of the CarePlan, linking problems to outcomes." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-intervention> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-nursing-intervention" ]
+       ] ;
+       fhir:name [ fhir:v "ONC Nursing Intervention" ] ;
+       fhir:description [ fhir:v "Nursing intervention performed to achieve patient goals. Part of ADPIE Implementation phase." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2277,6 +2738,27 @@
        ] ;
        fhir:name [ fhir:v "Open Nursing Core Assessment" ] ;
        fhir:description [ fhir:v "Base profile for nursing assessment observations conforming to UK Core standards. Captures structured nursing assessment data as part of the ADPIE (Assessment, Diagnosis, Planning, Implementation, Evaluation) nursing process framework. Used as parent for specialized assessments like NEWS2, Braden Scale, and clinical observations." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-oral-health> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-oral-health" ]
+       ] ;
+       fhir:name [ fhir:v "Oral Health Assessment" ] ;
+       fhir:description [ fhir:v "Assessment of oral cavity health. Critical for prevention of pneumonia in frail elderly and maintaining nutrition/hydration." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2356,27 +2838,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-goal> ;
-         fhir:reference [ fhir:v "StructureDefinition/onc-patient-goal" ]
-       ] ;
-       fhir:name [ fhir:v "Patient Goal" ] ;
-       fhir:description [ fhir:v "Patient-centered goal established in response to identified nursing problems. Defines measurable outcomes and addresses specific nursing diagnoses. Part of the ADPIE framework's Planning phase." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-story> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-patient-story" ]
        ] ;
@@ -2406,6 +2867,48 @@
          a fhir:Canonical ;
          fhir:v "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nhs-patient"^^xsd:anyURI ;
          fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nhs-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-abc-chart> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-abc-chart" ]
+       ] ;
+       fhir:name [ fhir:v "PBS ABC Chart" ] ;
+       fhir:description [ fhir:v "Antecedent-Behaviour-Consequence (ABC) Chart for recording behaviours of concern. Fundamental tool in Positive Behaviour Support (PBS) for Learning Disabilities." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-pbs-function-vs> ;
+         fhir:reference [ fhir:v "ValueSet/onc-pbs-function-vs" ]
+       ] ;
+       fhir:name [ fhir:v "PBS Behaviour Function ValueSet" ] ;
+       fhir:description [ fhir:v "Common functions of behaviour (SEAT)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -2565,11 +3068,53 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-seizure-record> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-seizure-record" ]
+       ] ;
+       fhir:name [ fhir:v "Seizure Record" ] ;
+       fhir:description [ fhir:v "Record of a specific seizure event, including type, duration, triggers, and recovery phases. Essential for epilepsy management and identifying patterns." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-skintone-observation> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-skintone-observation" ]
        ] ;
        fhir:name [ fhir:v "Skin Tone Observation" ] ;
        fhir:description [ fhir:v "Observation of patient skin tone using the Fitzpatrick skin type classification. Supports equitable care by enabling skin tone-aware clinical decision making, particularly for conditions that present differently across skin tones (e.g., pressure ulcers, cyanosis)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-sleep-pattern> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-sleep-pattern" ]
+       ] ;
+       fhir:name [ fhir:v "Sleep Pattern" ] ;
+       fhir:description [ fhir:v "Observation of sleep quality, duration, and disturbances. Sleep pattern disturbance is a key indicator for delirium and general wellbeing." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2591,6 +3136,27 @@
        ] ;
        fhir:name [ fhir:v "UK Core Ethnic Category" ] ;
        fhir:description [ fhir:v "An extension to record the ethnic category of a patient, as per UK Core standards." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-urinalysis> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-urinalysis" ]
+       ] ;
+       fhir:name [ fhir:v "Urinalysis" ] ;
+       fhir:description [ fhir:v "Point-of-care urine dipstick test results. Used to screen for urinary tract infection (UTI), diabetes (glucose/ketones), and kidney health." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

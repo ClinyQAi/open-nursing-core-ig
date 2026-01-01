@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-barthel-index | *Version*:0.1.0 |
-| Draft as of 2025-12-26 | *Computable Name*:ONCBarthelIndex |
+| Draft as of 2026-01-01 | *Computable Name*:ONCBarthelIndex |
 
  
 Barthel Index for measuring independence in activities of daily living (ADL). Score 0-20=total dependency, 91-99=slight dependency, 100=independent. Total range 0-100. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-barthel-index.cs
   "name" : "ONCBarthelIndex",
   "title" : "Barthel Index",
   "status" : "draft",
-  "date" : "2025-12-26T15:22:58+00:00",
+  "date" : "2026-01-01T13:37:23+00:00",
   "description" : "Barthel Index for measuring independence in activities of daily living (ADL). Score 0-20=total dependency, 91-99=slight dependency, 100=independent. Total range 0-100.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

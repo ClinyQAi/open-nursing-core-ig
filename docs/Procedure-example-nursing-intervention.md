@@ -6,7 +6,7 @@
 
 ## Example Procedure: example-nursing-intervention
 
-Profile: [Nursing Intervention](StructureDefinition-onc-nursing-intervention.md)
+Profile: [ONC Nursing Intervention](StructureDefinition-onc-nursing-intervention.md)
 
 **Intervention Goal Reference**: [Goal: lifecycleStatus = active; description =](Goal-example-patient-goal.md)
 

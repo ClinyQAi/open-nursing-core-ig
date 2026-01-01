@@ -9,9 +9,9 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/observation-goal-reference | *Version*:0.1.0 |
-| Draft as of 2025-12-26 | *Computable Name*:ObservationGoalReference |
+| Draft as of 2026-01-01 | *Computable Name*:ObservationGoalReference |
 
-Extension to link goal evaluation observations to the patient goals being evaluated. Enables tracking of goal progress and outcomes over time.
+Extension to link goal evaluation observations to the patient goals being evaluated.
 
 **Context of Use**
 
@@ -19,8 +19,7 @@ Extension to link goal evaluation observations to the patient goals being evalua
 
 **Usages:**
 
-* Use this Extension: [Goal Evaluation](StructureDefinition-onc-goal-evaluation.md)
-* Examples for this Extension: [Observation/example-goal-evaluation](Observation-example-goal-evaluation.md)
+* Use this Extension: [ONC Goal Evaluation](StructureDefinition-onc-goal-evaluation.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onc.ig|current/StructureDefinition/observation-goal-reference)
 
@@ -47,8 +46,8 @@ Other representations of profile: [CSV](StructureDefinition-observation-goal-ref
   "name" : "ObservationGoalReference",
   "title" : "Observation Goal Reference",
   "status" : "draft",
-  "date" : "2025-12-26T15:22:58+00:00",
-  "description" : "Extension to link goal evaluation observations to the patient goals being evaluated. Enables tracking of goal progress and outcomes over time.",
+  "date" : "2026-01-01T13:37:23+00:00",
+  "description" : "Extension to link goal evaluation observations to the patient goals being evaluated.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -74,7 +73,7 @@ Other representations of profile: [CSV](StructureDefinition-observation-goal-ref
         "id" : "Extension",
         "path" : "Extension",
         "short" : "Observation Goal Reference",
-        "definition" : "Extension to link goal evaluation observations to the patient goals being evaluated. Enables tracking of goal progress and outcomes over time."
+        "definition" : "Extension to link goal evaluation observations to the patient goals being evaluated."
       },
       {
         "id" : "Extension.extension",
@@ -93,7 +92,7 @@ Other representations of profile: [CSV](StructureDefinition-observation-goal-ref
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-goal"
+              "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal"
             ]
           }
         ]

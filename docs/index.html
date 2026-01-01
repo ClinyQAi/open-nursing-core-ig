@@ -144,7 +144,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2025-12-26
+            as of 2026-01-01
           
         
       </td>
@@ -168,83 +168,94 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#open-nursing-core-fhir-implementation-guide" id="markdown-toc-open-nursing-core-fhir-implementation-guide">Open Nursing Core FHIR Implementation Guide</a>    <ul>
+      <li><a href="#-core-philosophy" id="markdown-toc--core-philosophy">🌟 Core Philosophy</a></li>
+      <li><a href="#-profile-library" id="markdown-toc--profile-library">📚 Profile Library</a>        <ul>
+          <li><a href="#1-foundation--safety-️" id="markdown-toc-1-foundation--safety-️">1. Foundation &amp; Safety 🛡️</a></li>
+          <li><a href="#2-relational--inclusive-care-️" id="markdown-toc-2-relational--inclusive-care-️">2. Relational &amp; Inclusive Care ❤️</a></li>
+          <li><a href="#3-fundamental-care-" id="markdown-toc-3-fundamental-care-">3. Fundamental Care 💧</a></li>
+          <li><a href="#4-specialized--mental-health-" id="markdown-toc-4-specialized--mental-health-">4. Specialized &amp; Mental Health 🧠</a></li>
+        </ul>
+      </li>
+      <li><a href="#-getting-started" id="markdown-toc--getting-started">🚀 Getting Started</a></li>
+    </ul>
+  </li>
+</ul>
+
 </div>
 <h1 id="open-nursing-core-fhir-implementation-guide">Open Nursing Core FHIR Implementation Guide</h1>
 
 <p>Welcome to the <strong>Open Nursing Core FHIR Implementation Guide (ONC-IG)</strong>.</p>
 
-<p>This Implementation Guide provides foundational FHIR R4 profiles for documenting the nursing process (ADPIE - Assessment, Diagnosis, Planning, Implementation, Evaluation), with a focus on <strong>Safety</strong> and <strong>Equity</strong> in nursing care.</p>
+<p>This IG provides <strong>Standardized Nursing Data Models</strong> for the NHS and beyond, focusing on the complete nursing process (ADPIE) and specialized care needs.</p>
 
-<h2 id="overview">Overview</h2>
-
-<p>The ONC-IG defines standardized FHIR profiles for:</p>
-
+<h2 id="-core-philosophy">🌟 Core Philosophy</h2>
 <ul>
-  <li><strong>Patient Assessment</strong> - Nursing observations and assessments</li>
-  <li><strong>Nursing Diagnosis</strong> - Problem identification and categorization</li>
-  <li><strong>Patient Goals</strong> - Goal setting and outcome evaluation</li>
-  <li><strong>Nursing Interventions</strong> - Care activities and procedures</li>
-  <li><strong>Safety Assessments</strong> - Braden Scale for pressure ulcer risk</li>
-  <li><strong>Equity Considerations</strong> - Skin tone documentation for equitable care</li>
+  <li><strong>Holistic</strong>: Covers physical, mental, and social needs.</li>
+  <li><strong>Relational</strong>: Captures "What Matters to Me" and patient stories.</li>
+  <li><strong>Equitable</strong>: Includes Safe Skin Tone (Monk Scale) and Reasonable Adjustments.</li>
 </ul>
 
-<h2 id="key-profiles">Key Profiles</h2>
+<hr />
 
-<table>
-  <thead>
-    <tr>
-      <th>Profile</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="StructureDefinition-onc-nursing-assessment.html">ONC Nursing Assessment</a></td>
-      <td>Base profile for all nursing observations</td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-onc-braden-scale-assessment.html">Braden Scale Assessment</a></td>
-      <td>Pressure ulcer risk assessment</td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-onc-nursing-problem.html">Nursing Problem</a></td>
-      <td>Nursing diagnosis documentation</td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-onc-patient-goal.html">Patient Goal</a></td>
-      <td>Patient-centered goal setting</td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-onc-nursing-intervention.html">Nursing Intervention</a></td>
-      <td>Care activity documentation</td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-onc-goal-evaluation.html">Goal Evaluation</a></td>
-      <td>Outcome assessment</td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-onc-skintone-observation.html">Skin Tone Observation</a></td>
-      <td>Fitzpatrick skin type for equitable assessment</td>
-    </tr>
-  </tbody>
-</table>
+<h2 id="-profile-library">📚 Profile Library</h2>
 
-<h2 id="getting-started">Getting Started</h2>
-
+<h3 id="1-foundation--safety-️">1. Foundation &amp; Safety 🛡️</h3>
+<p>Base profiles for standard nursing operations.</p>
 <ul>
-  <li>Browse the <a href="artifacts.html">Artifacts</a> for all profiles, extensions, and examples</li>
-  <li>Download the <a href="package.tgz">full package</a> for use in your FHIR server</li>
+  <li><a href="StructureDefinition-onc-nursing-assessment.html">OncNursingAssessment</a></li>
+  <li><a href="StructureDefinition-onc-nursing-problem.html">OncNursingProblem</a> (Diagnosis)</li>
+  <li><a href="StructureDefinition-onc-patient-goal.html">OncPatientGoal</a></li>
+  <li><a href="StructureDefinition-onc-nursing-intervention.html">OncNursingIntervention</a></li>
+  <li><a href="StructureDefinition-onc-braden-scale-assessment.html">Braden Scale</a> (Pressure Ulcer Risk)</li>
+  <li><a href="StructureDefinition-onc-waterlow-score.html">Waterlow Score</a></li>
+  <li><a href="StructureDefinition-onc-news2-score.html">NEWS2</a> (Deterioration)</li>
 </ul>
 
-<h2 id="license">License</h2>
+<h3 id="2-relational--inclusive-care-️">2. Relational &amp; Inclusive Care ❤️</h3>
+<p>Capturing the person behind the patient.</p>
+<ul>
+  <li><a href="StructureDefinition-onc-what-matters.html">What Matters To Me</a></li>
+  <li><a href="StructureDefinition-onc-patient-story.html">Patient Story</a></li>
+  <li><a href="StructureDefinition-onc-reasonable-adjustment.html">Reasonable Adjustment</a> (Equality Act)</li>
+  <li><a href="StructureDefinition-onc-mental-capacity.html">Mental Capacity Assessment</a></li>
+  <li><a href="StructureDefinition-onc-skintone-observation.html">Skin Tone Observation</a> (Monk/Fitzpatrick)</li>
+</ul>
 
-<p>This Implementation Guide is released under the MIT License.</p>
+<h3 id="3-fundamental-care-">3. Fundamental Care 💧</h3>
+<p>The essentials of daily nursing care.</p>
+<ul>
+  <li><a href="StructureDefinition-onc-bristol-stool-chart.html">Bristol Stool Chart</a> (Elimination)</li>
+  <li><a href="StructureDefinition-onc-fluid-balance.html">Fluid Balance</a> (Hydration)</li>
+  <li><a href="StructureDefinition-onc-abbey-pain-scale.html">Abbey Pain Scale</a> (Non-verbal pain)</li>
+  <li><a href="StructureDefinition-onc-oral-health.html">Oral Health</a></li>
+  <li><a href="StructureDefinition-onc-sleep-pattern.html">Sleep Pattern</a></li>
+</ul>
 
-<h2 id="contact">Contact</h2>
+<h3 id="4-specialized--mental-health-">4. Specialized &amp; Mental Health 🧠</h3>
+<p>Tools for Learning Disabilities, Mental Health, and Geriatrics.</p>
+<ul>
+  <li><a href="StructureDefinition-onc-abc-chart.html">ABC Chart</a> (Positive Behaviour Support)</li>
+  <li><a href="StructureDefinition-onc-seizure-record.html">Seizure Record</a> (Epilepsy)</li>
+  <li><a href="StructureDefinition-onc-clinical-frailty-scale.html">Clinical Frailty Scale</a></li>
+  <li><a href="StructureDefinition-onc-4at-delirium.html">4AT Delirium Screen</a></li>
+  <li><a href="StructureDefinition-onc-urinalysis.html">Urinalysis</a></li>
+</ul>
 
-<p>For questions or contributions, visit our <a href="https://github.com/ClinyQAi/open-nursing-core-ig">GitHub repository</a>.</p>
+<hr />
+
+<h2 id="-getting-started">🚀 Getting Started</h2>
+
+<ol>
+  <li><strong>Browse Artifacts</strong>: See the <a href="artifacts.html">Artifacts Page</a> for all JSON definitions.</li>
+  <li><strong>Download Package</strong>: <code class="language-plaintext highlighter-rouge">npm install @clinyqai/open-nursing-core-ig</code></li>
+  <li><strong>Contribute</strong>: Visit <a href="https://github.com/ClinyQAi/open-nursing-core-ig">GitHub</a>.</li>
+</ol>
+
+<hr />
+<p><em>Built with ❤️ by the Open Nursing Community</em></p>
 
 
 
@@ -265,7 +276,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package onc.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 26, 2025 15:22+0000">2025-12-26</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package onc.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 1, 2026 13:37+0000">2026-01-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

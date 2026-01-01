@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-wound-assessment | *Version*:0.1.0 |
-| Draft as of 2025-12-26 | *Computable Name*:ONCWoundAssessment |
+| Draft as of 2026-01-01 | *Computable Name*:ONCWoundAssessment |
 
  
 Comprehensive wound assessment including staging and dimensions 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-wound-assessment
   "name" : "ONCWoundAssessment",
   "title" : "Wound Assessment",
   "status" : "draft",
-  "date" : "2025-12-26T15:22:58+00:00",
+  "date" : "2026-01-01T13:37:23+00:00",
   "description" : "Comprehensive wound assessment including staging and dimensions",
   "fhirVersion" : "4.0.1",
   "mapping" : [

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-braden-scale-assessment | *Version*:0.1.0 |
-| Draft as of 2025-12-26 | *Computable Name*:ONCBradenScaleAssessment |
+| Draft as of 2026-01-01 | *Computable Name*:ONCBradenScaleAssessment |
 
  
 A profile for the Braden Scale pressure ulcer risk assessment 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
   "name" : "ONCBradenScaleAssessment",
   "title" : "Braden Scale Assessment",
   "status" : "draft",
-  "date" : "2025-12-26T15:22:58+00:00",
+  "date" : "2026-01-01T13:37:23+00:00",
   "description" : "A profile for the Braden Scale pressure ulcer risk assessment",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -85,7 +85,16 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
     "element" : [
       {
         "id" : "Observation",
-        "path" : "Observation"
+        "path" : "Observation",
+        "constraint" : [
+          {
+            "key" : "onc-equity-skin-tone-required",
+            "severity" : "error",
+            "human" : "Wound assessments MUST have an associated skin tone observation to ensure equitable care (AI Safety Gate).",
+            "expression" : "hasMember.resolve().code.coding.where(code = '66555-4' or code = 'mst-score').exists()",
+            "source" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-braden-scale-assessment"
+          }
+        ]
       },
       {
         "id" : "Observation.status",
@@ -130,6 +139,39 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
         "id" : "Observation.value[x].code",
         "path" : "Observation.value[x].code",
         "patternCode" : "1"
+      },
+      {
+        "id" : "Observation.hasMember",
+        "path" : "Observation.hasMember",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "pattern",
+              "path" : "resolve().code"
+            }
+          ],
+          "rules" : "open"
+        },
+        "min" : 1,
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.hasMember:skinTone",
+        "path" : "Observation.hasMember",
+        "sliceName" : "skinTone",
+        "short" : "Mandatory Skin Tone Context (Equity Gate)",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-skintone-observation",
+              "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-monk-skintone-observation"
+            ]
+          }
+        ],
+        "mustSupport" : true
       },
       {
         "id" : "Observation.component",
