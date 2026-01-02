@@ -51,8 +51,8 @@ This AI model is designed to work alongside the FHIR profiles defined in this IG
 *   **Input:** Structured data from `Patient`, `Observation` (e.g., Skin Tone), and `Condition` resources.
 *   **Output:** Narrative text for `Composition` or `ClinicalImpression` resources.
 
-## The "Super-Gold" Standard (Exceeding openEHR)
-The Open Nursing Core project aims to exceed traditional clinical modeling (like openEHR) by making the "Human Elements" of nursing computable and mandatory.
+## The "Super-Gold" Standard: Advancing Relational Care
+The Open Nursing Core project aims to build upon rigorous clinical modeling (like openEHR) by making the "Human Elements" of nursing computable and mandatory.
 
 ### 1. The ONC Empathy Index
 We have standardized the measurement of empathy. Documentation is no longer just "data"—it is scored on its **therapeutic depth (1-5)** helping nurses reflect on the quality of their engagement.
