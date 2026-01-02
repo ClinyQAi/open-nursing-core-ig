@@ -99,14 +99,16 @@ def adpie_generator(clinical_scenario: str):
 
 def semantic_review(note: str):
     """Perform openEHR-inspired semantic analysis on a nursing note."""
-    instruction = """Analyze this nursing note against the ONC Relational Care Model. 
-    Identify:
-    1. Relational Engagement indicators (1-5).
-    2. Equity/Inclusion markers (e.g., skin tone awareness).
-    3. Potential NANDA-I Nursing Diagnoses (e.g. Social Isolation, Risk for Loneliness).
-    4. Compliance with the ADPIE nursing process.
-    Suggest improvements to ensure the note is semantically deep and relational."""
-    for response in generate_response(instruction, note, max_tokens=400):
+    instruction = """Perform a SUPER-GOLD SEMANTIC AUDIT on this nursing note.
+    Your goal is to exceed openEHR standards by validating:
+    1. ONC Empathy Index (1-5): Score the therapeutic depth of the interaction.
+    2. Relief Engagement (1-5): Score the authentic partnership level.
+    3. Mandatory Equity Gate: Verify if skin tone or cultural background is documented to guide clinical assessment.
+    4. NANDA-I Mapping: Suggest formal Nursing Diagnoses.
+    5. ADPIE Integrity: Ensure Assessment leads logically to Implementation.
+    
+    If any 'Relational' or 'Equity' markers are missing, provide a 'Relational Intervention' to fix it."""
+    for response in generate_response(instruction, note, max_tokens=500):
         yield response
 
 

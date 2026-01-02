@@ -41,13 +41,17 @@ This AI model is designed to work alongside the FHIR profiles defined in this IG
 *   **Input:** Structured data from `Patient`, `Observation` (e.g., Skin Tone), and `Condition` resources.
 *   **Output:** Narrative text for `Composition` or `ClinicalImpression` resources.
 
-## Semantic Intelligence (openEHR Inspired)
-The Open Nursing Core project leverages **FHIR Logical Models** to define the "Clinical Truth" of nursing concepts—a methodology inspired by openEHR archetypes.
+## The "Super-Gold" Standard (Exceeding openEHR)
+The Open Nursing Core project aims to exceed traditional clinical modeling (like openEHR) by making the "Human Elements" of nursing computable and mandatory.
 
-### Clinical Mapping
-The **Relational AI** performs real-time semantic audits, mapping clinical findings to international standards:
-*   **NANDA-I:** Maps narrative findings to official Nursing Diagnoses.
-*   **Logical Model Mapping:** Validates that the "Relational" aspect of care (e.g., patient story) is present in the documentation.
+### 1. The ONC Empathy Index
+We have standardized the measurement of empathy. Documentation is no longer just "data"—it is scored on its **therapeutic depth (1-5)** helping nurses reflect on the quality of their engagement.
+
+### 2. Mandatory Equity Invariants (The Fairness Gate)
+Unlike static models, our IG includes **executable safety rules**. A wound assessment cannot be validated unless it accounts for the patient's specific skin tone (Fitzpatrick/Monk scale), ensuring no patient is overlooked due to biased clinical thresholds.
+
+### 3. Real-Time Semantic Audits
+The **Relational AI** performs a **Super-Gold Audit** on every note, identifying NANDA-I diagnoses and validating the note against our Relational Care Logical Model in real-time.
 
 ## Usage & License
 *   **License:** CC BY-NC 3.0 (Non-Commercial)
