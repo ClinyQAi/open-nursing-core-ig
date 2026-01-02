@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-reasonable-adjustment | *Version*:0.1.0 |
-| Draft as of 2026-01-01 | *Computable Name*:ONCReasonableAdjustment |
+| Draft as of 2026-01-02 | *Computable Name*:ONCReasonableAdjustment |
 
  
 Captures specific strict requirements for care adjustments under the Equality Act (e.g., 'Needs BSL Interpreter', 'Cannot use stairs', 'Requires large print'). 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-reasonable-adjus
   "name" : "ONCReasonableAdjustment",
   "title" : "Reasonable Adjustment",
   "status" : "draft",
-  "date" : "2026-01-01T16:16:25+00:00",
+  "date" : "2026-01-02T16:06:53+00:00",
   "description" : "Captures specific strict requirements for care adjustments under the Equality Act (e.g., 'Needs BSL Interpreter', 'Cannot use stairs', 'Requires large print').",
   "fhirVersion" : "4.0.1",
   "mapping" : [

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/wound-stage-vs | *Version*:0.1.0 |
-| Draft as of 2026-01-01 | *Computable Name*:WoundStageValueSet |
+| Draft as of 2026-01-02 | *Computable Name*:WoundStageValueSet |
 
  **References** 
 
@@ -47,7 +47,7 @@
   "name" : "WoundStageValueSet",
   "title" : "Wound Stage Value Set",
   "status" : "draft",
-  "date" : "2026-01-01T16:16:25+00:00",
+  "date" : "2026-01-02T16:06:53+00:00",
   "compose" : {
     "include" : [
       {

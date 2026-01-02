@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-goal-target-measure-vs | *Version*:0.1.0 |
-| Draft as of 2026-01-01 | *Computable Name*:ONCGoalTargetMeasureVS |
+| Draft as of 2026-01-02 | *Computable Name*:ONCGoalTargetMeasureVS |
 
  
 Codes used for goal target measures 
@@ -50,7 +50,7 @@ Codes used for goal target measures
   "name" : "ONCGoalTargetMeasureVS",
   "title" : "Goal Target Measure ValueSet",
   "status" : "draft",
-  "date" : "2026-01-01T16:16:25+00:00",
+  "date" : "2026-01-02T16:06:53+00:00",
   "description" : "Codes used for goal target measures",
   "compose" : {
     "include" : [

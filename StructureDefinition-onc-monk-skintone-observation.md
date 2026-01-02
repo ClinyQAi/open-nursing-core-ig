@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-monk-skintone-observation | *Version*:0.1.0 |
-| Draft as of 2026-01-01 | *Computable Name*:ONCMonkSkinToneObservation |
+| Draft as of 2026-01-02 | *Computable Name*:ONCMonkSkinToneObservation |
 
  
 Observation of patient skin tone using the Monk Skin Tone Scale (10-point scale A-J). Provides more granular skin tone assessment than Fitzpatrick scale, particularly for darker skin tones. Supports equitable care and accurate clinical assessment across diverse populations. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-monk-skintone-ob
   "name" : "ONCMonkSkinToneObservation",
   "title" : "Monk Skin Tone Observation",
   "status" : "draft",
-  "date" : "2026-01-01T16:16:25+00:00",
+  "date" : "2026-01-02T16:06:53+00:00",
   "description" : "Observation of patient skin tone using the Monk Skin Tone Scale (10-point scale A-J). Provides more granular skin tone assessment than Fitzpatrick scale, particularly for darker skin tones. Supports equitable care and accurate clinical assessment across diverse populations.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-problem | *Version*:0.1.0 |
-| Draft as of 2026-01-01 | *Computable Name*:ONCNursingProblem |
+| Draft as of 2026-01-02 | *Computable Name*:ONCNursingProblem |
 
  
 Nursing diagnosis or problem identified during assessment. Represents clinical judgments about individual, family, or community responses to actual or potential health problems. Part of the ADPIE framework's Diagnosis phase. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-problem.
   "name" : "ONCNursingProblem",
   "title" : "Nursing Problem",
   "status" : "draft",
-  "date" : "2026-01-01T16:16:25+00:00",
+  "date" : "2026-01-02T16:06:53+00:00",
   "description" : "Nursing diagnosis or problem identified during assessment. Represents clinical judgments about individual, family, or community responses to actual or potential health problems. Part of the ADPIE framework's Diagnosis phase.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

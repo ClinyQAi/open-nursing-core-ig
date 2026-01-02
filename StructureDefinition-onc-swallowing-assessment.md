@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-swallowing-assessment | *Version*:0.1.0 |
-| Draft as of 2026-01-01 | *Computable Name*:ONCSwallowingAssessment |
+| Draft as of 2026-01-02 | *Computable Name*:ONCSwallowingAssessment |
 
  
 Screening for dysphagia and swallowing difficulties. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-swallowing-asses
   "name" : "ONCSwallowingAssessment",
   "title" : "Swallowing Assessment",
   "status" : "draft",
-  "date" : "2026-01-01T16:16:25+00:00",
+  "date" : "2026-01-02T16:06:53+00:00",
   "description" : "Screening for dysphagia and swallowing difficulties.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

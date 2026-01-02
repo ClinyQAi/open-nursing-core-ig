@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-oral-intake-assessment | *Version*:0.1.0 |
-| Draft as of 2026-01-01 | *Computable Name*:ONCOralIntakeAssessment |
+| Draft as of 2026-01-02 | *Computable Name*:ONCOralIntakeAssessment |
 
  
 Assessment of ability to take food and fluids orally. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-oral-intake-asse
   "name" : "ONCOralIntakeAssessment",
   "title" : "Oral Intake Assessment",
   "status" : "draft",
-  "date" : "2026-01-01T16:16:25+00:00",
+  "date" : "2026-01-02T16:06:53+00:00",
   "description" : "Assessment of ability to take food and fluids orally.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

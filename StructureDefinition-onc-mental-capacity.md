@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-mental-capacity | *Version*:0.1.0 |
-| Draft as of 2026-01-01 | *Computable Name*:ONCMentalCapacity |
+| Draft as of 2026-01-02 | *Computable Name*:ONCMentalCapacity |
 
  
 Records the outcome of a Mental Capacity Assessment for a specific decision. Fundamental legal safeguard in UK nursing practice. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-mental-capacity.
   "name" : "ONCMentalCapacity",
   "title" : "Mental Capacity Assessment",
   "status" : "draft",
-  "date" : "2026-01-01T16:16:25+00:00",
+  "date" : "2026-01-02T16:06:53+00:00",
   "description" : "Records the outcome of a Mental Capacity Assessment for a specific decision. Fundamental legal safeguard in UK nursing practice.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

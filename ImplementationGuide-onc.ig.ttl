@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "OpenNursingCoreIG"] ; # 
   fhir:title [ fhir:v "Open Nursing Core FHIR Implementation Guide (ONC-IG)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-01-01T16:16:25+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-02T16:06:53+00:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome."] ; # 
   fhir:packageId [ fhir:v "onc.ig"] ; # 
   fhir:license [ fhir:v "MIT"] ; # 
@@ -3555,6 +3555,25 @@
            fhir:l fhir:index.html
          ] ;
          fhir:title [ fhir:v "Home" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "relation-ai.html"^^xsd:anyURI ;
+             fhir:l fhir:relation-ai.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "relation-ai.html"^^xsd:anyURI ;
+           fhir:l fhir:relation-ai.html
+         ] ;
+         fhir:title [ fhir:v "Relational Ai (AI Model)" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;

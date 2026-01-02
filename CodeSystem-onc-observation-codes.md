@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes | *Version*:0.1.0 |
-| Draft as of 2026-01-01 | *Computable Name*:ONCObservationCodes |
+| Draft as of 2026-01-02 | *Computable Name*:ONCObservationCodes |
 
  
 Custom observation codes for Open Nursing Core 
@@ -39,7 +39,7 @@ Custom observation codes for Open Nursing Core
   "name" : "ONCObservationCodes",
   "title" : "ONC Observation Codes",
   "status" : "draft",
-  "date" : "2026-01-01T16:16:25+00:00",
+  "date" : "2026-01-02T16:06:53+00:00",
   "description" : "Custom observation codes for Open Nursing Core",
   "content" : "complete",
   "count" : 121,

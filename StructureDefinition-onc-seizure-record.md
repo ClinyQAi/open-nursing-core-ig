@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-seizure-record | *Version*:0.1.0 |
-| Draft as of 2026-01-01 | *Computable Name*:ONCSeizureRecord |
+| Draft as of 2026-01-02 | *Computable Name*:ONCSeizureRecord |
 
  
 Record of a specific seizure event, including type, duration, triggers, and recovery phases. Essential for epilepsy management and identifying patterns. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-seizure-record.c
   "name" : "ONCSeizureRecord",
   "title" : "Seizure Record",
   "status" : "draft",
-  "date" : "2026-01-01T16:16:25+00:00",
+  "date" : "2026-01-02T16:06:53+00:00",
   "description" : "Record of a specific seizure event, including type, duration, triggers, and recovery phases. Essential for epilepsy management and identifying patterns.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

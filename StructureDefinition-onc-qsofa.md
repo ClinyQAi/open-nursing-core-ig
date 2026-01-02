@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-qsofa | *Version*:0.1.0 |
-| Draft as of 2026-01-01 | *Computable Name*:ONCqSOFA |
+| Draft as of 2026-01-02 | *Computable Name*:ONCqSOFA |
 
  
 Quick Sequential Organ Failure Assessment for sepsis screening. Score ≥2 indicates high risk. Total range 0-3. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-qsofa.csv), [Exc
   "name" : "ONCqSOFA",
   "title" : "qSOFA (Quick SOFA)",
   "status" : "draft",
-  "date" : "2026-01-01T16:16:25+00:00",
+  "date" : "2026-01-02T16:06:53+00:00",
   "description" : "Quick Sequential Organ Failure Assessment for sepsis screening. Score ≥2 indicates high risk. Total range 0-3.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

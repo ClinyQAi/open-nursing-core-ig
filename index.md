@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ImplementationGuide/onc.ig | *Version*:0.1.0 |
-| Draft as of 2026-01-01 | *Computable Name*:OpenNursingCoreIG |
+| Draft as of 2026-01-02 | *Computable Name*:OpenNursingCoreIG |
 
 # Open Nursing Core FHIR Implementation Guide
 
@@ -93,7 +93,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "draft",
-  "date" : "2026-01-01T16:16:25+00:00",
+  "date" : "2026-01-02T16:06:53+00:00",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome.",
   "packageId" : "onc.ig",
   "license" : "MIT",
@@ -2277,6 +2277,17 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
           ],
           "nameUrl" : "index.html",
           "title" : "Home",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "relation-ai.html"
+            }
+          ],
+          "nameUrl" : "relation-ai.html",
+          "title" : "Relational Ai (AI Model)",
           "generation" : "markdown"
         }
       ]

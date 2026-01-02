@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-clinical-impression | *Version*:0.1.0 |
-| Draft as of 2026-01-01 | *Computable Name*:ONCNursingClinicalImpression |
+| Draft as of 2026-01-02 | *Computable Name*:ONCNursingClinicalImpression |
 
  
 Nurse's synthesis of patient progress against care plan, aggregating multiple goal evaluations. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-clinical
   "name" : "ONCNursingClinicalImpression",
   "title" : "ONC Nursing Clinical Impression",
   "status" : "draft",
-  "date" : "2026-01-01T16:16:25+00:00",
+  "date" : "2026-01-02T16:06:53+00:00",
   "description" : "Nurse's synthesis of patient progress against care plan, aggregating multiple goal evaluations.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

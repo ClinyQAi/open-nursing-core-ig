@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis | *Version*:0.1.0 |
-| Draft as of 2026-01-01 | *Computable Name*:ONCUrinalysis |
+| Draft as of 2026-01-02 | *Computable Name*:ONCUrinalysis |
 
  
 Point-of-care urine dipstick test results. Used to screen for urinary tract infection (UTI), diabetes (glucose/ketones), and kidney health. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-urinalysis.csv),
   "name" : "ONCUrinalysis",
   "title" : "Urinalysis",
   "status" : "draft",
-  "date" : "2026-01-01T16:16:25+00:00",
+  "date" : "2026-01-02T16:06:53+00:00",
   "description" : "Point-of-care urine dipstick test results. Used to screen for urinary tract infection (UTI), diabetes (glucose/ketones), and kidney health.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

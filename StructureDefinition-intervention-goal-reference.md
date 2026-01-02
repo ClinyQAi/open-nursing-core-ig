@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/intervention-goal-reference | *Version*:0.1.0 |
-| Draft as of 2026-01-01 | *Computable Name*:InterventionGoalReference |
+| Draft as of 2026-01-02 | *Computable Name*:InterventionGoalReference |
 
 Extension to link nursing interventions to the patient goals they are intended to achieve.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-intervention-goal-re
   "name" : "InterventionGoalReference",
   "title" : "Intervention Goal Reference",
   "status" : "draft",
-  "date" : "2026-01-01T16:16:25+00:00",
+  "date" : "2026-01-02T16:06:53+00:00",
   "description" : "Extension to link nursing interventions to the patient goals they are intended to achieve.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

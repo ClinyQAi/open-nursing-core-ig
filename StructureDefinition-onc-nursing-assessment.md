@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment | *Version*:0.1.0 |
-| Draft as of 2026-01-01 | *Computable Name*:ONCNursingAssessment |
+| Draft as of 2026-01-02 | *Computable Name*:ONCNursingAssessment |
 
  
 Base profile for nursing assessment observations conforming to UK Core standards. Captures structured nursing assessment data as part of the ADPIE (Assessment, Diagnosis, Planning, Implementation, Evaluation) nursing process framework. Used as parent for specialized assessments like NEWS2, Braden Scale, and clinical observations. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-assessme
   "name" : "ONCNursingAssessment",
   "title" : "Open Nursing Core Assessment",
   "status" : "draft",
-  "date" : "2026-01-01T16:16:25+00:00",
+  "date" : "2026-01-02T16:06:53+00:00",
   "description" : "Base profile for nursing assessment observations conforming to UK Core standards. Captures structured nursing assessment data as part of the ADPIE (Assessment, Diagnosis, Planning, Implementation, Evaluation) nursing process framework. Used as parent for specialized assessments like NEWS2, Braden Scale, and clinical observations.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

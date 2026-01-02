@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-patient-story | *Version*:0.1.0 |
-| Draft as of 2026-01-01 | *Computable Name*:ONCPatientStory |
+| Draft as of 2026-01-02 | *Computable Name*:ONCPatientStory |
 
  
 A narrative summary of the patient's background, biography, preferences, and personhood. Goes beyond clinical history to capture 'who the person is'. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-patient-story.cs
   "name" : "ONCPatientStory",
   "title" : "Patient Story",
   "status" : "draft",
-  "date" : "2026-01-01T16:16:25+00:00",
+  "date" : "2026-01-02T16:06:53+00:00",
   "description" : "A narrative summary of the patient's background, biography, preferences, and personhood. Goes beyond clinical history to capture 'who the person is'.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

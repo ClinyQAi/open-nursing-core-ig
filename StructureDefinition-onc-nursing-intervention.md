@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-intervention | *Version*:0.1.0 |
-| Draft as of 2026-01-01 | *Computable Name*:ONCNursingIntervention |
+| Draft as of 2026-01-02 | *Computable Name*:ONCNursingIntervention |
 
  
 Nursing intervention performed to achieve patient goals. Part of ADPIE Implementation phase. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-interven
   "name" : "ONCNursingIntervention",
   "title" : "ONC Nursing Intervention",
   "status" : "draft",
-  "date" : "2026-01-01T16:16:25+00:00",
+  "date" : "2026-01-02T16:06:53+00:00",
   "description" : "Nursing intervention performed to achieve patient goals. Part of ADPIE Implementation phase.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

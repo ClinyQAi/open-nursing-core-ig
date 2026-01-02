@@ -11,7 +11,7 @@
   <name value="OpenNursingCoreIG"/>
   <title value="Open Nursing Core FHIR Implementation Guide (ONC-IG)"/>
   <status value="draft"/>
-  <date value="2026-01-01T16:16:25+00:00"/>
+  <date value="2026-01-02T16:06:53+00:00"/>
   <description value="Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome."/>
   <packageId value="onc.ig"/>
   <license value="MIT"/>
@@ -1602,6 +1602,14 @@
         </extension>
         <nameUrl value="index.html"/>
         <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="relation-ai.html"/>
+        </extension>
+        <nameUrl value="relation-ai.html"/>
+        <title value="Relational Ai (AI Model)"/>
         <generation value="markdown"/>
       </page>
     </page>

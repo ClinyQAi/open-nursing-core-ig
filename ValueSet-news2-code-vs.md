@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/news2-code-vs | *Version*:0.1.0 |
-| Draft as of 2026-01-01 | *Computable Name*:NEWS2CodeValueSet |
+| Draft as of 2026-01-02 | *Computable Name*:NEWS2CodeValueSet |
 
  
 LOINC and SNOMED codes for NEWS2 
@@ -50,7 +50,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "name" : "NEWS2CodeValueSet",
   "title" : "NEWS2 Code Value Set",
   "status" : "draft",
-  "date" : "2026-01-01T16:16:25+00:00",
+  "date" : "2026-01-02T16:06:53+00:00",
   "description" : "LOINC and SNOMED codes for NEWS2",
   "compose" : {
     "include" : [

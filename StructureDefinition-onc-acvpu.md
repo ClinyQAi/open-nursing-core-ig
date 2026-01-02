@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-acvpu | *Version*:0.1.0 |
-| Draft as of 2026-01-01 | *Computable Name*:ONCACVPU |
+| Draft as of 2026-01-02 | *Computable Name*:ONCACVPU |
 
  
 ACVPU consciousness level assessment for NEWS2 (Alert, Confusion, Voice, Pain, Unresponsive) 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-acvpu.csv), [Exc
   "name" : "ONCACVPU",
   "title" : "ACVPU Consciousness Level",
   "status" : "draft",
-  "date" : "2026-01-01T16:16:25+00:00",
+  "date" : "2026-01-02T16:06:53+00:00",
   "description" : "ACVPU consciousness level assessment for NEWS2 (Alert, Confusion, Voice, Pain, Unresponsive)",
   "fhirVersion" : "4.0.1",
   "mapping" : [

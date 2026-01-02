@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-medication-ability | *Version*:0.1.0 |
-| Draft as of 2026-01-01 | *Computable Name*:ONCMedicationAbility |
+| Draft as of 2026-01-02 | *Computable Name*:ONCMedicationAbility |
 
  
 Assessment of the patient's ability to manage their own medication. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-medication-abili
   "name" : "ONCMedicationAbility",
   "title" : "Medication Management Ability",
   "status" : "draft",
-  "date" : "2026-01-01T16:16:25+00:00",
+  "date" : "2026-01-02T16:06:53+00:00",
   "description" : "Assessment of the patient's ability to manage their own medication.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

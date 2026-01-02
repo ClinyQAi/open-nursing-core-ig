@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-bladder-assessment | *Version*:0.1.0 |
-| Draft as of 2026-01-01 | *Computable Name*:ONCBladderAssessment |
+| Draft as of 2026-01-02 | *Computable Name*:ONCBladderAssessment |
 
  
 Detailed assessment of bladder function, including voiding patterns. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-bladder-assessme
   "name" : "ONCBladderAssessment",
   "title" : "Bladder Assessment",
   "status" : "draft",
-  "date" : "2026-01-01T16:16:25+00:00",
+  "date" : "2026-01-02T16:06:53+00:00",
   "description" : "Detailed assessment of bladder function, including voiding patterns.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

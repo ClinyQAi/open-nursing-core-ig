@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-fluid-balance | *Version*:0.1.0 |
-| Draft as of 2026-01-01 | *Computable Name*:ONCFluidBalance |
+| Draft as of 2026-01-02 | *Computable Name*:ONCFluidBalance |
 
  
 Assessment of fluid intake, output, and balance. Critical for renal function, hydration status, and heart failure monitoring. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-fluid-balance.cs
   "name" : "ONCFluidBalance",
   "title" : "Fluid Balance",
   "status" : "draft",
-  "date" : "2026-01-01T16:16:25+00:00",
+  "date" : "2026-01-02T16:06:53+00:00",
   "description" : "Assessment of fluid intake, output, and balance. Critical for renal function, hydration status, and heart failure monitoring.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

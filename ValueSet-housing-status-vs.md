@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/housing-status-vs | *Version*:0.1.0 |
-| Draft as of 2026-01-01 | *Computable Name*:HousingStatusVS |
+| Draft as of 2026-01-02 | *Computable Name*:HousingStatusVS |
 
  
 Value set for patient housing status 
@@ -51,7 +51,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "Housing Status Value Set",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-01-01T16:16:25+00:00",
+  "date" : "2026-01-02T16:06:53+00:00",
   "description" : "Value set for patient housing status",
   "compose" : {
     "include" : [
