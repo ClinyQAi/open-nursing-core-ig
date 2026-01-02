@@ -7,7 +7,7 @@ Id: onc-must-score
 Title: "MUST Score (Malnutrition Universal Screening Tool)"
 Description: "Malnutrition Universal Screening Tool for identifying adults at risk of malnutrition. Score 0=low risk, 1=medium risk, 2+=high risk. NHS-standard nutritional screening."
 * status MS
-* code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#must-score "MUST Score"
+* code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#must-score "MUST Score"
 * code MS
 * value[x] only Quantity
 * valueQuantity 1..1 MS
@@ -21,17 +21,17 @@ Description: "Malnutrition Universal Screening Tool for identifying adults at ri
 * component ^slicing.ordered = false
 * component ^slicing.rules = #open
 * component contains bmi 1..1 MS and weightLoss 1..1 MS and acuteDisease 1..1 MS
-* component[bmi].code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#must-bmi-score "MUST BMI Score"
+* component[bmi].code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#must-bmi-score "MUST BMI Score"
 * component[bmi].value[x] only Quantity
 * component[bmi].valueQuantity.value obeys must-component-range
 * component[bmi].valueQuantity.unit = "{score}"
 * component[bmi].valueQuantity.system = "http://unitsofmeasure.org"
-* component[weightLoss].code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#must-weight-loss-score "MUST Weight Loss Score"
+* component[weightLoss].code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#must-weight-loss-score "MUST Weight Loss Score"
 * component[weightLoss].value[x] only Quantity
 * component[weightLoss].valueQuantity.value obeys must-component-range
 * component[weightLoss].valueQuantity.unit = "{score}"
 * component[weightLoss].valueQuantity.system = "http://unitsofmeasure.org"
-* component[acuteDisease].code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#must-acute-disease-score "MUST Acute Disease Score"
+* component[acuteDisease].code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#must-acute-disease-score "MUST Acute Disease Score"
 * component[acuteDisease].value[x] only Quantity
 * component[acuteDisease].valueQuantity.value obeys must-component-range
 * component[acuteDisease].valueQuantity.unit = "{score}"

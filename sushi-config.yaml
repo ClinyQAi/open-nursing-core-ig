@@ -5,7 +5,8 @@ title: Open Nursing Core FHIR Implementation Guide (ONC-IG)
 status: draft
 version: 0.1.0
 fhirVersion: 4.0.1
-publisher: "The Open Nursing Community"
+publisher:
+  name: The Open Nursing Community
 description: "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome."
 license: MIT
 copyrightYear: 2025+
@@ -17,9 +18,3 @@ pages:
     title: Home
   relation-ai.md:
     title: Relational Ai (AI Model)
-
-# Menu configuration
-menu:
-  Home: index.html
-  Relational Ai: relation-ai.html
-  Artifacts: artifacts.html
