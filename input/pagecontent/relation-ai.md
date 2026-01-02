@@ -41,6 +41,14 @@ This AI model is designed to work alongside the FHIR profiles defined in this IG
 *   **Input:** Structured data from `Patient`, `Observation` (e.g., Skin Tone), and `Condition` resources.
 *   **Output:** Narrative text for `Composition` or `ClinicalImpression` resources.
 
+## Semantic Intelligence (openEHR Inspired)
+The Open Nursing Core project leverages **FHIR Logical Models** to define the "Clinical Truth" of nursing concepts—a methodology inspired by openEHR archetypes.
+
+### Clinical Mapping
+The **Relational AI** performs real-time semantic audits, mapping clinical findings to international standards:
+*   **NANDA-I:** Maps narrative findings to official Nursing Diagnoses.
+*   **Logical Model Mapping:** Validates that the "Relational" aspect of care (e.g., patient story) is present in the documentation.
+
 ## Usage & License
 *   **License:** CC BY-NC 3.0 (Non-Commercial)
 *   **Base Model:** Llama-3-8B (Unsloth)

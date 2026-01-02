@@ -97,6 +97,19 @@ def adpie_generator(clinical_scenario: str):
         yield response
 
 
+def semantic_review(note: str):
+    """Perform openEHR-inspired semantic analysis on a nursing note."""
+    instruction = """Analyze this nursing note against the ONC Relational Care Model. 
+    Identify:
+    1. Relational Engagement indicators (1-5).
+    2. Equity/Inclusion markers (e.g., skin tone awareness).
+    3. Potential NANDA-I Nursing Diagnoses (e.g. Social Isolation, Risk for Loneliness).
+    4. Compliance with the ADPIE nursing process.
+    Suggest improvements to ensure the note is semantically deep and relational."""
+    for response in generate_response(instruction, note, max_tokens=400):
+        yield response
+
+
 # ============================================
 # GRADIO UI
 # ============================================
@@ -247,6 +260,46 @@ with gr.Blocks(css=custom_css, title="Relational AI 4 Nursing") as demo:
                 fn=adpie_generator,
                 inputs=scenario_input,
                 outputs=adpie_output,
+            )
+
+        # Tab 5: Semantic Review
+        with gr.TabItem("🧠 Semantic Review"):
+            gr.Markdown("""
+            ### Clinical Semantic Analysis (openEHR Inspired)
+            This tool performs a deep audit of your nursing documentation. It checks the note against 
+            the **ONC Relational Care Logical Model** and suggests formal **NANDA-I** mappings.
+            
+            > **Goal:** To ensure documentation is not just "data" but high-quality **Clinical Knowledge**.
+            """)
+            
+            with gr.Row():
+                with gr.Column():
+                    review_input = gr.Textbox(
+                        label="Patient Progress Note",
+                        placeholder="Paste a note for a semantic audit...",
+                        lines=5,
+                    )
+                    review_btn = gr.Button("🧠 Perform Semantic Review", variant="primary")
+                
+                with gr.Column():
+                    review_output = gr.Textbox(
+                        label="Semantic Audit & Mapping Suggestions",
+                        lines=12,
+                        interactive=False,
+                    )
+            
+            review_btn.click(
+                fn=semantic_review,
+                inputs=review_input,
+                outputs=review_output,
+            )
+            
+            gr.Examples(
+                examples=[
+                    ["Patient seems isolated today. Minimal eye contact. Did not participate in group activity."],
+                    ["Mrs. Singh (dark skin tone) has area of hyperpigmentation on sacrum. Patient prefers to be called 'Dadi'."],
+                ],
+                inputs=review_input,
             )
     
     # Footer
