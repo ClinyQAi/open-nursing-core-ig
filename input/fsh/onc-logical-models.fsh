@@ -20,7 +20,7 @@ Description: "A vendor-neutral clinical model of the relational nursing assessme
 // TERMINOLOGY BINDINGS
 // =============================================================================
 * adpieStatus from ONCADPIEVS (required)
-* skinToneEquity from ONCSkinToneVS (extensible)
+* skinToneEquity from https://opennursingcoreig.com/ValueSet/onc-skintone-vs (extensible)
 * empathyIndex from ONCEmpathyIndexVS (required)
 
 // =============================================================================
@@ -30,8 +30,8 @@ ValueSet: ONCADPIEVS
 Id: onc-adpie-vs
 Title: "ADPIE Nursing Process Phases"
 Description: "The five phases of the professional nursing process."
-* #A "Assessment"
-* #D "Diagnosis"
-* #P "Planning"
-* #I "Implementation"
-* #E "Evaluation"
+* ONCObservationCodes#adpie-a "Assessment"
+* ONCObservationCodes#adpie-d "Diagnosis"
+* ONCObservationCodes#adpie-p "Planning"
+* ONCObservationCodes#adpie-i "Implementation"
+* ONCObservationCodes#adpie-e "Evaluation"

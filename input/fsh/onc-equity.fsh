@@ -3,7 +3,7 @@ Id: UKCore-Extension-EthnicCategory
 Title: "UK Core Ethnic Category"
 Description: "An extension to record the ethnic category of a patient, as per UK Core standards."
 Context: Patient
-* ^url = "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/UKCore-Extension-EthnicCategory"
+* ^url = "https://opennursingcoreig.com/StructureDefinition/UKCore-Extension-EthnicCategory"
 * value[x] only CodeableConcept
 * value[x] 1..1
 
@@ -41,7 +41,7 @@ CodeSystem: ONCObservationCodes
 Id: onc-observation-codes
 Title: "ONC Observation Codes"
 Description: "Custom observation codes for Open Nursing Core"
-* ^url = "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"
+* ^url = "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"
 * #mst-score "Monk Skin Tone Score" "Assessment of skin tone using the Monk Skin Tone Scale"
 * #waterlow-score "Waterlow Score" "Total score for Waterlow pressure ulcer risk assessment"
 * #must-score "MUST Score" "Malnutrition Universal Screening Tool total score"
@@ -103,6 +103,16 @@ Description: "Custom observation codes for Open Nursing Core"
 * #bristol-5 "Type 5" "Soft blobs with clear-cut edges (passed easily)"
 * #bristol-6 "Type 6" "Fluffy pieces with ragged edges, a mushy stool"
 * #bristol-7 "Type 7" "Watery, no solid pieces. Entirely liquid"
+* #adpie-a "Assessment" "Assessment phase of the nursing process"
+* #adpie-d "Diagnosis" "Diagnosis phase of the nursing process"
+* #adpie-p "Planning" "Planning phase of the nursing process"
+* #adpie-i "Implementation" "Implementation phase of the nursing process"
+* #adpie-e "Evaluation" "Evaluation phase of the nursing process"
+* #empathy-1 "Low Empathy" "Task-focused interaction with minimal person-centred engagement."
+* #empathy-2 "Basic Empathy" "Professional interaction with patient identity acknowledged."
+* #empathy-3 "Moderate Empathy" "Active relational engagement with shared decision making."
+* #empathy-4 "High Empathy" "Authentic partnership with deep understanding of patient experience."
+* #empathy-5 "Relational Excellence" "Flourishing partnership with total alignment on 'What Matters to Me'."
 
 // =============================================================================
 // Abbey Pain Scale Codes
@@ -206,7 +216,7 @@ Parent: ONCNursingAssessment
 Id: onc-monk-skintone-observation
 Title: "Monk Skin Tone Observation"
 Description: "Observation of patient skin tone using the Monk Skin Tone Scale (10-point scale A-J). Provides more granular skin tone assessment than Fitzpatrick scale, particularly for darker skin tones. Supports equitable care and accurate clinical assessment across diverse populations."
-* code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#mst-score "Monk Skin Tone Score"
+* code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#mst-score "Monk Skin Tone Score"
 * value[x] only CodeableConcept
 * valueCodeableConcept from ONCMonkScaleVS (required)
 
@@ -218,10 +228,7 @@ Parent: ONCNursingAssessment
 Id: onc-reasonable-adjustment
 Title: "Reasonable Adjustment"
 Description: "Captures specific strict requirements for care adjustments under the Equality Act (e.g., 'Needs BSL Interpreter', 'Cannot use stairs', 'Requires large print')."
-* ^url = "https://fhir.clinyq.ai/StructureDefinition/onc-reasonable-adjustment"
-* ^version = "0.1.0"
-* ^status = #draft
-* category = http://terminology.hl7.org/CodeSystem/observation-category#exam
+* ^url = "https://opennursingcoreig.com/StructureDefinition/onc-reasonable-adjustment"
 * code = ONCObservationCodes#reasonable-adjustment
 * value[x] only string
 * valueString 1..1 MS
@@ -229,10 +236,13 @@ Description: "Captures specific strict requirements for care adjustments under t
 * note 0..1 MS
 
 // =============================================================================
-// Equity Invariants (The "AI Safety Gate")
+// Equity Extensions (The "Safety Marker")
 // =============================================================================
-Invariant: onc-equity-skin-tone-required
-Description: "Wound assessments MUST have an associated skin tone observation to ensure equitable care (AI Safety Gate)."
-Expression: "hasMember.resolve().code.coding.where(code = '66555-4' or code = 'mst-score').exists()"
-Severity: #error
+Extension: ONCEquityMarker
+Id: onc-equity-marker
+Title: "ONC Equity Marker"
+Description: "A technical extension applied to observations that have passed the Mandatory Equity Gate (i.e., they are skin-tone aware)."
+* ^url = "https://opennursingcoreig.com/StructureDefinition/onc-equity-marker"
+* value[x] only boolean
+* valueBoolean 1..1
 

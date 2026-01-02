@@ -7,7 +7,7 @@ Id: onc-waterlow-score
 Title: "Waterlow Score"
 Description: "Waterlow Pressure Ulcer Risk Assessment - NHS standard tool. Score ≥10 indicates at risk, ≥15 high risk, ≥20 very high risk."
 * status MS
-* code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#waterlow-score "Waterlow Score"
+* code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#waterlow-score "Waterlow Score"
 * code MS
 * value[x] only Quantity
 * valueQuantity 1..1 MS
@@ -18,7 +18,7 @@ Description: "Waterlow Pressure Ulcer Risk Assessment - NHS standard tool. Score
 * component 0..* MS
 * component ^short = "Risk factor components (build, skin type, age, continence, mobility, appetite, special risks)"
 
-* obeys onc-equity-skin-tone-required
+* obeys onc-equity-gate-1
 * hasMember MS
 * hasMember ^slicing.discriminator.type = #pattern
 * hasMember ^slicing.discriminator.path = "resolve().code"

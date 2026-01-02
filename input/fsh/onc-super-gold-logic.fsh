@@ -18,14 +18,12 @@ Description: "A clinical scale measuring the depth of therapeutic empathy in nur
 * ONCObservationCodes#empathy-5 "Relational Excellence: Flourishing partnership with total alignment on 'What Matters to Me'."
 
 // -----------------------------------------------------------------------------
-// 2. Mandatory Equity Invariants (The "Fairness Gate")
-// -----------------------------------------------------------------------------
 // This invariant ensures that a skin assessment CANNOT be recorded without 
 // an accompanying skin-tone observation (Fitzpatrick or Monk).
 Invariant: onc-equity-gate-1
 Description: "Clinical safety rule: Skin observations (pressure ulcers, wounds) MUST include a Skin Tone assessment to ensure equitable care thresholds."
 Severity: #error
-Expression: "extension('https://fhir.clinyq.ai/StructureDefinition/onc-equity-marker').exists()"
+Expression: "hasMember.resolve().code.coding.where(code = '66555-4' or code = 'mst-score').exists()"
 
 // -----------------------------------------------------------------------------
 // 3. Relational Outcomes (Triple Link: NANDA + NIC + NOC)

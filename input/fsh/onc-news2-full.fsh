@@ -12,7 +12,7 @@ Title: "NEWS2 Score"
 Description: "National Early Warning Score 2 (NEWS2) for detecting clinical deterioration. Fully aligned with NHS CareConnect-NEWS2-Observation-1."
 * status = #final
 * status MS
-* code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#news2-score "NEWS2 Score"
+* code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#news2-score "NEWS2 Score"
 * code MS
 * value[x] only Quantity
 * valueQuantity 1..1 MS
@@ -42,7 +42,7 @@ Title: "NEWS2 Sub-Score"
 Description: "Individual parameter sub-score for NEWS2 (0-3 for most parameters). References the related vital sign observation."
 * status = #final
 * status MS
-* code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#news2-subscore "NEWS2 Sub-score"
+* code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#news2-subscore "NEWS2 Sub-score"
 * code MS
 * value[x] only Quantity
 * valueQuantity 1..1 MS

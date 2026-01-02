@@ -69,7 +69,6 @@ Id: onc-4at-alertness-vs
 Title: "4AT Alertness Value Set"
 Description: "Scoring options for 4AT Alertness"
 * ONCObservationCodes#4at-alertness "Normal (fully alert, not agitated)" // Score 0
-* ONCObservationCodes#4at-alertness "Mild sleepiness for <10s" // Score 0 - Simplified for FHIR structure (requires distinct codes in reality, using text for now if code reused)
 // NOTE: For strict implementation, we need distinct codes for scoring 0 vs 4. 
 // Using simplified mapping: 
 // 0 = Normal

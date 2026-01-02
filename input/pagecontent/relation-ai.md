@@ -6,6 +6,16 @@
 <strong>🚀 Model Live on Hugging Face:</strong> <a href="https://huggingface.co/NurseCitizenDeveloper/nursing-llama-3-8b-fons" target="_blank">NurseCitizenDeveloper/nursing-llama-3-8b-fons</a>
 </div>
 
+<div style="margin-top: 20px; margin-bottom: 20px;">
+<iframe
+	src="https://nursecitizendeveloper-relational-ai-nursing.hf.space"
+	frameborder="0"
+	width="100%"
+	height="800"
+    style="border-radius: 8px; border: 1px solid #e1e4e8;"
+></iframe>
+</div>
+
 ## Overview
 **Relational Ai for Nursing** is a specialized AI model developed as part of the Open Nursing Core IG. It is designed to assist nurses in writing high-quality, person-centred clinical notes that adhere to professional standards while reducing administrative burden.
 

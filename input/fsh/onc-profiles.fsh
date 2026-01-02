@@ -21,7 +21,7 @@ Title: "Braden Scale Assessment"
 Description: "A profile for the Braden Scale pressure ulcer risk assessment"
 * status = #final
 * status MS
-* code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#braden-total-score "Braden Total Score"
+* code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#braden-total-score "Braden Total Score"
 * code MS
 * value[x] only Quantity
 * valueQuantity 1..1 MS
@@ -34,20 +34,20 @@ Description: "A profile for the Braden Scale pressure ulcer risk assessment"
 * component ^slicing.ordered = false
 * component ^slicing.rules = #open
 * component contains sensoryPerception 1..1 MS and moisture 1..1 MS and activity 1..1 MS and mobility 1..1 MS and nutrition 1..1 MS and frictionAndShear 1..1 MS
-* component[sensoryPerception].code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#braden-sensory "Braden Sensory Perception"
+* component[sensoryPerception].code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#braden-sensory "Braden Sensory Perception"
 * component[sensoryPerception].value[x] only Quantity
-* component[moisture].code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#braden-moisture "Braden Moisture"
+* component[moisture].code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#braden-moisture "Braden Moisture"
 * component[moisture].value[x] only Quantity
-* component[activity].code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#braden-activity "Braden Activity"
+* component[activity].code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#braden-activity "Braden Activity"
 * component[activity].value[x] only Quantity
-* component[mobility].code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#braden-mobility "Braden Mobility"
+* component[mobility].code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#braden-mobility "Braden Mobility"
 * component[mobility].value[x] only Quantity
-* component[nutrition].code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#braden-nutrition "Braden Nutrition"
+* component[nutrition].code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#braden-nutrition "Braden Nutrition"
 * component[nutrition].value[x] only Quantity
-* component[frictionAndShear].code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#braden-friction "Braden Friction/Shear"
+* component[frictionAndShear].code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#braden-friction "Braden Friction/Shear"
 * component[frictionAndShear].value[x] only Quantity
 
-* obeys onc-equity-skin-tone-required
+* obeys onc-equity-gate-1
 * hasMember MS
 * hasMember ^slicing.discriminator.type = #pattern
 * hasMember ^slicing.discriminator.path = "resolve().code"
