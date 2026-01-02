@@ -33,7 +33,7 @@ ALPACA_TEMPLATE = """Below is an instruction that describes a task, paired with 
 # ============================================
 # LOAD MODEL (PEFT / Adapter Compatible)
 # ============================================
-BASE_MODEL = "meta-llama/Meta-Llama-3-8B" # The foundation
+BASE_MODEL = "NousResearch/Meta-Llama-3-8B" # Non-gated alternative to original Meta repo
 print(f"🔄 Loading base model: {BASE_MODEL}")
 
 # tokenizer should be loaded from the adapter repo if it has custom tokens
