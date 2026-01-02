@@ -4,8 +4,14 @@ Fine-tuned Llama-3-8B for person-centred nursing documentation.
 """
 import gradio as gr
 import torch
+import os
 from transformers import AutoModelForCausalLM, AutoTokenizer, TextIteratorStreamer
 from threading import Thread
+from huggingface_hub import login
+
+# Login to Hugging Face (Requires HF_TOKEN secret in Space settings)
+if os.getenv("HF_TOKEN"):
+    login(token=os.getenv("HF_TOKEN"))
 
 # ============================================
 # MODEL CONFIGURATION
