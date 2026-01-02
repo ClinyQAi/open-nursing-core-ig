@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-device-use-statement | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-device-use-statement | *Version*:0.1.0 |
 | Draft as of 2026-01-02 | *Computable Name*:ONCDeviceUseStatement |
 
  
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-device-use-state
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-device-use-statement",
-  "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-device-use-statement",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-device-use-statement",
   "version" : "0.1.0",
   "name" : "ONCDeviceUseStatement",
   "title" : "Device Use Statement",
   "status" : "draft",
-  "date" : "2026-01-02T16:06:53+00:00",
+  "date" : "2026-01-02T16:27:10+00:00",
   "description" : "Documentation of mobility aids or other devices used by the patient.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

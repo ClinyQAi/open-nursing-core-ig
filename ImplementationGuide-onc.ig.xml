@@ -3,15 +3,15 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="onc.ig"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide onc.ig</b></p><a name="onc.ig"> </a><a name="hconc.ig"> </a><h2>OpenNursingCoreIG</h2><p>The official URL for this implementation guide is: </p><pre>https://clinyqai.github.io/open-nursing-core-ig/ImplementationGuide/onc.ig</pre><div><p>Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome.</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide onc.ig</b></p><a name="onc.ig"> </a><a name="hconc.ig"> </a><h2>OpenNursingCoreIG</h2><p>The official URL for this implementation guide is: </p><pre>https://opennursingcoreig.com/ImplementationGuide/onc.ig</pre><div><p>Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome.</p>
 </div></div>
   </text>
-  <url value="https://clinyqai.github.io/open-nursing-core-ig/ImplementationGuide/onc.ig"/>
+  <url value="https://opennursingcoreig.com/ImplementationGuide/onc.ig"/>
   <version value="0.1.0"/>
   <name value="OpenNursingCoreIG"/>
   <title value="Open Nursing Core FHIR Implementation Guide (ONC-IG)"/>
   <status value="draft"/>
-  <date value="2026-01-02T16:06:53+00:00"/>
+  <date value="2026-01-02T16:27:10+00:00"/>
   <description value="Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome."/>
   <packageId value="onc.ig"/>
   <license value="MIT"/>
@@ -110,7 +110,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="https://clinyqai.github.io/open-nursing-core-ig/history.html"/>
+        <valueString value="https://opennursingcoreig.com/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -313,7 +313,7 @@
         <valueCode value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="https://clinyqai.github.io/open-nursing-core-ig/history.html"/>
+        <valueString value="https://opennursingcoreig.com/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -735,7 +735,7 @@
         <reference value="Observation/example-goal-evaluation"/>
       </reference>
       <name value="example-goal-evaluation"/>
-      <exampleCanonical value="https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-goal-evaluation"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-goal-evaluation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -755,7 +755,7 @@
         <reference value="Procedure/example-nursing-intervention"/>
       </reference>
       <name value="example-nursing-intervention"/>
-      <exampleCanonical value="https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-intervention"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-nursing-intervention"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -765,7 +765,7 @@
         <reference value="Condition/example-nursing-problem"/>
       </reference>
       <name value="example-nursing-problem"/>
-      <exampleCanonical value="https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-problem"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-nursing-problem"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -786,7 +786,7 @@
       </reference>
       <name value="example-patient-goal"/>
       <description value="Patient will remain free from falls."/>
-      <exampleCanonical value="https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-nursing-goal"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1184,7 +1184,7 @@
         <reference value="Observation/observation-braden-scale"/>
       </reference>
       <name value="observation-braden-scale"/>
-      <exampleCanonical value="https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-braden-scale-assessment"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-braden-scale-assessment"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1194,7 +1194,7 @@
         <reference value="Observation/observation-skin-tone"/>
       </reference>
       <name value="observation-skin-tone"/>
-      <exampleCanonical value="https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-skintone-observation"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-skintone-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1369,7 +1369,7 @@
         <reference value="Patient/patient-example-jane"/>
       </reference>
       <name value="patient-example-jane"/>
-      <exampleCanonical value="https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nhs-patient"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-nhs-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

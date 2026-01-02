@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-intervention-valueset | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/ValueSet/nursing-intervention-valueset | *Version*:0.1.0 |
 | Draft as of 2026-01-02 | *Computable Name*:NursingInterventionValueSet |
 
  
@@ -45,13 +45,13 @@ Value set for nursing interventions
 {
   "resourceType" : "ValueSet",
   "id" : "nursing-intervention-valueset",
-  "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-intervention-valueset",
+  "url" : "https://opennursingcoreig.com/ValueSet/nursing-intervention-valueset",
   "version" : "0.1.0",
   "name" : "NursingInterventionValueSet",
   "title" : "Nursing Intervention Value Set",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-01-02T16:06:53+00:00",
+  "date" : "2026-01-02T16:27:10+00:00",
   "description" : "Value set for nursing interventions",
   "compose" : {
     "include" : [

@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-mental-capacity.
   "name" : "ONCMentalCapacity",
   "title" : "Mental Capacity Assessment",
   "status" : "draft",
-  "date" : "2026-01-02T16:06:53+00:00",
+  "date" : "2026-01-02T16:27:10+00:00",
   "description" : "Records the outcome of a Mental Capacity Assessment for a specific decision. Fundamental legal safeguard in UK nursing practice.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -79,7 +79,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-mental-capacity.
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+  "baseDefinition" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -122,7 +122,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-mental-capacity.
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-mca-vs"
+          "valueSet" : "https://opennursingcoreig.com/ValueSet/onc-mca-vs"
         }
       },
       {

@@ -30,7 +30,7 @@ Profile: [Skin Tone Observation](StructureDefinition-onc-skintone-observation.md
   "id" : "observation-skin-tone",
   "meta" : {
     "profile" : [
-      "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-skintone-observation"
+      "https://opennursingcoreig.com/StructureDefinition/onc-skintone-observation"
     ]
   },
   "status" : "final",

@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-fluid-balance> a fhir:StructureDefinition ;
+<https://opennursingcoreig.com/StructureDefinition/onc-fluid-balance> a fhir:StructureDefinition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "onc-fluid-balance"] ; # 
   fhir:text [
@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "ONCFluidBalance"] ; # 
   fhir:title [ fhir:v "Fluid Balance"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-01-02T16:06:53+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-02T16:27:10+00:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "Assessment of fluid intake, output, and balance. Critical for renal function, hydration status, and heart failure monitoring."] ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
   fhir:mapping ( [
@@ -74,8 +74,8 @@
      fhir:l fhir:Observation
   ] ; # 
   fhir:baseDefinition [
-     fhir:v "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment"^^xsd:anyURI ;
-     fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment>
+     fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment"^^xsd:anyURI ;
+     fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment>
   ] ; # 
   fhir:derivation [ fhir:v "constraint"] ; # 
   fhir:snapshot [

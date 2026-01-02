@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-news2-subscore | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-news2-subscore | *Version*:0.1.0 |
 | Draft as of 2026-01-02 | *Computable Name*:ONCNEWS2Subscore |
 
  
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-news2-subscore.c
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-news2-subscore",
-  "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-news2-subscore",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-news2-subscore",
   "version" : "0.1.0",
   "name" : "ONCNEWS2Subscore",
   "title" : "NEWS2 Sub-Score",
   "status" : "draft",
-  "date" : "2026-01-02T16:06:53+00:00",
+  "date" : "2026-01-02T16:27:10+00:00",
   "description" : "Individual parameter sub-score for NEWS2 (0-3 for most parameters). References the related vital sign observation.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -79,7 +79,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-news2-subscore.c
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+  "baseDefinition" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -125,7 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-news2-subscore.c
             "severity" : "error",
             "human" : "NEWS2 sub-score must be between 0 and 3",
             "expression" : "$this >= 0 and $this <= 3",
-            "source" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-news2-subscore"
+            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-news2-subscore"
           }
         ]
       },

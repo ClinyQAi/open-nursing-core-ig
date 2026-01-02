@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-monk-skintone-observation | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-monk-skintone-observation | *Version*:0.1.0 |
 | Draft as of 2026-01-02 | *Computable Name*:ONCMonkSkinToneObservation |
 
  
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-monk-skintone-ob
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-monk-skintone-observation",
-  "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-monk-skintone-observation",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-monk-skintone-observation",
   "version" : "0.1.0",
   "name" : "ONCMonkSkinToneObservation",
   "title" : "Monk Skin Tone Observation",
   "status" : "draft",
-  "date" : "2026-01-02T16:06:53+00:00",
+  "date" : "2026-01-02T16:27:10+00:00",
   "description" : "Observation of patient skin tone using the Monk Skin Tone Scale (10-point scale A-J). Provides more granular skin tone assessment than Fitzpatrick scale, particularly for darker skin tones. Supports equitable care and accurate clinical assessment across diverse populations.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -79,7 +79,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-monk-skintone-ob
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+  "baseDefinition" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -110,7 +110,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-monk-skintone-ob
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-monk-scale-vs"
+          "valueSet" : "https://opennursingcoreig.com/ValueSet/onc-monk-scale-vs"
         }
       }
     ]

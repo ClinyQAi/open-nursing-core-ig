@@ -32,7 +32,7 @@ Profile: [ONC Goal Evaluation](StructureDefinition-onc-goal-evaluation.md)
   "id" : "example-goal-evaluation",
   "meta" : {
     "profile" : [
-      "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-goal-evaluation"
+      "https://opennursingcoreig.com/StructureDefinition/onc-goal-evaluation"
     ]
   },
   "status" : "final",

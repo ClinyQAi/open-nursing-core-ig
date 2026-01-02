@@ -8,13 +8,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://clinyqai.github.io/open-nursing-core-ig/Observation/observation-skin-tone> a fhir:Observation ;
+<https://opennursingcoreig.com/Observation/observation-skin-tone> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "observation-skin-tone"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-skintone-observation"^^xsd:anyURI ;
-       fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-skintone-observation>
+       fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-skintone-observation"^^xsd:anyURI ;
+       fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-skintone-observation>
      ] )
   ] ; # 
   fhir:text [
@@ -43,11 +43,11 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Patient/patient-example-jane> ;
+     fhir:l <https://opennursingcoreig.com/Patient/patient-example-jane> ;
      fhir:reference [ fhir:v "Patient/patient-example-jane" ]
   ] ; # 
   fhir:performer ( [
-     fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Practitioner/practitioner-example> ;
+     fhir:l <https://opennursingcoreig.com/Practitioner/practitioner-example> ;
      fhir:reference [ fhir:v "Practitioner/practitioner-example" ]
   ] ) ; # 
   fhir:value [

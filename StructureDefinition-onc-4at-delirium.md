@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-4at-delirium.csv
   "name" : "ONC4ATDelirium",
   "title" : "4AT Delirium Assessment",
   "status" : "draft",
-  "date" : "2026-01-02T16:06:53+00:00",
+  "date" : "2026-01-02T16:27:10+00:00",
   "description" : "Rapid clinical test for delirium (4AT) comprising Alertness, AMT4, Attention, and Acute Change/Fluctuating Course. A total score of 4 or more suggests possible delirium.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -79,7 +79,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-4at-delirium.csv
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+  "baseDefinition" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -195,7 +195,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-4at-delirium.csv
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-4at-alertness-vs"
+          "valueSet" : "https://opennursingcoreig.com/ValueSet/onc-4at-alertness-vs"
         }
       },
       {
@@ -228,7 +228,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-4at-delirium.csv
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-4at-amt4-vs"
+          "valueSet" : "https://opennursingcoreig.com/ValueSet/onc-4at-amt4-vs"
         }
       },
       {
@@ -261,7 +261,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-4at-delirium.csv
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-4at-attention-vs"
+          "valueSet" : "https://opennursingcoreig.com/ValueSet/onc-4at-attention-vs"
         }
       },
       {
@@ -294,7 +294,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-4at-delirium.csv
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-4at-acute-change-vs"
+          "valueSet" : "https://opennursingcoreig.com/ValueSet/onc-4at-acute-change-vs"
         }
       }
     ]

@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-abc-chart.csv), 
   "name" : "ONCABCChart",
   "title" : "PBS ABC Chart",
   "status" : "draft",
-  "date" : "2026-01-02T16:06:53+00:00",
+  "date" : "2026-01-02T16:27:10+00:00",
   "description" : "Antecedent-Behaviour-Consequence (ABC) Chart for recording behaviours of concern. Fundamental tool in Positive Behaviour Support (PBS) for Learning Disabilities.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -79,7 +79,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-abc-chart.csv), 
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+  "baseDefinition" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -122,7 +122,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-abc-chart.csv), 
         ],
         "binding" : {
           "strength" : "preferred",
-          "valueSet" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-pbs-function-vs"
+          "valueSet" : "https://opennursingcoreig.com/ValueSet/onc-pbs-function-vs"
         }
       },
       {

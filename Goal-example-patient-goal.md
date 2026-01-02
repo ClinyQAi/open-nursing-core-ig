@@ -33,7 +33,7 @@ Profile: [ONC Nursing Goal](StructureDefinition-onc-nursing-goal.md)
   "id" : "example-patient-goal",
   "meta" : {
     "profile" : [
-      "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal"
+      "https://opennursingcoreig.com/StructureDefinition/onc-nursing-goal"
     ]
   },
   "lifecycleStatus" : "active",

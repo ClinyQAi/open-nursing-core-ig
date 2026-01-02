@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-acvpu | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-acvpu | *Version*:0.1.0 |
 | Draft as of 2026-01-02 | *Computable Name*:ONCACVPU |
 
  
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-acvpu.csv), [Exc
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-acvpu",
-  "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-acvpu",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-acvpu",
   "version" : "0.1.0",
   "name" : "ONCACVPU",
   "title" : "ACVPU Consciousness Level",
   "status" : "draft",
-  "date" : "2026-01-02T16:06:53+00:00",
+  "date" : "2026-01-02T16:27:10+00:00",
   "description" : "ACVPU consciousness level assessment for NEWS2 (Alert, Confusion, Voice, Pain, Unresponsive)",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -79,7 +79,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-acvpu.csv), [Exc
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+  "baseDefinition" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -110,7 +110,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-acvpu.csv), [Exc
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/acvpu-vs"
+          "valueSet" : "https://opennursingcoreig.com/ValueSet/acvpu-vs"
         }
       }
     ]

@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-news2-score | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-news2-score | *Version*:0.1.0 |
 | Draft as of 2026-01-02 | *Computable Name*:ONCNEWS2Score |
 
  
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-news2-score.csv)
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-news2-score",
-  "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-news2-score",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-news2-score",
   "version" : "0.1.0",
   "name" : "ONCNEWS2Score",
   "title" : "NEWS2 Score",
   "status" : "draft",
-  "date" : "2026-01-02T16:06:53+00:00",
+  "date" : "2026-01-02T16:27:10+00:00",
   "description" : "National Early Warning Score 2 (NEWS2) for detecting clinical deterioration. Fully aligned with NHS CareConnect-NEWS2-Observation-1.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -79,7 +79,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-news2-score.csv)
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+  "baseDefinition" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -126,7 +126,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-news2-score.csv)
             "severity" : "error",
             "human" : "NEWS2 score must be between 0 and 20",
             "expression" : "$this >= 0 and $this <= 20",
-            "source" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-news2-score"
+            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-news2-score"
           }
         ]
       },

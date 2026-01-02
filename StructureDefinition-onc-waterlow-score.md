@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-waterlow-score | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-waterlow-score | *Version*:0.1.0 |
 | Draft as of 2026-01-02 | *Computable Name*:ONCWaterlowScore |
 
  
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-waterlow-score.c
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-waterlow-score",
-  "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-waterlow-score",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-waterlow-score",
   "version" : "0.1.0",
   "name" : "ONCWaterlowScore",
   "title" : "Waterlow Score",
   "status" : "draft",
-  "date" : "2026-01-02T16:06:53+00:00",
+  "date" : "2026-01-02T16:27:10+00:00",
   "description" : "Waterlow Pressure Ulcer Risk Assessment - NHS standard tool. Score ≥10 indicates at risk, ≥15 high risk, ≥20 very high risk.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -79,7 +79,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-waterlow-score.c
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+  "baseDefinition" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -92,7 +92,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-waterlow-score.c
             "severity" : "error",
             "human" : "Wound assessments MUST have an associated skin tone observation to ensure equitable care (AI Safety Gate).",
             "expression" : "hasMember.resolve().code.coding.where(code = '66555-4' or code = 'mst-score').exists()",
-            "source" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-waterlow-score"
+            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-waterlow-score"
           }
         ]
       },
@@ -134,7 +134,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-waterlow-score.c
             "severity" : "error",
             "human" : "Waterlow score must be 0 or greater",
             "expression" : "$this >= 0",
-            "source" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-waterlow-score"
+            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-waterlow-score"
           }
         ]
       },
@@ -174,8 +174,8 @@ Other representations of profile: [CSV](StructureDefinition-onc-waterlow-score.c
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-skintone-observation",
-              "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-monk-skintone-observation"
+              "https://opennursingcoreig.com/StructureDefinition/onc-skintone-observation",
+              "https://opennursingcoreig.com/StructureDefinition/onc-monk-skintone-observation"
             ]
           }
         ],

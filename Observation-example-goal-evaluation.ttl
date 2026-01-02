@@ -7,13 +7,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://clinyqai.github.io/open-nursing-core-ig/Observation/example-goal-evaluation> a fhir:Observation ;
+<https://opennursingcoreig.com/Observation/example-goal-evaluation> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "example-goal-evaluation"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-goal-evaluation"^^xsd:anyURI ;
-       fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-goal-evaluation>
+       fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-goal-evaluation"^^xsd:anyURI ;
+       fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-goal-evaluation>
      ] )
   ] ; # 
   fhir:text [
@@ -42,15 +42,15 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Patient/patient-example-jane> ;
+     fhir:l <https://opennursingcoreig.com/Patient/patient-example-jane> ;
      fhir:reference [ fhir:v "Patient/patient-example-jane" ]
   ] ; # 
   fhir:focus ( [
-     fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Goal/example-patient-goal> ;
+     fhir:l <https://opennursingcoreig.com/Goal/example-patient-goal> ;
      fhir:reference [ fhir:v "Goal/example-patient-goal" ]
   ] ) ; # 
   fhir:performer ( [
-     fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Practitioner/practitioner-example> ;
+     fhir:l <https://opennursingcoreig.com/Practitioner/practitioner-example> ;
      fhir:reference [ fhir:v "Practitioner/practitioner-example" ]
   ] ) ; # 
   fhir:value [

@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-must-score | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-must-score | *Version*:0.1.0 |
 | Draft as of 2026-01-02 | *Computable Name*:ONCMUSTScore |
 
  
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-must-score.csv),
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-must-score",
-  "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-must-score",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-must-score",
   "version" : "0.1.0",
   "name" : "ONCMUSTScore",
   "title" : "MUST Score (Malnutrition Universal Screening Tool)",
   "status" : "draft",
-  "date" : "2026-01-02T16:06:53+00:00",
+  "date" : "2026-01-02T16:27:10+00:00",
   "description" : "Malnutrition Universal Screening Tool for identifying adults at risk of malnutrition. Score 0=low risk, 1=medium risk, 2+=high risk. NHS-standard nutritional screening.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -79,7 +79,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-must-score.csv),
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+  "baseDefinition" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -125,7 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-must-score.csv),
             "severity" : "error",
             "human" : "MUST total score must be between 0 and 6",
             "expression" : "$this >= 0 and $this <= 6",
-            "source" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-must-score"
+            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-must-score"
           }
         ]
       },
@@ -195,7 +195,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-must-score.csv),
             "severity" : "error",
             "human" : "MUST component scores must be between 0 and 2",
             "expression" : "$this >= 0 and $this <= 2",
-            "source" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-must-score"
+            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-must-score"
           }
         ]
       },
@@ -248,7 +248,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-must-score.csv),
             "severity" : "error",
             "human" : "MUST component scores must be between 0 and 2",
             "expression" : "$this >= 0 and $this <= 2",
-            "source" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-must-score"
+            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-must-score"
           }
         ]
       },
@@ -301,7 +301,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-must-score.csv),
             "severity" : "error",
             "human" : "MUST component scores must be between 0 and 2",
             "expression" : "$this >= 0 and $this <= 2",
-            "source" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-must-score"
+            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-must-score"
           }
         ]
       },

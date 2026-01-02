@@ -7,7 +7,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ImplementationGuide/onc.ig | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/ImplementationGuide/onc.ig | *Version*:0.1.0 |
 | Draft as of 2026-01-02 | *Computable Name*:OpenNursingCoreIG |
 
 # Open Nursing Core FHIR Implementation Guide
@@ -88,12 +88,12 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
 {
   "resourceType" : "ImplementationGuide",
   "id" : "onc.ig",
-  "url" : "https://clinyqai.github.io/open-nursing-core-ig/ImplementationGuide/onc.ig",
+  "url" : "https://opennursingcoreig.com/ImplementationGuide/onc.ig",
   "version" : "0.1.0",
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "draft",
-  "date" : "2026-01-02T16:06:53+00:00",
+  "date" : "2026-01-02T16:27:10+00:00",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome.",
   "packageId" : "onc.ig",
   "license" : "MIT",
@@ -251,7 +251,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
           },
           {
             "url" : "value",
-            "valueString" : "https://clinyqai.github.io/open-nursing-core-ig/history.html"
+            "valueString" : "https://opennursingcoreig.com/history.html"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -580,7 +580,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
           },
           {
             "url" : "value",
-            "valueString" : "https://clinyqai.github.io/open-nursing-core-ig/history.html"
+            "valueString" : "https://opennursingcoreig.com/history.html"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -1165,7 +1165,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
           "reference" : "Observation/example-goal-evaluation"
         },
         "name" : "example-goal-evaluation",
-        "exampleCanonical" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-goal-evaluation"
+        "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-goal-evaluation"
       },
       {
         "extension" : [
@@ -1191,7 +1191,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
           "reference" : "Procedure/example-nursing-intervention"
         },
         "name" : "example-nursing-intervention",
-        "exampleCanonical" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-intervention"
+        "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-intervention"
       },
       {
         "extension" : [
@@ -1204,7 +1204,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
           "reference" : "Condition/example-nursing-problem"
         },
         "name" : "example-nursing-problem",
-        "exampleCanonical" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-problem"
+        "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-problem"
       },
       {
         "extension" : [
@@ -1231,7 +1231,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
         },
         "name" : "example-patient-goal",
         "description" : "Patient will remain free from falls.",
-        "exampleCanonical" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal"
+        "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-goal"
       },
       {
         "extension" : [
@@ -1740,7 +1740,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
           "reference" : "Observation/observation-braden-scale"
         },
         "name" : "observation-braden-scale",
-        "exampleCanonical" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-braden-scale-assessment"
+        "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-braden-scale-assessment"
       },
       {
         "extension" : [
@@ -1753,7 +1753,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
           "reference" : "Observation/observation-skin-tone"
         },
         "name" : "observation-skin-tone",
-        "exampleCanonical" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-skintone-observation"
+        "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-skintone-observation"
       },
       {
         "extension" : [
@@ -1976,7 +1976,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
           "reference" : "Patient/patient-example-jane"
         },
         "name" : "patient-example-jane",
-        "exampleCanonical" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nhs-patient"
+        "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-nhs-patient"
       },
       {
         "extension" : [

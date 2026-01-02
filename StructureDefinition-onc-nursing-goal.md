@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-nursing-goal | *Version*:0.1.0 |
 | Draft as of 2026-01-02 | *Computable Name*:ONCNursingGoal |
 
  
@@ -37,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-goal.csv
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-nursing-goal",
-  "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-goal",
   "version" : "0.1.0",
   "name" : "ONCNursingGoal",
   "title" : "ONC Nursing Goal",
   "status" : "draft",
-  "date" : "2026-01-02T16:06:53+00:00",
+  "date" : "2026-01-02T16:27:10+00:00",
   "description" : "Patient-centered goal with mandatory evaluation requirements. Serves as the 'spine' of the CarePlan, linking problems to outcomes.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -78,7 +78,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-goal.csv
             "severity" : "warning",
             "human" : "Goal must have evaluation observation by target.dueDate",
             "expression" : "target.dueDate.exists() implies (lifecycleStatus = 'active' or lifecycleStatus = 'completed' or lifecycleStatus = 'cancelled')",
-            "source" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal"
+            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-goal"
           }
         ]
       },
@@ -125,7 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-goal.csv
         "path" : "Goal.target.measure",
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-goal-target-measure-vs"
+          "valueSet" : "https://opennursingcoreig.com/ValueSet/onc-goal-target-measure-vs"
         }
       },
       {
@@ -164,7 +164,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-goal.csv
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-problem"
+              "https://opennursingcoreig.com/StructureDefinition/onc-nursing-problem"
             ]
           }
         ],

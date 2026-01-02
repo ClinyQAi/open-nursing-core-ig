@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-wound-assessment | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-wound-assessment | *Version*:0.1.0 |
 | Draft as of 2026-01-02 | *Computable Name*:ONCWoundAssessment |
 
  
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-wound-assessment
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-wound-assessment",
-  "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-wound-assessment",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-wound-assessment",
   "version" : "0.1.0",
   "name" : "ONCWoundAssessment",
   "title" : "Wound Assessment",
   "status" : "draft",
-  "date" : "2026-01-02T16:06:53+00:00",
+  "date" : "2026-01-02T16:27:10+00:00",
   "description" : "Comprehensive wound assessment including staging and dimensions",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -79,7 +79,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-wound-assessment
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+  "baseDefinition" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -117,7 +117,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-wound-assessment
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/wound-stage-vs"
+          "valueSet" : "https://opennursingcoreig.com/ValueSet/wound-stage-vs"
         }
       },
       {
@@ -174,7 +174,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-wound-assessment
             "severity" : "error",
             "human" : "Wound dimensions must be positive",
             "expression" : "$this > 0",
-            "source" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-wound-assessment"
+            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-wound-assessment"
           }
         ]
       },
@@ -232,7 +232,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-wound-assessment
             "severity" : "error",
             "human" : "Wound dimensions must be positive",
             "expression" : "$this > 0",
-            "source" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-wound-assessment"
+            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-wound-assessment"
           }
         ]
       },
@@ -290,7 +290,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-wound-assessment
             "severity" : "error",
             "human" : "Wound dimensions must be positive",
             "expression" : "$this > 0",
-            "source" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-wound-assessment"
+            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-wound-assessment"
           }
         ]
       },

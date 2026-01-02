@@ -26,7 +26,7 @@ Jane Doe Female, DoB Unknown
   "id" : "patient-example-jane",
   "meta" : {
     "profile" : [
-      "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nhs-patient"
+      "https://opennursingcoreig.com/StructureDefinition/onc-nhs-patient"
     ]
   },
   "extension" : [

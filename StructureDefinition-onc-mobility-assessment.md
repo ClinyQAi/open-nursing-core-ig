@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-mobility-assessment | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-mobility-assessment | *Version*:0.1.0 |
 | Draft as of 2026-01-02 | *Computable Name*:ONCMobilityAssessment |
 
  
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-mobility-assessm
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-mobility-assessment",
-  "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-mobility-assessment",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-mobility-assessment",
   "version" : "0.1.0",
   "name" : "ONCMobilityAssessment",
   "title" : "Mobility Assessment",
   "status" : "draft",
-  "date" : "2026-01-02T16:06:53+00:00",
+  "date" : "2026-01-02T16:27:10+00:00",
   "description" : "Assessment of capability to move and limitations.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -79,7 +79,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-mobility-assessm
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+  "baseDefinition" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment",
   "derivation" : "constraint",
   "differential" : {
     "element" : [

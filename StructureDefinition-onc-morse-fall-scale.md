@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-morse-fall-scale | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-morse-fall-scale | *Version*:0.1.0 |
 | Draft as of 2026-01-02 | *Computable Name*:ONCMorseFallScale |
 
  
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-morse-fall-scale
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-morse-fall-scale",
-  "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-morse-fall-scale",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-morse-fall-scale",
   "version" : "0.1.0",
   "name" : "ONCMorseFallScale",
   "title" : "Morse Fall Scale",
   "status" : "draft",
-  "date" : "2026-01-02T16:06:53+00:00",
+  "date" : "2026-01-02T16:27:10+00:00",
   "description" : "Morse Fall Scale for assessing fall risk. Score 0-24=no risk, 25-50=low risk, ≥51=high risk. Total range 0-125.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -79,7 +79,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-morse-fall-scale
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+  "baseDefinition" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -125,7 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-morse-fall-scale
             "severity" : "error",
             "human" : "Morse Fall Scale must be between 0 and 125",
             "expression" : "$this >= 0 and $this <= 125",
-            "source" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-morse-fall-scale"
+            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-morse-fall-scale"
           }
         ]
       },

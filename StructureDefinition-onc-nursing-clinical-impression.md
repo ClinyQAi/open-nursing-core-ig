@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-clinical-impression | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-nursing-clinical-impression | *Version*:0.1.0 |
 | Draft as of 2026-01-02 | *Computable Name*:ONCNursingClinicalImpression |
 
  
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-clinical
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-nursing-clinical-impression",
-  "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-clinical-impression",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-clinical-impression",
   "version" : "0.1.0",
   "name" : "ONCNursingClinicalImpression",
   "title" : "ONC Nursing Clinical Impression",
   "status" : "draft",
-  "date" : "2026-01-02T16:06:53+00:00",
+  "date" : "2026-01-02T16:27:10+00:00",
   "description" : "Nurse's synthesis of patient progress against care plan, aggregating multiple goal evaluations.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -169,7 +169,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-clinical
         "path" : "ClinicalImpression.prognosisCodeableConcept",
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-prognosis-vs"
+          "valueSet" : "https://opennursingcoreig.com/ValueSet/onc-prognosis-vs"
         }
       },
       {
@@ -179,7 +179,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-clinical
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-goal-evaluation"
+              "https://opennursingcoreig.com/StructureDefinition/onc-goal-evaluation"
             ]
           }
         ],

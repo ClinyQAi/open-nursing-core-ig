@@ -44,7 +44,7 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
   "id" : "observation-braden-scale",
   "meta" : {
     "profile" : [
-      "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-braden-scale-assessment"
+      "https://opennursingcoreig.com/StructureDefinition/onc-braden-scale-assessment"
     ]
   },
   "status" : "final",

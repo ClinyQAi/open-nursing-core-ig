@@ -3,12 +3,12 @@
 <Procedure xmlns="http://hl7.org/fhir">
   <id value="example-nursing-intervention"/>
   <meta>
-    <profile value="https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-intervention"/>
+    <profile value="https://opennursingcoreig.com/StructureDefinition/onc-nursing-intervention"/>
   </meta>
   <text>
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Procedure example-nursing-intervention</b></p><a name="example-nursing-intervention"> </a><a name="hcexample-nursing-intervention"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-onc-nursing-intervention.html">ONC Nursing Intervention</a></p></div><p><b>Intervention Goal Reference</b>: <a href="Goal-example-patient-goal.html">Goal: lifecycleStatus = active; description = </a></p><p><b>status</b>: Completed</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 71388002}">Procedure</span></p><p><b>subject</b>: <a href="Patient-patient-example-jane.html">Jane Doe  Female, DoB Unknown</a></p><h3>Performers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td><a href="Practitioner-practitioner-example.html">Practitioner Nightingale </a></td></tr></table></div>
   </text>
-  <extension url="https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/intervention-goal-reference">
+  <extension url="https://opennursingcoreig.com/StructureDefinition/intervention-goal-reference">
     <valueReference>
       <reference value="Goal/example-patient-goal"/>
     </valueReference>

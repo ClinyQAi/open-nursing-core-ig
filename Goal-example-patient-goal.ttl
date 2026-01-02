@@ -8,13 +8,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://clinyqai.github.io/open-nursing-core-ig/Goal/example-patient-goal> a fhir:Goal ;
+<https://opennursingcoreig.com/Goal/example-patient-goal> a fhir:Goal ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "example-patient-goal"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal"^^xsd:anyURI ;
-       fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal>
+       fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-nursing-goal"^^xsd:anyURI ;
+       fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-nursing-goal>
      ] )
   ] ; # 
   fhir:text [
@@ -26,7 +26,7 @@
      fhir:text [ fhir:v "Patient will remain free from falls." ]
   ] ; # 
   fhir:subject [
-     fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Patient/patient-example-jane> ;
+     fhir:l <https://opennursingcoreig.com/Patient/patient-example-jane> ;
      fhir:reference [ fhir:v "Patient/patient-example-jane" ]
   ] ; # 
   fhir:target ( [
@@ -59,7 +59,7 @@
      ]
   ] ) ; # 
   fhir:addresses ( [
-     fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Condition/example-nursing-problem> ;
+     fhir:l <https://opennursingcoreig.com/Condition/example-nursing-problem> ;
      fhir:reference [ fhir:v "Condition/example-nursing-problem" ]
   ] ) . # 
 

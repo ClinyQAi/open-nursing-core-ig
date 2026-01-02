@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-barthel-index | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-barthel-index | *Version*:0.1.0 |
 | Draft as of 2026-01-02 | *Computable Name*:ONCBarthelIndex |
 
  
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-barthel-index.cs
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-barthel-index",
-  "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-barthel-index",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-barthel-index",
   "version" : "0.1.0",
   "name" : "ONCBarthelIndex",
   "title" : "Barthel Index",
   "status" : "draft",
-  "date" : "2026-01-02T16:06:53+00:00",
+  "date" : "2026-01-02T16:27:10+00:00",
   "description" : "Barthel Index for measuring independence in activities of daily living (ADL). Score 0-20=total dependency, 91-99=slight dependency, 100=independent. Total range 0-100.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -79,7 +79,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-barthel-index.cs
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+  "baseDefinition" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -125,7 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-barthel-index.cs
             "severity" : "error",
             "human" : "Barthel Index must be between 0 and 100",
             "expression" : "$this >= 0 and $this <= 100",
-            "source" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-barthel-index"
+            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-barthel-index"
           }
         ]
       },

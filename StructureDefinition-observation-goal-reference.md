@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/observation-goal-reference | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/observation-goal-reference | *Version*:0.1.0 |
 | Draft as of 2026-01-02 | *Computable Name*:ObservationGoalReference |
 
 Extension to link goal evaluation observations to the patient goals being evaluated.
@@ -41,12 +41,12 @@ Other representations of profile: [CSV](StructureDefinition-observation-goal-ref
 {
   "resourceType" : "StructureDefinition",
   "id" : "observation-goal-reference",
-  "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/observation-goal-reference",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/observation-goal-reference",
   "version" : "0.1.0",
   "name" : "ObservationGoalReference",
   "title" : "Observation Goal Reference",
   "status" : "draft",
-  "date" : "2026-01-02T16:06:53+00:00",
+  "date" : "2026-01-02T16:27:10+00:00",
   "description" : "Extension to link goal evaluation observations to the patient goals being evaluated.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -83,7 +83,7 @@ Other representations of profile: [CSV](StructureDefinition-observation-goal-ref
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/observation-goal-reference"
+        "fixedUri" : "https://opennursingcoreig.com/StructureDefinition/observation-goal-reference"
       },
       {
         "id" : "Extension.value[x]",
@@ -92,7 +92,7 @@ Other representations of profile: [CSV](StructureDefinition-observation-goal-ref
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal"
+              "https://opennursingcoreig.com/StructureDefinition/onc-nursing-goal"
             ]
           }
         ]

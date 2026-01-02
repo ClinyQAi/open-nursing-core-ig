@@ -132,12 +132,12 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Which investigations support finding","Which investigations support finding or diagnosis.","","","","","","","","","",,,,,"",,,,"ClinicalImpression.finding.basis",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ClinicalImpression.prognosisCodeableConcept","ClinicalImpression.prognosisCodeableConcept","","","",0,*,"","","","CodeableConcept {[]} {[]}
-","Estimate of likely outcome","Estimate of likely outcome.","","","","","","","","","",,"extensible","","https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-prognosis-vs","",,,,"ClinicalImpression.prognosisCodeableConcept",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Estimate of likely outcome","Estimate of likely outcome.","","","","","","","","","",,"extensible","","https://opennursingcoreig.com/ValueSet/onc-prognosis-vs","",,,,"ClinicalImpression.prognosisCodeableConcept",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","PRB-22"
 "ClinicalImpression.prognosisReference","ClinicalImpression.prognosisReference","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/RiskAssessment|4.0.1]]}
 ","RiskAssessment expressing likely outcome","RiskAssessment expressing likely outcome.","","","","","","","","","",,,,,"",,,,"ClinicalImpression.prognosisReference",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ClinicalImpression.supportingInfo","ClinicalImpression.supportingInfo","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-goal-evaluation]]}
+"ClinicalImpression.supportingInfo","ClinicalImpression.supportingInfo","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[https://opennursingcoreig.com/StructureDefinition/onc-goal-evaluation]]}
 ","Information supporting the clinical impression","Information supporting the clinical impression.","","","","","","","","","",,,,,"",,,,"ClinicalImpression.supportingInfo",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ClinicalImpression.note","ClinicalImpression.note","","","",0,*,"","","","Annotation {[]} {[]}

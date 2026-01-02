@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-problem | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-nursing-problem | *Version*:0.1.0 |
 | Draft as of 2026-01-02 | *Computable Name*:ONCNursingProblem |
 
  
@@ -37,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-problem.
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-nursing-problem",
-  "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-problem",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-problem",
   "version" : "0.1.0",
   "name" : "ONCNursingProblem",
   "title" : "Nursing Problem",
   "status" : "draft",
-  "date" : "2026-01-02T16:06:53+00:00",
+  "date" : "2026-01-02T16:27:10+00:00",
   "description" : "Nursing diagnosis or problem identified during assessment. Represents clinical judgments about individual, family, or community responses to actual or potential health problems. Part of the ADPIE framework's Diagnosis phase.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -102,7 +102,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-problem.
         "mustSupport" : true,
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/problem-category-valueset"
+          "valueSet" : "https://opennursingcoreig.com/ValueSet/problem-category-valueset"
         }
       },
       {
@@ -112,7 +112,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-problem.
         "mustSupport" : true,
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-problem-valueset"
+          "valueSet" : "https://opennursingcoreig.com/ValueSet/nursing-problem-valueset"
         }
       }
     ]

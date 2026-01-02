@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-skintone-observation | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-skintone-observation | *Version*:0.1.0 |
 | Draft as of 2026-01-02 | *Computable Name*:ONCSkinToneObservation |
 
  
@@ -37,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-skintone-observa
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-skintone-observation",
-  "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-skintone-observation",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-skintone-observation",
   "version" : "0.1.0",
   "name" : "ONCSkinToneObservation",
   "title" : "Skin Tone Observation",
   "status" : "draft",
-  "date" : "2026-01-02T16:06:53+00:00",
+  "date" : "2026-01-02T16:27:10+00:00",
   "description" : "Observation of patient skin tone using the Fitzpatrick skin type classification. Supports equitable care by enabling skin tone-aware clinical decision making, particularly for conditions that present differently across skin tones (e.g., pressure ulcers, cyanosis).",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -80,7 +80,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-skintone-observa
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+  "baseDefinition" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -111,7 +111,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-skintone-observa
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/skintone-vs"
+          "valueSet" : "https://opennursingcoreig.com/ValueSet/skintone-vs"
         }
       }
     ]

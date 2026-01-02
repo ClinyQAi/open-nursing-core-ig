@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-monk-scale-vs | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/ValueSet/onc-monk-scale-vs | *Version*:0.1.0 |
 | Draft as of 2026-01-02 | *Computable Name*:ONCMonkScaleVS |
 
  **References** 
@@ -42,16 +42,16 @@
 {
   "resourceType" : "ValueSet",
   "id" : "onc-monk-scale-vs",
-  "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-monk-scale-vs",
+  "url" : "https://opennursingcoreig.com/ValueSet/onc-monk-scale-vs",
   "version" : "0.1.0",
   "name" : "ONCMonkScaleVS",
   "title" : "Monk Skin Tone Scale ValueSet",
   "status" : "draft",
-  "date" : "2026-01-02T16:06:53+00:00",
+  "date" : "2026-01-02T16:27:10+00:00",
   "compose" : {
     "include" : [
       {
-        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale"
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale"
       }
     ]
   }

@@ -6,22 +6,22 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://clinyqai.github.io/open-nursing-core-ig/ImplementationGuide/onc.ig> a fhir:ImplementationGuide ;
+<https://opennursingcoreig.com/ImplementationGuide/onc.ig> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "onc.ig"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide onc.ig</b></p><a name=\"onc.ig\"> </a><a name=\"hconc.ig\"> </a><h2>OpenNursingCoreIG</h2><p>The official URL for this implementation guide is: </p><pre>https://clinyqai.github.io/open-nursing-core-ig/ImplementationGuide/onc.ig</pre><div><p>Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome.</p>\n</div></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide onc.ig</b></p><a name=\"onc.ig\"> </a><a name=\"hconc.ig\"> </a><h2>OpenNursingCoreIG</h2><p>The official URL for this implementation guide is: </p><pre>https://opennursingcoreig.com/ImplementationGuide/onc.ig</pre><div><p>Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome.</p>\n</div></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
-     fhir:v "https://clinyqai.github.io/open-nursing-core-ig/ImplementationGuide/onc.ig"^^xsd:anyURI ;
-     fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ImplementationGuide/onc.ig>
+     fhir:v "https://opennursingcoreig.com/ImplementationGuide/onc.ig"^^xsd:anyURI ;
+     fhir:l <https://opennursingcoreig.com/ImplementationGuide/onc.ig>
   ] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "OpenNursingCoreIG"] ; # 
   fhir:title [ fhir:v "Open Nursing Core FHIR Implementation Guide (ONC-IG)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-01-02T16:06:53+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-02T16:27:10+00:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome."] ; # 
   fhir:packageId [ fhir:v "onc.ig"] ; # 
   fhir:license [ fhir:v "MIT"] ; # 
@@ -297,7 +297,7 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "https://clinyqai.github.io/open-nursing-core-ig/history.html"
+           fhir:v "https://opennursingcoreig.com/history.html"
          ]
        ] ) ;
        fhir:url [
@@ -906,7 +906,7 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "https://clinyqai.github.io/open-nursing-core-ig/history.html"
+           fhir:v "https://opennursingcoreig.com/history.html"
          ]
        ] ) ;
        fhir:url [
@@ -1286,7 +1286,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-4at-acute-change-vs> ;
+         fhir:l <https://opennursingcoreig.com/ValueSet/onc-4at-acute-change-vs> ;
          fhir:reference [ fhir:v "ValueSet/onc-4at-acute-change-vs" ]
        ] ;
        fhir:name [ fhir:v "4AT Acute Change Value Set" ] ;
@@ -1307,7 +1307,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-4at-alertness-vs> ;
+         fhir:l <https://opennursingcoreig.com/ValueSet/onc-4at-alertness-vs> ;
          fhir:reference [ fhir:v "ValueSet/onc-4at-alertness-vs" ]
        ] ;
        fhir:name [ fhir:v "4AT Alertness Value Set" ] ;
@@ -1328,7 +1328,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-4at-amt4-vs> ;
+         fhir:l <https://opennursingcoreig.com/ValueSet/onc-4at-amt4-vs> ;
          fhir:reference [ fhir:v "ValueSet/onc-4at-amt4-vs" ]
        ] ;
        fhir:name [ fhir:v "4AT AMT4 Value Set" ] ;
@@ -1349,7 +1349,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-4at-attention-vs> ;
+         fhir:l <https://opennursingcoreig.com/ValueSet/onc-4at-attention-vs> ;
          fhir:reference [ fhir:v "ValueSet/onc-4at-attention-vs" ]
        ] ;
        fhir:name [ fhir:v "4AT Attention Value Set" ] ;
@@ -1370,7 +1370,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-4at-delirium> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-4at-delirium> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-4at-delirium" ]
        ] ;
        fhir:name [ fhir:v "4AT Delirium Assessment" ] ;
@@ -1391,7 +1391,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-abbey-pain-scale> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-abbey-pain-scale> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-abbey-pain-scale" ]
        ] ;
        fhir:name [ fhir:v "Abbey Pain Scale" ] ;
@@ -1412,7 +1412,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-acvpu> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-acvpu> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-acvpu" ]
        ] ;
        fhir:name [ fhir:v "ACVPU Consciousness Level" ] ;
@@ -1433,7 +1433,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/acvpu-vs> ;
+         fhir:l <https://opennursingcoreig.com/ValueSet/acvpu-vs> ;
          fhir:reference [ fhir:v "ValueSet/acvpu-vs" ]
        ] ;
        fhir:name [ fhir:v "ACVPU Value Set" ] ;
@@ -1454,7 +1454,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-barthel-index> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-barthel-index> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-barthel-index" ]
        ] ;
        fhir:name [ fhir:v "Barthel Index" ] ;
@@ -1475,7 +1475,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-bladder-assessment> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-bladder-assessment> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-bladder-assessment" ]
        ] ;
        fhir:name [ fhir:v "Bladder Assessment" ] ;
@@ -1496,7 +1496,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-blood-pressure> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-blood-pressure> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-blood-pressure" ]
        ] ;
        fhir:name [ fhir:v "Blood Pressure" ] ;
@@ -1517,7 +1517,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-body-temperature> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-body-temperature> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-body-temperature" ]
        ] ;
        fhir:name [ fhir:v "Body Temperature" ] ;
@@ -1538,7 +1538,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-bowel-assessment> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-bowel-assessment> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-bowel-assessment" ]
        ] ;
        fhir:name [ fhir:v "Bowel Assessment" ] ;
@@ -1559,7 +1559,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-braden-scale-assessment> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-braden-scale-assessment> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-braden-scale-assessment" ]
        ] ;
        fhir:name [ fhir:v "Braden Scale Assessment" ] ;
@@ -1580,7 +1580,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-bristol-stool-chart> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-bristol-stool-chart> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-bristol-stool-chart" ]
        ] ;
        fhir:name [ fhir:v "Bristol Stool Chart" ] ;
@@ -1601,7 +1601,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-catheter-care> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-catheter-care> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-catheter-care" ]
        ] ;
        fhir:name [ fhir:v "Catheter Care" ] ;
@@ -1622,7 +1622,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-clinical-frailty-scale> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-clinical-frailty-scale> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-clinical-frailty-scale" ]
        ] ;
        fhir:name [ fhir:v "Clinical Frailty Scale (CFS)" ] ;
@@ -1643,7 +1643,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-cfs-vs> ;
+         fhir:l <https://opennursingcoreig.com/ValueSet/onc-cfs-vs> ;
          fhir:reference [ fhir:v "ValueSet/onc-cfs-vs" ]
        ] ;
        fhir:name [ fhir:v "Clinical Frailty Scale Value Set" ] ;
@@ -1664,7 +1664,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-continence-assessment> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-continence-assessment> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-continence-assessment" ]
        ] ;
        fhir:name [ fhir:v "Continence Assessment" ] ;
@@ -1685,7 +1685,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-device-use-statement> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-device-use-statement> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-device-use-statement" ]
        ] ;
        fhir:name [ fhir:v "Device Use Statement" ] ;
@@ -1706,7 +1706,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-dietary-requirements> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-dietary-requirements> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-dietary-requirements" ]
        ] ;
        fhir:name [ fhir:v "Dietary Requirements" ] ;
@@ -1727,7 +1727,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/example-4at-delirium> ;
+         fhir:l <https://opennursingcoreig.com/Observation/example-4at-delirium> ;
          fhir:reference [ fhir:v "Observation/example-4at-delirium" ]
        ] ;
        fhir:name [ fhir:v "example-4at-delirium" ] ;
@@ -1748,7 +1748,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/example-abbey-pain> ;
+         fhir:l <https://opennursingcoreig.com/Observation/example-abbey-pain> ;
          fhir:reference [ fhir:v "Observation/example-abbey-pain" ]
        ] ;
        fhir:name [ fhir:v "example-abbey-pain" ] ;
@@ -1769,7 +1769,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/example-abc-chart> ;
+         fhir:l <https://opennursingcoreig.com/Observation/example-abc-chart> ;
          fhir:reference [ fhir:v "Observation/example-abc-chart" ]
        ] ;
        fhir:name [ fhir:v "example-abc-chart" ] ;
@@ -1790,7 +1790,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/example-bristol-stool> ;
+         fhir:l <https://opennursingcoreig.com/Observation/example-bristol-stool> ;
          fhir:reference [ fhir:v "Observation/example-bristol-stool" ]
        ] ;
        fhir:name [ fhir:v "example-bristol-stool" ] ;
@@ -1811,7 +1811,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/example-clinical-frailty> ;
+         fhir:l <https://opennursingcoreig.com/Observation/example-clinical-frailty> ;
          fhir:reference [ fhir:v "Observation/example-clinical-frailty" ]
        ] ;
        fhir:name [ fhir:v "example-clinical-frailty" ] ;
@@ -1832,7 +1832,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/example-fluid-balance> ;
+         fhir:l <https://opennursingcoreig.com/Observation/example-fluid-balance> ;
          fhir:reference [ fhir:v "Observation/example-fluid-balance" ]
        ] ;
        fhir:name [ fhir:v "example-fluid-balance" ] ;
@@ -1853,14 +1853,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/example-goal-evaluation> ;
+         fhir:l <https://opennursingcoreig.com/Observation/example-goal-evaluation> ;
          fhir:reference [ fhir:v "Observation/example-goal-evaluation" ]
        ] ;
        fhir:name [ fhir:v "example-goal-evaluation" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-goal-evaluation"^^xsd:anyURI ;
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-goal-evaluation>
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-goal-evaluation"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-goal-evaluation>
        ]
      ] [
        fhir:extension ( [
@@ -1874,7 +1874,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/example-mental-capacity> ;
+         fhir:l <https://opennursingcoreig.com/Observation/example-mental-capacity> ;
          fhir:reference [ fhir:v "Observation/example-mental-capacity" ]
        ] ;
        fhir:name [ fhir:v "example-mental-capacity" ] ;
@@ -1895,14 +1895,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Procedure/example-nursing-intervention> ;
+         fhir:l <https://opennursingcoreig.com/Procedure/example-nursing-intervention> ;
          fhir:reference [ fhir:v "Procedure/example-nursing-intervention" ]
        ] ;
        fhir:name [ fhir:v "example-nursing-intervention" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-intervention"^^xsd:anyURI ;
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-intervention>
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-nursing-intervention"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-nursing-intervention>
        ]
      ] [
        fhir:extension ( [
@@ -1916,14 +1916,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Condition/example-nursing-problem> ;
+         fhir:l <https://opennursingcoreig.com/Condition/example-nursing-problem> ;
          fhir:reference [ fhir:v "Condition/example-nursing-problem" ]
        ] ;
        fhir:name [ fhir:v "example-nursing-problem" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-problem"^^xsd:anyURI ;
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-problem>
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-nursing-problem"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-nursing-problem>
        ]
      ] [
        fhir:extension ( [
@@ -1937,7 +1937,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/example-oral-health> ;
+         fhir:l <https://opennursingcoreig.com/Observation/example-oral-health> ;
          fhir:reference [ fhir:v "Observation/example-oral-health" ]
        ] ;
        fhir:name [ fhir:v "example-oral-health" ] ;
@@ -1958,15 +1958,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Goal/example-patient-goal> ;
+         fhir:l <https://opennursingcoreig.com/Goal/example-patient-goal> ;
          fhir:reference [ fhir:v "Goal/example-patient-goal" ]
        ] ;
        fhir:name [ fhir:v "example-patient-goal" ] ;
        fhir:description [ fhir:v "Patient will remain free from falls." ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal"^^xsd:anyURI ;
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal>
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-nursing-goal"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-nursing-goal>
        ]
      ] [
        fhir:extension ( [
@@ -1980,7 +1980,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/example-patient-story> ;
+         fhir:l <https://opennursingcoreig.com/Observation/example-patient-story> ;
          fhir:reference [ fhir:v "Observation/example-patient-story" ]
        ] ;
        fhir:name [ fhir:v "example-patient-story" ] ;
@@ -2001,7 +2001,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/example-reasonable-adjustment> ;
+         fhir:l <https://opennursingcoreig.com/Observation/example-reasonable-adjustment> ;
          fhir:reference [ fhir:v "Observation/example-reasonable-adjustment" ]
        ] ;
        fhir:name [ fhir:v "example-reasonable-adjustment" ] ;
@@ -2022,7 +2022,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/example-seizure-record> ;
+         fhir:l <https://opennursingcoreig.com/Observation/example-seizure-record> ;
          fhir:reference [ fhir:v "Observation/example-seizure-record" ]
        ] ;
        fhir:name [ fhir:v "example-seizure-record" ] ;
@@ -2043,7 +2043,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/example-urinalysis> ;
+         fhir:l <https://opennursingcoreig.com/Observation/example-urinalysis> ;
          fhir:reference [ fhir:v "Observation/example-urinalysis" ]
        ] ;
        fhir:name [ fhir:v "example-urinalysis" ] ;
@@ -2064,7 +2064,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/example-what-matters> ;
+         fhir:l <https://opennursingcoreig.com/Observation/example-what-matters> ;
          fhir:reference [ fhir:v "Observation/example-what-matters" ]
        ] ;
        fhir:name [ fhir:v "example-what-matters" ] ;
@@ -2085,7 +2085,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/skintone-vs> ;
+         fhir:l <https://opennursingcoreig.com/ValueSet/skintone-vs> ;
          fhir:reference [ fhir:v "ValueSet/skintone-vs" ]
        ] ;
        fhir:name [ fhir:v "Fitzpatrick Skin Tone Value Set" ] ;
@@ -2106,7 +2106,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-fluid-balance> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-fluid-balance> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-fluid-balance" ]
        ] ;
        fhir:name [ fhir:v "Fluid Balance" ] ;
@@ -2127,7 +2127,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-glasgow-coma-scale> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-glasgow-coma-scale> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-glasgow-coma-scale" ]
        ] ;
        fhir:name [ fhir:v "Glasgow Coma Scale" ] ;
@@ -2148,7 +2148,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset> ;
+         fhir:l <https://opennursingcoreig.com/ValueSet/goal-evaluation-valueset> ;
          fhir:reference [ fhir:v "ValueSet/goal-evaluation-valueset" ]
        ] ;
        fhir:name [ fhir:v "Goal Evaluation Value Set" ] ;
@@ -2169,7 +2169,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-goal-target-measure-vs> ;
+         fhir:l <https://opennursingcoreig.com/ValueSet/onc-goal-target-measure-vs> ;
          fhir:reference [ fhir:v "ValueSet/onc-goal-target-measure-vs" ]
        ] ;
        fhir:name [ fhir:v "Goal Target Measure ValueSet" ] ;
@@ -2190,7 +2190,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-heart-rate> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-heart-rate> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-heart-rate" ]
        ] ;
        fhir:name [ fhir:v "Heart Rate" ] ;
@@ -2211,7 +2211,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/housing-status-vs> ;
+         fhir:l <https://opennursingcoreig.com/ValueSet/housing-status-vs> ;
          fhir:reference [ fhir:v "ValueSet/housing-status-vs" ]
        ] ;
        fhir:name [ fhir:v "Housing Status Value Set" ] ;
@@ -2232,7 +2232,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-inspired-oxygen> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-inspired-oxygen> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-inspired-oxygen" ]
        ] ;
        fhir:name [ fhir:v "Inspired Oxygen" ] ;
@@ -2253,7 +2253,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/inspired-oxygen-vs> ;
+         fhir:l <https://opennursingcoreig.com/ValueSet/inspired-oxygen-vs> ;
          fhir:reference [ fhir:v "ValueSet/inspired-oxygen-vs" ]
        ] ;
        fhir:name [ fhir:v "Inspired Oxygen Value Set" ] ;
@@ -2274,7 +2274,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/intervention-goal-reference> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/intervention-goal-reference> ;
          fhir:reference [ fhir:v "StructureDefinition/intervention-goal-reference" ]
        ] ;
        fhir:name [ fhir:v "Intervention Goal Reference" ] ;
@@ -2295,7 +2295,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-medication-ability> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-medication-ability> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-medication-ability" ]
        ] ;
        fhir:name [ fhir:v "Medication Management Ability" ] ;
@@ -2316,7 +2316,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-medication-self-admin> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-medication-self-admin> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-medication-self-admin" ]
        ] ;
        fhir:name [ fhir:v "Medication Self-Administration Observation" ] ;
@@ -2337,7 +2337,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-mental-capacity> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-mental-capacity> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-mental-capacity" ]
        ] ;
        fhir:name [ fhir:v "Mental Capacity Assessment" ] ;
@@ -2358,7 +2358,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-mca-vs> ;
+         fhir:l <https://opennursingcoreig.com/ValueSet/onc-mca-vs> ;
          fhir:reference [ fhir:v "ValueSet/onc-mca-vs" ]
        ] ;
        fhir:name [ fhir:v "Mental Capacity Finding Value Set" ] ;
@@ -2379,7 +2379,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-mmse> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-mmse> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-mmse" ]
        ] ;
        fhir:name [ fhir:v "Mini Mental State Examination (MMSE)" ] ;
@@ -2400,7 +2400,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-mobility-assessment> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-mobility-assessment> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-mobility-assessment" ]
        ] ;
        fhir:name [ fhir:v "Mobility Assessment" ] ;
@@ -2421,7 +2421,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-monk-skintone-observation> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-monk-skintone-observation> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-monk-skintone-observation" ]
        ] ;
        fhir:name [ fhir:v "Monk Skin Tone Observation" ] ;
@@ -2442,7 +2442,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale> ;
+         fhir:l <https://opennursingcoreig.com/CodeSystem/onc-monk-scale> ;
          fhir:reference [ fhir:v "CodeSystem/onc-monk-scale" ]
        ] ;
        fhir:name [ fhir:v "Monk Skin Tone Scale CodeSystem" ] ;
@@ -2462,7 +2462,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-monk-scale-vs> ;
+         fhir:l <https://opennursingcoreig.com/ValueSet/onc-monk-scale-vs> ;
          fhir:reference [ fhir:v "ValueSet/onc-monk-scale-vs" ]
        ] ;
        fhir:name [ fhir:v "Monk Skin Tone Scale ValueSet" ] ;
@@ -2482,7 +2482,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-morse-fall-scale> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-morse-fall-scale> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-morse-fall-scale" ]
        ] ;
        fhir:name [ fhir:v "Morse Fall Scale" ] ;
@@ -2503,7 +2503,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-must-score> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-must-score> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-must-score" ]
        ] ;
        fhir:name [ fhir:v "MUST Score (Malnutrition Universal Screening Tool)" ] ;
@@ -2524,7 +2524,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/news2-code-vs> ;
+         fhir:l <https://opennursingcoreig.com/ValueSet/news2-code-vs> ;
          fhir:reference [ fhir:v "ValueSet/news2-code-vs" ]
        ] ;
        fhir:name [ fhir:v "NEWS2 Code Value Set" ] ;
@@ -2545,7 +2545,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/PlanDefinition/news2-escalation-plan> ;
+         fhir:l <https://opennursingcoreig.com/PlanDefinition/news2-escalation-plan> ;
          fhir:reference [ fhir:v "PlanDefinition/news2-escalation-plan" ]
        ] ;
        fhir:name [ fhir:v "NEWS2 Escalation Protocol" ] ;
@@ -2565,7 +2565,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-news2-score> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-news2-score> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-news2-score" ]
        ] ;
        fhir:name [ fhir:v "NEWS2 Score" ] ;
@@ -2586,7 +2586,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-news2-subscore> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-news2-subscore> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-news2-subscore" ]
        ] ;
        fhir:name [ fhir:v "NEWS2 Sub-Score" ] ;
@@ -2607,7 +2607,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/news2-subscore-code-vs> ;
+         fhir:l <https://opennursingcoreig.com/ValueSet/news2-subscore-code-vs> ;
          fhir:reference [ fhir:v "ValueSet/news2-subscore-code-vs" ]
        ] ;
        fhir:name [ fhir:v "NEWS2 Sub-Score Codes" ] ;
@@ -2628,7 +2628,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-intervention-valueset> ;
+         fhir:l <https://opennursingcoreig.com/ValueSet/nursing-intervention-valueset> ;
          fhir:reference [ fhir:v "ValueSet/nursing-intervention-valueset" ]
        ] ;
        fhir:name [ fhir:v "Nursing Intervention Value Set" ] ;
@@ -2649,7 +2649,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-problem> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-nursing-problem> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-nursing-problem" ]
        ] ;
        fhir:name [ fhir:v "Nursing Problem" ] ;
@@ -2670,7 +2670,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-problem-valueset> ;
+         fhir:l <https://opennursingcoreig.com/ValueSet/nursing-problem-valueset> ;
          fhir:reference [ fhir:v "ValueSet/nursing-problem-valueset" ]
        ] ;
        fhir:name [ fhir:v "Nursing Problem Value Set" ] ;
@@ -2691,7 +2691,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-prognosis-vs> ;
+         fhir:l <https://opennursingcoreig.com/ValueSet/onc-prognosis-vs> ;
          fhir:reference [ fhir:v "ValueSet/onc-prognosis-vs" ]
        ] ;
        fhir:name [ fhir:v "Nursing Prognosis ValueSet" ] ;
@@ -2712,7 +2712,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/observation-goal-reference> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/observation-goal-reference> ;
          fhir:reference [ fhir:v "StructureDefinition/observation-goal-reference" ]
        ] ;
        fhir:name [ fhir:v "Observation Goal Reference" ] ;
@@ -2733,14 +2733,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/observation-braden-scale> ;
+         fhir:l <https://opennursingcoreig.com/Observation/observation-braden-scale> ;
          fhir:reference [ fhir:v "Observation/observation-braden-scale" ]
        ] ;
        fhir:name [ fhir:v "observation-braden-scale" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-braden-scale-assessment"^^xsd:anyURI ;
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-braden-scale-assessment>
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-braden-scale-assessment"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-braden-scale-assessment>
        ]
      ] [
        fhir:extension ( [
@@ -2754,14 +2754,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/observation-skin-tone> ;
+         fhir:l <https://opennursingcoreig.com/Observation/observation-skin-tone> ;
          fhir:reference [ fhir:v "Observation/observation-skin-tone" ]
        ] ;
        fhir:name [ fhir:v "observation-skin-tone" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-skintone-observation"^^xsd:anyURI ;
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-skintone-observation>
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-skintone-observation"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-skintone-observation>
        ]
      ] [
        fhir:extension ( [
@@ -2775,7 +2775,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-goal-evaluation> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-goal-evaluation> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-goal-evaluation" ]
        ] ;
        fhir:name [ fhir:v "ONC Goal Evaluation" ] ;
@@ -2796,7 +2796,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Library/onc-news2-cql> ;
+         fhir:l <https://opennursingcoreig.com/Library/onc-news2-cql> ;
          fhir:reference [ fhir:v "Library/onc-news2-cql" ]
        ] ;
        fhir:name [ fhir:v "ONC NEWS2 Auto-Calculation Logic" ] ;
@@ -2817,7 +2817,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nhs-patient> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-nhs-patient> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-nhs-patient" ]
        ] ;
        fhir:name [ fhir:v "ONC NHS Patient" ] ;
@@ -2838,7 +2838,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-clinical-impression> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-nursing-clinical-impression> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-nursing-clinical-impression" ]
        ] ;
        fhir:name [ fhir:v "ONC Nursing Clinical Impression" ] ;
@@ -2859,7 +2859,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-nursing-goal> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-nursing-goal" ]
        ] ;
        fhir:name [ fhir:v "ONC Nursing Goal" ] ;
@@ -2880,7 +2880,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-intervention> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-nursing-intervention> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-nursing-intervention" ]
        ] ;
        fhir:name [ fhir:v "ONC Nursing Intervention" ] ;
@@ -2901,7 +2901,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes> ;
+         fhir:l <https://opennursingcoreig.com/CodeSystem/onc-observation-codes> ;
          fhir:reference [ fhir:v "CodeSystem/onc-observation-codes" ]
        ] ;
        fhir:name [ fhir:v "ONC Observation Codes" ] ;
@@ -2922,7 +2922,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-nursing-assessment" ]
        ] ;
        fhir:name [ fhir:v "Open Nursing Core Assessment" ] ;
@@ -2943,7 +2943,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-oral-care-assessment> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-oral-care-assessment> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-oral-care-assessment" ]
        ] ;
        fhir:name [ fhir:v "Oral Care Needs Assessment" ] ;
@@ -2964,7 +2964,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-oral-health> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-oral-health> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-oral-health" ]
        ] ;
        fhir:name [ fhir:v "Oral Health Assessment" ] ;
@@ -2985,7 +2985,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-oral-intake-assessment> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-oral-intake-assessment> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-oral-intake-assessment" ]
        ] ;
        fhir:name [ fhir:v "Oral Intake Assessment" ] ;
@@ -3006,7 +3006,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-oxygen-saturation> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-oxygen-saturation> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-oxygen-saturation" ]
        ] ;
        fhir:name [ fhir:v "Oxygen Saturation" ] ;
@@ -3027,7 +3027,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-pain-assessment> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-pain-assessment> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-pain-assessment" ]
        ] ;
        fhir:name [ fhir:v "Pain Assessment (NRS 0-10)" ] ;
@@ -3048,7 +3048,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/pain-assessment-code-vs> ;
+         fhir:l <https://opennursingcoreig.com/ValueSet/pain-assessment-code-vs> ;
          fhir:reference [ fhir:v "ValueSet/pain-assessment-code-vs" ]
        ] ;
        fhir:name [ fhir:v "Pain Assessment Code Value Set" ] ;
@@ -3069,7 +3069,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-patient-story> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-patient-story> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-patient-story" ]
        ] ;
        fhir:name [ fhir:v "Patient Story" ] ;
@@ -3090,14 +3090,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Patient/patient-example-jane> ;
+         fhir:l <https://opennursingcoreig.com/Patient/patient-example-jane> ;
          fhir:reference [ fhir:v "Patient/patient-example-jane" ]
        ] ;
        fhir:name [ fhir:v "patient-example-jane" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nhs-patient"^^xsd:anyURI ;
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nhs-patient>
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-nhs-patient"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-nhs-patient>
        ]
      ] [
        fhir:extension ( [
@@ -3111,7 +3111,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-abc-chart> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-abc-chart> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-abc-chart" ]
        ] ;
        fhir:name [ fhir:v "PBS ABC Chart" ] ;
@@ -3132,7 +3132,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-pbs-function-vs> ;
+         fhir:l <https://opennursingcoreig.com/ValueSet/onc-pbs-function-vs> ;
          fhir:reference [ fhir:v "ValueSet/onc-pbs-function-vs" ]
        ] ;
        fhir:name [ fhir:v "PBS Behaviour Function ValueSet" ] ;
@@ -3153,7 +3153,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-hygiene-assessment> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-hygiene-assessment> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-hygiene-assessment" ]
        ] ;
        fhir:name [ fhir:v "Personal Hygiene Needs Assessment" ] ;
@@ -3174,7 +3174,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Practitioner/practitioner-example> ;
+         fhir:l <https://opennursingcoreig.com/Practitioner/practitioner-example> ;
          fhir:reference [ fhir:v "Practitioner/practitioner-example" ]
        ] ;
        fhir:name [ fhir:v "practitioner-example" ] ;
@@ -3194,7 +3194,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/problem-category-valueset> ;
+         fhir:l <https://opennursingcoreig.com/ValueSet/problem-category-valueset> ;
          fhir:reference [ fhir:v "ValueSet/problem-category-valueset" ]
        ] ;
        fhir:name [ fhir:v "Problem Category Value Set" ] ;
@@ -3215,7 +3215,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type> ;
+         fhir:l <https://opennursingcoreig.com/CodeSystem/onc-problem-type> ;
          fhir:reference [ fhir:v "CodeSystem/onc-problem-type" ]
        ] ;
        fhir:name [ fhir:v "Problem Type CodeSystem" ] ;
@@ -3236,7 +3236,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-qsofa> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-qsofa> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-qsofa" ]
        ] ;
        fhir:name [ fhir:v "qSOFA (Quick SOFA)" ] ;
@@ -3257,7 +3257,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-reasonable-adjustment> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-reasonable-adjustment> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-reasonable-adjustment" ]
        ] ;
        fhir:name [ fhir:v "Reasonable Adjustment" ] ;
@@ -3278,7 +3278,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-relational-observation> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-relational-observation> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-relational-observation" ]
        ] ;
        fhir:name [ fhir:v "Relational Engagement Score" ] ;
@@ -3299,7 +3299,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-respiration-rate> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-respiration-rate> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-respiration-rate" ]
        ] ;
        fhir:name [ fhir:v "Respiration Rate" ] ;
@@ -3320,7 +3320,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-seizure-record> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-seizure-record> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-seizure-record" ]
        ] ;
        fhir:name [ fhir:v "Seizure Record" ] ;
@@ -3341,7 +3341,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-skintone-observation> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-skintone-observation> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-skintone-observation" ]
        ] ;
        fhir:name [ fhir:v "Skin Tone Observation" ] ;
@@ -3362,7 +3362,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-sleep-pattern> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-sleep-pattern> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-sleep-pattern" ]
        ] ;
        fhir:name [ fhir:v "Sleep Pattern" ] ;
@@ -3383,7 +3383,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-swallowing-assessment> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-swallowing-assessment> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-swallowing-assessment" ]
        ] ;
        fhir:name [ fhir:v "Swallowing Assessment" ] ;
@@ -3404,7 +3404,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/UKCore-Extension-EthnicCategory> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/UKCore-Extension-EthnicCategory> ;
          fhir:reference [ fhir:v "StructureDefinition/UKCore-Extension-EthnicCategory" ]
        ] ;
        fhir:name [ fhir:v "UK Core Ethnic Category" ] ;
@@ -3425,7 +3425,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-urinalysis> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-urinalysis> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-urinalysis" ]
        ] ;
        fhir:name [ fhir:v "Urinalysis" ] ;
@@ -3446,7 +3446,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-waterlow-score> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-waterlow-score> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-waterlow-score" ]
        ] ;
        fhir:name [ fhir:v "Waterlow Score" ] ;
@@ -3467,7 +3467,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-what-matters> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-what-matters> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-what-matters" ]
        ] ;
        fhir:name [ fhir:v "What Matters to Me" ] ;
@@ -3488,7 +3488,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-wound-assessment> ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-wound-assessment> ;
          fhir:reference [ fhir:v "StructureDefinition/onc-wound-assessment" ]
        ] ;
        fhir:name [ fhir:v "Wound Assessment" ] ;
@@ -3509,7 +3509,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/wound-stage-vs> ;
+         fhir:l <https://opennursingcoreig.com/ValueSet/wound-stage-vs> ;
          fhir:reference [ fhir:v "ValueSet/wound-stage-vs" ]
        ] ;
        fhir:name [ fhir:v "Wound Stage Value Set" ] ;

@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-4at-alertness-vs | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/ValueSet/onc-4at-alertness-vs | *Version*:0.1.0 |
 | Draft as of 2026-01-02 | *Computable Name*:AlertnessVS |
 
  
@@ -45,12 +45,12 @@ Scoring options for 4AT Alertness
 {
   "resourceType" : "ValueSet",
   "id" : "onc-4at-alertness-vs",
-  "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-4at-alertness-vs",
+  "url" : "https://opennursingcoreig.com/ValueSet/onc-4at-alertness-vs",
   "version" : "0.1.0",
   "name" : "AlertnessVS",
   "title" : "4AT Alertness Value Set",
   "status" : "draft",
-  "date" : "2026-01-02T16:06:53+00:00",
+  "date" : "2026-01-02T16:27:10+00:00",
   "description" : "Scoring options for 4AT Alertness",
   "compose" : {
     "include" : [

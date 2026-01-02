@@ -6,27 +6,27 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-monk-scale-vs> a fhir:ValueSet ;
+<https://opennursingcoreig.com/ValueSet/onc-monk-scale-vs> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "onc-monk-scale-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet onc-monk-scale-vs</b></p><a name=\"onc-monk-scale-vs\"> </a><a name=\"hconc-monk-scale-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-onc-monk-scale.html\"><code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet onc-monk-scale-vs</b></p><a name=\"onc-monk-scale-vs\"> </a><a name=\"hconc-monk-scale-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-onc-monk-scale.html\"><code>https://opennursingcoreig.com/CodeSystem/onc-monk-scale</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
-     fhir:v "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-monk-scale-vs"^^xsd:anyURI ;
-     fhir:l <https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-monk-scale-vs>
+     fhir:v "https://opennursingcoreig.com/ValueSet/onc-monk-scale-vs"^^xsd:anyURI ;
+     fhir:l <https://opennursingcoreig.com/ValueSet/onc-monk-scale-vs>
   ] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "ONCMonkScaleVS"] ; # 
   fhir:title [ fhir:v "Monk Skin Tone Scale ValueSet"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-01-02T16:06:53+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-02T16:27:10+00:00"^^xsd:dateTime] ; # 
   fhir:compose [
      fhir:include ( [
        fhir:system [
-         fhir:v "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale"^^xsd:anyURI ;
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-monk-scale>
+         fhir:v "https://opennursingcoreig.com/CodeSystem/onc-monk-scale"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/CodeSystem/onc-monk-scale>
        ]
      ] )
   ] . # 

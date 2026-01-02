@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-prognosis-vs | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/ValueSet/onc-prognosis-vs | *Version*:0.1.0 |
 | Draft as of 2026-01-02 | *Computable Name*:ONCPrognosisVS |
 
  
@@ -45,12 +45,12 @@ Prognosis codes for clinical impression
 {
   "resourceType" : "ValueSet",
   "id" : "onc-prognosis-vs",
-  "url" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/onc-prognosis-vs",
+  "url" : "https://opennursingcoreig.com/ValueSet/onc-prognosis-vs",
   "version" : "0.1.0",
   "name" : "ONCPrognosisVS",
   "title" : "Nursing Prognosis ValueSet",
   "status" : "draft",
-  "date" : "2026-01-02T16:06:53+00:00",
+  "date" : "2026-01-02T16:27:10+00:00",
   "description" : "Prognosis codes for clinical impression",
   "compose" : {
     "include" : [

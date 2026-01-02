@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://clinyqai.github.io/open-nursing-core-ig/Observation/observation-braden-scale> a fhir:Observation ;
+<https://opennursingcoreig.com/Observation/observation-braden-scale> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "observation-braden-scale"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-braden-scale-assessment"^^xsd:anyURI ;
-       fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-braden-scale-assessment>
+       fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-braden-scale-assessment"^^xsd:anyURI ;
+       fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-braden-scale-assessment>
      ] )
   ] ; # 
   fhir:text [
@@ -40,11 +40,11 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Patient/patient-example-jane> ;
+     fhir:l <https://opennursingcoreig.com/Patient/patient-example-jane> ;
      fhir:reference [ fhir:v "Patient/patient-example-jane" ]
   ] ; # 
   fhir:performer ( [
-     fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Practitioner/practitioner-example> ;
+     fhir:l <https://opennursingcoreig.com/Practitioner/practitioner-example> ;
      fhir:reference [ fhir:v "Practitioner/practitioner-example" ]
   ] ) ; # 
   fhir:value [
@@ -58,7 +58,7 @@
      fhir:code [ fhir:v "1" ]
   ] ; # 
   fhir:hasMember ( [
-     fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Observation/observation-skin-tone> ;
+     fhir:l <https://opennursingcoreig.com/Observation/observation-skin-tone> ;
      fhir:reference [ fhir:v "Observation/observation-skin-tone" ]
   ] ) ; # 
   fhir:component ( [

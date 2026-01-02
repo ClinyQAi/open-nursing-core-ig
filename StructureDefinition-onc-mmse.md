@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-mmse | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-mmse | *Version*:0.1.0 |
 | Draft as of 2026-01-02 | *Computable Name*:ONCMMSE |
 
  
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-mmse.csv), [Exce
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-mmse",
-  "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-mmse",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-mmse",
   "version" : "0.1.0",
   "name" : "ONCMMSE",
   "title" : "Mini Mental State Examination (MMSE)",
   "status" : "draft",
-  "date" : "2026-01-02T16:06:53+00:00",
+  "date" : "2026-01-02T16:27:10+00:00",
   "description" : "Mini Mental State Examination for cognitive function screening. Score 24-30=no impairment, 18-23=mild, 0-17=severe. Total range 0-30.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -79,7 +79,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-mmse.csv), [Exce
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+  "baseDefinition" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -125,7 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-mmse.csv), [Exce
             "severity" : "error",
             "human" : "MMSE score must be between 0 and 30",
             "expression" : "$this >= 0 and $this <= 30",
-            "source" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-mmse"
+            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-mmse"
           }
         ]
       },

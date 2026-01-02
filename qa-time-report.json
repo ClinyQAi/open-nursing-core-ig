@@ -1,96 +1,101 @@
 {
-  "date" : "Fri, 02 Jan, 2026 16:06:53 +0000",
+  "date" : "Fri, 02 Jan, 2026 16:27:10 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [
     {
       "name" : "/fsh-generated/resources/ImplementationGuide-onc.ig.json",
-      "size" : 32337,
+      "size" : 32193,
       "processes" : [
         {
           "activity" : "load",
           "start" : 25,
-          "length" : 15
+          "length" : 17
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 27,
-          "length" : 15
+          "start" : 28,
+          "length" : 13
         },
         {
           "activity" : "generateNarratives",
-          "start" : 27,
-          "length" : 181
+          "start" : 28,
+          "length" : 300
         },
         {
           "activity" : "validate",
-          "start" : 43,
-          "length" : 2550
+          "start" : 45,
+          "length" : 2567
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 45,
-          "length" : 1
+          "start" : 47,
+          "length" : 2
         },
         {
           "activity" : "generate1",
-          "start" : 46,
-          "length" : 164
+          "start" : 50,
+          "length" : 129
         },
         {
           "activity" : "generate2",
           "start" : 58,
-          "length" : 216
+          "length" : 231
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 103,
-          "length" : 7
+          "start" : 102,
+          "length" : 6
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 154,
-          "length" : 1
+          "start" : 171,
+          "length" : 2
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/CodeSystem-onc-monk-scale.json",
-      "size" : 952,
+      "size" : 934,
       "processes" : [
         {
           "activity" : "loadResources",
           "start" : 24,
-          "length" : 8
+          "length" : 4
         },
         {
           "activity" : "load",
-          "start" : 24,
+          "start" : 25,
           "length" : 6
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 27,
+          "start" : 28,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 27,
-          "length" : 9
+          "start" : 28,
+          "length" : 10
         },
         {
           "activity" : "validate",
-          "start" : 29,
-          "length" : 33
+          "start" : 31,
+          "length" : 42
         },
         {
           "activity" : "generate1",
-          "start" : 46,
-          "length" : 18
+          "start" : 50,
+          "length" : 17
         },
         {
           "activity" : "generate2",
           "start" : 58,
-          "length" : 489
+          "length" : 553
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 102,
+          "length" : 1
         }
       ]
     },
@@ -101,47 +106,47 @@
         {
           "activity" : "loadResources",
           "start" : 24,
-          "length" : 7
-        },
-        {
-          "activity" : "load",
-          "start" : 24,
-          "length" : 15
-        },
-        {
-          "activity" : "checkR4R4B",
-          "start" : 27,
           "length" : 5
         },
         {
-          "activity" : "generateNarratives",
-          "start" : 27,
-          "length" : 28
+          "activity" : "load",
+          "start" : 25,
+          "length" : 9
         },
         {
-          "activity" : "validate",
-          "start" : 30,
-          "length" : 105
-        },
-        {
-          "activity" : "checkConformanceResources",
-          "start" : 45,
+          "activity" : "load-configure",
+          "start" : 28,
           "length" : 1
         },
         {
+          "activity" : "checkR4R4B",
+          "start" : 28,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 29
+        },
+        {
+          "activity" : "validate",
+          "start" : 31,
+          "length" : 113
+        },
+        {
           "activity" : "generate1",
-          "start" : 46,
-          "length" : 73
+          "start" : 50,
+          "length" : 50
         },
         {
           "activity" : "generate2",
           "start" : 59,
-          "length" : 176
+          "length" : 142
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 103,
-          "length" : 3
+          "start" : 102,
+          "length" : 2
         }
       ]
     },
@@ -152,99 +157,109 @@
         {
           "activity" : "loadResources",
           "start" : 24,
-          "length" : 6
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 6
+          "start" : 25,
+          "length" : 3
         },
         {
-          "activity" : "load-configure",
-          "start" : 27,
+          "activity" : "checkR4R4B",
+          "start" : 28,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 27,
-          "length" : 6
+          "start" : 28,
+          "length" : 7
         },
         {
           "activity" : "validate",
-          "start" : 30,
-          "length" : 9
+          "start" : 31,
+          "length" : 8
         },
         {
           "activity" : "generate1",
-          "start" : 46,
-          "length" : 17
+          "start" : 50,
+          "length" : 15
         },
         {
           "activity" : "generate2",
           "start" : 59,
-          "length" : 34
+          "length" : 35
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/Condition-example-nursing-problem.json",
-      "size" : 950,
+      "size" : 932,
       "processes" : [
         {
           "activity" : "loadResources",
           "start" : 24,
-          "length" : 6
+          "length" : 3
         },
         {
           "activity" : "generateNarratives",
-          "start" : 27,
-          "length" : 4
+          "start" : 28,
+          "length" : 6
         },
         {
           "activity" : "validate",
-          "start" : 45,
-          "length" : 21
+          "start" : 47,
+          "length" : 22
         },
         {
           "activity" : "generate1",
-          "start" : 46,
-          "length" : 14
+          "start" : 50,
+          "length" : 13
         },
         {
           "activity" : "generate2",
           "start" : 59,
-          "length" : 13
+          "length" : 18
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 100,
+          "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/Goal-example-patient-goal.json",
-      "size" : 937,
+      "size" : 919,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 5
+          "start" : 25,
+          "length" : 3
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 28,
+          "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 27,
-          "length" : 7
-        },
-        {
-          "activity" : "validate",
-          "start" : 45,
+          "start" : 28,
           "length" : 6
         },
         {
-          "activity" : "generate1",
+          "activity" : "validate",
           "start" : 47,
-          "length" : 9
+          "length" : 476
+        },
+        {
+          "activity" : "generate1",
+          "start" : 50,
+          "length" : 12
         },
         {
           "activity" : "generate2",
           "start" : 59,
-          "length" : 15
+          "length" : 21
         }
       ]
     },
@@ -254,28 +269,28 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 7
+          "start" : 25,
+          "length" : 5
         },
         {
           "activity" : "generateNarratives",
-          "start" : 27,
-          "length" : 48
+          "start" : 28,
+          "length" : 49
         },
         {
           "activity" : "validate",
-          "start" : 45,
-          "length" : 28
+          "start" : 48,
+          "length" : 33
         },
         {
           "activity" : "generate1",
-          "start" : 47,
-          "length" : 13
+          "start" : 50,
+          "length" : 12
         },
         {
           "activity" : "generate2",
           "start" : 59,
-          "length" : 15
+          "length" : 23
         }
       ]
     },
@@ -285,33 +300,33 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
+          "start" : 25,
           "length" : 5
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 27,
+          "start" : 28,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 27,
+          "start" : 28,
           "length" : 6
         },
         {
           "activity" : "validate",
-          "start" : 45,
-          "length" : 14
+          "start" : 48,
+          "length" : 17
         },
         {
           "activity" : "generate1",
-          "start" : 47,
-          "length" : 11
+          "start" : 50,
+          "length" : 12
         },
         {
           "activity" : "generate2",
           "start" : 59,
-          "length" : 11
+          "length" : 17
         }
       ]
     },
@@ -321,28 +336,28 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 7
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "generateNarratives",
-          "start" : 27,
-          "length" : 5
+          "start" : 28,
+          "length" : 4
         },
         {
           "activity" : "validate",
-          "start" : 45,
+          "start" : 48,
           "length" : 11
         },
         {
           "activity" : "generate1",
-          "start" : 47,
-          "length" : 11
+          "start" : 50,
+          "length" : 13
         },
         {
           "activity" : "generate2",
           "start" : 59,
-          "length" : 15
+          "length" : 17
         }
       ]
     },
@@ -352,33 +367,28 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 6
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "generateNarratives",
-          "start" : 27,
-          "length" : 2
+          "start" : 28,
+          "length" : 3
         },
         {
           "activity" : "validate",
-          "start" : 30,
-          "length" : 1
-        },
-        {
-          "activity" : "validate",
-          "start" : 45,
+          "start" : 48,
           "length" : 6
         },
         {
           "activity" : "generate1",
-          "start" : 47,
+          "start" : 50,
           "length" : 8
         },
         {
           "activity" : "generate2",
           "start" : 59,
-          "length" : 10
+          "length" : 16
         }
       ]
     },
@@ -388,28 +398,28 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 6
+          "start" : 25,
+          "length" : 2
         },
         {
           "activity" : "generateNarratives",
-          "start" : 27,
+          "start" : 28,
           "length" : 2
         },
         {
           "activity" : "validate",
-          "start" : 45,
+          "start" : 48,
           "length" : 6
         },
         {
           "activity" : "generate1",
-          "start" : 47,
-          "length" : 9
+          "start" : 50,
+          "length" : 8
         },
         {
           "activity" : "generate2",
           "start" : 59,
-          "length" : 9
+          "length" : 15
         }
       ]
     },
@@ -419,64 +429,64 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 6
-        },
-        {
-          "activity" : "checkR4R4B",
-          "start" : 27,
-          "length" : 1
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 27,
+          "start" : 25,
           "length" : 3
         },
         {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 4
+        },
+        {
           "activity" : "validate",
-          "start" : 45,
-          "length" : 9
+          "start" : 48,
+          "length" : 8
         },
         {
           "activity" : "generate1",
-          "start" : 47,
-          "length" : 10
+          "start" : 50,
+          "length" : 13
         },
         {
           "activity" : "generate2",
           "start" : 59,
-          "length" : 10
+          "length" : 15
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/Observation-example-goal-evaluation.json",
-      "size" : 1004,
+      "size" : 986,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 6
+          "start" : 25,
+          "length" : 5
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 28,
+          "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 27,
-          "length" : 3
+          "start" : 28,
+          "length" : 2
         },
         {
           "activity" : "validate",
-          "start" : 45,
-          "length" : 7
+          "start" : 48,
+          "length" : 319
         },
         {
           "activity" : "generate1",
-          "start" : 47,
-          "length" : 9
+          "start" : 50,
+          "length" : 13
         },
         {
           "activity" : "generate2",
           "start" : 59,
-          "length" : 10
+          "length" : 16
         }
       ]
     },
@@ -486,28 +496,33 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 5
+          "start" : 25,
+          "length" : 3
+        },
+        {
+          "activity" : "scan",
+          "start" : 28,
+          "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 27,
+          "start" : 28,
           "length" : 2
         },
         {
           "activity" : "validate",
-          "start" : 45,
-          "length" : 5
+          "start" : 48,
+          "length" : 11
         },
         {
           "activity" : "generate1",
-          "start" : 47,
-          "length" : 9
+          "start" : 50,
+          "length" : 8
         },
         {
           "activity" : "generate2",
           "start" : 59,
-          "length" : 10
+          "length" : 14
         }
       ]
     },
@@ -517,33 +532,28 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 6
+          "start" : 25,
+          "length" : 2
         },
         {
           "activity" : "generateNarratives",
-          "start" : 27,
+          "start" : 28,
           "length" : 4
         },
         {
-          "activity" : "scanForUsageStats",
-          "start" : 45,
-          "length" : 1
-        },
-        {
           "activity" : "validate",
-          "start" : 45,
-          "length" : 10
+          "start" : 48,
+          "length" : 6
         },
         {
           "activity" : "generate1",
-          "start" : 47,
-          "length" : 11
+          "start" : 50,
+          "length" : 9
         },
         {
           "activity" : "generate2",
           "start" : 59,
-          "length" : 10
+          "length" : 15
         }
       ]
     },
@@ -553,28 +563,28 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 5
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "generateNarratives",
-          "start" : 27,
+          "start" : 28,
           "length" : 2
         },
         {
           "activity" : "validate",
-          "start" : 45,
+          "start" : 48,
           "length" : 4
         },
         {
           "activity" : "generate1",
-          "start" : 47,
-          "length" : 9
+          "start" : 50,
+          "length" : 8
         },
         {
           "activity" : "generate2",
           "start" : 59,
-          "length" : 9
+          "length" : 15
         }
       ]
     },
@@ -584,28 +594,28 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 6
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "generateNarratives",
-          "start" : 27,
+          "start" : 28,
           "length" : 2
         },
         {
           "activity" : "validate",
-          "start" : 45,
-          "length" : 4
+          "start" : 48,
+          "length" : 3
         },
         {
           "activity" : "generate1",
-          "start" : 47,
+          "start" : 50,
           "length" : 8
         },
         {
           "activity" : "generate2",
           "start" : 59,
-          "length" : 9
+          "length" : 14
         }
       ]
     },
@@ -615,33 +625,28 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 5
-        },
-        {
-          "activity" : "checkR4R4B",
-          "start" : 27,
-          "length" : 1
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 27,
+          "start" : 25,
           "length" : 3
         },
         {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 5
+        },
+        {
           "activity" : "validate",
-          "start" : 45,
+          "start" : 48,
           "length" : 5
         },
         {
           "activity" : "generate1",
-          "start" : 47,
-          "length" : 10
+          "start" : 50,
+          "length" : 9
         },
         {
           "activity" : "generate2",
           "start" : 59,
-          "length" : 10
+          "length" : 15
         }
       ]
     },
@@ -651,28 +656,28 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 6
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "generateNarratives",
-          "start" : 27,
+          "start" : 28,
           "length" : 4
         },
         {
           "activity" : "validate",
-          "start" : 45,
-          "length" : 8
+          "start" : 48,
+          "length" : 6
         },
         {
           "activity" : "generate1",
-          "start" : 47,
-          "length" : 11
+          "start" : 50,
+          "length" : 14
         },
         {
           "activity" : "generate2",
           "start" : 59,
-          "length" : 10
+          "length" : 16
         }
       ]
     },
@@ -682,131 +687,131 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 6
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "generateNarratives",
-          "start" : 27,
+          "start" : 28,
           "length" : 2
         },
         {
           "activity" : "validate",
-          "start" : 45,
-          "length" : 4
+          "start" : 48,
+          "length" : 5
         },
         {
           "activity" : "generate1",
-          "start" : 47,
+          "start" : 50,
           "length" : 12
         },
         {
           "activity" : "generate2",
           "start" : 59,
-          "length" : 10
-        },
-        {
-          "activity" : "generateExampleZip",
-          "start" : 102,
-          "length" : 1
+          "length" : 14
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/Observation-observation-braden-scale.json",
-      "size" : 3619,
+      "size" : 3601,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 5
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 27,
+          "start" : 28,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 27,
+          "start" : 28,
           "length" : 4
         },
         {
+          "activity" : "scanForUsageStats",
+          "start" : 47,
+          "length" : 1
+        },
+        {
           "activity" : "validate",
-          "start" : 45,
-          "length" : 198
+          "start" : 48,
+          "length" : 87
         },
         {
           "activity" : "generate1",
-          "start" : 47,
-          "length" : 15
+          "start" : 50,
+          "length" : 14
         },
         {
           "activity" : "generate2",
           "start" : 59,
-          "length" : 13
+          "length" : 20
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/Observation-observation-skin-tone.json",
-      "size" : 952,
+      "size" : 934,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 6
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 27,
+          "start" : 25,
           "length" : 2
         },
         {
-          "activity" : "validate",
-          "start" : 46,
-          "length" : 7
-        },
-        {
-          "activity" : "generate1",
-          "start" : 47,
-          "length" : 9
-        },
-        {
-          "activity" : "generate2",
-          "start" : 59,
-          "length" : 9
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/Patient-patient-example-jane.json",
-      "size" : 709,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 24,
-          "length" : 5
-        },
-        {
           "activity" : "generateNarratives",
-          "start" : 27,
+          "start" : 28,
           "length" : 1
         },
         {
           "activity" : "validate",
-          "start" : 46,
-          "length" : 338
+          "start" : 48,
+          "length" : 466
         },
         {
           "activity" : "generate1",
-          "start" : 47,
+          "start" : 50,
           "length" : 8
         },
         {
           "activity" : "generate2",
           "start" : 59,
-          "length" : 12
+          "length" : 16
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-patient-example-jane.json",
+      "size" : 691,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 49,
+          "length" : 342
+        },
+        {
+          "activity" : "generate1",
+          "start" : 50,
+          "length" : 8
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 17
         }
       ]
     },
@@ -816,54 +821,64 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 5
+          "start" : 25,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 1
         },
         {
           "activity" : "validate",
-          "start" : 46,
+          "start" : 49,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 47,
-          "length" : 7
+          "start" : 50,
+          "length" : 8
         },
         {
           "activity" : "generate2",
           "start" : 59,
-          "length" : 8
+          "length" : 14
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/Procedure-example-nursing-intervention.json",
-      "size" : 811,
+      "size" : 775,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
+          "start" : 25,
           "length" : 3
+        },
+        {
+          "activity" : "scan",
+          "start" : 28,
+          "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 27,
-          "length" : 3
+          "start" : 28,
+          "length" : 2
         },
         {
           "activity" : "validate",
-          "start" : 46,
-          "length" : 4
+          "start" : 49,
+          "length" : 299
         },
         {
           "activity" : "generate1",
-          "start" : 47,
+          "start" : 50,
           "length" : 8
         },
         {
           "activity" : "generate2",
           "start" : 59,
-          "length" : 15
+          "length" : 21
         }
       ]
     },
@@ -873,1283 +888,449 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 5
+          "start" : 25,
+          "length" : 2
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 5
+          "start" : 25,
+          "length" : 7
         },
         {
           "activity" : "generateSnapshots",
           "start" : 25,
-          "length" : 16
+          "length" : 15
         },
         {
           "activity" : "load-configure",
-          "start" : 27,
-          "length" : 1
-        },
-        {
-          "activity" : "loadInfo",
-          "start" : 27,
+          "start" : 28,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 27,
-          "length" : 34
+          "start" : 28,
+          "length" : 32
         },
         {
           "activity" : "validate",
-          "start" : 30,
-          "length" : 2330
+          "start" : 32,
+          "length" : 1965
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 47,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 47,
-          "length" : 33
+          "start" : 50,
+          "length" : 25
         },
         {
           "activity" : "generate2",
           "start" : 59,
-          "length" : 537
+          "length" : 459
         },
         {
           "activity" : "generate2",
           "start" : 79,
-          "length" : 1257
+          "length" : 709
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 103,
-          "length" : 2
+          "start" : 102,
+          "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-intervention-goal-reference.json",
-      "size" : 1606,
+      "size" : 1552,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 6
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 3
+          "start" : 25,
+          "length" : 64
         },
         {
           "activity" : "generateSnapshots",
           "start" : 25,
-          "length" : 17
+          "length" : 19
         },
         {
           "activity" : "generateNarratives",
-          "start" : 27,
+          "start" : 29,
           "length" : 10
         },
         {
           "activity" : "validate",
-          "start" : 33,
-          "length" : 46
+          "start" : 34,
+          "length" : 121
         },
         {
           "activity" : "generate1",
-          "start" : 47,
-          "length" : 32
+          "start" : 50,
+          "length" : 20
         },
         {
           "activity" : "generate2",
           "start" : 60,
-          "length" : 137
+          "length" : 103
         },
         {
           "activity" : "generate2",
           "start" : 80,
-          "length" : 89
+          "length" : 93
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 103,
-          "length" : 2
+          "start" : 102,
+          "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-observation-goal-reference.json",
-      "size" : 1588,
+      "size" : 1534,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 5
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 3
+          "start" : 25,
+          "length" : 6
         },
         {
           "activity" : "generateSnapshots",
           "start" : 25,
-          "length" : 16
+          "length" : 15
         },
         {
           "activity" : "generateNarratives",
-          "start" : 27,
-          "length" : 9
+          "start" : 29,
+          "length" : 10
         },
         {
           "activity" : "validate",
-          "start" : 33,
-          "length" : 53
+          "start" : 34,
+          "length" : 57
         },
         {
           "activity" : "generate1",
-          "start" : 47,
-          "length" : 33
+          "start" : 50,
+          "length" : 30
         },
         {
           "activity" : "generate2",
           "start" : 60,
-          "length" : 126
+          "length" : 104
         },
         {
           "activity" : "generate2",
           "start" : 80,
-          "length" : 67
+          "length" : 63
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 103,
+          "start" : 102,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-4at-delirium.json",
-      "size" : 6661,
+      "size" : 6571,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 7
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 7
+          "start" : 25,
+          "length" : 10
         },
         {
           "activity" : "generateSnapshots",
           "start" : 25,
-          "length" : 163
-        },
-        {
-          "activity" : "checkR4R4B",
-          "start" : 27,
-          "length" : 1
+          "length" : 133
         },
         {
           "activity" : "generateNarratives",
-          "start" : 27,
-          "length" : 54
+          "start" : 29,
+          "length" : 59
         },
         {
           "activity" : "validate",
-          "start" : 33,
-          "length" : 656
+          "start" : 34,
+          "length" : 608
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 45,
+          "start" : 47,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 47,
-          "length" : 412
+          "start" : 50,
+          "length" : 199
         },
         {
           "activity" : "generate2",
           "start" : 60,
-          "length" : 721
+          "length" : 780
         },
         {
           "activity" : "generate2",
           "start" : 80,
-          "length" : 591
+          "length" : 529
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 103,
+          "start" : 102,
           "length" : 12
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 154,
+          "start" : 171,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-abbey-pain-scale.json",
-      "size" : 7623,
+      "size" : 7605,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 6
+          "start" : 25,
+          "length" : 4
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 5
+          "start" : 25,
+          "length" : 8
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 25,
-          "length" : 57
+          "start" : 26,
+          "length" : 54
         },
         {
           "activity" : "generateNarratives",
-          "start" : 28,
-          "length" : 57
+          "start" : 29,
+          "length" : 46
         },
         {
           "activity" : "validate",
-          "start" : 33,
-          "length" : 599
+          "start" : 35,
+          "length" : 574
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 45,
+          "start" : 47,
           "length" : 2
         },
         {
           "activity" : "generate1",
-          "start" : 47,
-          "length" : 417
+          "start" : 50,
+          "length" : 258
         },
         {
           "activity" : "generate2",
           "start" : 61,
-          "length" : 1092
+          "length" : 1163
         },
         {
           "activity" : "generate2",
           "start" : 81,
-          "length" : 502
+          "length" : 422
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 103,
+          "start" : 102,
           "length" : 13
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 154,
+          "start" : 171,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-abc-chart.json",
-      "size" : 7008,
+      "size" : 6972,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 7
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 8
+          "start" : 25,
+          "length" : 12
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 25,
-          "length" : 54
+          "start" : 26,
+          "length" : 48
         },
         {
           "activity" : "generateNarratives",
-          "start" : 28,
-          "length" : 124
+          "start" : 29,
+          "length" : 42
         },
         {
           "activity" : "validate",
-          "start" : 34,
-          "length" : 547
+          "start" : 35,
+          "length" : 492
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 45,
-          "length" : 1
+          "start" : 47,
+          "length" : 2
         },
         {
           "activity" : "generate1",
-          "start" : 48,
-          "length" : 335
+          "start" : 51,
+          "length" : 217
         },
         {
           "activity" : "generate2",
           "start" : 62,
-          "length" : 852
+          "length" : 887
         },
         {
           "activity" : "generate2",
           "start" : 81,
-          "length" : 381
+          "length" : 356
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 103,
+          "start" : 102,
           "length" : 18
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 154,
+          "start" : 171,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-acvpu.json",
-      "size" : 1351,
+      "size" : 1297,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 5
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 6
+          "start" : 25,
+          "length" : 4
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 25,
-          "length" : 32
+          "start" : 26,
+          "length" : 31
         },
         {
           "activity" : "generateNarratives",
-          "start" : 28,
-          "length" : 35
+          "start" : 29,
+          "length" : 15
         },
         {
           "activity" : "validate",
-          "start" : 35,
-          "length" : 231
+          "start" : 36,
+          "length" : 226
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 47,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 48,
-          "length" : 133
+          "start" : 51,
+          "length" : 125
         },
         {
           "activity" : "generate2",
           "start" : 63,
-          "length" : 295
+          "length" : 409
         },
         {
           "activity" : "generate2",
-          "start" : 82,
-          "length" : 182
+          "start" : 81,
+          "length" : 207
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 103,
+          "start" : 102,
           "length" : 9
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 171,
+          "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-barthel-index.json",
-      "size" : 2249,
+      "size" : 2195,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 6
-        },
-        {
-          "activity" : "load",
-          "start" : 24,
+          "start" : 25,
           "length" : 3
         },
         {
-          "activity" : "generateSnapshots",
+          "activity" : "load",
           "start" : 25,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
           "length" : 31
         },
         {
-          "activity" : "generateNarratives",
-          "start" : 28,
-          "length" : 29
-        },
-        {
-          "activity" : "validate",
-          "start" : 35,
-          "length" : 269
-        },
-        {
-          "activity" : "checkConformanceResources",
-          "start" : 45,
-          "length" : 1
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 45,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 48,
-          "length" : 149
-        },
-        {
-          "activity" : "generate2",
-          "start" : 63,
-          "length" : 286
-        },
-        {
-          "activity" : "generate2",
-          "start" : 82,
-          "length" : 185
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 103,
-          "length" : 11
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-onc-bladder-assessment.json",
-      "size" : 1174,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 24,
-          "length" : 6
-        },
-        {
-          "activity" : "load",
-          "start" : 24,
-          "length" : 6
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 25,
-          "length" : 28
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 28,
-          "length" : 17
-        },
-        {
-          "activity" : "validate",
-          "start" : 35,
-          "length" : 213
-        },
-        {
-          "activity" : "generate1",
-          "start" : 48,
-          "length" : 125
-        },
-        {
-          "activity" : "generate2",
-          "start" : 63,
-          "length" : 244
-        },
-        {
-          "activity" : "generate2",
-          "start" : 82,
-          "length" : 149
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 103,
-          "length" : 7
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 154,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-onc-blood-pressure.json",
-      "size" : 3571,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 24,
-          "length" : 6
-        },
-        {
-          "activity" : "load",
-          "start" : 24,
-          "length" : 7
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 25,
-          "length" : 34
-        },
-        {
           "activity" : "load-configure",
-          "start" : 27,
+          "start" : 28,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 28,
-          "length" : 34
-        },
-        {
-          "activity" : "validate",
-          "start" : 35,
-          "length" : 343
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 45,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 48,
-          "length" : 229
-        },
-        {
-          "activity" : "generate2",
-          "start" : 64,
-          "length" : 369
-        },
-        {
-          "activity" : "generate2",
-          "start" : 82,
-          "length" : 224
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 103,
-          "length" : 9
-        },
-        {
-          "activity" : "scanProfilesForR5",
-          "start" : 154,
-          "length" : 1
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 154,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-onc-body-temperature.json",
-      "size" : 1527,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 24,
-          "length" : 4
-        },
-        {
-          "activity" : "load",
-          "start" : 24,
-          "length" : 6
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 25,
-          "length" : 25
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 28,
-          "length" : 14
+          "start" : 29,
+          "length" : 16
         },
         {
           "activity" : "validate",
           "start" : 36,
-          "length" : 276
-        },
-        {
-          "activity" : "generate1",
-          "start" : 49,
-          "length" : 143
-        },
-        {
-          "activity" : "generate2",
-          "start" : 64,
-          "length" : 264
-        },
-        {
-          "activity" : "generate2",
-          "start" : 83,
-          "length" : 182
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 103,
-          "length" : 7
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-onc-bowel-assessment.json",
-      "size" : 1149,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 24,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 24,
-          "length" : 5
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 25,
-          "length" : 21
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 28,
-          "length" : 35
-        },
-        {
-          "activity" : "validate",
-          "start" : 36,
-          "length" : 147
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 45,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 49,
-          "length" : 124
-        },
-        {
-          "activity" : "generate2",
-          "start" : 64,
-          "length" : 229
-        },
-        {
-          "activity" : "generate2",
-          "start" : 83,
-          "length" : 146
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 103,
-          "length" : 6
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-onc-braden-scale-assessment.json",
-      "size" : 8827,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 24,
-          "length" : 4
-        },
-        {
-          "activity" : "load",
-          "start" : 24,
-          "length" : 5
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 25,
-          "length" : 38
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 28,
-          "length" : 75
-        },
-        {
-          "activity" : "validate",
-          "start" : 36,
-          "length" : 344
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 45,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 49,
-          "length" : 391
-        },
-        {
-          "activity" : "generate2",
-          "start" : 65,
-          "length" : 607
-        },
-        {
-          "activity" : "generate2",
-          "start" : 83,
-          "length" : 252
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 103,
-          "length" : 13
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 154,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-onc-bristol-stool-chart.json",
-      "size" : 2485,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 24,
-          "length" : 6
-        },
-        {
-          "activity" : "load",
-          "start" : 24,
-          "length" : 3
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 25,
-          "length" : 26
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 28,
-          "length" : 25
-        },
-        {
-          "activity" : "validate",
-          "start" : 36,
-          "length" : 142
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 45,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 49,
-          "length" : 153
-        },
-        {
-          "activity" : "generate2",
-          "start" : 65,
-          "length" : 364
-        },
-        {
-          "activity" : "generate2",
-          "start" : 83,
-          "length" : 136
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 103,
-          "length" : 7
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 154,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-onc-catheter-care.json",
-      "size" : 1182,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 24,
-          "length" : 5
-        },
-        {
-          "activity" : "load",
-          "start" : 24,
-          "length" : 5
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 25,
-          "length" : 21
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 28,
-          "length" : 21
-        },
-        {
-          "activity" : "validate",
-          "start" : 37,
-          "length" : 118
-        },
-        {
-          "activity" : "generate1",
-          "start" : 49,
-          "length" : 126
-        },
-        {
-          "activity" : "generate2",
-          "start" : 65,
-          "length" : 319
-        },
-        {
-          "activity" : "generate2",
-          "start" : 83,
-          "length" : 80
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 103,
-          "length" : 6
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-onc-clinical-frailty-scale.json",
-      "size" : 1771,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 24,
-          "length" : 6
-        },
-        {
-          "activity" : "load",
-          "start" : 24,
-          "length" : 3
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 25,
-          "length" : 23
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 28,
-          "length" : 33
-        },
-        {
-          "activity" : "validate",
-          "start" : 37,
-          "length" : 153
+          "length" : 313
         },
         {
           "activity" : "checkConformanceResources",
-          "start" : 45,
+          "start" : 47,
           "length" : 1
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 45,
-          "length" : 1
-        },
-        {
-          "activity" : "validate",
-          "start" : 46,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 50,
-          "length" : 131
-        },
-        {
-          "activity" : "generate2",
-          "start" : 66,
-          "length" : 325
-        },
-        {
-          "activity" : "generate2",
-          "start" : 83,
-          "length" : 77
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 103,
-          "length" : 7
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-onc-continence-assessment.json",
-      "size" : 1303,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 24,
-          "length" : 5
-        },
-        {
-          "activity" : "load",
-          "start" : 24,
-          "length" : 3
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 25,
-          "length" : 23
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 28,
-          "length" : 22
-        },
-        {
-          "activity" : "validate",
-          "start" : 37,
-          "length" : 119
-        },
-        {
-          "activity" : "generate1",
-          "start" : 50,
-          "length" : 125
-        },
-        {
-          "activity" : "generate2",
-          "start" : 66,
-          "length" : 293
-        },
-        {
-          "activity" : "generate2",
-          "start" : 83,
-          "length" : 121
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 103,
-          "length" : 5
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 154,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-onc-device-use-statement.json",
-      "size" : 1202,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 24,
-          "length" : 5
-        },
-        {
-          "activity" : "load",
-          "start" : 24,
-          "length" : 2
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 25,
-          "length" : 20
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 28,
-          "length" : 12
-        },
-        {
-          "activity" : "validate",
-          "start" : 37,
-          "length" : 73
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 45,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 50,
-          "length" : 58
-        },
-        {
-          "activity" : "generate2",
-          "start" : 66,
-          "length" : 166
-        },
-        {
-          "activity" : "generate2",
-          "start" : 84,
-          "length" : 42
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 103,
-          "length" : 3
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-onc-dietary-requirements.json",
-      "size" : 1249,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 24,
-          "length" : 6
-        },
-        {
-          "activity" : "load",
-          "start" : 24,
-          "length" : 6
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 25,
-          "length" : 21
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 28,
-          "length" : 19
-        },
-        {
-          "activity" : "validate",
-          "start" : 37,
-          "length" : 172
-        },
-        {
-          "activity" : "generate1",
-          "start" : 50,
-          "length" : 128
-        },
-        {
-          "activity" : "generate2",
-          "start" : 67,
-          "length" : 323
-        },
-        {
-          "activity" : "generate2",
-          "start" : 84,
-          "length" : 72
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 103,
-          "length" : 6
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-onc-fluid-balance.json",
-      "size" : 6362,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 24,
-          "length" : 4
-        },
-        {
-          "activity" : "load",
-          "start" : 24,
-          "length" : 9
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 25,
-          "length" : 43
-        },
-        {
-          "activity" : "loadDepInfo",
-          "start" : 27,
-          "length" : 1
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 28,
-          "length" : 45
-        },
-        {
-          "activity" : "validate",
-          "start" : 37,
-          "length" : 241
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 45,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 50,
-          "length" : 300
-        },
-        {
-          "activity" : "generate2",
-          "start" : 67,
-          "length" : 628
-        },
-        {
-          "activity" : "generate2",
-          "start" : 84,
-          "length" : 142
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 103,
-          "length" : 15
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 154,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-onc-glasgow-coma-scale.json",
-      "size" : 7371,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 24,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 24,
-          "length" : 9
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 25,
-          "length" : 41
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 28,
-          "length" : 74
-        },
-        {
-          "activity" : "validate",
-          "start" : 37,
-          "length" : 219
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 45,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 50,
-          "length" : 306
-        },
-        {
-          "activity" : "generate2",
-          "start" : 68,
-          "length" : 635
-        },
-        {
-          "activity" : "generate2",
-          "start" : 84,
-          "length" : 126
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 103,
-          "length" : 12
-        },
-        {
-          "activity" : "scanProfilesForR5",
-          "start" : 154,
-          "length" : 1
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 154,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-onc-goal-evaluation.json",
-      "size" : 3314,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 24,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 24,
-          "length" : 6
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 25,
-          "length" : 43
-        },
-        {
-          "activity" : "load-configure",
-          "start" : 27,
-          "length" : 1
-        },
-        {
-          "activity" : "scan",
-          "start" : 27,
-          "length" : 1
-        },
-        {
-          "activity" : "checkR4R4B",
-          "start" : 27,
-          "length" : 1
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 28,
-          "length" : 23
-        },
-        {
-          "activity" : "validate",
-          "start" : 38,
-          "length" : 181
-        },
-        {
-          "activity" : "checkConformanceResources",
-          "start" : 45,
-          "length" : 1
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 45,
+          "start" : 47,
           "length" : 1
         },
         {
@@ -2159,8 +1340,847 @@
         },
         {
           "activity" : "generate2",
+          "start" : 63,
+          "length" : 418
+        },
+        {
+          "activity" : "generate2",
+          "start" : 82,
+          "length" : 164
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 102,
+          "length" : 11
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-onc-bladder-assessment.json",
+      "size" : 1138,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
+          "length" : 25
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 14
+        },
+        {
+          "activity" : "validate",
+          "start" : 36,
+          "length" : 227
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 47,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 51,
+          "length" : 119
+        },
+        {
+          "activity" : "generate2",
+          "start" : 63,
+          "length" : 346
+        },
+        {
+          "activity" : "generate2",
+          "start" : 82,
+          "length" : 153
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 102,
+          "length" : 7
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 171,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-onc-blood-pressure.json",
+      "size" : 3535,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
+          "length" : 39
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 25
+        },
+        {
+          "activity" : "validate",
+          "start" : 37,
+          "length" : 373
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 47,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 51,
+          "length" : 151
+        },
+        {
+          "activity" : "generate2",
+          "start" : 64,
+          "length" : 539
+        },
+        {
+          "activity" : "generate2",
+          "start" : 82,
+          "length" : 223
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 102,
+          "length" : 10
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 171,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-onc-body-temperature.json",
+      "size" : 1491,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 9
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
+          "length" : 29
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 16
+        },
+        {
+          "activity" : "validate",
+          "start" : 37,
+          "length" : 227
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 47,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 51,
+          "length" : 85
+        },
+        {
+          "activity" : "generate2",
+          "start" : 64,
+          "length" : 382
+        },
+        {
+          "activity" : "generate2",
+          "start" : 82,
+          "length" : 156
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 102,
+          "length" : 6
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 171,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-onc-bowel-assessment.json",
+      "size" : 1113,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
+          "length" : 22
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 15
+        },
+        {
+          "activity" : "validate",
+          "start" : 37,
+          "length" : 206
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 47,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 74
+        },
+        {
+          "activity" : "generate2",
+          "start" : 65,
+          "length" : 287
+        },
+        {
+          "activity" : "generate2",
+          "start" : 82,
+          "length" : 131
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 102,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-onc-braden-scale-assessment.json",
+      "size" : 8737,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 9
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
+          "length" : 42
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 87
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 495
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 47,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 201
+        },
+        {
+          "activity" : "generate2",
+          "start" : 65,
+          "length" : 588
+        },
+        {
+          "activity" : "generate2",
+          "start" : 83,
+          "length" : 291
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 102,
+          "length" : 14
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 171,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-onc-bristol-stool-chart.json",
+      "size" : 2467,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
+          "length" : 27
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 23
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 244
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 47,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 90
+        },
+        {
+          "activity" : "generate2",
+          "start" : 66,
+          "length" : 280
+        },
+        {
+          "activity" : "generate2",
+          "start" : 83,
+          "length" : 132
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 102,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-onc-catheter-care.json",
+      "size" : 1146,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
+          "length" : 22
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 21
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 206
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 47,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 75
+        },
+        {
+          "activity" : "generate2",
+          "start" : 66,
+          "length" : 226
+        },
+        {
+          "activity" : "generate2",
+          "start" : 83,
+          "length" : 98
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 102,
+          "length" : 7
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 171,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-onc-clinical-frailty-scale.json",
+      "size" : 1735,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
+          "length" : 24
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 18
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 194
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 47,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 81
+        },
+        {
+          "activity" : "generate2",
+          "start" : 66,
+          "length" : 271
+        },
+        {
+          "activity" : "generate2",
+          "start" : 83,
+          "length" : 90
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 102,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-onc-continence-assessment.json",
+      "size" : 1267,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 6
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
+          "length" : 23
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 13
+        },
+        {
+          "activity" : "validate",
+          "start" : 39,
+          "length" : 149
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 47,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 47,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 78
+        },
+        {
+          "activity" : "generate2",
+          "start" : 66,
+          "length" : 225
+        },
+        {
+          "activity" : "generate2",
+          "start" : 83,
+          "length" : 97
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 102,
+          "length" : 5
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 171,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-onc-device-use-statement.json",
+      "size" : 1184,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
+          "length" : 20
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 11
+        },
+        {
+          "activity" : "validate",
+          "start" : 39,
+          "length" : 52
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 37
+        },
+        {
+          "activity" : "generate2",
+          "start" : 67,
+          "length" : 105
+        },
+        {
+          "activity" : "generate2",
+          "start" : 83,
+          "length" : 48
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 102,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-onc-dietary-requirements.json",
+      "size" : 1213,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
+          "length" : 23
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 14
+        },
+        {
+          "activity" : "validate",
+          "start" : 39,
+          "length" : 114
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 47,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 90
+        },
+        {
+          "activity" : "generate2",
+          "start" : 67,
+          "length" : 224
+        },
+        {
+          "activity" : "generate2",
+          "start" : 83,
+          "length" : 89
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 102,
+          "length" : 5
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 171,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-onc-fluid-balance.json",
+      "size" : 6344,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 9
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
+          "length" : 82
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 30
+        },
+        {
+          "activity" : "validate",
+          "start" : 39,
+          "length" : 238
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 47,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 180
+        },
+        {
+          "activity" : "generate2",
+          "start" : 67,
+          "length" : 460
+        },
+        {
+          "activity" : "generate2",
+          "start" : 83,
+          "length" : 142
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 102,
+          "length" : 11
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 171,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-onc-glasgow-coma-scale.json",
+      "size" : 7263,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 6
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
+          "length" : 41
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 30
+        },
+        {
+          "activity" : "validate",
+          "start" : 39,
+          "length" : 261
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 47,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 210
+        },
+        {
+          "activity" : "generate2",
+          "start" : 67,
+          "length" : 450
+        },
+        {
+          "activity" : "generate2",
+          "start" : 84,
+          "length" : 140
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 102,
+          "length" : 10
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 171,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-onc-goal-evaluation.json",
+      "size" : 3242,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
+          "length" : 46
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 18
+        },
+        {
+          "activity" : "validate",
+          "start" : 39,
+          "length" : 158
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 47,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 53,
+          "length" : 82
+        },
+        {
+          "activity" : "generate2",
           "start" : 68,
-          "length" : 331
+          "length" : 289
         },
         {
           "activity" : "generate2",
@@ -2176,42 +2196,47 @@
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-heart-rate.json",
-      "size" : 1501,
+      "size" : 1465,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 3
+          "start" : 25,
+          "length" : 2
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 3
+          "start" : 25,
+          "length" : 4
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 25,
-          "length" : 68
+          "start" : 26,
+          "length" : 45
         },
         {
           "activity" : "generateNarratives",
-          "start" : 28,
-          "length" : 33
+          "start" : 29,
+          "length" : 14
         },
         {
           "activity" : "validate",
-          "start" : 38,
-          "length" : 140
+          "start" : 40,
+          "length" : 130
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 47,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 51,
-          "length" : 141
+          "start" : 53,
+          "length" : 90
         },
         {
           "activity" : "generate2",
           "start" : 68,
-          "length" : 340
+          "length" : 307
         },
         {
           "activity" : "generate2",
@@ -2221,175 +2246,180 @@
         {
           "activity" : "generateValidationPack",
           "start" : 103,
-          "length" : 7
+          "length" : 6
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 154,
+          "start" : 171,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-hygiene-assessment.json",
-      "size" : 1171,
+      "size" : 1135,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 2
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 24,
+          "start" : 25,
           "length" : 3
         },
         {
           "activity" : "generateSnapshots",
           "start" : 26,
-          "length" : 20
+          "length" : 40
         },
         {
           "activity" : "generateNarratives",
-          "start" : 28,
-          "length" : 13
+          "start" : 29,
+          "length" : 18
         },
         {
           "activity" : "validate",
-          "start" : 38,
-          "length" : 123
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 45,
-          "length" : 1
+          "start" : 40,
+          "length" : 115
         },
         {
           "activity" : "generate1",
-          "start" : 51,
-          "length" : 121
+          "start" : 53,
+          "length" : 76
         },
         {
           "activity" : "generate2",
-          "start" : 69,
-          "length" : 296
+          "start" : 68,
+          "length" : 250
         },
         {
           "activity" : "generate2",
           "start" : 84,
-          "length" : 67
+          "length" : 73
         },
         {
           "activity" : "generateValidationPack",
           "start" : 103,
-          "length" : 6
+          "length" : 5
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-inspired-oxygen.json",
-      "size" : 2457,
+      "size" : 2403,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 3
+          "start" : 25,
+          "length" : 2
         },
         {
           "activity" : "load",
-          "start" : 24,
+          "start" : 25,
           "length" : 4
         },
         {
           "activity" : "generateSnapshots",
           "start" : 26,
-          "length" : 26
+          "length" : 31
         },
         {
           "activity" : "generateNarratives",
-          "start" : 28,
-          "length" : 427
+          "start" : 29,
+          "length" : 954
         },
         {
           "activity" : "validate",
-          "start" : 38,
-          "length" : 147
+          "start" : 40,
+          "length" : 133
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 45,
+          "start" : 47,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 51,
-          "length" : 154
+          "start" : 53,
+          "length" : 88
         },
         {
           "activity" : "generate2",
           "start" : 69,
-          "length" : 357
+          "length" : 273
         },
         {
           "activity" : "generate2",
           "start" : 84,
-          "length" : 75
+          "length" : 117
         },
         {
           "activity" : "generateValidationPack",
           "start" : 103,
-          "length" : 7
+          "length" : 6
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 154,
+          "start" : 171,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-medication-ability.json",
-      "size" : 1184,
+      "size" : 1148,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 6
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 2
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "generateSnapshots",
           "start" : 26,
-          "length" : 20
+          "length" : 24
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 53
+          "start" : 30,
+          "length" : 15
         },
         {
           "activity" : "validate",
-          "start" : 38,
-          "length" : 120
+          "start" : 40,
+          "length" : 113
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 47,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 47,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 51,
-          "length" : 122
+          "start" : 53,
+          "length" : 72
         },
         {
           "activity" : "generate2",
           "start" : 69,
-          "length" : 214
+          "length" : 222
         },
         {
           "activity" : "generate2",
           "start" : 84,
-          "length" : 74
+          "length" : 80
         },
         {
           "activity" : "generateValidationPack",
@@ -2400,164 +2430,179 @@
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-medication-self-admin.json",
-      "size" : 1199,
+      "size" : 1163,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 5
+          "start" : 25,
+          "length" : 2
         },
         {
           "activity" : "load",
-          "start" : 24,
+          "start" : 25,
           "length" : 3
         },
         {
           "activity" : "generateSnapshots",
           "start" : 26,
-          "length" : 19
+          "length" : 22
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 28,
+          "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 12
+          "start" : 30,
+          "length" : 14
         },
         {
           "activity" : "validate",
-          "start" : 38,
-          "length" : 118
+          "start" : 40,
+          "length" : 113
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 45,
+          "start" : 47,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 51,
-          "length" : 122
+          "start" : 53,
+          "length" : 72
         },
         {
           "activity" : "generate2",
-          "start" : 70,
-          "length" : 206
+          "start" : 69,
+          "length" : 218
         },
         {
           "activity" : "generate2",
           "start" : 84,
-          "length" : 74
+          "length" : 80
         },
         {
           "activity" : "generateValidationPack",
           "start" : 103,
-          "length" : 5
+          "length" : 6
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 154,
+          "start" : 171,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-mental-capacity.json",
-      "size" : 1957,
+      "size" : 1921,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 5
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 24,
+          "start" : 25,
           "length" : 3
         },
         {
           "activity" : "generateSnapshots",
           "start" : 26,
-          "length" : 18
+          "length" : 34
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 19
+          "start" : 30,
+          "length" : 22
         },
         {
           "activity" : "validate",
-          "start" : 39,
-          "length" : 122
+          "start" : 40,
+          "length" : 116
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 47,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 51,
-          "length" : 135
+          "start" : 53,
+          "length" : 79
         },
         {
           "activity" : "generate2",
-          "start" : 70,
-          "length" : 218
+          "start" : 69,
+          "length" : 273
         },
         {
           "activity" : "generate2",
           "start" : 84,
-          "length" : 82
+          "length" : 92
         },
         {
           "activity" : "generateValidationPack",
           "start" : 103,
-          "length" : 6
+          "length" : 5
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 171,
+          "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-mmse.json",
-      "size" : 2120,
+      "size" : 2066,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 6
+          "start" : 25,
+          "length" : 2
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 3
+          "start" : 25,
+          "length" : 4
         },
         {
           "activity" : "generateSnapshots",
           "start" : 26,
-          "length" : 23
+          "length" : 46
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 22
+          "start" : 30,
+          "length" : 24
         },
         {
           "activity" : "validate",
-          "start" : 39,
-          "length" : 182
+          "start" : 40,
+          "length" : 129
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 45,
+          "start" : 47,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 52,
-          "length" : 145
+          "start" : 53,
+          "length" : 84
         },
         {
           "activity" : "generate2",
           "start" : 70,
-          "length" : 222
+          "length" : 310
         },
         {
           "activity" : "generate2",
           "start" : 84,
-          "length" : 81
+          "length" : 98
         },
         {
           "activity" : "generateValidationPack",
@@ -2568,47 +2613,47 @@
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-mobility-assessment.json",
-      "size" : 1149,
+      "size" : 1113,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 5
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 3
+          "start" : 25,
+          "length" : 5
         },
         {
           "activity" : "generateSnapshots",
           "start" : 26,
-          "length" : 19
+          "length" : 46
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
+          "start" : 30,
           "length" : 15
         },
         {
           "activity" : "validate",
-          "start" : 39,
-          "length" : 122
+          "start" : 40,
+          "length" : 114
         },
         {
           "activity" : "generate1",
-          "start" : 52,
-          "length" : 122
+          "start" : 53,
+          "length" : 72
         },
         {
           "activity" : "generate2",
           "start" : 70,
-          "length" : 205
+          "length" : 332
         },
         {
           "activity" : "generate2",
-          "start" : 85,
-          "length" : 72
+          "start" : 84,
+          "length" : 79
         },
         {
           "activity" : "generateValidationPack",
@@ -2617,110 +2662,115 @@
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 154,
+          "start" : 171,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-monk-skintone-observation.json",
-      "size" : 1613,
+      "size" : 1559,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 5
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 3
+          "start" : 25,
+          "length" : 5
         },
         {
           "activity" : "generateSnapshots",
           "start" : 26,
-          "length" : 18
+          "length" : 28
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 12
+          "start" : 30,
+          "length" : 16
         },
         {
           "activity" : "validate",
-          "start" : 39,
-          "length" : 163
+          "start" : 41,
+          "length" : 156
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 45,
+          "start" : 47,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 52,
-          "length" : 126
+          "start" : 53,
+          "length" : 81
         },
         {
           "activity" : "generate2",
-          "start" : 71,
-          "length" : 200
+          "start" : 70,
+          "length" : 325
         },
         {
           "activity" : "generate2",
-          "start" : 85,
-          "length" : 78
+          "start" : 84,
+          "length" : 86
         },
         {
           "activity" : "generateValidationPack",
           "start" : 103,
-          "length" : 6
+          "length" : 5
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-morse-fall-scale.json",
-      "size" : 2144,
+      "size" : 2090,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 6
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 3
+          "start" : 25,
+          "length" : 7
         },
         {
           "activity" : "generateSnapshots",
           "start" : 26,
-          "length" : 23
+          "length" : 25
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 13
+          "start" : 30,
+          "length" : 15
         },
         {
           "activity" : "validate",
-          "start" : 39,
-          "length" : 121
+          "start" : 41,
+          "length" : 126
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 47,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 52,
-          "length" : 144
+          "start" : 53,
+          "length" : 84
         },
         {
           "activity" : "generate2",
           "start" : 71,
-          "length" : 228
+          "length" : 239
         },
         {
           "activity" : "generate2",
           "start" : 85,
-          "length" : 137
+          "length" : 84
         },
         {
           "activity" : "generateValidationPack",
@@ -2729,59 +2779,59 @@
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 154,
+          "start" : 171,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-must-score.json",
-      "size" : 7761,
+      "size" : 7653,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 6
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 5
+          "start" : 25,
+          "length" : 8
         },
         {
           "activity" : "generateSnapshots",
           "start" : 26,
-          "length" : 45
+          "length" : 48
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 27
+          "start" : 30,
+          "length" : 33
         },
         {
           "activity" : "validate",
-          "start" : 39,
-          "length" : 213
+          "start" : 41,
+          "length" : 262
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 45,
+          "start" : 47,
           "length" : 2
         },
         {
           "activity" : "generate1",
-          "start" : 52,
-          "length" : 308
+          "start" : 54,
+          "length" : 171
         },
         {
           "activity" : "generate2",
           "start" : 71,
-          "length" : 429
+          "length" : 447
         },
         {
           "activity" : "generate2",
           "start" : 85,
-          "length" : 133
+          "length" : 138
         },
         {
           "activity" : "generateValidationPack",
@@ -2789,111 +2839,111 @@
           "length" : 10
         },
         {
-          "activity" : "scanProfilesForR5",
-          "start" : 154,
+          "activity" : "scanExamplesForR5",
+          "start" : 171,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-news2-score.json",
-      "size" : 2217,
+      "size" : 2163,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 5
-        },
-        {
-          "activity" : "load",
-          "start" : 24,
+          "start" : 25,
           "length" : 3
         },
         {
-          "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 23
+          "activity" : "load",
+          "start" : 25,
+          "length" : 6
         },
         {
-          "activity" : "load-configure",
+          "activity" : "generateSnapshots",
           "start" : 27,
+          "length" : 29
+        },
+        {
+          "activity" : "loadInfo",
+          "start" : 28,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 20
+          "start" : 30,
+          "length" : 17
         },
         {
           "activity" : "validate",
-          "start" : 39,
-          "length" : 125
+          "start" : 41,
+          "length" : 130
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 47,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 52,
-          "length" : 147
+          "start" : 54,
+          "length" : 84
         },
         {
           "activity" : "generate2",
           "start" : 71,
-          "length" : 258
+          "length" : 305
         },
         {
           "activity" : "generate2",
           "start" : 85,
-          "length" : 90
+          "length" : 84
         },
         {
           "activity" : "generateValidationPack",
           "start" : 103,
           "length" : 6
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 154,
-          "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-news2-subscore.json",
-      "size" : 2182,
+      "size" : 2128,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 3
+          "start" : 25,
+          "length" : 2
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 3
+          "start" : 25,
+          "length" : 4
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 27
+          "start" : 27,
+          "length" : 24
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 22
+          "start" : 30,
+          "length" : 15
         },
         {
           "activity" : "validate",
-          "start" : 40,
-          "length" : 146
+          "start" : 41,
+          "length" : 161
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 45,
+          "start" : 47,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 53,
-          "length" : 144
+          "start" : 54,
+          "length" : 85
         },
         {
           "activity" : "generate2",
@@ -2903,7 +2953,7 @@
         {
           "activity" : "generate2",
           "start" : 85,
-          "length" : 85
+          "length" : 89
         },
         {
           "activity" : "generateValidationPack",
@@ -2914,103 +2964,113 @@
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-nhs-patient.json",
-      "size" : 1338,
+      "size" : 1320,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 2
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 24,
+          "start" : 25,
           "length" : 3
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 28
+          "start" : 27,
+          "length" : 42
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 12
+          "start" : 30,
+          "length" : 10
         },
         {
           "activity" : "validate",
-          "start" : 40,
-          "length" : 78
+          "start" : 41,
+          "length" : 96
         },
         {
           "activity" : "generate1",
-          "start" : 53,
-          "length" : 97
+          "start" : 54,
+          "length" : 58
         },
         {
           "activity" : "generate2",
           "start" : 72,
-          "length" : 201
+          "length" : 233
         },
         {
           "activity" : "generate2",
           "start" : 85,
-          "length" : 70
+          "length" : 104
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 101,
+          "length" : 1
         },
         {
           "activity" : "generateValidationPack",
           "start" : 103,
-          "length" : 4
+          "length" : 3
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 171,
+          "length" : 1
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 154,
+          "start" : 171,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-nursing-assessment.json",
-      "size" : 2414,
+      "size" : 2396,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 3
+          "start" : 25,
+          "length" : 2
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 4
+          "start" : 25,
+          "length" : 6
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 12
+          "start" : 30,
+          "length" : 14
         },
         {
           "activity" : "validate",
-          "start" : 40,
-          "length" : 100
+          "start" : 42,
+          "length" : 113
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 45,
+          "start" : 47,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 53,
-          "length" : 136
+          "start" : 54,
+          "length" : 79
         },
         {
           "activity" : "generate2",
           "start" : 72,
-          "length" : 334
+          "length" : 336
         },
         {
           "activity" : "generate2",
           "start" : 85,
-          "length" : 71
+          "length" : 77
         },
         {
           "activity" : "generateValidationPack",
@@ -3021,93 +3081,174 @@
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-nursing-clinical-impression.json",
-      "size" : 3739,
+      "size" : 3685,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 6
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 4
+          "start" : 25,
+          "length" : 15
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 29
+          "start" : 27,
+          "length" : 30
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 28,
+          "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 12
+          "start" : 30,
+          "length" : 14
         },
         {
           "activity" : "validate",
-          "start" : 40,
-          "length" : 71
+          "start" : 42,
+          "length" : 79
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 47,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 53,
-          "length" : 111
+          "start" : 54,
+          "length" : 66
         },
         {
           "activity" : "generate2",
           "start" : 72,
-          "length" : 169
+          "length" : 167
         },
         {
           "activity" : "generate2",
           "start" : 85,
-          "length" : 58
+          "length" : 60
         },
         {
           "activity" : "generateValidationPack",
           "start" : 103,
           "length" : 4
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 171,
+          "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-nursing-goal.json",
-      "size" : 3361,
+      "size" : 3289,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 4
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 4
+          "start" : 25,
+          "length" : 7
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 22
+          "start" : 27,
+          "length" : 29
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 28,
+          "length" : 34
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 17
+          "start" : 30,
+          "length" : 13
         },
         {
           "activity" : "validate",
-          "start" : 40,
-          "length" : 69
+          "start" : 42,
+          "length" : 127
         },
         {
           "activity" : "checkConformanceResources",
-          "start" : 45,
+          "start" : 47,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 53,
-          "length" : 96
+          "start" : 54,
+          "length" : 56
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 178
+        },
+        {
+          "activity" : "generate2",
+          "start" : 85,
+          "length" : 54
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-onc-nursing-intervention.json",
+      "size" : 1800,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 27,
+          "length" : 37
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 42
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 104
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 47,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 54,
+          "length" : 61
         },
         {
           "activity" : "generate2",
@@ -3117,124 +3258,58 @@
         {
           "activity" : "generate2",
           "start" : 85,
-          "length" : 49
+          "length" : 66
         },
         {
           "activity" : "generateValidationPack",
           "start" : 103,
           "length" : 4
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-onc-nursing-intervention.json",
-      "size" : 1854,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 24,
-          "length" : 6
-        },
-        {
-          "activity" : "load",
-          "start" : 24,
-          "length" : 3
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 33
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 10
-        },
-        {
-          "activity" : "validate",
-          "start" : 40,
-          "length" : 93
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 45,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 53,
-          "length" : 104
-        },
-        {
-          "activity" : "generate2",
-          "start" : 73,
-          "length" : 249
-        },
-        {
-          "activity" : "generate2",
-          "start" : 85,
-          "length" : 59
-        },
-        {
-          "activity" : "makeDependencies",
-          "start" : 91,
-          "length" : 1
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 103,
-          "length" : 4
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 154,
-          "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-nursing-problem.json",
-      "size" : 1524,
+      "size" : 1470,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 5
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 4
+          "start" : 25,
+          "length" : 5
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 26
+          "start" : 27,
+          "length" : 31
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 9
+          "start" : 30,
+          "length" : 22
         },
         {
           "activity" : "validate",
-          "start" : 40,
-          "length" : 71
+          "start" : 42,
+          "length" : 77
         },
         {
           "activity" : "generate1",
-          "start" : 53,
-          "length" : 90
+          "start" : 54,
+          "length" : 54
         },
         {
           "activity" : "generate2",
           "start" : 73,
-          "length" : 185
+          "length" : 176
         },
         {
           "activity" : "generate2",
           "start" : 85,
-          "length" : 50
+          "length" : 55
         },
         {
           "activity" : "generateValidationPack",
@@ -3245,113 +3320,123 @@
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-oral-care-assessment.json",
-      "size" : 1157,
+      "size" : 1121,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 5
+          "start" : 25,
+          "length" : 2
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 3
+          "start" : 25,
+          "length" : 6
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 17
+          "start" : 27,
+          "length" : 20
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 11
+          "start" : 30,
+          "length" : 24
         },
         {
           "activity" : "validate",
-          "start" : 40,
-          "length" : 103
+          "start" : 42,
+          "length" : 107
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 45,
+          "start" : 47,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 53,
-          "length" : 121
+          "start" : 54,
+          "length" : 100
         },
         {
           "activity" : "generate2",
           "start" : 73,
-          "length" : 223
+          "length" : 288
         },
         {
           "activity" : "generate2",
           "start" : 85,
-          "length" : 68
+          "length" : 74
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 91,
+          "length" : 1
         },
         {
           "activity" : "generateValidationPack",
           "start" : 103,
           "length" : 5
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 171,
+          "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-oral-health.json",
-      "size" : 6795,
+      "size" : 6777,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
+          "start" : 25,
           "length" : 4
         },
         {
           "activity" : "load",
-          "start" : 24,
+          "start" : 25,
           "length" : 8
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 45
+          "start" : 27,
+          "length" : 74
         },
         {
-          "activity" : "checkR4R4B",
-          "start" : 27,
+          "activity" : "load-configure",
+          "start" : 28,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 32
+          "start" : 30,
+          "length" : 49
         },
         {
           "activity" : "validate",
-          "start" : 40,
-          "length" : 250
+          "start" : 42,
+          "length" : 239
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 45,
-          "length" : 1
+          "start" : 47,
+          "length" : 2
         },
         {
           "activity" : "generate1",
-          "start" : 53,
-          "length" : 316
+          "start" : 54,
+          "length" : 176
         },
         {
           "activity" : "generate2",
           "start" : 73,
-          "length" : 431
+          "length" : 518
         },
         {
           "activity" : "generate2",
-          "start" : 86,
-          "length" : 129
+          "start" : 85,
+          "length" : 193
         },
         {
           "activity" : "generateValidationPack",
@@ -3360,59 +3445,59 @@
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 154,
+          "start" : 171,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-oral-intake-assessment.json",
-      "size" : 1167,
+      "size" : 1131,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 3
+          "start" : 25,
+          "length" : 2
         },
         {
           "activity" : "load",
           "start" : 25,
-          "length" : 4
+          "length" : 6
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 19
-        },
-        {
-          "activity" : "load-configure",
           "start" : 27,
-          "length" : 1
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 29,
           "length" : 20
         },
         {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 31
+        },
+        {
           "activity" : "validate",
-          "start" : 41,
-          "length" : 99
+          "start" : 42,
+          "length" : 106
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 47,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 54,
-          "length" : 122
+          "start" : 55,
+          "length" : 75
         },
         {
           "activity" : "generate2",
           "start" : 74,
-          "length" : 269
+          "length" : 233
         },
         {
           "activity" : "generate2",
           "start" : 86,
-          "length" : 64
+          "length" : 73
         },
         {
           "activity" : "generateValidationPack",
@@ -3423,12 +3508,12 @@
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-oxygen-saturation.json",
-      "size" : 1573,
+      "size" : 1537,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 6
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "load",
@@ -3437,99 +3522,99 @@
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 23
+          "start" : 27,
+          "length" : 24
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 19
+          "start" : 30,
+          "length" : 32
         },
         {
           "activity" : "validate",
-          "start" : 41,
-          "length" : 110
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 45,
-          "length" : 1
+          "start" : 42,
+          "length" : 117
         },
         {
           "activity" : "generate1",
-          "start" : 54,
-          "length" : 141
+          "start" : 55,
+          "length" : 84
         },
         {
           "activity" : "generate2",
           "start" : 74,
-          "length" : 273
+          "length" : 311
         },
         {
           "activity" : "generate2",
           "start" : 86,
-          "length" : 74
+          "length" : 82
         },
         {
           "activity" : "generateValidationPack",
           "start" : 103,
-          "length" : 6
+          "length" : 5
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 154,
+          "start" : 171,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-pain-assessment.json",
-      "size" : 2833,
+      "size" : 2761,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 6
+          "start" : 25,
+          "length" : 2
         },
         {
           "activity" : "load",
           "start" : 25,
-          "length" : 7
+          "length" : 4
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 58
+          "start" : 27,
+          "length" : 25
+        },
+        {
+          "activity" : "loadDepInfo",
+          "start" : 28,
+          "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 17
+          "start" : 30,
+          "length" : 24
         },
         {
           "activity" : "validate",
-          "start" : 41,
-          "length" : 110
+          "start" : 43,
+          "length" : 128
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 45,
+          "start" : 47,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 54,
-          "length" : 148
+          "start" : 55,
+          "length" : 84
         },
         {
           "activity" : "generate2",
-          "start" : 74,
-          "length" : 271
+          "start" : 75,
+          "length" : 371
         },
         {
           "activity" : "generate2",
           "start" : 86,
-          "length" : 75
+          "length" : 82
         },
         {
           "activity" : "generateValidationPack",
@@ -3544,8 +3629,64 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
+          "start" : 25,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
           "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 27,
+          "length" : 46
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 21
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 158
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 47,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 55,
+          "length" : 75
+        },
+        {
+          "activity" : "generate2",
+          "start" : 75,
+          "length" : 199
+        },
+        {
+          "activity" : "generate2",
+          "start" : 86,
+          "length" : 72
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-onc-qsofa.json",
+      "size" : 2047,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 2
         },
         {
           "activity" : "load",
@@ -3554,49 +3695,59 @@
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 44
+          "start" : 27,
+          "length" : 25
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 11
+          "start" : 31,
+          "length" : 24
         },
         {
           "activity" : "validate",
-          "start" : 41,
-          "length" : 96
+          "start" : 43,
+          "length" : 120
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 47,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 54,
-          "length" : 129
+          "start" : 55,
+          "length" : 85
         },
         {
           "activity" : "generate2",
           "start" : 75,
-          "length" : 206
+          "length" : 240
         },
         {
           "activity" : "generate2",
           "start" : 86,
-          "length" : 65
+          "length" : 81
         },
         {
           "activity" : "generateValidationPack",
           "start" : 103,
-          "length" : 5
+          "length" : 6
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 171,
+          "length" : 1
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/StructureDefinition-onc-qsofa.json",
-      "size" : 2101,
+      "name" : "fsh-generated/resources/StructureDefinition-onc-reasonable-adjustment.json",
+      "size" : 1758,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 6
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "load",
@@ -3605,33 +3756,38 @@
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 24
+          "start" : 27,
+          "length" : 19
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 28,
+          "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 44
+          "start" : 31,
+          "length" : 22
         },
         {
           "activity" : "validate",
-          "start" : 41,
-          "length" : 109
+          "start" : 43,
+          "length" : 107
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 45,
+          "start" : 47,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 54,
-          "length" : 147
+          "start" : 55,
+          "length" : 77
         },
         {
           "activity" : "generate2",
           "start" : 75,
-          "length" : 241
+          "length" : 217
         },
         {
           "activity" : "generate2",
@@ -3641,68 +3797,7 @@
         {
           "activity" : "generateValidationPack",
           "start" : 103,
-          "length" : 7
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 154,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-onc-reasonable-adjustment.json",
-      "size" : 1776,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 24,
           "length" : 5
-        },
-        {
-          "activity" : "load",
-          "start" : 25,
-          "length" : 6
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 20
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 15
-        },
-        {
-          "activity" : "validate",
-          "start" : 41,
-          "length" : 97
-        },
-        {
-          "activity" : "generate1",
-          "start" : 54,
-          "length" : 134
-        },
-        {
-          "activity" : "generate2",
-          "start" : 75,
-          "length" : 200
-        },
-        {
-          "activity" : "generate2",
-          "start" : 86,
-          "length" : 69
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 103,
-          "length" : 5
-        },
-        {
-          "activity" : "scanProfilesForR5",
-          "start" : 154,
-          "length" : 1
         }
       ]
     },
@@ -3712,63 +3807,68 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 6
+          "start" : 25,
+          "length" : 2
         },
         {
           "activity" : "load",
           "start" : 25,
-          "length" : 6
+          "length" : 5
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 43
+          "start" : 27,
+          "length" : 45
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 11
+          "start" : 31,
+          "length" : 21
         },
         {
           "activity" : "validate",
-          "start" : 41,
-          "length" : 137
+          "start" : 43,
+          "length" : 107
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 45,
+          "start" : 47,
           "length" : 1
         },
         {
           "activity" : "generate1",
           "start" : 55,
-          "length" : 132
+          "length" : 76
         },
         {
           "activity" : "generate2",
-          "start" : 75,
-          "length" : 183
+          "start" : 76,
+          "length" : 217
         },
         {
           "activity" : "generate2",
           "start" : 86,
-          "length" : 65
+          "length" : 73
         },
         {
           "activity" : "generateValidationPack",
           "start" : 103,
           "length" : 5
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 171,
+          "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-respiration-rate.json",
-      "size" : 1529,
+      "size" : 1493,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
+          "start" : 25,
           "length" : 3
         },
         {
@@ -3778,28 +3878,155 @@
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 24
+          "start" : 27,
+          "length" : 23
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 13
+          "start" : 31,
+          "length" : 23
         },
         {
           "activity" : "validate",
-          "start" : 41,
-          "length" : 105
+          "start" : 43,
+          "length" : 120
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 47,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 47,
+          "length" : 1
         },
         {
           "activity" : "generate1",
           "start" : 55,
-          "length" : 141
+          "length" : 83
         },
         {
           "activity" : "generate2",
           "start" : 76,
-          "length" : 210
+          "length" : 239
+        },
+        {
+          "activity" : "generate2",
+          "start" : 86,
+          "length" : 82
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-onc-seizure-record.json",
+      "size" : 5539,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 8
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 27,
+          "length" : 41
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 31,
+          "length" : 37
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 195
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 47,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 55,
+          "length" : 154
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 422
+        },
+        {
+          "activity" : "generate2",
+          "start" : 86,
+          "length" : 131
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 13
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 171,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-onc-skintone-observation.json",
+      "size" : 1482,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 6
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 27,
+          "length" : 22
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 31,
+          "length" : 34
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 107
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 47,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 55,
+          "length" : 75
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 217
         },
         {
           "activity" : "generate2",
@@ -3813,135 +4040,18 @@
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 154,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-onc-seizure-record.json",
-      "size" : 5557,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 24,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 25,
-          "length" : 12
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 37
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 23
-        },
-        {
-          "activity" : "validate",
-          "start" : 41,
-          "length" : 175
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 45,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 55,
-          "length" : 281
-        },
-        {
-          "activity" : "generate2",
-          "start" : 76,
-          "length" : 345
-        },
-        {
-          "activity" : "generate2",
-          "start" : 86,
-          "length" : 121
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 103,
-          "length" : 10
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-onc-skintone-observation.json",
-      "size" : 1536,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 24,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 25,
-          "length" : 6
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 20
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 13
-        },
-        {
-          "activity" : "validate",
-          "start" : 42,
-          "length" : 94
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 45,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 55,
-          "length" : 126
-        },
-        {
-          "activity" : "generate2",
-          "start" : 76,
-          "length" : 208
-        },
-        {
-          "activity" : "generate2",
-          "start" : 86,
-          "length" : 118
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 103,
-          "length" : 5
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 154,
+          "start" : 171,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-sleep-pattern.json",
-      "size" : 4823,
+      "size" : 4805,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
+          "start" : 25,
           "length" : 3
         },
         {
@@ -3951,58 +4061,180 @@
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 34
-        },
-        {
-          "activity" : "load-configure",
           "start" : 27,
-          "length" : 1
+          "length" : 31
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 24
+          "start" : 31,
+          "length" : 34
         },
         {
           "activity" : "validate",
-          "start" : 42,
-          "length" : 160
+          "start" : 44,
+          "length" : 235
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 45,
+          "start" : 47,
           "length" : 1
         },
         {
           "activity" : "generate1",
           "start" : 55,
-          "length" : 246
+          "length" : 137
         },
         {
           "activity" : "generate2",
-          "start" : 76,
-          "length" : 315
+          "start" : 77,
+          "length" : 361
         },
         {
           "activity" : "generate2",
           "start" : 86,
-          "length" : 106
+          "length" : 114
         },
         {
           "activity" : "generateValidationPack",
           "start" : 103,
-          "length" : 12
+          "length" : 8
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 171,
+          "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-swallowing-assessment.json",
-      "size" : 1162,
+      "size" : 1126,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
+          "start" : 25,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 27,
+          "length" : 18
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 31,
+          "length" : 22
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 104
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 47,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 56,
+          "length" : 73
+        },
+        {
+          "activity" : "generate2",
+          "start" : 77,
+          "length" : 224
+        },
+        {
+          "activity" : "generate2",
+          "start" : 87,
+          "length" : 71
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 8
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 171,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-onc-urinalysis.json",
+      "size" : 8195,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 10
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 27,
+          "length" : 38
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 31,
+          "length" : 59
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 261
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 47,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 56,
+          "length" : 217
+        },
+        {
+          "activity" : "generate2",
+          "start" : 77,
+          "length" : 533
+        },
+        {
+          "activity" : "generate2",
+          "start" : 87,
+          "length" : 170
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 12
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 171,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-onc-waterlow-score.json",
+      "size" : 3890,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
           "length" : 3
         },
         {
@@ -4012,165 +4244,43 @@
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 21
+          "start" : 27,
+          "length" : 23
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 11
+          "start" : 31,
+          "length" : 26
         },
         {
           "activity" : "validate",
-          "start" : 42,
-          "length" : 133
-        },
-        {
-          "activity" : "checkConformanceResources",
-          "start" : 45,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 55,
-          "length" : 122
-        },
-        {
-          "activity" : "generate2",
-          "start" : 77,
-          "length" : 184
-        },
-        {
-          "activity" : "generate2",
-          "start" : 87,
-          "length" : 65
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 103,
-          "length" : 5
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 154,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-onc-urinalysis.json",
-      "size" : 8213,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 24,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 25,
-          "length" : 9
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 43
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 29
-        },
-        {
-          "activity" : "validate",
-          "start" : 42,
-          "length" : 232
+          "start" : 44,
+          "length" : 148
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 45,
+          "start" : 47,
           "length" : 1
         },
         {
           "activity" : "generate1",
           "start" : 56,
-          "length" : 385
+          "length" : 92
         },
         {
           "activity" : "generate2",
-          "start" : 77,
-          "length" : 452
-        },
-        {
-          "activity" : "generate2",
-          "start" : 87,
-          "length" : 147
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 103,
-          "length" : 12
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-onc-waterlow-score.json",
-      "size" : 3998,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 24,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 25,
-          "length" : 8
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 30
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 15
-        },
-        {
-          "activity" : "validate",
-          "start" : 42,
-          "length" : 142
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 45,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 56,
-          "length" : 159
-        },
-        {
-          "activity" : "generate2",
-          "start" : 77,
-          "length" : 238
+          "start" : 78,
+          "length" : 251
         },
         {
           "activity" : "generate2",
           "start" : 87,
-          "length" : 74
+          "length" : 85
         },
         {
           "activity" : "generateValidationPack",
           "start" : 103,
-          "length" : 10
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 154,
-          "length" : 1
+          "length" : 6
         }
       ]
     },
@@ -4180,617 +4290,571 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
+          "start" : 25,
           "length" : 3
         },
         {
           "activity" : "load",
           "start" : 25,
-          "length" : 8
+          "length" : 6
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 41
+          "start" : 27,
+          "length" : 43
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 28,
+          "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 19
+          "start" : 31,
+          "length" : 22
         },
         {
           "activity" : "validate",
-          "start" : 42,
-          "length" : 93
+          "start" : 44,
+          "length" : 105
         },
         {
           "activity" : "generate1",
           "start" : 56,
-          "length" : 132
+          "length" : 78
         },
         {
           "activity" : "generate2",
-          "start" : 77,
-          "length" : 184
+          "start" : 78,
+          "length" : 204
         },
         {
           "activity" : "generate2",
           "start" : 87,
-          "length" : 65
+          "length" : 70
         },
         {
           "activity" : "generateValidationPack",
           "start" : 103,
-          "length" : 8
+          "length" : 6
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 171,
+          "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-onc-wound-assessment.json",
-      "size" : 7015,
+      "size" : 6907,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
+          "start" : 25,
           "length" : 3
         },
         {
           "activity" : "load",
           "start" : 25,
-          "length" : 8
+          "length" : 9
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 39
+          "start" : 27,
+          "length" : 45
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 29
+          "start" : 31,
+          "length" : 44
         },
         {
           "activity" : "validate",
-          "start" : 42,
-          "length" : 221
+          "start" : 45,
+          "length" : 207
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 45,
-          "length" : 1
+          "start" : 47,
+          "length" : 2
         },
         {
           "activity" : "generate1",
           "start" : 56,
-          "length" : 297
+          "length" : 194
         },
         {
           "activity" : "generate2",
           "start" : 78,
-          "length" : 392
+          "length" : 401
         },
         {
           "activity" : "generate2",
           "start" : 87,
-          "length" : 117
+          "length" : 185
         },
         {
           "activity" : "generateValidationPack",
           "start" : 103,
-          "length" : 12
+          "length" : 10
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 154,
+          "start" : 171,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/ValueSet-acvpu-vs.json",
-      "size" : 888,
+      "size" : 870,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
+          "start" : 25,
           "length" : 2
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 8
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 27,
+          "start" : 28,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 39
+          "start" : 31,
+          "length" : 61
         },
         {
           "activity" : "validate",
-          "start" : 30,
-          "length" : 555
+          "start" : 31,
+          "length" : 619
         },
         {
           "activity" : "generate1",
-          "start" : 57,
-          "length" : 9
+          "start" : 56,
+          "length" : 10
         },
         {
           "activity" : "generate2",
-          "start" : 78,
-          "length" : 63
+          "start" : 79,
+          "length" : 60
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/ValueSet-goal-evaluation-valueset.json",
-      "size" : 994,
+      "size" : 976,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 2
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 6
+          "start" : 25,
+          "length" : 4
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 6
+          "start" : 31,
+          "length" : 16
         },
         {
           "activity" : "validate",
-          "start" : 30,
-          "length" : 6
+          "start" : 32,
+          "length" : 5
         },
         {
           "activity" : "generate1",
-          "start" : 57,
-          "length" : 11
+          "start" : 56,
+          "length" : 9
         },
         {
           "activity" : "generate2",
-          "start" : 78,
-          "length" : 48
+          "start" : 79,
+          "length" : 34
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/ValueSet-housing-status-vs.json",
-      "size" : 654,
+      "size" : 636,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 3
+          "start" : 25,
+          "length" : 2
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 6
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 4
+          "start" : 31,
+          "length" : 6
         },
         {
           "activity" : "validate",
-          "start" : 30,
-          "length" : 4
+          "start" : 32,
+          "length" : 3
         },
         {
           "activity" : "generate1",
-          "start" : 57,
-          "length" : 8
+          "start" : 56,
+          "length" : 9
         },
         {
           "activity" : "generate2",
-          "start" : 78,
-          "length" : 39
+          "start" : 79,
+          "length" : 30
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/ValueSet-inspired-oxygen-vs.json",
-      "size" : 637,
+      "size" : 619,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 24,
-          "length" : 5
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 29,
+          "start" : 25,
           "length" : 3
         },
         {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 31,
+          "length" : 6
+        },
+        {
           "activity" : "validate",
-          "start" : 30,
+          "start" : 32,
           "length" : 4
         },
         {
           "activity" : "generate1",
-          "start" : 57,
+          "start" : 56,
           "length" : 9
         },
         {
           "activity" : "generate2",
-          "start" : 78,
-          "length" : 34
+          "start" : 79,
+          "length" : 27
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/ValueSet-news2-code-vs.json",
-      "size" : 531,
+      "size" : 513,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
+          "start" : 25,
           "length" : 2
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 6
+          "start" : 25,
+          "length" : 2
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 5
+          "start" : 31,
+          "length" : 7
         },
         {
           "activity" : "validate",
-          "start" : 30,
+          "start" : 32,
           "length" : 4
         },
         {
           "activity" : "generate1",
-          "start" : 57,
+          "start" : 56,
           "length" : 9
         },
         {
           "activity" : "generate2",
-          "start" : 78,
-          "length" : 39
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 103,
-          "length" : 1
+          "start" : 79,
+          "length" : 27
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/ValueSet-news2-subscore-code-vs.json",
-      "size" : 562,
+      "size" : 544,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 3
+          "start" : 25,
+          "length" : 2
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 6
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 29,
+          "start" : 25,
           "length" : 3
         },
         {
+          "activity" : "generateNarratives",
+          "start" : 31,
+          "length" : 6
+        },
+        {
           "activity" : "validate",
-          "start" : 30,
+          "start" : 32,
           "length" : 3
         },
         {
           "activity" : "generate1",
-          "start" : 57,
+          "start" : 56,
           "length" : 10
         },
         {
           "activity" : "generate2",
-          "start" : 78,
-          "length" : 34
+          "start" : 79,
+          "length" : 25
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/ValueSet-nursing-intervention-valueset.json",
-      "size" : 781,
+      "size" : 763,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 2
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 6
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
+          "start" : 31,
           "length" : 6
         },
         {
           "activity" : "validate",
-          "start" : 30,
-          "length" : 5
+          "start" : 32,
+          "length" : 3
         },
         {
           "activity" : "generate1",
-          "start" : 57,
-          "length" : 9
+          "start" : 56,
+          "length" : 14
         },
         {
           "activity" : "generate2",
-          "start" : 78,
-          "length" : 36
+          "start" : 79,
+          "length" : 27
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/ValueSet-nursing-problem-valueset.json",
-      "size" : 1021,
+      "size" : 1003,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
+          "start" : 25,
           "length" : 2
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 5
+          "start" : 25,
+          "length" : 2
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
+          "start" : 31,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 32,
           "length" : 6
         },
         {
-          "activity" : "validate",
-          "start" : 30,
-          "length" : 5
-        },
-        {
-          "activity" : "validate",
-          "start" : 43,
-          "length" : 1
-        },
-        {
           "activity" : "generate1",
-          "start" : 57,
-          "length" : 11
+          "start" : 56,
+          "length" : 14
         },
         {
           "activity" : "generate2",
-          "start" : 78,
-          "length" : 37
+          "start" : 79,
+          "length" : 32
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/ValueSet-onc-4at-acute-change-vs.json",
-      "size" : 629,
+      "size" : 611,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
+          "start" : 25,
           "length" : 2
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 6
-        },
-        {
-          "activity" : "load-configure",
-          "start" : 27,
-          "length" : 1
+          "start" : 25,
+          "length" : 2
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
+          "start" : 31,
           "length" : 6
         },
         {
           "activity" : "validate",
-          "start" : 30,
-          "length" : 3
+          "start" : 32,
+          "length" : 6
         },
         {
           "activity" : "generate1",
-          "start" : 57,
-          "length" : 8
+          "start" : 56,
+          "length" : 13
         },
         {
           "activity" : "generate2",
-          "start" : 78,
-          "length" : 33
+          "start" : 79,
+          "length" : 22
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/ValueSet-onc-4at-alertness-vs.json",
-      "size" : 878,
+      "size" : 860,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 3
+          "start" : 25,
+          "length" : 2
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 5
-        },
-        {
-          "activity" : "scan",
-          "start" : 27,
-          "length" : 1
+          "start" : 25,
+          "length" : 3
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 27,
+          "start" : 28,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 6
+          "start" : 31,
+          "length" : 7
         },
         {
           "activity" : "validate",
-          "start" : 30,
-          "length" : 64
+          "start" : 32,
+          "length" : 99
         },
         {
           "activity" : "generate1",
-          "start" : 57,
-          "length" : 14
-        },
-        {
-          "activity" : "generate2",
-          "start" : 78,
-          "length" : 38
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 103,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-onc-4at-amt4-vs.json",
-      "size" : 734,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 24,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 24,
-          "length" : 6
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 6
-        },
-        {
-          "activity" : "validate",
-          "start" : 30,
-          "length" : 3
-        },
-        {
-          "activity" : "generate1",
-          "start" : 57,
-          "length" : 9
-        },
-        {
-          "activity" : "generate2",
-          "start" : 78,
-          "length" : 32
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-onc-4at-attention-vs.json",
-      "size" : 772,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 24,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 24,
-          "length" : 5
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 3
-        },
-        {
-          "activity" : "validate",
-          "start" : 30,
-          "length" : 3
-        },
-        {
-          "activity" : "generate1",
-          "start" : 57,
-          "length" : 10
-        },
-        {
-          "activity" : "generate2",
-          "start" : 78,
-          "length" : 32
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-onc-cfs-vs.json",
-      "size" : 975,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 24,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 24,
-          "length" : 6
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 5
-        },
-        {
-          "activity" : "validate",
-          "start" : 30,
-          "length" : 5
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 45,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 57,
+          "start" : 56,
           "length" : 11
         },
         {
           "activity" : "generate2",
           "start" : 79,
-          "length" : 47
+          "length" : 30
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-onc-4at-amt4-vs.json",
+      "size" : 716,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 31,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 32,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 56,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 24
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-onc-4at-attention-vs.json",
+      "size" : 754,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 31,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 32,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 56,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 25
         },
         {
           "activity" : "generateValidationPack",
@@ -4800,69 +4864,151 @@
       ]
     },
     {
-      "name" : "fsh-generated/resources/ValueSet-onc-goal-target-measure-vs.json",
-      "size" : 734,
+      "name" : "fsh-generated/resources/ValueSet-onc-cfs-vs.json",
+      "size" : 957,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
+          "start" : 25,
           "length" : 2
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 5
+          "start" : 25,
+          "length" : 2
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 5
+          "start" : 31,
+          "length" : 7
         },
         {
           "activity" : "validate",
-          "start" : 30,
-          "length" : 64
+          "start" : 32,
+          "length" : 8
         },
         {
           "activity" : "generate1",
-          "start" : 57,
-          "length" : 9
+          "start" : 56,
+          "length" : 14
         },
         {
           "activity" : "generate2",
           "start" : 79,
-          "length" : 34
+          "length" : 36
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-onc-goal-target-measure-vs.json",
+      "size" : 716,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 3
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 31,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 32,
+          "length" : 66
+        },
+        {
+          "activity" : "generate1",
+          "start" : 56,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 26
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/ValueSet-onc-mca-vs.json",
-      "size" : 825,
+      "size" : 807,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
+          "start" : 25,
           "length" : 2
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 5
+          "start" : 25,
+          "length" : 2
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 3
+          "start" : 31,
+          "length" : 7
         },
         {
           "activity" : "validate",
-          "start" : 30,
-          "length" : 5
+          "start" : 32,
+          "length" : 6
         },
         {
           "activity" : "generate1",
-          "start" : 57,
+          "start" : 56,
           "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 26
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 103,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-onc-monk-scale-vs.json",
+      "size" : 359,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 31,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 32,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 56,
+          "length" : 8
         },
         {
           "activity" : "generate2",
@@ -4872,73 +5018,32 @@
       ]
     },
     {
-      "name" : "fsh-generated/resources/ValueSet-onc-monk-scale-vs.json",
-      "size" : 395,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 24,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 24,
-          "length" : 5
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 3
-        },
-        {
-          "activity" : "validate",
-          "start" : 30,
-          "length" : 2
-        },
-        {
-          "activity" : "generate1",
-          "start" : 57,
-          "length" : 8
-        },
-        {
-          "activity" : "generate2",
-          "start" : 79,
-          "length" : 40
-        }
-      ]
-    },
-    {
       "name" : "fsh-generated/resources/ValueSet-onc-pbs-function-vs.json",
-      "size" : 603,
+      "size" : 585,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
+          "start" : 25,
           "length" : 2
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 5
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 27,
-          "length" : 1
+          "start" : 25,
+          "length" : 2
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 3
+          "start" : 31,
+          "length" : 6
         },
         {
           "activity" : "validate",
-          "start" : 30,
+          "start" : 32,
           "length" : 3
         },
         {
           "activity" : "generate1",
-          "start" : 57,
+          "start" : 56,
           "length" : 9
         },
         {
@@ -4950,150 +5055,32 @@
     },
     {
       "name" : "fsh-generated/resources/ValueSet-onc-prognosis-vs.json",
-      "size" : 705,
+      "size" : 687,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
+          "start" : 25,
           "length" : 2
         },
         {
           "activity" : "load",
-          "start" : 24,
+          "start" : 25,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 31,
           "length" : 6
         },
         {
-          "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 4
-        },
-        {
           "activity" : "validate",
-          "start" : 30,
-          "length" : 4
+          "start" : 32,
+          "length" : 5
         },
         {
           "activity" : "generate1",
-          "start" : 57,
+          "start" : 56,
           "length" : 9
-        },
-        {
-          "activity" : "generate2",
-          "start" : 79,
-          "length" : 30
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 103,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-pain-assessment-code-vs.json",
-      "size" : 685,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 24,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 24,
-          "length" : 5
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 3
-        },
-        {
-          "activity" : "validate",
-          "start" : 30,
-          "length" : 3
-        },
-        {
-          "activity" : "generate1",
-          "start" : 57,
-          "length" : 9
-        },
-        {
-          "activity" : "generate2",
-          "start" : 79,
-          "length" : 30
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-problem-category-valueset.json",
-      "size" : 508,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 24,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 24,
-          "length" : 5
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 3
-        },
-        {
-          "activity" : "validate",
-          "start" : 30,
-          "length" : 2
-        },
-        {
-          "activity" : "generate1",
-          "start" : 57,
-          "length" : 8
-        },
-        {
-          "activity" : "generate2",
-          "start" : 79,
-          "length" : 34
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-skintone-vs.json",
-      "size" : 1085,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 24,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 24,
-          "length" : 3
-        },
-        {
-          "activity" : "checkR4R4B",
-          "start" : 27,
-          "length" : 1
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 5
-        },
-        {
-          "activity" : "validate",
-          "start" : 30,
-          "length" : 5
-        },
-        {
-          "activity" : "generate1",
-          "start" : 57,
-          "length" : 11
         },
         {
           "activity" : "generate2",
@@ -5103,38 +5090,74 @@
       ]
     },
     {
-      "name" : "fsh-generated/resources/ValueSet-wound-stage-vs.json",
-      "size" : 761,
+      "name" : "fsh-generated/resources/ValueSet-pain-assessment-code-vs.json",
+      "size" : 667,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
+          "start" : 25,
           "length" : 2
         },
         {
           "activity" : "load",
-          "start" : 24,
-          "length" : 3
+          "start" : 25,
+          "length" : 2
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 4
-        },
-        {
-          "activity" : "validate",
-          "start" : 30,
+          "start" : 31,
           "length" : 3
         },
         {
+          "activity" : "validate",
+          "start" : 32,
+          "length" : 4
+        },
+        {
           "activity" : "generate1",
-          "start" : 57,
-          "length" : 10
+          "start" : 56,
+          "length" : 8
         },
         {
           "activity" : "generate2",
           "start" : 79,
-          "length" : 37
+          "length" : 31
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-problem-category-valueset.json",
+      "size" : 490,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 31,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 32,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 56,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 30
         },
         {
           "activity" : "generateValidationPack",
@@ -5144,33 +5167,110 @@
       ]
     },
     {
+      "name" : "fsh-generated/resources/ValueSet-skintone-vs.json",
+      "size" : 1067,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 31,
+          "length" : 9
+        },
+        {
+          "activity" : "validate",
+          "start" : 32,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 56,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 39
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-wound-stage-vs.json",
+      "size" : 743,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 31,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 32,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 56,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 36
+        }
+      ]
+    },
+    {
       "name" : "input/resources/Library-onc-news2-cql.json",
       "size" : 725,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
-          "length" : 6
+          "start" : 25,
+          "length" : 2
         },
         {
           "activity" : "load",
           "start" : 25,
-          "length" : 9
+          "length" : 13
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 28,
+          "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 19
+          "start" : 31,
+          "length" : 20
         },
         {
           "activity" : "validate",
-          "start" : 45,
+          "start" : 47,
           "length" : 6
         },
         {
           "activity" : "generate1",
-          "start" : 57,
-          "length" : 13
+          "start" : 56,
+          "length" : 9
         },
         {
           "activity" : "generate2",
@@ -5185,33 +5285,33 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 24,
+          "start" : 25,
           "length" : 3
         },
         {
           "activity" : "load",
           "start" : 25,
-          "length" : 15
-        },
-        {
-          "activity" : "load-configure",
-          "start" : 27,
-          "length" : 1
+          "length" : 24
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
+          "start" : 31,
           "length" : 16
         },
         {
           "activity" : "validate",
-          "start" : 45,
+          "start" : 47,
           "length" : 6
         },
         {
+          "activity" : "checkURLsUnique",
+          "start" : 47,
+          "length" : 1
+        },
+        {
           "activity" : "generate1",
-          "start" : 57,
-          "length" : 13
+          "start" : 56,
+          "length" : 11
         },
         {
           "activity" : "generate2",
@@ -5265,7 +5365,7 @@
         {
           "activity" : "generate2",
           "start" : 79,
-          "length" : 4
+          "length" : 3
         }
       ]
     }

@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://clinyqai.github.io/open-nursing-core-ig/Condition/example-nursing-problem> a fhir:Condition ;
+<https://opennursingcoreig.com/Condition/example-nursing-problem> a fhir:Condition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "example-nursing-problem"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-problem"^^xsd:anyURI ;
-       fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-problem>
+       fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-nursing-problem"^^xsd:anyURI ;
+       fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-nursing-problem>
      ] )
   ] ; # 
   fhir:text [
@@ -50,7 +50,7 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Patient/patient-example-jane> ;
+     fhir:l <https://opennursingcoreig.com/Patient/patient-example-jane> ;
      fhir:reference [ fhir:v "Patient/patient-example-jane" ]
   ] . # 
 

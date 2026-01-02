@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://clinyqai.github.io/open-nursing-core-ig/Patient/patient-example-jane> a fhir:Patient ;
+<https://opennursingcoreig.com/Patient/patient-example-jane> a fhir:Patient ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "patient-example-jane"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nhs-patient"^^xsd:anyURI ;
-       fhir:l <https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nhs-patient>
+       fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-nhs-patient"^^xsd:anyURI ;
+       fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-nhs-patient>
      ] )
   ] ; # 
   fhir:text [

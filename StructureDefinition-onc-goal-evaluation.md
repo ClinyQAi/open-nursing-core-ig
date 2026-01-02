@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-goal-evaluation | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-goal-evaluation | *Version*:0.1.0 |
 | Draft as of 2026-01-02 | *Computable Name*:ONCGoalEvaluation |
 
  
@@ -37,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-goal-evaluation.
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-goal-evaluation",
-  "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-goal-evaluation",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-goal-evaluation",
   "version" : "0.1.0",
   "name" : "ONCGoalEvaluation",
   "title" : "ONC Goal Evaluation",
   "status" : "draft",
-  "date" : "2026-01-02T16:06:53+00:00",
+  "date" : "2026-01-02T16:27:10+00:00",
   "description" : "Explicit evaluation of whether a nursing goal was achieved, closing the ADPIE loop.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -112,7 +112,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-goal-evaluation.
           {
             "code" : "Extension",
             "profile" : [
-              "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/observation-goal-reference"
+              "https://opennursingcoreig.com/StructureDefinition/observation-goal-reference"
             ]
           }
         ],
@@ -155,7 +155,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-goal-evaluation.
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-goal"
+              "https://opennursingcoreig.com/StructureDefinition/onc-nursing-goal"
             ]
           }
         ],
@@ -171,7 +171,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-goal-evaluation.
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://clinyqai.github.io/open-nursing-core-ig/ValueSet/goal-evaluation-valueset"
+          "valueSet" : "https://opennursingcoreig.com/ValueSet/goal-evaluation-valueset"
         }
       },
       {

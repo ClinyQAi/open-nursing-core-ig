@@ -33,12 +33,12 @@ Profile: [ONC Nursing Intervention](StructureDefinition-onc-nursing-intervention
   "id" : "example-nursing-intervention",
   "meta" : {
     "profile" : [
-      "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-intervention"
+      "https://opennursingcoreig.com/StructureDefinition/onc-nursing-intervention"
     ]
   },
   "extension" : [
     {
-      "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/intervention-goal-reference",
+      "url" : "https://opennursingcoreig.com/StructureDefinition/intervention-goal-reference",
       "valueReference" : {
         "reference" : "Goal/example-patient-goal"
       }

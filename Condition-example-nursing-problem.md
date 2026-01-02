@@ -26,7 +26,7 @@ Profile: [Nursing Problem](StructureDefinition-onc-nursing-problem.md)
   "id" : "example-nursing-problem",
   "meta" : {
     "profile" : [
-      "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-problem"
+      "https://opennursingcoreig.com/StructureDefinition/onc-nursing-problem"
     ]
   },
   "clinicalStatus" : {

@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://clinyqai.github.io/open-nursing-core-ig/Observation/example-reasonable-adjustment> a fhir:Observation ;
+<https://opennursingcoreig.com/Observation/example-reasonable-adjustment> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "example-reasonable-adjustment"] ; # 
   fhir:meta [
@@ -39,11 +39,11 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Patient/patient-example-jane> ;
+     fhir:l <https://opennursingcoreig.com/Patient/patient-example-jane> ;
      fhir:reference [ fhir:v "Patient/patient-example-jane" ]
   ] ; # 
   fhir:performer ( [
-     fhir:l <https://clinyqai.github.io/open-nursing-core-ig/Practitioner/practitioner-example> ;
+     fhir:l <https://opennursingcoreig.com/Practitioner/practitioner-example> ;
      fhir:reference [ fhir:v "Practitioner/practitioner-example" ]
   ] ) ; # 
   fhir:value [

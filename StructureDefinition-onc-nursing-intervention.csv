@@ -24,7 +24,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Procedure.extension:interventionGoal","Procedure.extension","interventionGoal","","",0,*,"Y","","","Extension {[CanonicalType[https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/intervention-goal-reference]]} {[]}
+"Procedure.extension:interventionGoal","Procedure.extension","interventionGoal","","",0,*,"Y","","","Extension {[CanonicalType[https://opennursingcoreig.com/StructureDefinition/intervention-goal-reference]]} {[]}
 ","Intervention Goal Reference","Extension to link nursing interventions to the patient goals they are intended to achieve.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -65,7 +65,7 @@ Cancelled Reason","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ",".outboundRelationship[typeCode=""COMP].target[classCode=""LIST"", moodCode=""EVN""].code","FiveWs.class"
 "Procedure.code","Procedure.code","","type
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","Identification of the procedure","The specific procedure that is performed. Use text if the exact nature of the procedure cannot be coded (e.g. ""Laparoscopic Appendectomy"").","","0..1 to account for primarily narrative only resources.","","","","","","","",,"required","","https://clinyqai.github.io/open-nursing-core-ig/ValueSet/nursing-intervention-valueset","",,,,"Procedure.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Identification of the procedure","The specific procedure that is performed. Use text if the exact nature of the procedure cannot be coded (e.g. ""Laparoscopic Appendectomy"").","","0..1 to account for primarily narrative only resources.","","","","","","","",,"required","","https://opennursingcoreig.com/ValueSet/nursing-intervention-valueset","",,,,"Procedure.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code",".code","FiveWs.what[x]","OBR-44/OBR-45"
 "Procedure.subject","Procedure.subject","","patient
 ","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/Group|4.0.1]]}

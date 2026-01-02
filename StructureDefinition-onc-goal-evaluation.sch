@@ -12,7 +12,7 @@
   <sch:pattern>
     <sch:title>f:Observation</sch:title>
     <sch:rule context="f:Observation">
-      <sch:assert test="count(f:extension[@url = 'https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/observation-goal-reference']) &lt;= 1">extension with URL = 'https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/observation-goal-reference': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://opennursingcoreig.com/StructureDefinition/observation-goal-reference']) &lt;= 1">extension with URL = 'https://opennursingcoreig.com/StructureDefinition/observation-goal-reference': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:focus) &gt;= 1">focus: minimum cardinality of 'focus' is 1</sch:assert>
       <sch:assert test="count(f:focus) &lt;= 1">focus: maximum cardinality of 'focus' is 1</sch:assert>
       <sch:assert test="count(f:note) &lt;= 1">note: maximum cardinality of 'note' is 1</sch:assert>

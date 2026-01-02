@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-glasgow-coma-scale | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-glasgow-coma-scale | *Version*:0.1.0 |
 | Draft as of 2026-01-02 | *Computable Name*:ONCGlasgowComaScale |
 
  
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-glasgow-coma-sca
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-glasgow-coma-scale",
-  "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-glasgow-coma-scale",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-glasgow-coma-scale",
   "version" : "0.1.0",
   "name" : "ONCGlasgowComaScale",
   "title" : "Glasgow Coma Scale",
   "status" : "draft",
-  "date" : "2026-01-02T16:06:53+00:00",
+  "date" : "2026-01-02T16:27:10+00:00",
   "description" : "Glasgow Coma Scale (GCS) for assessing level of consciousness. Total score 3-15 with three required components: Eye (1-4), Verbal (1-5), Motor (1-6).",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -79,7 +79,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-glasgow-coma-sca
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-nursing-assessment",
+  "baseDefinition" : "https://opennursingcoreig.com/StructureDefinition/onc-nursing-assessment",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -125,7 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-glasgow-coma-sca
             "severity" : "error",
             "human" : "GCS total score must be between 3 and 15",
             "expression" : "$this >= 3 and $this <= 15",
-            "source" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-glasgow-coma-scale"
+            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-glasgow-coma-scale"
           }
         ]
       },
@@ -195,7 +195,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-glasgow-coma-sca
             "severity" : "error",
             "human" : "GCS eye response must be between 1 and 4",
             "expression" : "$this >= 1 and $this <= 4",
-            "source" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-glasgow-coma-scale"
+            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-glasgow-coma-scale"
           }
         ]
       },
@@ -248,7 +248,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-glasgow-coma-sca
             "severity" : "error",
             "human" : "GCS verbal response must be between 1 and 5",
             "expression" : "$this >= 1 and $this <= 5",
-            "source" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-glasgow-coma-scale"
+            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-glasgow-coma-scale"
           }
         ]
       },
@@ -301,7 +301,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-glasgow-coma-sca
             "severity" : "error",
             "human" : "GCS motor response must be between 1 and 6",
             "expression" : "$this >= 1 and $this <= 6",
-            "source" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/onc-glasgow-coma-scale"
+            "source" : "https://opennursingcoreig.com/StructureDefinition/onc-glasgow-coma-scale"
           }
         ]
       },
