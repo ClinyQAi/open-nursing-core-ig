@@ -4,6 +4,7 @@
 [![FHIR R4](https://img.shields.io/badge/FHIR-R4-blue.svg)](https://hl7.org/fhir/R4/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![IG Version](https://img.shields.io/badge/IG-v1.0.0-orange.svg)](https://clinyqai.github.io/open-nursing-core-ig/)
+[![AI Powered](https://img.shields.io/badge/AI-Relational%20Core-purple)](https://huggingface.co/NurseCitizenDeveloper/nursing-llama-3-8b-fons)
 [![NHS England Aligned](https://img.shields.io/badge/NHS%20England-Aligned-success.svg)](https://www.england.nhs.uk/long-read/towards-a-unified-vision-of-nursing-and-midwifery-documentation/)
 
 ---
@@ -51,7 +52,28 @@ This Implementation Guide supports the goals outlined in NHS England's unified v
 - ✅ **Evidence-Based Tools** using standard LOINC and SNOMED codes
 - ✅ **Equity Module** - Fitzpatrick and Monk skin tone scales
 - ✅ **Safety Module** - Risk assessments (Braden, Waterlow, Morse Fall Scale)
+- ✅ **Relational Ai for Nursing** - Fine-tuned LLM for person-centred documentation (Score: 8/10 Equity)
 - ✅ **Paired Validator** - NHS Unified Nursing Validator for enforcement
+
+---
+
+## 🤖 Relational Ai for Nursing
+
+**The first open-source LLM fine-tuned on Foundation of Nursing Studies (FONS) literature for person-centred, equitable clinical documentation.**
+
+> **🚀 Live Model**: [Hugging Face: NurseCitizenDeveloper/nursing-llama-3-8b-fons](https://huggingface.co/NurseCitizenDeveloper/nursing-llama-3-8b-fons)
+
+### Why It Matters
+Standard AI models often produce generic, task-oriented medical text. **Relational Ai** is different—it's trained on 6,698 examples of high-quality nursing literature to prioritize:
+
+*   **Person-Centredness**: Focusing on what matters to the patient.
+*   **Health Equity**: Specifically fine-tuned to document skin tone risks (e.g., pressure ulcers) accurately for all ethnicities.
+*   **Relational Care**: Using language that fosters therapeutic relationships.
+
+### Evaluation Highlights
+*   **Equity**: **8.0/10** (Skin Tone Sensitivity)
+*   **Person-Centredness**: **7.6/10**
+*   **Accuracy**: **6.6/10**
 
 ---
 
