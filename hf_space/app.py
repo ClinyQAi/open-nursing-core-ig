@@ -25,17 +25,28 @@ ALPACA_TEMPLATE = """Below is an instruction that describes a task, paired with 
 """
 
 # ============================================
-# LOAD MODEL (ZeroGPU Compatible)
+# LOAD MODEL (PEFT / Adapter Compatible)
 # ============================================
-print(f"🔄 Loading model: {MODEL_ID}")
+BASE_MODEL = "meta-llama/Meta-Llama-3-8B" # The foundation
+print(f"🔄 Loading base model: {BASE_MODEL}")
+
+# tokenizer should be loaded from the adapter repo if it has custom tokens
 tokenizer = AutoTokenizer.from_pretrained(MODEL_ID)
+
+# Load base model (Requires HF_TOKEN secret in Space settings)
 model = AutoModelForCausalLM.from_pretrained(
-    MODEL_ID,
+    BASE_MODEL,
     torch_dtype=torch.float16,
     device_map="auto",
     trust_remote_code=True,
 )
-print("✅ Model loaded!")
+
+# Load Adapters
+from peft import PeftModel
+print(f"🧩 Applying nursing adapters from: {MODEL_ID}")
+model = PeftModel.from_pretrained(model, MODEL_ID)
+
+print("✅ Super-Gold Model loaded and ready!")
 
 # ============================================
 # GENERATION FUNCTION
