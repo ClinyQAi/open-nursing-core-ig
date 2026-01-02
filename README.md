@@ -3,7 +3,7 @@
 [![Build Status](https://github.com/ClinyQAi/open-nursing-core-ig/actions/workflows/build-publish.yml/badge.svg)](https://github.com/ClinyQAi/open-nursing-core-ig/actions)
 [![FHIR R4](https://img.shields.io/badge/FHIR-R4-blue.svg)](https://hl7.org/fhir/R4/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![IG Version](https://img.shields.io/badge/IG-v1.0.0-orange.svg)](https://clinyqai.github.io/open-nursing-core-ig/)
+[![IG Version](https://img.shields.io/badge/IG-v1.0.0-orange.svg)](https://opennursingcoreig.com/)
 [![AI Powered](https://img.shields.io/badge/AI-Relational%20Core-purple)](https://huggingface.co/NurseCitizenDeveloper/nursing-llama-3-8b-fons)
 [![NHS England Aligned](https://img.shields.io/badge/NHS%20England-Aligned-success.svg)](https://www.england.nhs.uk/long-read/towards-a-unified-vision-of-nursing-and-midwifery-documentation/)
 
