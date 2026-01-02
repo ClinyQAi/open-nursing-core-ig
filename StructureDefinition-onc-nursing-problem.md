@@ -42,7 +42,8 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-problem.
   "name" : "ONCNursingProblem",
   "title" : "Nursing Problem",
   "status" : "draft",
-  "date" : "2026-01-02T16:27:10+00:00",
+  "date" : "2026-01-02T23:43:46+00:00",
+  "publisher" : "The Open Nursing Community",
   "description" : "Nursing diagnosis or problem identified during assessment. Represents clinical judgments about individual, family, or community responses to actual or potential health problems. Part of the ADPIE framework's Diagnosis phase.",
   "fhirVersion" : "4.0.1",
   "mapping" : [

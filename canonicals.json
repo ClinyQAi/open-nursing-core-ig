@@ -14,25 +14,11 @@
     "name" : "NEWS2_Escalation_Protocol"
   },
   {
-    "id" : "onc-observation-codes",
-    "type" : "CodeSystem",
-    "url" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+    "id" : "ONCToNandaMapping",
+    "type" : "ConceptMap",
+    "url" : "https://fhir.clinyq.ai/ConceptMap/onc-to-nanda",
     "version" : "0.1.0",
-    "name" : "ONCObservationCodes"
-  },
-  {
-    "id" : "onc-problem-type",
-    "type" : "CodeSystem",
-    "url" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type",
-    "version" : "0.1.0",
-    "name" : "ONCProblemType"
-  },
-  {
-    "id" : "UKCore-Extension-EthnicCategory",
-    "type" : "StructureDefinition",
-    "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/UKCore-Extension-EthnicCategory",
-    "version" : "0.1.0",
-    "name" : "UKCoreEthnicCategory"
+    "name" : "ONCToNandaMapping"
   },
   {
     "id" : "onc-4at-delirium",
@@ -98,13 +84,6 @@
     "name" : "ONCPatientStory"
   },
   {
-    "id" : "onc-reasonable-adjustment",
-    "type" : "StructureDefinition",
-    "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-reasonable-adjustment",
-    "version" : "0.1.0",
-    "name" : "ONCReasonableAdjustment"
-  },
-  {
     "id" : "onc-relational-observation",
     "type" : "StructureDefinition",
     "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-relational-observation",
@@ -147,11 +126,32 @@
     "name" : "ONCMonkScale"
   },
   {
+    "id" : "onc-observation-codes",
+    "type" : "CodeSystem",
+    "url" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+    "version" : "0.1.0",
+    "name" : "ONCObservationCodes"
+  },
+  {
+    "id" : "onc-problem-type",
+    "type" : "CodeSystem",
+    "url" : "https://opennursingcoreig.com/CodeSystem/onc-problem-type",
+    "version" : "0.1.0",
+    "name" : "ONCProblemType"
+  },
+  {
     "id" : "onc.ig",
     "type" : "ImplementationGuide",
     "url" : "https://opennursingcoreig.com/ImplementationGuide/onc.ig",
     "version" : "0.1.0",
     "name" : "OpenNursingCoreIG"
+  },
+  {
+    "id" : "UKCore-Extension-EthnicCategory",
+    "type" : "StructureDefinition",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/UKCore-Extension-EthnicCategory",
+    "version" : "0.1.0",
+    "name" : "UKCoreEthnicCategory"
   },
   {
     "id" : "intervention-goal-reference",
@@ -243,6 +243,13 @@
     "url" : "https://opennursingcoreig.com/StructureDefinition/onc-dietary-requirements",
     "version" : "0.1.0",
     "name" : "ONCDietaryRequirements"
+  },
+  {
+    "id" : "onc-equity-marker",
+    "type" : "StructureDefinition",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-equity-marker",
+    "version" : "0.1.0",
+    "name" : "ONCEquityMarker"
   },
   {
     "id" : "onc-glasgow-coma-scale",
@@ -420,6 +427,20 @@
     "name" : "ONCqSOFA"
   },
   {
+    "id" : "onc-reasonable-adjustment",
+    "type" : "StructureDefinition",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-reasonable-adjustment",
+    "version" : "0.1.0",
+    "name" : "ONCReasonableAdjustment"
+  },
+  {
+    "id" : "onc-relational-care-logical",
+    "type" : "StructureDefinition",
+    "url" : "https://opennursingcoreig.com/StructureDefinition/onc-relational-care-logical",
+    "version" : "0.1.0",
+    "name" : "ONCRelationalCareModel"
+  },
+  {
     "id" : "onc-respiration-rate",
     "type" : "StructureDefinition",
     "url" : "https://opennursingcoreig.com/StructureDefinition/onc-respiration-rate",
@@ -539,11 +560,25 @@
     "name" : "AttentionVS"
   },
   {
+    "id" : "onc-adpie-vs",
+    "type" : "ValueSet",
+    "url" : "https://opennursingcoreig.com/ValueSet/onc-adpie-vs",
+    "version" : "0.1.0",
+    "name" : "ONCADPIEVS"
+  },
+  {
     "id" : "onc-cfs-vs",
     "type" : "ValueSet",
     "url" : "https://opennursingcoreig.com/ValueSet/onc-cfs-vs",
     "version" : "0.1.0",
     "name" : "ClinicalFrailtyScaleVS"
+  },
+  {
+    "id" : "onc-empathy-index-vs",
+    "type" : "ValueSet",
+    "url" : "https://opennursingcoreig.com/ValueSet/onc-empathy-index-vs",
+    "version" : "0.1.0",
+    "name" : "ONCEmpathyIndexVS"
   },
   {
     "id" : "onc-goal-target-measure-vs",
@@ -579,6 +614,13 @@
     "url" : "https://opennursingcoreig.com/ValueSet/onc-prognosis-vs",
     "version" : "0.1.0",
     "name" : "ONCPrognosisVS"
+  },
+  {
+    "id" : "onc-relational-outcomes-vs",
+    "type" : "ValueSet",
+    "url" : "https://opennursingcoreig.com/ValueSet/onc-relational-outcomes-vs",
+    "version" : "0.1.0",
+    "name" : "ONCRelationalOutcomesVS"
   },
   {
     "id" : "pain-assessment-code-vs",

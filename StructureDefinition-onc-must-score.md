@@ -41,7 +41,8 @@ Other representations of profile: [CSV](StructureDefinition-onc-must-score.csv),
   "name" : "ONCMUSTScore",
   "title" : "MUST Score (Malnutrition Universal Screening Tool)",
   "status" : "draft",
-  "date" : "2026-01-02T16:27:10+00:00",
+  "date" : "2026-01-02T23:43:46+00:00",
+  "publisher" : "The Open Nursing Community",
   "description" : "Malnutrition Universal Screening Tool for identifying adults at risk of malnutrition. Score 0=low risk, 1=medium risk, 2+=high risk. NHS-standard nutritional screening.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -98,7 +99,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-must-score.csv),
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "must-score",
               "display" : "MUST Score"
             }
@@ -170,7 +171,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-must-score.csv),
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "must-bmi-score",
               "display" : "MUST BMI Score"
             }
@@ -223,7 +224,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-must-score.csv),
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "must-weight-loss-score",
               "display" : "MUST Weight Loss Score"
             }
@@ -276,7 +277,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-must-score.csv),
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "must-acute-disease-score",
               "display" : "MUST Acute Disease Score"
             }

@@ -10,7 +10,7 @@ Profile: [Clinical Frailty Scale (CFS)](StructureDefinition-onc-clinical-frailty
 
 **status**: Final
 
-**category**: Exam
+**category**: Survey
 
 **code**: Clinical Frailty Scale Score
 
@@ -46,7 +46,7 @@ Mildly Frail - slowing up, needs help with high order IADLs
       "coding" : [
         {
           "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "exam"
+          "code" : "survey"
         }
       ]
     }
@@ -54,7 +54,7 @@ Mildly Frail - slowing up, needs help with high order IADLs
   "code" : {
     "coding" : [
       {
-        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
         "code" : "cfs-score"
       }
     ]
@@ -70,7 +70,7 @@ Mildly Frail - slowing up, needs help with high order IADLs
   "valueCodeableConcept" : {
     "coding" : [
       {
-        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
         "code" : "cfs-5",
         "display" : "Mildly Frail"
       }

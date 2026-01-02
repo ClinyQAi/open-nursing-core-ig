@@ -10,7 +10,7 @@ Profile: [Mental Capacity Assessment](StructureDefinition-onc-mental-capacity.md
 
 **status**: Final
 
-**category**: Exam
+**category**: Survey
 
 **code**: Mental Capacity Assessment
 
@@ -46,7 +46,7 @@ Assessment for decision to return home.
       "coding" : [
         {
           "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "exam"
+          "code" : "survey"
         }
       ]
     }
@@ -54,7 +54,7 @@ Assessment for decision to return home.
   "code" : {
     "coding" : [
       {
-        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
         "code" : "mca-assessment"
       }
     ]
@@ -70,7 +70,7 @@ Assessment for decision to return home.
   "valueCodeableConcept" : {
     "coding" : [
       {
-        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
         "code" : "mca-present",
         "display" : "Capacity Present"
       }

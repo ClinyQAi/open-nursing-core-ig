@@ -11,7 +11,7 @@
   fhir:id [ fhir:v "news2-subscore-code-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet news2-subscore-code-vs</b></p><a name=\"news2-subscore-code-vs\"> </a><a name=\"hcnews2-subscore-code-vs\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-onc-observation-codes.html\"><code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-news2-subscore\">news2-subscore</a></td><td style=\"color: #cccccc\">NEWS2 Sub-score</td><td>Sub-score for NEWS2 parameter</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet news2-subscore-code-vs</b></p><a name=\"news2-subscore-code-vs\"> </a><a name=\"hcnews2-subscore-code-vs\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-onc-observation-codes.html\"><code>https://opennursingcoreig.com/CodeSystem/onc-observation-codes</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-news2-subscore\">news2-subscore</a></td><td style=\"color: #cccccc\">NEWS2 Sub-score</td><td>Sub-score for NEWS2 parameter</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "https://opennursingcoreig.com/ValueSet/news2-subscore-code-vs"^^xsd:anyURI ;
@@ -21,13 +21,14 @@
   fhir:name [ fhir:v "NEWS2SubscoreCodeValueSet"] ; # 
   fhir:title [ fhir:v "NEWS2 Sub-Score Codes"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-01-02T16:27:10+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-02T23:43:46+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "The Open Nursing Community"] ; # 
   fhir:description [ fhir:v "SNOMED codes for NEWS2 sub-scores"] ; # 
   fhir:compose [
      fhir:include ( [
        fhir:system [
-         fhir:v "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes>
+         fhir:v "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/CodeSystem/onc-observation-codes>
        ] ;
        fhir:concept ( [
          fhir:code [ fhir:v "news2-subscore" ]

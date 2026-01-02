@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/UKCore-Extension-EthnicCategory | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/UKCore-Extension-EthnicCategory | *Version*:0.1.0 |
 | Draft as of 2026-01-02 | *Computable Name*:UKCoreEthnicCategory |
 
 An extension to record the ethnic category of a patient, as per UK Core standards.
@@ -42,12 +42,13 @@ Other representations of profile: [CSV](StructureDefinition-UKCore-Extension-Eth
 {
   "resourceType" : "StructureDefinition",
   "id" : "UKCore-Extension-EthnicCategory",
-  "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/UKCore-Extension-EthnicCategory",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/UKCore-Extension-EthnicCategory",
   "version" : "0.1.0",
   "name" : "UKCoreEthnicCategory",
   "title" : "UK Core Ethnic Category",
   "status" : "draft",
-  "date" : "2026-01-02T16:27:10+00:00",
+  "date" : "2026-01-02T23:43:46+00:00",
+  "publisher" : "The Open Nursing Community",
   "description" : "An extension to record the ethnic category of a patient, as per UK Core standards.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -84,7 +85,7 @@ Other representations of profile: [CSV](StructureDefinition-UKCore-Extension-Eth
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/UKCore-Extension-EthnicCategory"
+        "fixedUri" : "https://opennursingcoreig.com/StructureDefinition/UKCore-Extension-EthnicCategory"
       },
       {
         "id" : "Extension.value[x]",

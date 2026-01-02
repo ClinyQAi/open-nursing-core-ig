@@ -17,7 +17,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition example-nursing-problem</b></p><a name=\"example-nursing-problem\"> </a><a name=\"hcexample-nursing-problem\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onc-nursing-problem.html\">Nursing Problem</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>category</b>: <span title=\"Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type nursing-diagnosis}\">Nursing Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes risk-falls}\">Risk of falls</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-jane.html\">Jane Doe  Female, DoB Unknown</a></p></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition example-nursing-problem</b></p><a name=\"example-nursing-problem\"> </a><a name=\"hcexample-nursing-problem\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onc-nursing-problem.html\">Nursing Problem</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>category</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-problem-type nursing-diagnosis}\">Nursing Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes risk-falls}\">Risk of falls</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-jane.html\">Jane Doe  Female, DoB Unknown</a></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:clinicalStatus [
      fhir:coding ( [
@@ -32,8 +32,8 @@
   fhir:category ( [
      fhir:coding ( [
        fhir:system [
-         fhir:v "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type"^^xsd:anyURI ;
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type>
+         fhir:v "https://opennursingcoreig.com/CodeSystem/onc-problem-type"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/CodeSystem/onc-problem-type>
        ] ;
        fhir:code [ fhir:v "nursing-diagnosis" ] ;
        fhir:display [ fhir:v "Nursing Diagnosis" ]
@@ -42,8 +42,8 @@
   fhir:code [
      fhir:coding ( [
        fhir:system [
-         fhir:v "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes>
+         fhir:v "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/CodeSystem/onc-observation-codes>
        ] ;
        fhir:code [ fhir:v "risk-falls" ] ;
        fhir:display [ fhir:v "Risk of falls" ]

@@ -51,7 +51,8 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "Housing Status Value Set",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-01-02T16:27:10+00:00",
+  "date" : "2026-01-02T23:43:46+00:00",
+  "publisher" : "The Open Nursing Community",
   "description" : "Value set for patient housing status",
   "compose" : {
     "include" : [

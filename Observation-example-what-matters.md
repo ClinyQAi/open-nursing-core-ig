@@ -54,7 +54,7 @@ This is her primary motivation for physiotherapy.
   "code" : {
     "coding" : [
       {
-        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
         "code" : "what-matters"
       }
     ]

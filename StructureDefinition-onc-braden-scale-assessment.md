@@ -41,7 +41,8 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
   "name" : "ONCBradenScaleAssessment",
   "title" : "Braden Scale Assessment",
   "status" : "draft",
-  "date" : "2026-01-02T16:27:10+00:00",
+  "date" : "2026-01-02T23:43:46+00:00",
+  "publisher" : "The Open Nursing Community",
   "description" : "A profile for the Braden Scale pressure ulcer risk assessment",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -88,9 +89,9 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
         "path" : "Observation",
         "constraint" : [
           {
-            "key" : "onc-equity-skin-tone-required",
+            "key" : "onc-equity-gate-1",
             "severity" : "error",
-            "human" : "Wound assessments MUST have an associated skin tone observation to ensure equitable care (AI Safety Gate).",
+            "human" : "Clinical safety rule: Skin observations (pressure ulcers, wounds) MUST include a Skin Tone assessment to ensure equitable care thresholds.",
             "expression" : "hasMember.resolve().code.coding.where(code = '66555-4' or code = 'mst-score').exists()",
             "source" : "https://opennursingcoreig.com/StructureDefinition/onc-braden-scale-assessment"
           }
@@ -108,7 +109,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "braden-total-score",
               "display" : "Braden Total Score"
             }
@@ -204,7 +205,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "braden-sensory",
               "display" : "Braden Sensory Perception"
             }
@@ -234,7 +235,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "braden-moisture",
               "display" : "Braden Moisture"
             }
@@ -264,7 +265,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "braden-activity",
               "display" : "Braden Activity"
             }
@@ -294,7 +295,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "braden-mobility",
               "display" : "Braden Mobility"
             }
@@ -324,7 +325,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "braden-nutrition",
               "display" : "Braden Nutrition"
             }
@@ -354,7 +355,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "braden-friction",
               "display" : "Braden Friction/Shear"
             }

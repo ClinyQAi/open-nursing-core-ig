@@ -41,7 +41,8 @@ Other representations of profile: [CSV](StructureDefinition-onc-relational-obser
   "name" : "ONCRelationalObservation",
   "title" : "Relational Engagement Score",
   "status" : "draft",
-  "date" : "2026-01-02T16:27:10+00:00",
+  "date" : "2026-01-02T23:43:46+00:00",
+  "publisher" : "The Open Nursing Community",
   "description" : "Assessment of the quality and depth of the nurse-patient relationship or engagement level. Supports the relational aspect of care.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -105,7 +106,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-relational-obser
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "relational-engagement"
             }
           ]

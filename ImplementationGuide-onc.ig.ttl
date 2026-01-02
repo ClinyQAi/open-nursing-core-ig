@@ -21,7 +21,8 @@
   fhir:name [ fhir:v "OpenNursingCoreIG"] ; # 
   fhir:title [ fhir:v "Open Nursing Core FHIR Implementation Guide (ONC-IG)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-01-02T16:27:10+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-02T23:43:46+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "The Open Nursing Community"] ; # 
   fhir:description [ fhir:v "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome."] ; # 
   fhir:packageId [ fhir:v "onc.ig"] ; # 
   fhir:license [ fhir:v "MIT"] ; # 
@@ -1450,6 +1451,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/ValueSet/onc-adpie-vs> ;
+         fhir:reference [ fhir:v "ValueSet/onc-adpie-vs" ]
+       ] ;
+       fhir:name [ fhir:v "ADPIE Nursing Process Phases" ] ;
+       fhir:description [ fhir:v "The five phases of the professional nursing process." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -2007,8 +2029,8 @@
        fhir:name [ fhir:v "example-reasonable-adjustment" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://fhir.clinyq.ai/StructureDefinition/onc-reasonable-adjustment"^^xsd:anyURI ;
-         fhir:l <https://fhir.clinyq.ai/StructureDefinition/onc-reasonable-adjustment>
+         fhir:v "https://opennursingcoreig.com/StructureDefinition/onc-reasonable-adjustment"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-reasonable-adjustment>
        ]
      ] [
        fhir:extension ( [
@@ -2279,6 +2301,27 @@
        ] ;
        fhir:name [ fhir:v "Intervention Goal Reference" ] ;
        fhir:description [ fhir:v "Extension to link nursing interventions to the patient goals they are intended to achieve." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/ConceptMap/ONCToNandaMapping> ;
+         fhir:reference [ fhir:v "ConceptMap/ONCToNandaMapping" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping ONC Relational Concepts to NANDA-I" ] ;
+       fhir:description [ fhir:v "Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2771,6 +2814,48 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/ValueSet/onc-empathy-index-vs> ;
+         fhir:reference [ fhir:v "ValueSet/onc-empathy-index-vs" ]
+       ] ;
+       fhir:name [ fhir:v "ONC Empathy & Relational Engagement Index" ] ;
+       fhir:description [ fhir:v "A clinical scale measuring the depth of therapeutic empathy in nurse-patient interactions. Traditional EHRs ignore this; the Super-Gold Standard makes it a primary outcome." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-equity-marker> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-equity-marker" ]
+       ] ;
+       fhir:name [ fhir:v "ONC Equity Marker" ] ;
+       fhir:description [ fhir:v "A technical extension applied to observations that have passed the Mandatory Equity Gate (i.e., they are skin-tone aware)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -2906,6 +2991,27 @@
        ] ;
        fhir:name [ fhir:v "ONC Observation Codes" ] ;
        fhir:description [ fhir:v "Custom observation codes for Open Nursing Core" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/ValueSet/onc-relational-outcomes-vs> ;
+         fhir:reference [ fhir:v "ValueSet/onc-relational-outcomes-vs" ]
+       ] ;
+       fhir:name [ fhir:v "ONC Relational Care Outcomes" ] ;
+       fhir:description [ fhir:v "Captures the measurable outcomes of relational and empathic nursing care." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -3262,6 +3368,27 @@
        ] ;
        fhir:name [ fhir:v "Reasonable Adjustment" ] ;
        fhir:description [ fhir:v "Captures specific strict requirements for care adjustments under the Equality Act (e.g., 'Needs BSL Interpreter', 'Cannot use stairs', 'Requires large print')." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://opennursingcoreig.com/StructureDefinition/onc-relational-care-logical> ;
+         fhir:reference [ fhir:v "StructureDefinition/onc-relational-care-logical" ]
+       ] ;
+       fhir:name [ fhir:v "Relational Care Logical Model" ] ;
+       fhir:description [ fhir:v "A vendor-neutral clinical model of the relational nursing assessment. Defines WHAT data must be captured, regardless of HOW it is stored in FHIR." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

@@ -41,7 +41,8 @@ Other representations of profile: [CSV](StructureDefinition-onc-catheter-care.cs
   "name" : "ONCCatheterCare",
   "title" : "Catheter Care",
   "status" : "draft",
-  "date" : "2026-01-02T16:27:10+00:00",
+  "date" : "2026-01-02T23:43:46+00:00",
+  "publisher" : "The Open Nursing Community",
   "description" : "Documentation of catheter site care and status.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -93,7 +94,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-catheter-care.cs
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "catheter-care"
             }
           ]

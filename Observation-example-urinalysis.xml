@@ -6,18 +6,18 @@
     <profile value="https://fhir.clinyq.ai/StructureDefinition/onc-urinalysis"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation example-urinalysis</b></p><a name="example-urinalysis"> </a><a name="hcexample-urinalysis"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-onc-urinalysis.html">Urinalysis</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category exam}">Exam</span></p><p><b>code</b>: <span title="Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes urinalysis-panel}">Urinalysis Panel</span></p><p><b>subject</b>: <a href="Patient-patient-example-jane.html">Jane Doe  Female, DoB Unknown</a></p><p><b>performer</b>: <a href="Practitioner-practitioner-example.html">Practitioner Nightingale </a></p><p><b>value</b>: Suggestive of UTI</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes ua-leukocytes}">Leukocytes</span></p><p><b>value</b>: ++</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes ua-nitrites}">Nitrites</span></p><p><b>value</b>: Positive</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes ua-blood}">Blood</span></p><p><b>value</b>: Negative</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes ua-ph}">pH</span></p><p><b>value</b>: 6 {pH}</p></blockquote></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation example-urinalysis</b></p><a name="example-urinalysis"> </a><a name="hcexample-urinalysis"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-onc-urinalysis.html">Urinalysis</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}">Survey</span></p><p><b>code</b>: <span title="Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes urinalysis-panel}">Urinalysis Panel</span></p><p><b>subject</b>: <a href="Patient-patient-example-jane.html">Jane Doe  Female, DoB Unknown</a></p><p><b>performer</b>: <a href="Practitioner-practitioner-example.html">Practitioner Nightingale </a></p><p><b>value</b>: Suggestive of UTI</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes ua-leukocytes}">Leukocytes</span></p><p><b>value</b>: ++</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes ua-nitrites}">Nitrites</span></p><p><b>value</b>: Positive</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes ua-blood}">Blood</span></p><p><b>value</b>: Negative</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes ua-ph}">pH</span></p><p><b>value</b>: 6 {pH}</p></blockquote></div>
   </text>
   <status value="final"/>
   <category>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-      <code value="exam"/>
+      <code value="survey"/>
     </coding>
   </category>
   <code>
     <coding>
-      <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+      <system value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes"/>
       <code value="urinalysis-panel"/>
     </coding>
   </code>
@@ -31,7 +31,7 @@
   <component>
     <code>
       <coding>
-        <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+        <system value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes"/>
         <code value="ua-leukocytes"/>
       </coding>
     </code>
@@ -40,7 +40,7 @@
   <component>
     <code>
       <coding>
-        <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+        <system value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes"/>
         <code value="ua-nitrites"/>
       </coding>
     </code>
@@ -49,7 +49,7 @@
   <component>
     <code>
       <coding>
-        <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+        <system value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes"/>
         <code value="ua-blood"/>
       </coding>
     </code>
@@ -58,7 +58,7 @@
   <component>
     <code>
       <coding>
-        <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+        <system value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes"/>
         <code value="ua-ph"/>
       </coding>
     </code>

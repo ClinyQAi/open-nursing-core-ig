@@ -4,7 +4,7 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/UKCore-Extension-EthnicCategory",
+      "url": "https://opennursingcoreig.com/StructureDefinition/UKCore-Extension-EthnicCategory",
       "title": "UK Core Ethnic Category",
       "types": [
         "CodeableConcept"
@@ -22,6 +22,13 @@
       "title": "Observation Goal Reference",
       "types": [
         "Reference"
+      ]
+    },
+    {
+      "url": "https://opennursingcoreig.com/StructureDefinition/onc-equity-marker",
+      "title": "ONC Equity Marker",
+      "types": [
+        "boolean"
       ]
     }
   ],
@@ -46,6 +53,10 @@
       {
         "url": "https://opennursingcoreig.com/StructureDefinition/onc-qsofa",
         "title": "qSOFA (Quick SOFA)"
+      },
+      {
+        "url": "https://opennursingcoreig.com/StructureDefinition/onc-reasonable-adjustment",
+        "title": "Reasonable Adjustment"
       },
       {
         "url": "https://opennursingcoreig.com/StructureDefinition/onc-respiration-rate",
@@ -149,7 +160,7 @@
     "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
       "StructureDefinition.snapshot"
     ],
-    "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/UKCore-Extension-EthnicCategory": [
+    "https://opennursingcoreig.com/StructureDefinition/UKCore-Extension-EthnicCategory": [
       "Patient"
     ],
     "https://opennursingcoreig.com/StructureDefinition/intervention-goal-reference": [

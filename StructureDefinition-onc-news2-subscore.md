@@ -41,7 +41,8 @@ Other representations of profile: [CSV](StructureDefinition-onc-news2-subscore.c
   "name" : "ONCNEWS2Subscore",
   "title" : "NEWS2 Sub-Score",
   "status" : "draft",
-  "date" : "2026-01-02T16:27:10+00:00",
+  "date" : "2026-01-02T23:43:46+00:00",
+  "publisher" : "The Open Nursing Community",
   "description" : "Individual parameter sub-score for NEWS2 (0-3 for most parameters). References the related vital sign observation.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -99,7 +100,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-news2-subscore.c
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "news2-subscore",
               "display" : "NEWS2 Sub-score"
             }

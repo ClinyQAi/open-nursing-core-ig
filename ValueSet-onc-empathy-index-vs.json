@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "onc-empathy-index-vs",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet onc-empathy-index-vs</b></p><a name=\"onc-empathy-index-vs\"> </a><a name=\"hconc-empathy-index-vs\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-onc-observation-codes.html\"><code>https://opennursingcoreig.com/CodeSystem/onc-observation-codes</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-empathy-1\">empathy-1</a></td><td>Low Empathy: Task-focused interaction with minimal person-centred engagement.</td><td>Task-focused interaction with minimal person-centred engagement.</td></tr><tr><td><a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-empathy-2\">empathy-2</a></td><td>Basic Empathy: Professional interaction with patient identity acknowledged.</td><td>Professional interaction with patient identity acknowledged.</td></tr><tr><td><a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-empathy-3\">empathy-3</a></td><td>Moderate Empathy: Active relational engagement with shared decision making.</td><td>Active relational engagement with shared decision making.</td></tr><tr><td><a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-empathy-4\">empathy-4</a></td><td>High Empathy: Authentic partnership with deep understanding of patient experience.</td><td>Authentic partnership with deep understanding of patient experience.</td></tr><tr><td><a href=\"CodeSystem-onc-observation-codes.html#onc-observation-codes-empathy-5\">empathy-5</a></td><td>Relational Excellence: Flourishing partnership with total alignment on 'What Matters to Me'.</td><td>Flourishing partnership with total alignment on 'What Matters to Me'.</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://opennursingcoreig.com/ValueSet/onc-empathy-index-vs",
+  "version" : "0.1.0",
+  "name" : "ONCEmpathyIndexVS",
+  "title" : "ONC Empathy & Relational Engagement Index",
+  "status" : "draft",
+  "date" : "2026-01-02T23:43:46+00:00",
+  "publisher" : "The Open Nursing Community",
+  "description" : "A clinical scale measuring the depth of therapeutic empathy in nurse-patient interactions. Traditional EHRs ignore this; the Super-Gold Standard makes it a primary outcome.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+      "concept" : [{
+        "code" : "empathy-1",
+        "display" : "Low Empathy: Task-focused interaction with minimal person-centred engagement."
+      },
+      {
+        "code" : "empathy-2",
+        "display" : "Basic Empathy: Professional interaction with patient identity acknowledged."
+      },
+      {
+        "code" : "empathy-3",
+        "display" : "Moderate Empathy: Active relational engagement with shared decision making."
+      },
+      {
+        "code" : "empathy-4",
+        "display" : "High Empathy: Authentic partnership with deep understanding of patient experience."
+      },
+      {
+        "code" : "empathy-5",
+        "display" : "Relational Excellence: Flourishing partnership with total alignment on 'What Matters to Me'."
+      }]
+    }]
+  }
+}

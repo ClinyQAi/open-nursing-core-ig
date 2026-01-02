@@ -10,7 +10,7 @@ Profile: [Oral Health Assessment](StructureDefinition-onc-oral-health.md)
 
 **status**: Final
 
-**category**: Exam
+**category**: Survey
 
 **code**: Oral Health Score
 
@@ -45,7 +45,7 @@ Profile: [Oral Health Assessment](StructureDefinition-onc-oral-health.md)
       "coding" : [
         {
           "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "exam"
+          "code" : "survey"
         }
       ]
     }
@@ -53,7 +53,7 @@ Profile: [Oral Health Assessment](StructureDefinition-onc-oral-health.md)
   "code" : {
     "coding" : [
       {
-        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
         "code" : "oral-health-score"
       }
     ]
@@ -75,7 +75,7 @@ Profile: [Oral Health Assessment](StructureDefinition-onc-oral-health.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "oral-lips"
           }
         ]
@@ -86,7 +86,7 @@ Profile: [Oral Health Assessment](StructureDefinition-onc-oral-health.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "oral-tongue"
           }
         ]
@@ -97,7 +97,7 @@ Profile: [Oral Health Assessment](StructureDefinition-onc-oral-health.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "oral-gums"
           }
         ]
@@ -108,7 +108,7 @@ Profile: [Oral Health Assessment](StructureDefinition-onc-oral-health.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "oral-teeth"
           }
         ]

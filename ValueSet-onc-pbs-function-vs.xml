@@ -3,18 +3,19 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="onc-pbs-function-vs"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet onc-pbs-function-vs</b></p><a name="onc-pbs-function-vs"> </a><a name="hconc-pbs-function-vs"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-onc-observation-codes.html"><code>https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-abc-function">abc-function</a></td><td>Function of Behaviour</td><td>Hypothesized function (e.g. Sensory, Escape, Attention, Tangible)</td></tr></table></li></ul></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet onc-pbs-function-vs</b></p><a name="onc-pbs-function-vs"> </a><a name="hconc-pbs-function-vs"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-onc-observation-codes.html"><code>https://opennursingcoreig.com/CodeSystem/onc-observation-codes</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-abc-function">abc-function</a></td><td>Function of Behaviour</td><td>Hypothesized function (e.g. Sensory, Escape, Attention, Tangible)</td></tr></table></li></ul></div>
   </text>
   <url value="https://opennursingcoreig.com/ValueSet/onc-pbs-function-vs"/>
   <version value="0.1.0"/>
   <name value="PBSFunctionVS"/>
   <title value="PBS Behaviour Function ValueSet"/>
   <status value="draft"/>
-  <date value="2026-01-02T16:27:10+00:00"/>
+  <date value="2026-01-02T23:43:46+00:00"/>
+  <publisher value="The Open Nursing Community"/>
   <description value="Common functions of behaviour (SEAT)"/>
   <compose>
     <include>
-      <system value="https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"/>
+      <system value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes"/>
       <concept>
         <code value="abc-function"/>
         <display value="Function of Behaviour"/>

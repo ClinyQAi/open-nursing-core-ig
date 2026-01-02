@@ -41,7 +41,8 @@ Other representations of profile: [CSV](StructureDefinition-onc-4at-delirium.csv
   "name" : "ONC4ATDelirium",
   "title" : "4AT Delirium Assessment",
   "status" : "draft",
-  "date" : "2026-01-02T16:27:10+00:00",
+  "date" : "2026-01-02T23:43:46+00:00",
+  "publisher" : "The Open Nursing Community",
   "description" : "Rapid clinical test for delirium (4AT) comprising Alertness, AMT4, Attention, and Acute Change/Fluctuating Course. A total score of 4 or more suggests possible delirium.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -105,7 +106,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-4at-delirium.csv
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "4at-score"
             }
           ]
@@ -179,7 +180,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-4at-delirium.csv
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "4at-alertness"
             }
           ]
@@ -212,7 +213,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-4at-delirium.csv
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "4at-amt4"
             }
           ]
@@ -245,7 +246,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-4at-delirium.csv
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "4at-attention"
             }
           ]
@@ -278,7 +279,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-4at-delirium.csv
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "4at-acute-change"
             }
           ]

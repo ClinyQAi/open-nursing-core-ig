@@ -47,11 +47,12 @@
   "name" : "WoundStageValueSet",
   "title" : "Wound Stage Value Set",
   "status" : "draft",
-  "date" : "2026-01-02T16:27:10+00:00",
+  "date" : "2026-01-02T23:43:46+00:00",
+  "publisher" : "The Open Nursing Community",
   "compose" : {
     "include" : [
       {
-        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
         "concept" : [
           {
             "code" : "stage-1"

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="ONCToNandaMapping"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap ONCToNandaMapping</b></p><a name="ONCToNandaMapping"> </a><a name="hcONCToNandaMapping"> </a><p>Mapping from https://fhir.clinyq.ai/ValueSet/onc-relational-findings-vs to http://terminology.hl7.org/CodeSystem/nanda-i</p><br/><p><b>Group 1 </b>Mapping from <code>https://fhir.clinyq.ai/CodeSystem/onc-observation-codes</code> to <code>http://terminology.hl7.org/CodeSystem/nanda-i</code></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>patient-story</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto" title="relatedto">is related to</a></td><td>00053 (Social Isolation)</td></tr><tr><td>relational-engagement</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto" title="relatedto">is related to</a></td><td>00054 (Risk for Loneliness)</td></tr><tr><td>skintone-observation</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#specializes" title="specializes">has specialization</a></td><td>399912005 (Wound Assessment)</td></tr></table></div>
+  </text>
+  <url value="https://fhir.clinyq.ai/ConceptMap/onc-to-nanda"/>
+  <version value="0.1.0"/>
+  <name value="ONCToNandaMapping"/>
+  <title value="Mapping ONC Relational Concepts to NANDA-I"/>
+  <status value="draft"/>
+  <date value="2026-01-02T23:43:46+00:00"/>
+  <publisher value="The Open Nursing Community"/>
+  <description value="Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses."/>
+  <sourceCanonical value="https://fhir.clinyq.ai/ValueSet/onc-relational-findings-vs"/>
+  <targetCanonical value="http://terminology.hl7.org/CodeSystem/nanda-i"/>
+  <group>
+    <source value="https://fhir.clinyq.ai/CodeSystem/onc-observation-codes"/>
+    <target value="http://terminology.hl7.org/CodeSystem/nanda-i"/>
+    <element>
+      <code value="patient-story"/>
+      <target>
+        <code value="00053"/>
+        <display value="Social Isolation"/>
+        <equivalence value="relatedto"/>
+      </target>
+    </element>
+    <element>
+      <code value="relational-engagement"/>
+      <target>
+        <code value="00054"/>
+        <display value="Risk for Loneliness"/>
+        <equivalence value="relatedto"/>
+      </target>
+    </element>
+    <element>
+      <code value="skintone-observation"/>
+      <target>
+        <code value="399912005"/>
+        <display value="Wound Assessment"/>
+        <equivalence value="specializes"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

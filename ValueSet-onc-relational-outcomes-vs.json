@@ -1,0 +1,33 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "onc-relational-outcomes-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet onc-relational-outcomes-vs</b></p><a name=\"onc-relational-outcomes-vs\"> </a><a name=\"hconc-relational-outcomes-vs\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/161096001\">161096001</a></td><td>Patient feels respected</td></tr><tr><td><a href=\"http://snomed.info/id/307823004\">307823004</a></td><td>Patient feels heard</td></tr><tr><td><a href=\"http://snomed.info/id/428131006\">428131006</a></td><td>Therapeutic relationship established</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://opennursingcoreig.com/ValueSet/onc-relational-outcomes-vs",
+  "version" : "0.1.0",
+  "name" : "ONCRelationalOutcomesVS",
+  "title" : "ONC Relational Care Outcomes",
+  "status" : "draft",
+  "date" : "2026-01-02T23:43:46+00:00",
+  "publisher" : "The Open Nursing Community",
+  "description" : "Captures the measurable outcomes of relational and empathic nursing care.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "161096001",
+        "display" : "Patient feels respected"
+      },
+      {
+        "code" : "307823004",
+        "display" : "Patient feels heard"
+      },
+      {
+        "code" : "428131006",
+        "display" : "Therapeutic relationship established"
+      }]
+    }]
+  }
+}

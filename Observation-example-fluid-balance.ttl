@@ -17,7 +17,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation example-fluid-balance</b></p><a name=\"example-fluid-balance\"> </a><a name=\"hcexample-fluid-balance\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onc-fluid-balance.html\">Fluid Balance</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category exam}\">Exam</span></p><p><b>code</b>: <span title=\"Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes fluid-balance}\">Fluid Balance</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-jane.html\">Jane Doe  Female, DoB Unknown</a></p><p><b>performer</b>: <a href=\"Practitioner-practitioner-example.html\">Practitioner Nightingale </a></p><p><b>value</b>: 500 mL</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes fluid-input-total}\">Total Fluid Input</span></p><p><b>value</b>: 2000 mL</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes fluid-output-total}\">Total Fluid Output</span></p><p><b>value</b>: 1500 mL</p></blockquote></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation example-fluid-balance</b></p><a name=\"example-fluid-balance\"> </a><a name=\"hcexample-fluid-balance\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onc-fluid-balance.html\">Fluid Balance</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes fluid-balance}\">Fluid Balance</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-jane.html\">Jane Doe  Female, DoB Unknown</a></p><p><b>performer</b>: <a href=\"Practitioner-practitioner-example.html\">Practitioner Nightingale </a></p><p><b>value</b>: 500 mL</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes fluid-input-total}\">Total Fluid Input</span></p><p><b>value</b>: 2000 mL</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://opennursingcoreig.com/CodeSystem/onc-observation-codes fluid-output-total}\">Total Fluid Output</span></p><p><b>value</b>: 1500 mL</p></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:category ( [
@@ -26,14 +26,14 @@
          fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
        ] ;
-       fhir:code [ fhir:v "exam" ]
+       fhir:code [ fhir:v "survey" ]
      ] )
   ] ) ; # 
   fhir:code [
      fhir:coding ( [
        fhir:system [
-         fhir:v "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
-         fhir:l <https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes>
+         fhir:v "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
+         fhir:l <https://opennursingcoreig.com/CodeSystem/onc-observation-codes>
        ] ;
        fhir:code [ fhir:v "fluid-balance" ]
      ] )
@@ -55,8 +55,8 @@
      fhir:code [
        fhir:coding ( [
          fhir:system [
-           fhir:v "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
-           fhir:l <https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes>
+           fhir:v "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
+           fhir:l <https://opennursingcoreig.com/CodeSystem/onc-observation-codes>
          ] ;
          fhir:code [ fhir:v "fluid-input-total" ]
        ] )
@@ -70,8 +70,8 @@
      fhir:code [
        fhir:coding ( [
          fhir:system [
-           fhir:v "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
-           fhir:l <https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes>
+           fhir:v "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
+           fhir:l <https://opennursingcoreig.com/CodeSystem/onc-observation-codes>
          ] ;
          fhir:code [ fhir:v "fluid-output-total" ]
        ] )

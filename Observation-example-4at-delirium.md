@@ -10,7 +10,7 @@ Profile: [4AT Delirium Assessment](StructureDefinition-onc-4at-delirium.md)
 
 **status**: Final
 
-**category**: Exam
+**category**: Survey
 
 **code**: 4AT Delirium Score
 
@@ -47,7 +47,7 @@ Profile: [4AT Delirium Assessment](StructureDefinition-onc-4at-delirium.md)
       "coding" : [
         {
           "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "exam"
+          "code" : "survey"
         }
       ]
     }
@@ -55,7 +55,7 @@ Profile: [4AT Delirium Assessment](StructureDefinition-onc-4at-delirium.md)
   "code" : {
     "coding" : [
       {
-        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
         "code" : "4at-score"
       }
     ]
@@ -77,7 +77,7 @@ Profile: [4AT Delirium Assessment](StructureDefinition-onc-4at-delirium.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "4at-alertness"
           }
         ]
@@ -85,7 +85,7 @@ Profile: [4AT Delirium Assessment](StructureDefinition-onc-4at-delirium.md)
       "valueCodeableConcept" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "4at-alert-normal",
             "display" : "Normal"
           }
@@ -96,7 +96,7 @@ Profile: [4AT Delirium Assessment](StructureDefinition-onc-4at-delirium.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "4at-amt4"
           }
         ]
@@ -104,7 +104,7 @@ Profile: [4AT Delirium Assessment](StructureDefinition-onc-4at-delirium.md)
       "valueCodeableConcept" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "4at-amt4-1error",
             "display" : "1 Error"
           }
@@ -115,7 +115,7 @@ Profile: [4AT Delirium Assessment](StructureDefinition-onc-4at-delirium.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "4at-attention"
           }
         ]
@@ -123,7 +123,7 @@ Profile: [4AT Delirium Assessment](StructureDefinition-onc-4at-delirium.md)
       "valueCodeableConcept" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "4at-attention-gt7",
             "display" : "Months backwards < 7 months correct"
           }
@@ -134,7 +134,7 @@ Profile: [4AT Delirium Assessment](StructureDefinition-onc-4at-delirium.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "4at-acute-change"
           }
         ]
@@ -142,7 +142,7 @@ Profile: [4AT Delirium Assessment](StructureDefinition-onc-4at-delirium.md)
       "valueCodeableConcept" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "4at-change-no",
             "display" : "No"
           }

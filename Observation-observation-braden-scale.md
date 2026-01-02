@@ -61,7 +61,7 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
   "code" : {
     "coding" : [
       {
-        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
         "code" : "braden-total-score",
         "display" : "Braden Total Score"
       }
@@ -91,7 +91,7 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "braden-sensory",
             "display" : "Braden Sensory Perception"
           }
@@ -108,7 +108,7 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "braden-moisture",
             "display" : "Braden Moisture"
           }
@@ -125,7 +125,7 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "braden-activity",
             "display" : "Braden Activity"
           }
@@ -142,7 +142,7 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "braden-mobility",
             "display" : "Braden Mobility"
           }
@@ -159,7 +159,7 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "braden-nutrition",
             "display" : "Braden Nutrition"
           }
@@ -176,7 +176,7 @@ Profile: [Braden Scale Assessment](StructureDefinition-onc-braden-scale-assessme
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "braden-friction",
             "display" : "Braden Friction/Shear"
           }

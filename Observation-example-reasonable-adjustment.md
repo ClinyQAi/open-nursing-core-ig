@@ -10,7 +10,7 @@ Profile: [Reasonable Adjustment](StructureDefinition-onc-reasonable-adjustment.m
 
 **status**: Final
 
-**category**: Exam
+**category**: Survey
 
 **code**: Reasonable Adjustment
 
@@ -30,7 +30,7 @@ Profile: [Reasonable Adjustment](StructureDefinition-onc-reasonable-adjustment.m
   "id" : "example-reasonable-adjustment",
   "meta" : {
     "profile" : [
-      "https://fhir.clinyq.ai/StructureDefinition/onc-reasonable-adjustment"
+      "https://opennursingcoreig.com/StructureDefinition/onc-reasonable-adjustment"
     ]
   },
   "status" : "final",
@@ -39,7 +39,7 @@ Profile: [Reasonable Adjustment](StructureDefinition-onc-reasonable-adjustment.m
       "coding" : [
         {
           "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "exam"
+          "code" : "survey"
         }
       ]
     }
@@ -47,7 +47,7 @@ Profile: [Reasonable Adjustment](StructureDefinition-onc-reasonable-adjustment.m
   "code" : {
     "coding" : [
       {
-        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
         "code" : "reasonable-adjustment"
       }
     ]

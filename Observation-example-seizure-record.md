@@ -10,7 +10,7 @@ Profile: [Seizure Record](StructureDefinition-onc-seizure-record.md)
 
 **status**: Final
 
-**category**: Exam
+**category**: Survey
 
 **code**: Seizure Record
 
@@ -45,7 +45,7 @@ Profile: [Seizure Record](StructureDefinition-onc-seizure-record.md)
       "coding" : [
         {
           "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "exam"
+          "code" : "survey"
         }
       ]
     }
@@ -53,7 +53,7 @@ Profile: [Seizure Record](StructureDefinition-onc-seizure-record.md)
   "code" : {
     "coding" : [
       {
-        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
         "code" : "seizure-record"
       }
     ]
@@ -72,7 +72,7 @@ Profile: [Seizure Record](StructureDefinition-onc-seizure-record.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "seizure-type"
           }
         ]
@@ -83,7 +83,7 @@ Profile: [Seizure Record](StructureDefinition-onc-seizure-record.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "seizure-duration"
           }
         ]
@@ -97,7 +97,7 @@ Profile: [Seizure Record](StructureDefinition-onc-seizure-record.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "seizure-recovery"
           }
         ]

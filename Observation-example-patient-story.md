@@ -47,7 +47,7 @@ Profile: [Patient Story](StructureDefinition-onc-patient-story.md)
   "code" : {
     "coding" : [
       {
-        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
         "code" : "patient-story"
       }
     ]

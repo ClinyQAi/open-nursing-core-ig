@@ -18,7 +18,9 @@
 * **Actions:**: **Title:**
   * : NEWS2 Escalation Protocol
 * **Actions:**: **Date:**
-  * : 2026-01-02 16:27:10+0000
+  * : 2026-01-02 23:43:46+0000
+* **Actions:**: **Publisher:**
+  * : The Open Nursing Community
 * **Actions:**: **Libraries:**
   * : 
 | |
@@ -47,7 +49,8 @@
     ]
   },
   "status" : "active",
-  "date" : "2026-01-02T16:27:10+00:00",
+  "date" : "2026-01-02T23:43:46+00:00",
+  "publisher" : "The Open Nursing Community",
   "library" : ["http://opennursingcore.org/Library/ONC-NEWS2-CQL"],
   "action" : [
     {

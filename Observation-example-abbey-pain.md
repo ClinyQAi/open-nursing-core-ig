@@ -10,7 +10,7 @@ Profile: [Abbey Pain Scale](StructureDefinition-onc-abbey-pain-scale.md)
 
 **status**: Final
 
-**category**: Exam
+**category**: Survey
 
 **code**: Abbey Pain Scale Score
 
@@ -51,7 +51,7 @@ Profile: [Abbey Pain Scale](StructureDefinition-onc-abbey-pain-scale.md)
       "coding" : [
         {
           "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "exam"
+          "code" : "survey"
         }
       ]
     }
@@ -59,7 +59,7 @@ Profile: [Abbey Pain Scale](StructureDefinition-onc-abbey-pain-scale.md)
   "code" : {
     "coding" : [
       {
-        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
         "code" : "abbey-score"
       }
     ]
@@ -81,7 +81,7 @@ Profile: [Abbey Pain Scale](StructureDefinition-onc-abbey-pain-scale.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "abbey-vocalization"
           }
         ]
@@ -92,7 +92,7 @@ Profile: [Abbey Pain Scale](StructureDefinition-onc-abbey-pain-scale.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "abbey-facial-expression"
           }
         ]
@@ -103,7 +103,7 @@ Profile: [Abbey Pain Scale](StructureDefinition-onc-abbey-pain-scale.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "abbey-body-language"
           }
         ]
@@ -114,7 +114,7 @@ Profile: [Abbey Pain Scale](StructureDefinition-onc-abbey-pain-scale.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "abbey-behavioral-change"
           }
         ]
@@ -125,7 +125,7 @@ Profile: [Abbey Pain Scale](StructureDefinition-onc-abbey-pain-scale.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "abbey-psychological-change"
           }
         ]
@@ -136,7 +136,7 @@ Profile: [Abbey Pain Scale](StructureDefinition-onc-abbey-pain-scale.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "abbey-physical-changes"
           }
         ]

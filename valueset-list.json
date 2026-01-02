@@ -44,7 +44,7 @@
       "title" : "NEWS2 Code Value Set",
       "description" : "LOINC and SNOMED codes for NEWS2",
       "systems" : [
-        "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"
+        "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"
       ]
     },
     {
@@ -55,7 +55,7 @@
       "title" : "NEWS2 Sub-Score Codes",
       "description" : "SNOMED codes for NEWS2 sub-scores",
       "systems" : [
-        "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"
+        "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"
       ]
     },
     {
@@ -75,8 +75,8 @@
       "title" : "Nursing Problem Value Set",
       "description" : "Value set for nursing problems and diagnoses",
       "systems" : [
-        "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
-        "http://snomed.info/sct"
+        "http://snomed.info/sct",
+        "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"
       ]
     },
     {
@@ -96,7 +96,7 @@
       "title" : "4AT Alertness Value Set",
       "description" : "Scoring options for 4AT Alertness",
       "systems" : [
-        "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
         "http://snomed.info/sct"
       ]
     },
@@ -119,6 +119,17 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
+      "url" : "https://opennursingcoreig.com/ValueSet/onc-adpie-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ONCADPIEVS",
+      "title" : "ADPIE Nursing Process Phases",
+      "description" : "The five phases of the professional nursing process.",
+      "systems" : [
+        "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"
+      ]
+    },
+    {
       "url" : "https://opennursingcoreig.com/ValueSet/onc-cfs-vs",
       "version" : "0.1.0",
       "status" : "draft",
@@ -126,7 +137,18 @@
       "title" : "Clinical Frailty Scale Value Set",
       "description" : "Codes for Rockwood Clinical Frailty Scale (1-9)",
       "systems" : [
-        "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"
+        "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"
+      ]
+    },
+    {
+      "url" : "https://opennursingcoreig.com/ValueSet/onc-empathy-index-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ONCEmpathyIndexVS",
+      "title" : "ONC Empathy & Relational Engagement Index",
+      "description" : "A clinical scale measuring the depth of therapeutic empathy in nurse-patient interactions. Traditional EHRs ignore this; the Super-Gold Standard makes it a primary outcome.",
+      "systems" : [
+        "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"
       ]
     },
     {
@@ -146,7 +168,7 @@
       "title" : "Mental Capacity Finding Value Set",
       "description" : "Codes indicating presence or absence of capacity",
       "systems" : [
-        "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"
+        "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"
       ]
     },
     {
@@ -166,7 +188,7 @@
       "title" : "PBS Behaviour Function ValueSet",
       "description" : "Common functions of behaviour (SEAT)",
       "systems" : [
-        "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"
+        "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"
       ]
     },
     {
@@ -176,6 +198,15 @@
       "name" : "ONCPrognosisVS",
       "title" : "Nursing Prognosis ValueSet",
       "description" : "Prognosis codes for clinical impression",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://opennursingcoreig.com/ValueSet/onc-relational-outcomes-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ONCRelationalOutcomesVS",
+      "title" : "ONC Relational Care Outcomes",
+      "description" : "Captures the measurable outcomes of relational and empathic nursing care.",
       "systems" : ["http://snomed.info/sct"]
     },
     {
@@ -194,9 +225,7 @@
       "name" : "ProblemCategoryValueSet",
       "title" : "Problem Category Value Set",
       "description" : "Value set for categorizing nursing problems",
-      "systems" : [
-        "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type"
-      ]
+      "systems" : ["https://opennursingcoreig.com/CodeSystem/onc-problem-type"]
     },
     {
       "url" : "https://opennursingcoreig.com/ValueSet/skintone-vs",
@@ -206,7 +235,7 @@
       "title" : "Fitzpatrick Skin Tone Value Set",
       "description" : "Value set for Fitzpatrick skin type classifications",
       "systems" : [
-        "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"
+        "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"
       ]
     },
     {
@@ -217,7 +246,7 @@
       "title" : "Wound Stage Value Set",
       "description" : "",
       "systems" : [
-        "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes"
+        "https://opennursingcoreig.com/CodeSystem/onc-observation-codes"
       ]
     }
   ]

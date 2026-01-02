@@ -10,7 +10,7 @@ Profile: [Bristol Stool Chart](StructureDefinition-onc-bristol-stool-chart.md)
 
 **status**: Final
 
-**category**: Exam
+**category**: Survey
 
 **code**: Bristol Stool Score
 
@@ -39,7 +39,7 @@ Profile: [Bristol Stool Chart](StructureDefinition-onc-bristol-stool-chart.md)
       "coding" : [
         {
           "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "exam"
+          "code" : "survey"
         }
       ]
     }
@@ -47,7 +47,7 @@ Profile: [Bristol Stool Chart](StructureDefinition-onc-bristol-stool-chart.md)
   "code" : {
     "coding" : [
       {
-        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
         "code" : "bristol-score"
       }
     ]

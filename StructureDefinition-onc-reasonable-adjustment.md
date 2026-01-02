@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-reasonable-adjustment | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-reasonable-adjustment | *Version*:0.1.0 |
 | Draft as of 2026-01-02 | *Computable Name*:ONCReasonableAdjustment |
 
  
@@ -36,12 +36,13 @@ Other representations of profile: [CSV](StructureDefinition-onc-reasonable-adjus
 {
   "resourceType" : "StructureDefinition",
   "id" : "onc-reasonable-adjustment",
-  "url" : "https://fhir.clinyq.ai/StructureDefinition/onc-reasonable-adjustment",
+  "url" : "https://opennursingcoreig.com/StructureDefinition/onc-reasonable-adjustment",
   "version" : "0.1.0",
   "name" : "ONCReasonableAdjustment",
   "title" : "Reasonable Adjustment",
   "status" : "draft",
-  "date" : "2026-01-02T16:27:10+00:00",
+  "date" : "2026-01-02T23:43:46+00:00",
+  "publisher" : "The Open Nursing Community",
   "description" : "Captures specific strict requirements for care adjustments under the Equality Act (e.g., 'Needs BSL Interpreter', 'Cannot use stairs', 'Requires large print').",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -88,24 +89,12 @@ Other representations of profile: [CSV](StructureDefinition-onc-reasonable-adjus
         "path" : "Observation"
       },
       {
-        "id" : "Observation.category",
-        "path" : "Observation.category",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-              "code" : "exam"
-            }
-          ]
-        }
-      },
-      {
         "id" : "Observation.code",
         "path" : "Observation.code",
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "reasonable-adjustment"
             }
           ]

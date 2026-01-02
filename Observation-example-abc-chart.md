@@ -10,7 +10,7 @@ Profile: [PBS ABC Chart](StructureDefinition-onc-abc-chart.md)
 
 **status**: Final
 
-**category**: Exam
+**category**: Survey
 
 **code**: ABC Chart
 
@@ -50,7 +50,7 @@ Aggressive episode managed with de-escalation.
       "coding" : [
         {
           "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "exam"
+          "code" : "survey"
         }
       ]
     }
@@ -58,7 +58,7 @@ Aggressive episode managed with de-escalation.
   "code" : {
     "coding" : [
       {
-        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
         "code" : "abc-chart"
       }
     ]
@@ -84,7 +84,7 @@ Aggressive episode managed with de-escalation.
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "abc-antecedent"
           }
         ]
@@ -95,7 +95,7 @@ Aggressive episode managed with de-escalation.
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "abc-behaviour"
           }
         ]
@@ -106,7 +106,7 @@ Aggressive episode managed with de-escalation.
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "abc-consequence"
           }
         ]

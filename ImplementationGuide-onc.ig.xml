@@ -11,7 +11,8 @@
   <name value="OpenNursingCoreIG"/>
   <title value="Open Nursing Core FHIR Implementation Guide (ONC-IG)"/>
   <status value="draft"/>
-  <date value="2026-01-02T16:27:10+00:00"/>
+  <date value="2026-01-02T23:43:46+00:00"/>
+  <publisher value="The Open Nursing Community"/>
   <description value="Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome."/>
   <packageId value="onc.ig"/>
   <license value="MIT"/>
@@ -526,6 +527,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/onc-adpie-vs"/>
+      </reference>
+      <name value="ADPIE Nursing Process Phases"/>
+      <description value="The five phases of the professional nursing process."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -806,7 +818,7 @@
         <reference value="Observation/example-reasonable-adjustment"/>
       </reference>
       <name value="example-reasonable-adjustment"/>
-      <exampleCanonical value="https://fhir.clinyq.ai/StructureDefinition/onc-reasonable-adjustment"/>
+      <exampleCanonical value="https://opennursingcoreig.com/StructureDefinition/onc-reasonable-adjustment"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -946,6 +958,17 @@
       </reference>
       <name value="Intervention Goal Reference"/>
       <description value="Extension to link nursing interventions to the patient goals they are intended to achieve."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/ONCToNandaMapping"/>
+      </reference>
+      <name value="Mapping ONC Relational Concepts to NANDA-I"/>
+      <description value="Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1198,6 +1221,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/onc-empathy-index-vs"/>
+      </reference>
+      <name value="ONC Empathy &amp; Relational Engagement Index"/>
+      <description value="A clinical scale measuring the depth of therapeutic empathy in nurse-patient interactions. Traditional EHRs ignore this; the Super-Gold Standard makes it a primary outcome."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onc-equity-marker"/>
+      </reference>
+      <name value="ONC Equity Marker"/>
+      <description value="A technical extension applied to observations that have passed the Mandatory Equity Gate (i.e., they are skin-tone aware)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1271,6 +1316,17 @@
       </reference>
       <name value="ONC Observation Codes"/>
       <description value="Custom observation codes for Open Nursing Core"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/onc-relational-outcomes-vs"/>
+      </reference>
+      <name value="ONC Relational Care Outcomes"/>
+      <description value="Captures the measurable outcomes of relational and empathic nursing care."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1456,6 +1512,17 @@
       </reference>
       <name value="Reasonable Adjustment"/>
       <description value="Captures specific strict requirements for care adjustments under the Equality Act (e.g., 'Needs BSL Interpreter', 'Cannot use stairs', 'Requires large print')."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onc-relational-care-logical"/>
+      </reference>
+      <name value="Relational Care Logical Model"/>
+      <description value="A vendor-neutral clinical model of the relational nursing assessment. Defines WHAT data must be captured, regardless of HOW it is stored in FHIR."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="onc-adpie-vs"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet onc-adpie-vs</b></p><a name="onc-adpie-vs"> </a><a name="hconc-adpie-vs"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-onc-observation-codes.html"><code>https://opennursingcoreig.com/CodeSystem/onc-observation-codes</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-adpie-a">adpie-a</a></td><td>Assessment</td><td>Assessment phase of the nursing process</td></tr><tr><td><a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-adpie-d">adpie-d</a></td><td>Diagnosis</td><td>Diagnosis phase of the nursing process</td></tr><tr><td><a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-adpie-p">adpie-p</a></td><td>Planning</td><td>Planning phase of the nursing process</td></tr><tr><td><a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-adpie-i">adpie-i</a></td><td>Implementation</td><td>Implementation phase of the nursing process</td></tr><tr><td><a href="CodeSystem-onc-observation-codes.html#onc-observation-codes-adpie-e">adpie-e</a></td><td>Evaluation</td><td>Evaluation phase of the nursing process</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://opennursingcoreig.com/ValueSet/onc-adpie-vs"/>
+  <version value="0.1.0"/>
+  <name value="ONCADPIEVS"/>
+  <title value="ADPIE Nursing Process Phases"/>
+  <status value="draft"/>
+  <date value="2026-01-02T23:43:46+00:00"/>
+  <publisher value="The Open Nursing Community"/>
+  <description value="The five phases of the professional nursing process."/>
+  <compose>
+    <include>
+      <system value="https://opennursingcoreig.com/CodeSystem/onc-observation-codes"/>
+      <concept>
+        <code value="adpie-a"/>
+        <display value="Assessment"/>
+      </concept>
+      <concept>
+        <code value="adpie-d"/>
+        <display value="Diagnosis"/>
+      </concept>
+      <concept>
+        <code value="adpie-p"/>
+        <display value="Planning"/>
+      </concept>
+      <concept>
+        <code value="adpie-i"/>
+        <display value="Implementation"/>
+      </concept>
+      <concept>
+        <code value="adpie-e"/>
+        <display value="Evaluation"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

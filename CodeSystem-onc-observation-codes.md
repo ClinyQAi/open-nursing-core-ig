@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes | *Version*:0.1.0 |
+| *Official URL*:https://opennursingcoreig.com/CodeSystem/onc-observation-codes | *Version*:0.1.0 |
 | Draft as of 2026-01-02 | *Computable Name*:ONCObservationCodes |
 
  
@@ -20,7 +20,9 @@ Custom observation codes for Open Nursing Core
 * [NEWS2SubscoreCodeValueSet](ValueSet-news2-subscore-code-vs.md)
 * [NursingProblemValueSet](ValueSet-nursing-problem-valueset.md)
 * [AlertnessVS](ValueSet-onc-4at-alertness-vs.md)
+* [ONCADPIEVS](ValueSet-onc-adpie-vs.md)
 * [ClinicalFrailtyScaleVS](ValueSet-onc-cfs-vs.md)
+* [ONCEmpathyIndexVS](ValueSet-onc-empathy-index-vs.md)
 * [MentalCapacityVS](ValueSet-onc-mca-vs.md)
 * [PBSFunctionVS](ValueSet-onc-pbs-function-vs.md)
 * [SkinToneVS](ValueSet-skintone-vs.md)
@@ -34,15 +36,16 @@ Custom observation codes for Open Nursing Core
 {
   "resourceType" : "CodeSystem",
   "id" : "onc-observation-codes",
-  "url" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+  "url" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
   "version" : "0.1.0",
   "name" : "ONCObservationCodes",
   "title" : "ONC Observation Codes",
   "status" : "draft",
-  "date" : "2026-01-02T16:27:10+00:00",
+  "date" : "2026-01-02T23:43:46+00:00",
+  "publisher" : "The Open Nursing Community",
   "description" : "Custom observation codes for Open Nursing Core",
   "content" : "complete",
-  "count" : 121,
+  "count" : 131,
   "concept" : [
     {
       "code" : "mst-score",
@@ -348,6 +351,56 @@ Custom observation codes for Open Nursing Core
       "code" : "bristol-7",
       "display" : "Type 7",
       "definition" : "Watery, no solid pieces. Entirely liquid"
+    },
+    {
+      "code" : "adpie-a",
+      "display" : "Assessment",
+      "definition" : "Assessment phase of the nursing process"
+    },
+    {
+      "code" : "adpie-d",
+      "display" : "Diagnosis",
+      "definition" : "Diagnosis phase of the nursing process"
+    },
+    {
+      "code" : "adpie-p",
+      "display" : "Planning",
+      "definition" : "Planning phase of the nursing process"
+    },
+    {
+      "code" : "adpie-i",
+      "display" : "Implementation",
+      "definition" : "Implementation phase of the nursing process"
+    },
+    {
+      "code" : "adpie-e",
+      "display" : "Evaluation",
+      "definition" : "Evaluation phase of the nursing process"
+    },
+    {
+      "code" : "empathy-1",
+      "display" : "Low Empathy",
+      "definition" : "Task-focused interaction with minimal person-centred engagement."
+    },
+    {
+      "code" : "empathy-2",
+      "display" : "Basic Empathy",
+      "definition" : "Professional interaction with patient identity acknowledged."
+    },
+    {
+      "code" : "empathy-3",
+      "display" : "Moderate Empathy",
+      "definition" : "Active relational engagement with shared decision making."
+    },
+    {
+      "code" : "empathy-4",
+      "display" : "High Empathy",
+      "definition" : "Authentic partnership with deep understanding of patient experience."
+    },
+    {
+      "code" : "empathy-5",
+      "display" : "Relational Excellence",
+      "definition" : "Flourishing partnership with total alignment on 'What Matters to Me'."
     },
     {
       "code" : "abbey-score",

@@ -41,7 +41,8 @@ Other representations of profile: [CSV](StructureDefinition-onc-seizure-record.c
   "name" : "ONCSeizureRecord",
   "title" : "Seizure Record",
   "status" : "draft",
-  "date" : "2026-01-02T16:27:10+00:00",
+  "date" : "2026-01-02T23:43:46+00:00",
+  "publisher" : "The Open Nursing Community",
   "description" : "Record of a specific seizure event, including type, duration, triggers, and recovery phases. Essential for epilepsy management and identifying patterns.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -105,7 +106,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-seizure-record.c
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "seizure-record"
             }
           ]
@@ -150,7 +151,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-seizure-record.c
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "seizure-type"
             }
           ]
@@ -179,7 +180,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-seizure-record.c
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "seizure-duration"
             }
           ]
@@ -223,7 +224,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-seizure-record.c
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "seizure-recovery"
             }
           ]
@@ -252,7 +253,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-seizure-record.c
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "seizure-trigger"
             }
           ]

@@ -31,7 +31,7 @@ Jane Doe Female, DoB Unknown
   },
   "extension" : [
     {
-      "url" : "https://clinyqai.github.io/open-nursing-core-ig/StructureDefinition/UKCore-Extension-EthnicCategory",
+      "url" : "https://opennursingcoreig.com/StructureDefinition/UKCore-Extension-EthnicCategory",
       "valueCodeableConcept" : {
         "coding" : [
           {

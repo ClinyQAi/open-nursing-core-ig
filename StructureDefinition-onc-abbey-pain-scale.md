@@ -41,7 +41,8 @@ Other representations of profile: [CSV](StructureDefinition-onc-abbey-pain-scale
   "name" : "ONCAbbeyPainScale",
   "title" : "Abbey Pain Scale",
   "status" : "draft",
-  "date" : "2026-01-02T16:27:10+00:00",
+  "date" : "2026-01-02T23:43:46+00:00",
+  "publisher" : "The Open Nursing Community",
   "description" : "Pain assessment for people with dementia or who cannot verbalise. Assesses 6 parameters: Vocalization, Facial Expression, Body Language, Behavioral Change, Physiological Change, Physical Changes. Total score determines pain severity (0-2 No pain, 3-7 Mild, 8-13 Moderate, 14+ Severe).",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -105,7 +106,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-abbey-pain-scale
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "abbey-score"
             }
           ]
@@ -160,7 +161,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-abbey-pain-scale
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "abbey-vocalization"
             }
           ]
@@ -192,7 +193,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-abbey-pain-scale
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "abbey-facial-expression"
             }
           ]
@@ -223,7 +224,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-abbey-pain-scale
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "abbey-body-language"
             }
           ]
@@ -254,7 +255,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-abbey-pain-scale
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "abbey-behavioral-change"
             }
           ]
@@ -285,7 +286,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-abbey-pain-scale
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "abbey-psychological-change"
             }
           ]
@@ -316,7 +317,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-abbey-pain-scale
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "abbey-physical-changes"
             }
           ]

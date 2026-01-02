@@ -93,7 +93,8 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "draft",
-  "date" : "2026-01-02T16:27:10+00:00",
+  "date" : "2026-01-02T23:43:46+00:00",
+  "publisher" : "The Open Nursing Community",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome.",
   "packageId" : "onc.ig",
   "license" : "MIT",
@@ -898,6 +899,20 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/onc-adpie-vs"
+        },
+        "name" : "ADPIE Nursing Process Phases",
+        "description" : "The five phases of the professional nursing process.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:resource"
           }
         ],
@@ -1257,7 +1272,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
           "reference" : "Observation/example-reasonable-adjustment"
         },
         "name" : "example-reasonable-adjustment",
-        "exampleCanonical" : "https://fhir.clinyq.ai/StructureDefinition/onc-reasonable-adjustment"
+        "exampleCanonical" : "https://opennursingcoreig.com/StructureDefinition/onc-reasonable-adjustment"
       },
       {
         "extension" : [
@@ -1436,6 +1451,20 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
         },
         "name" : "Intervention Goal Reference",
         "description" : "Extension to link nursing interventions to the patient goals they are intended to achieve.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ConceptMap"
+          }
+        ],
+        "reference" : {
+          "reference" : "ConceptMap/ONCToNandaMapping"
+        },
+        "name" : "Mapping ONC Relational Concepts to NANDA-I",
+        "description" : "Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses.",
         "exampleBoolean" : false
       },
       {
@@ -1759,6 +1788,34 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/onc-empathy-index-vs"
+        },
+        "name" : "ONC Empathy & Relational Engagement Index",
+        "description" : "A clinical scale measuring the depth of therapeutic empathy in nurse-patient interactions. Traditional EHRs ignore this; the Super-Gold Standard makes it a primary outcome.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-equity-marker"
+        },
+        "name" : "ONC Equity Marker",
+        "description" : "A technical extension applied to observations that have passed the Mandatory Equity Gate (i.e., they are skin-tone aware).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:resource"
           }
         ],
@@ -1851,6 +1908,20 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
         },
         "name" : "ONC Observation Codes",
         "description" : "Custom observation codes for Open Nursing Core",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/onc-relational-outcomes-vs"
+        },
+        "name" : "ONC Relational Care Outcomes",
+        "description" : "Captures the measurable outcomes of relational and empathic nursing care.",
         "exampleBoolean" : false
       },
       {
@@ -2087,6 +2158,20 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
         },
         "name" : "Reasonable Adjustment",
         "description" : "Captures specific strict requirements for care adjustments under the Equality Act (e.g., 'Needs BSL Interpreter', 'Cannot use stairs', 'Requires large print').",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:logical"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onc-relational-care-logical"
+        },
+        "name" : "Relational Care Logical Model",
+        "description" : "A vendor-neutral clinical model of the relational nursing assessment. Defines WHAT data must be captured, regardless of HOW it is stored in FHIR.",
         "exampleBoolean" : false
       },
       {

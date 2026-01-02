@@ -10,49 +10,20 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-goal-evaluation-valueset.html" : "Goal Evaluation Value Set",
-      "ValueSet-onc-prognosis-vs.html" : "Nursing Prognosis ValueSet",
-      "ValueSet-onc-4at-attention-vs.html" : "4AT Attention Value Set",
+      "ValueSet-onc-4at-acute-change-vs.html" : "4AT Acute Change Value Set",
+      "ValueSet-nursing-problem-valueset.html" : "Nursing Problem Value Set",
       "ValueSet-acvpu-vs.html" : "ACVPU Value Set",
-      "ValueSet-onc-goal-target-measure-vs.html" : "Goal Target Measure ValueSet",
-      "ValueSet-onc-4at-alertness-vs.html" : "4AT Alertness Value Set",
       "ValueSet-nursing-intervention-valueset.html" : "Nursing Intervention Value Set",
-      "ValueSet-housing-status-vs.html" : "Housing Status Value Set",
-      "ValueSet-nursing-problem-valueset.html" : "Nursing Problem Value Set",
       "ValueSet-onc-4at-amt4-vs.html" : "4AT AMT4 Value Set",
-      "http://hl7.org/fhir/R4/valueset-consistency-type.html" : "Fluid Consistency Type Codes",
-      "ValueSet-inspired-oxygen-vs.html" : "Inspired Oxygen Value Set",
-      "ValueSet-onc-4at-acute-change-vs.html" : "4AT Acute Change Value Set"
-    },
-    {
-      "url" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "ONCObservationCodes",
-      "title" : "ONC Observation Codes",
-      "description" : "Custom observation codes for Open Nursing Core",
-      "uses" : {
-      },
-      "ValueSet-onc-pbs-function-vs.html" : "PBS Behaviour Function ValueSet",
-      "ValueSet-news2-subscore-code-vs.html" : "NEWS2 Sub-Score Codes",
-      "ValueSet-onc-mca-vs.html" : "Mental Capacity Finding Value Set",
       "ValueSet-onc-4at-alertness-vs.html" : "4AT Alertness Value Set",
-      "ValueSet-nursing-problem-valueset.html" : "Nursing Problem Value Set",
-      "ValueSet-wound-stage-vs.html" : "Wound Stage Value Set",
-      "ValueSet-news2-code-vs.html" : "NEWS2 Code Value Set",
-      "ValueSet-onc-cfs-vs.html" : "Clinical Frailty Scale Value Set",
-      "ValueSet-skintone-vs.html" : "Fitzpatrick Skin Tone Value Set"
-    },
-    {
-      "url" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "ONCProblemType",
-      "title" : "Problem Type CodeSystem",
-      "description" : "Code system for categorizing types of nursing problems",
-      "uses" : {
-      },
-      "ValueSet-problem-category-valueset.html" : "Problem Category Value Set"
+      "ValueSet-onc-prognosis-vs.html" : "Nursing Prognosis ValueSet",
+      "ValueSet-inspired-oxygen-vs.html" : "Inspired Oxygen Value Set",
+      "ValueSet-onc-4at-attention-vs.html" : "4AT Attention Value Set",
+      "ValueSet-goal-evaluation-valueset.html" : "Goal Evaluation Value Set",
+      "ValueSet-onc-relational-outcomes-vs.html" : "ONC Relational Care Outcomes",
+      "ValueSet-housing-status-vs.html" : "Housing Status Value Set",
+      "http://hl7.org/fhir/R4/valueset-consistency-type.html" : "Fluid Consistency Type Codes",
+      "ValueSet-onc-goal-target-measure-vs.html" : "Goal Target Measure ValueSet"
     },
     {
       "url" : "https://opennursingcoreig.com/CodeSystem/onc-monk-scale",
@@ -64,6 +35,38 @@
       "uses" : {
       },
       "ValueSet-onc-monk-scale-vs.html" : "Monk Skin Tone Scale ValueSet"
+    },
+    {
+      "url" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ONCObservationCodes",
+      "title" : "ONC Observation Codes",
+      "description" : "Custom observation codes for Open Nursing Core",
+      "uses" : {
+      },
+      "ValueSet-onc-pbs-function-vs.html" : "PBS Behaviour Function ValueSet",
+      "ValueSet-nursing-problem-valueset.html" : "Nursing Problem Value Set",
+      "ValueSet-wound-stage-vs.html" : "Wound Stage Value Set",
+      "ValueSet-news2-code-vs.html" : "NEWS2 Code Value Set",
+      "ValueSet-onc-empathy-index-vs.html" : "ONC Empathy & Relational Engagement Index",
+      "ValueSet-onc-adpie-vs.html" : "ADPIE Nursing Process Phases",
+      "ValueSet-onc-4at-alertness-vs.html" : "4AT Alertness Value Set",
+      "ValueSet-skintone-vs.html" : "Fitzpatrick Skin Tone Value Set",
+      "ValueSet-onc-cfs-vs.html" : "Clinical Frailty Scale Value Set",
+      "ValueSet-onc-mca-vs.html" : "Mental Capacity Finding Value Set",
+      "ValueSet-news2-subscore-code-vs.html" : "NEWS2 Sub-Score Codes"
+    },
+    {
+      "url" : "https://opennursingcoreig.com/CodeSystem/onc-problem-type",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ONCProblemType",
+      "title" : "Problem Type CodeSystem",
+      "description" : "Code system for categorizing types of nursing problems",
+      "uses" : {
+      },
+      "ValueSet-problem-category-valueset.html" : "Problem Category Value Set"
     }
   ]
 }

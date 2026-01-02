@@ -42,7 +42,7 @@ Profile: [Nursing Problem](StructureDefinition-onc-nursing-problem.md)
     {
       "coding" : [
         {
-          "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type",
+          "system" : "https://opennursingcoreig.com/CodeSystem/onc-problem-type",
           "code" : "nursing-diagnosis",
           "display" : "Nursing Diagnosis"
         }
@@ -52,7 +52,7 @@ Profile: [Nursing Problem](StructureDefinition-onc-nursing-problem.md)
   "code" : {
     "coding" : [
       {
-        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
         "code" : "risk-falls",
         "display" : "Risk of falls"
       }

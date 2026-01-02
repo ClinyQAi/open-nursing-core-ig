@@ -10,7 +10,7 @@ Profile: [Urinalysis](StructureDefinition-onc-urinalysis.md)
 
 **status**: Final
 
-**category**: Exam
+**category**: Survey
 
 **code**: Urinalysis Panel
 
@@ -45,7 +45,7 @@ Profile: [Urinalysis](StructureDefinition-onc-urinalysis.md)
       "coding" : [
         {
           "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "exam"
+          "code" : "survey"
         }
       ]
     }
@@ -53,7 +53,7 @@ Profile: [Urinalysis](StructureDefinition-onc-urinalysis.md)
   "code" : {
     "coding" : [
       {
-        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
         "code" : "urinalysis-panel"
       }
     ]
@@ -72,7 +72,7 @@ Profile: [Urinalysis](StructureDefinition-onc-urinalysis.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "ua-leukocytes"
           }
         ]
@@ -83,7 +83,7 @@ Profile: [Urinalysis](StructureDefinition-onc-urinalysis.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "ua-nitrites"
           }
         ]
@@ -94,7 +94,7 @@ Profile: [Urinalysis](StructureDefinition-onc-urinalysis.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "ua-blood"
           }
         ]
@@ -105,7 +105,7 @@ Profile: [Urinalysis](StructureDefinition-onc-urinalysis.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "ua-ph"
           }
         ]

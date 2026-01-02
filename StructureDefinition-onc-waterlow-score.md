@@ -41,7 +41,8 @@ Other representations of profile: [CSV](StructureDefinition-onc-waterlow-score.c
   "name" : "ONCWaterlowScore",
   "title" : "Waterlow Score",
   "status" : "draft",
-  "date" : "2026-01-02T16:27:10+00:00",
+  "date" : "2026-01-02T23:43:46+00:00",
+  "publisher" : "The Open Nursing Community",
   "description" : "Waterlow Pressure Ulcer Risk Assessment - NHS standard tool. Score ≥10 indicates at risk, ≥15 high risk, ≥20 very high risk.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -88,9 +89,9 @@ Other representations of profile: [CSV](StructureDefinition-onc-waterlow-score.c
         "path" : "Observation",
         "constraint" : [
           {
-            "key" : "onc-equity-skin-tone-required",
+            "key" : "onc-equity-gate-1",
             "severity" : "error",
-            "human" : "Wound assessments MUST have an associated skin tone observation to ensure equitable care (AI Safety Gate).",
+            "human" : "Clinical safety rule: Skin observations (pressure ulcers, wounds) MUST include a Skin Tone assessment to ensure equitable care thresholds.",
             "expression" : "hasMember.resolve().code.coding.where(code = '66555-4' or code = 'mst-score').exists()",
             "source" : "https://opennursingcoreig.com/StructureDefinition/onc-waterlow-score"
           }
@@ -107,7 +108,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-waterlow-score.c
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "waterlow-score",
               "display" : "Waterlow Score"
             }

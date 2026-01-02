@@ -23,6 +23,14 @@ These define logic, asset collections and other libraries as part of content in 
 | :--- | :--- |
 | [ONC NEWS2 Auto-Calculation Logic](Library-onc-news2-cql.md) | Logic library for calculating National Early Warning Score 2 (NEWS2) from FHIR Observations. |
 
+### Structures: Logical Models 
+
+These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.
+
+| | |
+| :--- | :--- |
+| [Relational Care Logical Model](StructureDefinition-onc-relational-care-logical.md) | A vendor-neutral clinical model of the relational nursing assessment. Defines WHAT data must be captured, regardless of HOW it is stored in FHIR. |
+
 ### Structures: Resource Profiles 
 
 These define constraints on FHIR resources for systems conforming to this implementation guide.
@@ -93,6 +101,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | | |
 | :--- | :--- |
 | [Intervention Goal Reference](StructureDefinition-intervention-goal-reference.md) | Extension to link nursing interventions to the patient goals they are intended to achieve. |
+| [ONC Equity Marker](StructureDefinition-onc-equity-marker.md) | A technical extension applied to observations that have passed the Mandatory Equity Gate (i.e., they are skin-tone aware). |
 | [Observation Goal Reference](StructureDefinition-observation-goal-reference.md) | Extension to link goal evaluation observations to the patient goals being evaluated. |
 | [UK Core Ethnic Category](StructureDefinition-UKCore-Extension-EthnicCategory.md) | An extension to record the ethnic category of a patient, as per UK Core standards. |
 
@@ -107,6 +116,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [4AT Alertness Value Set](ValueSet-onc-4at-alertness-vs.md) | Scoring options for 4AT Alertness |
 | [4AT Attention Value Set](ValueSet-onc-4at-attention-vs.md) | Scoring for Months Backwards test |
 | [ACVPU Value Set](ValueSet-acvpu-vs.md) | ACVPU consciousness level codes |
+| [ADPIE Nursing Process Phases](ValueSet-onc-adpie-vs.md) | The five phases of the professional nursing process. |
 | [Clinical Frailty Scale Value Set](ValueSet-onc-cfs-vs.md) | Codes for Rockwood Clinical Frailty Scale (1-9) |
 | [Fitzpatrick Skin Tone Value Set](ValueSet-skintone-vs.md) | Value set for Fitzpatrick skin type classifications |
 | [Goal Evaluation Value Set](ValueSet-goal-evaluation-valueset.md) | Value set for evaluating patient goal outcomes |
@@ -120,6 +130,8 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Nursing Intervention Value Set](ValueSet-nursing-intervention-valueset.md) | Value set for nursing interventions |
 | [Nursing Problem Value Set](ValueSet-nursing-problem-valueset.md) | Value set for nursing problems and diagnoses |
 | [Nursing Prognosis ValueSet](ValueSet-onc-prognosis-vs.md) | Prognosis codes for clinical impression |
+| [ONC Empathy & Relational Engagement Index](ValueSet-onc-empathy-index-vs.md) | A clinical scale measuring the depth of therapeutic empathy in nurse-patient interactions. Traditional EHRs ignore this; the Super-Gold Standard makes it a primary outcome. |
+| [ONC Relational Care Outcomes](ValueSet-onc-relational-outcomes-vs.md) | Captures the measurable outcomes of relational and empathic nursing care. |
 | [PBS Behaviour Function ValueSet](ValueSet-onc-pbs-function-vs.md) | Common functions of behaviour (SEAT) |
 | [Pain Assessment Code Value Set](ValueSet-pain-assessment-code-vs.md) | LOINC codes for pain severity assessment |
 | [Problem Category Value Set](ValueSet-problem-category-valueset.md) | Value set for categorizing nursing problems |
@@ -134,6 +146,14 @@ These define new code systems used by systems conforming to this implementation 
 | [Monk Skin Tone Scale CodeSystem](CodeSystem-onc-monk-scale.md) |  |
 | [ONC Observation Codes](CodeSystem-onc-observation-codes.md) | Custom observation codes for Open Nursing Core |
 | [Problem Type CodeSystem](CodeSystem-onc-problem-type.md) | Code system for categorizing types of nursing problems |
+
+### Terminology: Concept Maps 
+
+These define transformations to convert between codes by systems conforming with this implementation guide.
+
+| | |
+| :--- | :--- |
+| [Mapping ONC Relational Concepts to NANDA-I](ConceptMap-ONCToNandaMapping.md) | Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses. |
 
 ### Example: Example Instances 
 

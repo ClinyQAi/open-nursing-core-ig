@@ -1,0 +1,71 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://opennursingcoreig.com/ConceptMap/ONCToNandaMapping> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ONCToNandaMapping"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap ONCToNandaMapping</b></p><a name=\"ONCToNandaMapping\"> </a><a name=\"hcONCToNandaMapping\"> </a><p>Mapping from https://fhir.clinyq.ai/ValueSet/onc-relational-findings-vs to http://terminology.hl7.org/CodeSystem/nanda-i</p><br/><p><b>Group 1 </b>Mapping from <code>https://fhir.clinyq.ai/CodeSystem/onc-observation-codes</code> to <code>http://terminology.hl7.org/CodeSystem/nanda-i</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>patient-story</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\" title=\"relatedto\">is related to</a></td><td>00053 (Social Isolation)</td></tr><tr><td>relational-engagement</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\" title=\"relatedto\">is related to</a></td><td>00054 (Risk for Loneliness)</td></tr><tr><td>skintone-observation</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#specializes\" title=\"specializes\">has specialization</a></td><td>399912005 (Wound Assessment)</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://fhir.clinyq.ai/ConceptMap/onc-to-nanda"^^xsd:anyURI ;
+     fhir:l <https://fhir.clinyq.ai/ConceptMap/onc-to-nanda>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ONCToNandaMapping"] ; # 
+  fhir:title [ fhir:v "Mapping ONC Relational Concepts to NANDA-I"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2026-01-02T23:43:46+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "The Open Nursing Community"] ; # 
+  fhir:description [ fhir:v "Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses."] ; # 
+  fhir:source [
+     a fhir:Canonical ;
+     fhir:v "https://fhir.clinyq.ai/ValueSet/onc-relational-findings-vs"^^xsd:anyURI ;
+     fhir:l <https://fhir.clinyq.ai/ValueSet/onc-relational-findings-vs>
+  ] ; # 
+  fhir:target [
+     a fhir:Canonical ;
+     fhir:v "http://terminology.hl7.org/CodeSystem/nanda-i"^^xsd:anyURI ;
+     fhir:l <http://terminology.hl7.org/CodeSystem/nanda-i>
+  ] ; # 
+  fhir:group ( [
+     fhir:source [
+       fhir:v "https://fhir.clinyq.ai/CodeSystem/onc-observation-codes"^^xsd:anyURI ;
+       fhir:l <https://fhir.clinyq.ai/CodeSystem/onc-observation-codes>
+     ] ;
+     fhir:target [
+       fhir:v "http://terminology.hl7.org/CodeSystem/nanda-i"^^xsd:anyURI ;
+       fhir:l <http://terminology.hl7.org/CodeSystem/nanda-i>
+     ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "patient-story" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "00053" ] ;
+         fhir:display [ fhir:v "Social Isolation" ] ;
+         fhir:equivalence [ fhir:v "relatedto" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "relational-engagement" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "00054" ] ;
+         fhir:display [ fhir:v "Risk for Loneliness" ] ;
+         fhir:equivalence [ fhir:v "relatedto" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "skintone-observation" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "399912005" ] ;
+         fhir:display [ fhir:v "Wound Assessment" ] ;
+         fhir:equivalence [ fhir:v "specializes" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

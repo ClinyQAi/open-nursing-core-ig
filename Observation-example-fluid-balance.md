@@ -10,7 +10,7 @@ Profile: [Fluid Balance](StructureDefinition-onc-fluid-balance.md)
 
 **status**: Final
 
-**category**: Exam
+**category**: Survey
 
 **code**: Fluid Balance
 
@@ -43,7 +43,7 @@ Profile: [Fluid Balance](StructureDefinition-onc-fluid-balance.md)
       "coding" : [
         {
           "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "exam"
+          "code" : "survey"
         }
       ]
     }
@@ -51,7 +51,7 @@ Profile: [Fluid Balance](StructureDefinition-onc-fluid-balance.md)
   "code" : {
     "coding" : [
       {
-        "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+        "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
         "code" : "fluid-balance"
       }
     ]
@@ -73,7 +73,7 @@ Profile: [Fluid Balance](StructureDefinition-onc-fluid-balance.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "fluid-input-total"
           }
         ]
@@ -87,7 +87,7 @@ Profile: [Fluid Balance](StructureDefinition-onc-fluid-balance.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+            "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
             "code" : "fluid-output-total"
           }
         ]

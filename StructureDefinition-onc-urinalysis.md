@@ -41,7 +41,8 @@ Other representations of profile: [CSV](StructureDefinition-onc-urinalysis.csv),
   "name" : "ONCUrinalysis",
   "title" : "Urinalysis",
   "status" : "draft",
-  "date" : "2026-01-02T16:27:10+00:00",
+  "date" : "2026-01-02T23:43:46+00:00",
+  "publisher" : "The Open Nursing Community",
   "description" : "Point-of-care urine dipstick test results. Used to screen for urinary tract infection (UTI), diabetes (glucose/ketones), and kidney health.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
@@ -105,7 +106,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-urinalysis.csv),
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "urinalysis-panel"
             }
           ]
@@ -150,7 +151,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-urinalysis.csv),
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "ua-leukocytes"
             }
           ]
@@ -180,7 +181,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-urinalysis.csv),
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "ua-nitrites"
             }
           ]
@@ -210,7 +211,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-urinalysis.csv),
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "ua-blood"
             }
           ]
@@ -240,7 +241,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-urinalysis.csv),
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "ua-protein"
             }
           ]
@@ -269,7 +270,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-urinalysis.csv),
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "ua-glucose"
             }
           ]
@@ -298,7 +299,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-urinalysis.csv),
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "ua-ketones"
             }
           ]
@@ -327,7 +328,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-urinalysis.csv),
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "ua-ph"
             }
           ]
@@ -356,7 +357,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-urinalysis.csv),
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes",
+              "system" : "https://opennursingcoreig.com/CodeSystem/onc-observation-codes",
               "code" : "ua-sg"
             }
           ]
