@@ -64,4 +64,5 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./output
+        cname: opennursingcoreig.com
         commit_message: "deploy: update fhir ig website [skip ci]"
