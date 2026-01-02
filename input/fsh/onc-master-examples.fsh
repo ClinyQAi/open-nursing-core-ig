@@ -24,7 +24,7 @@ Usage: #example
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
 // FIX: Added the mandatory Nursing Category
-* category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
+* category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * valueCodeableConcept = http://snomed.info/sct#403154004 "Fitzpatrick skin type II"
 
 // ==============================================================================
@@ -36,37 +36,37 @@ Usage: #example
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
-* category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
+* category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * valueQuantity.value = 18
 * valueQuantity.unit = "{score}"
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code = #1
-* component[sensoryPerception].code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#braden-sensory "Braden Sensory Perception"
+* component[sensoryPerception].code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#braden-sensory "Braden Sensory Perception"
 * component[sensoryPerception].valueQuantity.value = 3
 * component[sensoryPerception].valueQuantity.unit = "{score}"
 * component[sensoryPerception].valueQuantity.system = "http://unitsofmeasure.org"
 * component[sensoryPerception].valueQuantity.code = #1
-* component[moisture].code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#braden-moisture "Braden Moisture"
+* component[moisture].code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#braden-moisture "Braden Moisture"
 * component[moisture].valueQuantity.value = 4
 * component[moisture].valueQuantity.unit = "{score}"
 * component[moisture].valueQuantity.system = "http://unitsofmeasure.org"
 * component[moisture].valueQuantity.code = #1
-* component[activity].code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#braden-activity "Braden Activity"
+* component[activity].code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#braden-activity "Braden Activity"
 * component[activity].valueQuantity.value = 2
 * component[activity].valueQuantity.unit = "{score}"
 * component[activity].valueQuantity.system = "http://unitsofmeasure.org"
 * component[activity].valueQuantity.code = #1
-* component[mobility].code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#braden-mobility "Braden Mobility"
+* component[mobility].code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#braden-mobility "Braden Mobility"
 * component[mobility].valueQuantity.value = 3
 * component[mobility].valueQuantity.unit = "{score}"
 * component[mobility].valueQuantity.system = "http://unitsofmeasure.org"
 * component[mobility].valueQuantity.code = #1
-* component[nutrition].code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#braden-nutrition "Braden Nutrition"
+* component[nutrition].code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#braden-nutrition "Braden Nutrition"
 * component[nutrition].valueQuantity.value = 3
 * component[nutrition].valueQuantity.unit = "{score}"
 * component[nutrition].valueQuantity.system = "http://unitsofmeasure.org"
 * component[nutrition].valueQuantity.code = #1
-* component[frictionAndShear].code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#braden-friction "Braden Friction/Shear"
+* component[frictionAndShear].code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#braden-friction "Braden Friction/Shear"
 * component[frictionAndShear].valueQuantity.value = 3
 * component[frictionAndShear].valueQuantity.unit = "{score}"
 * component[frictionAndShear].valueQuantity.system = "http://unitsofmeasure.org"
@@ -82,8 +82,8 @@ InstanceOf: ONCNursingProblem
 Usage: #example
 * subject = Reference(patient-example-jane)
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
-* category = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type#nursing-diagnosis "Nursing Diagnosis"
-* code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#risk-falls "Risk of falls"
+* category = https://opennursingcoreig.com/CodeSystem/onc-problem-type#nursing-diagnosis "Nursing Diagnosis"
+* code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#risk-falls "Risk of falls"
 
 Instance: example-patient-goal
 InstanceOf: ONCNursingGoal
@@ -112,6 +112,6 @@ Usage: #example
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
-* category.coding = http://terminology.hl7.org/CodeSystem/observation-category#survey
+* category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * valueCodeableConcept = http://snomed.info/sct#385652002 "Objective achieved"
 * focus = Reference(example-patient-goal)

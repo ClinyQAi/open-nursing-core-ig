@@ -67,7 +67,7 @@ CodeSystem: ONCProblemType
 Id: onc-problem-type
 Title: "Problem Type CodeSystem"
 Description: "Code system for categorizing types of nursing problems"
-* ^url = "https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-problem-type"
+* ^url = "https://opennursingcoreig.com/CodeSystem/onc-problem-type"
 * ^experimental = false
 * ^caseSensitive = true
 * #nursing-diagnosis "Nursing Diagnosis" "A clinical judgment about individual, family, or community responses to actual or potential health problems"

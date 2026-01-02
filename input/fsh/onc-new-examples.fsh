@@ -7,7 +7,7 @@ Usage: #example
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
-* category.coding = http://terminology.hl7.org/CodeSystem/observation-category#social-history
+* category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
 * valueString = "Being able to walk her dog (Buster) daily."
 * note.text = "This is her primary motivation for physiotherapy."
 
@@ -17,7 +17,7 @@ Usage: #example
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
-* category.coding = http://terminology.hl7.org/CodeSystem/observation-category#social-history
+* category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
 * valueString = "Jane was a librarian for 40 years. She loves classical music and gardening. She lost her husband 2 years ago."
 
 // ==============================================================================
@@ -29,8 +29,8 @@ Usage: #example
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
-* category.coding = http://terminology.hl7.org/CodeSystem/observation-category#exam
-* valueCodeableConcept = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#cfs-5 "Mildly Frail"
+* category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#survey
+* valueCodeableConcept = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#cfs-5 "Mildly Frail"
 * note.text = "Mildly Frail - slowing up, needs help with high order IADLs"
 
 Instance: example-4at-delirium
@@ -39,13 +39,13 @@ Usage: #example
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
-* category.coding = http://terminology.hl7.org/CodeSystem/observation-category#exam
+* category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * valueQuantity.value = 5
 * valueQuantity.unit = "{score}"
-* component[alertness].valueCodeableConcept = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#4at-alert-normal "Normal"
-* component[amt4].valueCodeableConcept = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#4at-amt4-1error "1 Error"
-* component[attention].valueCodeableConcept = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#4at-attention-gt7 "Months backwards < 7 months correct"
-* component[acuteChange].valueCodeableConcept = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#4at-change-no "No"
+* component[alertness].valueCodeableConcept = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#4at-alert-normal "Normal"
+* component[amt4].valueCodeableConcept = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#4at-amt4-1error "1 Error"
+* component[attention].valueCodeableConcept = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#4at-attention-gt7 "Months backwards < 7 months correct"
+* component[acuteChange].valueCodeableConcept = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#4at-change-no "No"
 
 // ==============================================================================
 // 7. EQUALITY & MENTAL CAPACITY (Phase 11)
@@ -56,7 +56,7 @@ Usage: #example
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
-* category.coding = http://terminology.hl7.org/CodeSystem/observation-category#exam
+* category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * valueString = "Requires large print documents (Font size 16+)."
 
 Instance: example-mental-capacity
@@ -65,8 +65,8 @@ Usage: #example
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
-* category.coding = http://terminology.hl7.org/CodeSystem/observation-category#exam
-* valueCodeableConcept = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#mca-present "Capacity Present"
+* category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#survey
+* valueCodeableConcept = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#mca-present "Capacity Present"
 * note.text = "Assessment for decision to return home."
 
 // ==============================================================================
@@ -78,7 +78,7 @@ Usage: #example
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
-* category.coding = http://terminology.hl7.org/CodeSystem/observation-category#exam
+* category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * valueQuantity.value = 4
 * valueQuantity.unit = "{score}"
 
@@ -88,7 +88,7 @@ Usage: #example
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
-* category.coding = http://terminology.hl7.org/CodeSystem/observation-category#exam
+* category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * valueQuantity.value = 2
 * valueQuantity.unit = "{score}"
 * component[vocalization].valueInteger = 0
@@ -104,7 +104,7 @@ Usage: #example
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
-* category.coding = http://terminology.hl7.org/CodeSystem/observation-category#exam
+* category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * valueQuantity.value = 500
 * valueQuantity.unit = "mL"
 * component[input].valueQuantity.value = 2000
@@ -121,7 +121,7 @@ Usage: #example
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
-* category.coding = http://terminology.hl7.org/CodeSystem/observation-category#exam
+* category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * valueCodeableConcept.text = "Frustration/Tangible"
 * note.text = "Aggressive episode managed with de-escalation."
 * component[antecedent].valueString = "Denied access to garden due to rain."
@@ -134,7 +134,7 @@ Usage: #example
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
-* category.coding = http://terminology.hl7.org/CodeSystem/observation-category#exam
+* category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * valueQuantity.value = 0
 * valueQuantity.unit = "{score}"
 * component[lips].valueString = "Pink, moist"
@@ -148,7 +148,7 @@ Usage: #example
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
-* category.coding = http://terminology.hl7.org/CodeSystem/observation-category#exam
+* category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * valueString = "Tonic-clonic seizure lasting 2 mins"
 * component[type].valueString = "Tonic-Clonic"
 * component[duration].valueQuantity.value = 2
@@ -161,7 +161,7 @@ Usage: #example
 * status = #final
 * subject = Reference(patient-example-jane)
 * performer = Reference(practitioner-example)
-* category.coding = http://terminology.hl7.org/CodeSystem/observation-category#exam
+* category[nursing] = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * valueString = "Suggestive of UTI"
 * component[leukocytes].valueString = "++"
 * component[nitrites].valueString = "Positive"

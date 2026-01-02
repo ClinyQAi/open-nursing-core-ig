@@ -53,7 +53,7 @@ Id: onc-barthel-index
 Title: "Barthel Index"
 Description: "Barthel Index for measuring independence in activities of daily living (ADL). Score 0-20=total dependency, 91-99=slight dependency, 100=independent. Total range 0-100."
 * status MS
-* code = https://clinyqai.github.io/open-nursing-core-ig/CodeSystem/onc-observation-codes#barthel-score "Barthel Index Score"
+* code = https://opennursingcoreig.com/CodeSystem/onc-observation-codes#barthel-score "Barthel Index Score"
 * code MS
 * value[x] only Quantity
 * valueQuantity 1..1 MS
