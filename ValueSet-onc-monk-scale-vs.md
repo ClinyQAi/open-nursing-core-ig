@@ -47,7 +47,7 @@
   "name" : "ONCMonkScaleVS",
   "title" : "Monk Skin Tone Scale ValueSet",
   "status" : "draft",
-  "date" : "2026-01-02T23:43:46+00:00",
+  "date" : "2026-01-02T23:54:54+00:00",
   "publisher" : "The Open Nursing Community",
   "compose" : {
     "include" : [

@@ -50,7 +50,7 @@ Common functions of behaviour (SEAT)
   "name" : "PBSFunctionVS",
   "title" : "PBS Behaviour Function ValueSet",
   "status" : "draft",
-  "date" : "2026-01-02T23:43:46+00:00",
+  "date" : "2026-01-02T23:54:54+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Common functions of behaviour (SEAT)",
   "compose" : {

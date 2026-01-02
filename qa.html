@@ -47,7 +47,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for OpenNursingCoreIG</h1>
- <p>Generated Fri Jan 02 23:46:32 UTC 2026, FHIR version 4.0.1 for onc.ig#0.1.0 (canonical = <a href="https://opennursingcoreig.com">https://opennursingcoreig.com</a> (<a href="https://opennursingcoreig.com/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Fri Jan 02 23:57:51 UTC 2026, FHIR version 4.0.1 for onc.ig#0.1.0 (canonical = <a href="https://opennursingcoreig.com">https://opennursingcoreig.com</a> (<a href="https://opennursingcoreig.com/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v2.0.29</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = onc.ig, Canonical = https://opennursingcoreig.com</td></tr>
@@ -786,16 +786,16 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Goal&#8203;.target[0]&#8203;.measure&#8203;.coding[0]&#8203;.display (l23&#8203;/c8)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Functional status' for http://loinc.org#88020-3. Valid display is one of 3 choices: 'Functional capacity NYHA' (en-US), 'Functional capacity NYHA' (en-US) or 'Functional capacity NYHA' (en-US) (for the language(s) 'en-US')</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l16">log</a>, or see <a href="#vmi61" onClick="document.getElementById('vmi61').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span><div id="vmi61" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing https://opennursingcoreig.com/ValueSet/onc-goal-target-measure-vs|0.1.0 for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
-16 0    : 0ms  : Prepare include: "(http://loinc.org)(59408-5)"
-16 0    : 0ms  : CodeSystem found: "http://loinc.org|2.81"
-16 0    : 0ms  : Prepare include: "(http://snomed.info/sct)(225358003)"
-16 0    : 0ms  : CodeSystem found: "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
-16 0    : 0ms  : Validate "[http://loinc.org#88020-3 ("Functional status")]"
-16 0    : 0ms  : Check "http://loinc.org#88020-3"
-16 0    : 0ms  : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
-16 0    : 0ms  : check code in (http://loinc.org)(59408-5) at CodeableConcept.coding[0]
+0 0     : 0ms  : Analysing https://opennursingcoreig.com/ValueSet/onc-goal-target-measure-vs|0.1.0 for validation purposes
+0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest
+0 0     : 0ms  : Prepare include: "(http://loinc.org)(59408-5)"
+0 0     : 0ms  : CodeSystem found: "http://loinc.org|2.81"
+0 0     : 0ms  : Prepare include: "(http://snomed.info/sct)(225358003)"
+0 0     : 0ms  : CodeSystem found: "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+0 0     : 0ms  : Validate "[http://loinc.org#88020-3 ("Functional status")]"
+0 0     : 0ms  : Check "http://loinc.org#88020-3"
+0 0     : 0ms  : CodeSystem found: http://loinc.org|2.81 for http://loinc.org
+0 0     : 0ms  : check code in (http://loinc.org)(59408-5) at CodeableConcept.coding[0]
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1242,9 +1242,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 31 31   : 0ms  : Analysing https://opennursingcoreig.com/ValueSet/skintone-vs|0.1.0 for validation purposes
 31 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
 31 0    : 0ms  : Prepare include: "(https://opennursingcoreig.com/CodeSystem/onc-observation-codes)(fitzpatrick-1,fitzpatrick-2,fitzpatrick-3,fitzpatrick-4,fitzpatrick-5,fitzpatrick-6)"
-47 16   : 16ms : CodeSystem found: "https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0"
-47 0    : 16ms : Validate "[http://snomed.info/sct#403154004 ("Fitzpatrick skin type II")]"
-47 0    : 16ms : Check "http://snomed.info/sct#403154004"
+31 0    : 0ms  : CodeSystem found: "https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0"
+31 0    : 0ms  : Validate "[http://snomed.info/sct#403154004 ("Fitzpatrick skin type II")]"
+31 0    : 0ms  : Check "http://snomed.info/sct#403154004"
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1252,9 +1252,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 31 31   : 0ms  : Analysing https://opennursingcoreig.com/ValueSet/skintone-vs|0.1.0 for validation purposes
 31 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest
 31 0    : 0ms  : Prepare include: "(https://opennursingcoreig.com/CodeSystem/onc-observation-codes)(fitzpatrick-1,fitzpatrick-2,fitzpatrick-3,fitzpatrick-4,fitzpatrick-5,fitzpatrick-6)"
-47 16   : 16ms : CodeSystem found: "https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0"
-47 0    : 16ms : Validate "[http://snomed.info/sct#403154004 ("Fitzpatrick skin type II")]"
-47 0    : 16ms : Check "http://snomed.info/sct#403154004"
+31 0    : 0ms  : CodeSystem found: "https://opennursingcoreig.com/CodeSystem/onc-observation-codes|0.1.0"
+31 0    : 0ms  : Validate "[http://snomed.info/sct#403154004 ("Fitzpatrick skin type II")]"
+31 0    : 0ms  : Check "http://snomed.info/sct#403154004"
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffebcc">

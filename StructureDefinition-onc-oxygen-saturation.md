@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-oxygen-saturatio
   "name" : "ONCOxygenSaturation",
   "title" : "Oxygen Saturation",
   "status" : "draft",
-  "date" : "2026-01-02T23:43:46+00:00",
+  "date" : "2026-01-02T23:54:54+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Oxygen saturation (SpO2) observation for NEWS2",
   "fhirVersion" : "4.0.1",

@@ -51,7 +51,7 @@ Value set for Fitzpatrick skin type classifications
   "title" : "Fitzpatrick Skin Tone Value Set",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-01-02T23:43:46+00:00",
+  "date" : "2026-01-02T23:54:54+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Value set for Fitzpatrick skin type classifications",
   "compose" : {
