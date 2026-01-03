@@ -50,7 +50,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "name" : "NEWS2SubscoreCodeValueSet",
   "title" : "NEWS2 Sub-Score Codes",
   "status" : "draft",
-  "date" : "2026-01-03T01:26:42+00:00",
+  "date" : "2026-01-03T01:44:04+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "SNOMED codes for NEWS2 sub-scores",
   "compose" : {

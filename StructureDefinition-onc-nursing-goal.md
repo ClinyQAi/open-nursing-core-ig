@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-goal.csv
   "name" : "ONCNursingGoal",
   "title" : "ONC Nursing Goal",
   "status" : "draft",
-  "date" : "2026-01-03T01:26:42+00:00",
+  "date" : "2026-01-03T01:44:04+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Patient-centered goal with mandatory evaluation requirements. Serves as the 'spine' of the CarePlan, linking problems to outcomes.",
   "fhirVersion" : "4.0.1",
