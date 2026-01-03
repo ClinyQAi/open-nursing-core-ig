@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nhs-patient.csv)
   "name" : "ONCNHSPatient",
   "title" : "ONC NHS Patient",
   "status" : "draft",
-  "date" : "2026-01-03T00:14:22+00:00",
+  "date" : "2026-01-03T00:34:03+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "A patient profile for use in NHS nursing contexts with ethnic category extension.",
   "fhirVersion" : "4.0.1",

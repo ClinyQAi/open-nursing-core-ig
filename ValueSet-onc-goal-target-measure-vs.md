@@ -50,7 +50,7 @@ Codes used for goal target measures
   "name" : "ONCGoalTargetMeasureVS",
   "title" : "Goal Target Measure ValueSet",
   "status" : "draft",
-  "date" : "2026-01-03T00:14:22+00:00",
+  "date" : "2026-01-03T00:34:03+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Codes used for goal target measures",
   "compose" : {

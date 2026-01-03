@@ -50,7 +50,7 @@ Prognosis codes for clinical impression
   "name" : "ONCPrognosisVS",
   "title" : "Nursing Prognosis ValueSet",
   "status" : "draft",
-  "date" : "2026-01-03T00:14:22+00:00",
+  "date" : "2026-01-03T00:34:03+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Prognosis codes for clinical impression",
   "compose" : {

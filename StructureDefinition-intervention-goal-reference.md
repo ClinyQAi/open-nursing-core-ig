@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-intervention-goal-re
   "name" : "InterventionGoalReference",
   "title" : "Intervention Goal Reference",
   "status" : "draft",
-  "date" : "2026-01-03T00:14:22+00:00",
+  "date" : "2026-01-03T00:34:03+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Extension to link nursing interventions to the patient goals they are intended to achieve.",
   "fhirVersion" : "4.0.1",

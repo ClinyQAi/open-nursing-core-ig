@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-dietary-requirem
   "name" : "ONCDietaryRequirements",
   "title" : "Dietary Requirements",
   "status" : "draft",
-  "date" : "2026-01-03T00:14:22+00:00",
+  "date" : "2026-01-03T00:34:03+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Documentation of specific dietary needs (e.g. textural modification, cultural).",
   "fhirVersion" : "4.0.1",

@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-nursing-interven
   "name" : "ONCNursingIntervention",
   "title" : "ONC Nursing Intervention",
   "status" : "draft",
-  "date" : "2026-01-03T00:14:22+00:00",
+  "date" : "2026-01-03T00:34:03+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Nursing intervention performed to achieve patient goals. Part of ADPIE Implementation phase.",
   "fhirVersion" : "4.0.1",

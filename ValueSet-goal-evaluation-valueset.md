@@ -51,7 +51,7 @@ Value set for evaluating patient goal outcomes
   "title" : "Goal Evaluation Value Set",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-01-03T00:14:22+00:00",
+  "date" : "2026-01-03T00:34:03+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Value set for evaluating patient goal outcomes",
   "compose" : {
