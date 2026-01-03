@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/onc-goal-target-measure-vs | *Version*:0.1.0 |
-| Draft as of 2026-01-02 | *Computable Name*:ONCGoalTargetMeasureVS |
+| Draft as of 2026-01-03 | *Computable Name*:ONCGoalTargetMeasureVS |
 
  
 Codes used for goal target measures 
@@ -50,7 +50,7 @@ Codes used for goal target measures
   "name" : "ONCGoalTargetMeasureVS",
   "title" : "Goal Target Measure ValueSet",
   "status" : "draft",
-  "date" : "2026-01-02T23:54:54+00:00",
+  "date" : "2026-01-03T00:14:22+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Codes used for goal target measures",
   "compose" : {

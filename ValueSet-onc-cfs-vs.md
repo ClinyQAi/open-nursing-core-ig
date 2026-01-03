@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/onc-cfs-vs | *Version*:0.1.0 |
-| Draft as of 2026-01-02 | *Computable Name*:ClinicalFrailtyScaleVS |
+| Draft as of 2026-01-03 | *Computable Name*:ClinicalFrailtyScaleVS |
 
  
 Codes for Rockwood Clinical Frailty Scale (1-9) 
@@ -50,7 +50,7 @@ Codes for Rockwood Clinical Frailty Scale (1-9)
   "name" : "ClinicalFrailtyScaleVS",
   "title" : "Clinical Frailty Scale Value Set",
   "status" : "draft",
-  "date" : "2026-01-02T23:54:54+00:00",
+  "date" : "2026-01-03T00:14:22+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Codes for Rockwood Clinical Frailty Scale (1-9)",
   "compose" : {

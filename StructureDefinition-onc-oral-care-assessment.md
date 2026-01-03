@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-oral-care-assessment | *Version*:0.1.0 |
-| Draft as of 2026-01-02 | *Computable Name*:ONCOralCareAssessment |
+| Draft as of 2026-01-03 | *Computable Name*:ONCOralCareAssessment |
 
  
 Assessment of mouth care needs and oral health. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-oral-care-assess
   "name" : "ONCOralCareAssessment",
   "title" : "Oral Care Needs Assessment",
   "status" : "draft",
-  "date" : "2026-01-02T23:54:54+00:00",
+  "date" : "2026-01-03T00:14:22+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Assessment of mouth care needs and oral health.",
   "fhirVersion" : "4.0.1",

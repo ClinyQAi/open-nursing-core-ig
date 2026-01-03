@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/housing-status-vs | *Version*:0.1.0 |
-| Draft as of 2026-01-02 | *Computable Name*:HousingStatusVS |
+| Draft as of 2026-01-03 | *Computable Name*:HousingStatusVS |
 
  
 Value set for patient housing status 
@@ -51,7 +51,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "Housing Status Value Set",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-01-02T23:54:54+00:00",
+  "date" : "2026-01-03T00:14:22+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Value set for patient housing status",
   "compose" : {

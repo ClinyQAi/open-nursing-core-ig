@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.clinyq.ai/ConceptMap/onc-to-nanda | *Version*:0.1.0 |
-| Draft as of 2026-01-02 | *Computable Name*:ONCToNandaMapping |
+| Draft as of 2026-01-03 | *Computable Name*:ONCToNandaMapping |
 
  
 Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses. 
@@ -27,7 +27,7 @@ Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses.
   "name" : "ONCToNandaMapping",
   "title" : "Mapping ONC Relational Concepts to NANDA-I",
   "status" : "draft",
-  "date" : "2026-01-02T23:54:54+00:00",
+  "date" : "2026-01-03T00:14:22+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Maps Open Nursing Core clinical findings to NANDA-I Nursing Diagnoses.",
   "sourceCanonical" : "https://fhir.clinyq.ai/ValueSet/onc-relational-findings-vs",

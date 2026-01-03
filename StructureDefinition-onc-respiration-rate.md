@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-respiration-rate | *Version*:0.1.0 |
-| Draft as of 2026-01-02 | *Computable Name*:ONCRespirationRate |
+| Draft as of 2026-01-03 | *Computable Name*:ONCRespirationRate |
 
  
 Respiration rate observation for NEWS2 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-respiration-rate
   "name" : "ONCRespirationRate",
   "title" : "Respiration Rate",
   "status" : "draft",
-  "date" : "2026-01-02T23:54:54+00:00",
+  "date" : "2026-01-03T00:14:22+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Respiration rate observation for NEWS2",
   "fhirVersion" : "4.0.1",

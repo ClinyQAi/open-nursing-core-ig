@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-morse-fall-scale | *Version*:0.1.0 |
-| Draft as of 2026-01-02 | *Computable Name*:ONCMorseFallScale |
+| Draft as of 2026-01-03 | *Computable Name*:ONCMorseFallScale |
 
  
 Morse Fall Scale for assessing fall risk. Score 0-24=no risk, 25-50=low risk, ≥51=high risk. Total range 0-125. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-morse-fall-scale
   "name" : "ONCMorseFallScale",
   "title" : "Morse Fall Scale",
   "status" : "draft",
-  "date" : "2026-01-02T23:54:54+00:00",
+  "date" : "2026-01-03T00:14:22+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Morse Fall Scale for assessing fall risk. Score 0-24=no risk, 25-50=low risk, ≥51=high risk. Total range 0-125.",
   "fhirVersion" : "4.0.1",

@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ImplementationGuide/onc.ig | *Version*:0.1.0 |
-| Draft as of 2026-01-02 | *Computable Name*:OpenNursingCoreIG |
+| Draft as of 2026-01-03 | *Computable Name*:OpenNursingCoreIG |
 
 # Open Nursing Core FHIR Implementation Guide
 
@@ -93,7 +93,7 @@ Tools for Learning Disabilities, Mental Health, and Geriatrics.
   "name" : "OpenNursingCoreIG",
   "title" : "Open Nursing Core FHIR Implementation Guide (ONC-IG)",
   "status" : "draft",
-  "date" : "2026-01-02T23:54:54+00:00",
+  "date" : "2026-01-03T00:14:22+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Foundational FHIR profiles for the nursing process (ADPIE), including Safety and Equity modules. BETA RELEASE - Feedback Welcome.",
   "packageId" : "onc.ig",

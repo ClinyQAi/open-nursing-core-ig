@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-sleep-pattern | *Version*:0.1.0 |
-| Draft as of 2026-01-02 | *Computable Name*:ONCSleepPattern |
+| Draft as of 2026-01-03 | *Computable Name*:ONCSleepPattern |
 
  
 Observation of sleep quality, duration, and disturbances. Sleep pattern disturbance is a key indicator for delirium and general wellbeing. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-sleep-pattern.cs
   "name" : "ONCSleepPattern",
   "title" : "Sleep Pattern",
   "status" : "draft",
-  "date" : "2026-01-02T23:54:54+00:00",
+  "date" : "2026-01-03T00:14:22+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Observation of sleep quality, duration, and disturbances. Sleep pattern disturbance is a key indicator for delirium and general wellbeing.",
   "fhirVersion" : "4.0.1",

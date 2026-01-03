@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/CodeSystem/onc-monk-scale | *Version*:0.1.0 |
-| Draft as of 2026-01-02 | *Computable Name*:ONCMonkScale |
+| Draft as of 2026-01-03 | *Computable Name*:ONCMonkScale |
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
@@ -28,7 +28,7 @@
   "name" : "ONCMonkScale",
   "title" : "Monk Skin Tone Scale CodeSystem",
   "status" : "draft",
-  "date" : "2026-01-02T23:54:54+00:00",
+  "date" : "2026-01-03T00:14:22+00:00",
   "publisher" : "The Open Nursing Community",
   "content" : "complete",
   "count" : 10,

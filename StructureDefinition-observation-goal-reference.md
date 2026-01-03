@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/observation-goal-reference | *Version*:0.1.0 |
-| Draft as of 2026-01-02 | *Computable Name*:ObservationGoalReference |
+| Draft as of 2026-01-03 | *Computable Name*:ObservationGoalReference |
 
 Extension to link goal evaluation observations to the patient goals being evaluated.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-observation-goal-ref
   "name" : "ObservationGoalReference",
   "title" : "Observation Goal Reference",
   "status" : "draft",
-  "date" : "2026-01-02T23:54:54+00:00",
+  "date" : "2026-01-03T00:14:22+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Extension to link goal evaluation observations to the patient goals being evaluated.",
   "fhirVersion" : "4.0.1",

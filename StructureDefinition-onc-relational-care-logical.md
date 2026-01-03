@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-relational-care-logical | *Version*:0.1.0 |
-| Draft as of 2026-01-02 | *Computable Name*:ONCRelationalCareModel |
+| Draft as of 2026-01-03 | *Computable Name*:ONCRelationalCareModel |
 
  
 A vendor-neutral clinical model of the relational nursing assessment. Defines WHAT data must be captured, regardless of HOW it is stored in FHIR. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-relational-care-
   "name" : "ONCRelationalCareModel",
   "title" : "Relational Care Logical Model",
   "status" : "draft",
-  "date" : "2026-01-02T23:54:54+00:00",
+  "date" : "2026-01-03T00:14:22+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "A vendor-neutral clinical model of the relational nursing assessment. Defines WHAT data must be captured, regardless of HOW it is stored in FHIR.",
   "fhirVersion" : "4.0.1",

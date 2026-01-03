@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-skintone-observation | *Version*:0.1.0 |
-| Draft as of 2026-01-02 | *Computable Name*:ONCSkinToneObservation |
+| Draft as of 2026-01-03 | *Computable Name*:ONCSkinToneObservation |
 
  
 Observation of patient skin tone using the Fitzpatrick skin type classification. Supports equitable care by enabling skin tone-aware clinical decision making, particularly for conditions that present differently across skin tones (e.g., pressure ulcers, cyanosis). 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-skintone-observa
   "name" : "ONCSkinToneObservation",
   "title" : "Skin Tone Observation",
   "status" : "draft",
-  "date" : "2026-01-02T23:54:54+00:00",
+  "date" : "2026-01-03T00:14:22+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Observation of patient skin tone using the Fitzpatrick skin type classification. Supports equitable care by enabling skin tone-aware clinical decision making, particularly for conditions that present differently across skin tones (e.g., pressure ulcers, cyanosis).",
   "fhirVersion" : "4.0.1",

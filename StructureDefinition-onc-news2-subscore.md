@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-news2-subscore | *Version*:0.1.0 |
-| Draft as of 2026-01-02 | *Computable Name*:ONCNEWS2Subscore |
+| Draft as of 2026-01-03 | *Computable Name*:ONCNEWS2Subscore |
 
  
 Individual parameter sub-score for NEWS2 (0-3 for most parameters). References the related vital sign observation. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-news2-subscore.c
   "name" : "ONCNEWS2Subscore",
   "title" : "NEWS2 Sub-Score",
   "status" : "draft",
-  "date" : "2026-01-02T23:54:54+00:00",
+  "date" : "2026-01-03T00:14:22+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Individual parameter sub-score for NEWS2 (0-3 for most parameters). References the related vital sign observation.",
   "fhirVersion" : "4.0.1",

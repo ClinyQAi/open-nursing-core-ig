@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/onc-4at-acute-change-vs | *Version*:0.1.0 |
-| Draft as of 2026-01-02 | *Computable Name*:AcuteChangeVS |
+| Draft as of 2026-01-03 | *Computable Name*:AcuteChangeVS |
 
  
 Scoring for Acute Change or Fluctuating Course 
@@ -50,7 +50,7 @@ Scoring for Acute Change or Fluctuating Course
   "name" : "AcuteChangeVS",
   "title" : "4AT Acute Change Value Set",
   "status" : "draft",
-  "date" : "2026-01-02T23:54:54+00:00",
+  "date" : "2026-01-03T00:14:22+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Scoring for Acute Change or Fluctuating Course",
   "compose" : {

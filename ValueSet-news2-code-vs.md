@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/news2-code-vs | *Version*:0.1.0 |
-| Draft as of 2026-01-02 | *Computable Name*:NEWS2CodeValueSet |
+| Draft as of 2026-01-03 | *Computable Name*:NEWS2CodeValueSet |
 
  
 LOINC and SNOMED codes for NEWS2 
@@ -50,7 +50,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "name" : "NEWS2CodeValueSet",
   "title" : "NEWS2 Code Value Set",
   "status" : "draft",
-  "date" : "2026-01-02T23:54:54+00:00",
+  "date" : "2026-01-03T00:14:22+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "LOINC and SNOMED codes for NEWS2",
   "compose" : {

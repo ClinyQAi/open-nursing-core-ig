@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/onc-relational-outcomes-vs | *Version*:0.1.0 |
-| Draft as of 2026-01-02 | *Computable Name*:ONCRelationalOutcomesVS |
+| Draft as of 2026-01-03 | *Computable Name*:ONCRelationalOutcomesVS |
 
  
 Captures the measurable outcomes of relational and empathic nursing care. 
@@ -50,7 +50,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "name" : "ONCRelationalOutcomesVS",
   "title" : "ONC Relational Care Outcomes",
   "status" : "draft",
-  "date" : "2026-01-02T23:54:54+00:00",
+  "date" : "2026-01-03T00:14:22+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Captures the measurable outcomes of relational and empathic nursing care.",
   "compose" : {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-reasonable-adjustment | *Version*:0.1.0 |
-| Draft as of 2026-01-02 | *Computable Name*:ONCReasonableAdjustment |
+| Draft as of 2026-01-03 | *Computable Name*:ONCReasonableAdjustment |
 
  
 Captures specific strict requirements for care adjustments under the Equality Act (e.g., 'Needs BSL Interpreter', 'Cannot use stairs', 'Requires large print'). 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-reasonable-adjus
   "name" : "ONCReasonableAdjustment",
   "title" : "Reasonable Adjustment",
   "status" : "draft",
-  "date" : "2026-01-02T23:54:54+00:00",
+  "date" : "2026-01-03T00:14:22+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Captures specific strict requirements for care adjustments under the Equality Act (e.g., 'Needs BSL Interpreter', 'Cannot use stairs', 'Requires large print').",
   "fhirVersion" : "4.0.1",

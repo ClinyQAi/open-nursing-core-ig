@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/CodeSystem/onc-observation-codes | *Version*:0.1.0 |
-| Draft as of 2026-01-02 | *Computable Name*:ONCObservationCodes |
+| Draft as of 2026-01-03 | *Computable Name*:ONCObservationCodes |
 
  
 Custom observation codes for Open Nursing Core 
@@ -41,7 +41,7 @@ Custom observation codes for Open Nursing Core
   "name" : "ONCObservationCodes",
   "title" : "ONC Observation Codes",
   "status" : "draft",
-  "date" : "2026-01-02T23:54:54+00:00",
+  "date" : "2026-01-03T00:14:22+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Custom observation codes for Open Nursing Core",
   "content" : "complete",

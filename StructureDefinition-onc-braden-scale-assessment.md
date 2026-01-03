@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-braden-scale-assessment | *Version*:0.1.0 |
-| Draft as of 2026-01-02 | *Computable Name*:ONCBradenScaleAssessment |
+| Draft as of 2026-01-03 | *Computable Name*:ONCBradenScaleAssessment |
 
  
 A profile for the Braden Scale pressure ulcer risk assessment 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-braden-scale-ass
   "name" : "ONCBradenScaleAssessment",
   "title" : "Braden Scale Assessment",
   "status" : "draft",
-  "date" : "2026-01-02T23:54:54+00:00",
+  "date" : "2026-01-03T00:14:22+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "A profile for the Braden Scale pressure ulcer risk assessment",
   "fhirVersion" : "4.0.1",

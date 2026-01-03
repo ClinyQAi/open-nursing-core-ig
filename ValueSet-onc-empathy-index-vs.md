@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/onc-empathy-index-vs | *Version*:0.1.0 |
-| Draft as of 2026-01-02 | *Computable Name*:ONCEmpathyIndexVS |
+| Draft as of 2026-01-03 | *Computable Name*:ONCEmpathyIndexVS |
 
  
 A clinical scale measuring the depth of therapeutic empathy in nurse-patient interactions. Traditional EHRs ignore this; the Super-Gold Standard makes it a primary outcome. 
@@ -50,7 +50,7 @@ A clinical scale measuring the depth of therapeutic empathy in nurse-patient int
   "name" : "ONCEmpathyIndexVS",
   "title" : "ONC Empathy & Relational Engagement Index",
   "status" : "draft",
-  "date" : "2026-01-02T23:54:54+00:00",
+  "date" : "2026-01-03T00:14:22+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "A clinical scale measuring the depth of therapeutic empathy in nurse-patient interactions. Traditional EHRs ignore this; the Super-Gold Standard makes it a primary outcome.",
   "compose" : {

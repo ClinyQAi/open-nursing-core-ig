@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://opennursingcore.org/Library/ONC-NEWS2-CQL | *Version*:0.1.0 |
-| Active as of 2026-01-02 | *Computable Name*:ONC_NEWS2_Logic |
+| Active as of 2026-01-03 | *Computable Name*:ONC_NEWS2_Logic |
 
  
 Logic library for calculating National Early Warning Score 2 (NEWS2) from FHIR Observations. 
@@ -23,7 +23,7 @@ Logic library for calculating National Early Warning Score 2 (NEWS2) from FHIR O
 * * **Content:**text/cql: ````````: **Experimental:**
   * ?: true
 * * **Content:**text/cql: ````````: **Date:**
-  * ?: 2026-01-02 23:54:54+0000
+  * ?: 2026-01-03 00:14:22+0000
 * * **Content:**text/cql: ````````: **Publisher:**
   * ?: The Open Nursing Community
 * * **Content:**text/cql: ````````: **Description:**
@@ -51,7 +51,7 @@ Logic library for calculating National Early Warning Score 2 (NEWS2) from FHIR O
       }
     ]
   },
-  "date" : "2026-01-02T23:54:54+00:00",
+  "date" : "2026-01-03T00:14:22+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Logic library for calculating National Early Warning Score 2 (NEWS2) from FHIR Observations.",
   "content" : [

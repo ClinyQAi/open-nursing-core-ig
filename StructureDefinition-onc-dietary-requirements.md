@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-dietary-requirements | *Version*:0.1.0 |
-| Draft as of 2026-01-02 | *Computable Name*:ONCDietaryRequirements |
+| Draft as of 2026-01-03 | *Computable Name*:ONCDietaryRequirements |
 
  
 Documentation of specific dietary needs (e.g. textural modification, cultural). 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-dietary-requirem
   "name" : "ONCDietaryRequirements",
   "title" : "Dietary Requirements",
   "status" : "draft",
-  "date" : "2026-01-02T23:54:54+00:00",
+  "date" : "2026-01-03T00:14:22+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Documentation of specific dietary needs (e.g. textural modification, cultural).",
   "fhirVersion" : "4.0.1",

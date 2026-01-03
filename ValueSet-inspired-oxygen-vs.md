@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/inspired-oxygen-vs | *Version*:0.1.0 |
-| Draft as of 2026-01-02 | *Computable Name*:InspiredOxygenValueSet |
+| Draft as of 2026-01-03 | *Computable Name*:InspiredOxygenValueSet |
 
  
 Codes for inspired oxygen status 
@@ -50,7 +50,7 @@ Codes for inspired oxygen status
   "name" : "InspiredOxygenValueSet",
   "title" : "Inspired Oxygen Value Set",
   "status" : "draft",
-  "date" : "2026-01-02T23:54:54+00:00",
+  "date" : "2026-01-03T00:14:22+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Codes for inspired oxygen status",
   "compose" : {

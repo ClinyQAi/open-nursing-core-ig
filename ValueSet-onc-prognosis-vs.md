@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/ValueSet/onc-prognosis-vs | *Version*:0.1.0 |
-| Draft as of 2026-01-02 | *Computable Name*:ONCPrognosisVS |
+| Draft as of 2026-01-03 | *Computable Name*:ONCPrognosisVS |
 
  
 Prognosis codes for clinical impression 
@@ -50,7 +50,7 @@ Prognosis codes for clinical impression
   "name" : "ONCPrognosisVS",
   "title" : "Nursing Prognosis ValueSet",
   "status" : "draft",
-  "date" : "2026-01-02T23:54:54+00:00",
+  "date" : "2026-01-03T00:14:22+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Prognosis codes for clinical impression",
   "compose" : {

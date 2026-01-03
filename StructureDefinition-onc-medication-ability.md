@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-medication-ability | *Version*:0.1.0 |
-| Draft as of 2026-01-02 | *Computable Name*:ONCMedicationAbility |
+| Draft as of 2026-01-03 | *Computable Name*:ONCMedicationAbility |
 
  
 Assessment of the patient's ability to manage their own medication. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-medication-abili
   "name" : "ONCMedicationAbility",
   "title" : "Medication Management Ability",
   "status" : "draft",
-  "date" : "2026-01-02T23:54:54+00:00",
+  "date" : "2026-01-03T00:14:22+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Assessment of the patient's ability to manage their own medication.",
   "fhirVersion" : "4.0.1",

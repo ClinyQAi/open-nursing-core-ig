@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-relational-observation | *Version*:0.1.0 |
-| Draft as of 2026-01-02 | *Computable Name*:ONCRelationalObservation |
+| Draft as of 2026-01-03 | *Computable Name*:ONCRelationalObservation |
 
  
 Assessment of the quality and depth of the nurse-patient relationship or engagement level. Supports the relational aspect of care. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-relational-obser
   "name" : "ONCRelationalObservation",
   "title" : "Relational Engagement Score",
   "status" : "draft",
-  "date" : "2026-01-02T23:54:54+00:00",
+  "date" : "2026-01-03T00:14:22+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Assessment of the quality and depth of the nurse-patient relationship or engagement level. Supports the relational aspect of care.",
   "fhirVersion" : "4.0.1",

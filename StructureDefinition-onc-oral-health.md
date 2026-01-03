@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.clinyq.ai/StructureDefinition/onc-oral-health | *Version*:0.1.0 |
-| Draft as of 2026-01-02 | *Computable Name*:ONCOralHealth |
+| Draft as of 2026-01-03 | *Computable Name*:ONCOralHealth |
 
  
 Assessment of oral cavity health. Critical for prevention of pneumonia in frail elderly and maintaining nutrition/hydration. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-oral-health.csv)
   "name" : "ONCOralHealth",
   "title" : "Oral Health Assessment",
   "status" : "draft",
-  "date" : "2026-01-02T23:54:54+00:00",
+  "date" : "2026-01-03T00:14:22+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Assessment of oral cavity health. Critical for prevention of pneumonia in frail elderly and maintaining nutrition/hydration.",
   "fhirVersion" : "4.0.1",

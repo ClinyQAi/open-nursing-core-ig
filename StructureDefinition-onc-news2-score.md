@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-news2-score | *Version*:0.1.0 |
-| Draft as of 2026-01-02 | *Computable Name*:ONCNEWS2Score |
+| Draft as of 2026-01-03 | *Computable Name*:ONCNEWS2Score |
 
  
 National Early Warning Score 2 (NEWS2) for detecting clinical deterioration. Fully aligned with NHS CareConnect-NEWS2-Observation-1. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-news2-score.csv)
   "name" : "ONCNEWS2Score",
   "title" : "NEWS2 Score",
   "status" : "draft",
-  "date" : "2026-01-02T23:54:54+00:00",
+  "date" : "2026-01-03T00:14:22+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "National Early Warning Score 2 (NEWS2) for detecting clinical deterioration. Fully aligned with NHS CareConnect-NEWS2-Observation-1.",
   "fhirVersion" : "4.0.1",

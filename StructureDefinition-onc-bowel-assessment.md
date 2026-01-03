@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://opennursingcoreig.com/StructureDefinition/onc-bowel-assessment | *Version*:0.1.0 |
-| Draft as of 2026-01-02 | *Computable Name*:ONCBowelAssessment |
+| Draft as of 2026-01-03 | *Computable Name*:ONCBowelAssessment |
 
  
 Detailed assessment of bowel function and regularity. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-bowel-assessment
   "name" : "ONCBowelAssessment",
   "title" : "Bowel Assessment",
   "status" : "draft",
-  "date" : "2026-01-02T23:54:54+00:00",
+  "date" : "2026-01-03T00:14:22+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Detailed assessment of bowel function and regularity.",
   "fhirVersion" : "4.0.1",
