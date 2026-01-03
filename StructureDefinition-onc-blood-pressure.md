@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-blood-pressure.c
   "name" : "ONCBloodPressure",
   "title" : "Blood Pressure",
   "status" : "draft",
-  "date" : "2026-01-03T00:34:03+00:00",
+  "date" : "2026-01-03T01:26:42+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Blood pressure observation for NEWS2 (systolic BP used for scoring)",
   "fhirVersion" : "4.0.1",

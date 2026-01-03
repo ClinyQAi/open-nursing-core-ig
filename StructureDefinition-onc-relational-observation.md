@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-onc-relational-obser
   "name" : "ONCRelationalObservation",
   "title" : "Relational Engagement Score",
   "status" : "draft",
-  "date" : "2026-01-03T00:34:03+00:00",
+  "date" : "2026-01-03T01:26:42+00:00",
   "publisher" : "The Open Nursing Community",
   "description" : "Assessment of the quality and depth of the nurse-patient relationship or engagement level. Supports the relational aspect of care.",
   "fhirVersion" : "4.0.1",

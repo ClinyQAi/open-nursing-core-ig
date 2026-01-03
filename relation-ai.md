@@ -12,7 +12,8 @@
 **🚀 Model Live on Hugging Face:**
 [NurseCitizenDeveloper/nursing-llama-3-8b-fons](https://huggingface.co/NurseCitizenDeveloper/nursing-llama-3-8b-fons)
 
-<iframe src="https://nursecitizendeveloper-relational-ai-nursing.hf.space" width="100%" frameborder="0" style="border-radius: 8px; border: 1px solid #e1e4e8;" height="800"></iframe>
+![](relational-ai-screenshot.png)
+👆 **Click the image to try the live demo on Hugging Face**
 
 ## Overview
 
